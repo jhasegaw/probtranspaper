@@ -1,0 +1,51 @@
+\subsection{Segmental Viterbi Training}
+
+The previous subsection demonstrates that ${\mathcal L}(\theta')$ can
+be increased, at each step of the EM algorithm, by maximizing
+$Q(\theta,\theta')$.  Though $Q(\theta,\theta')-Q(\theta,\theta)$ is a
+lower bound on ${\mathcal L}(\theta')-{\mathcal L}(\theta)$, $Q$ it
+has properties that make it undesirable as an optimizer for ${\mathcal
+  L}$.  Suppose, as often happens, that there is a poor phone
+sequence, $\phi^p$, that is highly unlikely given the correct
+parameter vector $\theta^*$, meaning that $\pi(\phi^p,s,x|\theta^*)$
+is very low.  Suppose that the initial parameter vector, $\theta$, is
+less discriminative, so that
+$\pi(\phi^p,s,x|\theta)>\pi(\phi^p,s,x|\theta^*)$.  In this case
+$Q(\theta,\theta^*)$ is dominated by the term
+$\pi(\phi^p,s,x|theta)\ln\pi(\phi^p,s,x|\theta^*)$, therefore
+$\theta^*$ will never show up as the optimizer of $Q(\theta,\theta')$.
+Indeed, the best speech recognizer is a parameter vector $\theta^*$
+that completely rules out poor transcriptions, setting
+$\pi(\phi^p,s,x|\theta^*)=0$; but in this case
+$Q(\theta,\theta^*)=-\infty$, so the EM algorithm can never find a
+parameter vector $\theta^*$ that sets to zero the probability of a
+poor transcriptions.
+
+Deterministic transcription does not have this problem, because the
+transcription specifies the phone sequence.  With probabilistic
+transcription, however, the problem is quite common: if the human
+human transcribers fail to rule out $\phi^p$ (e.g., because the
+correct and incorrect transcriptions are perceptually
+indistinguishable in the language of the transcribers), then the EM
+algorithm will also never learn to rule out $\phi^p$.  EM is unable
+to learn zero-valued probabilities.
+
+EM's inability to learn zero-valued probabilities can be ameliorated
+by using the segmental K-means algorithm~\cite{Juang1990}, which
+bounds ${\mathcal L}(\theta')$ as
+$\mathcal{L}(\theta')-\mathcal{L}(\theta)\ge
+R(\theta,\theta')-\mathcal{L}(\theta)$, where
+\begin{align}
+  R(\theta,\theta') &= \ln \pi(s^*(\theta),\phi^*(\theta),x|\theta')\\
+  s^*(\theta),\phi^*(\theta)&= \argmax_{s,\phi} \pi(s,\phi|x,\theta)
+\end{align}
+Given an initial parameter vector $\theta$, therefore, it is possible
+to find a new parameter vector $\theta'$ with higher likelihood by
+computing its maximum-likelihood state sequence and phoneme sequence
+$s^*(\theta),\phi^*(\theta)$, by maximizing $\theta'$ with respect to
+$s^*(\theta)$ and $\phi^*(\theta)$, and by then replacing $\theta$
+with $\theta'$ only if $R(\theta,\theta')$ is greater than ${\mathcal
+  L}(\theta)=\ln \sum\pi(s,\phi,x|\theta)$.  In practice, maximizing
+$R(\theta,\theta')$ rather than $Q(\theta,\theta')$ is useful for
+probabilistic transcription because it reduces the importance of poor
+phonetic transcriptions.

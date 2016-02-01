@@ -1,0 +1,108 @@
+\subsection{ASR in Under-Resourced Languages}
+
+Krauwer~\cite{Krauwer2003} defined an under-resourced language to be
+one that lacks one or more of: stable orthography, significant
+presence on the internet, linguistic expertise, monolingual tagged
+corpora, bilingual electronic dictionaries, transcribed speech,
+pronunciation dictionaries, or other similar electronic resources.
+Berment~\cite{Berment2004} defined a rubric for tabulating the
+resources avaialble in any given language, and proposed that a
+language should be called ``under-resourced'' if it scored lower than
+10.0/20.0 on the proposed rubric.  By these standards, technology
+methods for under-resourced languages are most often demonstrated on
+languages that are not really under-resourced: for example, ASR may be
+trained without transcribed speech, but the quality of the resulting
+ASR can only be scientifically proven by measuring its phone error
+rate (PER) or word error rate (WER) using transcribed speech.  The
+intention, in most cases, is to create methods that can later be
+ported to languages that truly lack resources.
+
+The International Phonetic Alphabet (IPA~\cite{ipa1993}) is a set of
+phoneme symbols defined by the principle that, if there exists a
+language that distinguishes two phonemes, then they should have
+distinguishable symbols. ASR in a new language can be rapidly deployed
+using acoustic models trained to represent every distinct symbol in
+the IPA~\cite{Schultz2001}.  Equality between the IPA symbols for
+phones in two languages, however, does not mean that the corresponding
+acoustic category boundaries coincide, even between dialects of the
+same language: a monolingual Gaussian mixture model (GMM) trained on
+five hours of Levantine Arabic can be improved by adding ten hours of
+Standard Arabic data, but only if the log likelihood of cross-dialect
+data is scaled by 0.02~\cite{Huang2012}.  Stronger effects of
+cross-language transfer are available only by using structured
+transfer learning methods, including neural networks (NN) and subspace
+Gaussian mixture models (SGMM).
+
+NN transfer learning can be categorized as tandem, bottleneck,
+pre-training, phone mapping, and multi-softmax methods.  In a tandem
+system, outputs of the NN are Gaussianized, and used as features whose
+likelihood is computed with a GMM~\cite{Hermansky2000}; in a
+bottleneck system, features are extracted from a hidden layer rather
+than the output layer. Both tandem~\cite{Stolcke2006} and
+bottleneck~\cite{Vesely2012} features trained on other languages can
+be combined with GMMs trained on the target language in order to
+improve word error rate (WER).
+
+A hybrid ASR is a system in which the NN terminates in a softmax
+layer, whose outputs are interpreted as phone~\cite{Morgan95} or
+senone~\cite{Dahl2012} probabilities.  Knowledge of the target
+language phone inventory is necessary to train a hybrid ASR, but it is
+possible to reduce WER by first pre-training the NN hidden layers with
+multilingual data~\cite{Huang2013,Swietojanski2012}.  A hybrid ASR can be
+constructed using very little in-language speech data by adding a
+single phone-mapping layer to the output of the multilingual NN; the
+phone mapping layer can be trained using a small amount of in-language
+speech data~\cite{Sim2008}, even if context-dependent senones are
+mapped instead of phones~\cite{Do2012}.  A multi-softmax system
+integrates phone mapping into the original training procedure, by
+training a network with several different language-dependent softmax
+layers, each of which is the linear transform of a multilingual shared
+hidden layer.  Multi-softmax systems have reduced WER in
+tandem~\cite{Scanzio2008}, bottleneck~\cite{Vesely2012}, and
+hybrid~\cite{Huang2013} ASR.
+
+SGMM transfer learning uses language-dependent GMMs, each of which is
+the linear interpolation of language-independent mean and variance
+vectors.  SGMM can be combined with other methods for further
+improvement, e.g., 16\% relative WER reduction was achieved in a Tamil
+ASR by combining SGMM with an acoustic data normalization
+technique~\cite{Mohan2014}, and further reductions were obtained in
+Afrikaans by using bottleneck features in an SGMM~\cite{Imseng2014}.
+
+Self-training is a class of semi-supervised learning techniques in
+which ASR is first trained on labeled corpora in other languages, then
+used to label data in the target language.  Self-labeled data in the
+target language is then used to train or adapt the
+ASR~\cite{Loof2009,Cetin2008}.  Self-training is most useful when the
+in-language training data are first filtered, to exclude frames with
+confidence below a threshold.  The posterior probability computed from
+the ASR lattice is a useful confidence score~\cite{vesely2013-semi},
+but it is also possible to learn an improved confidence score by
+combining multiple sources of information~\cite{Vu2011b}.
+
+Under-resourced languages often lack any pronunciation dictionary.  It
+is possible to train a stable grapheme-to-phoneme transducer using a
+dictionary with 15,000 entries, and in some languages a dictionary of
+this size can be mined from sources such as
+Wiktionary~\cite{Schlippe2014}.  In languages without any dictionary
+of this size, it may be possible to approximate pronunciation by
+treating each orthographic character as an acoustic model (a
+grapheme)~\cite{Kanthak2002,Charoenpornsawat06,Gizaw2008,Le2009}.
+Even an ambiguous G2P can often be disambiguated by the use of
+context-dependent graphemic models~\cite{Kanthak2002}; if the number
+of trigraphemes gets too large, acoustic models can be interpolated
+within an eigentrigrapheme space~\cite{Ko2014}.  Optimal WER in
+Standard Arabic was achieved by using phoneme-based pronunciations for
+the most frequent 500 words, and grapheme-based pronunciations for all
+less frequent words~\cite{Elmahdy2012}.  In Amharic, optimal WER was
+achieved using a morpheme-based language model, combined with a hybrid
+acoustic model space including both triphones and context-dependent
+sylabic units~\cite{Tachbelie2014}.  In Hindi, optimal WER was
+achieved using a one-to-one character-based grapheme-to-phoneme (G2P)
+transducer (essentially a grapheme-based acoustic model), modified by
+a very small set (3) of surface phonological
+rules~\cite{Jyothi2015interspeech_hindi}.  The three rules were
+proposed based on phonological descriptions of Hindi, then applied or
+discarded in response to application probabilities learned using a
+very small (200-word) pronunciation dictionary.
+

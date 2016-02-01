@@ -1,0 +1,93 @@
+\subsection{Multilingual Baselines}
+\label{sec:mlbaseline}
+
+The goal of building a multilingual system is two-fold.
+One is to setup a baseline for generalizing to an unseen
+language without any labeled audio corpus.  The other
+is have the baseline serve as a starting point for
+adaptation.
+
+The dataset consists of 40 minutes of labeled audio for training,
+10 minutes for development, 10 minutes for testing
+for each language.
+The orthographic transcriptions are converted into
+phonemic transcriptions in the following steps.
+Beginning with a list of the IPA symbols used in canonical descriptions
+of all seven languages,
+symbols appearing in only one language were each merged with a symbols
+differing in only one distinctive feature; this process proceeded until 
+each phone in the universal set is represented in at least two languages.
+English words are identified and converted to phonemes with
+an English G2P trained using the CMUdict~\cite{Lenco15}.
+We take the canonical pronunciation of a word if the word
+appears in a lexicon,
+otherwise estimate the word's pronunciation using a G2P.
+The Arabic dictionary is from the Qatari Arabic Corpus~\cite{Elmahdy14},
+the Dutch dictionary is from CELEX v2~\cite{Baayen96},
+the Hungarian dictionary was provided by BUT~\cite{Grezl14},
+the Cantonese dictionary is from $I^2R$,
+the Mandarin dictionary is from CALLHOME~\cite{Canavan96},
+and the Urdu and Swahili G2Ps were compiled from simple
+rule-based descriptions of the orthographic systems in those
+two languages~\cite{Hasegawajohnson15}.
+
+We train a standard HMM with training data from six languages,
+fine-tune hyperparameters on the development set of the seventh language,
+and test the model on the test set of the seventh language.
+We assume that the lexicon of the target language is unknown,
+but that we are allowed to restrict the universal phone set 
+at test time
+to output only phones in the target language.
+We also assume we have access to texts of the target language,
+so that we can train a phone language model on the phone
+sequences converted from texts.
+The texts are collected from Wikipedia articles linked
+from the main page of each language crawled once per day over four months.
+Results are shown in Table~\ref{tbl:results} where we compare results using
+universal phone set and phone language model to those obtained using 
+language-dependent phone set and phone language model.
+Without a language specific phone set and phoneme language model,
+it is hard for a multilingual system to generalize to
+an unseen language.  This is true even if the system has seen
+closely related languages such as Mandarin
+when tested on Cantonese.
+
+As an oracle experiment, we also train language dependent HMMs
+for each individual language with 40 minutes of labeled audio.
+Results are shown in Table~\ref{tbl:results}.  It is encouraging to see
+significant improvement across all languages
+when equipped with DNN even if there are only 40 minutes of
+data to train the DNN.
+
+\begin{table*}
+\begin{center}
+\begin{tabular}{|l|llll|}
+\hline
+target language & CA & HG & MD & SW \\
+\hline
+multilingual GMM-HMM (universal) & 79.64 (79.83) & 77.13 (77.85) & 83.28 (82.12) & 82.99 (81.86) \\
+multilingual DNN-HMM (universal) & 78.62 (77.58) & 75.98 (76.44) & 81.86 (80.47) & 82.30 (81.18) \\
+multilingual GMM-HMM (language specific) & 68.40 (68.35) & 68.62 (66.90) & 71.30 (68.66) & 63.04 (64.73) \\
+multilingual DNN-HMM (language specific) & 66.54 (65.28) & 66.08 (66.58) & 65.77 (64.80) & 64.75 (65.04) \\
+\hline
+monolingual GMM-HMM & 32.77 (34.61) & 39.58 (39.77) & 32.21 (26.92) & 35.33 (46.51) \\
+monolingual DNN-HMM & 27.67 (28.88) & 35.87 (36.58) & 27.80 (23.96) & 34.98 (41.47) \\
+\hline
+\end{tabular}
+\caption{\label{tbl:results} PERs of unadapted
+multilingual systems on the evaluation sets along with monolingual systems.
+PERs on the development sets are in parentheses.}
+\end{center}
+\end{table*}
+
+From the comparison of different baseline systems, we can reach the
+following conclusions.  First, the standard speech pipeline is able to
+train speech recognizers using SBS data.  Even with only 40 minutes of
+training data, a DNN is able to outperform a GMM-HMM.  Second,
+however, the standard speech pipeline generalizes well to languages
+that were seen in the training corpus, but performs poorly on unseen
+languages.  Using a language-specific phonotactic language model gives
+significant improvement over the language-independent phonotactic
+model, but nevertheless significantly underperforms any system that
+has seen the test language during training.  
+

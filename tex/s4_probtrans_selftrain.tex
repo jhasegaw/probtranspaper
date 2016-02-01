@@ -1,0 +1,37 @@
+\subsection{Self Training}
+\label{sec:selftraining}
+
+The method used for semi-supervised training is a modification of the
+self-training approach described in \cite{vesely2013-semi}. In this
+method, a multilingual DNN-HMM speech recognizer, trained languages
+other than the target language, is used to decode unlabelled audio in
+the target language.  As shown in Fig.~\ref{fig:fig_hager}, decoding
+results in a posterior probability $\pi(\phi_m^\ell|x_t^\ell)$ for
+each frame $x_t^\ell$ of audio in the target language.
+
+\begin{figure}
+  \centerline{\includegraphics[width=5in]{../figs/fig_hager.png}}
+  \caption{The self-training method of~\cite{vesely2013-semi} includes
+    a labeling phase and a learning phase.  (a) Labeling phase: an ASR
+    trained on other languages (here Cantonese) is used to compute
+    posterior phone probabilities $\pi(\phi_t^\ell|x^\ell)$ in the
+    test language (here Mandarin). (b) Learning phase: posterior phone
+    probabilities are used as targets for DNN re-training.}
+  \label{fig:fig_hager}
+\end{figure}
+
+We empirically found it better to use the posteriors as soft-targets
+in frame cross-entropy training (Fig.~\ref{fig:fig_hager}). This is
+different from the approach in \cite{vesely2013-semi}, which uses the
+best path alignment as the target. Additionally, we scaled the amount
+of transcribed data by 2 to create a good balance between transcribed
+and untranscribed data as suggested in the original work.
+
+The results on using this DNN are shown in Table \ref{tab:ptresult}. Although
+semi-supervised training improves PER performance over multilingual DNN, it
+still falls short of adaptation to probabilistic transcriptions (described in
+Section \ref{sec:adaptation}). This is in spite of the untranscribed audio data
+being several times larger than the probabilistic transcription data. Thus, we
+show that mismatch transcripts can be more effective than ASR transcription for
+training acoustic models.
+

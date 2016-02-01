@@ -1,0 +1,73 @@
+\documentclass{article}
+\bibliographystyle{plain}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[bbgreekl]{mathbbol}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\usepackage[affil-it]{authblk}
+\usepackage{paralist}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{tipa}\newcommand{\ipa}[1]{\textipa{#1}}
+\usepackage{stackrel}
+\usetikzlibrary{positioning,shadows,arrows,shapes,calc}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{0in}
+
+\title{ASR for Under-Resourced Languages from Probabilistic
+  Transcription} \author{Mark Hasegawa-Johnson$^1$, Adrian KC Lee$^2$,
+  Ed Lalor$^3$, Preethi Jyothi$^1$, Dan McCloy$^2$, Majid
+  Mirbagheri$^2$, Giovanni di Liberto$^3$, Amit Das$^1$, Brad
+  Ekin$^2$, Chunxi Liu$^4$, Vimal Manohar$^4$, Hao Tang$^5$, Nancy
+  Chen$^6$, Paul Hager$^7$, Tyler Kekona$^2$, and Rose Sloan$^8$}
+\affil{1. University of Illinois, 2. University of Washington,
+  3. Trinity College, Dublin, 4. Johns Hopkins University, 5. Toyota
+  Technological Institute Chicago, 6. Institute for Infocomm Research,
+  7. MIT, 8. Yale University}
+
+\begin{document}
+\maketitle
+
+\input{s1_intro.tex}
+
+\input{s2_background.tex}
+\input{s2_background_urasr.tex}
+\input{s2_background_mismatch.tex}
+\input{s2_background_eeg.tex}
+
+\input{s3_training.tex}
+\input{s3_training_ml.tex}
+\input{s3_training_viterbi.tex}
+\input{s3_training_map.tex}
+\input{s3_training_dnn.tex}
+
+\input{s4_probtrans.tex}
+\input{s4_probtrans_selftrain.tex}
+\input{s4_probtrans_mc.tex}
+\input{s4_probtrans_eeg.tex}
+
+\input{s5_methods.tex}
+\input{s5_methods_data.tex}
+\input{s5_methods_mc.tex}
+\input{s5_methods_eeg.tex}
+\input{s5_methods_phonotactics.tex}
+\input{s5_methods_mlbaseline.tex}
+
+\input{s6_results.tex}
+\input{s6_results_eeg.tex}
+\input{s6_results_asr.tex}
+
+\input{s7_discussion.tex}
+\input{s8_conclusions.tex}
+\input{s9_acknowledgments.tex}
+
+\bibliography{../bib/references,../bib/refs}
+
+\end{document}
+

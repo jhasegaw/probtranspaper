@@ -1,0 +1,28 @@
+
+\subsection{Data}
+\label{sec:data}
+
+Our speech data were extracted from publicly available Special Broadcasting Service Australia (SBS) radio podcasts~\cite{SBS} hosted in 68 different languages. We restricted our experiments to seven of these languages for which we could find a native transcriber willing to provide orthographic transcriptions for roughly 1 hour of speech: Arabic (AR), Cantonese (CA), Dutch (DT), Hungarian (HG), Mandarin (MD), Swahili (SW) and Urdu (UR).
+
+The SBS radio podcasts are not entirely homogeneous in the target language and contain utterances interspersed with segments of music and English. A simple GMM-based language identification system was developed as a first pass over the podcasts in order to isolate regions that correspond mostly to the target language. These long segments were then split into smaller $\approx$ 5-second segments. This was to enable easy labeling by the native transcribers, and more importantly to allow for the collection of mismatched transcriptions that required the speech segments to be short (see below for more details). To further check that only speech clips in the target language were retained, the native transcribers were asked to omit any 5-sec clips that contained music, significant amounts of noise, English speech or speech from multiple speakers. The resulting transcribed speech clips roughly amounted to 45 minutes of speech in Urdu and 1 hour of speech in the remaining seven languages. The orthographic transcriptions for these clips were then converted into phonemic transcriptions using language-specific dictionaries and grapheme-to-phoneme mappings (these resources are detailed in Section~\ref{sec:mlbaseline}). For each language, we chose a random 40/10/10 minutes split into training, development and evaluation sets. 
+
+Table~\ref{tab:data} lists our randomly chosen 70/15/15 data splits into training, development and evaluation sets with the number of phone tokens for all seven languages. 
+
+\begin{table}[t]
+\centering
+\begin{tabular}{| c || c | c | c |}
+\hline
+Language Code & Train & Dev & Eval \\
+\hline
+AR & 32486 & 8208 & 8191\\
+CA & 32693 & 6860 & 8638 \\
+DT & 27314 & 6943 & 6582 \\
+HG & 29461 & 7873 & 7474\\
+MD & 28571 & 8244 & 7035\\
+SW & 30009 & 7658 & 7441 \\
+UR & 21275 & 5808 & 3689 \\
+\hline
+\end{tabular}
+\caption{Data statistics for seven SBS languages listing number of phones in thetraining/development/evaluation sets.}
+\label{tab:data}
+\end{table}

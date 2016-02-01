@@ -1,0 +1,12 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experimental Methods}
+\label{sec:methods}
+
+Our goal is to train a phone recognition system for a given target language in which no native transcriptions are available. We assume that we have access to unspoken texts and to untranscribed audio in the target language, but not to transcribed audio.
+% Eliminating the itemize here only to save space -- MH, 9/24/2015
+%\begin{itemize}
+%\item
+Baseline multilingual systems are trained using native transcriptions from several different languages (not including the target language). Section~\ref{sec:mlbaseline} details multilingual GMM-HMM and DNN-based ASR systems with language-specific grammar models and Section~\ref{sec:selftraining} describes a semi-supervised baseline that uses unlabeled data from the target language.
+%\item
+Next, we adapt the parameters of the acoustic model of the above system using only probabilistic phone transcriptions in the target language derived from mismatched transcriptions. The construction of probabilistic phone transcriptions is described in Section~\ref{sec:MC} and the acoustic model adaptation is detailed in Section~\ref{sec:adaptation}.
+%\end{itemize}
