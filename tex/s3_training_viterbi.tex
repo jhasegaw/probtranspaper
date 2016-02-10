@@ -3,7 +3,7 @@
 The previous subsection demonstrates that ${\mathcal L}(\theta')$ can
 be increased, at each step of the EM algorithm, by maximizing
 $Q(\theta,\theta')$.  Though $Q(\theta,\theta')-Q(\theta,\theta)$ is a
-lower bound on ${\mathcal L}(\theta')-{\mathcal L}(\theta)$, $Q$ it
+lower bound on ${\mathcal L}(\theta')-{\mathcal L}(\theta)$, $Q$
 has properties that make it undesirable as an optimizer for ${\mathcal
   L}$.  Suppose, as often happens, that there is a poor phone
 sequence, $\phi^p$, that is highly unlikely given the correct
@@ -12,7 +12,7 @@ is very low.  Suppose that the initial parameter vector, $\theta$, is
 less discriminative, so that
 $\pi(\phi^p,s,x|\theta)>\pi(\phi^p,s,x|\theta^*)$.  In this case
 $Q(\theta,\theta^*)$ is dominated by the term
-$\pi(\phi^p,s,x|theta)\ln\pi(\phi^p,s,x|\theta^*)$, therefore
+$\pi(\phi^p,s,x|\theta)\ln\pi(\phi^p,s,x|\theta^*)$, therefore
 $\theta^*$ will never show up as the optimizer of $Q(\theta,\theta')$.
 Indeed, the best speech recognizer is a parameter vector $\theta^*$
 that completely rules out poor transcriptions, setting
@@ -23,7 +23,7 @@ poor transcriptions.
 
 Deterministic transcription does not have this problem, because the
 transcription specifies the phone sequence.  With probabilistic
-transcription, however, the problem is quite common: if the human
+transcription, however, the problem is quite common: if the
 human transcribers fail to rule out $\phi^p$ (e.g., because the
 correct and incorrect transcriptions are perceptually
 indistinguishable in the language of the transcribers), then the EM

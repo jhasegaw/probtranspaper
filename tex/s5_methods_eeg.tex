@@ -1,18 +1,23 @@
-\subsection{Channel Model from EEG}
-
-EEG signals were acquired, and used to estimate a mismatch model of
-the form shown in Eqs.~\ref{eq:dfdist} and~\ref{eq:eegdist}.  All
+\subsection{EEG Recording and Analysis}
+%% TODO (Majid): add standard EEG recording methods boilerplate.
+EEG signals were acquired, and used to estimate a mismatch model as 
+shown in Eqs.~\ref{eq:dfdist} and~\ref{eq:eegdist}.  All
 methods were approved by the University of Washington Institutional
 Review Board.
 
-In the finite duration of an EEG experiment, it is not possible to ask
-human subjects to listen to sounds from many languages.  Two languages
-other than English were chosen: one language judged to be similar to
-English, one judged to be maximally different.  Inter-language
-similarity was estimated based on the frequency of many-to-one
-mappings ($N_{M2O}(\mathbb{\Phi})$) between the English phoneme
-inventory ($\mathbb{\Psi}$) and the phoneme inventory
-$\mathbb{\Phi}$. This quantity was defined by finding, for each
+Auditory stimuli used to evoke the electrocortical responses comprised
+consonant-vowel (CV) syllables representing three languages: English,
+Dutch and Hindi. The choice of Dutch and Hindi was governed by (1) their
+inclusion in the SBS subset used to train the misperception G2P as
+described in Section~\ref{sec:MC}, and (2) the relative similarities
+between their phoneme inventories and the phoneme inventory of English
+(Hindi being very dissimilar and Dutch being very similar).
+Similarity was defined as the number of many-to-one mappings
+($N_{M2O}(\mathbb{\Phi})$) between the English phoneme inventory
+($\mathbb{\Psi}$) and the non-native phoneme inventory $\mathbb{\Phi}$.
+Using distinctive feature representations of the phonemes in each 
+inventory (as given in the PHOIBLE database \cite{PHOIBLE}), a 
+many-to-one mapping was defined by finding, for each
 non-native phoneme $\phi$, the English phoneme $\psi^*(\phi)$ to which
 it is most similar:
 \begin{equation}
@@ -25,24 +30,19 @@ The number of many-to-one collisions is then defined as
 \label{eq:m2o}
 \end{equation}
 where $|\mathbb{\Psi}|$ is the size of the English phoneme inventory.
-The frequency of many-to-one collisions is listed in
-Table~\ref{tab:m2o} for several languages.  By this metric, Hindi
-(HIN) is the language most dissimilar from English.  Spanish (SPA) is
-the language most similar to English, followed by Portuguese (POR) and
-Dutch (NLD).  Spanish is heard frequently on television in the United
-States, so in order to avoid using a language with which listeners
-have excessive familiarity, Dutch was selected as a representative of
-the set of languages similar to English.
+
+The frequency of many-to-one mappings is listed in
+Table~\ref{tab:m2o} for several languages.
 
 \begin{table}
   \centerline{\begin{tabular}{|lr|lr|lr|}\hline
     $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ & 
     $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ & 
     $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ \\ \hline
-    SPA & 0.862 & YUE & 1.280 & CMN & 1.531 \\
-    POR & 1.152 & JPN & 1.333 & AMH & 1.844 \\
-    NLD & 1.182 & VIE & 1.393 & HUN & 1.857 \\
-    DEU & 1.258 & KOR & 1.429 & HIN & 2.848 \\\hline
+    spa & 0.862 & yue & 1.280 & cmn & 1.531 \\
+    por & 1.152 & jpn & 1.333 & amh & 1.844 \\
+    nld & 1.182 & vie & 1.393 & hun & 1.857 \\
+    deu & 1.258 & kor & 1.429 & hin & 2.848 \\\hline
   \end{tabular}}
   \caption{Frequency of many-to-one mappings $N_{M2O}(\mathbb{\Phi})$
     between phoneme inventory $\mathbb{\Phi}$ and the inventory of
@@ -50,15 +50,23 @@ the set of languages similar to English.
   \label{tab:m2o}
 \end{table}
 
-Eighteen consonants and two vowels were selected from the phoneme
-inventory of each language, then two native speakers of Dutch and two
-of Hindi (one male and one female in each language) recorded
+The inclusion of only two non-English languages in the auditory stimuli
+was dictated by the relatively high number of repetitions required to 
+achieve good signal-to-noise ratio from averaged EEG recordings.
+
+To construct the auditory stimuli, 
+eighteen consonants and two vowels were selected from the phoneme
+inventory of each language, then two native speakers of each language
+(one male and one female in each) recorded
 consonant-vowel syllables spanning the 56 possible combinations in
 each language.  Recorded syllables had an average duration of 400ms,
 and were presented with an inter-stimulus interval of 350ms to
-headphones worn by one speaker of American English.  An EEG recording
+headphones worn by one speaker of American English.
+
+An EEG recording
 cap was used to acquire electrocortical responses of the subject in
 response to each stimulus.
+
 
 Since EEG signals were only acquired in response to two distinct
 vowels, it was not possible, using these training data, to learn

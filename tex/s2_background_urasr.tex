@@ -1,4 +1,4 @@
-\subsection{ASR in Under-Resourced Languages}
+\subsection{Existing Approaches to ASR in Under-Resourced Languages}
 
 Krauwer~\cite{Krauwer2003} defined an under-resourced language to be
 one that lacks one or more of: stable orthography, significant
@@ -6,7 +6,7 @@ presence on the internet, linguistic expertise, monolingual tagged
 corpora, bilingual electronic dictionaries, transcribed speech,
 pronunciation dictionaries, or other similar electronic resources.
 Berment~\cite{Berment2004} defined a rubric for tabulating the
-resources avaialble in any given language, and proposed that a
+resources available in any given language, and proposed that a
 language should be called ``under-resourced'' if it scored lower than
 10.0/20.0 on the proposed rubric.  By these standards, technology
 methods for under-resourced languages are most often demonstrated on
@@ -18,21 +18,25 @@ intention, in most cases, is to create methods that can later be
 ported to languages that truly lack resources.
 
 The International Phonetic Alphabet (IPA~\cite{ipa1993}) is a set of
-phoneme symbols defined by the principle that, if there exists a
-language that distinguishes two phonemes, then they should have
-distinguishable symbols. ASR in a new language can be rapidly deployed
-using acoustic models trained to represent every distinct symbol in
-the IPA~\cite{Schultz2001}.  Equality between the IPA symbols for
-phones in two languages, however, does not mean that the corresponding
-acoustic category boundaries coincide, even between dialects of the
-same language: a monolingual Gaussian mixture model (GMM) trained on
+symbols representing speech sounds (phones) defined by the principle
+that, if two phones are used in any language to make meaningful
+linguistic contrasts (i.e., they represent distinct phonemes), then
+those phones should have distinct symbolic representations in the IPA.
+This makes the IPA a natural choice for transcriptions used to train
+cross-language ASR systems, and indeed ASR in a new language can be 
+rapidly deployed using acoustic models trained to represent every 
+distinct symbol in the IPA~\cite{Schultz2001}.
+However, because IPA symbols are defined phonemically, there is no
+guarantee of cross-language equivalence in the acoustic properties of
+the phones they represent. This problem arises even between dialects of
+the same language: a monolingual Gaussian mixture model (GMM) trained on
 five hours of Levantine Arabic can be improved by adding ten hours of
 Standard Arabic data, but only if the log likelihood of cross-dialect
-data is scaled by 0.02~\cite{Huang2012}.  Stronger effects of
-cross-language transfer are available only by using structured
-transfer learning methods, including neural networks (NN) and subspace
-Gaussian mixture models (SGMM).
+data is scaled by 0.02~\cite{Huang2012}.
 
+Better cross-language transfer of acoustic models can be achieved, but only
+by using structured transfer learning methods, including neural networks
+(NN) and subspace Gaussian mixture models (SGMM).
 NN transfer learning can be categorized as tandem, bottleneck,
 pre-training, phone mapping, and multi-softmax methods.  In a tandem
 system, outputs of the NN are Gaussianized, and used as features whose
@@ -69,6 +73,8 @@ ASR by combining SGMM with an acoustic data normalization
 technique~\cite{Mohan2014}, and further reductions were obtained in
 Afrikaans by using bottleneck features in an SGMM~\cite{Imseng2014}.
 
+%% Self-training is one of the three methods highlighted in the 
+%% introduction. Doesn't it deserve its own sub-section?
 Self-training is a class of semi-supervised learning techniques in
 which ASR is first trained on labeled corpora in other languages, then
 used to label data in the target language.  Self-labeled data in the
@@ -86,8 +92,8 @@ dictionary with 15,000 entries, and in some languages a dictionary of
 this size can be mined from sources such as
 Wiktionary~\cite{Schlippe2014}.  In languages without any dictionary
 of this size, it may be possible to approximate pronunciation by
-treating each orthographic character as an acoustic model (a
-grapheme)~\cite{Kanthak2002,Charoenpornsawat06,Gizaw2008,Le2009}.
+treating each orthographic character as an acoustic 
+model~\cite{Kanthak2002,Charoenpornsawat06,Gizaw2008,Le2009}.
 Even an ambiguous G2P can often be disambiguated by the use of
 context-dependent graphemic models~\cite{Kanthak2002}; if the number
 of trigraphemes gets too large, acoustic models can be interpolated
