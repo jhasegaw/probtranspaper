@@ -3,8 +3,8 @@
 
 The misperception G2P described in Section~\ref{sec:MC} was estimated
 using a combination of mismatched and deterministic transcripts of
-non-target languages. With a small amount
-of transcribed data in the utterance language, however, it is possible
+non-target languages. However, With a small amount
+of transcribed data in the utterance language, it is possible
 to estimate the misperception G2P using electrocortical measurements
 of non-native speech perception. In this approach, the misperception G2P
 is decomposed into two separate transducers,
@@ -22,18 +22,19 @@ $\rho(\psi|\phi)$ is the mismatch transducer, specifying the
 probability that a phone string $\phi$ in the utterance language will
 be mis-heard as the annotation-language phone string $\psi$. 
 
-In principle, the mismatch transducer could be computed empirically from 
-a phoneme confusion matrix, if (1) experimental data were available for 
-all phones in the target language, and (2) those data were based on 
-responses from listeners with the same language background as the crowd 
-worker transcribers. An alternative is to use distinctive feature 
-representations (originally proposed to characterize the perceptual and 
-phonological natural classes of phonemes \cite{Jakobson52}) to predict 
-misperceptions based on differences between the feature vectors of 
-transcription- and target-language phones. Given the assumption that 
-every distinctive feature shared by phonemes $\phi$ and $\psi$ 
-independently increases their confusion probability, their confusion 
-probability can be expressed as
+In principle, the mismatch transducer could be computed empirically from
+a phoneme confusion matrix, if experimental data on phoneme confusions
+were available for all phones in the target language, and those data
+were based on responses from listeners with the same language background
+as the crowd worker transcribers. These desiridata are difficult to
+fulfill. An alternative is to use distinctive feature representations
+(originally proposed to characterize the perceptual and phonological
+natural classes of phonemes~\cite{Jakobson52}) to predict misperceptions
+based on differences between the feature vectors of transcription- and
+target-language phones. Given the assumption that every distinctive
+feature shared by phonemes $\phi$ and $\psi$ independently increases
+their confusion probability, their confusion probability can be
+expressed as
 \begin{equation}
   \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
   w_k\delta\left(f_k(\psi)\ne f_k(\phi)\right)\right)
@@ -41,20 +42,20 @@ probability can be expressed as
 \end{equation}
 where $f_k(\phi)$ is the $k^{\textrm{th}}$ feature of phoneme $\phi$,
 and $\delta(\cdot)\in\left\{0,1\right\}$ is the unit indicator
-function. The assumption of independence is a simplifying assumption, 
-given that many distinctive features have overlapping acoustic 
-correlates. For example, the frequencies of the two lowest resonances of
-the vocal tract (the first two formant frequencies) are determined by 
-articulatory gestures of the lips, jaw and tongue that are
-commonly represented by at least {\em three} distinctive features
-(height, backness, and rounding). Moreover, the weights $w_k$ will 
-probably also depend on properties of the speaker and listener 
-(language, dialect, and idiolect), but data to train such a rich model 
-do not exist. Nonetheless, a reasonable approximate model can be learned 
-by assuming that $w_k$ depend only on the language of the listener.
+function. The assumption of independence is a simplifying assumption,
+given that many distinctive features have overlapping acoustic
+correlates. For example, the frequencies of the {\em two} lowest
+resonances of the vocal tract (the primary cues for vowel identity) are
+determined by articulatory gestures of the lips, jaw and tongue that are
+commonly represented by {\em three or more} distinctive features
+(e.g., height, backness, rounding, and advanced tongue root). Moreover,
+the weights $w_k$ will probably also depend on properties of the speaker
+and listener (language, dialect, and idiolect), but data to train such a
+rich model do not exist.
 
-Electrocortical responses to non-native speech sounds represent another
-source of information relevant to the mismatch transducer. In particular,  
+However, a reasonable approximate model can be learned by assuming that
+$w_k$ depend only on information about the listener, which can be
+incorporated via measurements of electrocortical activity. In particular,
 the weights $w_k$ of the feature vectors can be set based on similarity
 of electrocortical responses (measured using EEG) as determined by a
 classifier trained on distinctive feature representations and
@@ -69,4 +70,3 @@ the weights in Eq.~\ref{eq:dfdist} can be estimated as
   w_k = -\ln\Pr\left\{g_k(y(\psi))\ne f_k(\psi)\right\}
   \label{eq:eegdist}
 \end{equation}
-

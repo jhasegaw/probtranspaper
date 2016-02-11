@@ -1,22 +1,36 @@
 \subsection{EEG Recording and Analysis}
 %% TODO (Majid): add standard EEG recording methods boilerplate.
-EEG signals were acquired, and used to estimate a mismatch model as 
-shown in Eqs.~\ref{eq:dfdist} and~\ref{eq:eegdist}.  All
-methods were approved by the University of Washington Institutional
+To compute feature vector weights used in estimating the misperception
+transducer as shown in Eqs.~\ref{eq:dfdist} and~\ref{eq:eegdist},
+recordings of cortical activity in response to non-native phones were
+made using EEG. Signals were acquired using a XXXXXXXXXXXX system with
+XXXXXXXXXXXX channels and XXXXXXXXXXXX sampling rate.
+All methods were approved by the University of Washington Institutional
 Review Board.
 
 Auditory stimuli used to evoke the electrocortical responses comprised
 consonant-vowel (CV) syllables representing three languages: English,
-Dutch and Hindi. The choice of Dutch and Hindi was governed by (1) their
+Dutch and Hindi. The inclusion of only two non-English languages in the
+auditory stimuli was dictated by the relatively high number of
+repetitions required to achieve good signal-to-noise ratio from averaged
+EEG recordings. The choice of Dutch and Hindi was governed by their
 inclusion in the SBS subset used to train the misperception G2P as
-described in Section~\ref{sec:MC}, and (2) the relative similarities
+described in Section~\ref{sec:MC}, and the relative similarities
 between their phoneme inventories and the phoneme inventory of English
-(Hindi being very dissimilar and Dutch being very similar).
-Similarity was defined as the number of many-to-one mappings
+(Hindi being very dissimilar and Dutch being very similar; see below).
+Note that, although Hindi podcasts were not included in the SBS training
+data described in Section~\ref{sec:data}, colloquial spoken Hindi and
+Urdu are extremely similar phonologically~\cite{Kachru90}, and
+considering that the auditory stimuli for the EEG portion of this
+experiment are simple CV syllables, it is reasonable to consider Hindi
+and Urdu as equivalent for the purpose of computing feature weights for
+the misperception transducer.
+
+Language similarity was defined as the number of many-to-one mappings
 ($N_{M2O}(\mathbb{\Phi})$) between the English phoneme inventory
 ($\mathbb{\Psi}$) and the non-native phoneme inventory $\mathbb{\Phi}$.
-Using distinctive feature representations of the phonemes in each 
-inventory (as given in the PHOIBLE database \cite{PHOIBLE}), a 
+Using distinctive feature representations of the phonemes in each
+inventory (as given in the PHOIBLE database \cite{PHOIBLE}), a
 many-to-one mapping was defined by finding, for each
 non-native phoneme $\phi$, the English phoneme $\psi^*(\phi)$ to which
 it is most similar:
@@ -30,14 +44,13 @@ The number of many-to-one collisions is then defined as
 \label{eq:m2o}
 \end{equation}
 where $|\mathbb{\Psi}|$ is the size of the English phoneme inventory.
-
 The frequency of many-to-one mappings is listed in
 Table~\ref{tab:m2o} for several languages.
 
 \begin{table}
   \centerline{\begin{tabular}{|lr|lr|lr|}\hline
-    $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ & 
-    $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ & 
+    $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ &
+    $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ &
     $\mathbb{\Phi}$ & $N_{M2O}(\mathbb{\Phi})$ \\ \hline
     spa & 0.862 & yue & 1.280 & cmn & 1.531 \\
     por & 1.152 & jpn & 1.333 & amh & 1.844 \\
@@ -46,35 +59,74 @@ Table~\ref{tab:m2o} for several languages.
   \end{tabular}}
   \caption{Frequency of many-to-one mappings $N_{M2O}(\mathbb{\Phi})$
     between phoneme inventory $\mathbb{\Phi}$ and the inventory of
-    English.  Languages listed by ISO 639-3 codes.}
+    English. Languages are represented by their ISO 639-3 codes.}
   \label{tab:m2o}
 \end{table}
 
-The inclusion of only two non-English languages in the auditory stimuli
-was dictated by the relatively high number of repetitions required to 
-achieve good signal-to-noise ratio from averaged EEG recordings.
+To construct the auditory stimuli, two vowels and several consonants
+were selected from the phoneme inventory of each language (18 consonants
+for English, 17 for Dutch, and 19 for Hindi). Choice of consonants was
+made so as to emphasize differences in the many-to-one relationships
+between English-Dutch and English-Hindi language pairings, while
+maintaining roughly equal numbers of consonants for each language. The
+consonants chosen for each language are given in
+Table~\ref{tab:eegphones}; the vowels chosen were the same for all three
+languages (/a/ and /e/).
 
-To construct the auditory stimuli, 
-eighteen consonants and two vowels were selected from the phoneme
-inventory of each language, then two native speakers of each language
-(one male and one female in each) recorded
-consonant-vowel syllables spanning the 56 possible combinations in
-each language.  Recorded syllables had an average duration of 400ms,
-and were presented with an inter-stimulus interval of 350ms to
-headphones worn by one speaker of American English.
+\begin{table}
+  \centering
+  \setlength{\tabcolsep}{0.3em}
+  \setlength\extrarowheight{2pt}
+  \begin{tabular}{|l||cc|cccc|cc|c|cccc|cc|c|c|c|c|c|c|c|c|c|c|cc|c|c|}\hline
+    Language & \multicolumn{29}{c|}{Phones used in EEG experiment}\\ \hline
+    eng & \multicolumn{2}{c|}{p} & \multicolumn{4}{c|}{t} & \multicolumn{2}{c|}{k} & \textipa{p\super h} & \multicolumn{4}{c|}{\textipa{t\super h}} & \multicolumn{2}{c|}{\textipa{k\super h}} & \textipa{tS} & \textipa{tS\super h} & f & \textipa{T} & \textipa{S} & v & \textipa{D} & z & m & \multicolumn{2}{c|}{n} & l & \textipa{\*r} & \\ \hline
+    nld &  \multicolumn{2}{c|}{p} & \multicolumn{4}{c|}{t} & \multicolumn{2}{c|}{\textipa{G}} & \textipa{p\super h} & \multicolumn{4}{c|}{\textipa{t\super h}} & \multicolumn{2}{c|}{\textipa{k\super h}} & & \textipa{tS\super h} & f & & \textipa{S} & v & & z & m & \multicolumn{2}{c|}{n} & l & \textipa{\;R} & j \\ \hline
+    hin &  p & b & \textipa{\|[t} & \textipa{\|[d} & \textipa{\:t} & \textipa{\:d} & k & \textipa{g} & \textipa{b\super H} & \textipa{\|[t\super h} & \textipa{\:t\super h} & \textipa{\|[d\super H} & \textipa{\:d\super H} & \textipa{k\super h} & \textipa{g\super H} & & & & & & \textipa{V} & & & m & \textipa{\|[n} & \textipa{\:n} & & & \\ \hline
+  \end{tabular}
+  \caption{Consonant phones used in the EEG experiment represented using
+  the IPA. Vertical alignment of cells suggests many-to-one mappings
+  postulated based on distinctive feature values from PHOIBLE.}
+  \label{tab:eegphones}
+\end{table}
 
-An EEG recording
-cap was used to acquire electrocortical responses of the subject in
-response to each stimulus.
+Two native speakers of each language (one male and one female) were
+recorded (XXXXXXXXXXXX sample rate, bit depth) speaking multiple repetitions of the set of CV syllables for
+their language. Three tokens of each unique syllable were excised from
+the raw recordings (XXXXXXXXXXXX downsampled, RMS normalized?)
+Recorded syllables had an average duration of 400~ms, and were presented
+via headphones to one monolingual American English listener.
+The stimuli were presented in XXX blocks of XXX minutes per block, for a
+total of XXX minutes.  Syllables were presented in random order with an
+inter-stimulus interval of 350~ms. XXX repetitions of each syllable
+were presented, for a grand total of XXX syllable presentations.
 
+EEG recordings were divided into XXX ms epochs beginning XXX ms before
+each syllable onset.
+The epoched data were coded with the subset of distinctive features XXXXXXXXXXXX
+that minimally defined the phoneme contrasts of the English consonants.
+Where more than one choice of features was sufficient to define the set
+of contrasts, preference was given to features that reflect differences
+in temporal as opposed to spectral features of the consonants. This
+choice takes advantage of EEG's high temporal resolution (sampling
+rates of 1000 Hz or better are common), and is also motivated by the
+lack of significant high-frequency components in EEG signals (the upper
+bound on EEG frequency analysis is typically 100 Hz or less for analysis
+of evoked cortical signals~\cite{Luck05}). The set of features used was:
+continuant, sonorant, delayed release, voicing, aspiration, labial,
+coronal, and dorsal.
+% In other words, differences in the temporal amplitude envelope of
+% consonants have a better chance of being recoverable after being
+% filtered through a human auditory system and cortex than do differences
+% that are purely spectral in nature; to the extent that spectral
+% information in speech is preserved in an EEG signal, it will have been
+% transformed to be spatially coded across populations of neurons.
 
-Since EEG signals were only acquired in response to two distinct
-vowels, it was not possible, using these training data, to learn
-classifiers that distinguish vowels.  Classifiers were trained for
-most of the consonantal distinctive features of English, but not all.
+Epoched and feature-coded EEG data {\em for the English syllables only}
+were used to train a support vector machine classifier for each feature.
+The classifiers were then used (without re-training) to classify the
+EEG responses to the Dutch and Hindi syllables.
 Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of these
-classifiers when applied to English consonants, and when applied
-(without re-training) to Dutch or Hindi consonants.
+classifiers when applied to the three languages.
 
 \begin{figure}
   \centerline{\includegraphics[width=5in]{../figs/diliberto_svmresults.png}}
@@ -86,23 +138,22 @@ classifiers when applied to English consonants, and when applied
   \label{fig:eeg_svm_eers}
 \end{figure}
 
-Eqs.~\ref{eq:dfdist} defines a log-linear model of $\rho(\psi|\phi)$, the
-probability that Dutch phoneme $\phi$ will be perceived as English
+Eq.~\ref{eq:dfdist} defines a log-linear model of $\rho(\psi|\phi)$, the
+probability that a non-English phoneme $\phi$ will be perceived as English
 phoneme $\psi$.  Denote by $\rho_U(\psi|\phi)$ the model of
 Eq.~\ref{eq:dfdist} with uniform weights for all distinctive features
 ($w_k=\alpha$, a tunable constant).  Denote by $\rho_{EEG}(\psi|\phi)$ the
 same model, but with weights $w_k$ derived from EEG measurements
 (Eq.~\ref{eq:eegdist}).  Fig.~\ref{fig:eeg_confusions} shows these
 two confusion matrices: $\rho_U(\psi|\phi)$ on the left,
-$\rho_{EEG}(\psi|\phi)$ on the right.  The figure clearly shows the
-difference between these two distributions.  The entropy of the
-uniform distribution, $\rho_U(\psi|\phi)$, is too low: when a Dutch
+$\rho_{EEG}(\psi|\phi)$ on the right. The entropy of the
+uniform weighting, $\rho_U(\psi|\phi)$, is too low: when a Dutch
 phoneme $\phi$ has a nearest-neighbor $\psi^*(\phi)$ in English, then
 few other phonemes are considered to be possible confusions.
 $\rho_{EEG}(\psi|\phi)$ has a very different problem: since distinctive
 feature classfiers have been trained for only a small set of
-distinctive features (in particular, no vowel classifiers were
-trained), there are large groups of phonemes whose confusion
+distinctive features,
+there are large groups of phonemes whose confusion
 probabilities can not be distinguished (giving the figure its
 block-diagonal structure).  The faults of both models can be
 ameliorated by interpolating them in some way, e.g., by computing the
@@ -123,4 +174,3 @@ constant $0\le a\le 1$.
     EEG signal classifiers.}
   \label{fig:eeg_confusions}
 \end{figure}
-    

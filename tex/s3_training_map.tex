@@ -75,28 +75,22 @@ Formally, for an unseen target language, we denote its acoustic observations $\m
 where $\tau_{ik}$ is a hyperparameter in the prior density for the mixture component $k$ of state $i$  and $c_{ikt}$ denotes the probability of the HMM being in state $i$ with mixture component $k$ given observation $x_t$ (estimated using statistics accumulated from the cascade $H \circ C \circ L \circ PT$).  Here, $\hat{\mu}_{ik}$ is the maximum likelihood estimate of $\mu_{ik}$ given the target language data $\mathbf{x}$ and the model parameters $c_{ikt}$. Note that at each step of the iteration, $\tilde{\mu}_{ik}$ linearly interpolates between $\mu_{ik}$ and $\hat\mu_{ik}$.
 In our setting,  the initial value of $\mu_{ik}$ is obtained from the multilingual baseline model, and $\tilde{\mu}_{ik}$ eventually converges to a model for the target language data.
 
-The baseline and the adapted models were implemented using Kaldi~\cite{Kaldi2011}. In order to efficiently carry out the required operations on the cascade $H \circ C \circ L \circ PT$, we carefully designed $PT$ as an acceptor defined as $\mathrm{proj}_{\mathrm{input}} (\widehat{PT})$, where $\widehat{PT}$ is a WFST mapping phone sequences to English letter sequences obtained as a cascade of WFSTs modeling the distributions shown in Equation~\ref{eq:PT}, and $\mathrm{proj}_{\mathrm{input}}$ refers to projecting onto the input labels. For the purposes of computational efficiency, the cascade for $\widehat{PT}$ includes an additional WFST restricting the number of consecutive deletions of phones and insertions of letters (to a maximum of 3 in our experiments). We use two additional disambiguation symbols~\cite{mohri2008speech}, apart from the ones used in typical Kaldi recipes, to determinize these insertions and deletions in $\widehat{PT}$. MAP adaptation for the acoustic model was carried out for a number of iterations (12 for CA \& MD, 14 for HG \& SW, with a re-alignment stage in iteration 10).
-%% This is the first mention of the particular training languages used
-%% in these experiments.  I think there is need for a short section that
+The baseline and the adapted models were implemented using Kaldi~\cite{Kaldi2011}. In order to efficiently carry out the required operations on the cascade $H \circ C \circ L \circ PT$, we carefully designed $PT$ as an acceptor defined as $\mathrm{proj}_{\mathrm{input}} (\widehat{PT})$, where $\widehat{PT}$ is a WFST mapping phone sequences to English letter sequences obtained as a cascade of WFSTs modeling the distributions shown in Equation~\ref{eq:PT}, and $\mathrm{proj}_{\mathrm{input}}$ refers to projecting onto the input labels. For the purposes of computational efficiency, the cascade for $\widehat{PT}$ includes an additional WFST restricting the number of consecutive deletions of phones and insertions of letters (to a maximum of 3 in our experiments). We use two additional disambiguation symbols~\cite{mohri2008speech}, apart from the ones used in typical Kaldi recipes, to determinize these insertions and deletions in $\widehat{PT}$. MAP adaptation for the acoustic model was carried out for a number of iterations (12 for yue \& cmn, 14 for hun \& swh, with a re-alignment stage in iteration 10).
+%% I think there is need for a short section that
 %% comes between sections 2 and 3 that explains the big picture of what
 %% was done, in broad strokes, before getting into the mathematical
 %% details of how the system was designed. Perhaps under the heading of
 %% "Overview of experimental procedures" or similar.
 %% 
-%% Second comment: these abbreviations for languages have not been
-%% introduced yet. Moreover, an international standard exists for
-%% abbreviating language names (the ISO 639-3 standard). see here:
-%% http://www-01.sil.org/iso639-3/codes.asp?order=639_3&letter=%25
-%% for this particular sentence, Cantonese = yue, Mandarin = cmn,
-%% Hungarian = hun, and Swahili = swh
-%%
+%% Second comment: This is the first mention of the particular training 
+%% languages used in these experiments. The abbreviations have not been
+%% introduced yet.
 %% That said, I'm not sure that this point in the manuscript is the right
 %% place for this particular detail of the implementation (how many
 %% iterations were done for each training language). So far the rest of
 %% section 3 has been about fundamental system design details that are
 %% unrelated to the particular choice of training languages. I suggest
-%% moving this detail to the "Experimental Methods" section. Here it
-%% could just say "A variable number of iterations of the MAP adaptation
-%% were carried out for the various training languages (see Section XXX 
-%% for details)."
-
+%% moving this detail to the "Experimental Methods" section. If it's
+%% really necessary to mention it here, perhaps it could just say:
+%% "A variable number of iterations of the MAP adaptation were carried
+%% out for the different training languages (see Section XXX for details)."

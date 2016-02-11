@@ -106,13 +106,13 @@ be used in building any part of our system.
 \hline
 Language Code & Dev set (1-best) & Eval set (1-best) \\
 \hline
-AR & 65.8 & 66.2 \\
-CA & 66.4 & 67.8 \\
-DT & 68.9 & 70.9 \\
-HG & 63.7 & 63.5 \\
-MD & 70.9 & 69.6 \\
-SW & 47.6 & 50.3 \\
-UR & 67.2 & 70.5  \\
+arb & 65.8 & 66.2 \\
+yue & 66.4 & 67.8 \\
+nld & 68.9 & 70.9 \\
+hun & 63.7 & 63.5 \\
+cmn & 70.9 & 69.6 \\
+swh & 47.6 & 50.3 \\
+urd & 67.2 & 70.5  \\
 \hline
 \end{tabular}
 \caption{1-best probabilistic phone transcription error rates on the development and evaluation sets.}
@@ -123,12 +123,6 @@ UR & 67.2 & 70.5  \\
 %% this section is about the algorithms used, not the actual experiment).
 %% Most of the text in the following paragraph should also move to a
 %% later section for the same reason.
-%%
-%% Also regarding this table, see comment in section s3_training_map
-%% about language abbreviations. Of particular importance here is the
-%% variety of Arabic used in the experiment, as there are 35 different
-%% languages grouped under the macrolanguage "ara" (see here:
-%% https://www.ethnologue.com/subgroups/arabic-0 )
 
 A crude measure of the quality of the PTs is given by the phone error
 rate between $\phi^* = \argmax_{\phi} \rho(\phi|T)$ and the reference
