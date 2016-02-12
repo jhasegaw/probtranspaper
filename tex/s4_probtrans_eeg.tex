@@ -35,14 +35,24 @@ transcription- and target-language phones. Given the assumption that
 every distinctive feature shared by phonemes $\phi$ and $\psi$ 
 independently increases their confusion probability, their confusion 
 probability can be expressed as
+%\begin{equation}
+%  \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
+%  w_k\delta\left(f_k(\psi)\ne f_k(\phi)\right)\right)
+%  \label{eq:dfdist}
+%\end{equation}
+%where $f_k(\phi)$ is the $k^{\textrm{th}}$ feature of phoneme $\phi$,
+%and $\delta(\cdot)\in\left\{0,1\right\}$ is the unit indicator
+%function. 
 \begin{equation}
   \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
-  w_k\delta\left(f_k(\psi)\ne f_k(\phi)\right)\right)
+  w_k\right)
   \label{eq:dfdist}
 \end{equation}
-where $f_k(\phi)$ is the $k^{\textrm{th}}$ feature of phoneme $\phi$,
-and $\delta(\cdot)\in\left\{0,1\right\}$ is the unit indicator
-function. The assumption of independence is a simplifying assumption,
+where $w_k(\phi)$ is the contribution of the $k^{\textrm{th}}$ feature in the 
+misperception of the of phoneme $\phi$ as phoneme $\psi$. If a feature is 
+perceived similarly across the two languages its contribution would be 
+lower when when the two phonemes share the same value of that 
+feature. The assumption of independence is a simplifying assumption,
 given that many distinctive features have overlapping acoustic
 correlates. For example, the frequencies of the {\em two} lowest
 resonances of the vocal tract (the primary cues for vowel identity) are
@@ -60,13 +70,14 @@ the weights $w_k$ of the distinctive features can be set based on similarity
 of electrocortical responses (measured using EEG) as determined by a
 classifier trained on distinctive feature representations and
 electrocortical responses to the listener's native language phones. Thus,
-given a set of EEG signals $y(\psi)$ recorded when a listener
+given a set of EEG response signals $y(\psi)$ recorded when a listener
 hears audio corresponding to phoneme $\psi$ in the annotation
 language, and supposing that $g_k(y(\psi))$ is the output of a binary
-classifier of EEG signals trained to label the $k^{\textrm{th}}$
-distinctive feature of phoneme $\psi$, as in~\cite{Liberto15}, then
-the weights in Eq.~\ref{eq:dfdist} can be estimated as
+classifier trained on EEG responses to phones in his/her native language 
+to detect the $k^{\textrm{th}}$ distinctive feature of phoneme $\psi$, 
+as in~\cite{Liberto15}, then the contributions in Eq.~\ref{eq:dfdist} can be 
+estimated as
 \begin{equation}
-  w_k = -\ln\Pr\left\{g_k(y(\psi))\ne f_k(\psi)\right\}
+  w_k = -\ln\Pr\left\{g_k(y(\psi))= f_k(\psi)\right\}
   \label{eq:eegdist}
 \end{equation}
