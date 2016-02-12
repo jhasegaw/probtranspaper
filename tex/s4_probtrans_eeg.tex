@@ -26,15 +26,15 @@ In principle, the mismatch transducer could be computed empirically from
 a phoneme confusion matrix, if experimental data on phoneme confusions
 were available for all phones in the target language, and those data
 were based on responses from listeners with the same language background
-as the crowd worker transcribers. These desiridata are difficult to
-fulfill. An alternative is to use distinctive feature representations
+as the crowd worker transcribers. These goals are hard to meet. 
+An alternative is to use distinctive feature representations
 (originally proposed to characterize the perceptual and phonological
 natural classes of phonemes~\cite{Jakobson52}) to predict misperceptions
-based on differences between the feature vectors of transcription- and
-target-language phones. Given the assumption that every distinctive
-feature shared by phonemes $\phi$ and $\psi$ independently increases
-their confusion probability, their confusion probability can be
-expressed as
+based on differences between the distinctive feature values of 
+transcription- and target-language phones. Given the assumption that 
+every distinctive feature shared by phonemes $\phi$ and $\psi$ 
+independently increases their confusion probability, their confusion 
+probability can be expressed as
 \begin{equation}
   \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
   w_k\delta\left(f_k(\psi)\ne f_k(\phi)\right)\right)
@@ -56,7 +56,7 @@ rich model do not exist.
 However, a reasonable approximate model can be learned by assuming that
 $w_k$ depend only on information about the listener, which can be
 incorporated via measurements of electrocortical activity. In particular,
-the weights $w_k$ of the feature vectors can be set based on similarity
+the weights $w_k$ of the distinctive features can be set based on similarity
 of electrocortical responses (measured using EEG) as determined by a
 classifier trained on distinctive feature representations and
 electrocortical responses to the listener's native language phones. Thus,
