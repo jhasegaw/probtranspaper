@@ -1,5 +1,22 @@
 \subsection{Misperception Transducer Trained Using EEG}
 \label{ssec:eeg}
 
-((INSERT A SHORT DISCUSSION OF EEG RESULTS?))
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+In order to evaluate the effectiveness of the EEG-induced misperception transducer we looked at the transcription accuracies for the Dutch language when performed using 1) mismatched crowdsourcing 2) feature-based misperception transducer computed using uniform weighting, $\rho_U(\psi|\phi)$ 3) EEG-induced transducer combined with the feature-based transducer, $\rho_I(\psi|\phi)$. To Combine the two transducers, the value of the parameter $\alpha$ was optimized on a separate development set. As shown in Table~\ref{tbl:eegresults} phone error rates were respectively improved $1.5\%$ and $2.5\%$ relative to mismatched crowdsourcing respectively by using the feature-based and combined misperception transducers. 
+
+\begin{table*}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+  & \specialcell{mismatched \\ crowdsourcing} & feature-based & \specialcell{EEG-induced\\+feature-based} \\
+\hline
+PER & 70.43 & 69.44 & 68.61 \\
+\hline
+\end{tabular}
+\caption{\label{tbl:eegresults} Comparison of PERs for probabilistic transcription for the Dutch on the evaluation set using different schemes to compute misperception G2Ps.}
+\end{center}
+\end{table*}
+
 

@@ -1,5 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Algorithms for Training ASR Using Probabilistic Transcription}
+%% from the point of view of the flow of data, it seems like section 
+%% 4 (about generating PTs) should come before this section (which is
+%% about adapting existing ASR system designs to use PTs)
 
 A deterministic transcription is a sequence of phone symbols,
 $\phi^\ell =[\phi_1^\ell,\ldots,\phi_M^\ell]$ where $\phi_m^\ell$ is a
@@ -10,6 +13,10 @@ The superscript specifies that $\phi^\ell$ is the transcription of the
 $\ell^{\textrm{th}}$ waveform in a database; the collection of all
 transcriptions is $\phi=\left\{\phi^1,\ldots,\phi^L\right\}$.
 
+%% the visible difference between regular and blackboard fonts is
+%% barely noticeable in the typeset document. Is there an alternative
+%% way of specifying sets, or a typeface that visually distinguishes
+%% normal from blackboard variants more prominently?
 A probabilistic transcription is a probability mass function (pmf)
 over the set of deterministic transcriptions.  We use capital letters
 to denote random variables, lowercase to denote instances, and
@@ -32,6 +39,17 @@ from the instance label, e.g., $\rho_{\Phi^\ell}(\phi^\ell)$ may be
 abbreviated as $\rho(\phi^\ell)$, but $\rho_{\Phi^\ell}(u)$ may not.
 A deterministic transcription is a degenerate probabilistic
 transcription, in which $\rho(\phi^\ell)\in\left\{0,1\right\}$.
+%% comment: I'm guessing the choice of epsilon for the null phoneme is
+%% related to its use representing the "empty string". Incidentally,
+%% linguists use the mathematical "empty set" character (U+2205) to
+%% represent a null phoneme (used in formulas for phonological rules
+%% where sounds get deleted). It's not officially part of the IPA, but
+%% might be a more natural choice (depending on the audience). See:  
+%% https://en.wikipedia.org/wiki/Zero_%28linguistics%29 
+%% also note that different variants of epsilon are being used in the 
+%% main text (lunate variant) and in fig:liu1 (two-lobed variant).
+%% If epsilon is retained, it should at least be the same epsilon
+%% throughout.
 
 A database consists of $L$ speech waveforms, each containing $T$
 frames with $M$ associated phone labels, $M<T$.  Superscript denotes

@@ -1,13 +1,13 @@
-\subsection{Channel Model from EEG}
+\subsection{Estimating Misperceptions from Electrocortical Responses}
+\label{sec:eegchanmod}
 
-Mismatched crowdsourcing depends on a misperception G2P, which can be
-trained from doubly-transcribed data in languages other than the test
-language, as described in the previous section.  With a small amount
-of transcribed data in the utterance language, however, it is possible
+The misperception G2P described in Section~\ref{sec:MC} was estimated
+using a combination of mismatched and deterministic transcripts of
+non-target languages. However, With a small amount
+of transcribed data in the utterance language, it is possible
 to estimate the misperception G2P using electrocortical measurements
-of non-native speech perception, as follows.
-
-The misperception G2P can be decomposed into two separate transducers,
+of non-native speech perception. In this approach, the misperception G2P
+is decomposed into two separate transducers,
 a misperception transducer $\rho(\psi|\phi)$, and an
 annotation-language G2P $\rho(\lambda|\psi)$:
 \begin{equation}
@@ -20,42 +20,64 @@ is an inverted G2P in the annotation language, e.g., trained on the
 CMU dictionary of American English pronunciations~\cite{Lenzo1995}.
 $\rho(\psi|\phi)$ is the mismatch transducer, specifying the
 probability that a phone string $\phi$ in the utterance language will
-be mis-heard as the annotation-language phone string $\psi$.
+be mis-heard as the annotation-language phone string $\psi$. 
 
-Distinctive features were proposed to characterize the perceptual and
-phonological natural classes of phonemes~\cite{Jakobson52}, therefore
-the distance between the distinctive feature representations of two
-phonemes is an indirect predictor of their confusion probability.  Let
-$f_k(\phi)$ be the $k^{\textrm{th}}$ feature of phoneme $\phi$, and
-let $\delta(\cdot)\in\left\{0,1\right\}$ be the unit indicator
-function.  The assumption that every distinctive feature shared by
-phonemes $\phi$ and $\psi$ independently increases their confusion
+In principle, the mismatch transducer could be computed empirically from
+a phoneme confusion matrix, if experimental data on phoneme confusions
+were available for all phones in the target language, and those data
+were based on responses from listeners with the same language background
+as the crowd worker transcribers. These goals are hard to meet. 
+An alternative is to use distinctive feature representations
+(originally proposed to characterize the perceptual and phonological
+natural classes of phonemes~\cite{Jakobson52}) to predict misperceptions
+based on differences between the distinctive feature values of 
+transcription- and target-language phones. Given the assumption that 
+every distinctive feature shared by phonemes $\phi$ and $\psi$ 
+independently increases their confusion probability, their confusion 
 probability can be expressed as
+%\begin{equation}
+%  \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
+%  w_k\delta\left(f_k(\psi)\ne f_k(\phi)\right)\right)
+%  \label{eq:dfdist}
+%\end{equation}
+%where $f_k(\phi)$ is the $k^{\textrm{th}}$ feature of phoneme $\phi$,
+%and $\delta(\cdot)\in\left\{0,1\right\}$ is the unit indicator
+%function. 
 \begin{equation}
   \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
-  w_k\delta\left(f_k(\psi)\ne f_k(\phi)\right)\right)
+  w_k\right)
   \label{eq:dfdist}
 \end{equation}
-The weights $w_k$ probably depend on the listener, and on the
-identities of both speaker language and listener language, but data to
-train such a rich model do not exist; a reasonable approximate model
-can be learned by assuming that $w_k$ depend only on the language of
-the listener.
+where $w_k(\phi)$ is the contribution of the $k^{\textrm{th}}$ feature in the 
+misperception of the of phoneme $\phi$ as phoneme $\psi$. If a feature is 
+perceived similarly across the two languages its contribution would be 
+lower when when the two phonemes share the same value of that 
+feature. The assumption of independence is a simplifying assumption,
+given that many distinctive features have overlapping acoustic
+correlates. For example, the frequencies of the {\em two} lowest
+resonances of the vocal tract (the primary cues for vowel identity) are
+determined by articulatory gestures of the lips, jaw and tongue that are
+commonly represented by {\em three or more} distinctive features
+(e.g., height, backness, rounding, and advanced tongue root). Moreover,
+the weights $w_k$ will probably also depend on properties of the speaker
+and listener (language, dialect, and idiolect), but data to train such a
+rich model do not exist.
 
-Distinctive features were defined according to the PHOIBLE inventory.
-The feature weights, $w_k$, were set differently in different
-experiments.  In some experiments, they were set to be uniform.
-Better accuracy was obtained, however, by setting them on the basis of
-perceptual similarity as measured using EEG.
-
-Denote as $y(\psi)$ the set of EEG signals recorded when a listener
+However, a reasonable approximate model can be learned by assuming that
+$w_k$ depend only on information about the listener, which can be
+incorporated via measurements of electrocortical activity. In particular,
+the weights $w_k$ of the distinctive features can be set based on similarity
+of electrocortical responses (measured using EEG) as determined by a
+classifier trained on distinctive feature representations and
+electrocortical responses to the listener's native language phones. Thus,
+given a set of EEG response signals $y(\psi)$ recorded when a listener
 hears audio corresponding to phoneme $\psi$ in the annotation
-language, and suppose that $g_k(y(\psi))$ is the output of a binary
-classifier of EEG signals trained to label the $k^{\textrm{th}}$
-distinctive feature of phoneme $\psi$, as in~\cite{Liberto15}.  Then
-the weights in Eq.~\ref{eq:dfdist} can be estimated as
+language, and supposing that $g_k(y(\psi))$ is the output of a binary
+classifier trained on EEG responses to phones in his/her native language 
+to detect the $k^{\textrm{th}}$ distinctive feature of phoneme $\psi$, 
+as in~\cite{Liberto15}, then the contributions in Eq.~\ref{eq:dfdist} can be 
+estimated as
 \begin{equation}
-  w_k = -\ln\Pr\left\{g_k(y(\psi))\ne f_k(\psi)\right\}
+  w_k = -\ln\Pr\left\{g_k(y(\psi))= f_k(\psi)\right\}
   \label{eq:eegdist}
 \end{equation}
-

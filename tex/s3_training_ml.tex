@@ -7,7 +7,7 @@ between these distributions is~\cite{Dempster77}:
 \begin{align}
   H\left(\theta\Vert\theta'\right) &=
   \sum_{s,\phi} \pi(s,\phi|x,\theta)
-  \ln \pi(s,\phi|x,\theta)\\
+  \ln \pi(s,\phi|x,\theta')\\
   &=   \sum_{s,\phi} \pi(s,\phi|x,\theta)
   \left(\ln \pi(s,\phi,x|\theta')-\ln \pi(x|\theta')\right)\\
   &=  Q\left(\theta,\theta'\right)-{\mathcal L}\left(\theta'\right)
@@ -41,6 +41,8 @@ ${\mathcal L}(\theta)$.  For GMM-HMMs, the quality function
 $Q\left(\theta,\theta'\right)$ is convex and can be analytically
 maximized; for DNN-HMMs it is non-convex, but can be maximized using
 gradient ascent.
+%% above paragraph is the first appearance of "DNN", which has not yet
+%% been defined (though "NN" has).
 
 The probability $\pi(x,s,\phi|\theta)$ is computed by composing the
 following three weighted FSTs:
@@ -81,6 +83,8 @@ pushing the composed FST, then finding the total cost of the path
 through
 $\textrm{push}\left(\mathbf{AM}\circ\mathbf{HC}\circ\mathbf{PT}\right)$.
 
+%% single-sentence paragraph (consider merging into above or below
+%% paragraphs)
 The parameter vector $\theta$ includes the HMM transition
 probabilities, $a_{ij}=\pi(s_t^\ell =j|s_{t-1}^\ell =i,\phi,\theta)$,
 and the parameters of the acoustic model
