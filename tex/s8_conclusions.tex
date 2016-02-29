@@ -4,7 +4,14 @@
 
 Transcriptions from Mismatched Crowdsourcing are very noisy.
 Nevertheless, ASR adapted using Probabilistic Transcriptions beats a
-multilingual ASR.
+multilingual ASR.  Adaptation using PTs consistently provides
+substantial PER improvements over the multilingual GMM-HMM baselines
+for every language evaluated, which demonstrates that the PTs of
+target language can be effectively used to adapt a multilingual ASR
+system to the unseen target language, by exploiting the model-based
+MAP estimation approach. Also, we find PT adaptation also consistently
+outperforms the semi-supervised baselines, showing that adaptation
+with PTs posts more efficacy than the model self-training alone.
 
 Errors in mismatched crowdsourcing are reduced using phonotactic
 language models, even if those must come from text.

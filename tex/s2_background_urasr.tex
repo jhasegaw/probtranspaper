@@ -75,10 +75,16 @@ Afrikaans by using bottleneck features in an SGMM~\cite{Imseng2014}.
 
 %% Self-training is one of the three methods highlighted in the 
 %% introduction. Doesn't it deserve its own sub-section?
+% MH: I think no, because it's been developed by people other than us.
+%  I could see a subsection reviewing all of the variety of self-training 
+%  methods, except that we are only testing one of the many methods
+%  available.  An extensive review would cause reviewers to ask why
+%  we only tested one method, to which the answer is ``it's not
+%  interesting to re-implement lots and lots of other people's techniques.''
 Self-training is a class of semi-supervised learning techniques in
 which ASR is first trained on labeled corpora in other languages, then
 used to label data in the target language.  Self-labeled data in the
-target language is then used to train or adapt the
+target language are then used to train or adapt the
 ASR~\cite{Loof2009,Cetin2008}.  Self-training is most useful when the
 in-language training data are first filtered, to exclude frames with
 confidence below a threshold.  The posterior probability computed from
@@ -102,7 +108,7 @@ Standard Arabic was achieved by using phoneme-based pronunciations for
 the most frequent 500 words, and grapheme-based pronunciations for all
 less frequent words~\cite{Elmahdy2012}.  In Amharic, optimal WER was
 achieved using a morpheme-based language model, combined with a hybrid
-acoustic model space including both triphones and context-dependent
+acoustic model set including both triphones and context-dependent
 sylabic units~\cite{Tachbelie2014}.  In Hindi, optimal WER was
 achieved using a one-to-one character-based grapheme-to-phoneme (G2P)
 transducer (essentially a grapheme-based acoustic model), modified by

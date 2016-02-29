@@ -2,24 +2,17 @@
 \section{Experimental Methods}
 \label{sec:methods}
 
-Our goal is to train a phone recognition system for a given target language in which no native transcriptions are available. We assume that we have access to unspoken texts and to untranscribed audio in the target language, but not to transcribed audio.
-% Eliminating the itemize here only to save space -- MH, 9/24/2015
-%\begin{itemize}
-%\item
-Baseline multilingual systems are trained using native transcriptions from several different languages (not including the target language). Section~\ref{sec:mlbaseline} details multilingual GMM-HMM and DNN-based ASR systems with language-specific grammar models and Section~\ref{sec:selftraining} describes a semi-supervised baseline that uses unlabeled data from the target language.
-%\item
-Next, we adapt the parameters of the acoustic model of the above system using only probabilistic phone transcriptions in the target language derived from mismatched transcriptions. The construction of probabilistic phone transcriptions is described in Section~\ref{sec:MC} and the acoustic model adaptation is detailed in Section~\ref{sec:adaptation}.
-%\end{itemize}
-%% comments: the reference to the self-training section will need to 
-%% change here, if (as I recommend) the *results* part of the
-%% self-training section move into a new subsection within section 5 or 6.
-%%
-%% More generally, the cross-references in this section resolve to very
-%% disparate parts of the manuscript (5.5, 4.1, 4.2, 3.3). I was 
-%% expecting it to introduce the upcoming subsections within section 5.
-%% I think this is a symptom of an overall lack of separation between
-%% descriptions of the system, descriptions of the experiments run on
-%% the system, and descriptions of the results of those experiments.
-%% I've tried to leave some breadcrumbs in places where this was
-%% especially evident to me, but I think MH is probably in the best
-%% position to do the kind of heavy lifting required for such a re-org.   
+Our goal is to train a phone recognition system for a given target
+language in which no native transcriptions are available. We assume
+that we have access to unspoken texts and to untranscribed audio in
+the target language, but not to transcribed audio
+(Sec.~\ref{sec:data}).  Mismatched crowdsourcing was interpreted using
+a multilingual misperception G2P (Sec.~\ref{sec:methodsmc}), or using
+a language-specific misperception G2P estimated using EEG
+(Sec.~\ref{sec:methods_eeg}).  Baseline multilingual systems are
+trained using native transcriptions from several different languages
+not including the target language (Section~\ref{sec:mlbaseline}).
+Finally, parameters of the acoustic model are adapted using PTs in the
+target language, derived from either self-training or from mismatched
+transcriptions (Sec.~\ref{sec:ptadapt}).
+

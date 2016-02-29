@@ -19,7 +19,7 @@ that completely rules out poor transcriptions, setting
 $\pi(\phi^p,s,x|\theta^*)=0$; but in this case
 $Q(\theta,\theta^*)=-\infty$, so the EM algorithm can never find a
 parameter vector $\theta^*$ that sets to zero the probability of a
-poor transcriptions.
+poor transcription.
 
 Deterministic transcription does not have this problem, because the
 transcription specifies the phone sequence.  With probabilistic
@@ -41,7 +41,7 @@ R(\theta,\theta')-\mathcal{L}(\theta)$, where
 \end{align}
 Given an initial parameter vector $\theta$, therefore, it is possible
 to find a new parameter vector $\theta'$ with higher likelihood by
-computing its maximum-likelihood state sequence and phoneme sequence
+computing its maximum-likelihood senone sequence and phoneme sequence
 $s^*(\theta),\phi^*(\theta)$, by maximizing $\theta'$ with respect to
 $s^*(\theta)$ and $\phi^*(\theta)$, and by then replacing $\theta$
 with $\theta'$ only if $R(\theta,\theta')$ is greater than ${\mathcal

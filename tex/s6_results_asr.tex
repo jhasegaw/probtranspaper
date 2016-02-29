@@ -6,41 +6,42 @@
 \centering
 \begin{tabular}{| c || c | c | c | c | c | c | c |}
 \hline
-Language &  Multilingual & Semi-supervised & \multicolumn{3}{ |c| }{Mult-L + PT adaptation}  \\
+Language &  Multilingual & Self-training & \multicolumn{3}{ |c| }{Mult-L + PT adaptation}  \\
 \cline{4-6}
-Code & ({\sc Mult-L}) & ({\sc SS}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\
+Code & ({\sc Mult-L}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\
 \cline{4-6}
  &&&& \% over {\sc Mult-L} & \% over {\sc SS}\\
 \hline
-CA & 68.40 (68.35) & 63.79 (62.46) &  \textbf{57.20 (56.57)} &  16.4 (17.1) & 10.3 (9.2) \\
-HG & 68.62 (66.90) & 63.53 (63.50) &   \textbf{56.98 (57.26)} & 16.9 (14.3) & 10.2 (9.9) \\
-MD & 71.30 (68.66) & 64.90 (64.00) &   \textbf{58.21 (57.85)} &  18.4 (15.7) & 10.3 (9.7) \\
-SW & 63.04 (64.73) & 58.76 (59.81) &   \textbf{44.31 (48.88)} & 29.6 (24.6) & 24.7 (18.4) \\
+yue & 68.40 (68.35) & 63.79 (62.46) &  \textbf{57.20 (56.57)} &  16.4 (17.1) & 10.3 (9.2) \\
+hun & 68.62 (66.90) & 63.53 (63.50) &   \textbf{56.98 (57.26)} & 16.9 (14.3) & 10.2 (9.9) \\
+cmn & 71.30 (68.66) & 64.90 (64.00) &   \textbf{58.21 (57.85)} &  18.4 (15.7) & 10.3 (9.7) \\
+swh & 63.04 (64.73) & 58.76 (59.81) &   \textbf{44.31 (48.88)} & 29.6 (24.6) & 24.7 (18.4) \\
 \hline
 \end{tabular}
 \caption{\label{tab:ptresult} PERs on the evaluation and development sets (latter within parentheses) before and after adaptation with PTs.}
 \end{table*}
 
-As can be seen from Table~\ref{tbl:results}, the multilingual baseline
-systems appear not to generalize well to an unseen target
-language. This section will detail how we improve the generalization
-capability of these multilingual systems to an unseen target language
-using mismatched probabilistic transcriptions (described in
-Section~\ref{sec:MC}).
+This section demonstrates that PT adaptation improves the
+generalization capability of multilingual ASR to an unseen target
+language.  Adaptation to ASR-derived PTs (self-training) significantly
+reduces PER, as has been previously
+reported~\cite{vesely2013-semi}. PTs derived from human mismatched
+crowdsourcing provide significant further PER reduction.
 
 Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
 evaluation (and development) sets for four different languages. {\sc
   Mult-L} corresponds to the multilingual GMM-HMM baseline error rates
-reproduced from Table~\ref{tbl:results} and {\sc SS} refers to the
-DNN-HMM multilingual baselines adapted with untranscribed audio in the
-target language. We observe a consistent drop in error rates moving
-from {\sc Mult-L} to {\sc SS}.
+reproduced from Table~\ref{tbl:results}.
+
+{\sc ST} refers to the NN-HMM multilingual baselines adapted with
+automatically generated PTs (ASR self-training). We observe a
+consistent drop in error rates moving from {\sc Mult-L} to {\sc ST}.
 
 {\sc PT-adapt} corresponds to PERs from the multilingual GMM-HMM
 systems adapted to mismatched transcriptions from the target
 language. We observe substantial PER improvements using {\sc PT-adapt}
 over {\sc Mult-L} across all four languages. We also find that PT
-adaptation consistently outperforms the {\sc SS} systems for all four
+adaptation consistently outperforms the {\sc ST} systems for all four
 languages. (The relative reductions in PER compared to both baselines
 are listed in the last two columns.) This suggests that adaptation
 with PTs is providing more information than that obtained by model
@@ -53,15 +54,14 @@ alphabet, the PTs derived from them may more closely resemble the
 native Swahili transcriptions (from which the phonetic transcriptions
 are derived).
 
-As shown in Table~\ref{tab:ptresult}, adaptation using PTs
-consistently provides substantial PER improvements over the
-multilingual GMM-HMM baselines for every language evaluated, which
-demonstrates that the PTs of target language can be effectively used
-to adapt a multilingual ASR system to the unseen target language, by
-exploiting the model-based MAP estimation approach. Also, we find PT
-adaptation also consistently outperforms the semi-supervised
-baselines, showing that adaptation with PTs posts more efficacy than
-the model self-training alone.
+Table~\ref{tab:nnpt} shows PERs of multilingula NN-HMM systems,
+both with and without PT adaptation, as compared to corresponding
+GMM-HMM systems.  As shown, an NN-HMM applied to a language not seen
+during training outperforms a GMM-HMM applied in the same way.
+Adaptation using mismatched crowdsourcing significantly improves both
+GMM and NN systems, but using the architecture described in this
+paper, does not yet allow NN systems to achieve error rates lower than
+those of the corresponding GMMs.
 
 ((INSERT A TABLE HERE INCLUDING DNN RESULTS))
 

@@ -2,7 +2,7 @@
 \label{sec:bgmc}
 
 In~\cite{JHJ15a}, a methodology was proposed that bypasses the need
-for native language transcription: mismatched crowdsourcing gives target
+for native language transcription: mismatched crowdsourcing sends target
 language speech to crowd-worker transcribers who have no
 knowledge of the target language, then uses explicit mathematical
 models of second language phonetic perception to recover an equivalent
@@ -56,35 +56,36 @@ model, and an inverted grapheme-to-phoneme (G2P) transducer.  The
 pronunciation model is an FST representing processes that distort the
 canonical phoneme string during speech production, including processes
 of reduction and coarticulation.  The misperception model represents
-the mapping between the uttered phone string (in symbols matching the
-phone set of the spoken language) and the perceived phone string (in
+the mapping of the uttered phone string (in symbols matching the
+phone set of the spoken language) to the perceived phone string (in
 symbols matching the phone set of the annotation language).  Finally,
 the transcriber maps heard phones to nonsense words in the annotation
 language; the mapping from phones to orthography is an inverted G2P.
 
-Preliminary experiments in mismatched crowdsourcing were carried out
-in~\cite{JHJ15a} using Hindi speech excerpts extracted from Special
-Broadcasting Service (SBS, Australia) radio podcasts~\cite{SBS}.
-Approximately one hour of speech was extracted from the podcasts
-(about 10000 word tokens in total) and phonetically transcribed by a
-Hindi speaker. The data were then segmented into very short speech
-clips (1 to 2 seconds long). The crowd workers were asked to listen to
-these short clips and provide English text, in the form of nonsense
-syllables, that most closely matched what they heard. The English text
-($\lambda$) was aligned with the Hindi phone transcripts ($\phi$)
-using a learned transducer, $\rho(\lambda|\phi)$, called a
+Preliminary experiments in mismatched crowdsourcing were carried
+out\cite{JHJ15a} using Hindi speech excerpts extracted from
+podcasts~\cite{SBS}.  Approximately one hour of speech was extracted
+from the podcasts (about 10000 word tokens in total) and phonetically
+transcribed by a Hindi speaker. The data were then segmented into very
+short speech clips (1 to 2 seconds long). The crowd workers were asked
+to listen to these short clips and provide English text, in the form
+of nonsense syllables, that most closely matched what they heard. The
+English text ($\lambda$) was aligned with the Hindi phone transcripts
+($\phi$) using a learned transducer, $\rho(\lambda|\phi)$, called a
 misperception G2P because it replaces both the misperception and G2P
 transducers from Fig.~\ref{fig:h2e_eg2}.  Fig.~\ref{fig:channelfst}
 shows a schematic diagram of the misperception G2P, with learned
 Levenshtein distances. This FST probabilistically maps each Hindi
 phone to either a single English letter or a pair of English
 letters. The FST substitution costs, deletion costs and insertion
-costs are learned to maximize $\rho(\lambda|\phi)$ using the expectation
-maximization algorithm (EM)~\cite{Dempster77}.
-
+costs are learned to maximize $\rho(\lambda|\phi)$ using the
+expectation maximization algorithm (EM)~\cite{Dempster77}.
 \begin{figure}[b!]
 \centering
 \includegraphics[width=\linewidth]{../figs/mismatchfst.png}
-\caption{Mismatch FST model of Hindi transcribed as English.\label{fig:channelfst}}
+\caption{Mismatch FST model of $\rho(\lambda|\phi)$, the probability
+  of English transcription $\lambda$ given Hindi phone sequence
+  $\phi$.  Figure modified slightly
+  from~\cite{JHJ15a}.\label{fig:channelfst}}
 \end{figure}
 

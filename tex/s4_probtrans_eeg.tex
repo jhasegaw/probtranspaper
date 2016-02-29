@@ -11,7 +11,7 @@ is decomposed into two separate transducers,
 a misperception transducer $\rho(\psi|\phi)$, and an
 annotation-language G2P $\rho(\lambda|\psi)$:
 \begin{equation}
-  \Pr(\lambda|\psi)=\sum_{\psi}\Pr(\lambda|\psi)\Pr(\psi|\phi)
+  \rho(\lambda|\psi)=\sum_{\psi}\rho(\lambda|\psi)\rho(\psi|\phi)
 \end{equation}
 where $\phi$ is a phone string in the utterance language, $\psi$ is a
 phone string in the annotation language, and $\lambda$ is an
@@ -23,7 +23,7 @@ probability that a phone string $\phi$ in the utterance language will
 be mis-heard as the annotation-language phone string $\psi$. 
 
 In principle, the mismatch transducer could be computed empirically from
-a phoneme confusion matrix, if experimental data on phoneme confusions
+a phone confusion matrix, if experimental data on phone confusions
 were available for all phones in the target language, and those data
 were based on responses from listeners with the same language background
 as the crowd worker transcribers. These goals are hard to meet. 
@@ -32,7 +32,7 @@ An alternative is to use distinctive feature representations
 natural classes of phonemes~\cite{Jakobson52}) to predict misperceptions
 based on differences between the distinctive feature values of 
 transcription- and target-language phones. Given the assumption that 
-every distinctive feature shared by phonemes $\phi$ and $\psi$ 
+every distinctive feature shared by phones $\phi$ and $\psi$ 
 independently increases their confusion probability, their confusion 
 probability can be expressed as
 %\begin{equation}
@@ -49,9 +49,9 @@ probability can be expressed as
   \label{eq:dfdist}
 \end{equation}
 where $w_k(\phi)$ is the contribution of the $k^{\textrm{th}}$ feature in the 
-misperception of the of phoneme $\phi$ as phoneme $\psi$. If a feature is 
+misperception of the of phone $\phi$ as phone $\psi$. If a feature is 
 perceived similarly across the two languages its contribution would be 
-lower when when the two phonemes share the same value of that 
+lower when when the two phones share the same value of that 
 feature. The assumption of independence is a simplifying assumption,
 given that many distinctive features have overlapping acoustic
 correlates. For example, the frequencies of the {\em two} lowest
@@ -63,20 +63,20 @@ the weights $w_k$ will probably also depend on properties of the speaker
 and listener (language, dialect, and idiolect), but data to train such a
 rich model do not exist.
 
-However, a reasonable approximate model can be learned by assuming that
-$w_k$ depend only on information about the listener, which can be
-incorporated via measurements of electrocortical activity. In particular,
-the weights $w_k$ of the distinctive features can be set based on similarity
-of electrocortical responses (measured using EEG) as determined by a
-classifier trained on distinctive feature representations and
-electrocortical responses to the listener's native language phones. Thus,
-given a set of EEG response signals $y(\psi)$ recorded when a listener
-hears audio corresponding to phoneme $\psi$ in the annotation
-language, and supposing that $g_k(y(\psi))$ is the output of a binary
-classifier trained on EEG responses to phones in his/her native language 
-to detect the $k^{\textrm{th}}$ distinctive feature of phoneme $\psi$, 
-as in~\cite{Liberto15}, then the contributions in Eq.~\ref{eq:dfdist} can be 
-estimated as
+However, a reasonable approximate model can be learned by assuming
+that $w_k$ depend only on information about the listener, which can be
+incorporated via measurements of electrocortical activity. In
+particular, the weights $w_k$ of the distinctive features can be set
+based on similarity of electrocortical responses (measured using EEG)
+as determined by a classifier trained on distinctive feature
+representations and electrocortical responses to the listener's native
+language phones. Thus, given a set of EEG response signals $y(\psi)$
+recorded when a listener hears audio corresponding to phone $\psi$ in
+the annotation language, and supposing that $g_k(y(\psi))$ is the
+output of a binary classifier trained on EEG responses to phones in
+his/her native language to detect the $k^{\textrm{th}}$ distinctive
+feature of phone $\psi$\cite{Liberto15}, then the contributions in
+Eq.~(\ref{eq:dfdist}) can be estimated as
 \begin{equation}
   w_k = -\ln\Pr\left\{g_k(y(\psi))= f_k(\psi)\right\}
   \label{eq:eegdist}

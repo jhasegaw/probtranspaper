@@ -19,4 +19,43 @@ design specific neuroscience experiments that leverage human abilities
 and provide information that can be directly integrated into the system
 to solve an engineering problem.
 
-((THIS WOULD PROBABLY BE A GOOD PLACE TO INTRODUCE PROBABILISTIC PHONE ERROR RATES FOR LANGUAGES WITH NO TEST DATA!!))
+This paper has tentatively defined an ``under-resourced language'' to
+be one that lacks transcribed speech data.  Other authors have
+proposed that if a language lacks transcribed speech, ASR can be
+initialized in that language by adapting a multilingual baseline
+trained on other languages.  Other authors have proposed, and
+Table~\ref{tab:ptresult} confirms, that significant error reductions
+can be achieved using self-training: by automatically labeling speech
+in the target language, and adding the self-labeled data to the
+training set.  Tables~\ref{tab:ptresult} and~\ref{tab:nnpt} show that
+further error rate reductions can be achieved using mismatched
+crowdsourcing: by asking non-speakers of the target language to write
+down what they hear, and by interpreting their nonsense orthography as
+information about the phonetic content of the utterances.  The PER of
+mismatched crowdsourcing (Table~\ref{tab:LPER}) is almost as high as
+the PER of cross-language ASR (Table~\ref{tbl:results}), but the
+information provided by mismatched crowdsourcing is superior to that
+provided by self-training in the sense that it trains a better ASR.
+
+In a sense, though, all of the results presented in this article, and
+all results presented in every other article published on the subject
+of under-resourced ASR, are artificial and disingenuous: ASR is
+trained without deterministic transcripts, but is then tested by
+comparing its output to a deterministic transcript.  In order to test
+ASR in a language that truly lacks deterministic transcripts, it is
+necessary to define an error metric that requires only PTs.  ASR
+should be trained using the PTs in a training set (in this article, 40
+minutes of speech per language), tuned using the PTs in a development
+set (10 minutes per language), and tested using the PTs in a test set
+(10 minutes per language).  The metric should be validated on
+languages that have deterministic transcripts, by showing that the
+difference between the true phone error rates of ASR systems $j$ and
+$k$ ($\mbox{PER}_j-\mbox{PER}_k$) is correlated with the difference
+between their probabilistic phone error rates
+($\mbox{PPER}_j-\mbox{PPER}_k$).  Once this correlation has been
+established for languages without deterministic transcripts, it may be
+possible to use the same PPER metric to select the best-performing ASR
+for a language that truly lacks deterministically transcribed speech.
+
+(NOW THE PPER ALGORITHM AND PRELIMINARY RESULTS GO HERE)
+

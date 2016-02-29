@@ -3,19 +3,19 @@
 Consider two observation-conditional sequence distributions
 $\pi(s,\phi|x,\theta)$ and $\pi(s,\phi|x,\theta')$, with parameter
 vectors $\theta$ and $\theta'$ respectively.  The cross-entropy
-between these distributions is~\cite{Dempster77}:
+between these distributions is:
 \begin{align}
   H\left(\theta\Vert\theta'\right) &=
-  \sum_{s,\phi} \pi(s,\phi|x,\theta)
+  -\sum_{s,\phi} \pi(s,\phi|x,\theta)
   \ln \pi(s,\phi|x,\theta')\\
   &=   \sum_{s,\phi} \pi(s,\phi|x,\theta)
-  \left(\ln \pi(s,\phi,x|\theta')-\ln \pi(x|\theta')\right)\\
-  &=  Q\left(\theta,\theta'\right)-{\mathcal L}\left(\theta'\right)
+  \left(\ln \pi(x|\theta')-\ln \pi(s,\phi,x|\theta')\right)\\
+  &=  {\mathcal L}\left(\theta'\right)-Q\left(\theta,\theta'\right)
   \label{eq:crossentropy}
 \end{align}
 where the data log likelihood, ${\mathcal L}\left(\theta'\right)$, and
 the expectation maximization (EM) quality function,
-$Q\left(\theta,\theta'\right)$, are defined by
+$Q\left(\theta,\theta'\right)$~\cite{Dempster77}, are defined by
 \begin{align}
   {\mathcal L}\left(\theta'\right) &= \ln \pi(x|\theta')
   \label{eq:loglikelihood}\\
@@ -47,26 +47,27 @@ gradient ascent.
 The probability $\pi(x,s,\phi|\theta)$ is computed by composing the
 following three weighted FSTs:
 \begin{align}
-  \mathbf{PT}&:\phi^\ell\rightarrow\phi^\ell/ \rho(\phi^\ell)\\
-  \mathbf{HC}&:\phi^\ell\rightarrow s^\ell/ \pi(s^\ell|\pi^\ell,\theta)\\
-  \mathbf{AM}&:s^\ell\rightarrow s^\ell/ \pi(x^\ell|s^\ell,\phi^\ell,\theta)
+  \mathbf{AM}&:s^\ell\rightarrow s^\ell/ \pi(x^\ell|s^\ell,\phi^\ell,\theta)\\
+  \mathbf{HC}&:s^\ell\rightarrow \phi^\ell/ \pi(s^\ell|\pi^\ell,\theta)\\
+  \mathbf{PT}&:\phi^\ell\rightarrow\phi^\ell/ \rho(\phi^\ell)
 \end{align}
 where the notation has the following meaning.  The probabilistic
 transcription, $\mathbf{PT}$, is an FST that maps any phone string
-$\phi^\ell\in\mathbb{\Phi}^*$ to itself.  This mapping is
+$\phi^\ell\in\mathbb{V}_\phi^*$ to itself.  This mapping is
 deterministic and reflexive, but comes with a path cost determined by
 the transcription probability $\rho(\phi^\ell)$, as exemplified in
 Fig.~\ref{fig:pt}.  The HMM-expansion transducer, $\mathbf{HC}$, maps
-any phone sequence $\phi^\ell$ to a state sequence $s^\ell$.  This FST
-is the composition of the $\mathbf{H}$ and $\mathbf{C}$ transducers
-defined by~\cite{Mohri2002}.  This mapping is non-deterministic, and
-the path cost is determined by the HMM transition weights distribution
-$a_{ij}=\pi(s_t^\ell =j|s_{t-1}^\ell =i,\phi^\ell,\theta)$:
+any senone sequence $s^\ell$ to a phone sequence $\phi^\ell$.  This
+FST is the composition of the $\mathbf{H}$ and $\mathbf{C}$
+transducers defined by Mohri, Pereira and Riley~\cite{Mohri2002}.
+This mapping is non-deterministic, and the path cost is determined by
+the HMM transition weights distribution $a_{ij}=\pi(s_t^\ell
+=j|s_{t-1}^\ell =i,\phi^\ell,\theta)$:
 \begin{equation}
   \pi(s^\ell|\phi,\theta)=\prod_{\ell=1}^L\prod_{t=1}^T
   a_{s_{t-1}^\ell s_t^\ell}
 \end{equation}
-The acoustic modeling transducer $\mathbf{AM}$ maps any state sequence
+The acoustic modeling transducer $\mathbf{AM}$ maps any senone sequence
 to itself.  This mapping is deterministic and reflexive, but comes
 with a path cost determined by the acoustic modeling probability
 \begin{equation}
@@ -83,16 +84,13 @@ pushing the composed FST, then finding the total cost of the path
 through
 $\textrm{push}\left(\mathbf{AM}\circ\mathbf{HC}\circ\mathbf{PT}\right)$.
 
-%% single-sentence paragraph (consider merging into above or below
-%% paragraphs)
 The parameter vector $\theta$ includes the HMM transition
 probabilities, $a_{ij}=\pi(s_t^\ell =j|s_{t-1}^\ell =i,\phi,\theta)$,
 and the parameters of the acoustic model
 $b_j(x_t^\ell)=\pi(x_t^\ell|s_t^\ell=j,\theta)$.
-
 Computing the analytical maximum or gradient of
 $Q\left(\theta,\theta'\right)$ requires summation over all possible
-state alignments $s\sim S$.  The summation can be performed
+state alignments $s\in\mathbb{V}_s$.  The summation can be performed
 efficiently using the Baum-Welch algorithm, but experimental tests
 reported in this paper did not do so, for reasons described in the
 next subsection.
