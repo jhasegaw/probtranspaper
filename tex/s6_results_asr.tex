@@ -10,15 +10,24 @@ Language &  Multilingual & Self-training & \multicolumn{3}{ |c| }{Mult-L + PT ad
 \cline{4-6}
 Code & ({\sc Mult-L}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\
 \cline{4-6}
- &&&& \% over {\sc Mult-L} & \% over {\sc SS}\\
+ &&&& \% over {\sc Mult-L} & \% over {\sc ST}\\
 \hline
-yue & 68.40 (68.35) & 63.79 (62.46) &  \textbf{57.20 (56.57)} &  16.4 (17.1) & 10.3 (9.2) \\
-hun & 68.62 (66.90) & 63.53 (63.50) &   \textbf{56.98 (57.26)} & 16.9 (14.3) & 10.2 (9.9) \\
-cmn & 71.30 (68.66) & 64.90 (64.00) &   \textbf{58.21 (57.85)} &  18.4 (15.7) & 10.3 (9.7) \\
-swh & 63.04 (64.73) & 58.76 (59.81) &   \textbf{44.31 (48.88)} & 29.6 (24.6) & 24.7 (18.4) \\
+\multicolumn{8}{|l|}{GMM-HMM} \\
+\hline
+yue & 68.40 (68.35) & &  \textbf{57.20 (56.57)} &  16.4 (17.1) & 10.3 (9.2) \\
+hun & 68.62 (66.90) & &   \textbf{56.98 (57.26)} & 16.9 (14.3) & 10.2 (9.9) \\
+cmn & 71.30 (68.66) & &   \textbf{58.21 (57.85)} &  18.4 (15.7) & 10.3 (9.7) \\
+swh & 63.04 (64.73) & &   \textbf{44.31 (48.88)} & 29.6 (24.6) & 24.7 (18.4) \\
+\hline\hline
+\multicolumn{8}{|l|}{DNN-HMM} \\
+\hline
+yue & 66.54 (65.28) & 63.79 (62.46) &&& \\
+hun & 66.08 (66.58) & 63.53 (63.50) &   \textbf{xxx (58.4)} & xxx (12.3) & xxx (8.0) \\
+cmn & 65.77 (64.80) & 64.90 (64.00) &   \textbf{xxx (53.1)} &  xxx (18.1) & xxx (17.0) \\
+swh & 64.75 (65.04) &  58.76 (59.81) &   \textbf{xxx (48.6)} & xxx (25.3) & xxx (18.7) \\
 \hline
 \end{tabular}
-\caption{\label{tab:ptresult} PERs on the evaluation and development sets (latter within parentheses) before and after adaptation with PTs.}
+\caption{\label{tab:ptresult} PERs on the evaluation and development sets (latter within parentheses) before and after adaptation with PTs.  Asterisk = Eval set PER significantly lower than the PER of the MULT-L baseline in the same row.}
 \end{table*}
 
 This section demonstrates that PT adaptation improves the
@@ -30,22 +39,29 @@ crowdsourcing provide significant further PER reduction.
 
 Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
 evaluation (and development) sets for four different languages. {\sc
-  Mult-L} corresponds to the multilingual GMM-HMM baseline error rates
-reproduced from Table~\ref{tbl:results}.
+  Mult-L} corresponds to the multilingual baseline error rates
+reproduced from Table~\ref{tbl:results}.  PERs of GMM-HMM systems are
+reproduced in rows 4-7; PERs of DNN-HMM systems are reproduced in rows
+9-12.
 
 {\sc ST} refers to the NN-HMM multilingual baselines adapted with
-automatically generated PTs (ASR self-training). We observe a
-consistent drop in error rates moving from {\sc Mult-L} to {\sc ST}.
+automatically generated PTs (ASR self-training). Self-training was
+only performed using DNN systems; no self-training of GMMs was
+performed.  Asterisk denotes a system whose eval-set PER is
+significantly lower than the eval-set PER of the MULT-L baseline in
+the same row ($p<0.05$, MAPSSWE test computed using the NIST {\tt
+  sc\_stats} tool~\cite{Pallet90}).  {\bf (TODO: RUN THE TESTS, INSERT
+  ASTERISKS)}
 
-{\sc PT-adapt} corresponds to PERs from the multilingual GMM-HMM
-systems adapted to mismatched transcriptions from the target
+{\sc PT-adapt} corresponds to PERs from multilingual speech
+recognition systems that have been adapted to PTs in the target
 language. We observe substantial PER improvements using {\sc PT-adapt}
 over {\sc Mult-L} across all four languages. We also find that PT
 adaptation consistently outperforms the {\sc ST} systems for all four
-languages. (The relative reductions in PER compared to both baselines
-are listed in the last two columns.) This suggests that adaptation
-with PTs is providing more information than that obtained by model
-self-training alone. It is also interesting that we obtain
+languages. The relative reductions in PER compared to both baselines
+are listed in the last two columns.  This suggests that
+adaptation with PTs is providing more information than that obtained
+by model self-training alone. It is also interesting that we obtain
 significantly larger PER improvements with PTs for Swahili compared to
 the other three languages. We conjecture this may be partly because
 Swahili's orthography is based on the Roman alphabet unlike the other
@@ -54,14 +70,15 @@ alphabet, the PTs derived from them may more closely resemble the
 native Swahili transcriptions (from which the phonetic transcriptions
 are derived).
 
-Table~\ref{tab:nnpt} shows PERs of multilingula NN-HMM systems,
-both with and without PT adaptation, as compared to corresponding
-GMM-HMM systems.  As shown, an NN-HMM applied to a language not seen
-during training outperforms a GMM-HMM applied in the same way.
-Adaptation using mismatched crowdsourcing significantly improves both
-GMM and NN systems, but using the architecture described in this
-paper, does not yet allow NN systems to achieve error rates lower than
-those of the corresponding GMMs.
-
-((INSERT A TABLE HERE INCLUDING DNN RESULTS))
+It is also useful to compare the performance of GMM-HMM systems (rows
+4-7 of Table~\ref{tab:ptresult}) with the performance of DNN-HMM
+systems (rows 9-12).  In the {\sc MULT-L} setting, an ASR trained
+using six languages is then applied to an unseen seventh language,
+without adaptation; in this setting, the DNN consistently outperforms
+the GMM (the difference is not statistically significant, because we
+have only ten minutes per language of training data, but it is
+consistent across languages).  In the {\sc PT-adapt} setting, either
+GMMs or DNNs are adapted using PTs in the target language.  PT
+adaptation improves the performance of both types of ASR, but the DNN
+does not improve as much as the GMM.
 
