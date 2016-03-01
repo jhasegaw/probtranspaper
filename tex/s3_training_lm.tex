@@ -33,7 +33,7 @@ through the latter, it is possible to generate synthetic phoneme
 sequences in the target language.
 
 \begin{figure}
-  \centerline{\includegraphics[width=4in]{../figs/sloan2.png}}
+  \centerline{\includegraphics[width=4in]{../figs/lm_results.pdf}}
   \caption{PER of the 1-best path: a measure of the quality of
     probabilistic transcriptions acquired from mismatched
     crowdsourcing.  Native transcriptions were available in six
@@ -67,7 +67,8 @@ input and output language, are added to every state in the
 phonotactic language model (left-hand side of Fig.~\ref{fig:liu1}).
 The probabilistic transcript, then, is augmented with the special
 symbol ``\#2'' as the input-language symbol for every null-output
-edge (output symbol is $\phi_m^\ell =\epsilon$).
+edge
+ (output symbol is $\phi_m^\ell =\epsilon$).
 \begin{figure}
   \centerline{\includegraphics[width=5in]{../figs/liu1.png}}
   \caption{Deletion edges in the probabilistic transcript (edges with
