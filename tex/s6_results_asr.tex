@@ -3,30 +3,23 @@
 
 \setlength{\tabcolsep}{0.37cm}
 \begin{table*}[t]
-\centering
-\begin{tabular}{| c || c | c | c | c | c | c | c |}
-\hline
-Language &  Multilingual & Self-training & \multicolumn{3}{ |c| }{Mult-L + PT adaptation}  \\
-\cline{4-6}
-Code & ({\sc Mult-L}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\
-\cline{4-6}
+\centerline{\begin{tabular}{| c || c | c | c | c | c |}\hline
+Language &  Multilingual & Self-training & \multicolumn{3}{ |c| }{Mult-L + PT adaptation}  \\\cline{4-6}
+Code & ({\sc Mult-L}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\\cline{4-6}
  &&&& \% over {\sc Mult-L} & \% over {\sc ST}\\
 \hline
-\multicolumn{8}{|l|}{GMM-HMM} \\
-\hline
+\multicolumn{6}{|l|}{GMM-HMM} \\\hline
 yue & 68.40 (68.35) & &  \textbf{57.20 (56.57)} &  16.4 (17.1) & 10.3 (9.2) \\
 hun & 68.62 (66.90) & &   \textbf{56.98 (57.26)} & 16.9 (14.3) & 10.2 (9.9) \\
 cmn & 71.30 (68.66) & &   \textbf{58.21 (57.85)} &  18.4 (15.7) & 10.3 (9.7) \\
 swh & 63.04 (64.73) & &   \textbf{44.31 (48.88)} & 29.6 (24.6) & 24.7 (18.4) \\
 \hline\hline
-\multicolumn{8}{|l|}{DNN-HMM} \\
-\hline
+\multicolumn{6}{|l|}{DNN-HMM} \\\hline
 yue & 66.54 (65.28) & 63.79 (62.46) &&& \\
 hun & 66.08 (66.58) & 63.53 (63.50) &   \textbf{xxx (58.4)} & xxx (12.3) & xxx (8.0) \\
 cmn & 65.77 (64.80) & 64.90 (64.00) &   \textbf{xxx (53.1)} &  xxx (18.1) & xxx (17.0) \\
-swh & 64.75 (65.04) &  58.76 (59.81) &   \textbf{xxx (48.6)} & xxx (25.3) & xxx (18.7) \\
-\hline
-\end{tabular}
+swh & 64.75 (65.04) &  58.76 (59.81) &   \textbf{xxx (48.6)} & xxx (25.3) & xxx (18.7) \\\hline
+\end{tabular}}
 \caption{\label{tab:ptresult} PERs on the evaluation and development sets (latter within parentheses) before and after adaptation with PTs.  Asterisk = Eval set PER significantly lower than the PER of the MULT-L baseline in the same row.}
 \end{table*}
 

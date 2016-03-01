@@ -1,23 +1,40 @@
 \section{Discussion}
 
 Models of human neural processing systems have often been used to
-inspire improvements in machine-learning systems (for example, models of
-human auditory processing based on psychoacoustic studies of the
-auditory system have inspired advances in speech enhancement). These
+inspire improvements in machine-learning systems (for a catalog 
+of such approaches and a warning, see~\cite{Bourlard96}).  These
 systems are often called neuromorphic, because the system is engineered
 to mimic the behavior of human neural systems. In contrast to that
-approach, our incorporation of EEG signals into ASR resonates with the
-idea of Human Aided Computing approach used in computer
+approach, our incorporation of EEG signals into ASR resonates with
+the Human Aided Computing approach used in computer
 vision.~\cite{Shenoy08,Wang09} Together with our EEG work presented here,
 this class of approach represents a less explored direction for design
 of machine learning systems, whereby recorded neural data (rather than
 neuro-inspired models) are used as a source of prior information to
 improve system performance. Therefore, our work here suggests that, by
-thinking about the kinds of prior information required by a (machine
-learning) system, engineers and neuroscientists can work together to
+thinking about the kinds of prior information required by a machine
+learning system, engineers and neuroscientists can work together to
 design specific neuroscience experiments that leverage human abilities
 and provide information that can be directly integrated into the system
 to solve an engineering problem.
+
+DNN-HMM outperforms the GMM-HMM in all baseline conditions, but not
+when adapted using PTs.  Preliminary analysis suggests that the DNN is
+more adversely affected than the GMM by label noise in the PTs.  A DNN
+is trained to match the senone posterior probabilities
+($\pi(s_t^\ell|x^\ell,\phi^\ell,\theta)$ computed by a first-pass
+GMM-HMM.  Many papers have demonstrated that entropy in the senone
+posteriors is detrimental to DNN training, and that the senone
+posteriors should therefore be quantized
+($\pi(s_t^\ell)\rightarrow\left\{0,1\right\}$) prior to DNN training.
+In PT adaptation, however, entropy is unavoidable, and quantizing the
+forced alignment doesn't necessarily help.  Table~\ref{tab:LPER}
+showed that the 1-best path through the PT is only correct for 29-49\%
+of all phones, depending on language.  There is good reason for this:
+the transcribers don't speak the target language, so they find some of
+its phone pairs to be perceptually indistinguishable!  Future work
+will seek methods that can improve the robustness of DNN training in
+the face of label noise.  
 
 This paper has tentatively defined an ``under-resourced language'' to
 be one that lacks transcribed speech data.  Other authors have
@@ -27,7 +44,7 @@ trained on other languages.  Other authors have proposed, and
 Table~\ref{tab:ptresult} confirms, that significant error reductions
 can be achieved using self-training: by automatically labeling speech
 in the target language, and adding the self-labeled data to the
-training set.  Tables~\ref{tab:ptresult} and~\ref{tab:nnpt} show that
+training set.  Table~\ref{tab:ptresult} shows that
 further error rate reductions can be achieved using mismatched
 crowdsourcing: by asking non-speakers of the target language to write
 down what they hear, and by interpreting their nonsense orthography as
@@ -43,19 +60,82 @@ of under-resourced ASR, are artificial and disingenuous: ASR is
 trained without deterministic transcripts, but is then tested by
 comparing its output to a deterministic transcript.  In order to test
 ASR in a language that truly lacks deterministic transcripts, it is
-necessary to define an error metric that requires only PTs.  ASR
-should be trained using the PTs in a training set (in this article, 40
-minutes of speech per language), tuned using the PTs in a development
-set (10 minutes per language), and tested using the PTs in a test set
-(10 minutes per language).  The metric should be validated on
-languages that have deterministic transcripts, by showing that the
-difference between the true phone error rates of ASR systems $j$ and
-$k$ ($\mbox{PER}_j-\mbox{PER}_k$) is correlated with the difference
-between their probabilistic phone error rates
-($\mbox{PPER}_j-\mbox{PPER}_k$).  Once this correlation has been
-established for languages without deterministic transcripts, it may be
-possible to use the same PPER metric to select the best-performing ASR
-for a language that truly lacks deterministically transcribed speech.
+necessary to define an error metric that requires only PTs.  For
+example, suppose we define MPER (minimum phone error rate) to be the
+string edit distance between the ASR output and the closest-matching
+string in the PT.  MPER is ill-defined: depending on how many
+different types of speech perceptual errors are considered as
+possibilities, it is possible to create a PT in which even the most
+low-probability non-native perceptual error is still listed as a
+possibility.  The best results are obtained by pruning the PT, thus if
+${\tt 1best}:\mbox{FST}\rightarrow\mbox{FST}$ is an operator computing
+the one-best path through an FST, ${\tt
+  prune}:\mbox{FST},\Re\rightarrow\mbox{FST}$ is an operator that
+prunes low-probability edges, and ${\bf E}$ is an FST computing
+string-edit distance, then a potentially useful error metric can be
+defined from PTs according to
+\begin{equation}
+  \mbox{MPER}(\beta) = \mathrm{cost}
+  \left(\mathrm{1best}
+  \left(\mathrm{1best}
+  \left({\bf ASR}\right)
+  \circ{\bf E}\circ\mathrm{prune}
+  \left({\bf PT},\beta\right)
+  \right)
+  \right)
+\end{equation}
+where the pruning operation removes, from each slot $m$, any phone
+whose negative log probability $-\ln\rho(\phi_m^\ell)$ is higher than
+the minimum-cost path by a difference greater than $\beta$:
+\begin{equation}
+-\ln\hat{\rho}_{\Phi_m^\ell}(k) = \left\{\begin{array}{ll}
+0 & \mbox{if}~\ln\max_j \left(\frac{\rho_{\Phi_m^\ell}(j)}
+    {\rho_{\Phi_m^\ell}(k)}\right) < \beta \\
+    \infty & \mbox{otherwise}
+    \end{array}\right.
+\label{eq:pper}
+\end{equation}
+Three candidate measures are shown in Table~\ref{tab:pper}.  Each
+column shows the difference between PER or MPER of two different
+systems: a multilingual ASR (column {\sc MULT-L} in
+Table~\ref{tab:ptresult}, called $\mbox{PER}_M$ or $\mbox{MPER}_M$)
+and a PT-adapted ASR (column {\sc PT-adapt} in
+Table~\ref{tab:ptresult}, called $\mbox{PER}_A$ or $\mbox{MPER}_A$).
+The second row is true PER, if known; we were unable to hire a
+Japanese transcriber, so no true PERs are available in the last column
+of the table.  Remaining rows show MPER defined as the PER between the
+ASR output and the closest-matching path through the PT phone lattice.
+$\mbox{MPER}(1000)$ performs very little pruning, and is therefore too
+small to be useful; $\mbox{MPER}(0.1)$ usually prunes away all paths
+except the best path, and is therefore too sensitive to label noise in
+the PT.  Of the measures tested, $\mbox{MPER}(1)$ seems to correlate
+best with the true differences between PERs of multilingual and
+PT-adapted systems, though of course it is not possible to measure
+significance of the correlation with only three data points.
 
-(NOW THE PPER ALGORITHM AND PRELIMINARY RESULTS GO HERE)
-
+\begin{table}
+  \centerline{\begin{tabular}{|l|cccc|}\hline
+      Error Metric & hun & cmn & swh & jap \\ \hline\hline
+      $\mbox{PER}_M$
+      & 66.90-57.26 & 68.66-57.85 & 64.73-46.88 & \\
+      $-\mbox{PER}_A$
+      & =9.64 & =10.81 & =15.85 & \\\hline
+      $\mbox{MPER}_A(0.1)$
+      &&&& \\
+      $-\mbox{MPER}_M(0.1)$
+      &&&& \\\hline
+      $\mbox{MPER}_A(1)$
+      &&&& \\
+      $-\mbox{MPER}_M(1)$
+      &&&& \\\hline
+      $\mbox{MPER}_A(1000)$
+      &&&& \\
+      $-\mbox{MPER}_M(1000)$
+      &&&& \\\hline
+  \end{tabular}}
+  \caption{PER computed using a native transcription (where
+    available), and minimum PER computed using probabilistic
+    transcriptions.}
+  \label{tab:pper}
+\end{table}
+    
