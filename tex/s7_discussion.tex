@@ -18,22 +18,22 @@ design specific neuroscience experiments that leverage human abilities
 and provide information that can be directly integrated into the system
 to solve an engineering problem.
 
-DNN-HMM outperforms the GMM-HMM in all baseline conditions, but not
-when adapted using PTs.  Preliminary analysis suggests that the DNN is
-more adversely affected than the GMM by label noise in the PTs.  A DNN
+NN-HMM outperforms the GMM-HMM in all baseline conditions, but not
+when adapted using PTs.  Preliminary analysis suggests that the NN is
+more adversely affected than the GMM by label noise in the PTs.  A NN
 is trained to match the senone posterior probabilities
 ($\pi(s_t^\ell|x^\ell,\phi^\ell,\theta)$ computed by a first-pass
 GMM-HMM.  Many papers have demonstrated that entropy in the senone
-posteriors is detrimental to DNN training, and that the senone
+posteriors is detrimental to NN training, and that the senone
 posteriors should therefore be quantized
-($\pi(s_t^\ell)\rightarrow\left\{0,1\right\}$) prior to DNN training.
+($\pi(s_t^\ell)\rightarrow\left\{0,1\right\}$) prior to NN training.
 In PT adaptation, however, entropy is unavoidable, and quantizing the
 forced alignment doesn't necessarily help.  Table~\ref{tab:LPER}
 showed that the 1-best path through the PT is only correct for 29-49\%
 of all phones, depending on language.  There is good reason for this:
 the transcribers don't speak the target language, so they find some of
 its phone pairs to be perceptually indistinguishable!  Future work
-will seek methods that can improve the robustness of DNN training in
+will seek methods that can improve the robustness of NN training in
 the face of label noise.  
 
 This paper has tentatively defined an ``under-resourced language'' to

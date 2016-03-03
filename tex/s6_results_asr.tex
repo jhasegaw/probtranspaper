@@ -14,7 +14,7 @@ hun & 68.62 (66.90) & &   \textbf{56.98 (57.26)} & 16.9 (14.3) & 10.2 (9.9) \\
 cmn & 71.30 (68.66) & &   \textbf{58.21 (57.85)} &  18.4 (15.7) & 10.3 (9.7) \\
 swh & 63.04 (64.73) & &   \textbf{44.31 (48.88)} & 29.6 (24.6) & 24.7 (18.4) \\
 \hline\hline
-\multicolumn{6}{|l|}{DNN-HMM} \\\hline
+\multicolumn{6}{|l|}{NN-HMM} \\\hline
 yue & 66.54 (65.28) & 63.79 (62.46) &&& \\
 hun & 66.08 (66.58) & 63.53 (63.50) &   \textbf{xxx (58.4)} & xxx (12.3) & xxx (8.0) \\
 cmn & 65.77 (64.80) & 64.90 (64.00) &   \textbf{xxx (53.1)} &  xxx (18.1) & xxx (17.0) \\
@@ -34,12 +34,12 @@ Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
 evaluation (and development) sets for four different languages. {\sc
   Mult-L} corresponds to the multilingual baseline error rates
 reproduced from Table~\ref{tbl:results}.  PERs of GMM-HMM systems are
-reproduced in rows 4-7; PERs of DNN-HMM systems are reproduced in rows
+reproduced in rows 4-7; PERs of NN-HMM systems are reproduced in rows
 9-12.
 
 {\sc ST} refers to the NN-HMM multilingual baselines adapted with
 automatically generated PTs (ASR self-training). Self-training was
-only performed using DNN systems; no self-training of GMMs was
+only performed using NN systems; no self-training of GMMs was
 performed.  Asterisk denotes a system whose eval-set PER is
 significantly lower than the eval-set PER of the MULT-L baseline in
 the same row ($p<0.05$, MAPSSWE test computed using the NIST {\tt
@@ -64,14 +64,14 @@ native Swahili transcriptions (from which the phonetic transcriptions
 are derived).
 
 It is also useful to compare the performance of GMM-HMM systems (rows
-4-7 of Table~\ref{tab:ptresult}) with the performance of DNN-HMM
+4-7 of Table~\ref{tab:ptresult}) with the performance of NN-HMM
 systems (rows 9-12).  In the {\sc MULT-L} setting, an ASR trained
 using six languages is then applied to an unseen seventh language,
-without adaptation; in this setting, the DNN consistently outperforms
+without adaptation; in this setting, the NN consistently outperforms
 the GMM (the difference is not statistically significant, because we
 have only ten minutes per language of training data, but it is
 consistent across languages).  In the {\sc PT-adapt} setting, either
-GMMs or DNNs are adapted using PTs in the target language.  PT
-adaptation improves the performance of both types of ASR, but the DNN
+GMMs or NNs are adapted using PTs in the target language.  PT
+adaptation improves the performance of both types of ASR, but the NN
 does not improve as much as the GMM.
 

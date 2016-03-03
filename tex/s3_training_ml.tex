@@ -38,11 +38,9 @@ Given any initial parameter vector $\theta_n$, the expectation
 maximization (EM) algorithm finds $\theta_{n+1}=\argmax
 Q(\theta_n,\theta')$, thereby maximizing the minimum increment in
 ${\mathcal L}(\theta)$.  For GMM-HMMs, the quality function
-$Q\left(\theta,\theta'\right)$ is convex and can be analytically
-maximized; for DNN-HMMs it is non-convex, but can be maximized using
-gradient ascent.
-%% above paragraph is the first appearance of "DNN", which has not yet
-%% been defined (though "NN" has).
+$Q\left(\theta,\theta'\right)$ is concave and can be analytically
+maximized; for NN-HMMs it is non-concave, but can be maximized using
+gradient ascent~\cite{Bengio92}.
 
 The probability $\pi(x,s,\phi|\theta)$ is computed by composing the
 following three weighted FSTs:
