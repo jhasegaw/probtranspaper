@@ -31,11 +31,20 @@ reported~\cite{vesely2013-semi}. PTs derived from human mismatched
 crowdsourcing provide significant further PER reduction.
 
 Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
-evaluation (and development) sets for four different languages. {\sc
-  Mult-L} corresponds to the multilingual baseline error rates
-reproduced from Table~\ref{tbl:results}.  PERs of GMM-HMM systems are
-reproduced in rows 4-7; PERs of NN-HMM systems are reproduced in rows
-9-12.
+evaluation (and development) sets for four different languages. The
+column {\sc Mult-L} lists multilingual baseline error rates.  The
+recognizer output transcripts on which these scores are based are
+identical to those reported in rows four and five of
+Table~\ref{tbl:results}, but the reported PERs are lower, for two
+reasons.  First, Table~\ref{tab:results} includes errors in the
+recognition of transcribed silences, which are not included as errors
+in Table~\ref{tab:ptresult}.  Second, Table~\ref{tab:results}
+considers the geminate phonemes \ipa{[a:,i:,u:,n:,k:,S:]} to be
+distinct from their non-geminate counterparts \ipa{[a,i,u,n,k,S]},
+whereas Table~\ref{tab:ptresult} eliminates geminate distinctions
+prior to counting recognition errors.  PERs of GMM-HMM systems are
+reproduced in rows 4-7 of Table~\ref{tab:ptresult}; PERs of NN-HMM
+systems are reproduced in rows 9-12.
 
 In Table~\ref{tab:ptresult}, the column labeled {\sc ST} lists the
 PERs of self-trained ASR systems. Self-training was only performed
