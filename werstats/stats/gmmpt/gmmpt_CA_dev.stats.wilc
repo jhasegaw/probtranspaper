@@ -1,0 +1,64 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/gmm/gmm_CA_dev.trn and trn/gmmpt/gmmpt_CA_dev.trn
+
+                                                                                                         Signed
+         Spkr                trn/gmm/gmm_CA_dev.trn      trn/gmmpt/gmmpt_CA_dev.trn  Difference   Rank    Rank
+----------------------------------------------------------------------------------------------------------------
+cantonese_140916_361032               62.25                         51.41              10.84      6.0      6.0
+cantonese_140916_361200               56.31                         37.38              18.93     14.0     14.0
+cantonese_140916_361202               61.02                         49.89              11.14      9.0      9.0
+cantonese_140917_361366               66.07                         56.40               9.66      4.0      4.0
+cantonese_140918_361554               67.91                         54.01              13.89     11.0     11.0
+cantonese_140918_361606               72.49                         61.49              11.00      7.0      7.0
+cantonese_140924_362835               65.07                         49.34              15.73     13.0     13.0
+cantonese_140925_362959               66.18                         52.21              13.97     12.0     12.0
+cantonese_140926_363228               72.09                         63.72               8.37      2.0      2.0
+cantonese_140927_363424               77.24                         66.21              11.03      8.0      8.0
+cantonese_141004_365094               70.97                         59.24              11.73     10.0     10.0
+cantonese_141005_365172               73.02                         63.81               9.21      3.0      3.0
+cantonese_141006_365326               57.33                         47.43               9.90      5.0      5.0
+cantonese_141006_365328               61.90                         56.80               5.10      1.0      1.0
+----------------------------------------------------------------------------------------------------------------
+         Avg.                         66.42                         54.95              11.47
+
+                       Sum of 14 positive ranks = 105.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -3.30, therefore the Hypothesis
+              is REJECTED in favor of the Null Hypothesis.
+
+              Further, trn/gmmpt/gmmpt_CA_dev.trn is the better System.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|--------------------------------------------------------------------------------------|
+|                            |     trn/gmm/gmm_CA_dev.trn | trn/gmmpt/gmmpt_CA_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+|     trn/gmm/gmm_CA_dev.trn |                            | trn/gmmpt/gmmpt_CA_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+| trn/gmmpt/gmmpt_CA_dev.trn |                            |                            |
+|--------------------------------------------------------------------------------------|

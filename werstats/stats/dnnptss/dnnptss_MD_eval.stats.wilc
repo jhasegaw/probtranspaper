@@ -1,0 +1,56 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnnss/dnnss_MD_eval.trn and trn/dnnpt/dnnpt_MD_eval.trn
+
+                                                                                                          Signed
+         Spkr             trn/dnnss/dnnss_MD_eval.trn    trn/dnnpt/dnnpt_MD_eval.trn  Difference   Rank    Rank
+-----------------------------------------------------------------------------------------------------------------
+mandarin_150111_384845               63.98                          55.53                8.44      2.0      2.0
+mandarin_150116_385969               64.08                          52.87               11.21      5.0      5.0
+mandarin_150116_385975               59.57                          50.00                9.57      3.0      3.0
+mandarin_150117_386197               60.08                          48.52               11.56      6.0      6.0
+mandarin_150119_386521               56.87                          47.22                9.65      4.0      4.0
+mandarin_150119_386550               59.89                          53.16                6.72      1.0      1.0
+-----------------------------------------------------------------------------------------------------------------
+         Avg.                        60.74                          51.22                9.53
+
+                        Sum of  6 positive ranks = 21.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -2.20, therefore the Hypothesis
+              is REJECTED in favor of the Null Hypothesis.
+
+              Further, trn/dnnpt/dnnpt_MD_eval.trn is the better System.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|-----------------------------------------------------------------------------------------|
+|                             | trn/dnnpt/dnnpt_MD_eval.trn | trn/dnnss/dnnss_MD_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnpt/dnnpt_MD_eval.trn |                             | trn/dnnpt/dnnpt_MD_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnss/dnnss_MD_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

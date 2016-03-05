@@ -1,0 +1,105 @@
+      SEGMENTATION REPORT FOR SYSTEMS
+              trn/dnn/dnn_HG_dev.trn and trn/dnnpt/dnnpt_HG_dev.trn
+Minimum Number of Correct Boundary words 2
+
+  Number of Segments 774,     6.450 per sentence
+  Number of Sentences 120
+
+    # Ref wrds      Err trn/dnn/dnn_HG_dev.trn   Err trn/dnnpt/dnnpt_HG_dev.trn
+---------------------------------------
+Totals 8670           4847        4238
+
+Pct err               55.9%       48.9%
+
+
+
+
+
+
+                            McNemar test results
+                            ====================
+
+                                     trn/dnnpt/dnnpt_HG_dev.trn
+
+                                  corr     incorr
+      trn/dnn/dnn_HG_dev.trn      corr     0         10
+	                 incorr    31        733
+The NULL Hypothesis:
+
+     The number unique utterance errors are equal for both systems.
+
+Alternate Hypothesis:
+
+     The number of unique utterance errors for both systems are NOT equal.
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of unique utterance errors
+            follows the binomial distribution for N fair coin tosses.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the sum of the
+        unique utterance errors for both systems being compared and
+        MIN(uue) is the minimum number of unique utterance
+        foe either system.
+
+          MIN(uue)      P(MIN(uue) | N= 41)
+          --------      -------------------
+               0                 -  
+               1                 -  
+               2                 -  
+               3                 -  
+               4                 -  
+               5                 -  
+               6                 -  
+               7                 -  
+               8                 -  
+               9                 -  
+              10                 -  
+              11                 -  
+              12                 -  
+              13                 -  
+              14                 -  
+              15                 -  
+              16                 -  
+              17                 -  
+              18                 -  
+              19               0.001
+              20               0.001
+              21               0.002
+              22               0.003
+              23               0.005
+              24               0.008
+              25               0.013
+              26               0.019
+              27               0.029
+              28               0.042  <---  Null Hypothesis rejection threshold
+              29               0.061
+              30               0.087
+              31               0.119
+              32               0.162
+              33               0.215
+              34               0.276
+
+     Decision:
+        There were MIN(uue)=10 unique utterance errors, the probability of
+        it occuring is 0.000, therefore the null hypothesis is REJECTED
+        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_HG_dev.trn is the
+        better System.
+MTCH_PR_RESULTS (systems: trn/dnn/dnn_HG_dev.trn trn/dnnpt/dnnpt_HG_dev.trn) (# segs: 774) (Seg per Sent: 6.450) (% Error: 55.91 48.88) (mean: 0.787) (std dev: 1.494) (Z Stat: 14.650) (Stat Diff: Yes)
+
+
+
+                COMPARISON MATRIX: FOR THE MATCHED PAIRS TEST
+        PECENTAGES ARE MEAN PCT ERROR/SEGMENT.  FIRST # IS LEFT SYSTEM
+                  Minimum Number of Correct Boundary words 2
+
+
+|--------------------------------------------------------------------------------------|
+|                            |     trn/dnn/dnn_HG_dev.trn | trn/dnnpt/dnnpt_HG_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+|     trn/dnn/dnn_HG_dev.trn |                            | trn/dnnpt/dnnpt_HG_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+| trn/dnnpt/dnnpt_HG_dev.trn |                            |                            |
+|--------------------------------------------------------------------------------------|

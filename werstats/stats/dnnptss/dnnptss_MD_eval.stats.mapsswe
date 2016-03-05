@@ -1,0 +1,131 @@
+      SEGMENTATION REPORT FOR SYSTEMS
+              trn/dnnpt/dnnpt_MD_eval.trn and trn/dnnss/dnnss_MD_eval.trn
+Minimum Number of Correct Boundary words 2
+
+  Number of Segments 663,     5.867 per sentence
+  Number of Sentences 113
+
+    # Ref wrds      Err trn/dnnpt/dnnpt_MD_eval.trn   Err trn/dnnss/dnnss_MD_eval.trn
+---------------------------------------
+Totals 7732           3598        4269
+
+Pct err               46.5%       55.2%
+
+
+
+
+
+
+                            McNemar test results
+                            ====================
+
+                                     trn/dnnss/dnnss_MD_eval.trn
+
+                                  corr     incorr
+      trn/dnnpt/dnnpt_MD_eval.trn      corr     0         40
+	                 incorr    29        594
+The NULL Hypothesis:
+
+     The number unique utterance errors are equal for both systems.
+
+Alternate Hypothesis:
+
+     The number of unique utterance errors for both systems are NOT equal.
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of unique utterance errors
+            follows the binomial distribution for N fair coin tosses.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the sum of the
+        unique utterance errors for both systems being compared and
+        MIN(uue) is the minimum number of unique utterance
+        foe either system.
+
+          MIN(uue)      P(MIN(uue) | N= 69)
+          --------      -------------------
+               0                 -  
+               1                 -  
+               2                 -  
+               3                 -  
+               4                 -  
+               5                 -  
+               6                 -  
+               7                 -  
+               8                 -  
+               9                 -  
+              10                 -  
+              11                 -  
+              12                 -  
+              13                 -  
+              14                 -  
+              15                 -  
+              16                 -  
+              17                 -  
+              18                 -  
+              19                 -  
+              20                 -  
+              21                 -  
+              22                 -  
+              23                 -  
+              24                 -  
+              25                 -  
+              26                 -  
+              27                 -  
+              28                 -  
+              29                 -  
+              30                 -  
+              31                 -  
+              32                 -  
+              33                 -  
+              34                 -  
+              35                 -  
+              36                 -  
+              37                 -  
+              38                 -  
+              39                 -  
+              40                 -  
+              41               0.001
+              42               0.001
+              43               0.002
+              44               0.003
+              45               0.004
+              46               0.006
+              47               0.008
+              48               0.012
+              49               0.016
+              50               0.023
+              51               0.031
+              52               0.041  <---  Null Hypothesis rejection threshold
+              53               0.055
+              54               0.072
+              55               0.093
+              56               0.119
+              57               0.150
+              58               0.187
+              59               0.230
+              60               0.280
+
+     Decision:
+        There were MIN(uue)=29 unique utterance errors, the probability of
+        it occuring is 0.000, therefore the null hypothesis is REJECTED
+        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_MD_eval.trn is the
+        better System.
+MTCH_PR_RESULTS (systems: trn/dnnpt/dnnpt_MD_eval.trn trn/dnnss/dnnss_MD_eval.trn) (# segs: 663) (Seg per Sent: 5.867) (% Error: 46.53 55.21) (mean: -1.012) (std dev: 2.212) (Z Stat: -11.780) (Stat Diff: Yes)
+
+
+
+                COMPARISON MATRIX: FOR THE MATCHED PAIRS TEST
+        PECENTAGES ARE MEAN PCT ERROR/SEGMENT.  FIRST # IS LEFT SYSTEM
+                  Minimum Number of Correct Boundary words 2
+
+
+|-----------------------------------------------------------------------------------------|
+|                             | trn/dnnpt/dnnpt_MD_eval.trn | trn/dnnss/dnnss_MD_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnpt/dnnpt_MD_eval.trn |                             | trn/dnnpt/dnnpt_MD_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnss/dnnss_MD_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

@@ -1,0 +1,33 @@
+
+
+                            McNemar test results
+                            ====================
+
+                                     trn/gmmpt/gmmpt_CA_dev.trn
+
+                                  corr     incorr
+      trn/dnnss/dnnss_CA_dev.trn      corr     0          0
+	                 incorr     0        120
+
+
+		SUMMARY:
+		-------
+
+
+
+	The two totals for utterances missed by either test results
+	are both zero, therfore there is no significant difference
+	between the two tests!
+,--------------------------------------------------------------------------------------.
+|         COMPARISON MATRIX: McNEMAR'S TEST ON CORRECT SENTENCES FOR THE TEST:         |
+|                                                                                      |
+|                                                                                      |
+|--------------------------------------------------------------------------------------|
+|                            | trn/dnnss/dnnss_CA_dev.trn | trn/gmmpt/gmmpt_CA_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+| trn/dnnss/dnnss_CA_dev.trn |                            |        Conf=(1.000)        |
+|                            |                            |            same            |
+|----------------------------+----------------------------+----------------------------|
+| trn/gmmpt/gmmpt_CA_dev.trn |                            |                            |
+|                            |                            |                            |
+`--------------------------------------------------------------------------------------'

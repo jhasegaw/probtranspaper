@@ -1,0 +1,72 @@
+                    Sign Test Calculations Table Comparing                     
+Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnn/dnn_SW_eval.trn and trn/dnnss/dnnss_SW_eval.trn
+                  (Threshold for equal percentages +- 0.005)                   
+
+                                                                                                           Difference Sign                    
+        Spkr               trn/dnn/dnn_SW_eval.trn      trn/dnnss/dnnss_SW_eval.trn    [trn/dnn/dnn_SW_eval.trn - trn/dnnss/dnnss_SW_eval.trn]
+----------------------------------------------------------------------------------------------------------------------------------------------
+swahili_141216_380127               72.22                          67.23                                          +                           
+swahili_150107_384215               59.01                          51.53                                          +                           
+swahili_150107_384225               61.85                          54.95                                          +                           
+swahili_150116_386139               62.29                          57.59                                          +                           
+----------------------------------------------------------------------------------------------------------------------------------------------
+        Avg.                        63.84                          57.82           
+
+No. Speakers with Positive Speaker Word Error Rate (%) Differences = N(+) =  4 
+No. Speakers with Negative Speaker Word Error Rate (%) Differences = N(-) =  0 
+   No. Speakers with No Speaker Word Error Rate (%) Differences = N(0) =  0    
+
+
+The NULL Hypothesis:
+
+     The number of speakers for which the differences is positive
+     equals the number of speakers for which the differences is
+     negative.
+			 P(N(+)) = P(N(-)) = 0.50
+
+Alternate Hypothesis:
+
+     The number of speakers for which the differences is positive 
+     is NOT equal to the number of speakers for which the difference
+     is negative.
+
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of positive and negative differences
+            follows the binomial distribution for N fair coin tosses.
+
+        A2: In order to resolve the complication caused by cases where the
+            difference in Word Accuracy is zero, half of the cases will
+            be assigned to N(+) and half to N(-).  In the event of an
+            odd number of zero differences, N(-) will get one extra, this
+            reduces the probability of there being a difference between
+            the two systems.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the number of
+        speakers being compared and N(-) is the number of negative
+        differences.
+
+          MIN(N(-),N(+))      P(MIN(N(-),N(+)) | N= 4)
+          --------------      ------------------------
+            0                 0.125
+            1                 0.625
+            2                 1.375
+
+     Decision:
+        There were N(-)=0 negative differences , the probability of
+        it occuring is 0.125, therefore the null hypothesis is ACCEPTED
+        There is no statistical difference between trn/dnn/dnn_SW_eval.trn and trn/dnnss/dnnss_SW_eval.trn
+                      Comparison Matrix for the Sign Test                      
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|-----------------------------------------------------------------------------------------|
+|                             |     trn/dnn/dnn_SW_eval.trn | trn/dnnss/dnnss_SW_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+|     trn/dnn/dnn_SW_eval.trn |                             |                        same |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnss/dnnss_SW_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

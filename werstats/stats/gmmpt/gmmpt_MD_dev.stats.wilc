@@ -1,0 +1,57 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/gmm/gmm_MD_dev.trn and trn/gmmpt/gmmpt_MD_dev.trn
+
+                                                                                                        Signed
+         Spkr               trn/gmm/gmm_MD_dev.trn      trn/gmmpt/gmmpt_MD_dev.trn  Difference   Rank    Rank
+---------------------------------------------------------------------------------------------------------------
+mandarin_140917_361334               65.00                         58.89               6.11      1.0      1.0
+mandarin_140918_361524               62.05                         53.86               8.19      3.0      3.0
+mandarin_140918_361526               61.00                         54.10               6.91      2.0      2.0
+mandarin_141227_382097               62.28                         45.16              17.12      7.0      7.0
+mandarin_150103_383309               67.67                         54.61              13.07      5.0      5.0
+mandarin_150110_384707               63.06                         52.73              10.33      4.0      4.0
+mandarin_150111_384845               75.98                         62.85              13.13      6.0      6.0
+---------------------------------------------------------------------------------------------------------------
+         Avg.                        65.29                         54.60              10.69
+
+                        Sum of  7 positive ranks = 28.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -2.37, therefore the Hypothesis
+              is REJECTED in favor of the Null Hypothesis.
+
+              Further, trn/gmmpt/gmmpt_MD_dev.trn is the better System.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|--------------------------------------------------------------------------------------|
+|                            |     trn/gmm/gmm_MD_dev.trn | trn/gmmpt/gmmpt_MD_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+|     trn/gmm/gmm_MD_dev.trn |                            | trn/gmmpt/gmmpt_MD_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+| trn/gmmpt/gmmpt_MD_dev.trn |                            |                            |
+|--------------------------------------------------------------------------------------|

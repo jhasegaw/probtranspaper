@@ -1,0 +1,757 @@
+
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   trn/gmm/gmm_CA_dev.trn
+
+Speakers: 
+    0:  cantonese_140916_361032
+    1:  cantonese_140916_361200
+    2:  cantonese_140916_361202
+    3:  cantonese_140917_361366
+    4:  cantonese_140918_361554
+    5:  cantonese_140918_361606
+    6:  cantonese_140924_362835
+    7:  cantonese_140925_362959
+    8:  cantonese_140926_363228
+    9:  cantonese_140927_363424
+   10:  cantonese_141004_365094
+   11:  cantonese_141005_365172
+   12:  cantonese_141006_365326
+   13:  cantonese_141006_365328
+
+Speaker sentences   0:  cantonese_140916_361032   #utts: 4
+id: (cantonese_140916_361032-4)
+Scores: (#C #S #D #I) 23 19 27 2
+REF:  T a m TS & n G E S i h au l E D O D a m s & m * * L E d z AU H AI P EI J & N S i N W AI L E G O d Z A P G  i k G E D 8 Y D Z 8 N g a G & m B & T G o 
+HYP:  H a m S  & n * D Z i h au l & T U T a m s & m & T 8 Y d z ** * ** * ** * * * * i * * ** * M U I d * * O TS i k * * * * * P L & M g a * * m * * * * o 
+Eval: S     S      D S S          S S S S           I I S S     D  D D  D D  D D D D   D D D  D S S S   D D S S      D D D D D S S S S     D D   D D D D   
+
+id: (cantonese_140916_361032-5)
+Scores: (#C #S #D #I) 21 24 5 6
+REF:  l * E d Z AU m * H AI G o G o D O H O TS i h a F a N d 8 Y L E G O P AI B I n g e k * Y t D I n g e * * m * E TS i n 
+HYP:  l 8 Y d * &  m A J I  K o K o * T U K S  i h a S a M d * * * Z U K S A  J & n g e k S I t J & n g e D & m & T S  i n 
+Eval:   I S   D S    I S S  S   S   D S S S S        S   S   D D D S S S S S  S S         I S   S S       I I   I S S      
+
+id: (cantonese_140916_361032-6)
+Scores: (#C #S #D #I) 32 13 12 1
+REF:  * O d z au l U K G w & n D Z U n s i l i n l EI n AI L E  d z au w a l a s 8 Y J i n H i P d z o j I L a H & k D A G i K 
+HYP:  G U d z au l * * O w A n * S O n s i l i n l I  n ** G EI d z au w a l a s * * * i n S i * d z o j & T a * * k * * J i ] 
+Eval: I S          D D S   S   D S S               S    D  S S                   D D D     S   D         S S   D D   D D S   S 
+
+id: (cantonese_140916_361032-7)
+Scores: (#C #S #D #I) 30 20 23 3
+REF:  l a n G O k M o * D Z O n f & n D Z i L E TS Y n D Z OI j & T D I n g e f U n H i M D & n H AI L E K 8 Y d z au w a * j au B i T j Y L E H AI D Z o K TS 8 t * 
+HYP:  l a n * * k W o M U T U n f A n * S i * * S  I n * S O  j & * * * n g e f O n G i * * * n * ** * * T A N d z au w a P j au P i * j * * * * ** & T o * S  & t ] 
+Eval:       D D   S   I S S S     S   D S   D D S  S   D S S      D D D         S   S   D D D   D D  D D S S S            I      S   D   D D D D D  S S   D S  S   I 
+
+Speaker sentences   1:  cantonese_140916_361200   #utts: 3
+id: (cantonese_140916_361200-10)
+Scores: (#C #S #D #I) 28 20 17 1
+REF:  * m H AI h ai G U n h OI D  Z  U n j i H AI h ai o D Z au g E s 8 Y W I K L 8 Y m i n b I n TS E J i s I n s i f u G & n G E H OI W I K D Z AU 
+HYP:  N m * A  h ai K O n h ** AU TS O n j i * ** h ai o * S au g A s * * * * * & M & m i n b & n ** * S i s & n s i f u K & n * * * ** * D O L & N  
+Eval: I   D S       S S     D  S  S  S       D D         D S      S   D D D D D S S S         S   D  D S     S           S     D D D D  D S S S S S  
+
+id: (cantonese_140916_361200-11)
+Scores: (#C #S #D #I) 31 22 17 1
+REF:  G & n w ai D Z  a P D Z u n l a m T U n G E s 8 Y W I K  s o G au l a P S a P G E M & T D o j au s o B & T t U n J & T D i s 8 n d 8 Y G au G O n * 
+HYP:  L A n w ai * TS a * * T u n l a m * & n * A s * * A M EI s o K au l a * F a * * * K & * M o j au s o * P A t O n * * * G i s A n d * & K au K U n ] 
+Eval: S S        D S    D D S           D S   D S   D D S S S      S        D S   D D D S   D S            D S S   S   D D D S     S     D S S    S S   I 
+
+id: (cantonese_140916_361200-12)
+Scores: (#C #S #D #I) 36 21 14 3
+REF:  D Z I n G E s 8 Y W I K m ** U I j & T P I n f O n G u n l ei j au G ei TS i n G i n s o G au l a P s a P D & n h * * AI w u J i M TS I n d o J i m D Z U N 
+HYP:  * J & n * A s * * * * & m EI W O j & * * * n f U n K u n l ei j au P ei S  i n T i n s o K au l a * s a * B A n h A J I  w u * i N S  & n d o G i m * * S O 
+Eval: D S S   D S   D D D D S   I  S S     D D D     S   S               S    S      S         S        D     D S S     I I S      D   S S  S       S     D D S S 
+
+Speaker sentences   2:  cantonese_140916_361202   #utts: 18
+id: (cantonese_140916_361202-1)
+Scores: (#C #S #D #I) 18 18 13 1
+REF:  T i n D ai j & T s I N  l E U K J Y n G E G 8 Y m & n W AI j y n w U I A T I P TS 8 T D Z O  t u n G o * 
+HYP:  L i n G ai j * I s * AI l * * * * I n * D O J I m & n B A  j y n w * * * * * * O  J & K J AU t u n M o ] 
+Eval: S     S      D S   D S    D D D D S   D S S S S       S S          D D D D D D S  S S S S S        S   I 
+
+id: (cantonese_140916_361202-10)
+Scores: (#C #S #D #I) 15 15 17 0
+REF:  G U N D Z 8 Y G & m G 8 Y m & n L E  j Y K au B a K G ai TS Y s i F  o m & T  m H o D Z OI L E D Z  O 
+HYP:  * * * * * F A J & m * * & m & n M AI j * * au P a * T ai ** * s i TS o m * AI m * o * * ** W A K AU ] 
+Eval: D D D D D S S S     D D S       S S    D D    S   D S    D  D     S      D S    D   D D D  S S S S  S 
+
+id: (cantonese_140916_361202-11)
+Scores: (#C #S #D #I) 18 12 17 1
+REF:  D Z o S & K G U n D Z u n t u n D O  t ai S i N F O  B & n g e D Z & T s ** o T U N m AI s U K D Y n 
+HYP:  * F o * * * * * n * T u n t u n B AU t ai J i * S AU P A n g e * * * * s AU o * * K m EI s * * * I n 
+Eval: D S   D D D D D   D S           S S       S   D S S  S S       D D D D   I    D D S   S    D D D S   
+
+id: (cantonese_140916_361202-12)
+Scores: (#C #S #D #I) 16 18 6 0
+REF:  f U f u n P AI D  8 Y l E D  Z i D O  l E m D O  J y s & P m f & n D Z U n D Z  e H AI 
+HYP:  f O f u n * K  EI T A l * AI T i G AU l A m T AU G y s * A m f & n * S & n * TS e * ]  
+Eval:   S       D S  S  S S   D S  S   S S    S   S S  S     D S         D S S   D S    D S  
+
+id: (cantonese_140916_361202-13)
+Scores: (#C #S #D #I) 20 13 18 1
+REF:  S A m g O  D Z i G A L a S & N G I M d AI J & T s i n w AI j y n w * U i D Z Y D Z  i k G e s A T i n K 8  Y 
+HYP:  * * m g AU T S i * * D a * * * * * * d ** Z I N s i n w O  j y n w & T i * * * * TS i k J e s * * i n * TS I 
+Eval: D D     S  S S   D D S   D D D D D D   D  S S S         S          I S   D D D D S      S     D D     D S  S 
+
+id: (cantonese_140916_361202-14)
+Scores: (#C #S #D #I) 23 9 11 1
+REF:  J I j y n w o n G  A w I n W a D AI J & T S i n s 8 N TS 8 n f a n s & n D Z i h au * a U K 
+HYP:  * * j y n w o n TS E w & n B a * ** * * * P i n s * * ** I n f a n s & n * S i h au W a M ] 
+Eval: D D             S  S   S   S   D D  D D D S       D D D  S               D S        I   S S 
+
+id: (cantonese_140916_361202-15)
+Scores: (#C #S #D #I) 18 15 19 1
+REF:  j Y n * L OI g e B A k G  AI TS Y s i D Z  E j au l 8 N G a N B i N D & K L A D Z E K D Z i n f A n j & T G A N 
+HYP:  j & n H 8 Y  g e * * k EI S  I  N s i * TS I j au l * * * a * M i * * * * * * * * * * * S i n f & n j & * K D O 
+Eval:   S   I S S      D D   S  S  S  S     D S  S        D D D   D S   D D D D D D D D D D D S       S       D S S S 
+
+id: (cantonese_140916_361202-16)
+Scores: (#C #S #D #I) 20 10 21 0
+REF:  AI s a m G o J Y T j i l ai A j I G I N S AU D o D O D  Z U n G 8 Y  m & n G E T au s o l a G & m D Z Y J Y 
+HYP:  ** s a m * o * * * j i l ai * j * * * * * &  P o * T AU J & n * K EI m & n * * H au s o l a * * m * * * * ] 
+Eval: D        D   D D D          D   D D D D D S  S   D S S  S S   D S S        D D S            D D   D D D D S 
+
+id: (cantonese_140916_361202-17)
+Scores: (#C #S #D #I) 21 11 11 1
+REF:  D Z AU w a TS Y s i TS 8 T s AU G e s a n G o f a T m O  s ** O TS OI f u l a n s & m D Z I L  E 
+HYP:  * * N  w a ** * s i ** * * s A  L e s a n W o f a * m AU s AU S A  K  f u l a n s A m * * * AI ] 
+Eval: D D S      D  D     D  D D   S  S         S       D   S    I  S S  S              S   D D D S  S 
+
+id: (cantonese_140916_361202-18)
+Scores: (#C #S #D #I) 27 9 11 1
+REF:  TS 8 T s au G o K EI G E au l ai * A W AI j i H AI j & n W AI j & n s au m K au M o j & n D Z  i n L ei f o 
+HYP:  ** * * s au W o * ** N J au l ai J & M A  j i * ** j & n * ** j & n s au m T au B o j & n * TS i n * ei f o 
+Eval: D  D D      S   D D  S S         I S S S      D D        D D               S    S         D S      D        
+
+id: (cantonese_140916_361202-19)
+Scores: (#C #S #D #I) 18 15 14 3
+REF:  B & n s O  D Z i G 8 Y m & n j AU t * au s ** O a TS Y S I j & T G U N L  E TS i T j au s & P j I G O  s * AU 
+HYP:  L A n s AU T J i * K & m & n j &  t H au s AU W a ** * * * j * * * * * AU M S  i * j au s * A j * * AU s A N  
+Eval: S S     S  S S   D S S         S    I      I  S   D  D D D   D D D D D S  S S    D        D S   D D S    I S  
+
+id: (cantonese_140916_361202-20)
+Scores: (#C #S #D #I) 23 13 18 4
+REF:  * & n G w * * * AI T OI D & n H AI h o D o s I D Z i H AI h OI D & K j & t B U n a D Z AU S Y n f a N m O n s i G A N D O 
+HYP:  M & n * w A J I K  H A  J & n * ** h o T o s * * * i J AU h ** * A N j & t * O n a * * ** * * n f a * m U n s i * * * K ] 
+Eval: I     D   I I I S  S S  S     D D      S     D D D   S S    D  D S S       D S     D D D  D D       D   S       D D D S S 
+
+id: (cantonese_140916_361202-21)
+Scores: (#C #S #D #I) 20 17 23 0
+REF:  D O H AI G & m J i J E m a N L E  m o G & M F a N m O N G E s i g A N j au s i G & n G A D Z I H AI H OI l 8 N G o G w AI T OI 
+HYP:  * * L EI F A m * i * * m a * M AI m o * * * B a * m * * * A s i g * E j au s i K & n * * * * * * ** J AU l * A B o * w O  J AU 
+Eval: D D S S  S S   D   D D     D S S      D D D S   D   D D D S       D S          S     D D D D D D D  S S    D S S   D   S  S S  
+
+id: (cantonese_140916_361202-22)
+Scores: (#C #S #D #I) 23 15 17 1
+REF:  G E D Z  e G U h A K P ai D 8 Y B ei TS i n W O N W O n j Y D & n S  i n B u n g O D  Z U n D Z i d o S ei * a M F & n 
+HYP:  * * * TS e * * h * * * ai * * * G ei S  i n * H U M U n j * * & n TS i n P u n g * AU S & n * S i d o F ei S a * B & n 
+Eval: D D D S    D D   D D D    D D D S    S      D S S S S     D D     S      S       D S  S S   D S       S    I   D S     
+
+id: (cantonese_140916_361202-23)
+Scores: (#C #S #D #I) 22 12 17 0
+REF:  D Z u n G a G 8 Y m & n W A b a K G AI TS Y S i G E j & n s au J i m D Z u n B & T d z U K  m O L 8 n H AI 
+HYP:  * T u n D a * K & m & n * * b a * * ** ** M U i * * j & n s au G i m * T u n * * * d z * AU m * * & n L EI 
+Eval: D S     S   D S S       D D     D D D  D  S S   D D            S     D S     D D D     D S    D D S   S S  
+
+id: (cantonese_140916_361202-24)
+Scores: (#C #S #D #I) 24 14 6 3
+REF:  l ei f o A S AU & n D O m K AU S i n d * * Z I W U i * d o D Z i G & m d O m & n t ai D Z I TS i n 
+HYP:  l ei f o * * J  & n S A m & N  G i n d O M D A O S i N d o * T i K & m d A m & n t ai * * * J  i n 
+Eval:          D D S      S S   S S  S       I I S S S S   I     D S   S       S            D D D S      
+
+id: (cantonese_140916_361202-25)
+Scores: (#C #S #D #I) 21 13 9 2
+REF:  d o TS & N G I n L E  s i n h au D O  TS i h ** 8 y s 8 n B A K G ai TS Y s i j Y K au G OI s i n * 
+HYP:  d o ** * * S A n D AI s i n h au P AU S  i h AU J y s & n * * T T ai ** * s i j * * au P A  s i n ] 
+Eval:     D  D D S S   S S             S S  S      I  S     S   D D S S    D  D       D D    S S        I 
+
+id: (cantonese_140916_361202-26)
+Scores: (#C #S #D #I) 16 19 21 0
+REF:  D & N H AI d O M o G i T G O s I N D Z i W u I k Y T D i n L E  G & M TS i F A t H EI B a m AI T  U N m AI G & M D Z I 
+HYP:  * * * * ** d * * o P i K W A s * * * * i T u * k * * S i n * AI K & N T  i P I t * ** * a m ** EI S & m A  J & * * N ] 
+Eval: D D D D D    D D   S   S S S   D D D D   S   D   D D S     D S  S   S S    S S   D D  D     D  S  S S   S  S   D D S S 
+
+Speaker sentences   3:  cantonese_140917_361366   #utts: 9
+id: (cantonese_140917_361366-1)
+Scores: (#C #S #D #I) 18 16 16 1
+REF:  J & T B U n A F a T TS 8 T B A t H o D U N L A m * F U n w a K b o F u n s 8 n H O G & M s i n W ai L E 
+HYP:  * * M W O n * * a * ** * K D O t * o * * * * M m I T O n w a * b o P u n s & n * * M U N s i n M ai * ] 
+Eval: D D S S S   D D   D D  D S S S   D   D D D D S   I S S       D     S       S   D D S S S       S    D S 
+
+id: (cantonese_140917_361366-19)
+Scores: (#C #S #D #I) 16 14 24 1
+REF:  D & N L U K s i L E D Z U n h O  l & N G a K 8 N W AI k * 8 n T OI F u n G & m s O J i D O N D EI G E G  8 Y m & n 
+HYP:  * * * * * * s i * * * * * n h AU l * * * a M D A M EI k H A n H A  T u n * * m s * * i * * * * ** * J AU B & m & n 
+Eval: D D D D D D     D D D D D     S    D D D   S S S S S    I S   S S  S     D D     D D   D D D D D  D S S  S S       
+
+id: (cantonese_140917_361366-20)
+Scores: (#C #S #D #I) 19 17 11 3
+REF:  l E D O H AI D ai w AI G & n D Z  8 n G a j & N W AI h ** * * OI l a m H OI h au s i A D Z O L 8 n G O J Y T 
+HYP:  l * * * * EI T ai w A  J & n * TS A n D a j & * M EI h AU J I N  l a m B A  h au s i * * J & K 8 n * * * B I 
+Eval:   D D D D S  S      S  S     D S  S   S       D S S    I  I I S        S S           D D S S S     D D D S S 
+
+id: (cantonese_140917_361366-21)
+Scores: (#C #S #D #I) 20 12 19 0
+REF:  j Y T D Z i s I H ai TS & T j Y T F & n G E S I H au l E  TS & N G I n s au D o ts Y K 8 n T OI F u n w AI m A 
+HYP:  j * * * * i s E S ai ** * * j * * * & n * * * * J au l AI S  & * * * n s au T o ts * * A n H A  T u n w A  m ] 
+Eval:   D D D D     S S    D  D D   D D D     D D D D S      S  S    D D D        S      D D S   S S  S       S    S 
+
+id: (cantonese_140917_361366-22)
+Scores: (#C #S #D #I) 17 13 13 3
+REF:  * G E ts 8 Y K EI T a L E d o D Z i h OI h au T U N m * AI m & n TS 8 n d ei K 8 Y a TS 8 T j * I N  
+HYP:  N J I ts * * * ** * a * K d o * S i h A  h au * L A m & N  m & n S  A n d ei * * H a ** * * j & K EI 
+Eval: I S S    D D D D  D   D S     D S     S       D S S   I S        S  S        D D S   D  D D   I S S  
+
+id: (cantonese_140917_361366-23)
+Scores: (#C #S #D #I) 18 12 26 1
+REF:  * T  i n s 8 Y  T I  N d I N G E J i N D Z 8 n H O D o G 8 Y m & n J & T d o K Y T s 8 Y k Y T l 8 N K Y T D i n G a 
+HYP:  N TS i n s * EI K EI M d * * * * * i * * * * n K A M o * * * m & n * * * d o * P I s * A k * * l * * * * * * i n D a 
+Eval: I S        D S  S S  S   D D D D D   D D D D   S S S   D D D       D D D     D S S   D S   D D   D D D D D D     S   
+
+id: (cantonese_140917_361366-24)
+Scores: (#C #S #D #I) 19 21 10 1
+REF:  G a G & m G & M TS i t OI F u n h OI A  j * Y L Y H AI d O N  D ei D & n L U K  m S Y s i m & n L e D O J I M 
+HYP:  * a * * m * & N S  i t A  T u n h ** AU j I N W A L I  d * AI H ei T U n * G AU m * * s i m & n G e * T U N ] 
+Eval: D   D D   D   S S      S  S       D  S    I S S S S S    D S  S    S S   D S S    D D           S   D S S S S 
+
+id: (cantonese_140917_361366-25)
+Scores: (#C #S #D #I) 14 13 23 2
+REF:  J I M d Z & n j I D OI D Z O D Z U  K D  Z 8 n B ei H OI h au G E TS Y K & P s i TS 8 N a T OI F U N m ei d * ** O 
+HYP:  * * * d * & n j * * ** * * * * * AU J AU J & n D ei * ** h au * * ** * * * * s i ** K H a * M  A H A m ei d Z AU K 
+Eval: D D D   D       D D D  D D D D D S  S S  S S   S    D D       D D D  D D D D     D  S S   D S  S S S        I I  S 
+
+id: (cantonese_140917_361366-26)
+Scores: (#C #S #D #I) 22 12 10 0
+REF:  j I G i n TS 8 T J i n TS 8 N K au ts Y l a m S Y G 8 Y M & n m ei j y TS AU m au a j Y n j &  P 
+HYP:  j * * i n ** * * S i n S  A M G au ts I l a m * * * * * J & n m ei j y H  A  m au a j & n j AU ] 
+Eval:   D D     D  D D S     S  S S S       S       D D D D D S              S  S           S     S  S 
+
+Speaker sentences   4:  cantonese_140918_361554   #utts: 17
+id: (cantonese_140918_361554-2)
+Scores: (#C #S #D #I) 19 18 12 1
+REF:  G I N m H O G E s i k 8 Y m J i n g OI j Y N  G & * m L E O d EI d i N j 8 n G u l AI d I S AI L O D Z AI 
+HYP:  * * K m * * U N s i k G I m * i n g O  j * AU F & P m * * * d I  d i M j & n K u l EI d * * ** Z U T S EI 
+Eval: D D S   D D S S       S S   D       S    D S  S   I   D D D   S      S   S   S     S    D D D  S S S S S  
+
+id: (cantonese_140918_361554-21)
+Scores: (#C #S #D #I) 21 15 45 1
+REF:  P EI J Y K 8 Y D I D I d I K 8 y D I P & N j AU H 8 Y J Y n d U K B & n J & T d I N H AI L E t u n * s 8 N J Y N J & t D I D u K b & n G E s I H AU D O H AI D Z & n H AI 
+HYP:  * ** * * * * * * * * * d * * Z y * * * * T j ** * * & P I n d * O P & n * * * d * * * EI D & t u n M s * * * * * * & t * * * u * b & n * * s * * ** * * A T  U K & n * ]  
+Eval: D D  D D D D D D D D D   D D S   D D D D S   D  D D S S S     D S S     D D D   D D D S  S S       I   D D D D D D     D D D   D       D D   D D D  D D S S  S S     D S  
+
+id: (cantonese_140918_361554-22)
+Scores: (#C #S #D #I) 22 14 22 4
+REF:  A j au D i l EI j au G A P EI J Y j AU D i j &  N H O  L & n d Z & n H AI M i N D 8 y A J & T D I G E g a T I N m & n * ** * * t AI A 
+HYP:  * j au T i l I  j au * * * ** * * j &  T i j AU T J AU M & n d * I n * ** P i * H 8 y * * * * * * * K g a * * * m & n D EI J & t ** ] 
+Eval: D      S     S       D D D D  D D   S  S     S  S S S  S       D S   D D  S   D S     D D D D D D D S     D D D       I I  I I   D  S 
+
+id: (cantonese_140918_361554-23)
+Scores: (#C #S #D #I) 20 21 27 2
+REF:  W A K D Z e * a m H OI s & m a G & m G E s I H au * L E A J Y n D U K B & N D Z o K W AI j & T G O m a D Z 8 Y a D Z O k W AI j & T G O T O B EI 
+HYP:  * * * T J e H a m W O  s A m a * * m * * s * * au M & T O P A n * * * M & * * T o * * ** j & * * * m a * T L I a * * * k T O  j & * * * P U I ]  
+Eval: D D D S S   I     S S    S     D D   D D   D D    I S S S S S   D D D S   D D S   D D D      D D D     D S S S   D D D   S S      D D D S S S S  
+
+id: (cantonese_140918_361554-24)
+Scores: (#C #S #D #I) 22 20 14 0
+REF:  G & m G E G & m g O  K a G & m L AI D O H 8 Y j Y N L E G o D U K b & N G o f o n f a T L AI D O J i n f u l E d i 
+HYP:  S A m * * * & m g AU H a * * m * ** * I T U N j * I B I T o * * * b * O P o f o n f a * D I  T U G i n f u l I d i 
+Eval: S S   D D D       S  S   D D   D D  D S S S S   D S S S S   D D D   D S S             D S S  S S S           S     
+
+id: (cantonese_140918_361554-25)
+Scores: (#C #S #D #I) 20 18 38 0
+REF:  t E N H a K 8 Y D EI J I G i n G E s I H au L E O D EI D Z  AU H o j i T E N H a k 8 Y D EI D 8 Y l E G O d U K B & N L E G O m & n t AI H AI M H AI J AU D Z i n 
+HYP:  t * * * a * * * * ** * N L i n * * s * * au * M & P U  I TS E  O o j i * * * G a k * * * ** * * * l * * I d * * Z & T O P M & m & n t ** * ** * * ** * ** * * i n 
+Eval:   D D D   D D D D D  D S S     D D   D D    D S S S S  S S  S  S       D D D S     D D D D  D D D   D D S   D D S   S S S S S         D  D D  D D D  D D  D D     
+
+id: (cantonese_140918_361554-26)
+Scores: (#C #S #D #I) 18 13 35 0
+REF:  K O K g E J I N  S i k L E G & m j Y G O K 8 Y G O N D & K A  m G o s I H AU o D EI D Z AU w a h ai l a K 8 Y H O J i n T U N k 8 Y G & M 
+HYP:  * * * g * * * AU P i k * * * * m j * * * * * * * * * * * * AU m * o s * A W  o * ** T I N  w a h ai l a * * * * N W i n * D O k * * * * ] 
+Eval: D D D   D D D S  S     D D D D     D D D D D D D D D D D D S    D     D S S    D D  S S S               D D D D S S     D S S   D D D D S 
+
+id: (cantonese_140918_361554-27)
+Scores: (#C #S #D #I) 17 20 18 0
+REF:  j Y G o K 8 Y D O N D Z u n j AU D I m H AI H O a m G E W a L E G & m L EI D Z AU j Y D Z & n H AI J Y B o n k 8 Y 
+HYP:  j & P o * * * W & T U T u n j ** & T m * ** A W a m * * D a * * M & m * ** * I K  j * & K & n * ** * I W o n k * ] 
+Eval:   S S   D D D S S S S S       D  S S   D D  S S     D D S   D D S     D D  D S S    D S S     D D  D S S       D S 
+
+id: (cantonese_140918_361554-28)
+Scores: (#C #S #D #I) 22 12 27 0
+REF:  H 8 Y j i n s I K D Z I N K O K  g O D I D Z i L Y L A P EI j Y w a H AI D ai m a k 8 Y l i n d O G o J & N H a H o j i H E N 
+HYP:  * * * j i n s * * * * * & T J AU g * * * & T i * * * W & T  j I w a * ** T ai m a k * * l i n d * * o * * * W a * o j i * * * 
+Eval: D D D         D D D D D S S S S    D D D S S   D D D S S S    S     D D  S          D D         D D   D D D S   D       D D D 
+
+id: (cantonese_140918_361554-3)
+Scores: (#C #S #D #I) 17 18 19 1
+REF:  H 8 Y M i N D 8 Y l E G O M & n T AI l E G & m o l a m d AI j & T  j 8 N D Z AU H  AI D Z 8 Y G EI B u n G E o d * EI 
+HYP:  * * * L i * * * * l * * * * I n M EI l * * & m o l a m d EI j * AU j * * * * I  TS E  K T I K J I  T u n * D o d I ]  
+Eval: D D D S   D D D D   D D D D S   S S    D D               S    D S    D D D D S  S  S  S S S S S S  S     D S     I S  
+
+id: (cantonese_140918_361554-30)
+Scores: (#C #S #D #I) 20 19 15 2
+REF:  k Y T m & n T AI l e * g & M O D EI h ** OI TS i D ai O D EI D i D  Z AI l 8 Y L a M S & m J & t TS & N a D i N j 8 n K EI 
+HYP:  k * * m & n * ** l e N g * * * E K  h AU D  Z  i T ai * * ** M i TS I N  l A M D a N F A m * & t ** * * a T i M j & n * ]  
+Eval:   D D       D D      I   D D D S S    I  S  S    S    D D D  S   S  S S    S S S   S S S   D     D  D D   S   S   S   D S  
+
+id: (cantonese_140918_361554-4)
+Scores: (#C #S #D #I) 26 15 16 2
+REF:  H EI m o N j au ** * D O D ai g e s I H AU H a f U m o t u n D O d Z AI l 8 Y L E d z E H AI H A J i n G I N M d o j & T G o 
+HYP:  J I  m o * j au TS & T U T ai g e s * * A  L a f O m o t u n * * d * EI l * * I T d z * * ** * * * i n * K L A d o j & * K o 
+Eval: S S      D      I  I S S S          D D S  S     S           D D   D S    D D S S     D D D  D D D     D S S S         D S   
+
+id: (cantonese_140918_361554-5)
+Scores: (#C #S #D #I) 22 19 14 0
+REF:  h a H O d I G E G w a N H AI H o j i j au s i s 8 N G a K AU t U n g e P EI j Y O  d EI TS U n s Y D O D AI L E O D EI 
+HYP:  h a K U d * * O K w a * D EI T o j i j au s i s * * * a D O  t O n g e * ** j * AU d ** ** I n s * * * & T  U T A M ]  
+Eval:     S S   D D S S     D S S  S                  D D D   S S    S       D D    D S    D  D  S     D D D S S  S S S S S  
+
+id: (cantonese_140918_361554-6)
+Scores: (#C #S #D #I) 25 19 21 3
+REF:  D Z O f U m * * O g e h O H OI s & m f AI l O K G &  m J 8 N d o D Z I K G i k TS a m J Y K 8 y G E s & n W U T l a P EI J Y H AI h o K h au * 
+HYP:  * T U f O m B U K g e h U K AU s A m f A  l A N J AU m * * I d o * * * * T i k F  a m * * * S y * * s A n * * * l a * ** * * * T  h o * h au ] 
+Eval: D S S   S   I I S       S S S    S     S    S S S S    D D S     D D D D S     S      D D D S   D D   S   D D D     D D  D D D S      D      I 
+
+id: (cantonese_140918_361554-7)
+Scores: (#C #S #D #I) 23 20 15 2
+REF:  A k 8 Y J AU D I P & n j au * a K 8 Y j AU m e w U t D u n A G & M O D EI D o H AI W u I h O  TS i n * TS o G & m J AU L I n d o 
+HYP:  * k * * * ** M & T U n j au W a * * N j &  m e w & t * u n * M & T K & N  W o D I  T u * h AI J  i n D Z  o * * m * ** * & n d o 
+Eval: D   D D D D  S S S S        I   D D S   S        S   D     D S   S S S S  S   S S  S   D   S  S      I S    D D   D D  D S       
+
+id: (cantonese_140918_361554-8)
+Scores: (#C #S #D #I) 17 9 24 2
+REF:  D I S AI L O D Z AI L E d z AU H O J Y N j i t u n O d EI H 8 Y G AU t a m A G & m o * * d EI W U i H o TS E N 
+HYP:  * * * ** * * * * ** * * d z ** * * U T U j i t u n * d ** * * * I K  t a m * * & m o T I d ** O J i D o ** * ] 
+Eval: D D D D  D D D D D  D D     D  D D S S S           D   D  D D D S S        D D       I I   D  S S   S   D  D S 
+
+id: (cantonese_140918_361554-9)
+Scores: (#C #S #D #I) 22 15 22 5
+REF:  * TS o k 8 Y d EI H o L & N D Z I P d z U k d o j & T D i G E m & T G E P & n j au * G  & M G E s I H au l * * * E J Y G O G O k d o 
+HYP:  D Z  o k * * d ** * o * * * * * * * d z O k d o j * * * i * K m * * * * * & n j au J AU W O K M s * * au l A T S I K U T A K U k d o 
+Eval: I S      D D   D  D   D D D D D D D     S         D D D   D S   D D D D D          I S  S S S S   D D      I I I S S S S S S S       
+
+Speaker sentences   5:  cantonese_140918_361606   #utts: 6
+id: (cantonese_140918_361606-10)
+Scores: (#C #S #D #I) 19 19 20 1
+REF:  J 8 K j AU L U K B a k G O g i N J Y N L e H AI D  AI D Z y L E G O S au * TS a l i n a D 8 Y s y T l ei s AI K 8 Y  L E T U n 
+HYP:  * * * j ** * * & P a k U N g i * * * * M e * F  EI F  A J y * * * D Z au T H  a l i n a * * T s y * l ei s ** * * EI G O J & n 
+Eval: D D D   D  D D S S     S S     D D D D S   D S  S  S  S S   D D D S S    I S            D D S     D        D  D D S  S S S S   
+
+id: (cantonese_140918_361606-11)
+Scores: (#C #S #D #I) 21 15 27 1
+REF:  T U n B & K K 8 Y s & P J i G o m & T J i P l E H AI D Z 8 N H & N D Z O j & T l i n TS Y n g e D & T s au TS a G O b a G & M d * EI 
+HYP:  * * n * * * P U I s * A M i D o m * * * i K l * * ** * * * * * * * * * A j & N l i n S  I n g e * * K s au H  a * * b a * * N d I ]  
+Eval: D D   D D D S S S   D S S   S     D D D   S   D D D  D D D D D D D D D S     S       S  S       D D S      S    D D     D D S   I S  
+
+id: (cantonese_140918_361606-12)
+Scores: (#C #S #D #I) 7 11 3 13
+REF:  K 8 Y l ** E D Z AU B au K U T L  A a l a * a * * * * * * L a * * * * * 
+HYP:  * * * l AU K & P I  K au F A D EI S a l a H a K J & N F O T a M E J I ] 
+Eval: D D D   I  S S S S  S    S S S S  S       I   I I I I I I S   I I I I I 
+
+id: (cantonese_140918_361606-16)
+Scores: (#C #S #D #I) 20 25 9 2
+REF:  L E d Z E G & M TS i G E H & n d U n l E H AI l Y n B o n F O n f o n * * m i n L E D Z AU B Y s i a H 8 N B O L EI 
+HYP:  * * d * * * I N S  i D A F A n d O n l * * EI l I n * o n D I n f o n B O m i n * A T O P  J I s i a N P U I S I N  
+Eval: D D   D D D S S S    S S S S     S     D D S    S   D     S S         I I       D S S S S  S S       S S S S S S S  
+
+id: (cantonese_140918_361606-17)
+Scores: (#C #S #D #I) 20 21 16 3
+REF:  B u n L E K EI S & T J i K J AU s 8 n G w a n G E D & t D Z i M TS a G a G & M d EI d i n L E D Z AU B au k u T l * * ** E H AI 
+HYP:  G u n * * * ** * * D Z i * T U  s & n * w a n * K P I t * * i N S  a T a * * N d I  d i n * * A T O  P au k u * l A K EI M & N  
+Eval: S     D D D D  D D S S   D S S    S   D       D S S S   D D   S S    S   D D S   S        D D S S S  S        D   I I I  S S S  
+
+id: (cantonese_140918_361606-18)
+Scores: (#C #S #D #I) 23 12 21 5
+REF:  l A L A T U n * * m * AI d & * * n d EI g a j i k 8 Y D EI g e J & T m E n f a t J I N J & N J I k D O B Y S i l E J I n G OI 
+HYP:  l * O N B & n D & m & N  d & T A n d I  g a j i k * * * ** g e * * * m & n f a t * * * * * * * U k * * * * J i l * * A n D O  
+Eval:   D S S S S   I I   I S      I I     S            D D D D      D D D   S         D D D D D D D S   D D D D S     D D S   S S  
+
+Speaker sentences   6:  cantonese_140924_362835   #utts: 14
+id: (cantonese_140924_362835-1)
+Scores: (#C #S #D #I) 28 28 13 2
+REF:  h a n * G o K n * OI G & n J i s & p L i n L AI D Z 8 Y D AI j i n g E G i n D Z  & n D Z I n TS a K G i M T o G u n D Z O  k G & n G 8 Y k 8 Y D EI 
+HYP:  h a n K W o * n W O  T A n * i s A p * i n * A  J I S & T A  j i n g A T i n * TS A n * S & n S  a * T i N H o K u n * S AU k * & n * D & k * * * ]  
+Eval:       I S   D   I S  S S   D     S   D     D S  S S S S S S          S S     D S  S   D S S   S    D S   S S   S     D S S    D     D S S   D D D S  
+
+id: (cantonese_140924_362835-16)
+Scores: (#C #S #D #I) 36 19 21 0
+REF:  J Y g o G i n J i D Z  U n g E f a T l AI s au D E N l o K S & t G E w a L E G O J i n D Z 8 n H O L & n TS 8 Y  s i w U I B i n s I n l i k s i J Y N j & n 
+HYP:  * * g o T i n * i * TS O n g A f a * l EI s au * * T l o * F A t * O w a * * * * K i n * S A n * * W A n ** S EI s i w * & P i n s & n l i k s i * * * j & n 
+Eval: D D     S     D   D S  S     S     D   S       D D S     D S S   D S     D D D D S     D S S   D D S S   D  S S        D S S       S             D D D       
+
+id: (cantonese_140924_362835-17)
+Scores: (#C #S #D #I) 24 22 4 11
+REF:  * * j * * & n H AI G & N G 8 Y h a n G E f a T L AI j * * ** Y D Z I N M i * * n J & T g * * a n G U n s i l a m J u n k 8 Y 
+HYP:  H A j I K & n * D  O J I J I N h a n D A f a * M A  j I P EI T S & P O S i J & n M & N g E K a n K O n s i l a m * u n k * ] 
+Eval: I I   I I     D S  S S S S S S       S S     D S S    I I I  S S S S S S   I I   S   S   I I     S S             D       D S 
+
+id: (cantonese_140924_362835-18)
+Scores: (#C #S #D #I) 23 30 17 1
+REF:  d EI G E s i TS 8 n D Z i P U I l I K  k 8 Y D EI D Z AU B i T s 8 Y D Z i n M i n * G OI G u n s i ts U K J i G O n D AI G I n D Z & N D & n h AI H AI 
+HYP:  d ** I K s i S  A n * S i * * K l * EI k * * * G  E K &  P i * s * * & T i n * i n K W &  K u n s i ts * * * i K U n B EI K & n * * S A M A n h EI S EI 
+Eval:   D  S S     S  S   D S   D D S   D S    D D D S  S S S  S   D   D D S S     D     I S S  S            D D D   S S   S S  S S   D D S S S S     S  S S  
+
+id: (cantonese_140924_362835-19)
+Scores: (#C #S #D #I) 24 23 11 6
+REF:  G i n J i G E f a T L AI d z i h a M s 8 Y J Y D Z i * * * * * N m i n * G OI G U n s i H AI ts U K J i g & m J 8 n D Z O D  Z i J Y 
+HYP:  J i n * i * K f a * M EI d z i h a * s I S & T O S i M S A J & T m i n K W A  K O n s i S EI ts * * * i g A m * & n * * S AU S i * N 
+Eval: S     D   D S     D S S            D   S S S S S S   I I I I I S       I S S  S S       S S     D D D     S   D S   D D S S  S   D S 
+
+id: (cantonese_140924_362835-20)
+Scores: (#C #S #D #I) 25 23 12 5
+REF:  D Z I N m I n k 8 Y D EI g e * H & n D U n D O D Z i D Z o G i n D Z  & n h a G O n D Z au G I n J i h o j i G a L a * * * d * OI B Y  
+HYP:  * * * * m & n k * * * ** g e K F A n T O n T U N S i * T o T i n * TS A n h a K U n * S au K & n * i h o j i K a B a T W O d O K  H AU 
+Eval: D D D D   S     D D D D      I S S   S S   S S S S   D S   S     D S  S       S S   D S    S S   D           S   S   I I I   I S  S S  
+
+id: (cantonese_140924_362835-21)
+Scores: (#C #S #D #I) 28 20 14 7
+REF:  T U N m * * * AI l 8 n G a n * TS Y s i D Z  a P t Y n G E o D Z au * TS Y n * G o K l I n s au J i p H i P W u * i k 8 Y D EI g e D Z &  P h a N 
+HYP:  O S & m A B U T  l A n D a n S I  N s i * TS a * t I n * D o * S au T S  & n K W o * l & n s au L i p * i * T u J i k * * * ** g e * * TS E h a * 
+Eval: S S S   I I I S    S   S     I S  S     D S    D   S   D S   D S    I S  S   I S   D   S        S     D   D S   I     D D D D      D D S  S     D 
+
+id: (cantonese_140924_362835-22)
+Scores: (#C #S #D #I) 20 17 3 13
+REF:  * * * * * ** * ** * * j I n w AI O D Z AU G E l i n s au J i P G AI D Z i * N m i n d 8 Y TS i n S  o m ei j * * AU 
+HYP:  D Z I O J AU P AI W A j & n w A  J I O TS O K l i n s au L i * * K  A J i S A m i n d * O J  i n TS o m ei j & K ]  
+Eval: I I I I I I  I I  I I   S     S  S S S S  S S            S   D D S  S S   I S         D S S      S           I I S  
+
+id: (cantonese_140924_362835-4)
+Scores: (#C #S #D #I) 30 17 9 8
+REF:  * * * * * G au s au w a k EI s & t D Z i j i * a G EI L i n TS i n s o D Z O g E o D Z AU TS Y n * G o k G I n D Z  & n G i M t * O j i 
+HYP:  F A H A K J au s au w a k ** s & t * * i j i S a * ** T i n S  i n s o * T U g A o * T O  S  I n K W o k * & n * TS A n T i N t U N j i 
+Eval: I I I I I S               D        D D       I   D D  S     S          D S S   S   D S S  S  S   I S     D S   D S  S   S   S   I S     
+
+id: (cantonese_140924_362835-5)
+Scores: (#C #S #D #I) 28 23 11 3
+REF:  * L OI o D Z au H AI H O D o f o N m i n D O D & * K l 8 N h o G E D Z 8 n D Z i n B & T G o n I j & T t Y n s i g a n a D Z au * G E 
+HYP:  A J I  o * S au S EI K U T o f o * m i n T U S & T A l * A h o * * * B & n * S i n * * P W o n * j & * t I n s i g a n a T S au B & K 
+Eval: I S S    D S    S S  S S S       D       S S S   I S   D S     D D D S S   D S     D D S S     D     D   S               S S    I S S 
+
+id: (cantonese_140924_362835-6)
+Scores: (#C #S #D #I) 31 18 9 8
+REF:  * * H ei j Y k & P D i n D Z i s i d OI G E G o N l & * M  l * * I n d o j au H ei k ** W  AI H EI d Z o B i n f a * G o d i M EI l & n * K AU 
+HYP:  W A K ei j & k * A T i n * S i s i d ** * * * o * l & K AU l A M & n d o j au F ei k EI TS A  M I  d * o P i n f a K W o d i * N  l A n D A N  
+Eval: I I S      S   D S S     D S         D  D D D   D     I S    I I S            S      I  S  S  S S    D   S         I S       D S    S   I S S  
+
+id: (cantonese_140924_362835-7)
+Scores: (#C #S #D #I) 28 23 12 3
+REF:  j Y s * * i D Z 8 n g e f a n G i n D Z  & n D Z  i n TS a K J I n g OI p ei f * AI TS 8 Y G au s au N I J & T G o B o G o L i T G 8 Y TS 8 T 
+HYP:  j I s I P i N S & n g e f a n T i n * TS A n * TS i n S  a * * * n g AU p ei f A J  I  F A K au s au * * M & * P o P o K o D i * * * * K  S A 
+Eval:   S   I I   S S S             S     D S  S   D S      S    D D D     S         I S  S  S S S         D D S   D S   S   S   S   D D D D S  S S 
+
+id: (cantonese_140924_362835-8)
+Scores: (#C #S #D #I) 26 21 12 2
+REF:  m A J i g o G i n j i k 8 Y J AU H ei m O n H AI m U K TS i n o D Z au G i n D Z & n k * & P s Y F AI D Z e D Z Y n TS Y D Z  e * 
+HYP:  m * S i g o T i n j i k * * * ** * ei m U n S EI m * O S  i n o N S au P i n * S & n k F A T s * * &  P J e * S I n ** S I TS e ] 
+Eval:   D S       S           D D D D  D      S   S S    D S S        S S    S     D S       I S S   D D S  S S   D S S   D  S S S    I 
+
+id: (cantonese_140924_362835-9)
+Scores: (#C #S #D #I) 19 26 5 10
+REF:  D Z i * * * * * * OI L i n * OI TS i * * T j & T G O G Y d z o o D Z au G i n D Z &  N D Z I n TS a K W U i G E G ei G w a n * 
+HYP:  * J i K S & T U S I  S i n W O  J  i N D O j I L A K W O d z o o N S au P i n * * TS A M S & n S  a * * T i W O D ei K w a n ] 
+Eval: D S   I I I I I I S  S     I S  S    I I S   S S S S S S         S S    S     D D S  S S S S   S    D D S   S S S    S       I 
+
+Speaker sentences   7:  cantonese_140925_362959   #utts: 2
+id: (cantonese_140925_362959-10)
+Scores: (#C #S #D #I) 21 13 31 0
+REF:  TS 8 t S i d z I TS i n L a k 8 Y H AI H 8 N a k & P L EI J & T G O G O k G A G u N J Y N L EI B I N h A n g & n s a n G & M d & n H AI 
+HYP:  S  I t * i d z * ** i n * a k * * * &  N B I a k * * * ** * * * * * * U k * * * u * * * * * ** * * K h O n g A n s a n * * T d A n * ]  
+Eval: S  S   D       D D      D     D D D S  S S S     D D D D  D D D D D D S   D D D   D D D D D D  D D S   S     S         D D S   S   D S  
+
+id: (cantonese_140925_362959-12)
+Scores: (#C #S #D #I) 26 14 31 1
+REF:  d z OI G E G & * M K EI s & T D O J AU H o ts & m g a G & M J & n W AI l E P I N T Y n J & P M i n a m o D Z o N F & n d z i d z AU D U K TS 8 T S E n 
+HYP:  d z ** * O J & N D Z AU s & * * * * ** K o ts A m g a * * * * * n J AU l * * * * * A n * * D Z i n a m o * S o * * * n d z i d z ** * * * ** * * * I n 
+Eval:     D  D S S   I S S S      D D D D D  S      S       D D D D D   S S    D D D D D S   D D S S           D S   D D D             D  D D D D  D D D S   
+
+Speaker sentences   8:  cantonese_140926_363228   #utts: 6
+id: (cantonese_140926_363228-2)
+Scores: (#C #S #D #I) 15 10 36 0
+REF:  D Z A TS E G E L 8 Y J AU D Z E L A L i N H E n j & N D O n d z u N O S 8 N S 8 n J AU H O D O L E d o H O D Z u n j i D Z I 
+HYP:  * * * ** * * * * * * * ** * * * * * S i * S I n j & * * * n d z u * * * * * * * n * ** * * * * G U d o * M & T u n j i * K ] 
+Eval: D D D D  D D D D D D D D  D D D D D S   D S S       D D D         D D D D D D D   D D  D D D D S S     D S S S         D S S 
+
+id: (cantonese_140926_363228-26)
+Scores: (#C #S #D #I) 19 22 29 0
+REF:  H A J AU m O J & N H O J I B O n d o s AU L a H O H O TS OI d ei J AU J & t D 8 Y J Y n D Z Y m & n f u L E k 8 Y D EI d z AU T I N D AI d Z O  G & M 
+HYP:  * * * ** m * * * * * * * * W A n d o s ** * a * T U K F  A  d ei * ** G A t * * * * I n * S I m & n f u * * k * W A K  d z ** * * A W O  d * EI T U N 
+Eval: D D D D    D D D D D D D D S S         D  D   D S S S S  S       D D  S S   D D D D S   D S S           D D   D S S S      D  D D S S S    D S  S S S 
+
+id: (cantonese_140926_363228-27)
+Scores: (#C #S #D #I) 22 17 29 0
+REF:  J 8 n D Z  AU m & N O m e S I  H au d z au TS E N O H 8 Y h A  J & t G O D Z a m L A D AI K OI S & p G U N L EI g E L O  TS I n B EI O H 8 Y m ai j au 
+HYP:  M & n * TS A  m & * * m e J AU T au d z au ** * * * * * * h AI K & t * * * * a m * * * ** * ** * & p * * * * AI g * * AU S  A n * ** L U D & m ai j au 
+Eval: S S   D S  S      D D     S S  S           D  D D D D D D   S  S     D D D D     D D D D  D D  D     D D D D S    D D S  S  S   D D  S S S S           
+
+id: (cantonese_140926_363228-28)
+Scores: (#C #S #D #I) 26 14 36 1
+REF:  L A o m AI J Y N j au d z I H au b U N S & N L & m D Z Y D a p D I K S i G E D & n h ai j & N W AI D EI F O N P i N P i K A  L I N D i K s i d o m o G & m * H O 
+HYP:  * W o m ** * * A j au d z * * au b * * * * * * A m * * * * a p * * * * i * * * * n h ai j * * * ** * ** * * * * i * J i S AU M G A T i * s i d o m o D A m U N ] 
+Eval: D S     D  D D S          D D      D D D D D D S   D D D D     D D D D   D D D D          D D D D  D D  D D D D   D S   S S  S S S S   D             S S   I S S 
+
+id: (cantonese_140926_363228-29)
+Scores: (#C #S #D #I) 20 16 35 2
+REF:  * TS OI O G i n D O J AU J & T w AI G i n ts a T G & M O D Z AU m & N G I N TS A t H O m H O J i TS E N O f a N H 8 Y k 8 Y  W A w a G & m G & M O D Z au * 
+HYP:  S AU J  I P i n * * * ** * * A w A  J i n ts a * * * * * * * ** m & * * * * ** * t * A m * & M i ** * * K f a * * * * k * AU S I w a * * m * & * * N J au T 
+Eval: I S  S  S S     D D D D  D D S   S  S          D D D D D D D D      D D D D D  D   D S   D S S   D  D D S     D D D D   D S  S S     D D   D   D D S S    I 
+
+id: (cantonese_140926_363228-30)
+Scores: (#C #S #D #I) 21 17 46 0
+REF:  TS o D & K D Z Y G a G 8 Y G & M J 8 n F A N  f a N H 8 Y O G A  g 8 Y D & N O F  a N f a n H 8 Y o g a G 8 Y l E T U N G I N TS a T S U K s U K G O N B  AI b AI L a j i n H AU 
+HYP:  S  o * * * * * * * a * * * * * T S I n * J AU f a * * * * * J AU g * * * * * * EI a * f a n * * D o g a * * K l * * * * * * * ** a * * * N s * * A D Z AU M  b ** * a j i n * ** 
+Eval: S    D D D D D D D   D D D D D S S S   D S S      D D D D D S S    D D D D D D S    D       D D S       D D S   D D D D D D D D    D D D S   D D S S S S  S    D  D         D D  
+
+Speaker sentences   9:  cantonese_140927_363424   #utts: 2
+id: (cantonese_140927_363424-1)
+Scores: (#C #S #D #I) 27 21 19 2
+REF:  G a d i l a m s I n G E s y H O K s a n D O S 8 Y j Y D Z i P s au L E G O D Z i G u n * G E n A M G E d z Y S E W A d I n G AI w U I H ai * 
+HYP:  D a d i l a m s & n * * s y * * * s a n * * T U N j * & T i * s au * D & T U T i K u n T J & n * J I N d z * * * U N d A n * ** w * * * ai ] 
+Eval: S               S   D D     D D D       D D S S S   D S S   D      D S S S S S   S     I S S   D S S S     D D D S S   S   D D    D D D    I 
+
+id: (cantonese_140927_363424-17)
+Scores: (#C #S #D #I) 8 6 64 0
+REF:  L E H EI M O N H O j i f O N D Z I D o TS & T S I N D Z I  B a T S I N J I S 8 N G E D Z I G U N g e N A M G & M O D EI H O H ei M O N D Z 8 N L OI L E D & N N I 
+HYP:  * * * ** * * * * * j i f * * * * * * o ** * * * * * * H AI F a * * * * * * * * * * * * * * * * K g e * * * * * * * * ** * * K ei * * * * * * * * ** * * * * * * ] 
+Eval: D D D D  D D D D D       D D D D D D   D  D D D D D D S S  S   D D D D D D D D D D D D D D D D S     D D D D D D D D D  D D S    D D D D D D D D D  D D D D D D S 
+
+Speaker sentences  10:  cantonese_141004_365094   #utts: 9
+id: (cantonese_141004_365094-21)
+Scores: (#C #S #D #I) 20 17 30 1
+REF:  G A s & M D Z i F U H a L EI U K k ei J AU M O J & n J I G A H AI s I K G & N j 8 k G E j Y G o s 8 Y S u n j 8 k G a m A H A G & M J 8 n * 
+HYP:  * * s * * A N i * N W a * ** * * k ei * ** * * W U n * * * * D EI s * * * * E j & k * * j I L o s A D Z u n j & k L a m * * * * & * * * n ] 
+Eval: D D   D D S S   D S S   D D  D D      D D  D D S S   D D D D S S    D D D D S   S   D D   S S     S S S       S   S     D D D D   D D D   I 
+
+id: (cantonese_141004_365094-22)
+Scores: (#C #S #D #I) 16 15 24 2
+REF:  J 8 n L E D Z AU W u * i * l i T W ai L E L EI G O g a T I n J Y N s 8 Y  f & N P u i D Z i B Y G E K EI d Z U n J & T 
+HYP:  M & n * * * * ** B u J i N l i * M ai * * * ** * * g a L A n * G U s * EI f * A M u i * S i * * * * T U  d * I n * * * 
+Eval: S S   D D D D D  S   I   I     D S    D D D D  D D     S S   D S S   D S    D S S     D S   D D D D S S    D S   D D D 
+
+id: (cantonese_141004_365094-23)
+Scores: (#C #S #D #I) 18 13 13 4
+REF:  J & T G O h au L 8 Y j & n s ** o * G & M L I n OI L E d Z AU W u * i S ai J Y n J & N H au P o * ts a 
+HYP:  * * * * M h au * * * j & n s AU o N J & * * * n B  A N d * O  G u J i T ai M U n * * T L au W o N ts a 
+Eval: D D D D S      D D D         I    I S   D D D   S  S S   D S  S   I   S    S S   D D S S    S   I      
+
+id: (cantonese_141004_365094-24)
+Scores: (#C #S #D #I) 18 22 10 2
+REF:  D O W AI s * * i n G O H u n s i P D Z 8 n L E D i G EI s 8 T H 8 Y G a m d U K a G 8 Y m & n J Y N s 8 Y 
+HYP:  * T U K  s A J i n * * P u n s i * K S A n * * J i T I  s * * A M & T a m d O P a * W & m & n * L U s & N 
+Eval: D S S S    I I     D D S         D S S S   D D S   S S    D D S S S S       S S   D S S       D S S   S S 
+
+id: (cantonese_141004_365094-25)
+Scores: (#C #S #D #I) 17 22 24 1
+REF:  G E h au l * 8 t D Z E T AI H a L EI j AU M O S AI s 8 Y G E G & m S & P J Y t F & n L E G  a D Z AU s 8 Y D Z i J Y N w AI J Y n W U i 
+HYP:  * N h au l A N t * U N F EI S a * N  j ** * * & T  s A N J I F A m * & * * * t * A n * * TS a * * ** s * * & N i * * * w ** * A n * G i 
+Eval: D S        I S   D S S S S  S   D S    D  D D S S    S S S S S S   D   D D D   D S   D D S    D D D    D D S S   D D D   D  D S   D S   
+
+id: (cantonese_141004_365094-26)
+Scores: (#C #S #D #I) 15 25 9 3
+REF:  L E D Z  AU w U i J Y n S I N TS O b o G E S o g 8 Y  s AU D Z a P l * Y G ai G O k * G O G u n s * 8 Y K 8 Y 
+HYP:  * * * TS A  w * i G E n * * D Z  U b o * D Z o g * EI s &  N T a * l U K H ai J I k U K U K u n s A G O J & N 
+Eval: D D D S  S    D   S S   D D S S  S     D S S     D S    S  S S   D   I S S    S S   I S S S       I S S S S S 
+
+id: (cantonese_141004_365094-27)
+Scores: (#C #S #D #I) 18 21 18 2
+REF:  M U i J & n M U I j & t D ai * K OI J Y n s 8 Y H AI G EI D O L E G & M J I n * h au l E D Z au w a K D Z E O D EI l O L o K 
+HYP:  * L i * * n * G O j & t * ai B A N  T U n s * * * ** * A  J I T U K & * * * n M h au l A N J au w a * * * * * T A  l U N o ] 
+Eval: D S   D D   D S S       D    I S S  S S     D D D D  D S  S S S S S   D D D   I        S S S        D D D D D S S    S S   S 
+
+id: (cantonese_141004_365094-28)
+Scores: (#C #S #D #I) 18 14 21 0
+REF:  l & M G EI s i n i J & T G O f a N W AI L AI D Z O m AI J &  t G O B Y d z 8 N S i N l A H a J i g a l E D Z AU 
+HYP:  l A N T I  s i n i * * K U N f a * * ** * ** * * * m EI M EI t * * W A d z * * * i * l * * a S i g a l * * * O  
+Eval:   S S S S          D D S S S     D D D  D D  D D D   S  S S    D D S S     D D D   D   D D   S         D D D S  
+
+id: (cantonese_141004_365094-29)
+Scores: (#C #S #D #I) 23 15 27 2
+REF:  W a j au s o G 8 Y l * E d Z AU H AI L O K TS A M G EI s i G 8 Y m & n G E J Y n s 8 Y L 8 n * l E J I G i N TS U n M u I j & N m U i J & T 
+HYP:  * a j au s o K & T l U N d * ** * ** * * * ** * * * I  s i * K & m & n * D Z U n s * * * & n A l * * A S i * ** * n T u * j & * m * i * * ] 
+Eval: D            S S S   I S   D D  D D  D D D D  D D D S      D S S       D S S S     D D D S   I   D D S S   D D  D   S   D     D   D   D D S 
+
+Speaker sentences  11:  cantonese_141005_365172   #utts: 11
+id: (cantonese_141005_365172-1)
+Scores: (#C #S #D #I) 18 14 16 3
+REF:  K 8 Y F A T J i n j au * * * h a K J & n H AI j & m D Z 8 y D Z AU G E s I H au l E G & m G O n W U TS Y n 
+HYP:  * * * P U I P i n j au G U N h a * * * n * A  j & m * O J y * T A  W O s * * au l * * & m * U n * * S  I n 
+Eval: D D D S S S S          I I I     D D D   D S        D S S   D S S  S S   D D      D D     D S   D D S  S   
+
+id: (cantonese_141005_365172-14)
+Scores: (#C #S #D #I) 30 17 32 3
+REF:  H AI W o N P ei * * j au W A d Z E l EI H AI H a K p ei f u J AU w A d Z E H AI B a K p * EI f u G O j Y N G u j & N  w AI H o d O S I H AU W u I D a p D o H o D O s 8 n H 8 Y 
+HYP:  * ** B o * B ei F O j au * * d * A l ** * ** * a * p ei f u * N  w O d * * * &  P a * p U I  f u * * j * I K u j * AU w ** * o d * * * * ** Z u * T a p * o D o J I s & n * * * 
+Eval: D D  S   D S    I I      D D   D S   D  D D  D   D          D S    S   D D D S  S   D   I S      D D   D S S     D S    D  D     D D D D D  S   D S     D   S   S S   S   D D D 
+
+id: (cantonese_141005_365172-15)
+Scores: (#C #S #D #I) 23 12 38 3
+REF:  G 8 Y O D Z I d o a * l a G & m G E TS I N F O n G E S I H AU L E O d EI W U I J au G O m & n T AI d Z AU H AI w a g * & m L EI G o g o P EI J Y W A d * Z AU B a 
+HYP:  * * * * * * * d o a T l a M & m * * ** * * * & n * * * * * ** * * * d ** * * * Z au W & m & n * ** d * EI D A  w a g U N m * ** * o g o * ** * * * * d & T O  P a 
+Eval: D D D D D D D       I     S     D D D  D D D S   D D D D D D  D D D   D  D D D S    S S       D D    D S  S S        I S   D D  D       D D  D D D D   I S S  S   
+
+id: (cantonese_141005_365172-17)
+Scores: (#C #S #D #I) 15 18 31 1
+REF:  K EI S & T F A T  l 8 T  L E J au G O N g EI D i N H 8 Y B o n D Z o * o D EI H 8 y t Y N P i N J & T W & n j au M O J & m D Z 8 Y D Z AU 
+HYP:  * ** * * * D Z AU l * EI G U K au * J I g ** * i * * * * G o n * S o W o * ** K J y t * * * i * * * * * * n j au * * L A m * * * * W O ]  
+Eval: D D  D D D S S S    D S  S S S    D S S   D  D   D D D D S     D S   I   D D  S S     D D D   D D D D D D        D D S S   D D D D S S S  
+
+id: (cantonese_141005_365172-21)
+Scores: (#C #S #D #I) 13 16 16 4
+REF:  L I N G E d Z AU H AI G & n D Z Y D Z au D AI S a m * * D AI s * * ei D Z AU H AI G & m D Z E m E J i s i 
+HYP:  * * * * * d * &  T A  L & n * * * * J au B EI F a m K O L I  s & P ei * F EI T I  J A m * * * m * * i s i 
+Eval: D D D D D   D S  S S  S     D D D D S    S S  S     I I S S    I I    D S S  S S  S S   D D D   D D       
+
+id: (cantonese_141005_365172-22)
+Scores: (#C #S #D #I) 19 11 22 2
+REF:  l E D Z AU G o D Z E G O  T a M L a m h a G & M j y g o g o J & M d z ** * O  d z au G E J & N S I H OI TS i G O N  
+HYP:  l * * * ** * o * S I S AU H a * W a m h a * * K j y g o g o * * * d z AU W AI d z au * * * * * * * * ** T  i * K AU 
+Eval:   D D D D  D   D S S S S  S   D S         D D S             D D D     I  I S         D D D D D D D D D  S    D S S  
+
+id: (cantonese_141005_365172-23)
+Scores: (#C #S #D #I) 16 18 16 3
+REF:  L EI A G & n * D Z Y g * * O n h a j AU m D Z I D Z i G EI G O N G & n D i m & T a t Y L OI T Y H 8 Y a G & n 
+HYP:  * O  N J & n L I A K g E K U n h a j &  m * * * * T i * ** * * * K U n * i m D I a t * * ** J I W U J a * * n 
+Eval: D S  S S     I S S S   I I S         S    D D D D S   D D  D D D S S   D     S S     D D D  S S S S S   D D   
+
+id: (cantonese_141005_365172-25)
+Scores: (#C #S #D #I) 20 11 33 2
+REF:  H AI J & T G o H I n s i d z o k 8 Y H AI J I G I N J & M D Z 8 Y D Z AU G A L a m H A h a D AI J I d i n d * Z AU H AI d z E J & T G o * 
+HYP:  * ** * * * K o * * n s i d z o k * * * ** * * * * * * & * * * * * * * ** * N W a m * T h a * ** * T d i n d & T A  L A  d z * * * A D o ] 
+Eval: D D  D D D S   D D               D D D D  D D D D D D   D D D D D D D D  D S S     D S     D D  D S         I S S  S S      D D D S S   I 
+
+id: (cantonese_141005_365172-26)
+Scores: (#C #S #D #I) 13 22 21 0
+REF:  P I N h & N L A  g & m L E G O H O G a N D a N L a j Y G o K EI D & k M H AI W A H O  w & n G E H AI L O j Y L OI J Y  
+HYP:  * * * h * * * AI g A m * * * I T U K a * B a * M a j I D o * T  J I k * * ** * * * AU w & n * J & K  U K j * * AU D AI 
+Eval: D D D   D D D S    S   D D D S S S S   D S   D S     S S   D S  S S   D D D  D D D S        D S S S  S S   D D S  S S  
+
+id: (cantonese_141005_365172-27)
+Scores: (#C #S #D #I) 14 11 20 6
+REF:  H 8 Y A m * ** j au W a * * k * ** d z E M O D Y  N d Y n TS O D AI D Z O a L E M S Y s & M D Z o N D O m au 
+HYP:  * U J & m L EI j au * a T U k L EI d z * * * * AU A d & n ** * * ** * * F a * * * * N s * * * * o T U N m au 
+Eval: D S S S   I I       D   I I   I I      D D D D S  S   S   D  D D D  D D S   D D D D S   D D D D   S S S      
+
+id: (cantonese_141005_365172-28)
+Scores: (#C #S #D #I) 18 15 21 2
+REF:  M AU D i G E G a * s i A W A K D Z E  d z o N D i t D i A G & m L E G O d Z AU H AI j & * T  g O H i N s i J & T G O 
+HYP:  H U  T i * * K a K s i * * * * * J AU d z o * J i t * i * * * m * * * I d * ** * EI j & K AU g A D i * s i * * L I N 
+Eval: S S  S   D D S   I     D D D D D S S        D S     D   D D D   D D D S   D D  D S      I S    S S   D     D D S S S 
+
+Speaker sentences  12:  cantonese_141006_365326   #utts: 14
+id: (cantonese_141006_365326-11)
+Scores: (#C #S #D #I) 22 14 6 6
+REF:  t U N m ai D Z O K  W AI TS a m h au g e s * AU s i n j Y t ai g e D Z AU H ai t * * i m * * * T I M D OI 
+HYP:  t * O m ai * * S AU L EI F  a m h au g e s A N  s i n j & t ai g e * * ** T ai t O S i m L A K H A T A T  
+Eval:   D S      D D S S  S S  S                 I S          S          D D D  S      I I     I I I S S S S S  
+
+id: (cantonese_141006_365326-12)
+Scores: (#C #S #D #I) 16 25 8 4
+REF:  B Y m & * * * K j i B U N L OI s ai k ** 8 Y K 8 Y K  8 Y g e s Y n K  8 Y L EI B i n D Z Y D Z O  D ai L 8 N g e 
+HYP:  J & m & P O M A j i * * * * ** s ai k EI T I D I P TS I K g e s I n TS & N J I  P i n * * S I K AU P ai * G A g e 
+Eval: S S     I I I S     D D D D D         I  S S S S S S  S S       S   S  S S S S  S     D D S S S S  S    D S S     
+
+id: (cantonese_141006_365326-2)
+Scores: (#C #S #D #I) 26 17 10 4
+REF:  * * h ai O D Z au B u n t * O  s au * H O S a N G E G i K D Y n f & n D Z i l i n d O o D Z au D Z  i n f u D a M S & M 
+HYP:  J I h ai M U T au P u n t H AU s au D Z I F a * * K T i * T I n f & n * S i l i n d * o * T au * TS i n f u T a * * * ] 
+Eval: I I      S S S    S       I S       I S S S   D D S S   D S S         D S           D   D S    D S          S   D D D S 
+
+id: (cantonese_141006_365326-27)
+Scores: (#C #S #D #I) 28 14 17 0
+REF:  j I K & P O D  EI g e G A D Z i k G u n g e s 8 n s & m L i n j & T  w ai G u n d O n J I j Y n L OI D Z i H & m p U I L ai 
+HYP:  j * * * * * AU T  g e * * K T i k * u n g e s & n s A m * i n j * AU w ai K u n d A n * * j & n * ** A T i F A m p * * * ai 
+Eval:   D D D D D S  S      D D S S     D           S     S   D       D S       S       S   D D   S   D D  S S   S S     D D D    
+
+id: (cantonese_141006_365326-28)
+Scores: (#C #S #D #I) 24 16 23 0
+REF:  G e B O D & K m a n D Z AU G 8 Y TS 8 T j & T  G O  l i n j & N G u m o g e l ai D Z i B O D & K m a N W a D O N G & m L i n L I N 
+HYP:  J e * P A T A m a n * * ** * * * ** * * j * AU K AU l i n j & * T u m o g e l ai * J i * P A T A m a * M a * * * * * m * i n * * ] 
+Eval: S   D S S S S       D D D  D D D D  D D   D S  S S            D S                D S   D S S S S     D S   D D D D D   D     D D S 
+
+id: (cantonese_141006_365326-29)
+Scores: (#C #S #D #I) 25 19 16 2
+REF:  TS O k 8 Y g e s Y n K 8 Y L OI j & t G A N  m U K s i l & M D Z u n s & m * p ei j & n P O W AI D  Z I H au * g EI J & T j au J & N 
+HYP:  S  A k * * g e s I n * S & N A  j & t * * AI m * * s i l * * A T u n s A m & p ei j & n * * * K  AU B A J au K g ** * * E j au * L I 
+Eval: S  S   D D       S   D S S S S        D D S    D D       D D S S       S   I            D D D S  S  S S S    I   D  D D S      D S S 
+
+id: (cantonese_141006_365326-3)
+Scores: (#C #S #D #I) 30 16 17 3
+REF:  S & M k 8 Y D ei W u i h ai * O D Z au g I n * L OI f a t D u n H U n b o W U t D U N  J i m & N G A n D 8 Y H u n b o W U t D u N g e * 
+HYP:  * * * k * * * ei P u i h ai W U N S au g E n B A K  f a t * u n F O n b o B O t * * AU L i m & * * * n * * * T u n b o B O t * u * g e ] 
+Eval: D D D   D D D    S          I S S S      S   I S S        D     S S       S S   D D S  S       D D D   D D D S         S S   D   D     I 
+
+id: (cantonese_141006_365326-30)
+Scores: (#C #S #D #I) 27 19 14 0
+REF:  J & N d z au f a T H ei h ai G OI D Z U n s & m D Z 8 n H & N TS E n s ai G U N D Z O k D O n J & t TS 8 T j i n g e j & n s O  
+HYP:  * * * d z au f a * M ei h ai K W  A J & n s A m * * & n F A D Z  I n s ai * * * * * * k * U n S A t ** A M j i n g e j & n s AU 
+Eval: D D D            D S         S S  S S S     S   D D S   S S S S  S        D D D D D D   D S   S S   D  S S                   S  
+
+id: (cantonese_141006_365326-4)
+Scores: (#C #S #D #I) 32 13 14 1
+REF:  h U N G 8  Y L E j au l i n m U K s I L & m j & n s i s i n W AI G i k s y * S o j & N D Z & n H & n g e D 8 Y d z 8 n J AU 
+HYP:  h * * * AU K & N j au l i n m & P s * * A m j & n s i s i n M A  J i k s y D Z o j * * * * & n M & n g e * * * d z A n * ** 
+Eval:   D D D S  S S S              S S   D D S                   S S  S         I S     D D D D     S         D D D     S   D D  
+
+id: (cantonese_141006_365326-5)
+Scores: (#C #S #D #I) 29 18 11 2
+REF:  J AU m U k s i l & m f u l 8 Y  H ai * * G AI s 8 n p ei J U K m a j I K D O j au m u K S i l & M G ei K au s au D o H U n H A K 
+HYP:  * ** m O k s i l A m f u l * EI S ai J I K EI s A n p ei * D O m a j * * & T j au m u * * i l * A K ei H au s au T o F O n * * ] 
+Eval: D D    S         S         D S  S    I I S S    S        D S S       D D S S          D D     D S S    S         S   S S   D D S 
+
+id: (cantonese_141006_365326-6)
+Scores: (#C #S #D #I) 28 15 5 5
+REF:  H A j i s 8 n D Z u n D Z u n s i G i n H i n s i * * o D Z au * G e s e W u I W o * ** s au D o ts U n S 8  Y 
+HYP:  * * j i s A n * T u n * T u n s i S i n S i n s i N G o * J au T J e s e B u N B o H AI s au T o ts & n D EI ] 
+Eval: D D       S   D S     D S         S     S         I I   D S    I S       S   S S   I I       S      S   S S  S 
+
+id: (cantonese_141006_365326-7)
+Scores: (#C #S #D #I) 28 19 11 1
+REF:  j i n j au G O  B i T G  E J i J Y n ts & N G i n f a t * B Y G o h O L & n L i n m U K s I L & M j & n s i B & t O n G E 
+HYP:  j i n j au K AU P i K EI D Z i * * n ts * * * i n f a t J & K W o h * * A n * i n m & P s * * A N j & n s i T A t U n * K 
+Eval:            S S  S   S S  S S   D D      D D D           I S S S     D D S   D       S S   D D S S           S S   S   D S 
+
+id: (cantonese_141006_365326-8)
+Scores: (#C #S #D #I) 19 19 14 0
+REF:  g E J i n L 8 n D & n h ai j Y N L OI j au G & N D O G & n D O G E  J i j Y n h ai G O K  w U I L OI D O G I k 
+HYP:  g * * i n * A n T A n h ai j I M A T  j au * * * * K M & n * * T AU T i j I n h ai * J AU w * * * ** & N W A k 
+Eval:   D D     D S   S S          S S S S       D D D D S S     D D S S  S     S        D S S    D D D D  S S S S   
+
+id: (cantonese_141006_365326-9)
+Scores: (#C #S #D #I) 30 14 10 4
+REF:  G I K l I K  W ai w u * D O  j Y N M & n f a t ai * * s E n D ai d z u n j Y B ei * TS i B au J Y N  k 8 Y  d ei g e g O N  w a 
+HYP:  * * * l * EI B ai w u I T AU j * * * & n f a t ai J I s I n T ai d z u n j & P ei D Z  i P au * G AU k * EI d ei g e g * AU w a 
+Eval: D D D   D S  S        I S S    D D D              I I   S   S              S S    I S    S    D S S    D S             D S      
+
+Speaker sentences  13:  cantonese_141006_365328   #utts: 5
+id: (cantonese_141006_365328-10)
+Scores: (#C #S #D #I) 21 19 18 1
+REF:  G & m H ai G o H 8 Y  g EI j & T L E k EI s & t D O H ai A j au L E G O TS Y n j i N L e D Z AU H ai w a F O n L E D  Z AU H ai * 
+HYP:  * * m * ai P o * L EI g E  j & * * * k ** s E t * * * ai * j au * M I D Z  I n j i * M e * * ** G ai w a T I n * S AU M &  T ai ] 
+Eval: D D   D    S   D S S    S      D D D   D    S   D D D    D      D S S S S  S       D S   D D D  S        S S   D S S  S S  S    I 
+
+id: (cantonese_141006_365328-11)
+Scores: (#C #S #D #I) 23 12 23 2
+REF:  H ai * A  w * U i TS E n TS 8 N  g e S Y s I K G A G & M J & t D I D Z U N G AU t Y n t ai A D Z I n g ai j & N s i D ai d z Y n 
+HYP:  * ai D AI w & T i ** * n ** H AU g e * * s * * * * * * * * & t * * * * * * A K  t I n t ai * * J & n g ai j * E s i T ai d z I n 
+Eval: D    I S    I S   D  D   D  S S      D D   D D D D D D D D     D D D D D D S S    S        D D S S          D S     S        S   
+
+id: (cantonese_141006_365328-12)
+Scores: (#C #S #D #I) 32 21 12 2
+REF:  H au t U N m ai G O k g ai g e t Y n t ai L E ts & M j & t ** * D O H AI f u j y L E  TS a m J Y D Z i m D Z U n g e h O K  s & N T  U N m ai K EI 
+HYP:  J au t * O m ai * * k g ai g e t I n t ai * * ts A N j & t AI S A M & N  f u j y H AI S  a m * * I T i m * * & n g e h * AU s * * AI D A m ai T ]  
+Eval: S      D S      D D              S        D D    S S       I  I S S S S          S S  S      D D S S     D D S         D S    D D S  S S      S S  
+
+id: (cantonese_141006_365328-14)
+Scores: (#C #S #D #I) 21 15 20 0
+REF:  G u n j I k h AI j i G a G E TS Y N G O K d z I N F u D Z Y D Z i K D u n G i n W A A  j I K & P L  E TS i n D Z i n 
+HYP:  K u n j & k h A  j i D a * * ** * * * * * d z * Y G u * * * N L i * F u n S i n * M AU j * * * * AU D Z  i n * * i n 
+Eval: S       S     S      S   D D D  D D D D D     D S S   D D D S S   D S     S     D S S    D D D D S  S S      D D     
+
+id: (cantonese_141006_365328-15)
+Scores: (#C #S #D #I) 25 13 19 5
+REF:  * * * s i s i TS 8 N T O N J i n L i n L E j i K d O S 8 n G AI f u J Y h o k s & n * L E T u N M AI W AI d z E J Y TS i T l ei * 
+HYP:  M O N s i s i ** * * * * D Z i n D i n * * j i * d * Z U n D EI f u * N h o k s A n M S I B u * * ** * I  d z * * * ** i * l ei ] 
+Eval: I I I         D  D D D D S S     S     D D     D   D S S   S S      D S         S   I S S S   D D D  D S      D D D D    D      I 
+
+

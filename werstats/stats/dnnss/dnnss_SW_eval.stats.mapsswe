@@ -1,0 +1,104 @@
+      SEGMENTATION REPORT FOR SYSTEMS
+              trn/dnn/dnn_SW_eval.trn and trn/dnnss/dnnss_SW_eval.trn
+Minimum Number of Correct Boundary words 2
+
+  Number of Segments 749,     6.089 per sentence
+  Number of Sentences 123
+
+    # Ref wrds      Err trn/dnn/dnn_SW_eval.trn   Err trn/dnnss/dnnss_SW_eval.trn
+---------------------------------------
+Totals 8088           4663        4214
+
+Pct err               57.7%       52.1%
+
+
+
+
+
+
+                            McNemar test results
+                            ====================
+
+                                     trn/dnnss/dnnss_SW_eval.trn
+
+                                  corr     incorr
+      trn/dnn/dnn_SW_eval.trn      corr     0          8
+	                 incorr    32        709
+The NULL Hypothesis:
+
+     The number unique utterance errors are equal for both systems.
+
+Alternate Hypothesis:
+
+     The number of unique utterance errors for both systems are NOT equal.
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of unique utterance errors
+            follows the binomial distribution for N fair coin tosses.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the sum of the
+        unique utterance errors for both systems being compared and
+        MIN(uue) is the minimum number of unique utterance
+        foe either system.
+
+          MIN(uue)      P(MIN(uue) | N= 40)
+          --------      -------------------
+               0                 -  
+               1                 -  
+               2                 -  
+               3                 -  
+               4                 -  
+               5                 -  
+               6                 -  
+               7                 -  
+               8                 -  
+               9                 -  
+              10                 -  
+              11                 -  
+              12                 -  
+              13                 -  
+              14                 -  
+              15                 -  
+              16                 -  
+              17                 -  
+              18               0.001
+              19               0.001
+              20               0.002
+              21               0.003
+              22               0.005
+              23               0.007
+              24               0.012
+              25               0.018
+              26               0.027
+              27               0.040  <---  Null Hypothesis rejection threshold
+              28               0.059
+              29               0.084
+              30               0.114
+              31               0.156
+              32               0.208
+              33               0.271
+
+     Decision:
+        There were MIN(uue)=8 unique utterance errors, the probability of
+        it occuring is 0.000, therefore the null hypothesis is REJECTED
+        in favor of the Alternate Hypothesis.  Further, trn/dnnss/dnnss_SW_eval.trn is the
+        better System.
+MTCH_PR_RESULTS (systems: trn/dnn/dnn_SW_eval.trn trn/dnnss/dnnss_SW_eval.trn) (# segs: 749) (Seg per Sent: 6.089) (% Error: 57.65 52.10) (mean: 0.599) (std dev: 1.652) (Z Stat: 9.930) (Stat Diff: Yes)
+
+
+
+                COMPARISON MATRIX: FOR THE MATCHED PAIRS TEST
+        PECENTAGES ARE MEAN PCT ERROR/SEGMENT.  FIRST # IS LEFT SYSTEM
+                  Minimum Number of Correct Boundary words 2
+
+
+|-----------------------------------------------------------------------------------------|
+|                             |     trn/dnn/dnn_SW_eval.trn | trn/dnnss/dnnss_SW_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+|     trn/dnn/dnn_SW_eval.trn |                             | trn/dnnss/dnnss_SW_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnss/dnnss_SW_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

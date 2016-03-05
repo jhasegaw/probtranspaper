@@ -1,0 +1,75 @@
+                    Sign Test Calculations Table Comparing                     
+Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnnss/dnnss_MD_eval.trn and trn/gmmpt/gmmpt_MD_eval.trn
+                  (Threshold for equal percentages +- 0.005)                   
+
+                                                                                                              Difference Sign                      
+         Spkr             trn/dnnss/dnnss_MD_eval.trn    trn/gmmpt/gmmpt_MD_eval.trn    [trn/dnnss/dnnss_MD_eval.trn - trn/gmmpt/gmmpt_MD_eval.trn]
+---------------------------------------------------------------------------------------------------------------------------------------------------
+mandarin_150111_384845               63.98                          63.23                                            +                             
+mandarin_150116_385969               64.08                          56.66                                            +                             
+mandarin_150116_385975               59.57                          48.97                                            +                             
+mandarin_150117_386197               60.08                          50.86                                            +                             
+mandarin_150119_386521               56.87                          50.38                                            +                             
+mandarin_150119_386550               59.89                          60.44                                            -                             
+---------------------------------------------------------------------------------------------------------------------------------------------------
+         Avg.                        60.74                          55.09           
+
+No. Speakers with Positive Speaker Word Error Rate (%) Differences = N(+) =  5 
+No. Speakers with Negative Speaker Word Error Rate (%) Differences = N(-) =  1 
+   No. Speakers with No Speaker Word Error Rate (%) Differences = N(0) =  0    
+
+
+The NULL Hypothesis:
+
+     The number of speakers for which the differences is positive
+     equals the number of speakers for which the differences is
+     negative.
+			 P(N(+)) = P(N(-)) = 0.50
+
+Alternate Hypothesis:
+
+     The number of speakers for which the differences is positive 
+     is NOT equal to the number of speakers for which the difference
+     is negative.
+
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of positive and negative differences
+            follows the binomial distribution for N fair coin tosses.
+
+        A2: In order to resolve the complication caused by cases where the
+            difference in Word Accuracy is zero, half of the cases will
+            be assigned to N(+) and half to N(-).  In the event of an
+            odd number of zero differences, N(-) will get one extra, this
+            reduces the probability of there being a difference between
+            the two systems.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the number of
+        speakers being compared and N(-) is the number of negative
+        differences.
+
+          MIN(N(-),N(+))      P(MIN(N(-),N(+)) | N= 6)
+          --------------      ------------------------
+            0                 0.031  <---  Null Hypothesis rejected at or below this point
+            1                 0.219
+            2                 0.688
+            3                 1.312
+
+     Decision:
+        There were N(-)=1 negative differences , the probability of
+        it occuring is 0.219, therefore the null hypothesis is ACCEPTED
+        There is no statistical difference between trn/dnnss/dnnss_MD_eval.trn and trn/gmmpt/gmmpt_MD_eval.trn
+                      Comparison Matrix for the Sign Test                      
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|-----------------------------------------------------------------------------------------|
+|                             | trn/dnnss/dnnss_MD_eval.trn | trn/gmmpt/gmmpt_MD_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnss/dnnss_MD_eval.trn |                             |                        same |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/gmmpt/gmmpt_MD_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

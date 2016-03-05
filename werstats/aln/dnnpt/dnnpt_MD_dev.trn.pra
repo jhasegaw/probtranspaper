@@ -1,0 +1,743 @@
+
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   trn/dnnpt/dnnpt_MD_dev.trn
+
+Speakers: 
+    0:  mandarin_140917_361334
+    1:  mandarin_140918_361524
+    2:  mandarin_140918_361526
+    3:  mandarin_141227_382097
+    4:  mandarin_150103_383309
+    5:  mandarin_150110_384707
+    6:  mandarin_150111_384845
+
+Speaker sentences   0:  mandarin_140917_361334   #utts: 20
+id: (mandarin_140917_361334-1)
+Scores: (#C #S #D #I) 38 24 8 4
+REF:  TS U n C I au t au t a J  i TS i t U  s ou t au TS  U n TS u TS u J i t & kh u & N  9R au TS ai jj i E n T AU n * * i * KH & f u a9r KH & S I TS i C C I e n th a * 9R & n W EI 
+HYP:  T  A n * S au t au t a PH i S  i t AU s ou t au TSH A n F  u T  u L i t & kh u * EI J  au K  ai jj i * n * &  n I J i X U  O f u a9r K  & F U T  i * * S e n th a L I  A n * ** 
+Eval: S  S   D S             S    S      S            S   S   S    S    S            D S  S     S          D   D S    I I   I S  S         S    S S S    D D S          I S  S   D D  
+
+id: (mandarin_140917_361334-10)
+Scores: (#C #S #D #I) 42 16 7 3
+REF:  * * S a n s & n PH o s i jj i A n jj i n s I p AI w a N n a N m i n p ei jj i n L i C I a n A9R au TS ou JJ i E s ou p i n * A n TS i l I AU t A  Y Y 8 
+HYP:  & N F a n s A n P  o s i jj i * n jj i n s & p EI w a * n a * m i n p ei jj i n * i * S a n K   au T  ou TS i * s ou p i n K & n S  i l * &  t AI J A N 
+Eval: I I S       S   S             D            S   S      D     D                   D   D S     S      S     S    D            I S   S      D S    S  S S S 
+
+id: (mandarin_140917_361334-11)
+Scores: (#C #S #D #I) 45 18 11 1
+REF:  L I a n w a N S u t a N n A n M i n T  a t U O  s u t & s u t A N j i m i n t U  s I TS AI K  u o C C Y s i W u * N i E n jj i E n L ai t AU au TS ou TS & j & s i 
+HYP:  * J a n w a * F u t a * n & n * i n TH a t * AU s u t & s u t * & j i m i n t AU s & P  EI KH u o * * * s i S u O M i * n jj i A n W ai t ** au S  ou P  I j & s i 
+Eval: D S         D S       D   S   D     S      D S                D S             S    S S  S  S      D D D     S   I S   D        S   S      D     S     S  S         
+
+id: (mandarin_140917_361334-12)
+Scores: (#C #S #D #I) 39 20 8 7
+REF:  * * * * jj Y TS U  TS ai s u t A N n a n p u t & T i n KH ai 9R & n tsh & n w EI l I AU au TS OU TS u * ei T  A K  u ei m o t & S u t a n TS u C C Y N T   A n s i j ou * * 
+HYP:  T & S I jj * I  OU T  ai s u t * & n a n p u t & P i n X  ai L  A n tsh A n w AI l A X  au ** ** T  u F ei TH & KH u ei m o t & F u t a n S  u * * * * TSH & n s i j ou X U 
+Eval: I I I I    D S  S  S           D S               S     S     S  S       S     S    S S     D  D  S    I    S  S S               S         S    D D D D S   S            I I 
+
+id: (mandarin_140917_361334-13)
+Scores: (#C #S #D #I) 36 32 14 1
+REF:  X & n T U o * au TS OU 9R & n T U EI TS &  J a n t & TS u n TS u T u O j A N X  U a t & C C   Y s i P  i n P u TS a n TH U n P & n PH i E n TS u N T & l I N J i w ei TS  u jj Y 8  N i KH & 
+HYP:  * A n * P o X au T  U  L  A n * * P  I  JJ I a n t & TH u n F  u P u * j * * AU F a t & * TSH I s i PH i n T u T  a n T  A n K A n P  i * n ** u * L & l * * * i w ei TSH u jj I AU M i K  A 
+Eval: D S   D S   I    S  S  S  S   D D S  S  S  S         S      S    S   D   D D S  S       D S   S     S      S   S      S  S   S S   S    D   D    D S     D D D        S        S S  S   S  S 
+
+id: (mandarin_140917_361334-14)
+Scores: (#C #S #D #I) 32 29 6 3
+REF:  ** JJ I  OU s i t U ei f ei ** TS ou j i M i N p AU J OU C C I   a n L i E T  i tsh u C C  I n C Y t & au TS OU 9R & n N i kh & s i C i N i x ai K a n * T A C  Y 8  
+HYP:  9R &  TH U  s i t W ei f ei JJ I  ou j i N i * p ** * O  L U TSH a n M i * TH i tsh u * TS & n S I t * au T  U  L  A n M i kh & s i S i M i x ai J a n M & S AU J OU 
+Eval: I  S  S  S        S         I  S         S   D   D  D S  S S S       S   D S          D S  S   S S   D    S  S  S  S   S            S   S        S     I S S S  S S  
+
+id: (mandarin_140917_361334-15)
+Scores: (#C #S #D #I) 43 20 14 8
+REF:  ** * * * * j & s i l I a n K & x ai TS I t & f u C C  I n TH A X U A N  ts u jj I E N L i AU J I  k & ts & n t a n P  a R   T i f * o R f R I  D & M ts & K & T a n PH ai p u jj i e s ou * * 
+HYP:  TS I K U N j I s i l * a n * * x ai T  & t & f u * TS & n ** * * * T AI ts u jj * * * * i ** M EI k & ts & n t a n TH a A9R L i f U o * f U EI T & N ts A X & P a n TS ai p u jj i e s ou P O 
+Eval: I  I I I I   S       D     D D      S  S         D S  S   D  D D D S S          D D D D   D  S S                   S    S   S     I   D   S S  S   S    S S   S     S                     I I 
+
+id: (mandarin_140917_361334-16)
+Scores: (#C #S #D #I) 32 34 18 0
+REF:  T u O Y Y E N W & n X U a TS  u J  i A9R C C I  E X u C  y au TS OU t & j i m i n TS & n TS & J I n k ai j ou C i E n jj i E n A N A C I E  L ai ts I L ei S I W & N X u A X  u O TS u N TS U  
+HYP:  J u * * * * * * * n * F a TSH u JJ i P   I N KH U W u EI y au T  U  t & j i m i n JJ I n K  U O N n k ai j ou S i * n jj i * n * & M & S AU W ai ts U M ei * * * * * F u * TH u N F  u * X  AU 
+Eval: S   D D D D D D D   D S   S     S    S   S S S  S S   S       S  S                S  S   S  S S S             S   D        D   D S S S S S  S       S S    D D D D D S   D S    S S    D S  S  
+
+id: (mandarin_140917_361334-17)
+Scores: (#C #S #D #I) 52 14 8 1
+REF:  w & n X U a t & j i m i n N i kh & t & f u * m u s i & l u O s I N a N m i n TS AI s a n s I jj I w u s i N i E n t ai JJ i E t au TS u n K U o ts a n TS u a N 
+HYP:  w A n * F a t & j i m i n M i kh & t & f u O m u s i * l u * s U M a * m i n F  EI s a n s U jj Y w u s i M i * n t ai TS i * t au T  u n * W o ts a n T  u a * 
+Eval:   S   D S                 S                I         D     D   S S   D       S  S          S    S         S   D        S    D      S      D S          S      D 
+
+id: (mandarin_140917_361334-18)
+Scores: (#C #S #D #I) 40 24 9 2
+REF:  L ai t AU C  i * N n A N w EI A9R s i ** TS ou TH A 9R & N w ei au TS ou J i n k ai th i n TS i jj i E n A S u o j I  t & 9R & n t au TS u J I j i M i n J I n W ei t a JJ I A 
+HYP:  W ai t &  PH i S & n * & w ** O   s i JJ I  ou ** T AI L A w ei au S  ou L i n k ai th i n JJ i jj i * n & F u o j OU t & J  A n t au T  u * O j i N i n * * n M ei t a ** * T 
+Eval: S      S  S    I S   D S   D  S       I  S     D  S S  S S         S     S                 S         D   S S       S      S  S        S    D S     S     D D   S        D  D S 
+
+id: (mandarin_140917_361334-19)
+Scores: (#C #S #D #I) 35 23 13 5
+REF:  * * 9R & * N  t au TS U J I J I m i n T AI l ai t & t U  s * I TS ai n A N 9R & N m & n TSH u n TS U O k au F u l i A9R l ai S & * X  U EI s A N T & f a n TS U EI C i n W EI 
+HYP:  M O P  & X AI t au ** * * S & N m i n * ** l ai t & t AU s & N X  ai n * & J  & * m & n TS  u n ** L & k au X u l i A   l ai * & S OU W &  s * & M & f a n ** P E& S i n * ** 
+Eval: I I S    I S       D  D D S S S       D D             S    I S S       D S S    D       S       D  S S      S       S        D   I S  S S    D S S         D  S S  S     D D  
+
+id: (mandarin_140917_361334-2)
+Scores: (#C #S #D #I) 36 26 9 3
+REF:  * ** N i kh & X  u EI s I n EI TS u n C I A   ai ph i E n TS i t & T i E n C i n * au TS ou p ai 9R & n A9R TS ai th A T &  j i N C I   a n TS U n J i p a n T & au TS OU 9R & N  
+HYP:  W EI M i kh & KH u ** s & n &  T  u n S & A9R ai ph i * n S  i t & P i * n S i n K au S  ou p ai L  A n &   T  ai th & L EI j i * * TSH a n C  I n P i p a n * X au ** ** ** T AU 
+Eval: I I  S        S    D    S   S  S      S S S           D   S        S   D   S     I    S          S  S   S   S        S S S      D D S       S  S   S         D S    D  D  D  S S  
+
+id: (mandarin_140917_361334-20)
+Scores: (#C #S #D #I) 39 17 8 4
+REF:  * ** TS & n jj i a * 9R u C C I   a n jj i e n F A N  s &  x u EI t & X ei p a n T & n t & N  j & t au TS i JJ i E n Y Y l i 9R & N m A n w ei x u a ** N 
+HYP:  W EI K  & n jj i a N M  u * * TSH a n jj i e n * T AI s OU x u ** t & F ei p a n X A n t * AU j I t au JJ i L  i * n * I l i J  & * m & n w ei x u a TS I 
+Eval: I I  S             I S    D D S                D S S    S      D      S          S S     D S    S      S    S    D   D S     S    D   S              I  S 
+
+id: (mandarin_140917_361334-3)
+Scores: (#C #S #D #I) 40 24 6 2
+REF:  T a T  U O s U O t & au TS OU 9R & n t U  x u ei JJ i a n S U T a * N  j i t & n i E n C C I n 9r & n KH a n TS u * O  9R & s I s & n f ei t & TH au j A n K U ei 
+HYP:  X a KH A N s * I t * au L  U  L  A n t AU x u ei L  i a n * N X a L AI j i t & n i * n * S U n 9r & n X  a n S  u X AI L  & s & s & n f ei t & X  au j I n * W ei 
+Eval: S   S  S S   D S   D    S  S  S  S     S         S        D S S   I S              D   D S S          S      S    I S  S      S                S       S   D S    
+
+id: (mandarin_140917_361334-4)
+Scores: (#C #S #D #I) 29 22 4 13
+REF:  * * * C y jj i ou * P AU l i T OU OU TS U n A9R J a n * ** TS i * * jj i * OU s I J i C C Y n m A F a n t & ts I TS au TS & t A N s i TS & * * * TS u * n 
+HYP:  S & S I y jj i ou F U O  l i * W  O  TH A n *** F a n W EI J  i E N jj i L A  s U S i * S & n m & P a n t & ts & T  au T  & t * & s i T  & N U N K  u A n 
+Eval: I I I S           I S S      D S  S  S  S   D   S     I I  S    I I      I S    S S   D S S     S S            S S     S      D S     S    I I I S    I   
+
+id: (mandarin_140917_361334-5)
+Scores: (#C #S #D #I) 46 24 13 2
+REF:  ** J & s I ph i e n M i e n T & P u N & N J I n W EI W o m & n TS u n t & P  u * f & N 9R & n tsh a n TSH a n C Y jj i ou X  u O n au s I JJ I OU 9R & n w ei S u o j ou S u t A N  j i m i N 
+HYP:  JJ I E s & ph i e n * i e n * A K u * * * * * n * ** M o m & n T  u n t & KH u O f * U EI A n tsh a n F   a n S I jj i ou KH u A n au s * &  S U  J  A n w ei F u o j ou F u t * AI j i m i * 
+Eval: I  S S   S          D       D S S   D D D D D   D D  S         S          S    I   D S S  S           S       S S         S    S        D S  S S  S  S        S          S     D S          D 
+
+id: (mandarin_140917_361334-6)
+Scores: (#C #S #D #I) 34 25 12 7
+REF:  * * * W o m & N s i C C Y l I AU jj i a Y   Y E n A9R TS U O W ei N A N m i n W O M & n TS i ** J ou s & n x u O s I L I a n TS u n C Y E n TS & * 9R U K u o s I n i ** * 
+HYP:  X & N P o m & * s i * S I l * A  jj i a A9R J A n T   A  N S U ei * M & m i n * * * * n ** i JJ I ou s & n x u * s * U J a n T  u n * S & n T  & L A  N L u o s & n i KH U 
+Eval: I I I S       D     D S S   D S         S   S S   S   S  S S S    D S S       D D D D   D    I  S              D   D S S     S      D S S   S    I S  S S       S     I  I 
+
+id: (mandarin_140917_361334-7)
+Scores: (#C #S #D #I) 39 25 18 3
+REF:  X U EI TS u O tsh u TS & N  j a n T & C Y E n TS & n & n I T A n 9R A N s I PH au C I a n KH & j i 9R a n TS I jj i JJ i C Y s & n TS u ** ** & N C   i A C C Y t & t i f a n A9R ts * &  j & S I 
+HYP:  * Y N  T  u * tsh u ** F EI j a n * & * S & n F  A n & n * * * n ** T & s & P  au * S a n K  & j i J  a n S  U jj i TH i S I s A n S  u EI TS & * TSH i * * * * t & t i f a n *** ts U EI j & * * 
+Eval: D S S  S    D       D  S S        D   D S S   S  S       D D D   D  S S   S S     D S     S        S      S  S      S    S S   S   S    I  I    D S     D D D D               D      I S      D D 
+
+id: (mandarin_140917_361334-8)
+Scores: (#C #S #D #I) 41 29 12 2
+REF:  * W o m & N S u o TS u o t & W o m & n p i n F ei k u * J I  j au C C  I n 9R U X u o TS & K A  N  9R au N I m & n t & S & X U EI x & W & N  x u A  s & n X u o w O J &  p U m i n P AI 
+HYP:  S U o m & * F u o T  u o t * U o m A n p i n P ei k u W U EI j au * TS & n ** * L u o T  & * KH AI J  au * * m I n t & W A N F A  x & * S OU x u EI s A n F u o w * * EI p O m i n * T  
+Eval: I S       D S     S        D S     S         S        I S S       D S  S   D  D S     S    D S  S  S     D D   S       S S S S S      D S S      S    S   S       D D S    S       D S  
+
+id: (mandarin_140917_361334-9)
+Scores: (#C #S #D #I) 40 23 12 2
+REF:  * T A n ts & jj i ou s i m u C C I   E n T & TS u a n KH U A N W  o m & n p i C Y C C Y s i J  i N S u t * A N n EI TS a n t au ts i K  ai k u o L I a n p AI W a N 9R & N  
+HYP:  & S E n ts I jj i ou s i m u * * TSH & n * & T  u a n ** * * K AU o m & n p i * S I S I s i JJ i E F u t & M I n JJ I  a n t au ts i KH ai k u o * J a n p ** * a * ** W EI 
+Eval: I S S      S                 D D S   S   D   S        D  D D S S              D S S S S     S    S S     I S S   S  S                S           D S       D  D   D D  S S  
+
+Speaker sentences   1:  mandarin_140918_361524   #utts: 20
+id: (mandarin_140918_361524-1)
+Scores: (#C #S #D #I) 48 16 14 4
+REF:  P I N T u K A N  9R A n C C I e n * * & TS i * ts & ts u n ts i m i n p i n t u t & k & n T a f a n W EI TSH U  a n p * o tsh u l & C I a n C i F ei T  i C C Y PH ai C c i e N j ou 
+HYP:  * * * L u * * KH AI & n * * S e n U L A JJ i N ts & ts u n ts i m i n p i n t u t & k & n * a f a n * ** N   KH a n p U o tsh u l & * S a n S i P ei JJ i * S I P  ai * c i e * j ou 
+Eval: D D D S   D D S  S  S   D D S     I I S S    I                                            D         D D  S   S        I             D S     S   S    S    D S S S     D       D      
+
+id: (mandarin_140918_361524-10)
+Scores: (#C #S #D #I) 44 25 11 0
+REF:  TH U n K U o K  u o jj i jj i E N x & TS u o L ai kh a n JJ i TS & TS U n p i n t U A  N  l i X U ei t & s I W u K & tsh & N Y Y E n k u o TS AI l i a n C C I E  N n i e n TS & n 
+HYP:  X  A n * W o KH u o jj i jj i * * x U S  u o K ai kh a n T  i T  & C  I n p i n t * AU AI l i * W ei t & s * * u W O tsh & * M I A n k u o T  &  l i a n * * * TS & n i e n F  A n 
+Eval: S  S   D S   S                D D   S S      S           S    S    S  S           D S  S      D S          D D   S S       D S S S         S  S          D D D S  S         S  S   
+
+id: (mandarin_140918_361524-11)
+Scores: (#C #S #D #I) 45 23 10 1
+REF:  JJ I ou f a n KH U n ** ai TS I p i n tsh U a n p o w & n th i JJ i N C I n k u o JJ I n jj I X  u ei j i TS & JJ I  A N s i T  i a9r TS I a N l I  X  u ei J I n w ei k u n k u N W EI 
+HYP:  ** J ou f a n K  A n KH ai T  & p i n tsh * a n p o w A n th i PH i * S A n k u o TS & n jj Y KH u ei j i ** * F  EI T & s i JJ i a9r S  U a * l EI KH u ei * * n w ei k u n k u * * O  
+Eval: D  S          S  S   I     S  S           D           S        S    D S S         S  S      S S           D  D S  S  S S     S        S  S   D   S  S       D D                  D D S  
+
+id: (mandarin_140918_361524-12)
+Scores: (#C #S #D #I) 41 20 12 1
+REF:  w ei s & n w ei jj i a9r * TS  au kh ai S u O j ou tsh & n Y Y E n k u o JJ I n C i n JJ i n jj I X  u EI j I L i e N X & K  u o ai P O L a s I w u C i E TH I au Y Y E N 
+HYP:  w ei s A n w ei jj i a9r N TSH au kh ai F u * j ou tsh & n * J A n k u o ** Y n S i n ** i n jj Y KH u O  j * * i e * M O KH u o ai * W A a s U w u S i * ** T au * * J & 
+Eval:        S                 I S            S   D              D S S         D  S   S     D         S S    S    D D     D S S S         D S S     S     S   D D  S    D D S S 
+
+id: (mandarin_140918_361524-13)
+Scores: (#C #S #D #I) 38 18 8 3
+REF:  * T AI w ei n A p a l u O p * o s i p I AU s I th a 9R & N w ei K  u o jj i s &  x u ei ** C Y J au TH ou 9R u TS i s au s I J i m ei Y Y E N l ai p A N 
+HYP:  A N EI w ei n & p a l u * p U o s i p * &  s & th a ** L I w ei KH u o jj i s OU x u ei TH I S I au K  ou L  u S  i s au s * * i m ei * * J & l ai p * O 
+Eval: I S S         S         D   I         D S    S      D  S S      S             S         I  S S S    S     S    S           D D        D D S S        D S 
+
+id: (mandarin_140918_361524-14)
+Scores: (#C #S #D #I) 31 22 2 3
+REF:  D A  l E& Z & m ^ n T & G  OU TS AI s A n k & Y y 8 W O m & n s u o TH i TSH u t & Y Y E n ts u jj i n * * & s i J  i * J i m ei 
+HYP:  T AU l &  S & m & n K & KH &  F  EI s & n k * U y N X & m & n s u o S  i F   u t & * J A n ts u jj i n L U O s i JJ i N L i m ei 
+Eval: S S    S  S     S   S   S  S  S  S    S     D S   S S S             S    S         D S S               I I S     S    I S        
+
+id: (mandarin_140918_361524-15)
+Scores: (#C #S #D #I) 45 19 8 2
+REF:  Y y e n T A N  C i E n TS ai J I jj i n C Y j au s i j i l * I AU j & jj i ou s I s u o ts ai j i K & Y y 8 jj i e n C C I n KH U a n J i jj i n * &  x u a l I AU 
+HYP:  * y e n * X AI S i * n T  ai N Y jj i n S I j au s i j i l & M &  j I jj i ou s & s u o ts ai j i T & * y * jj i e n * S & n ** K a n C i jj i n L OU x u a l * A  
+Eval: D       D S S  S   D   S     S S        S S                I S S    S           S                 S   D   D          D S S   D  S     S          I S          D S  
+
+id: (mandarin_140918_361524-16)
+Scores: (#C #S #D #I) 38 24 10 1
+REF:  s i p ei TS au TSH & n m u C C I  E n JJ Y m i E N T & Y Y E N J i * N TS u j au s I TS ai K u O C C   Y J  i K & Y Y 8 l i p i n t u t & tsh U a n p o tsh & n p au 
+HYP:  s i p ei X  au S   A n m u * * TS & n TS I m i * * * * M I L I L i S U TH u j au s & T  ai W u * * TSH I JJ i T & * J & l i p i n t u t & tsh * a n p o tsh A n p au 
+Eval:          S     S   S       D D S  S   S  S     D D D D S S S S S   I S S           S S     S   D D S   S S    S   D S S                       D             S        
+
+id: (mandarin_140918_361524-17)
+Scores: (#C #S #D #I) 42 19 11 3
+REF:  P au f a s i TH ai K U ei m O J i jj i n T A t AU l * I AU Y Y E n L AI T & l i a n p ei s i jj i E w EI s & n TS u ts * ** i TS U  l i TS u n k A N  s i p U L I s I AI 
+HYP:  * au f a s i T  ai * W ei m U P i jj i n * * t &  l U O L  & M & n * ** * & l i a n p ei s i jj i * w U  s & n F  u ts & PH i ** OU l i T  u n k * AI s i p O M U s * U  
+Eval: D            S     D S      S S          D D   S    I S S  S S S   D D  D                         D   S        S       I I    D  S      S        D S        S S S   D S  
+
+id: (mandarin_140918_361524-18)
+Scores: (#C #S #D #I) 34 18 13 3
+REF:  * i f W I D u N  A  T S i ** 9R u ** K u O W o m & n W U f a kh A n T au K  u o jj i s &  X  u ei JJ i jj i C I A n J i n P i n C Y  N s u C i n t U N 
+HYP:  J i f * * * u EI JJ I L i AU S  u EI L u * * o m O n * I f a kh & n * au KH u o jj i s OU KH u ei TH i jj i * S & n * i n * i n * TS I s u S i n t * * 
+Eval: I     D D D   S  S  S S   I  S    I  S   D D     S   D S        S   D    S             S  S       S         D S S   D     D     D S  S     S       D D 
+
+id: (mandarin_140918_361524-19)
+Scores: (#C #S #D #I) 50 15 10 2
+REF:  * * kh a n jj i AI p O L a j i C C  i n p i n th i K U n p i C Y t & j i L I au f u w u x u O Y Y e n TS u N & W o m & n jj i a n j ou KH & n & N m i e N L I n P I 
+HYP:  A N kh a n jj i E  p * U a j i * TS i n p i n th i W A n p i S I t & j i * J au f u w u x u * L I e n T  u O M U o m & n jj i a n j ou K  & n & * m i e * * * n * * 
+Eval: I I             S    D S       D S                 S S       S S         D S                D S S     S    S S S                       S        D       D D D   D D 
+
+id: (mandarin_140918_361524-2)
+Scores: (#C #S #D #I) 48 18 11 2
+REF:  J OU S a n C C I  E n M i n m ei jj Y n s i p i n TS u tsh & N T & p u t U ei * AU p A m A x U A N C Y  E N P u m ei k u o jj i a n TS ai * AI p O l a p i n T u t & tsh U a n 
+HYP:  * ** F a n * * TS & n * i n m ei jj I n s i p i n S  u tsh & * M & p u t L ei P O  p O m & x * * * * AI S I M u m ei k u o jj i a n T  ai P EI p U l a p i n K u t & tsh * a n 
+Eval: D D  S     D D S  S   D             S             S          D S         S    I S    S   S   D D D D S  S S S                       S     I S    S           S           D     
+
+id: (mandarin_140918_361524-20)
+Scores: (#C #S #D #I) 45 21 10 1
+REF:  * J i tsh a n 9R & n t au TS  u J I  ts ai n A N TH U n s I j i w ei k A N 9R a N AI p O L a P  i n t u t A N m u C C I  E n J I jj i n KH A n f u t & m ei k u o j i s & N 
+HYP:  Y N i tsh a n N  A n t au TSH u * EI ts ai n * & T  A n s & j i w ei k * * AI a P EI p * U a PH i n t u t * & m u * * TS & n * Y jj i n K  & n f u t & m ei k u o j i s * U 
+Eval: I S           S  S        S     D S          D S S  S     S            D D S    S S    D S   S            D S     D D S  S   D S        S  S                            D S 
+
+id: (mandarin_140918_361524-3)
+Scores: (#C #S #D #I) 44 18 16 3
+REF:  TSH U A N p O C C Y Y Y   Y y e n jj i e N s i C C i k & ts I l I AU TS u n C i n p i N w ei t a n T i t * & s u C C I   E n M i n j i w u K  u n TS U o ** * TS & TH i k u n PH EI 
+HYP:  *** * * * p * * * * U TSH I y e n jj i e * s i * S i k & ts & l * A  T  u n S i n p i * w ei t a n L i t J & s u * * TSH & n * i n j i w u KH u n ** P o JJ I W  O PH i k u n P  AI 
+Eval: D   D D D   D D D D S S   S              D     D S          S   D S  S      S         D            S     I       D D S   S   D             S      D  S   I  I S  S S          S  S  
+
+id: (mandarin_140918_361524-4)
+Scores: (#C #S #D #I) 51 22 7 1
+REF:  PH EI C Y n m EI k u O TS u n TH u n f a TSH u jj i n K au tsh & n 9R u k u o p u jj i s i TS ai C C   Y C i n t u N ts * & TS u n p i n t u JJ I   a n k EI K  u o JJ i s &  x u ei t AI L AI 
+HYP:  ** ** S I n m &  k u * T  u n K  u n f a F   u jj i n T au tsh A n L  u k u o p u jj i s i T  ai * TSH I S i n t u O ts U N L  u n p i n t u ** TSH a n k AI KH u o L  i s OU x u ei t ** * &  
+Eval: D  D  S S     S      D S      S          S            S        S   S                       S     D S   S S         S    I S S                D  S         S  S      S      S           D  D S  
+
+id: (mandarin_140918_361524-5)
+Scores: (#C #S #D #I) 41 20 9 6
+REF:  F & N N S & L   I m u C C i E N T & jj Y s i * J OU C i E j i f a p U KH & s ou s i * A9R C C i E x u ei C Y n s * * u & x u a * * p i n t U t & TSH U a n p o s u 
+HYP:  * * * A M & TSH U m u * S i * * L & jj I s i P U O  S i * j i f a p O K  & s ou s i X &   A S i * x u ei S I n s U K u O x u a P & p i n t & t & *** F a n p o s u 
+Eval: D D D S S   S   S     D S   D D S      S     I S S  S   D           S S             I S   S S   D        S S     I I   S       I I         S     D   S             
+
+id: (mandarin_140918_361524-6)
+Scores: (#C #S #D #I) 36 22 20 0
+REF:  S u t u Y Y 8 l ai Y Y 8 KH U AI JJ I n TH i e n TS ai C i f ei T  i C C Y j ou s u C C I E N 9R  & N P ei k A N 9R a N 9R u K u o w ei n & n jj i s i KH U n TS I TS & K & S  u 
+HYP:  * u t u * J A l ai * * * ** J OU K  A n JJ i e n T  ai S i f ei JJ i * S I j ou s u * * * * * TSH & * M ei k * * AI a * P  u L u o w ei n A n jj i s i K  A n ** * ** * S & TS u 
+Eval: D       D S S      D D D D  S S  S  S   S        S     S        S    D S S          D D D D D S     D S      D D S    D S    S            S            S  S   D  D D  D S   S    
+
+id: (mandarin_140918_361524-7)
+Scores: (#C #S #D #I) 36 23 11 4
+REF:  s u TS I KH & N & n C Y N X  u ei * * * s u PH A n s & n TS i x au jj i w A N 9R & * N A9R t a n TSH & n C C i E N s A N  w A N 9R & n L u o 9R u p i n t u t & M O 
+HYP:  s u ** * T  U K & n * * U KH u ei S I N s u KH & n s A n JJ i x au jj i w * * EI & T U &   t a n S   A n * S i * * s * AU w O L I  A n M u o L  u p i n t u t & * N 
+Eval:     D  D S  S S     D D S S       I I I     S  S     S   S                D D S    I S S         S   S   D S   D D   D S    S S S  S   S     S                  D S 
+
+id: (mandarin_140918_361524-8)
+Scores: (#C #S #D #I) 45 23 7 3
+REF:  m o TS A N  ts & n K & T i C C Y t & ts & n TS i JJ i n jj i X U O a n C C Y E n * t u jj i a n C i E N Y y ts ai n A n TS i TS U n K  u O jj i s &  x u EI j & jj i a n * * 
+HYP:  m o JJ I AU ts & n * & L i * S I t & ts & n S  i S  i n jj i T & X a n * S I A n T t u jj i a n S i * * * y ts ai n & n S  i S  A n KH u * jj i s OU x u A  j I jj i a n S U 
+Eval:     S  S S         D   S   D S S            S    S           S S S     D S S S   I              S   D D D           S   S    S  S   S    D        S      S    S          I I 
+
+id: (mandarin_140918_361524-9)
+Scores: (#C #S #D #I) 46 22 9 2
+REF:  s & n s ou J  i n C I A  N L i e N x &  k u o a n C C Y E   N  l i s I X  u ei f a P I AU s & n M i n JJ I  a n ts au kh ai j i TS I JJ i n jj I X  u ei j i S  A n TH au 9R u x * * & 
+HYP:  s & n s ou JJ i n * * TS & P i e * x AU k u o a n * * * TSH AI l i s U KH u ei f a * T &  s & n * i n ** TS a n ts au kh ai j i S  U T  i n jj Y KH u ei j i TS & n T  au L  u x U O T 
+Eval:            S      D D S  S S     D   S            D D D S   S        S S           D S S        D     D  S                      S  S S         S S           S  S   S     S      I I S 
+
+Speaker sentences   2:  mandarin_140918_361526   #utts: 20
+id: (mandarin_140918_361526-1)
+Scores: (#C #S #D #I) 40 20 7 3
+REF:  JJ I TH U a N f & n C  i s i TS a n M U s I l u o s & n p o k * & ts i tsh u ts u n k u o TS & n TS ai tsh u TH ai C i N T & TS & n * TS & j i C I E n ts i * 
+HYP:  ** * Y  F a * f A n JJ i s i TH a n * * s U l u o s A n p o k U O ts i tsh u ts u n k u o JJ I n T  ai tsh u X  ai S i * M & JJ I n K U  O j i * S & n ts i T 
+Eval: D  D S  S   D   S   S        S      D D   S         S         I S                         S  S   S           S     S   D S   S  S   I S  S     D S S        I 
+
+id: (mandarin_140918_361526-10)
+Scores: (#C #S #D #I) 42 27 11 2
+REF:  * t & T U n L i m ei TS U N K u O TS & n f u JJ I  a n j au tsh u TH ai T & C I n ts & n * TS & kh & n & N X  u ei J I n C I   a n T au C C  i t u ei Y Y t u n l i m ei t & C Y C C  I  OU 
+HYP:  N t & P A n M i m ei ** K & M u * JJ I n f u ** TS a n j au tsh u KH ai L & S & n ts A n S U  O kh A n * U KH u ei * * n * TSH a n P au * TS i t u ei * * t u n l i m ei t & * S I TS AU N  
+Eval: I     S S   S        D  S S S   D S  S       D  S                 S     S   S S      S   I S  S    S   D S S       D D   D S       S    D S           D D                    D S S S  S  S  
+
+id: (mandarin_140918_361526-11)
+Scores: (#C #S #D #I) 56 14 14 1
+REF:  s i jj i E k & k u o t U EI Y y m ei th A n T & C Y C C i * OU l i a n ts ai K  u o C C Y s i N i E n jj i e n P  u t u a n s & n k au JJ I n jj i N i e n TSH A  N  l i a n p ei TH i S & N 
+HYP:  s i jj i * k & k u o t * ** & y m ei th & n * & * * * S i S AU l i a n ts ai KH u o * S I s i M i * n jj i e n KH u t u a n s & n k au ** Y n jj i M i e n *** TS AI l i a n p ei T  i * * * 
+Eval:          D             D D  S           S   D   D D D S   I S                S      D S S     S   D            S                       D  S        S       D   S  S               S    D D D 
+
+id: (mandarin_140918_361526-12)
+Scores: (#C #S #D #I) 37 23 19 4
+REF:  s & N T a n JJ I  A k & C   C Y 8 ts ai C I A C  i a N TS U n K U o t U EI Y Y au TS OU t u n L i m ei t & C Y C C i * ou TS a n T au * au TS OU tsh u KH ou TS U n L I a n t & t a *** * Y Y 8 
+HYP:  s * * * a n N  TS & k & TSH I T & ts ai * * * JJ i a * ** * n * M o t * &  J I au T  AU t u n M i m ei t & * * * S i S ou S  a n * au T au ** ** tsh u K  ou P  A n * * a n t & t a A9R J & F U 
+Eval:   D D D     S  S  S     S   S S S       D D D S      D D  D   D S     D S  S S    S  S        S            D D D S   I    S      D    I    D  D        S     S  S   D D             I   I S S S 
+
+id: (mandarin_140918_361526-13)
+Scores: (#C #S #D #I) 41 25 11 4
+REF:  S I f & n TS i j i * AU TS OU m ai k & l i JJ i th U a N f & N  C  i s i TS a N m u s I l u o S & N P o k * & 9R & n w ei TS u n K u * O th U EI TSH u C I n TS & n TS & x * OU t U EI 
+HYP:  * * f A n JJ i j i P O  T  AU m ai k & l i TH i th * a * f * EI JJ i s i P  a * m u s U l u o F & * M o k U O KH A n w ei TH u n W u T I th * ** *** u S & n JJ I n F  & x U O  t * I  
+Eval: D D   S   S        I S  S  S               S       D   D   D S  S        S    D       S       S   D S     I S S  S        S      S   I S    D D  D     S S   S  S   S      I S    D S  
+
+id: (mandarin_140918_361526-14)
+Scores: (#C #S #D #I) 38 23 12 1
+REF:  * AU TS ou s u o TSH u KH ou t & t u n L I m ei TS U n T A  Y Y 8  X  u EI J OU j i p a N T A  p U t AU p i au TS U & N T a n S I P u j au w a n jj i x ai KH & J  I  TH U n 
+HYP:  F O  T  ou s u o T   u K  ou t & t u n * * m ei JJ I n * TH & J OU KH u ** * O  j i p a * K AU p & t &  p i au ** T & * W a n * * K u j au w a n jj i x ai ** * PH EI T  A n 
+Eval: I S  S           S     S               D D      S  S   D S  S S S  S    D  D S          D S S    S   S         D  S   D S     D D S                        D  D S  S  S  S   
+
+id: (mandarin_140918_361526-15)
+Scores: (#C #S #D #I) 45 21 19 1
+REF:  TH U N K U o tsh u n C i m ei X  u ei l ai th i k au TS i l i a n T a n 9R a * N N a C I E X U A f ei j & C Y J au jj I 9R U tsh & n P & N T  a n t U EI Y y C C i TH A t & n & n Y Y e n tsh A n 
+HYP:  ** * * * W o tsh u n S i m ei KH u ei l ai th i k au JJ i l i a n * a n ** a S & W a * * * * * N f ei j * I S I au jj * ** Y tsh A n T & * TH a n t * ** & y * S i X  & t A n & n * I e n tsh & n 
+Eval: D  D D D S           S        S                      S            D     D    I S S   D D D D D S        D S S S       D D  S     S   S   D S        D D  S   D S   S  S   S       D S         S   
+
+id: (mandarin_140918_361526-16)
+Scores: (#C #S #D #I) 38 27 10 2
+REF:  * * L AI s u o j ou w ei tsh a n p u s i C I n T &  JJ i X  u EI L i 9R U  T  i PH ai f a n m ei th a N X  u O TS & th i e N 9R A n C C  i t U KH & J  I TS AI TS U n K U o kh ai PH I  
+HYP:  C I N &  s u o j ou w ei tsh a n p u s i S & n * EI TS i KH u A  M i ** AU JJ i KH ai f a n m ei th a * KH u * JJ I th i e * ** * n * JJ i t * AU X EI T A  N  JJ I n * W o kh ai TH AI 
+Eval: I I S S                                  S S   D S  S    S    S  S   D  S  S    S                     D S    D S  S        D D  D   D S      D S  S S  S S  S  S  S   D S         S  S  
+
+id: (mandarin_140918_361526-17)
+Scores: (#C #S #D #I) 40 26 11 4
+REF:  k & n t u O T & s i TSH A  N au TS OU KH u * a n J & w ei Y Y E n X U ei t & k & l ei k & AI L  U & N s * I TS & 9R & n w ei ts u n * * t & C I n TS & n TS & TS u n J OU C i E P I au 
+HYP:  k & n t u * L A s i *** TS & au ** ** L  u K a n L I w ei * * A n * W ei t & k & l ei k & ** AU W & * s & N F  & L  I n w ei ts u n W U t & S & n JJ I n F  U T  u n T AU S i * * T au 
+Eval:           D S S     D   S  S    D  D  S    I     S S      D D S   D S                     D  S  S   D   I S S    S  S               I I     S S   S  S   S  S S      S S  S   D D S    
+
+id: (mandarin_140918_361526-18)
+Scores: (#C #S #D #I) 34 20 10 8
+REF:  * * * * * * TS & C i * E C i n P I au TS U & n T  & TSH u TH ai TS AI w o m & N T & j I L I au ts i TS U n W o m & N T & l i jj i e s I C I n ts & n * TS & tsh u 
+HYP:  A N S A N T U  & S i S I S i n T J au ** T & n 9R & F   u T  ai S  E  w o m * * * & j * * * au ts i JJ I n P o m * * * & l i jj i e s & S & n ts & n S U  O tsh u 
+Eval: I I I I I I S    S   I S S     S S    D  S     S    S     S     S  S        D D D     D D D         S  S   S     D D D                S S S          I S  S       
+
+id: (mandarin_140918_361526-19)
+Scores: (#C #S #D #I) 41 19 10 3
+REF:  TS U j au C i E n TS i t & T U ei C I A  N s I x * & m ei TSH a n PH i n A9R au TS ou p & N l * ai jj I ou p u TSH u KH ou x * & m ei T U ei Y Y TS  u n K U o s u o ts u n 
+HYP:  ** * j au S i * n JJ i t & * W ei S & PH I s & x U O m ei TS  a n T  i n *** au T  ou p & * l U ai jj Y ou p u F   u K  ou x U O m ei * P ei * * TSH u n * W o s u o ts u n 
+Eval: D  D      S   D   S        D S    S S S  S   S   I S      S       S      D      S         D   I       S        S     S       I S      D S    D D S       D S                
+
+id: (mandarin_140918_361526-2)
+Scores: (#C #S #D #I) 41 21 11 5
+REF:  *** * * ** W  u * m ai tsh & n W EI l I AU J I  K & x & n C i E N s i T & w & n TH i TH & P i E s i TS ai JJ i E n KH A n f a n m i e N s I x & n t u O 9R & N X u A N s a n 
+HYP:  A9R X U EI TS u N m ai tsh A n M &  l * ** * EI T & x & n S i * * s i L U w A n T  i KH & L i * s i T  ai TS i * n X  & n f a n m i e * s & x & n t u * L  & * P u * & s a n 
+Eval: I   I I I  S    I          S   S S    D D  D S  S         S   D D     S S   S   S    S    S   D     S     S    D   S  S               D   S           D S    D S   D S       
+
+id: (mandarin_140918_361526-20)
+Scores: (#C #S #D #I) 46 18 7 2
+REF:  TS U n s i t & x * EI m ei j & jj i OU s i j ou j A N m ei au TS OU S u o tsh u KH ou T & TSH a n PH i n j & t U  s i N & n k * OU t A  t au TS i l I a n P I au TS U & N 
+HYP:  ** * n s i t & x & N  m ei j I jj i AU s i j ou j * I m ei au T  U  F u o tsh u K  ou P & TS  a n TH i n j & t AU s i M & n k U O  t AU t au S  i l * a n * T au ** T & * 
+Eval: D  D             I S         S      S             D S         S  S  S           S     S   S       S            S      S       I S    S       S      D     D S    D  S   D 
+
+id: (mandarin_140918_361526-3)
+Scores: (#C #S #D #I) 41 20 11 4
+REF:  C i n f ei t & n C C i k u a n T & JJ i p i n * * C  i * N t & TS & n * TS & p U X  u ei jj i n TS i m ei th A n T & s i j U n A9R s I J AU C I E n TS I s i J U N N & 
+HYP:  S i n f ei t & n * S i k u a n * * ** i p i n K U TS i M I t * ** & n F U  O p O KH u ei jj i n S  i m ei th & n * & s i j A n A   s * * ** & S & n JJ Y s i * W O M & 
+Eval: S                D S           D D D          I I S    I S   D D      I S  S   S S              S            S   D         S   S     D D D  S S S   S  S     D S S S   
+
+id: (mandarin_140918_361526-4)
+Scores: (#C #S #D #I) 42 16 11 2
+REF:  C i E x A n k au w u 9R a n w u ts i L i 9R U  m ei X  u ei x U O l i * OU t & t i TS I l I a N m ei th a N L ai ts I au TS OU KH u * a n j & w ei Y Y E n X U ei 
+HYP:  S i * x & n k au w u L  a n w u ts i P i ** AU m ei KH u ei x * & l i W U  t & t i JJ Y l * a * m ei th a * K ai ts U au ** ** T  u K a n j I w ei * * A n * W ei 
+Eval: S   D   S            S               S   D  S       S         D S     I S          S  S   D   D           D S       S    D  D  S    I       S      D D S   D S    
+
+id: (mandarin_140918_361526-5)
+Scores: (#C #S #D #I) 40 21 3 1
+REF:  t & K  & l ei k & ai w & n s I P I au s I m ei TH A N  s i jj i n TS I Y  y TH i E KH U a n s i t & au TS OU t i A9R T AI tsh u KH ou TSH a n PH i n * th a 
+HYP:  t & KH & l ei k & ai w A n s U T J au s & m ei ** T AI s i jj i n F  U EI y PH i * ** K a n s i t & au T  AU t i A   P AU tsh u K  ou TS  a n TH i n I th a 
+Eval:     S                  S     S S S      S      D  S S             S  S S    S    D D  S                S  S      S   S S        S     S       S      I      
+
+id: (mandarin_140918_361526-6)
+Scores: (#C #S #D #I) 45 15 9 0
+REF:  T U EI y y C i N N A n W EI A9R s i x u O KH u & n s I L a N L  i a n k & TS OU l ai s u o m ei th a n t U  s i ts u ei t AI t & tsh u KH ou tsh A n PH i n s i 
+HYP:  * * &  y y S i * * * n * U  &   s i x u * K  u A n s * U a * PH i a n k & S  U  l ai s u o m ei th a n t AU s i ts u ei t A  t & tsh u K  ou tsh & n T  i n s i 
+Eval: D D S      S   D D D   D S  S           D S    S     D S   D S            S  S                           S                S            S         S   S          
+
+id: (mandarin_140918_361526-7)
+Scores: (#C #S #D #I) 54 12 10 0
+REF:  f ei tsh a n ts u n j au t & JJ i n jj i tsh & n f & n kh & j i t AI l ai m EI n i E n jj i n s I p ai C C  i s i J I au Y y E n T & s ou 9R u s u O J I  m ei th A n TSH u KH OU 
+HYP:  f ei tsh a n ts u n j au t & C  i n jj i tsh A n f A n kh & j i t &  l ai m I  n i * n jj i n s & p ai * TS i s i * P au * y * n * & s ou L  u s u * * EI m ei th & n F   u ** ** 
+Eval:                              S               S     S              S         S      D            S      D S        D S    D   D   D        S        D D S          S   S     D  D  
+
+id: (mandarin_140918_361526-8)
+Scores: (#C #S #D #I) 46 24 6 0
+REF:  KH OU T u EI Y y jj i ou j & jj i X  U ei JJ I n jj I TS & n TS A n L ai s u o t u jj i w ei TS U n j au TH U n s i J &  TS A n jj y K  u o m i n s ou 9R u TS u n t & X & n t AI 
+HYP:  ** ** X u O  L y jj i ou j I jj i OU W ei TS & n jj Y T  I n T  & n * ai s u o t u jj i w ei JJ I n j au T  A n s i * JJ I  E n jj y KH u o m i n s ou L  u T  u n t & * A n t ** 
+Eval: D  D  S   S  S             S      S  S    S  S      S S  S   S  S   D                        S  S        S  S       D S  S  S        S                 S    S          D S     D  
+
+id: (mandarin_140918_361526-9)
+Scores: (#C #S #D #I) 48 22 6 0
+REF:  T A p u f & N OU TS OU TS u j au TSH u KH OU l i a n TS u N m ei th a n f & n p i e s I j u n y y K a n TH i E ts i TS au t & j & JJ i N m ei x U O  j U n Y Y  f a T  i e N 
+HYP:  * & p u f & F O  T  U  T  u j au F   u K  AU l i a n F  u * m ei th a n f A n p i e s & j u n y y T a n S  i * ts i T  au t & j I TH i * m ei x * OU j A n M EI f a JJ i e * 
+Eval: D S         S S  S  S  S         S     S  S          S    D               S           S           S     S    D      S           S S    D        D S    S   S S      S      D 
+
+Speaker sentences   3:  mandarin_141227_382097   #utts: 17
+id: (mandarin_141227_382097-1)
+Scores: (#C #S #D #I) 51 15 6 0
+REF:  a n T & l u s i s u o K  & n p i n t U  j ou k u a n T & f A n ts u ei x U O p au l i C i n W ei JJ I A   N X u EI s i TS  & n f u t a JJ i t & TS u n T  i e n 
+HYP:  a n * A l u s i s u o KH & n p i n t AU j ou k u a n * & f & n ts u ei x * & p au l i S i n M ei ** * TSH & P u ** s i TSH A n f u t a PH i t & TH u n JJ i e n 
+Eval:     D S               S              S               D     S             D S          S     S    D  D S   S S   D      S   S           S        S      S        
+
+id: (mandarin_141227_382097-13)
+Scores: (#C #S #D #I) 41 19 9 3
+REF:  ** *** 9R & N m & n t U EI Y y p i n t u t & C Y C C  I OU J i JJ i P i n t u k u n J I n x U O  W ei * x ai T & TH u JJ i n p i n C C  i e ts ai m i N n i E N 
+HYP:  AU A9R KH & * m & n t * ** & y p i n t u t & * S I TS U O  N i S  i T i n t u k u n C Y n x * OU P ei Y x ai L I T  u S  i n p i n * JJ i e ts ai m i * n i * * 
+Eval: I  I   S    D         D D  S                 D S S S  S S  S   S    S               S S     D S  S    I      S S S    S            D S                D     D D 
+
+id: (mandarin_141227_382097-14)
+Scores: (#C #S #D #I) 36 21 3 2
+REF:  * * s a n Y Y 8 F & n TS i T  i n TSH u j i TH au C i n t u n JJ i X  u a W ei t U O l i j a TS  OU jj i n TSH A p u TS  a n L u N A N  s u o 
+HYP:  E N s a n * J & S E n S  i JJ i n T   u j i T  au S i n t u n S  i KH u a P ei t * & l i j a TSH AU jj i n X   & p u TSH a n M u * M AI s u o 
+Eval: I I       D S S S S   S    S      S         S     S           S    S      S      D S         S   S         S   S     S       S   D S S        
+
+id: (mandarin_141227_382097-15)
+Scores: (#C #S #D #I) 34 17 14 1
+REF:  K & N JJ Y TH A T & l i au JJ i e ts AI W ei TS  ou j ou C C  i s I W ei TS OU t & ph i E N Y Y e n t i C  C y p i n t u K EI x & n t u O T & JJ i ** A  
+HYP:  * * * ** * ** * X & l i au T  i e ts A  P ei TSH ou j ou * TS i s & P ei TH U  t & ph i * * * * e n t i TS I y p i n t u T I  x & n t u * * A L  i TH AI 
+Eval: D D D D  D D  D S          S         S  S    S           D S      S S    S  S           D D D D         S  S             S S            D D S S    I  S  
+
+id: (mandarin_141227_382097-16)
+Scores: (#C #S #D #I) 20 10 4 19
+REF:  * * * * * ** * ** *** * * * * ** * * * w o ts AI W ei TS ou k & ** t i j OU C  C i s i TS ai ph i E n Y Y E n t i ** C C Y 
+HYP:  T U O & M AU W EI TSH U O W U 9R I T & w o ts &  P ei S  ou k & AI t i j ** AU S i s i T  ai ph i * n * * I n t i TS I S U 
+Eval: I I I I I I  I I  I   I I I I I  I I I        S  S    S         I        D  S  S       S          D   D D S       I  S S S 
+
+id: (mandarin_141227_382097-17)
+Scores: (#C #S #D #I) 36 19 3 6
+REF:  * s I TSH A t & s I x OU T a n T  i jj i n f a n P AU T au s u o P  i n t u t & W & n TH i 9R a n th A m & n K A n T AU T  A n j ou * * ** * * 
+HYP:  Y s * *** & t & s & x U  O a n JJ i jj i n f a n M O  P au s u o TH i n t u t U P & n S  i J  a n th & m & n T & n * &  PH I n j ou K U TH A N 
+Eval: I   D D   S       S   S  S     S                 S S  S          S            S S     S    S         S       S S   D S  S  S        I I I  I I 
+
+id: (mandarin_141227_382097-18)
+Scores: (#C #S #D #I) 40 15 10 0
+REF:  s u o P  i n t u p i C C i C C i th A t & t u ph i n w ei x ai k & n t A X U A N S U O  j ou x & n t u O JJ I  A TH i n J i N W EI p i n t U  
+HYP:  s u o PH i n t u p i * S i * S i th & t & t u ph i n w ei x ai k U n t * * * * * & T AI j ou x & n t u * ** TS & PH i n T i * M I  p i n t AU 
+Eval:       S              D S   D S      S                            S     D D D D D S S S                 D D  S  S S      S   D S S          S  
+
+id: (mandarin_141227_382097-19)
+Scores: (#C #S #D #I) 38 9 2 6
+REF:  s I F & n w u l i e m EI j ou j i k & l * * i W ai t & T U p ei TS & TS u n T u ph i n * ** X  u ei m i e p i n t u ** * 
+HYP:  s U S & n w u l i e m I  j ou j i k & l I J i K ai t & * * p ei JJ I TH u n P u ph i n F OU KH u ei m i e p i n t u TH I 
+Eval:   S S                 S                 I I   S        D D      S  S S      S          I I  S                       I  I 
+
+id: (mandarin_141227_382097-2)
+Scores: (#C #S #D #I) 41 18 19 3
+REF:  L I N J I f a n m i e n ts & n f u j & JJ i ** a n tsh & N l i TS U a N m & n T & JJ i k OU C I  A n C i t u 9R & N Y Y E n T & JJ i ** a * 9R & n j ou C C i s i th A M & N T & 
+HYP:  * * * * Y f a n m i e n ts & n f u j * ** i TH a n tsh * I l i ** K a * m & n * N TH i k U  O TS & n S i t u ** * L I M I n * * ** i TS a L I  E n j ou * S i s i th * * & * M & 
+Eval: D D D D S                            D D    I          D S     D  S   D       D S S      S  S S  S   S       D  D S S S S   D D D    I    I S  S        D S          D D   D S   
+
+id: (mandarin_141227_382097-20)
+Scores: (#C #S #D #I) 37 23 10 1
+REF:  C C I N s i t & t U EI C i A N  j ou p ai L i n k u * N 9R & n l A  n L i n k U n 9R & n a9r ts U EI 9R a N 9R & n N A n k u o t & s i TH A  j & ts AI W EI x AI 
+HYP:  * * * * s i t & t * ** * i S AU j ou p ai C i n k u O L I  E n l AI n * i n k A n Y  E n a9r ts * I  L  a * L  I n T & n k u o t & s i T  AI j I ts AU M I  x AU 
+Eval: D D D D           D D  D   S S            S         I S S  S     S    D       S   S  S          D S  S    D S  S   S S                 S  S    S    S  S S    S  
+
+id: (mandarin_141227_382097-3)
+Scores: (#C #S #D #I) 36 16 4 4
+REF:  x ai TS I th i k u n ts i TSH i ** A n t & l u s i TS OU  TS A N p i AU s i * * W ei t U O l i j a TS  ou jj i A N X  U  EI l i f a * ts & n 
+HYP:  x ai S  A th i k u n ts i S   i KH & n t & l u s i ** TSH U  T & p i A  s i Y E P ei t * & l i j a TSH ou jj i * * AU PH AI l i f a N ts I n 
+Eval:      S  S                 S     I  S               D  S   S  S S     S      I I S      D S         S           D D S  S  S          I    S   
+
+id: (mandarin_141227_382097-4)
+Scores: (#C #S #D #I) 33 14 12 0
+REF:  JJ I a s i C I a n TS U ei m i n F a N m AI P  i n t u K ei C Y 8 C i AU C Y 8 s & N K U n P u ts i t U  t & f a n f a x ai J OU  
+HYP:  ** J a s i * S a n ** F ei m i n S a * m EI PH i n t u P ei * * * S i F  & S I s & * * * n * u ts i t AU t & f a n f a x ai * A9R 
+Eval: D  S       D S     D  S          S   D   S  S          S    D D D S   S  S S S     D D D   D          S                     D S   
+
+id: (mandarin_141227_382097-5)
+Scores: (#C #S #D #I) 34 20 9 7
+REF:  ** W ei TS  i t U  f a n t u t & * 9R & n TH i k u n tsh * * a n s u o j OU TS &  C  i E TS U ei C i N T & 9R & n JJ i A n X U EI TS u ** EI TS  a n p ei PH A  n * * 
+HYP:  OU P ei TSH i t AU f a n t u t & L I  E n PH i k u n tsh & X a n s u o j ** ** AU JJ i S I  F ei S i * * * ** * n ** i E n * J &  P  u JJ I  TSH a n p ei T  AI n S I 
+Eval: I  S    S       S                I S  S   S              I I             D  D  S  S    S S  S    S   D D D D  D   D    S   D S S  S    I  S  S            S  S    I I 
+
+id: (mandarin_141227_382097-6)
+Scores: (#C #S #D #I) 41 15 12 3
+REF:  * * * w o m & N X  u ei T U ei k & n p i n t u k u N J I n l i e N j ou k u a n T & f A n TS U  EI C i N W ei JJ I  A  j i TS u n f a S U o j ou TS A N Y  y 
+HYP:  T & & w o m * O KH u ei * P ei k & n p i n t u k u * * * n l i e * j ou k u a n * & f & n ** JJ I  S i * M ei ** TS AI j i T  u n f a N W o j ou ** * T AI y 
+Eval: I I I       D S S       D S                        D D D         D              D     S   D  S  S  S   D S    D  S  S      S          S S        D  D S S    
+
+id: (mandarin_141227_382097-7)
+Scores: (#C #S #D #I) 36 16 3 5
+REF:  ts i t U  f a n t u F & n f A x U O k & TS u n p au l i KH U n X & C i N w ei t & 9R & n th A m & N t U  s i ts * * & N s * ** i * 
+HYP:  ts i t AU f a n t u S A n f & x * & k & T  u n p au l i K  A n K & S i * w ei t & J  A n th & m & * t AU s i ts I Y S I s I JJ i T 
+Eval:        S            S S     S   D S     S               S  S   S   S   D          S  S      S     D   S         I I S S   I I    I 
+
+id: (mandarin_141227_382097-8)
+Scores: (#C #S #D #I) 46 18 10 1
+REF:  TS u n w & n th i t * & j i p U f & n j & s I W o m & n TS i f a T & t U EI C i A N w o m & N j & w ei w ei t U O l i j A TS OU t & JJ i n f a n PH EI p ei L i AU 
+HYP:  9R u n w & n th i t I N j i p O f A n j I s * U o m & n S  i f a * * t * ** * i S & w o m * I j A w ei w ei t * & l i j & T  U  t & T  i n f a n ** ** p ei P i E  
+Eval: S                   I S       S   S     S   D S         S        D D   D D  D   S S       D S   S             D S       S S  S      S            D  D       S   S  
+
+id: (mandarin_141227_382097-9)
+Scores: (#C #S #D #I) 41 19 8 6
+REF:  K & ** * n t u O TS I Y Y E n K  ei th A m & N k ou TS  i l I AU K  & n t u o t * * u ph i n x U O JJ I  ou JJ I  A t & TS & s i tsh * * & a n t & l u s i C Y E n p u 
+HYP:  * & KH A n t u * T  S & J A n PH ei th & m & * k ou TSH i l * &  KH A n t u o t U W u ph i n x * * &  TS ou ** TS & t & S  & s i tsh U O K a n t & l u s i * S A n p u 
+Eval: D   I  I       D S  S S S S   S        S     D      S       D S  S  S           I I            D D S  S     D  S  S     S            I I S                 D S S       
+
+Speaker sentences   4:  mandarin_150103_383309   #utts: 18
+id: (mandarin_150103_383309-1)
+Scores: (#C #S #D #I) 37 23 12 1
+REF:  t A N  s i l ai TS i N A N AU TS OU t & t u l i TS A N  j I Y Y E n s & N U F & n t U EI j I AI p o TH & t & X u * C Y x & N m EI l & N t u ei th a K au s u W o 
+HYP:  t * AI s i l ai S  i M & M O  T  U  t & t u l i ** F EI j * * * A n s & M O S A n t * I  j * &  p o ** * t & P u O L I x & * m I  l * A t u ei th a T au s u * o 
+Eval:   D S           S    S S S S  S  S              D  S S    D D D S       S S S S     D S    D S      D  D     S   I S S     D   S    D S             S        D   
+
+id: (mandarin_150103_383309-10)
+Scores: (#C #S #D #I) 28 21 7 6
+REF:  ** T  & * J I n * W ei TS ai th a T & Y Y s U A N A n TS  U n p AU x a n L I AU TH ai t u O w ei f a ** n N u O  j A n T & t U n C i * * A9R 
+HYP:  AU TS & N T A n Y M ei T  ai th a * * L I s * & X & n TSH A n p O  x a n * * &  T  ai t u * w ei f a AI n W u EI j I n * & t A n S i N W A   
+Eval: I  S    I S S   I S    S          D D S S   D S S S   S   S     S        D D S  S         D          I    S   S    S   D     S   S   I I S   
+
+id: (mandarin_150103_383309-11)
+Scores: (#C #S #D #I) 35 22 19 2
+REF:  TS & N f u TS ai s A n JJ i E T  a C Y E n ts i C c i e n w A N C C Y  E  N m EI J ou C I e N s i TSH u 9R & n X & T & JJ i C I a n ts ai TS & C i E f a n m i E N X u * * EI 
+HYP:  ** * * f u T  ai s & n S  i * TH a * S I n ts i * c i e n w * * * * EI TS A m ** I ou * S e * s i F   u ** * n K & * N TH i * S a n ts ai S  I S i * f a n m i * A K u O J OU 
+Eval: D  D D     S       S   S    D S    D S S        D           D D D D S  S  S   D  S    D S   D     S     D  D   S   D S S    D S           S  S S   D           D S S   I I S  
+
+id: (mandarin_150103_383309-12)
+Scores: (#C #S #D #I) 30 23 13 5
+REF:  J OU S u o K AI p i e N W O 9R & N W ei l i N 9R & N x au C C  i t & s i W EI s & N m & ts ai * AI p o TH & TS AI t A N  l I AU TS U n L i TS  I x * OU th a * ** * 
+HYP:  * ** F u o P I  p i e * S U A  L I L ei l i * L  & * x au * TS i t & s i * ** s & * m A ts ai X &  p o ** * F  A  t * AU l * A  S  A n M i TSH & x U O  th a P EI T 
+Eval: D D  S     S S        D S S S  S S S        D S    D      D S            D D      D   S       I S      D  D S  S    D S    D S  S  S   S   S   S   I S       I I  I 
+
+id: (mandarin_150103_383309-13)
+Scores: (#C #S #D #I) 40 18 6 1
+REF:  TS AI W & n TH i t & f a n s i x ai s I K  & n * TH A t a n f a n T U  EI t A N l i n T au 9R & N S i J i j a n j i TS i TS ai j u n C I au JJ i 
+HYP:  9R &  P & n S  i t & f a n s i x ai s & KH & n T X  & t a n f a n * JJ I  t * & l i n K au ** * * L i S i j a n j i S  i T  ai j u n * S au S  i 
+Eval: S  S  S     S                         S S      I S  S             D S  S    D S       S    D  D D S   S             S    S           D S    S    
+
+id: (mandarin_150103_383309-14)
+Scores: (#C #S #D #I) 35 19 10 7
+REF:  * X u O f u * m i E n T & ts A N  s u L U  t A N  l i n T AU 9R & n M i a9r ** S  & N p i * AU s i TH A S U O l i n t AU t & l U t a N p u X  u ei TS ai * * * 
+HYP:  Y T u * f u O m i * n * & ts * AI s u M EI t * AU l i n * &  L  I n * i a9r PH EI J I p i A A  s i ** * T F & l i n t &  t & l I t a * p u KH u ei T  ai S I N 
+Eval: I S   D     I     D   D      D S      S S    D S        D S  S  S   D       I  S  S S     I S      D  D S S S         S        S     D     S       S     I I I 
+
+id: (mandarin_150103_383309-15)
+Scores: (#C #S #D #I) 42 18 8 1
+REF:  C I N n i e n K  u O X U ei f u X  u ei j i x ou K  AI p i e n l i TSH a * N M I a9r & n s u o 9R u k u o ts & n f u K A  N  s OU JJ i n s &  X  u ei f u W U 
+HYP:  * * * n i e n KH u * * W ei f u KH u ei j i x ou KH A  p i e n l i TS  a P U J A a9r * n s u o L  u k u o ts A n f u * KH AI s AU T  i n s OU KH u ei f u * O 
+Eval: D D D         S    D D S        S                S  S              S     I S S S     D         S             S       D S  S    S  S        S  S           D S 
+
+id: (mandarin_150103_383309-16)
+Scores: (#C #S #D #I) 37 16 17 4
+REF:  f A N m i E n T & TS  & n ts & P I N c c i E J i TS i J au C i E C I au t A N N A M & l U  t A N  j I T i N X  u ei 9R a n ts & n f u f u TSH u t ai ** * * JJ I a *** 
+HYP:  f * & m i * n * & TSH & n ts * * U A c c i * N i S  i N au S i * * S au t * * * * * & l EI t * AU j * * i * KH u ei J  a n ts & n f u f u T   u t ai TS & J &  K a A9R 
+Eval:   D S     D   D   S          D D S S       D S   S    S    S   D D S      D D D D D     S    D S    D D   D S       S                     S          I  I I S  S   I   
+
+id: (mandarin_150103_383309-18)
+Scores: (#C #S #D #I) 43 22 9 2
+REF:  C I  a n j U N  s * * i j & x U O s & n p i n T &  9R & n l ai j au C i E w o m & n TH A  J i t i n X  u ei M i e n L i n J i TSH a n KH u TS A  N  AI p o TH & TS  & n F U 
+HYP:  * TH a n j * OU s I J i j I x * & s & n p i n * EI J  A n l ai j au S i * w o m & n T  AI N i t i n KH u ei N i e n * i n * i TS  a n K  u KH AI KH &  p o T  & TSH A n * * 
+Eval: D S        D S    I I     S   D S             D S  S  S             S   D           S  S  S         S       S       D     D   S       S    S  S  S  S      S    S   S   D D 
+
+id: (mandarin_150103_383309-19)
+Scores: (#C #S #D #I) 39 17 21 0
+REF:  TS & N f u s a n TH AI J I n i e n t u o x & n T U O 9r & N 9R & n W ei C I e n TS ai J I JJ i n t au l I AU th A m & n TS u o W & n JJ I  a n s A n T U EI Y Y J i C i E 
+HYP:  ** * * f u s a n ** ** * T n i e n t u o x A n * * * 9r * I J  A n P ei * S e n T  ai * N S  i n t au l * &  th & m & n T  u o P & n ** TS a n s & n * * ** * * * i S i * 
+Eval: D  D D           D  D  D S                 S   D D D    D S S  S   S    D S     S     D S S             D S     S       S      S     D  S        S   D D D  D D D   S   D 
+
+id: (mandarin_150103_383309-20)
+Scores: (#C #S #D #I) 44 19 8 9
+REF:  * * * tsh * * a n C C i ts A N l Y 8 C i n T & W & n th i JJ I  A j i * * KH au l y T & s I x OU l I AU TS & C i E W & n TH i p au kh u o * au t A l i j a l i e n p a n ts i * 
+HYP:  C I E tsh & X a n * S i ts * & l * I S i n * * M & n th i ** TS & j i K & X  au l y L I s & x AU l * A  JJ I S i * M & n JJ i p au kh u o X au t & l i j a l i e n p a n ts i T 
+Eval: I I I     I I     D S      D S   D S S     D D S          D  S  S     I I S         S S   S   S    D S  S  S S   D S     S                I      S                            I 
+
+id: (mandarin_150103_383309-3)
+Scores: (#C #S #D #I) 37 19 17 2
+REF:  W O M & n t A N 9R A N  s i J au j i k u o JJ I  A l I J i A9R TS U N  T   a n s I w o 9R & N W ei ** AI p o TH & TS u N L i s u o 9R &  N W ei t & k u o JJ I  a * l i j i 
+HYP:  * * * * n t * * ** * AI s i * au j i k u o ** TS & l * * i *** ** W EI TSH a n s U w o JJ I A M ei TH &  p o T  & T  u * M i s u o ** JJ I M ei t & k u o ** TS a N l i j i 
+Eval: D D D D     D D D  D S      D              D  S  S   D D   D   D  S S  S         S     S  S S S    I  S      S    S    D S         D  S  S S              D  S    I         
+
+id: (mandarin_150103_383309-4)
+Scores: (#C #S #D #I) 41 19 10 4
+REF:  s i C i ** A ai x U O ph i E n X  u t & k u o jj i * l i j i * s & N U O f & n TS A N  j i Y Y E n 9R & N W ei ** AI p o TH & TS  & n f u TS ai k u o C C  Y s i Y Y 
+HYP:  s i S i 9R & ai x * & ph i A n KH u t & k u o jj i A l i j i N s & * M & f A n ** F EI j i * * * n J  & * M ei KH &  p o T  & TSH A n f u T  ai k u o * TS I s i * * 
+Eval:     S   I  S      D S      S   S                   I         I     D S S   S   D  S S      D D D   S    D S    I  S      S    S   S       S           D S  S     D D 
+
+id: (mandarin_150103_383309-5)
+Scores: (#C #S #D #I) 26 24 13 4
+REF:  L U K  & Y  y 8 L  i T  i C C Y  8 j i TH i E W A n T & s ou t U A N  J i jj i ts ai TS A n j I Y Y E n K & N  C I au t AU m & N C i E s a n * * * * 
+HYP:  * J OU W EI y E JJ i TH i * * TS I j i S  i * M & n * * s ou t * W AI S i jj i ts ai T  & n j * * * A n * P EI Y S au t &  m & * S i * s a n S I T & 
+Eval: D S S  S S    S S    S    D D S  S     S    D S S   D D        D S S  S              S  S     D D D S   D S S  S S      S      D S   D       I I I I 
+
+id: (mandarin_150103_383309-6)
+Scores: (#C #S #D #I) 43 16 14 2
+REF:  S I T & TH A t &  JJ i C i * a n TS u n J au ts & n ts * & t &  j i TH u n k u o P  i 9R u s u o f ei TSH u TH A N  s u ei TH U  ei TSH u l i n s i p au X  u C C I E N ts & n 
+HYP:  * * * * ** * t AI L  i S i S a n TH u n * au ts & n ts U A t AU j i T  u n k u o PH i W  u s u o f ei TH  u ** T AI s u ei ** PH ei TH  u l i n s i p au KH u * * * * * ts I n 
+Eval: D D D D D  D   S  S    S   I     S      D              I S   S      S            S    S               S     D  S S         D  S     S                    S    D D D D D    S   
+
+id: (mandarin_150103_383309-7)
+Scores: (#C #S #D #I) 40 19 7 7
+REF:  T & n t & n t * A N  s i s & N U O f & N  j & p i * AU s i * TH a 9R & N W ei ** AI p O TH & TS  & n f u * j i n K AI x U A n K & s I  l * * u f a n k u o l ai 
+HYP:  * & n t & n t & T AI s i s & * M & f * EI j I p i A A  s i T AI a ** * * M ei TH &  p U T  & TSH A n f u O j i n T &  x * & n T & s AI l U W u f a n k u o l ai 
+Eval: D             I S S          D S S   D S    S     I S      I S    D  D D S    I  S    S S    S   S       I       S S    D S   S     S    I I                    
+
+id: (mandarin_150103_383309-8)
+Scores: (#C #S #D #I) 32 19 9 9
+REF:  C I A N J i C I a n w ei s & N m & th A m & n t & C  C i TH A f a ** A  N s i TS u n ts ai TS A N  j I Y Y E N N A  n J i TH u n k u o * * * ** * ** * * 
+HYP:  * * S & L i * S a n w ei s & * m & th & m & n t & AI S i X  & f a KH AI T s i TH u n ts ai ** T AI j * * * * & M AI n M i T  u n k u o J I W EI W EI Y Y 
+Eval: D D S S S   D S              D        S           S  S   S  S     I  S  S     S            D  S S    D D D D S S S    S   S            I I I I  I I  I I 
+
+id: (mandarin_150103_383309-9)
+Scores: (#C #S #D #I) 19 6 6 32
+REF:  ** * * ** * * * * * * * * * * * * * * * * * * * * * * * ** ** * * * TH a t & KH U & n JJ i n ts & n t & s i TH A  j i s ou TS AU TSH & N t &  
+HYP:  9R U & KH U O S U O J & S U W U S I L I T I Y 8 L & & K AU TS & S & X  a t & ** K & n S  i n ts & n t & s i T  AI j i s ou ** ** *** * * t AU 
+Eval: I  I I I  I I I I I I I I I I I I I I I I I I I I I I I I  I  I I I S        D  S     S                     S  S           D  D  D   D D   S  
+
+Speaker sentences   5:  mandarin_150110_384707   #utts: 20
+id: (mandarin_150110_384707-1)
+Scores: (#C #S #D #I) 39 14 8 3
+REF:  J I s i n i e n s i au t A l i j a TS i J i JJ I  ou * * S i n i e n j ou KH & C i n * t & C C i C I A n JJ i l U  j i l ai T i s a N 9R & 
+HYP:  * Y s i n i e n s i au t & l i j a S  i C i ** TS ou L I N i n i e n j ou K  & S i n A t * * S i * S & n S  i l OU j i l ai P i s a * ** * 
+Eval: D S                      S         S    S   D  S     I I S                S    S     I   D D S   D S S   S      S           S       D D  D 
+
+id: (mandarin_150110_384707-10)
+Scores: (#C #S #D #I) 34 17 14 4
+REF:  TS U EI JJ i N J A n JJ I OU C  I E N  s i 9R u K  u o p u * s i w & N  s i C C  i th i t au ts i C C Y   E n C C I   OU p i e N n u a n * AU t A l i j a * * 
+HYP:  ** * N  M  i * * E n ** * ** TS U S AI s i TH u KH u o p u O s i w * EI s i * TH i th i t au ts i * * TSH & n * * TSH U  p i e * n u a n A N  t & l i j a S U 
+Eval: D  D S  S    D D S   D  D D  S  S S S      S    S          I       D S      D S                   D D S   S   D D S   S        D         I S    S         I I 
+
+id: (mandarin_150110_384707-11)
+Scores: (#C #S #D #I) 39 15 15 7
+REF:  s i p * * u x u ei tsh u C I e n TS &  J a n t ** * & j a N 9R & TH i E n C C i t & au t A l i j a C C  i C I a n JJ Y t & K au JJ i C C i * * C i ** a n C Y 8 JJ I A 
+HYP:  s i p U W u x u ei tsh u * S e n ** TH I a n t AI J & j a * ** T S  i * n * S i t & au t & l i j a * TS i * S a n S  I t & T au TS i * S i S & S i TS a n * * * ** * * 
+Eval:       I I                D S     D  S  S       I  I       D D  S S    D   D S            S         D S    D S     S  S     S    S    D S   I I S   I      D D D D  D D 
+
+id: (mandarin_150110_384707-12)
+Scores: (#C #S #D #I) 32 24 22 0
+REF:  J I M I A9R S i C C I a s U O TSH u L  & C C I X  ou p i e N n U A n T & T AI C C  Y s i TS i W ai a9r S i S I s i n i e n x U A N  tsh u C I e n L I AU J i C i E C C i TH A 
+HYP:  * * * * Y   N i * J A a s * * *** u TH & S U O TS ou p i e * n * & n * & * TH A TS I s i S  i L ai a9r L i * N s i n i e n x * * AI tsh u * S e n * * ** * i S i * T S i ** T 
+Eval: D D D D S   S   D S S     D D D     S    S S S S           D   D S   D   D S  S S  S     S    S        S   D S               D D S        D S     D D D  D   S   D S S   D  S 
+
+id: (mandarin_150110_384707-13)
+Scores: (#C #S #D #I) 16 8 0 22
+REF:  * * * f EI T i e n C i n th * * * i * E n * * * C c i * * * C C  i * * n ** KH u * * * * * * a n 
+HYP:  & T & f &  P i e n S i n th I N S i S I n P O J & c i A N L I JJ i A N n AU L  u O A N & N S a n 
+Eval: I I I   S  S       S        I I I   I S   I I I S     I I I S S    I I   I  S    I I I I I I     
+
+id: (mandarin_150110_384707-14)
+Scores: (#C #S #D #I) 30 9 8 10
+REF:  * * * * * * * * * * th a s u o p u jj i n jj i n s i 9R & th i e n C C  Y n i e n T & s i Y Y 8 f & n AU T A l I J a T & 
+HYP:  S E N M I A N A N & th a s u o p u jj i n jj i n s i L  A th i e n * TS I n i e n * & s i * J & f A n ** * & l * * a * N 
+Eval: I I I I I I I I I I                                  S  S          D S  S         D       D S S   S   D  D S   D D   D S 
+
+id: (mandarin_150110_384707-15)
+Scores: (#C #S #D #I) 41 13 9 4
+REF:  L A N  s A n tsh u C i E N l i AU C I  a n * C y 8 TS i W ai ts ai JJ I  A  n Y y f a n m i e n J i k & t u n x ai a n t & t i C C i j a K  ei * * * 
+HYP:  * * AI s & n tsh u S i * * l i ** * TS a n S I y E S  i P ai ts ai ** TS AU n * y f a n m i e n M i k & t u n x ai a n t & t i * S i j a PH ei S I N 
+Eval: D D S    S         S   D D     D  D S      I S   S S    S          D  S  S    D                 S                              D S       S     I I I 
+
+id: (mandarin_150110_384707-16)
+Scores: (#C #S #D #I) 42 18 16 8
+REF:  C I N N A n w EI A9R s i *** TS OU n a n p u * ** J a n x ai t i C C  Y t AI l ai l I AU t * * A  l i a n JJ I  a n Y  Y T  a N 9r A n m EI J I N i e n * * w o m & N t U  X  u ei JJ i N L i * 
+HYP:  * * * * * n w ** AI  s i TSH U  O  n a n p u O JJ I a n x ai t i * TS I t I  l ai l * A  t & X AI l i a n ** TS a n JJ I TH a * 9r & n m ** * * * i e n J A w o m & * t AU KH u ei T  i * M i E 
+Eval: D D D D D     D  S       I   S  S            I I  S              D S  S   S         D S    I I S          D  S      S  S S    D    S     D  D D D       I I         D   S  S       S    D S   I 
+
+id: (mandarin_150110_384707-17)
+Scores: (#C #S #D #I) 45 18 8 5
+REF:  x & n t u O t & JJ i t u a n * TH i E n C C i ts ai ts & J i T  i e N s a n a9r S i S i s I n i e n j & p u l * * i * * W AI AU t A l i j a C C i C I a n JJ Y TH OU 
+HYP:  x & n t u * t & TS i t u a n T S  i * n * S i ts ai ts * * i JJ i e * s a n a9r L i N i s & n i e n j I p u l I J i P & X A  N  t & l i j a * S i * S a n S  I T  AU 
+Eval:           D     S            I S    D   D S            D D   S      D           S   S     S           S       I I   I I S S  S    S         D S   D S     S  S S  S  
+
+id: (mandarin_150110_384707-18)
+Scores: (#C #S #D #I) 36 13 8 3
+REF:  ** l u s u o ts AI a9r S i S i s i n i E n C C Y E  N n i e n L ei s I & * * a9r n i n u o T & J  i n C i A N  ts ai au TS OU t u n P U 
+HYP:  AU l u s u o ts A  a9r L i N i s i n i * n * * * TS & n i e n * ei s * & W O a9r n i n u o L I JJ i n S i * AU ts ai au T  U  t u n * T 
+Eval: I               S      S   S           D   D D D S  S         D      D   I I               S S S      S   D S           S  S        D S 
+
+id: (mandarin_150110_384707-19)
+Scores: (#C #S #D #I) 37 26 8 1
+REF:  P u t & t A p u f & n t i C  C Y TS au tsh & n L I AU k & n JJ I  A k A n x a N x U O W  & N n U A N T  & th i E n * C  C I a9r ts ai C i au TS OU t & C i x AI a n 
+HYP:  W u t & t & p u f A n t i TS I T T  au tsh & n * * &  k & n ** TS & k & n x a * x * * OU P A n * M O JJ I th i * n F EI M A a9r ts ai S i au T  &  t & S i x U  a n 
+Eval: S         S       S       S  S S S             D D S        D  S  S   S       D   D D S  S S   D S S S  S      D   I S  S S           S      S  S      S     S      
+
+id: (mandarin_150110_384707-2)
+Scores: (#C #S #D #I) 39 21 10 3
+REF:  t & n i e n f & n C C i C I   A n jj Y S u o C C  Y n I E N au t A l i j a JJ i n tsh a n TSH u C i E n f A n tsh A N T & W & N N U a n * TH i E n C C i * * a9r 
+HYP:  t & n i e n f A n & S i * TSH & n jj I F u o * TS I n * J & au t & l i j a PH i n tsh a n F   u S i A n f & n tsh * * * & M & * * P a n A PH i * n * S i J A a9r 
+Eval:               S   S S   D S   S      S S     D S  S   D S S      S         S              S     S   S     S       D D D   S   D D S     I S    D   D S   I I     
+
+id: (mandarin_150110_384707-20)
+Scores: (#C #S #D #I) 43 15 5 3
+REF:  n A l i T  & JJ i a n Y Y L I a n j & s i t i * Y Y j i W a n & A9R n i n u o ts i t & s i t u n p u X u * O TS u n p u * TH AI ph i N j a n 
+HYP:  n * l i JJ I T  i a n * * * J a n j I s i t i J I N j i M a n L AI  n i n u o ts i t & s i t u n p u W u X & T  u n p u T KH &  ph i * j a n 
+Eval:   D     S  S S        D D D S       S         I S S     S     S S                                    S   I S S          I S  S       D       
+
+id: (mandarin_150110_384707-3)
+Scores: (#C #S #D #I) 39 20 8 4
+REF:  A9R C C  i e a9r S i * S i s i n i E n T & TSH U  & n JJ i j & s i L i s i s A N C C Y  E n au TS U  ei ** * 9R & t & TSH U  & n th i e n TS ai * AU t A l i j A j ou 
+HYP:  *** * TH i e a9r L i N J i s i n i * n * & *** KH & n S  i j I s i J i s i s * & K U TS & n au ** PH ei JJ I L  A t & *** KH & n th i e n T  ai X &  t & l i j & j ou 
+Eval: D   D S          S   I S           D   D   D   S      S      S     S         D S S S S  S      D  S     I  I S  S     D   S               S     I S    S       S      
+
+id: (mandarin_150110_384707-4)
+Scores: (#C #S #D #I) 36 20 5 2
+REF:  JJ i l U  j i l ai s I K & TS U ei 9R & n I E n f & n TS U  n * j ou C C i k * & t U  TS ai TS U ei jj i n t & s I A9R n i e n l i C C  i TS  U n 
+HYP:  TS i l OU j i l ai s * * & ** F ei L  & n J A n f A n TH OU n T j ou * S i k U O t AU T  ai T  F ei jj i n t & s A N   n i e n l i * TS i TSH A n 
+Eval: S      S             D D   D  S    S      S S     S   S  S    I      D S     I S   S  S     S  S                 S S               D S    S   S   
+
+id: (mandarin_150110_384707-5)
+Scores: (#C #S #D #I) 41 23 7 6
+REF:  TS U ei ** * 9R & t & s i * a9r S i * S i s A N N i e n * * AU t A l i j a k u o l i t A C Y 8 kh & C Y 8 j A N JJ i OU C  Y 8 Y y e n t & l u J i s I p o s i s U O  
+HYP:  N  F ei JJ I L  A t & s i A a9r L i N J i s * & M i e n X A N  t & l i j a k u o l i t * & S I kh & * S I j * * ** i N  TS U S I y e n t & l u L i s & p o s i s * OU 
+Eval: S  S    I  I S  S         I     S   I S     D S S       I I S    S                     D S S S      D S S   D D D    S  S  S S S               S     S           D S  
+
+id: (mandarin_150110_384707-6)
+Scores: (#C #S #D #I) 23 10 9 14
+REF:  TS & f a N J I n tsh u AU t A l i J a t & C C i x * OU T  i C C Y  8 j ou s u O p i E n * * * * x ** * * * * * * * u * A 
+HYP:  ** O f a * * * n tsh u O  t & l i * a t & * S i x U O  PH i * * TS I j ou s u * p i A n W O L I x AI P I W O T & K u S & 
+Eval: D  S     D D D         S    S     D       D S     I S  S    D D S  S          D     S   I I I I   I  I I I I I I I   I S 
+
+id: (mandarin_150110_384707-7)
+Scores: (#C #S #D #I) 25 8 3 25
+REF:  * * ** * ** ** * * ** * * * * * ** ** ** * * * A9R s * * * * * i S i s a N n i e n x U O A9R S i S i s i n i e n j ou x & n t U O t & 
+HYP:  X U TH U EI KH & W EI J I E J I TH OU JJ I F U O   s I J I A L i J i s a * n i e n x & X A   L i N i s i n i e n j ou x & n t * & t * 
+Eval: I I I  I I  I  I I I  I I I I I I  I  I  I I I S     I I I I I   S       D           S S S   S   S                            D S   D 
+
+id: (mandarin_150110_384707-8)
+Scores: (#C #S #D #I) 34 18 17 4
+REF:  j A n JJ I  ou p au k au f A p u TS & C i * e J A n JJ I  OU C i E N s i * * x & n t u O t & JJ i t u a n C C i * W & n t U  s i C C Y  E n C C I OU  C  C i X OU 
+HYP:  j I n ** TS ou p au k au f & p u ** * S i Y e * * n ** TS U  S i * * s i Y E x A n t u * t & TH i t u a n * S i P I E n t AU s i * * TS & n * * * TSH AU S i * ** 
+Eval:   S   D  S                 S     D  D S   I   D D   D  S  S  S   D D     I I   S       D     S            D S   I S S     S      D D S  S   D D D S   S  S   D D  
+
+id: (mandarin_150110_384707-9)
+Scores: (#C #S #D #I) 40 18 10 3
+REF:  * p i e N n U A  n J i n C I a n C I a T & JJ i * E  k u o P i 9R U  s u o a9r S i S i s A N n i e n s i j ou s I J i l ai ts U EI 9R &  T & J i * n i e n 
+HYP:  U p i e * n W AI n * i n * S a n * S a N I TH i J OU k u o M i ** AU s u o a9r N i N i s * & n i e n s i j ou s * * i l ai ts * ** I  JJ Y 8 L i N n i e n 
+Eval: I       D   S S    D     D S     D S   S S S    I S        S   D  S            S   S     D S                    D D           D D  S  S  S S S   I         
+
+Speaker sentences   6:  mandarin_150111_384845   #utts: 5
+id: (mandarin_150111_384845-10)
+Scores: (#C #S #D #I) 11 37 19 1
+REF:  TS & K & C C I OU JJ I N  l AI JJ i N C C Y M ei J OU C i A N TH A M & N TS AI TH A N i M & N C I A N C I A N t A N TS u N C C  Y C C Y C C Y jj i ** N 
+HYP:  ** * * * * * * ** ** F EI l ** ** i S U S I W ei S I  S i * W EI Y S & * PH &  S  I S i T & * * * L Y Y Y S & t * & L  u * * TS I S I S I S I jj i 9R U 
+Eval: D  D D D D D D D  D  S S    D  D    S S S S S    S S  S   D S S  S S   D S  S  S  S S   S   D D D S S S S S S   D S S    D D S  S S S S S S S      I  S 
+
+id: (mandarin_150111_384845-11)
+Scores: (#C #S #D #I) 34 27 9 1
+REF:  C I A M I E n T & TS & TS u N p i s AI F A N  TS i j i x U A N  th A n t au ts i jj i t U EI Y Y AU t A l i J A t u ei ts ai p &  n JJ i E J A  TS  OU p ei s a n * 
+HYP:  F U S U S A n * * ** Y L  u * p i s ** & T AI JJ i j i x * * AI th & n t au ts i jj i t I J  I A N  t & l i * & t u ei ts ai p AI n T  i * K AI TSH AU p ei s a n T 
+Eval: S S S S S S   D D D  S S    D       D  S S S  S          D D S     S                    S S  S S S    S     D S                S    S    D S S  S   S             I 
+
+id: (mandarin_150111_384845-12)
+Scores: (#C #S #D #I) 38 16 21 3
+REF:  P  i AU C I e n L I AU kh A n f a * th a s u o * au t A l i J a t U EI j OU x & n t u o f ei tsh A N j OU C I OU T & C C I OU Y Y E n *** C C i TS U n P  U f a Y Y th A t A n 
+HYP:  JJ i ** * S e n * * ** kh & n f a N th a s u o K au t & l i * a t * &  j AU x & n t u o f ei tsh * & j ** * * ** * & * * * ** * * * n TSH U L i ** E n PH O f a J I th & t & n 
+Eval: S    D  D S     D D D     S       I            I      S     D     D S    S                       D S   D  D D D  D   D D D D  D D D   I   S S   D  S   S  S     S S    S   S   
+
+id: (mandarin_150111_384845-13)
+Scores: (#C #S #D #I) 41 17 10 4
+REF:  T A N n i e n ts ai ou TS ou J i C C i TH i C C I   OU T & t u ei j OU a9r C C  i E th a s u o * * AU t A l i j a t U ei P & n TS i s i TS u tsh a n TS U o ** TS a n * 
+HYP:  * * * n i e n ts ai ou T  ou P i * S i S  i * * TSH U  L U t u ei j AU a9r * JJ i * th a s u o K A N  t & l i j a t * ei T & n S  i s i TH u tsh a n ** P o JJ I  a n I 
+Eval: D D D                  S     S   D S   S    D D S   S  S S          S      D S    D            I I S    S           D    S     S        S            D  S   I  S      I 
+
+id: (mandarin_150111_384845-14)
+Scores: (#C #S #D #I) 35 25 18 3
+REF:  S U  o J I j i N K AI X U ei j ou p U  TS u O T & p i AU C i E n F A N  TS i j i TS ai C i N W & N f A p u X  u ei s a n T u o TS I P I au t * * a L  i * AU T  u EI Y Y ts U N K U O 
+HYP:  * PH o * * j i * * ** * W ei j ou p AU T  u * L & p i ** S i & n * T AI JJ i j i T  ai S i * M & * f & p u KH u ei s a n K u o S  & T J au t & L a JJ i J I  TH u ** * O ts * * * * & 
+Eval: D S    D D     D D D  D S           S  S    D S       D  S   S   D S S  S        S     S   D S   D   S     S             S     S  S S S      I I   S    I S  S    D  D S    D D D D S 
+
+

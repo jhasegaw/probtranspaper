@@ -1,0 +1,76 @@
+      SEGMENTATION REPORT FOR SYSTEMS
+              trn/dnn/dnn_CA_eval.trn and trn/dnnss/dnnss_CA_eval.trn
+Minimum Number of Correct Boundary words 2
+
+  Number of Segments 867,     5.858 per sentence
+  Number of Sentences 148
+
+    # Ref wrds      Err trn/dnn/dnn_CA_eval.trn   Err trn/dnnss/dnnss_CA_eval.trn
+---------------------------------------
+Totals 9496           5546        5331
+
+Pct err               58.4%       56.1%
+
+
+
+
+
+
+                            McNemar test results
+                            ====================
+
+                                     trn/dnnss/dnnss_CA_eval.trn
+
+                                  corr     incorr
+      trn/dnn/dnn_CA_eval.trn      corr     0          6
+	                 incorr    11        850
+The NULL Hypothesis:
+
+     The number unique utterance errors are equal for both systems.
+
+Alternate Hypothesis:
+
+     The number of unique utterance errors for both systems are NOT equal.
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of unique utterance errors
+            follows the binomial distribution for N fair coin tosses.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the sum of the
+        unique utterance errors for both systems being compared and
+        MIN(uue) is the minimum number of unique utterance
+        foe either system.
+
+          MIN(uue)      P(MIN(uue) | N= 17)
+          --------      -------------------
+               0                 -  
+               1                 -  
+               2               0.002
+               3               0.013
+               4               0.049  <---  Null Hypothesis rejection threshold
+               5               0.143
+               6               0.332
+
+     Decision:
+        There were MIN(uue)=6 unique utterance errors, the probability of
+        it occuring is 0.332, therefore the null hypothesis is ACCEPTED
+        There is no statistical difference between trn/dnn/dnn_CA_eval.trn and trn/dnnss/dnnss_CA_eval.trn
+MTCH_PR_RESULTS (systems: trn/dnn/dnn_CA_eval.trn trn/dnnss/dnnss_CA_eval.trn) (# segs: 867) (Seg per Sent: 5.858) (% Error: 58.40 56.14) (mean: 0.248) (std dev: 1.194) (Z Stat: 6.118) (Stat Diff: Yes)
+
+
+
+                COMPARISON MATRIX: FOR THE MATCHED PAIRS TEST
+        PECENTAGES ARE MEAN PCT ERROR/SEGMENT.  FIRST # IS LEFT SYSTEM
+                  Minimum Number of Correct Boundary words 2
+
+
+|-----------------------------------------------------------------------------------------|
+|                             |     trn/dnn/dnn_CA_eval.trn | trn/dnnss/dnnss_CA_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+|     trn/dnn/dnn_CA_eval.trn |                             | trn/dnnss/dnnss_CA_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnss/dnnss_CA_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

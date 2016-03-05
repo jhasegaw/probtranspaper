@@ -1,0 +1,436 @@
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_CA_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_CA_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_CA_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_CA_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_CA_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_CA_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_CA_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_CA_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_CA_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_CA_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_dev.stats.mcn'
+
+Successful Completion
+cat: aln/gmmptss/*_HG_dev.trn.sgml: No such file or directory
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_HG_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_HG_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_HG_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_HG_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_HG_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_HG_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_HG_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_HG_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_HG_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_HG_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_dev.stats.mcn'
+
+Successful Completion
+cat: aln/gmmptss/*_MD_dev.trn.sgml: No such file or directory
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_MD_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_MD_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_MD_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_MD_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_MD_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_MD_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_MD_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_MD_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_MD_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_MD_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_SW_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_SW_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_SW_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_SW_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmpt/gmmpt_SW_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/gmmptss/gmmptss_SW_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnss/dnnss_SW_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_SW_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnss/dnnss_SW_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnss/dnnss_SW_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_dev.stats.mcn'
+
+Successful Completion
+cat: aln/dnnptss/*_HG_dev.trn.sgml: No such file or directory
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnpt/dnnpt_HG_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnptss/dnnptss_HG_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_dev.stats.mcn'
+
+Successful Completion
+cat: aln/dnnptss/*_MD_dev.trn.sgml: No such file or directory
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnpt/dnnpt_MD_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnptss/dnnptss_MD_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_dev.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_dev.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_dev.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_dev.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnpt/dnnpt_SW_eval.stats.mcn'
+
+Successful Completion
+sc_stats: 1.3
+Beginning Multi-System comparisons and reports
+    Performing the Matched Pair Sentence Segment (Word Error) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_eval.stats.mapsswe'
+    Performing the Signed Paired Comparison (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_eval.stats.sign'
+    Performing the Wilcoxon Signed Rank (Speaker Word Error Rate (%)) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_eval.stats.wilc'
+    Performing the McNemar (Sentence Error) Test
+        Output written to 'stats/dnnptss/dnnptss_SW_eval.stats.mcn'
+
+Successful Completion

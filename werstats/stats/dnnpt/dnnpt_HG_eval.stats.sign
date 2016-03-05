@@ -1,0 +1,84 @@
+                    Sign Test Calculations Table Comparing                     
+Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnn/dnn_HG_eval.trn and trn/dnnpt/dnnpt_HG_eval.trn
+                  (Threshold for equal percentages +- 0.005)                   
+
+                                                                                                             Difference Sign                    
+         Spkr                trn/dnn/dnn_HG_eval.trn      trn/dnnpt/dnnpt_HG_eval.trn    [trn/dnn/dnn_HG_eval.trn - trn/dnnpt/dnnpt_HG_eval.trn]
+------------------------------------------------------------------------------------------------------------------------------------------------
+hungarian_140913_360523               65.29                          52.35                                          +                           
+hungarian_140916_361112               61.43                          51.02                                          +                           
+hungarian_140920_362048               64.53                          54.70                                          +                           
+hungarian_140927_363480               60.33                          52.02                                          +                           
+hungarian_141021_368493               57.68                          48.62                                          +                           
+hungarian_141111_372741               62.45                          59.66                                          +                           
+hungarian_141129_376501               79.11                          66.22                                          +                           
+hungarian_141213_379475               56.58                          44.64                                          +                           
+hungarian_141213_379479               64.25                          55.07                                          +                           
+hungarian_141216_379939               63.36                          51.35                                          +                           
+hungarian_150103_383319               52.96                          46.09                                          +                           
+hungarian_150106_383767               64.06                          49.91                                          +                           
+hungarian_150110_384737               64.65                          55.81                                          +                           
+hungarian_150113_385337               60.99                          52.63                                          +                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+         Avg.                         62.69                          52.86           
+
+No. Speakers with Positive Speaker Word Error Rate (%) Differences = N(+) = 14 
+No. Speakers with Negative Speaker Word Error Rate (%) Differences = N(-) =  0 
+   No. Speakers with No Speaker Word Error Rate (%) Differences = N(0) =  0    
+
+
+The NULL Hypothesis:
+
+     The number of speakers for which the differences is positive
+     equals the number of speakers for which the differences is
+     negative.
+			 P(N(+)) = P(N(-)) = 0.50
+
+Alternate Hypothesis:
+
+     The number of speakers for which the differences is positive 
+     is NOT equal to the number of speakers for which the difference
+     is negative.
+
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of positive and negative differences
+            follows the binomial distribution for N fair coin tosses.
+
+        A2: In order to resolve the complication caused by cases where the
+            difference in Word Accuracy is zero, half of the cases will
+            be assigned to N(+) and half to N(-).  In the event of an
+            odd number of zero differences, N(-) will get one extra, this
+            reduces the probability of there being a difference between
+            the two systems.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the number of
+        speakers being compared and N(-) is the number of negative
+        differences.
+
+          MIN(N(-),N(+))      P(MIN(N(-),N(+)) | N=14)
+          --------------      ------------------------
+            0                <0.001  
+            1                 0.002
+            2                 0.013  <---  Null Hypothesis rejected at or below this point
+            3                 0.057
+
+     Decision:
+        There were N(-)=0 negative differences , the probability of
+        it occuring is 0.000, therefore the null hypothesis is REJECTED
+        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_HG_eval.trn is the
+        better System.
+                      Comparison Matrix for the Sign Test                      
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|-----------------------------------------------------------------------------------------|
+|                             |     trn/dnn/dnn_HG_eval.trn | trn/dnnpt/dnnpt_HG_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+|     trn/dnn/dnn_HG_eval.trn |                             | trn/dnnpt/dnnpt_HG_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnpt/dnnpt_HG_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

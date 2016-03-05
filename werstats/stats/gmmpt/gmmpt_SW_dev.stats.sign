@@ -1,0 +1,72 @@
+                    Sign Test Calculations Table Comparing                     
+Spkr Speaker Word Error Rate (%) Percentages for Systems trn/gmm/gmm_SW_dev.trn and trn/gmmpt/gmmpt_SW_dev.trn
+                  (Threshold for equal percentages +- 0.005)                   
+
+                                                                                                        Difference Sign                   
+        Spkr               trn/gmm/gmm_SW_dev.trn      trn/gmmpt/gmmpt_SW_dev.trn    [trn/gmm/gmm_SW_dev.trn - trn/gmmpt/gmmpt_SW_dev.trn]
+------------------------------------------------------------------------------------------------------------------------------------------
+swahili_140826_356959               66.59                         53.08                                        +                          
+swahili_140902_358351               52.26                         33.37                                        +                          
+swahili_141216_380121               55.54                         39.76                                        +                          
+swahili_141216_380127               72.80                         57.78                                        +                          
+------------------------------------------------------------------------------------------------------------------------------------------
+        Avg.                        61.80                         46.00          
+
+No. Speakers with Positive Speaker Word Error Rate (%) Differences = N(+) =  4 
+No. Speakers with Negative Speaker Word Error Rate (%) Differences = N(-) =  0 
+   No. Speakers with No Speaker Word Error Rate (%) Differences = N(0) =  0    
+
+
+The NULL Hypothesis:
+
+     The number of speakers for which the differences is positive
+     equals the number of speakers for which the differences is
+     negative.
+			 P(N(+)) = P(N(-)) = 0.50
+
+Alternate Hypothesis:
+
+     The number of speakers for which the differences is positive 
+     is NOT equal to the number of speakers for which the difference
+     is negative.
+
+Decision Analysis:
+
+     Assumptions:
+        A1: The distibution of positive and negative differences
+            follows the binomial distribution for N fair coin tosses.
+
+        A2: In order to resolve the complication caused by cases where the
+            difference in Word Accuracy is zero, half of the cases will
+            be assigned to N(+) and half to N(-).  In the event of an
+            odd number of zero differences, N(-) will get one extra, this
+            reduces the probability of there being a difference between
+            the two systems.
+
+     Rejection criterion:
+        Reject the null hypothesis at the 95% confidence level based
+        on the following critical values table.  N is the number of
+        speakers being compared and N(-) is the number of negative
+        differences.
+
+          MIN(N(-),N(+))      P(MIN(N(-),N(+)) | N= 4)
+          --------------      ------------------------
+            0                 0.125
+            1                 0.625
+            2                 1.375
+
+     Decision:
+        There were N(-)=0 negative differences , the probability of
+        it occuring is 0.125, therefore the null hypothesis is ACCEPTED
+        There is no statistical difference between trn/gmm/gmm_SW_dev.trn and trn/gmmpt/gmmpt_SW_dev.trn
+                      Comparison Matrix for the Sign Test                      
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|--------------------------------------------------------------------------------------|
+|                            |     trn/gmm/gmm_SW_dev.trn | trn/gmmpt/gmmpt_SW_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+|     trn/gmm/gmm_SW_dev.trn |                            |                       same |
+|----------------------------+----------------------------+----------------------------|
+| trn/gmmpt/gmmpt_SW_dev.trn |                            |                            |
+|--------------------------------------------------------------------------------------|

@@ -1,0 +1,61 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnn/dnn_HG_dev.trn and trn/dnnpt/dnnpt_HG_dev.trn
+
+                                                                                                         Signed
+         Spkr                trn/dnn/dnn_HG_dev.trn      trn/dnnpt/dnnpt_HG_dev.trn  Difference   Rank    Rank
+----------------------------------------------------------------------------------------------------------------
+hungarian_141018_367917               58.95                         51.12               7.83      6.0      6.0
+hungarian_141021_368485               64.98                         57.59               7.39      5.0      5.0
+hungarian_141129_376499               60.92                         50.77              10.15      8.0      8.0
+hungarian_141129_376501               58.33                         45.93              12.40     11.0     11.0
+hungarian_141202_377185               64.46                         52.41              12.05     10.0     10.0
+hungarian_141206_378021               64.25                         58.32               5.93      3.0      3.0
+hungarian_141216_379937               57.02                         49.90               7.13      4.0      4.0
+hungarian_141216_379947               66.33                         61.91               4.42      2.0      2.0
+hungarian_150110_384743               66.52                         62.98               3.55      1.0      1.0
+hungarian_150113_385325               55.87                         45.44              10.43      9.0      9.0
+hungarian_150113_385327               58.33                         50.41               7.92      7.0      7.0
+----------------------------------------------------------------------------------------------------------------
+         Avg.                         61.45                         53.34               8.11
+
+                        Sum of 11 positive ranks = 66.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -2.93, therefore the Hypothesis
+              is REJECTED in favor of the Null Hypothesis.
+
+              Further, trn/dnnpt/dnnpt_HG_dev.trn is the better System.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|--------------------------------------------------------------------------------------|
+|                            |     trn/dnn/dnn_HG_dev.trn | trn/dnnpt/dnnpt_HG_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+|     trn/dnn/dnn_HG_dev.trn |                            | trn/dnnpt/dnnpt_HG_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+| trn/dnnpt/dnnpt_HG_dev.trn |                            |                            |
+|--------------------------------------------------------------------------------------|

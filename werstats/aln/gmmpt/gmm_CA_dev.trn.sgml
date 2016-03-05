@@ -1,0 +1,390 @@
+<SYSTEM title="trn/gmm/gmm_CA_dev.trn" ref_fname="trn/ref/ref_CA_dev.trn" hyp_fname="trn/gmm/gmm_CA_dev.trn" creation_date="Sat Mar  5 11:08:07 2016" format="2.4" frag_corr="FALSE" opt_del="FALSE" weight_ali="FALSE" weight_filename="">
+<SPEAKER id="cantonese_140916_361032">
+<PATH id="(cantonese_140916_361032-4)" word_cnt="71" sequence="0">
+S,"t","h":C,"a","a":C,"m","m":S,"ts","s":C,"&","&":C,"n","n":D,"g",:S,"e","d":S,"s","z":C,"i","i":C,"h","h":C,"au","au":C,"l","l":S,"e","&":S,"d","t":S,"o","u":S,"d","t":C,"a","a":C,"m","m":C,"s","s":C,"&","&":C,"m","m":I,,"&":I,,"t":S,"l","8":S,"e","y":C,"d","d":C,"z","z":D,"au",:D,"h",:D,"ai",:D,"p",:D,"ei",:D,"j",:D,"&",:D,"n",:D,"s",:C,"i","i":D,"n",:D,"w",:D,"ai",:D,"l",:S,"e","m":S,"g","u":S,"o","i":C,"d","d":D,"z",:D,"a",:S,"p","o":S,"g","ts":C,"i","i":C,"k","k":D,"g",:D,"e",:D,"d",:D,"8",:D,"y",:S,"d","p":S,"z","l":S,"8","&":S,"n","m":C,"g","g":C,"a","a":D,"g",:D,"&",:C,"m","m":D,"b",:D,"&",:D,"t",:D,"g",:C,"o","o"
+</PATH>
+<PATH id="(cantonese_140916_361032-5)" word_cnt="56" sequence="1">
+C,"l","l":I,,"8":S,"e","y":C,"d","d":D,"z",:S,"au","&":C,"m","m":I,,"a":S,"h","j":S,"ai","i":S,"g","k":C,"o","o":S,"g","k":C,"o","o":D,"d",:S,"o","t":S,"h","u":S,"o","k":S,"ts","s":C,"i","i":C,"h","h":C,"a","a":S,"f","s":C,"a","a":S,"n","m":C,"d","d":D,"8",:D,"y",:D,"l",:S,"e","z":S,"g","u":S,"o","k":S,"p","s":S,"ai","a":S,"b","j":S,"i","&":C,"n","n":C,"g","g":C,"e","e":C,"k","k":I,,"s":S,"y","i":C,"t","t":S,"d","j":S,"i","&":C,"n","n":C,"g","g":C,"e","e":I,,"d":I,,"&":C,"m","m":I,,"&":S,"e","t":S,"ts","s":C,"i","i":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140916_361032-6)" word_cnt="58" sequence="2">
+I,,"g":S,"o","u":C,"d","d":C,"z","z":C,"au","au":C,"l","l":D,"u",:D,"k",:S,"g","o":C,"w","w":S,"&","a":C,"n","n":D,"d",:S,"z","s":S,"u","o":C,"n","n":C,"s","s":C,"i","i":C,"l","l":C,"i","i":C,"n","n":C,"l","l":S,"ei","i":C,"n","n":D,"ai",:S,"l","g":S,"e","ei":C,"d","d":C,"z","z":C,"au","au":C,"w","w":C,"a","a":C,"l","l":C,"a","a":C,"s","s":D,"8",:D,"y",:D,"j",:C,"i","i":C,"n","n":S,"h","s":C,"i","i":D,"p",:C,"d","d":C,"z","z":C,"o","o":C,"j","j":S,"i","&":S,"l","t":C,"a","a":D,"h",:D,"&",:C,"k","k":D,"d",:D,"a",:S,"g","j":C,"i","i":S,"k","]"
+</PATH>
+<PATH id="(cantonese_140916_361032-7)" word_cnt="76" sequence="3">
+C,"l","l":C,"a","a":C,"n","n":D,"g",:D,"o",:C,"k","k":S,"m","w":C,"o","o":I,,"m":S,"d","u":S,"z","t":S,"o","u":C,"n","n":C,"f","f":S,"&","a":C,"n","n":D,"d",:S,"z","s":C,"i","i":D,"l",:D,"e",:S,"ts","s":S,"y","i":C,"n","n":D,"d",:S,"z","s":S,"oi","o":C,"j","j":C,"&","&":D,"t",:D,"d",:D,"i",:C,"n","n":C,"g","g":C,"e","e":C,"f","f":S,"u","o":C,"n","n":S,"h","g":C,"i","i":D,"m",:D,"d",:D,"&",:C,"n","n":D,"h",:D,"ai",:D,"l",:D,"e",:S,"k","t":S,"8","a":S,"y","n":C,"d","d":C,"z","z":C,"au","au":C,"w","w":C,"a","a":I,,"p":C,"j","j":C,"au","au":S,"b","p":C,"i","i":D,"t",:C,"j","j":D,"y",:D,"l",:D,"e",:D,"h",:D,"ai",:S,"d","&":S,"z","t":C,"o","o":D,"k",:S,"ts","s":S,"8","&":C,"t","t":I,,"]"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140916_361200">
+<PATH id="(cantonese_140916_361200-10)" word_cnt="66" sequence="4">
+I,,"n":C,"m","m":D,"h",:S,"ai","a":C,"h","h":C,"ai","ai":S,"g","k":S,"u","o":C,"n","n":C,"h","h":D,"oi",:S,"d","au":S,"z","ts":S,"u","o":C,"n","n":C,"j","j":C,"i","i":D,"h",:D,"ai",:C,"h","h":C,"ai","ai":C,"o","o":D,"d",:S,"z","s":C,"au","au":C,"g","g":S,"e","a":C,"s","s":D,"8",:D,"y",:D,"w",:D,"i",:D,"k",:S,"l","&":S,"8","m":S,"y","&":C,"m","m":C,"i","i":C,"n","n":C,"b","b":S,"i","&":C,"n","n":D,"ts",:D,"e",:S,"j","s":C,"i","i":C,"s","s":S,"i","&":C,"n","n":C,"s","s":C,"i","i":C,"f","f":C,"u","u":S,"g","k":C,"&","&":C,"n","n":D,"g",:D,"e",:D,"h",:D,"oi",:D,"w",:S,"i","d":S,"k","o":S,"d","l":S,"z","&":S,"au","n"
+</PATH>
+<PATH id="(cantonese_140916_361200-11)" word_cnt="71" sequence="5">
+S,"g","l":S,"&","a":C,"n","n":C,"w","w":C,"ai","ai":D,"d",:S,"z","ts":C,"a","a":D,"p",:D,"d",:S,"z","t":C,"u","u":C,"n","n":C,"l","l":C,"a","a":C,"m","m":D,"t",:S,"u","&":C,"n","n":D,"g",:S,"e","a":C,"s","s":D,"8",:D,"y",:S,"w","a":S,"i","m":S,"k","ei":C,"s","s":C,"o","o":S,"g","k":C,"au","au":C,"l","l":C,"a","a":D,"p",:S,"s","f":C,"a","a":D,"p",:D,"g",:D,"e",:S,"m","k":C,"&","&":D,"t",:S,"d","m":C,"o","o":C,"j","j":C,"au","au":C,"s","s":C,"o","o":D,"b",:S,"&","p":S,"t","a":C,"t","t":S,"u","o":C,"n","n":D,"j",:D,"&",:D,"t",:S,"d","g":C,"i","i":C,"s","s":S,"8","a":C,"n","n":C,"d","d":D,"8",:S,"y","&":S,"g","k":C,"au","au":S,"g","k":S,"o","u":C,"n","n":I,,"]"
+</PATH>
+<PATH id="(cantonese_140916_361200-12)" word_cnt="74" sequence="6">
+D,"d",:S,"z","j":S,"i","&":C,"n","n":D,"g",:S,"e","a":C,"s","s":D,"8",:D,"y",:D,"w",:D,"i",:S,"k","&":C,"m","m":I,,"ei":S,"u","w":S,"i","o":C,"j","j":C,"&","&":D,"t",:D,"p",:D,"i",:C,"n","n":C,"f","f":S,"o","u":C,"n","n":S,"g","k":C,"u","u":C,"n","n":C,"l","l":C,"ei","ei":C,"j","j":C,"au","au":S,"g","p":C,"ei","ei":S,"ts","s":C,"i","i":C,"n","n":S,"g","t":C,"i","i":C,"n","n":C,"s","s":C,"o","o":S,"g","k":C,"au","au":C,"l","l":C,"a","a":D,"p",:C,"s","s":C,"a","a":D,"p",:S,"d","b":S,"&","a":C,"n","n":C,"h","h":I,,"a":I,,"j":S,"ai","i":C,"w","w":C,"u","u":D,"j",:C,"i","i":S,"m","n":S,"ts","s":S,"i","&":C,"n","n":C,"d","d":C,"o","o":S,"j","g":C,"i","i":C,"m","m":D,"d",:D,"z",:S,"u","s":S,"n","o"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140916_361202">
+<PATH id="(cantonese_140916_361202-1)" word_cnt="50" sequence="7">
+S,"t","l":C,"i","i":C,"n","n":S,"d","g":C,"ai","ai":C,"j","j":D,"&",:S,"t","i":C,"s","s":D,"i",:S,"n","ai":C,"l","l":D,"e",:D,"u",:D,"k",:D,"j",:S,"y","i":C,"n","n":D,"g",:S,"e","d":S,"g","o":S,"8","j":S,"y","i":C,"m","m":C,"&","&":C,"n","n":S,"w","b":S,"ai","a":C,"j","j":C,"y","y":C,"n","n":C,"w","w":D,"u",:D,"i",:D,"a",:D,"t",:D,"i",:D,"p",:S,"ts","o":S,"8","j":S,"t","&":S,"d","k":S,"z","j":S,"o","au":C,"t","t":C,"u","u":C,"n","n":S,"g","m":C,"o","o":I,,"]"
+</PATH>
+<PATH id="(cantonese_140916_361202-10)" word_cnt="47" sequence="8">
+D,"g",:D,"u",:D,"n",:D,"d",:D,"z",:S,"8","f":S,"y","a":S,"g","j":C,"&","&":C,"m","m":D,"g",:D,"8",:S,"y","&":C,"m","m":C,"&","&":C,"n","n":S,"l","m":S,"e","ai":C,"j","j":D,"y",:D,"k",:C,"au","au":S,"b","p":C,"a","a":D,"k",:S,"g","t":C,"ai","ai":D,"ts",:D,"y",:C,"s","s":C,"i","i":S,"f","ts":C,"o","o":C,"m","m":D,"&",:S,"t","ai":C,"m","m":D,"h",:C,"o","o":D,"d",:D,"z",:D,"oi",:S,"l","w":S,"e","a":S,"d","k":S,"z","au":S,"o","]"
+</PATH>
+<PATH id="(cantonese_140916_361202-11)" word_cnt="48" sequence="9">
+D,"d",:S,"z","f":C,"o","o":D,"s",:D,"&",:D,"k",:D,"g",:D,"u",:C,"n","n":D,"d",:S,"z","t":C,"u","u":C,"n","n":C,"t","t":C,"u","u":C,"n","n":S,"d","b":S,"o","au":C,"t","t":C,"ai","ai":S,"s","j":C,"i","i":D,"n",:S,"f","s":S,"o","au":S,"b","p":S,"&","a":C,"n","n":C,"g","g":C,"e","e":D,"d",:D,"z",:D,"&",:D,"t",:C,"s","s":I,,"au":C,"o","o":D,"t",:D,"u",:S,"n","k":C,"m","m":S,"ai","ei":C,"s","s":D,"u",:D,"k",:D,"d",:S,"y","i":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140916_361202-12)" word_cnt="40" sequence="10">
+C,"f","f":S,"u","o":C,"f","f":C,"u","u":C,"n","n":D,"p",:S,"ai","k":S,"d","ei":S,"8","t":S,"y","a":C,"l","l":D,"e",:S,"d","ai":S,"z","t":C,"i","i":S,"d","g":S,"o","au":C,"l","l":S,"e","a":C,"m","m":S,"d","t":S,"o","au":S,"j","g":C,"y","y":C,"s","s":D,"&",:S,"p","a":C,"m","m":C,"f","f":C,"&","&":C,"n","n":D,"d",:S,"z","s":S,"u","&":C,"n","n":D,"d",:S,"z","ts":C,"e","e":D,"h",:S,"ai","]"
+</PATH>
+<PATH id="(cantonese_140916_361202-13)" word_cnt="52" sequence="11">
+D,"s",:D,"a",:C,"m","m":C,"g","g":S,"o","au":S,"d","t":S,"z","s":C,"i","i":D,"g",:D,"a",:S,"l","d":C,"a","a":D,"s",:D,"&",:D,"n",:D,"g",:D,"i",:D,"m",:C,"d","d":D,"ai",:S,"j","z":S,"&","i":S,"t","n":C,"s","s":C,"i","i":C,"n","n":C,"w","w":S,"ai","o":C,"j","j":C,"y","y":C,"n","n":C,"w","w":I,,"&":S,"u","t":C,"i","i":D,"d",:D,"z",:D,"y",:D,"d",:S,"z","ts":C,"i","i":C,"k","k":S,"g","j":C,"e","e":C,"s","s":D,"a",:D,"t",:C,"i","i":C,"n","n":D,"k",:S,"8","ts":S,"y","i"
+</PATH>
+<PATH id="(cantonese_140916_361202-14)" word_cnt="44" sequence="12">
+D,"j",:D,"i",:C,"j","j":C,"y","y":C,"n","n":C,"w","w":C,"o","o":C,"n","n":S,"g","ts":S,"a","e":C,"w","w":S,"i","&":C,"n","n":S,"w","b":C,"a","a":D,"d",:D,"ai",:D,"j",:D,"&",:D,"t",:S,"s","p":C,"i","i":C,"n","n":C,"s","s":D,"8",:D,"n",:D,"ts",:S,"8","i":C,"n","n":C,"f","f":C,"a","a":C,"n","n":C,"s","s":C,"&","&":C,"n","n":D,"d",:S,"z","s":C,"i","i":C,"h","h":C,"au","au":I,,"w":C,"a","a":S,"u","m":S,"k","]"
+</PATH>
+<PATH id="(cantonese_140916_361202-15)" word_cnt="53" sequence="13">
+C,"j","j":S,"y","&":C,"n","n":I,,"h":S,"l","8":S,"oi","y":C,"g","g":C,"e","e":D,"b",:D,"a",:C,"k","k":S,"g","ei":S,"ai","s":S,"ts","i":S,"y","n":C,"s","s":C,"i","i":D,"d",:S,"z","ts":S,"e","i":C,"j","j":C,"au","au":C,"l","l":D,"8",:D,"n",:D,"g",:C,"a","a":D,"n",:S,"b","m":C,"i","i":D,"n",:D,"d",:D,"&",:D,"k",:D,"l",:D,"a",:D,"d",:D,"z",:D,"e",:D,"k",:D,"d",:S,"z","s":C,"i","i":C,"n","n":C,"f","f":S,"a","&":C,"n","n":C,"j","j":C,"&","&":D,"t",:S,"g","k":S,"a","d":S,"n","o"
+</PATH>
+<PATH id="(cantonese_140916_361202-16)" word_cnt="51" sequence="14">
+D,"ai",:C,"s","s":C,"a","a":C,"m","m":D,"g",:C,"o","o":D,"j",:D,"y",:D,"t",:C,"j","j":C,"i","i":C,"l","l":C,"ai","ai":D,"a",:C,"j","j":D,"i",:D,"g",:D,"i",:D,"n",:D,"s",:S,"au","&":S,"d","p":C,"o","o":D,"d",:S,"o","t":S,"d","au":S,"z","j":S,"u","&":C,"n","n":D,"g",:S,"8","k":S,"y","ei":C,"m","m":C,"&","&":C,"n","n":D,"g",:D,"e",:S,"t","h":C,"au","au":C,"s","s":C,"o","o":C,"l","l":C,"a","a":D,"g",:D,"&",:C,"m","m":D,"d",:D,"z",:D,"y",:D,"j",:S,"y","]"
+</PATH>
+<PATH id="(cantonese_140916_361202-17)" word_cnt="44" sequence="15">
+D,"d",:D,"z",:S,"au","n":C,"w","w":C,"a","a":D,"ts",:D,"y",:C,"s","s":C,"i","i":D,"ts",:D,"8",:D,"t",:C,"s","s":S,"au","a":S,"g","l":C,"e","e":C,"s","s":C,"a","a":C,"n","n":S,"g","w":C,"o","o":C,"f","f":C,"a","a":D,"t",:C,"m","m":S,"o","au":C,"s","s":I,,"au":S,"o","s":S,"ts","a":S,"oi","k":C,"f","f":C,"u","u":C,"l","l":C,"a","a":C,"n","n":C,"s","s":S,"&","a":C,"m","m":D,"d",:D,"z",:D,"i",:S,"l","ai":S,"e","]"
+</PATH>
+<PATH id="(cantonese_140916_361202-18)" word_cnt="48" sequence="16">
+D,"ts",:D,"8",:D,"t",:C,"s","s":C,"au","au":S,"g","w":C,"o","o":D,"k",:D,"ei",:S,"g","n":S,"e","j":C,"au","au":C,"l","l":C,"ai","ai":I,,"j":S,"a","&":S,"w","m":S,"ai","a":C,"j","j":C,"i","i":D,"h",:D,"ai",:C,"j","j":C,"&","&":C,"n","n":D,"w",:D,"ai",:C,"j","j":C,"&","&":C,"n","n":C,"s","s":C,"au","au":C,"m","m":S,"k","t":C,"au","au":S,"m","b":C,"o","o":C,"j","j":C,"&","&":C,"n","n":D,"d",:S,"z","ts":C,"i","i":C,"n","n":D,"l",:C,"ei","ei":C,"f","f":C,"o","o"
+</PATH>
+<PATH id="(cantonese_140916_361202-19)" word_cnt="50" sequence="17">
+S,"b","l":S,"&","a":C,"n","n":C,"s","s":S,"o","au":S,"d","t":S,"z","j":C,"i","i":D,"g",:S,"8","k":S,"y","&":C,"m","m":C,"&","&":C,"n","n":C,"j","j":S,"au","&":C,"t","t":I,,"h":C,"au","au":C,"s","s":I,,"au":S,"o","w":C,"a","a":D,"ts",:D,"y",:D,"s",:D,"i",:C,"j","j":D,"&",:D,"t",:D,"g",:D,"u",:D,"n",:S,"l","au":S,"e","m":S,"ts","s":C,"i","i":D,"t",:C,"j","j":C,"au","au":C,"s","s":D,"&",:S,"p","a":C,"j","j":D,"i",:D,"g",:S,"o","au":C,"s","s":I,,"a":S,"au","n"
+</PATH>
+<PATH id="(cantonese_140916_361202-20)" word_cnt="58" sequence="18">
+I,,"m":C,"&","&":C,"n","n":D,"g",:C,"w","w":I,,"a":I,,"j":I,,"i":S,"ai","k":S,"t","h":S,"oi","a":S,"d","j":C,"&","&":C,"n","n":D,"h",:D,"ai",:C,"h","h":C,"o","o":S,"d","t":C,"o","o":C,"s","s":D,"i",:D,"d",:D,"z",:C,"i","i":S,"h","j":S,"ai","au":C,"h","h":D,"oi",:D,"d",:S,"&","a":S,"k","n":C,"j","j":C,"&","&":C,"t","t":D,"b",:S,"u","o":C,"n","n":C,"a","a":D,"d",:D,"z",:D,"au",:D,"s",:D,"y",:C,"n","n":C,"f","f":C,"a","a":D,"n",:C,"m","m":S,"o","u":C,"n","n":C,"s","s":C,"i","i":D,"g",:D,"a",:D,"n",:S,"d","k":S,"o","]"
+</PATH>
+<PATH id="(cantonese_140916_361202-21)" word_cnt="60" sequence="19">
+D,"d",:D,"o",:S,"h","l":S,"ai","ei":S,"g","f":S,"&","a":C,"m","m":D,"j",:C,"i","i":D,"j",:D,"e",:C,"m","m":C,"a","a":D,"n",:S,"l","m":S,"e","ai":C,"m","m":C,"o","o":D,"g",:D,"&",:D,"m",:S,"f","b":C,"a","a":D,"n",:C,"m","m":D,"o",:D,"n",:D,"g",:S,"e","a":C,"s","s":C,"i","i":C,"g","g":D,"a",:S,"n","e":C,"j","j":C,"au","au":C,"s","s":C,"i","i":S,"g","k":C,"&","&":C,"n","n":D,"g",:D,"a",:D,"d",:D,"z",:D,"i",:D,"h",:D,"ai",:S,"h","j":S,"oi","au":C,"l","l":D,"8",:S,"n","a":S,"g","b":C,"o","o":D,"g",:C,"w","w":S,"ai","o":S,"t","j":S,"oi","au"
+</PATH>
+<PATH id="(cantonese_140916_361202-22)" word_cnt="56" sequence="20">
+D,"g",:D,"e",:D,"d",:S,"z","ts":C,"e","e":D,"g",:D,"u",:C,"h","h":D,"a",:D,"k",:D,"p",:C,"ai","ai":D,"d",:D,"8",:D,"y",:S,"b","g":C,"ei","ei":S,"ts","s":C,"i","i":C,"n","n":D,"w",:S,"o","h":S,"n","u":S,"w","m":S,"o","u":C,"n","n":C,"j","j":D,"y",:D,"d",:C,"&","&":C,"n","n":S,"s","ts":C,"i","i":C,"n","n":S,"b","p":C,"u","u":C,"n","n":C,"g","g":D,"o",:S,"d","au":S,"z","s":S,"u","&":C,"n","n":D,"d",:S,"z","s":C,"i","i":C,"d","d":C,"o","o":S,"s","f":C,"ei","ei":I,,"s":C,"a","a":D,"m",:S,"f","b":C,"&","&":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140916_361202-23)" word_cnt="51" sequence="21">
+D,"d",:S,"z","t":C,"u","u":C,"n","n":S,"g","d":C,"a","a":D,"g",:S,"8","k":S,"y","&":C,"m","m":C,"&","&":C,"n","n":D,"w",:D,"a",:C,"b","b":C,"a","a":D,"k",:D,"g",:D,"ai",:D,"ts",:S,"y","m":S,"s","u":C,"i","i":D,"g",:D,"e",:C,"j","j":C,"&","&":C,"n","n":C,"s","s":C,"au","au":S,"j","g":C,"i","i":C,"m","m":D,"d",:S,"z","t":C,"u","u":C,"n","n":D,"b",:D,"&",:D,"t",:C,"d","d":C,"z","z":D,"u",:S,"k","au":C,"m","m":D,"o",:D,"l",:S,"8","&":C,"n","n":S,"h","l":S,"ai","ei"
+</PATH>
+<PATH id="(cantonese_140916_361202-24)" word_cnt="47" sequence="22">
+C,"l","l":C,"ei","ei":C,"f","f":C,"o","o":D,"a",:D,"s",:S,"au","j":C,"&","&":C,"n","n":S,"d","s":S,"o","a":C,"m","m":S,"k","&":S,"au","n":S,"s","g":C,"i","i":C,"n","n":C,"d","d":I,,"o":I,,"m":S,"z","d":S,"i","a":S,"w","o":S,"u","s":C,"i","i":I,,"n":C,"d","d":C,"o","o":D,"d",:S,"z","t":C,"i","i":S,"g","k":C,"&","&":C,"m","m":C,"d","d":S,"o","a":C,"m","m":C,"&","&":C,"n","n":C,"t","t":C,"ai","ai":D,"d",:D,"z",:D,"i",:S,"ts","j":C,"i","i":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140916_361202-25)" word_cnt="45" sequence="23">
+C,"d","d":C,"o","o":D,"ts",:D,"&",:D,"n",:S,"g","s":S,"i","a":C,"n","n":S,"l","d":S,"e","ai":C,"s","s":C,"i","i":C,"n","n":C,"h","h":C,"au","au":S,"d","p":S,"o","au":S,"ts","s":C,"i","i":C,"h","h":I,,"au":S,"8","j":C,"y","y":C,"s","s":S,"8","&":C,"n","n":D,"b",:D,"a",:S,"k","t":S,"g","t":C,"ai","ai":D,"ts",:D,"y",:C,"s","s":C,"i","i":C,"j","j":D,"y",:D,"k",:C,"au","au":S,"g","p":S,"oi","a":C,"s","s":C,"i","i":C,"n","n":I,,"]"
+</PATH>
+<PATH id="(cantonese_140916_361202-26)" word_cnt="56" sequence="24">
+D,"d",:D,"&",:D,"n",:D,"h",:D,"ai",:C,"d","d":D,"o",:D,"m",:C,"o","o":S,"g","p":C,"i","i":S,"t","k":S,"g","w":S,"o","a":C,"s","s":D,"i",:D,"n",:D,"d",:D,"z",:C,"i","i":S,"w","t":C,"u","u":D,"i",:C,"k","k":D,"y",:D,"t",:S,"d","s":C,"i","i":C,"n","n":D,"l",:S,"e","ai":S,"g","k":C,"&","&":S,"m","n":S,"ts","t":C,"i","i":S,"f","p":S,"a","i":C,"t","t":D,"h",:D,"ei",:D,"b",:C,"a","a":C,"m","m":D,"ai",:S,"t","ei":S,"u","s":S,"n","&":C,"m","m":S,"ai","a":S,"g","j":C,"&","&":D,"m",:D,"d",:S,"z","n":S,"i","]"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140917_361366">
+<PATH id="(cantonese_140917_361366-1)" word_cnt="51" sequence="25">
+D,"j",:D,"&",:S,"t","m":S,"b","w":S,"u","o":C,"n","n":D,"a",:D,"f",:C,"a","a":D,"t",:D,"ts",:D,"8",:S,"t","k":S,"b","d":S,"a","o":C,"t","t":D,"h",:C,"o","o":D,"d",:D,"u",:D,"n",:D,"l",:S,"a","m":C,"m","m":I,,"i":S,"f","t":S,"u","o":C,"n","n":C,"w","w":C,"a","a":D,"k",:C,"b","b":C,"o","o":S,"f","p":C,"u","u":C,"n","n":C,"s","s":S,"8","&":C,"n","n":D,"h",:D,"o",:S,"g","m":S,"&","u":S,"m","n":C,"s","s":C,"i","i":C,"n","n":S,"w","m":C,"ai","ai":D,"l",:S,"e","]"
+</PATH>
+<PATH id="(cantonese_140917_361366-19)" word_cnt="55" sequence="26">
+D,"d",:D,"&",:D,"n",:D,"l",:D,"u",:D,"k",:C,"s","s":C,"i","i":D,"l",:D,"e",:D,"d",:D,"z",:D,"u",:C,"n","n":C,"h","h":S,"o","au":C,"l","l":D,"&",:D,"n",:D,"g",:C,"a","a":S,"k","m":S,"8","d":S,"n","a":S,"w","m":S,"ai","ei":C,"k","k":I,,"h":S,"8","a":C,"n","n":S,"t","h":S,"oi","a":S,"f","t":C,"u","u":C,"n","n":D,"g",:D,"&",:C,"m","m":C,"s","s":D,"o",:D,"j",:C,"i","i":D,"d",:D,"o",:D,"n",:D,"d",:D,"ei",:D,"g",:S,"e","j":S,"g","au":S,"8","b":S,"y","&":C,"m","m":C,"&","&":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140917_361366-20)" word_cnt="50" sequence="27">
+C,"l","l":D,"e",:D,"d",:D,"o",:D,"h",:S,"ai","ei":S,"d","t":C,"ai","ai":C,"w","w":S,"ai","a":S,"g","j":C,"&","&":C,"n","n":D,"d",:S,"z","ts":S,"8","a":C,"n","n":S,"g","d":C,"a","a":C,"j","j":C,"&","&":D,"n",:S,"w","m":S,"ai","ei":C,"h","h":I,,"au":I,,"j":I,,"i":S,"oi","n":C,"l","l":C,"a","a":C,"m","m":S,"h","b":S,"oi","a":C,"h","h":C,"au","au":C,"s","s":C,"i","i":D,"a",:D,"d",:S,"z","j":S,"o","&":S,"l","k":C,"8","8":C,"n","n":D,"g",:D,"o",:D,"j",:S,"y","b":S,"t","i"
+</PATH>
+<PATH id="(cantonese_140917_361366-21)" word_cnt="51" sequence="28">
+C,"j","j":D,"y",:D,"t",:D,"d",:D,"z",:C,"i","i":C,"s","s":S,"i","e":S,"h","s":C,"ai","ai":D,"ts",:D,"&",:D,"t",:C,"j","j":D,"y",:D,"t",:D,"f",:C,"&","&":C,"n","n":D,"g",:D,"e",:D,"s",:D,"i",:S,"h","j":C,"au","au":C,"l","l":S,"e","ai":S,"ts","s":C,"&","&":D,"n",:D,"g",:D,"i",:C,"n","n":C,"s","s":C,"au","au":S,"d","t":C,"o","o":C,"ts","ts":D,"y",:D,"k",:S,"8","a":C,"n","n":S,"t","h":S,"oi","a":S,"f","t":C,"u","u":C,"n","n":C,"w","w":S,"ai","a":C,"m","m":S,"a","]"
+</PATH>
+<PATH id="(cantonese_140917_361366-22)" word_cnt="46" sequence="29">
+I,,"n":S,"g","j":S,"e","i":C,"ts","ts":D,"8",:D,"y",:D,"k",:D,"ei",:D,"t",:C,"a","a":D,"l",:S,"e","k":C,"d","d":C,"o","o":D,"d",:S,"z","s":C,"i","i":C,"h","h":S,"oi","a":C,"h","h":C,"au","au":D,"t",:S,"u","l":S,"n","a":C,"m","m":I,,"&":S,"ai","n":C,"m","m":C,"&","&":C,"n","n":S,"ts","s":S,"8","a":C,"n","n":C,"d","d":C,"ei","ei":D,"k",:D,"8",:S,"y","h":C,"a","a":D,"ts",:D,"8",:D,"t",:C,"j","j":I,,"&":S,"i","k":S,"n","ei"
+</PATH>
+<PATH id="(cantonese_140917_361366-23)" word_cnt="57" sequence="30">
+I,,"n":S,"t","ts":C,"i","i":C,"n","n":C,"s","s":D,"8",:S,"y","ei":S,"t","k":S,"i","ei":S,"n","m":C,"d","d":D,"i",:D,"n",:D,"g",:D,"e",:D,"j",:C,"i","i":D,"n",:D,"d",:D,"z",:D,"8",:C,"n","n":S,"h","k":S,"o","a":S,"d","m":C,"o","o":D,"g",:D,"8",:D,"y",:C,"m","m":C,"&","&":C,"n","n":D,"j",:D,"&",:D,"t",:C,"d","d":C,"o","o":D,"k",:S,"y","p":S,"t","i":C,"s","s":D,"8",:S,"y","a":C,"k","k":D,"y",:D,"t",:C,"l","l":D,"8",:D,"n",:D,"k",:D,"y",:D,"t",:D,"d",:C,"i","i":C,"n","n":S,"g","d":C,"a","a"
+</PATH>
+<PATH id="(cantonese_140917_361366-24)" word_cnt="51" sequence="31">
+D,"g",:C,"a","a":D,"g",:D,"&",:C,"m","m":D,"g",:C,"&","&":S,"m","n":S,"ts","s":C,"i","i":C,"t","t":S,"oi","a":S,"f","t":C,"u","u":C,"n","n":C,"h","h":D,"oi",:S,"a","au":C,"j","j":I,,"i":S,"y","n":S,"l","w":S,"y","a":S,"h","l":S,"ai","i":C,"d","d":D,"o",:S,"n","ai":S,"d","h":C,"ei","ei":S,"d","t":S,"&","u":C,"n","n":D,"l",:S,"u","g":S,"k","au":C,"m","m":D,"s",:D,"y",:C,"s","s":C,"i","i":C,"m","m":C,"&","&":C,"n","n":S,"l","g":C,"e","e":D,"d",:S,"o","t":S,"j","u":S,"i","n":S,"m","]"
+</PATH>
+<PATH id="(cantonese_140917_361366-25)" word_cnt="52" sequence="32">
+D,"j",:D,"i",:D,"m",:C,"d","d":D,"z",:C,"&","&":C,"n","n":C,"j","j":D,"i",:D,"d",:D,"oi",:D,"d",:D,"z",:D,"o",:D,"d",:D,"z",:S,"u","au":S,"k","j":S,"d","au":S,"z","j":S,"8","&":C,"n","n":S,"b","d":C,"ei","ei":D,"h",:D,"oi",:C,"h","h":C,"au","au":D,"g",:D,"e",:D,"ts",:D,"y",:D,"k",:D,"&",:D,"p",:C,"s","s":C,"i","i":D,"ts",:S,"8","k":S,"n","h":C,"a","a":D,"t",:S,"oi","m":S,"f","a":S,"u","h":S,"n","a":C,"m","m":C,"ei","ei":C,"d","d":I,,"z":I,,"au":S,"o","k"
+</PATH>
+<PATH id="(cantonese_140917_361366-26)" word_cnt="44" sequence="33">
+C,"j","j":D,"i",:D,"g",:C,"i","i":C,"n","n":D,"ts",:D,"8",:D,"t",:S,"j","s":C,"i","i":C,"n","n":S,"ts","s":S,"8","a":S,"n","m":S,"k","g":C,"au","au":C,"ts","ts":S,"y","i":C,"l","l":C,"a","a":C,"m","m":D,"s",:D,"y",:D,"g",:D,"8",:D,"y",:S,"m","j":C,"&","&":C,"n","n":C,"m","m":C,"ei","ei":C,"j","j":C,"y","y":S,"ts","h":S,"au","a":C,"m","m":C,"au","au":C,"a","a":C,"j","j":S,"y","&":C,"n","n":C,"j","j":S,"&","au":S,"p","]"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140918_361554">
+<PATH id="(cantonese_140918_361554-2)" word_cnt="50" sequence="34">
+D,"g",:D,"i",:S,"n","k":C,"m","m":D,"h",:D,"o",:S,"g","u":S,"e","n":C,"s","s":C,"i","i":C,"k","k":S,"8","g":S,"y","i":C,"m","m":D,"j",:C,"i","i":C,"n","n":C,"g","g":S,"oi","o":C,"j","j":D,"y",:S,"n","au":S,"g","f":C,"&","&":I,,"p":C,"m","m":D,"l",:D,"e",:D,"o",:C,"d","d":S,"ei","i":C,"d","d":C,"i","i":S,"n","m":C,"j","j":S,"8","&":C,"n","n":S,"g","k":C,"u","u":C,"l","l":S,"ai","ei":C,"d","d":D,"i",:D,"s",:D,"ai",:S,"l","z":S,"o","u":S,"d","t":S,"z","s":S,"ai","ei"
+</PATH>
+<PATH id="(cantonese_140918_361554-21)" word_cnt="82" sequence="35">
+D,"p",:D,"ei",:D,"j",:D,"y",:D,"k",:D,"8",:D,"y",:D,"d",:D,"i",:D,"d",:D,"i",:C,"d","d":D,"i",:D,"k",:S,"8","z":C,"y","y":D,"d",:D,"i",:D,"p",:D,"&",:S,"n","t":C,"j","j":D,"au",:D,"h",:D,"8",:S,"y","&":S,"j","p":S,"y","i":C,"n","n":C,"d","d":D,"u",:S,"k","o":S,"b","p":C,"&","&":C,"n","n":D,"j",:D,"&",:D,"t",:C,"d","d":D,"i",:D,"n",:D,"h",:S,"ai","ei":S,"l","d":S,"e","&":C,"t","t":C,"u","u":C,"n","n":I,,"m":C,"s","s":D,"8",:D,"n",:D,"j",:D,"y",:D,"n",:D,"j",:C,"&","&":C,"t","t":D,"d",:D,"i",:D,"d",:C,"u","u":D,"k",:C,"b","b":C,"&","&":C,"n","n":D,"g",:D,"e",:C,"s","s":D,"i",:D,"h",:D,"au",:D,"d",:D,"o",:S,"h","a":S,"ai","t":S,"d","u":S,"z","k":C,"&","&":C,"n","n":D,"h",:S,"ai","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-22)" word_cnt="62" sequence="36">
+D,"a",:C,"j","j":C,"au","au":S,"d","t":C,"i","i":C,"l","l":S,"ei","i":C,"j","j":C,"au","au":D,"g",:D,"a",:D,"p",:D,"ei",:D,"j",:D,"y",:C,"j","j":S,"au","&":S,"d","t":C,"i","i":C,"j","j":S,"&","au":S,"n","t":S,"h","j":S,"o","au":S,"l","m":C,"&","&":C,"n","n":C,"d","d":D,"z",:S,"&","i":C,"n","n":D,"h",:D,"ai",:S,"m","p":C,"i","i":D,"n",:S,"d","h":C,"8","8":C,"y","y":D,"a",:D,"j",:D,"&",:D,"t",:D,"d",:D,"i",:D,"g",:S,"e","k":C,"g","g":C,"a","a":D,"t",:D,"i",:D,"n",:C,"m","m":C,"&","&":C,"n","n":I,,"d":I,,"ei":I,,"j":I,,"&":C,"t","t":D,"ai",:S,"a","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-23)" word_cnt="70" sequence="37">
+D,"w",:D,"a",:D,"k",:S,"d","t":S,"z","j":C,"e","e":I,,"h":C,"a","a":C,"m","m":S,"h","w":S,"oi","o":C,"s","s":S,"&","a":C,"m","m":C,"a","a":D,"g",:D,"&",:C,"m","m":D,"g",:D,"e",:C,"s","s":D,"i",:D,"h",:C,"au","au":I,,"m":S,"l","&":S,"e","t":S,"a","o":S,"j","p":S,"y","a":C,"n","n":D,"d",:D,"u",:D,"k",:S,"b","m":C,"&","&":D,"n",:D,"d",:S,"z","t":C,"o","o":D,"k",:D,"w",:D,"ai",:C,"j","j":C,"&","&":D,"t",:D,"g",:D,"o",:C,"m","m":C,"a","a":D,"d",:S,"z","t":S,"8","l":S,"y","i":C,"a","a":D,"d",:D,"z",:D,"o",:C,"k","k":S,"w","t":S,"ai","o":C,"j","j":C,"&","&":D,"t",:D,"g",:D,"o",:S,"t","p":S,"o","u":S,"b","i":S,"ei","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-24)" word_cnt="56" sequence="38">
+S,"g","s":S,"&","a":C,"m","m":D,"g",:D,"e",:D,"g",:C,"&","&":C,"m","m":C,"g","g":S,"o","au":S,"k","h":C,"a","a":D,"g",:D,"&",:C,"m","m":D,"l",:D,"ai",:D,"d",:S,"o","i":S,"h","t":S,"8","u":S,"y","n":C,"j","j":D,"y",:S,"n","i":S,"l","b":S,"e","i":S,"g","t":C,"o","o":D,"d",:D,"u",:D,"k",:C,"b","b":D,"&",:S,"n","o":S,"g","p":C,"o","o":C,"f","f":C,"o","o":C,"n","n":C,"f","f":C,"a","a":D,"t",:S,"l","d":S,"ai","i":S,"d","t":S,"o","u":S,"j","g":C,"i","i":C,"n","n":C,"f","f":C,"u","u":C,"l","l":S,"e","i":C,"d","d":C,"i","i"
+</PATH>
+<PATH id="(cantonese_140918_361554-25)" word_cnt="76" sequence="39">
+C,"t","t":D,"e",:D,"n",:D,"h",:C,"a","a":D,"k",:D,"8",:D,"y",:D,"d",:D,"ei",:D,"j",:S,"i","n":S,"g","l":C,"i","i":C,"n","n":D,"g",:D,"e",:C,"s","s":D,"i",:D,"h",:C,"au","au":D,"l",:S,"e","m":S,"o","&":S,"d","p":S,"ei","u":S,"d","i":S,"z","ts":S,"au","e":S,"h","o":C,"o","o":C,"j","j":C,"i","i":D,"t",:D,"e",:D,"n",:S,"h","g":C,"a","a":C,"k","k":D,"8",:D,"y",:D,"d",:D,"ei",:D,"d",:D,"8",:D,"y",:C,"l","l":D,"e",:D,"g",:S,"o","i":C,"d","d":D,"u",:D,"k",:S,"b","z":C,"&","&":S,"n","t":S,"l","o":S,"e","p":S,"g","m":S,"o","&":C,"m","m":C,"&","&":C,"n","n":C,"t","t":D,"ai",:D,"h",:D,"ai",:D,"m",:D,"h",:D,"ai",:D,"j",:D,"au",:D,"d",:D,"z",:C,"i","i":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140918_361554-26)" word_cnt="66" sequence="40">
+D,"k",:D,"o",:D,"k",:C,"g","g":D,"e",:D,"j",:D,"i",:S,"n","au":S,"s","p":C,"i","i":C,"k","k":D,"l",:D,"e",:D,"g",:D,"&",:C,"m","m":C,"j","j":D,"y",:D,"g",:D,"o",:D,"k",:D,"8",:D,"y",:D,"g",:D,"o",:D,"n",:D,"d",:D,"&",:D,"k",:S,"a","au":C,"m","m":D,"g",:C,"o","o":C,"s","s":D,"i",:S,"h","a":S,"au","w":C,"o","o":D,"d",:D,"ei",:S,"d","t":S,"z","i":S,"au","n":C,"w","w":C,"a","a":C,"h","h":C,"ai","ai":C,"l","l":C,"a","a":D,"k",:D,"8",:D,"y",:D,"h",:S,"o","n":S,"j","w":C,"i","i":C,"n","n":D,"t",:S,"u","d":S,"n","o":C,"k","k":D,"8",:D,"y",:D,"g",:D,"&",:S,"m","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-27)" word_cnt="55" sequence="41">
+C,"j","j":S,"y","&":S,"g","p":C,"o","o":D,"k",:D,"8",:D,"y",:S,"d","w":S,"o","&":S,"n","t":S,"d","u":S,"z","t":C,"u","u":C,"n","n":C,"j","j":D,"au",:S,"d","&":S,"i","t":C,"m","m":D,"h",:D,"ai",:S,"h","a":S,"o","w":C,"a","a":C,"m","m":D,"g",:D,"e",:S,"w","d":C,"a","a":D,"l",:D,"e",:S,"g","m":C,"&","&":C,"m","m":D,"l",:D,"ei",:D,"d",:S,"z","i":S,"au","k":C,"j","j":D,"y",:S,"d","&":S,"z","k":C,"&","&":C,"n","n":D,"h",:D,"ai",:D,"j",:S,"y","i":S,"b","w":C,"o","o":C,"n","n":C,"k","k":D,"8",:S,"y","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-28)" word_cnt="61" sequence="42">
+D,"h",:D,"8",:D,"y",:C,"j","j":C,"i","i":C,"n","n":C,"s","s":D,"i",:D,"k",:D,"d",:D,"z",:D,"i",:S,"n","&":S,"k","t":S,"o","j":S,"k","au":C,"g","g":D,"o",:D,"d",:D,"i",:S,"d","&":S,"z","t":C,"i","i":D,"l",:D,"y",:D,"l",:S,"a","w":S,"p","&":S,"ei","t":C,"j","j":S,"y","i":C,"w","w":C,"a","a":D,"h",:D,"ai",:S,"d","t":C,"ai","ai":C,"m","m":C,"a","a":C,"k","k":D,"8",:D,"y",:C,"l","l":C,"i","i":C,"n","n":C,"d","d":D,"o",:D,"g",:C,"o","o":D,"j",:D,"&",:D,"n",:S,"h","w":C,"a","a":D,"h",:C,"o","o":C,"j","j":C,"i","i":D,"h",:D,"e",:D,"n",
+</PATH>
+<PATH id="(cantonese_140918_361554-3)" word_cnt="55" sequence="43">
+D,"h",:D,"8",:D,"y",:S,"m","l":C,"i","i":D,"n",:D,"d",:D,"8",:D,"y",:C,"l","l":D,"e",:D,"g",:D,"o",:D,"m",:S,"&","i":C,"n","n":S,"t","m":S,"ai","ei":C,"l","l":D,"e",:D,"g",:C,"&","&":C,"m","m":C,"o","o":C,"l","l":C,"a","a":C,"m","m":C,"d","d":S,"ai","ei":C,"j","j":D,"&",:S,"t","au":C,"j","j":D,"8",:D,"n",:D,"d",:D,"z",:S,"au","i":S,"h","ts":S,"ai","e":S,"d","k":S,"z","t":S,"8","i":S,"y","k":S,"g","j":S,"ei","i":S,"b","t":C,"u","u":C,"n","n":D,"g",:S,"e","d":C,"o","o":C,"d","d":I,,"i":S,"ei","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-30)" word_cnt="56" sequence="44">
+C,"k","k":D,"y",:D,"t",:C,"m","m":C,"&","&":C,"n","n":D,"t",:D,"ai",:C,"l","l":C,"e","e":I,,"n":C,"g","g":D,"&",:D,"m",:D,"o",:S,"d","e":S,"ei","k":C,"h","h":I,,"au":S,"oi","d":S,"ts","z":C,"i","i":S,"d","t":C,"ai","ai":D,"o",:D,"d",:D,"ei",:S,"d","m":C,"i","i":S,"d","ts":S,"z","i":S,"ai","n":C,"l","l":S,"8","a":S,"y","m":S,"l","d":C,"a","a":S,"m","n":S,"s","f":S,"&","a":C,"m","m":D,"j",:C,"&","&":C,"t","t":D,"ts",:D,"&",:D,"n",:C,"a","a":S,"d","t":C,"i","i":S,"n","m":C,"j","j":S,"8","&":C,"n","n":D,"k",:S,"ei","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-4)" word_cnt="59" sequence="45">
+S,"h","j":S,"ei","i":C,"m","m":C,"o","o":D,"n",:C,"j","j":C,"au","au":I,,"ts":I,,"&":S,"d","t":S,"o","u":S,"d","t":C,"ai","ai":C,"g","g":C,"e","e":C,"s","s":D,"i",:D,"h",:S,"au","a":S,"h","l":C,"a","a":C,"f","f":S,"u","o":C,"m","m":C,"o","o":C,"t","t":C,"u","u":C,"n","n":D,"d",:D,"o",:C,"d","d":D,"z",:S,"ai","ei":C,"l","l":D,"8",:D,"y",:S,"l","i":S,"e","t":C,"d","d":C,"z","z":D,"e",:D,"h",:D,"ai",:D,"h",:D,"a",:D,"j",:C,"i","i":C,"n","n":D,"g",:S,"i","k":S,"n","l":S,"m","a":C,"d","d":C,"o","o":C,"j","j":C,"&","&":D,"t",:S,"g","k":C,"o","o"
+</PATH>
+<PATH id="(cantonese_140918_361554-5)" word_cnt="55" sequence="46">
+C,"h","h":C,"a","a":S,"h","k":S,"o","u":C,"d","d":D,"i",:D,"g",:S,"e","o":S,"g","k":C,"w","w":C,"a","a":D,"n",:S,"h","d":S,"ai","ei":S,"h","t":C,"o","o":C,"j","j":C,"i","i":C,"j","j":C,"au","au":C,"s","s":C,"i","i":C,"s","s":D,"8",:D,"n",:D,"g",:C,"a","a":S,"k","d":S,"au","o":C,"t","t":S,"u","o":C,"n","n":C,"g","g":C,"e","e":D,"p",:D,"ei",:C,"j","j":D,"y",:S,"o","au":C,"d","d":D,"ei",:D,"ts",:S,"u","i":C,"n","n":C,"s","s":D,"y",:D,"d",:D,"o",:S,"d","&":S,"ai","t":S,"l","u":S,"e","t":S,"o","a":S,"d","m":S,"ei","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-6)" word_cnt="68" sequence="47">
+D,"d",:S,"z","t":S,"o","u":C,"f","f":S,"u","o":C,"m","m":I,,"b":I,,"u":S,"o","k":C,"g","g":C,"e","e":C,"h","h":S,"o","u":S,"h","k":S,"oi","au":C,"s","s":S,"&","a":C,"m","m":C,"f","f":S,"ai","a":C,"l","l":S,"o","a":S,"k","n":S,"g","j":S,"&","au":C,"m","m":D,"j",:D,"8",:S,"n","i":C,"d","d":C,"o","o":D,"d",:D,"z",:D,"i",:D,"k",:S,"g","t":C,"i","i":C,"k","k":S,"ts","f":C,"a","a":C,"m","m":D,"j",:D,"y",:D,"k",:S,"8","s":C,"y","y":D,"g",:D,"e",:C,"s","s":S,"&","a":C,"n","n":D,"w",:D,"u",:D,"t",:C,"l","l":C,"a","a":D,"p",:D,"ei",:D,"j",:D,"y",:D,"h",:S,"ai","t":C,"h","h":C,"o","o":D,"k",:C,"h","h":C,"au","au":I,,"]"
+</PATH>
+<PATH id="(cantonese_140918_361554-7)" word_cnt="60" sequence="48">
+D,"a",:C,"k","k":D,"8",:D,"y",:D,"j",:D,"au",:S,"d","m":S,"i","&":S,"p","t":S,"&","u":C,"n","n":C,"j","j":C,"au","au":I,,"w":C,"a","a":D,"k",:D,"8",:S,"y","n":C,"j","j":S,"au","&":C,"m","m":C,"e","e":C,"w","w":S,"u","&":C,"t","t":D,"d",:C,"u","u":C,"n","n":D,"a",:S,"g","m":C,"&","&":S,"m","t":S,"o","k":S,"d","&":S,"ei","n":S,"d","w":C,"o","o":S,"h","d":S,"ai","i":S,"w","t":C,"u","u":D,"i",:C,"h","h":S,"o","ai":S,"ts","j":C,"i","i":C,"n","n":I,,"d":S,"ts","z":C,"o","o":D,"g",:D,"&",:C,"m","m":D,"j",:D,"au",:D,"l",:S,"i","&":C,"n","n":C,"d","d":C,"o","o"
+</PATH>
+<PATH id="(cantonese_140918_361554-8)" word_cnt="52" sequence="49">
+D,"d",:D,"i",:D,"s",:D,"ai",:D,"l",:D,"o",:D,"d",:D,"z",:D,"ai",:D,"l",:D,"e",:C,"d","d":C,"z","z":D,"au",:D,"h",:D,"o",:S,"j","u":S,"y","t":S,"n","u":C,"j","j":C,"i","i":C,"t","t":C,"u","u":C,"n","n":D,"o",:C,"d","d":D,"ei",:D,"h",:D,"8",:D,"y",:S,"g","i":S,"au","k":C,"t","t":C,"a","a":C,"m","m":D,"a",:D,"g",:C,"&","&":C,"m","m":C,"o","o":I,,"t":I,,"i":C,"d","d":D,"ei",:S,"w","o":S,"u","j":C,"i","i":S,"h","d":C,"o","o":D,"ts",:D,"e",:S,"n","]"
+</PATH>
+<PATH id="(cantonese_140918_361554-9)" word_cnt="64" sequence="50">
+I,,"d":S,"ts","z":C,"o","o":C,"k","k":D,"8",:D,"y",:C,"d","d":D,"ei",:D,"h",:C,"o","o":D,"l",:D,"&",:D,"n",:D,"d",:D,"z",:D,"i",:D,"p",:C,"d","d":C,"z","z":S,"u","o":C,"k","k":C,"d","d":C,"o","o":C,"j","j":D,"&",:D,"t",:D,"d",:C,"i","i":D,"g",:S,"e","k":C,"m","m":D,"&",:D,"t",:D,"g",:D,"e",:D,"p",:C,"&","&":C,"n","n":C,"j","j":C,"au","au":I,,"j":S,"g","au":S,"&","w":S,"m","o":S,"g","k":S,"e","m":C,"s","s":D,"i",:D,"h",:C,"au","au":C,"l","l":I,,"a":I,,"t":I,,"s":S,"e","i":S,"j","k":S,"y","u":S,"g","t":S,"o","a":S,"g","k":S,"o","u":C,"k","k":C,"d","d":C,"o","o"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140918_361606">
+<PATH id="(cantonese_140918_361606-10)" word_cnt="59" sequence="51">
+D,"j",:D,"8",:D,"k",:C,"j","j":D,"au",:D,"l",:D,"u",:S,"k","&":S,"b","p":C,"a","a":C,"k","k":S,"g","u":S,"o","n":C,"g","g":C,"i","i":D,"n",:D,"j",:D,"y",:D,"n",:S,"l","m":C,"e","e":D,"h",:S,"ai","f":S,"d","ei":S,"ai","f":S,"d","a":S,"z","j":C,"y","y":D,"l",:D,"e",:D,"g",:S,"o","d":S,"s","z":C,"au","au":I,,"t":S,"ts","h":C,"a","a":C,"l","l":C,"i","i":C,"n","n":C,"a","a":D,"d",:D,"8",:S,"y","t":C,"s","s":C,"y","y":D,"t",:C,"l","l":C,"ei","ei":C,"s","s":D,"ai",:D,"k",:D,"8",:S,"y","ei":S,"l","g":S,"e","o":S,"t","j":S,"u","&":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140918_361606-11)" word_cnt="64" sequence="52">
+D,"t",:D,"u",:C,"n","n":D,"b",:D,"&",:D,"k",:S,"k","p":S,"8","u":S,"y","i":C,"s","s":D,"&",:S,"p","a":S,"j","m":C,"i","i":S,"g","d":C,"o","o":C,"m","m":D,"&",:D,"t",:D,"j",:C,"i","i":S,"p","k":C,"l","l":D,"e",:D,"h",:D,"ai",:D,"d",:D,"z",:D,"8",:D,"n",:D,"h",:D,"&",:D,"n",:D,"d",:D,"z",:S,"o","a":C,"j","j":C,"&","&":S,"t","n":C,"l","l":C,"i","i":C,"n","n":S,"ts","s":S,"y","i":C,"n","n":C,"g","g":C,"e","e":D,"d",:D,"&",:S,"t","k":C,"s","s":C,"au","au":S,"ts","h":C,"a","a":D,"g",:D,"o",:C,"b","b":C,"a","a":D,"g",:D,"&",:S,"m","n":C,"d","d":I,,"i":S,"ei","]"
+</PATH>
+<PATH id="(cantonese_140918_361606-12)" word_cnt="34" sequence="53">
+D,"k",:D,"8",:D,"y",:C,"l","l":I,,"au":S,"e","k":S,"d","&":S,"z","p":S,"au","i":S,"b","k":C,"au","au":S,"k","f":S,"u","a":S,"t","d":S,"l","ei":S,"a","s":C,"a","a":C,"l","l":C,"a","a":I,,"h":C,"a","a":I,,"k":I,,"j":I,,"&":I,,"n":I,,"f":I,,"o":S,"l","t":C,"a","a":I,,"m":I,,"e":I,,"j":I,,"i":I,,"]"
+</PATH>
+<PATH id="(cantonese_140918_361606-16)" word_cnt="56" sequence="54">
+D,"l",:D,"e",:C,"d","d":D,"z",:D,"e",:D,"g",:S,"&","i":S,"m","n":S,"ts","s":C,"i","i":S,"g","d":S,"e","a":S,"h","f":S,"&","a":C,"n","n":C,"d","d":S,"u","o":C,"n","n":C,"l","l":D,"e",:D,"h",:S,"ai","ei":C,"l","l":S,"y","i":C,"n","n":D,"b",:C,"o","o":C,"n","n":S,"f","d":S,"o","i":C,"n","n":C,"f","f":C,"o","o":C,"n","n":I,,"b":I,,"o":C,"m","m":C,"i","i":C,"n","n":D,"l",:S,"e","a":S,"d","t":S,"z","o":S,"au","p":S,"b","j":S,"y","i":C,"s","s":C,"i","i":C,"a","a":S,"h","n":S,"8","p":S,"n","u":S,"b","i":S,"o","s":S,"l","i":S,"ei","n"
+</PATH>
+<PATH id="(cantonese_140918_361606-17)" word_cnt="60" sequence="55">
+S,"b","g":C,"u","u":C,"n","n":D,"l",:D,"e",:D,"k",:D,"ei",:D,"s",:D,"&",:S,"t","d":S,"j","z":C,"i","i":D,"k",:S,"j","t":S,"au","u":C,"s","s":S,"8","&":C,"n","n":D,"g",:C,"w","w":C,"a","a":C,"n","n":D,"g",:S,"e","k":S,"d","p":S,"&","i":C,"t","t":D,"d",:D,"z",:C,"i","i":S,"m","n":S,"ts","s":C,"a","a":S,"g","t":C,"a","a":D,"g",:D,"&",:S,"m","n":C,"d","d":S,"ei","i":C,"d","d":C,"i","i":C,"n","n":D,"l",:D,"e",:S,"d","a":S,"z","t":S,"au","o":S,"b","p":C,"au","au":C,"k","k":C,"u","u":D,"t",:C,"l","l":I,,"a":I,,"k":I,,"ei":S,"e","m":S,"h","&":S,"ai","n"
+</PATH>
+<PATH id="(cantonese_140918_361606-18)" word_cnt="61" sequence="56">
+C,"l","l":D,"a",:S,"l","o":S,"a","n":S,"t","b":S,"u","&":C,"n","n":I,,"d":I,,"&":C,"m","m":I,,"&":S,"ai","n":C,"d","d":C,"&","&":I,,"t":I,,"a":C,"n","n":C,"d","d":S,"ei","i":C,"g","g":C,"a","a":C,"j","j":C,"i","i":C,"k","k":D,"8",:D,"y",:D,"d",:D,"ei",:C,"g","g":C,"e","e":D,"j",:D,"&",:D,"t",:C,"m","m":S,"e","&":C,"n","n":C,"f","f":C,"a","a":C,"t","t":D,"j",:D,"i",:D,"n",:D,"j",:D,"&",:D,"n",:D,"j",:S,"i","u":C,"k","k":D,"d",:D,"o",:D,"b",:D,"y",:S,"s","j":C,"i","i":C,"l","l":D,"e",:D,"j",:S,"i","a":C,"n","n":S,"g","d":S,"oi","o"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140924_362835">
+<PATH id="(cantonese_140924_362835-1)" word_cnt="71" sequence="57">
+C,"h","h":C,"a","a":C,"n","n":I,,"k":S,"g","w":C,"o","o":D,"k",:C,"n","n":I,,"w":S,"oi","o":S,"g","t":S,"&","a":C,"n","n":D,"j",:C,"i","i":C,"s","s":S,"&","a":C,"p","p":D,"l",:C,"i","i":C,"n","n":D,"l",:S,"ai","a":S,"d","j":S,"z","i":S,"8","s":S,"y","&":S,"d","t":S,"ai","a":C,"j","j":C,"i","i":C,"n","n":C,"g","g":S,"e","a":S,"g","t":C,"i","i":C,"n","n":D,"d",:S,"z","ts":S,"&","a":C,"n","n":D,"d",:S,"z","s":S,"i","&":C,"n","n":S,"ts","s":C,"a","a":D,"k",:S,"g","t":C,"i","i":S,"m","n":S,"t","h":C,"o","o":S,"g","k":C,"u","u":C,"n","n":D,"d",:S,"z","s":S,"o","au":C,"k","k":D,"g",:C,"&","&":C,"n","n":D,"g",:S,"8","d":S,"y","&":C,"k","k":D,"8",:D,"y",:D,"d",:S,"ei","]"
+</PATH>
+<PATH id="(cantonese_140924_362835-16)" word_cnt="76" sequence="58">
+D,"j",:D,"y",:C,"g","g":C,"o","o":S,"g","t":C,"i","i":C,"n","n":D,"j",:C,"i","i":D,"d",:S,"z","ts":S,"u","o":C,"n","n":C,"g","g":S,"e","a":C,"f","f":C,"a","a":D,"t",:C,"l","l":S,"ai","ei":C,"s","s":C,"au","au":D,"d",:D,"e",:S,"n","t":C,"l","l":C,"o","o":D,"k",:S,"s","f":S,"&","a":C,"t","t":D,"g",:S,"e","o":C,"w","w":C,"a","a":D,"l",:D,"e",:D,"g",:D,"o",:S,"j","k":C,"i","i":C,"n","n":D,"d",:S,"z","s":S,"8","a":C,"n","n":D,"h",:D,"o",:S,"l","w":S,"&","a":C,"n","n":D,"ts",:S,"8","s":S,"y","ei":C,"s","s":C,"i","i":C,"w","w":D,"u",:S,"i","&":S,"b","p":C,"i","i":C,"n","n":C,"s","s":S,"i","&":C,"n","n":C,"l","l":C,"i","i":C,"k","k":C,"s","s":C,"i","i":D,"j",:D,"y",:D,"n",:C,"j","j":C,"&","&":C,"n","n"
+</PATH>
+<PATH id="(cantonese_140924_362835-17)" word_cnt="61" sequence="59">
+I,,"h":I,,"a":C,"j","j":I,,"i":I,,"k":C,"&","&":C,"n","n":D,"h",:S,"ai","d":S,"g","o":S,"&","j":S,"n","i":S,"g","j":S,"8","i":S,"y","n":C,"h","h":C,"a","a":C,"n","n":S,"g","d":S,"e","a":C,"f","f":C,"a","a":D,"t",:S,"l","m":S,"ai","a":C,"j","j":I,,"i":I,,"p":I,,"ei":S,"y","t":S,"d","s":S,"z","&":S,"i","p":S,"n","o":S,"m","s":C,"i","i":I,,"j":I,,"&":C,"n","n":S,"j","m":C,"&","&":S,"t","n":C,"g","g":I,,"e":I,,"k":C,"a","a":C,"n","n":S,"g","k":S,"u","o":C,"n","n":C,"s","s":C,"i","i":C,"l","l":C,"a","a":C,"m","m":D,"j",:C,"u","u":C,"n","n":C,"k","k":D,"8",:S,"y","]"
+</PATH>
+<PATH id="(cantonese_140924_362835-18)" word_cnt="71" sequence="60">
+C,"d","d":D,"ei",:S,"g","i":S,"e","k":C,"s","s":C,"i","i":S,"ts","s":S,"8","a":C,"n","n":D,"d",:S,"z","s":C,"i","i":D,"p",:D,"u",:S,"i","k":C,"l","l":D,"i",:S,"k","ei":C,"k","k":D,"8",:D,"y",:D,"d",:S,"ei","g":S,"d","e":S,"z","k":S,"au","&":S,"b","p":C,"i","i":D,"t",:C,"s","s":D,"8",:D,"y",:S,"d","&":S,"z","t":C,"i","i":C,"n","n":D,"m",:C,"i","i":C,"n","n":I,,"k":S,"g","w":S,"oi","&":S,"g","k":C,"u","u":C,"n","n":C,"s","s":C,"i","i":C,"ts","ts":D,"u",:D,"k",:D,"j",:C,"i","i":S,"g","k":S,"o","u":C,"n","n":S,"d","b":S,"ai","ei":S,"g","k":S,"i","&":C,"n","n":D,"d",:D,"z",:S,"&","s":S,"n","a":S,"d","m":S,"&","a":C,"n","n":C,"h","h":S,"ai","ei":S,"h","s":S,"ai","ei"
+</PATH>
+<PATH id="(cantonese_140924_362835-19)" word_cnt="64" sequence="61">
+S,"g","j":C,"i","i":C,"n","n":D,"j",:C,"i","i":D,"g",:S,"e","k":C,"f","f":C,"a","a":D,"t",:S,"l","m":S,"ai","ei":C,"d","d":C,"z","z":C,"i","i":C,"h","h":C,"a","a":D,"m",:C,"s","s":S,"8","i":S,"y","s":S,"j","&":S,"y","t":S,"d","o":S,"z","s":C,"i","i":I,,"m":I,,"s":I,,"a":I,,"j":I,,"&":S,"n","t":C,"m","m":C,"i","i":C,"n","n":I,,"k":S,"g","w":S,"oi","a":S,"g","k":S,"u","o":C,"n","n":C,"s","s":C,"i","i":S,"h","s":S,"ai","ei":C,"ts","ts":D,"u",:D,"k",:D,"j",:C,"i","i":C,"g","g":S,"&","a":C,"m","m":D,"j",:S,"8","&":C,"n","n":D,"d",:D,"z",:S,"o","s":S,"d","au":S,"z","s":C,"i","i":D,"j",:S,"y","n"
+</PATH>
+<PATH id="(cantonese_140924_362835-20)" word_cnt="65" sequence="62">
+D,"d",:D,"z",:D,"i",:D,"n",:C,"m","m":S,"i","&":C,"n","n":C,"k","k":D,"8",:D,"y",:D,"d",:D,"ei",:C,"g","g":C,"e","e":I,,"k":S,"h","f":S,"&","a":C,"n","n":S,"d","t":S,"u","o":C,"n","n":S,"d","t":S,"o","u":S,"d","n":S,"z","s":C,"i","i":D,"d",:S,"z","t":C,"o","o":S,"g","t":C,"i","i":C,"n","n":D,"d",:S,"z","ts":S,"&","a":C,"n","n":C,"h","h":C,"a","a":S,"g","k":S,"o","u":C,"n","n":D,"d",:S,"z","s":C,"au","au":S,"g","k":S,"i","&":C,"n","n":D,"j",:C,"i","i":C,"h","h":C,"o","o":C,"j","j":C,"i","i":S,"g","k":C,"a","a":S,"l","b":C,"a","a":I,,"t":I,,"w":I,,"o":C,"d","d":I,,"o":S,"oi","k":S,"b","h":S,"y","au"
+</PATH>
+<PATH id="(cantonese_140924_362835-21)" word_cnt="69" sequence="63">
+S,"t","o":S,"u","s":S,"n","&":C,"m","m":I,,"a":I,,"b":I,,"u":S,"ai","t":C,"l","l":S,"8","a":C,"n","n":S,"g","d":C,"a","a":C,"n","n":I,,"s":S,"ts","i":S,"y","n":C,"s","s":C,"i","i":D,"d",:S,"z","ts":C,"a","a":D,"p",:C,"t","t":S,"y","i":C,"n","n":D,"g",:S,"e","d":C,"o","o":D,"d",:S,"z","s":C,"au","au":I,,"t":S,"ts","s":S,"y","&":C,"n","n":I,,"k":S,"g","w":C,"o","o":D,"k",:C,"l","l":S,"i","&":C,"n","n":C,"s","s":C,"au","au":S,"j","l":C,"i","i":C,"p","p":D,"h",:C,"i","i":D,"p",:S,"w","t":C,"u","u":I,,"j":C,"i","i":C,"k","k":D,"8",:D,"y",:D,"d",:D,"ei",:C,"g","g":C,"e","e":D,"d",:D,"z",:S,"&","ts":S,"p","e":C,"h","h":C,"a","a":D,"n",
+</PATH>
+<PATH id="(cantonese_140924_362835-22)" word_cnt="53" sequence="64">
+I,,"d":I,,"z":I,,"i":I,,"o":I,,"j":I,,"au":I,,"p":I,,"ai":I,,"w":I,,"a":C,"j","j":S,"i","&":C,"n","n":C,"w","w":S,"ai","a":S,"o","j":S,"d","i":S,"z","o":S,"au","ts":S,"g","o":S,"e","k":C,"l","l":C,"i","i":C,"n","n":C,"s","s":C,"au","au":S,"j","l":C,"i","i":D,"p",:D,"g",:S,"ai","k":S,"d","a":S,"z","j":C,"i","i":I,,"s":S,"n","a":C,"m","m":C,"i","i":C,"n","n":C,"d","d":D,"8",:S,"y","o":S,"ts","j":C,"i","i":C,"n","n":S,"s","ts":C,"o","o":C,"m","m":C,"ei","ei":C,"j","j":I,,"&":I,,"k":S,"au","]"
+</PATH>
+<PATH id="(cantonese_140924_362835-4)" word_cnt="64" sequence="65">
+I,,"f":I,,"a":I,,"h":I,,"a":I,,"k":S,"g","j":C,"au","au":C,"s","s":C,"au","au":C,"w","w":C,"a","a":C,"k","k":D,"ei",:C,"s","s":C,"&","&":C,"t","t":D,"d",:D,"z",:C,"i","i":C,"j","j":C,"i","i":I,,"s":C,"a","a":D,"g",:D,"ei",:S,"l","t":C,"i","i":C,"n","n":S,"ts","s":C,"i","i":C,"n","n":C,"s","s":C,"o","o":D,"d",:S,"z","t":S,"o","u":C,"g","g":S,"e","a":C,"o","o":D,"d",:S,"z","t":S,"au","o":S,"ts","s":S,"y","i":C,"n","n":I,,"k":S,"g","w":C,"o","o":C,"k","k":D,"g",:S,"i","&":C,"n","n":D,"d",:S,"z","ts":S,"&","a":C,"n","n":S,"g","t":C,"i","i":S,"m","n":C,"t","t":I,,"u":S,"o","n":C,"j","j":C,"i","i"
+</PATH>
+<PATH id="(cantonese_140924_362835-5)" word_cnt="65" sequence="66">
+I,,"a":S,"l","j":S,"oi","i":C,"o","o":D,"d",:S,"z","s":C,"au","au":S,"h","s":S,"ai","ei":S,"h","k":S,"o","u":S,"d","t":C,"o","o":C,"f","f":C,"o","o":D,"n",:C,"m","m":C,"i","i":C,"n","n":S,"d","t":S,"o","u":S,"d","s":C,"&","&":I,,"t":S,"k","a":C,"l","l":D,"8",:S,"n","a":C,"h","h":C,"o","o":D,"g",:D,"e",:D,"d",:S,"z","b":S,"8","&":C,"n","n":D,"d",:S,"z","s":C,"i","i":C,"n","n":D,"b",:D,"&",:S,"t","p":S,"g","w":C,"o","o":C,"n","n":D,"i",:C,"j","j":C,"&","&":D,"t",:C,"t","t":S,"y","i":C,"n","n":C,"s","s":C,"i","i":C,"g","g":C,"a","a":C,"n","n":C,"a","a":S,"d","t":S,"z","s":C,"au","au":I,,"b":S,"g","&":S,"e","k"
+</PATH>
+<PATH id="(cantonese_140924_362835-6)" word_cnt="66" sequence="67">
+I,,"w":I,,"a":S,"h","k":C,"ei","ei":C,"j","j":S,"y","&":C,"k","k":D,"&",:S,"p","a":S,"d","t":C,"i","i":C,"n","n":D,"d",:S,"z","s":C,"i","i":C,"s","s":C,"i","i":C,"d","d":D,"oi",:D,"g",:D,"e",:D,"g",:C,"o","o":D,"n",:C,"l","l":C,"&","&":I,,"k":S,"m","au":C,"l","l":I,,"a":I,,"m":S,"i","&":C,"n","n":C,"d","d":C,"o","o":C,"j","j":C,"au","au":S,"h","f":C,"ei","ei":C,"k","k":I,,"ei":S,"w","ts":S,"ai","a":S,"h","m":S,"ei","i":C,"d","d":D,"z",:C,"o","o":S,"b","p":C,"i","i":C,"n","n":C,"f","f":C,"a","a":I,,"k":S,"g","w":C,"o","o":C,"d","d":C,"i","i":D,"m",:S,"ei","n":C,"l","l":S,"&","a":C,"n","n":I,,"d":S,"k","a":S,"au","n"
+</PATH>
+<PATH id="(cantonese_140924_362835-7)" word_cnt="66" sequence="68">
+C,"j","j":S,"y","i":C,"s","s":I,,"i":I,,"p":C,"i","i":S,"d","n":S,"z","s":S,"8","&":C,"n","n":C,"g","g":C,"e","e":C,"f","f":C,"a","a":C,"n","n":S,"g","t":C,"i","i":C,"n","n":D,"d",:S,"z","ts":S,"&","a":C,"n","n":D,"d",:S,"z","ts":C,"i","i":C,"n","n":S,"ts","s":C,"a","a":D,"k",:D,"j",:D,"i",:C,"n","n":C,"g","g":S,"oi","au":C,"p","p":C,"ei","ei":C,"f","f":I,,"a":S,"ai","j":S,"ts","i":S,"8","f":S,"y","a":S,"g","k":C,"au","au":C,"s","s":C,"au","au":D,"n",:D,"i",:S,"j","m":C,"&","&":D,"t",:S,"g","p":C,"o","o":S,"b","p":C,"o","o":S,"g","k":C,"o","o":S,"l","d":C,"i","i":D,"t",:D,"g",:D,"8",:D,"y",:S,"ts","k":S,"8","s":S,"t","a"
+</PATH>
+<PATH id="(cantonese_140924_362835-8)" word_cnt="61" sequence="69">
+C,"m","m":D,"a",:S,"j","s":C,"i","i":C,"g","g":C,"o","o":S,"g","t":C,"i","i":C,"n","n":C,"j","j":C,"i","i":C,"k","k":D,"8",:D,"y",:D,"j",:D,"au",:D,"h",:C,"ei","ei":C,"m","m":S,"o","u":C,"n","n":S,"h","s":S,"ai","ei":C,"m","m":D,"u",:S,"k","o":S,"ts","s":C,"i","i":C,"n","n":C,"o","o":S,"d","n":S,"z","s":C,"au","au":S,"g","p":C,"i","i":C,"n","n":D,"d",:S,"z","s":C,"&","&":C,"n","n":C,"k","k":I,,"f":S,"&","a":S,"p","t":C,"s","s":D,"y",:D,"f",:S,"ai","&":S,"d","p":S,"z","j":C,"e","e":D,"d",:S,"z","s":S,"y","i":C,"n","n":D,"ts",:S,"y","s":S,"d","i":S,"z","ts":C,"e","e":I,,"]"
+</PATH>
+<PATH id="(cantonese_140924_362835-9)" word_cnt="60" sequence="70">
+D,"d",:S,"z","j":C,"i","i":I,,"k":I,,"s":I,,"&":I,,"t":I,,"u":I,,"s":S,"oi","i":S,"l","s":C,"i","i":C,"n","n":I,,"w":S,"oi","o":S,"ts","j":C,"i","i":I,,"n":I,,"d":S,"t","o":C,"j","j":S,"&","i":S,"t","l":S,"g","a":S,"o","k":S,"g","w":S,"y","o":C,"d","d":C,"z","z":C,"o","o":C,"o","o":S,"d","n":S,"z","s":C,"au","au":S,"g","p":C,"i","i":C,"n","n":D,"d",:D,"z",:S,"&","ts":S,"n","a":S,"d","m":S,"z","s":S,"i","&":C,"n","n":S,"ts","s":C,"a","a":D,"k",:D,"w",:S,"u","t":C,"i","i":S,"g","w":S,"e","o":S,"g","d":C,"ei","ei":S,"g","k":C,"w","w":C,"a","a":C,"n","n":I,,"]"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140925_362959">
+<PATH id="(cantonese_140925_362959-10)" word_cnt="65" sequence="71">
+S,"ts","s":S,"8","i":C,"t","t":D,"s",:C,"i","i":C,"d","d":C,"z","z":D,"i",:D,"ts",:C,"i","i":C,"n","n":D,"l",:C,"a","a":C,"k","k":D,"8",:D,"y",:D,"h",:S,"ai","&":S,"h","n":S,"8","b":S,"n","i":C,"a","a":C,"k","k":D,"&",:D,"p",:D,"l",:D,"ei",:D,"j",:D,"&",:D,"t",:D,"g",:D,"o",:D,"g",:S,"o","u":C,"k","k":D,"g",:D,"a",:D,"g",:C,"u","u":D,"n",:D,"j",:D,"y",:D,"n",:D,"l",:D,"ei",:D,"b",:D,"i",:S,"n","k":C,"h","h":S,"a","o":C,"n","n":C,"g","g":S,"&","a":C,"n","n":C,"s","s":C,"a","a":C,"n","n":D,"g",:D,"&",:S,"m","t":C,"d","d":S,"&","a":C,"n","n":D,"h",:S,"ai","]"
+</PATH>
+<PATH id="(cantonese_140925_362959-12)" word_cnt="72" sequence="72">
+C,"d","d":C,"z","z":D,"oi",:D,"g",:S,"e","o":S,"g","j":C,"&","&":I,,"n":S,"m","d":S,"k","z":S,"ei","au":C,"s","s":C,"&","&":D,"t",:D,"d",:D,"o",:D,"j",:D,"au",:S,"h","k":C,"o","o":C,"ts","ts":S,"&","a":C,"m","m":C,"g","g":C,"a","a":D,"g",:D,"&",:D,"m",:D,"j",:D,"&",:C,"n","n":S,"w","j":S,"ai","au":C,"l","l":D,"e",:D,"p",:D,"i",:D,"n",:D,"t",:S,"y","a":C,"n","n":D,"j",:D,"&",:S,"p","d":S,"m","z":C,"i","i":C,"n","n":C,"a","a":C,"m","m":C,"o","o":D,"d",:S,"z","s":C,"o","o":D,"n",:D,"f",:D,"&",:C,"n","n":C,"d","d":C,"z","z":C,"i","i":C,"d","d":C,"z","z":D,"au",:D,"d",:D,"u",:D,"k",:D,"ts",:D,"8",:D,"t",:D,"s",:S,"e","i":C,"n","n"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140926_363228">
+<PATH id="(cantonese_140926_363228-2)" word_cnt="61" sequence="73">
+D,"d",:D,"z",:D,"a",:D,"ts",:D,"e",:D,"g",:D,"e",:D,"l",:D,"8",:D,"y",:D,"j",:D,"au",:D,"d",:D,"z",:D,"e",:D,"l",:D,"a",:S,"l","s":C,"i","i":D,"n",:S,"h","s":S,"e","i":C,"n","n":C,"j","j":C,"&","&":D,"n",:D,"d",:D,"o",:C,"n","n":C,"d","d":C,"z","z":C,"u","u":D,"n",:D,"o",:D,"s",:D,"8",:D,"n",:D,"s",:D,"8",:C,"n","n":D,"j",:D,"au",:D,"h",:D,"o",:D,"d",:D,"o",:S,"l","g":S,"e","u":C,"d","d":C,"o","o":D,"h",:S,"o","m":S,"d","&":S,"z","t":C,"u","u":C,"n","n":C,"j","j":C,"i","i":D,"d",:S,"z","k":S,"i","]"
+</PATH>
+<PATH id="(cantonese_140926_363228-26)" word_cnt="70" sequence="74">
+D,"h",:D,"a",:D,"j",:D,"au",:C,"m","m":D,"o",:D,"j",:D,"&",:D,"n",:D,"h",:D,"o",:D,"j",:D,"i",:S,"b","w":S,"o","a":C,"n","n":C,"d","d":C,"o","o":C,"s","s":D,"au",:D,"l",:C,"a","a":D,"h",:S,"o","t":S,"h","u":S,"o","k":S,"ts","f":S,"oi","a":C,"d","d":C,"ei","ei":D,"j",:D,"au",:S,"j","g":S,"&","a":C,"t","t":D,"d",:D,"8",:D,"y",:D,"j",:S,"y","i":C,"n","n":D,"d",:S,"z","s":S,"y","i":C,"m","m":C,"&","&":C,"n","n":C,"f","f":C,"u","u":D,"l",:D,"e",:C,"k","k":D,"8",:S,"y","w":S,"d","a":S,"ei","k":C,"d","d":C,"z","z":D,"au",:D,"t",:D,"i",:S,"n","a":S,"d","w":S,"ai","o":C,"d","d":D,"z",:S,"o","ei":S,"g","t":S,"&","u":S,"m","n"
+</PATH>
+<PATH id="(cantonese_140926_363228-27)" word_cnt="68" sequence="75">
+S,"j","m":S,"8","&":C,"n","n":D,"d",:S,"z","ts":S,"au","a":C,"m","m":C,"&","&":D,"n",:D,"o",:C,"m","m":C,"e","e":S,"s","j":S,"i","au":S,"h","t":C,"au","au":C,"d","d":C,"z","z":C,"au","au":D,"ts",:D,"e",:D,"n",:D,"o",:D,"h",:D,"8",:D,"y",:C,"h","h":S,"a","ai":S,"j","k":C,"&","&":C,"t","t":D,"g",:D,"o",:D,"d",:D,"z",:C,"a","a":C,"m","m":D,"l",:D,"a",:D,"d",:D,"ai",:D,"k",:D,"oi",:D,"s",:C,"&","&":C,"p","p":D,"g",:D,"u",:D,"n",:D,"l",:S,"ei","ai":C,"g","g":D,"e",:D,"l",:S,"o","au":S,"ts","s":S,"i","a":C,"n","n":D,"b",:D,"ei",:S,"o","l":S,"h","u":S,"8","d":S,"y","&":C,"m","m":C,"ai","ai":C,"j","j":C,"au","au"
+</PATH>
+<PATH id="(cantonese_140926_363228-28)" word_cnt="77" sequence="76">
+D,"l",:S,"a","w":C,"o","o":C,"m","m":D,"ai",:D,"j",:D,"y",:S,"n","a":C,"j","j":C,"au","au":C,"d","d":C,"z","z":D,"i",:D,"h",:C,"au","au":C,"b","b":D,"u",:D,"n",:D,"s",:D,"&",:D,"n",:D,"l",:S,"&","a":C,"m","m":D,"d",:D,"z",:D,"y",:D,"d",:C,"a","a":C,"p","p":D,"d",:D,"i",:D,"k",:D,"s",:C,"i","i":D,"g",:D,"e",:D,"d",:D,"&",:C,"n","n":C,"h","h":C,"ai","ai":C,"j","j":D,"&",:D,"n",:D,"w",:D,"ai",:D,"d",:D,"ei",:D,"f",:D,"o",:D,"n",:D,"p",:C,"i","i":D,"n",:S,"p","j":C,"i","i":S,"k","s":S,"a","au":S,"l","m":S,"i","g":S,"n","a":S,"d","t":C,"i","i":D,"k",:C,"s","s":C,"i","i":C,"d","d":C,"o","o":C,"m","m":C,"o","o":S,"g","d":S,"&","a":C,"m","m":I,,"u":S,"h","n":S,"o","]"
+</PATH>
+<PATH id="(cantonese_140926_363228-29)" word_cnt="73" sequence="77">
+I,,"s":S,"ts","au":S,"oi","j":S,"o","i":S,"g","p":C,"i","i":C,"n","n":D,"d",:D,"o",:D,"j",:D,"au",:D,"j",:D,"&",:S,"t","a":C,"w","w":S,"ai","a":S,"g","j":C,"i","i":C,"n","n":C,"ts","ts":C,"a","a":D,"t",:D,"g",:D,"&",:D,"m",:D,"o",:D,"d",:D,"z",:D,"au",:C,"m","m":C,"&","&":D,"n",:D,"g",:D,"i",:D,"n",:D,"ts",:D,"a",:C,"t","t":D,"h",:S,"o","a":C,"m","m":D,"h",:S,"o","&":S,"j","m":C,"i","i":D,"ts",:D,"e",:D,"n",:S,"o","k":C,"f","f":C,"a","a":D,"n",:D,"h",:D,"8",:D,"y",:C,"k","k":D,"8",:S,"y","au":S,"w","s":S,"a","i":C,"w","w":C,"a","a":D,"g",:D,"&",:C,"m","m":D,"g",:C,"&","&":D,"m",:D,"o",:S,"d","n":S,"z","j":C,"au","au":I,,"t"
+</PATH>
+<PATH id="(cantonese_140926_363228-30)" word_cnt="84" sequence="78">
+S,"ts","s":C,"o","o":D,"d",:D,"&",:D,"k",:D,"d",:D,"z",:D,"y",:D,"g",:C,"a","a":D,"g",:D,"8",:D,"y",:D,"g",:D,"&",:S,"m","t":S,"j","s":S,"8","i":C,"n","n":D,"f",:S,"a","j":S,"n","au":C,"f","f":C,"a","a":D,"n",:D,"h",:D,"8",:D,"y",:D,"o",:S,"g","j":S,"a","au":C,"g","g":D,"8",:D,"y",:D,"d",:D,"&",:D,"n",:D,"o",:S,"f","ei":C,"a","a":D,"n",:C,"f","f":C,"a","a":C,"n","n":D,"h",:D,"8",:S,"y","d":C,"o","o":C,"g","g":C,"a","a":D,"g",:D,"8",:S,"y","k":C,"l","l":D,"e",:D,"t",:D,"u",:D,"n",:D,"g",:D,"i",:D,"n",:D,"ts",:C,"a","a":D,"t",:D,"s",:D,"u",:S,"k","n":C,"s","s":D,"u",:D,"k",:S,"g","a":S,"o","d":S,"n","z":S,"b","au":S,"ai","m":C,"b","b":D,"ai",:D,"l",:C,"a","a":C,"j","j":C,"i","i":C,"n","n":D,"h",:D,"au",
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_140927_363424">
+<PATH id="(cantonese_140927_363424-1)" word_cnt="69" sequence="79">
+S,"g","d":C,"a","a":C,"d","d":C,"i","i":C,"l","l":C,"a","a":C,"m","m":C,"s","s":S,"i","&":C,"n","n":D,"g",:D,"e",:C,"s","s":C,"y","y":D,"h",:D,"o",:D,"k",:C,"s","s":C,"a","a":C,"n","n":D,"d",:D,"o",:S,"s","t":S,"8","u":S,"y","n":C,"j","j":D,"y",:S,"d","&":S,"z","t":C,"i","i":D,"p",:C,"s","s":C,"au","au":D,"l",:S,"e","d":S,"g","&":S,"o","t":S,"d","u":S,"z","t":C,"i","i":S,"g","k":C,"u","u":C,"n","n":I,,"t":S,"g","j":S,"e","&":C,"n","n":D,"a",:S,"m","j":S,"g","i":S,"e","n":C,"d","d":C,"z","z":D,"y",:D,"s",:D,"e",:S,"w","u":S,"a","n":C,"d","d":S,"i","a":C,"n","n":D,"g",:D,"ai",:C,"w","w":D,"u",:D,"i",:D,"h",:C,"ai","ai":I,,"]"
+</PATH>
+<PATH id="(cantonese_140927_363424-17)" word_cnt="78" sequence="80">
+D,"l",:D,"e",:D,"h",:D,"ei",:D,"m",:D,"o",:D,"n",:D,"h",:D,"o",:C,"j","j":C,"i","i":C,"f","f":D,"o",:D,"n",:D,"d",:D,"z",:D,"i",:D,"d",:C,"o","o":D,"ts",:D,"&",:D,"t",:D,"s",:D,"i",:D,"n",:D,"d",:S,"z","h":S,"i","ai":S,"b","f":C,"a","a":D,"t",:D,"s",:D,"i",:D,"n",:D,"j",:D,"i",:D,"s",:D,"8",:D,"n",:D,"g",:D,"e",:D,"d",:D,"z",:D,"i",:D,"g",:D,"u",:S,"n","k":C,"g","g":C,"e","e":D,"n",:D,"a",:D,"m",:D,"g",:D,"&",:D,"m",:D,"o",:D,"d",:D,"ei",:D,"h",:D,"o",:S,"h","k":C,"ei","ei":D,"m",:D,"o",:D,"n",:D,"d",:D,"z",:D,"8",:D,"n",:D,"l",:D,"oi",:D,"l",:D,"e",:D,"d",:D,"&",:D,"n",:D,"n",:S,"i","]"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_141004_365094">
+<PATH id="(cantonese_141004_365094-21)" word_cnt="68" sequence="81">
+D,"g",:D,"a",:C,"s","s":D,"&",:D,"m",:S,"d","a":S,"z","n":C,"i","i":D,"f",:S,"u","n":S,"h","w":C,"a","a":D,"l",:D,"ei",:D,"u",:D,"k",:C,"k","k":C,"ei","ei":D,"j",:D,"au",:D,"m",:D,"o",:S,"j","w":S,"&","u":C,"n","n":D,"j",:D,"i",:D,"g",:D,"a",:S,"h","d":S,"ai","ei":C,"s","s":D,"i",:D,"k",:D,"g",:D,"&",:S,"n","e":C,"j","j":S,"8","&":C,"k","k":D,"g",:D,"e",:C,"j","j":S,"y","i":S,"g","l":C,"o","o":C,"s","s":S,"8","a":S,"y","d":S,"s","z":C,"u","u":C,"n","n":C,"j","j":S,"8","&":C,"k","k":S,"g","l":C,"a","a":C,"m","m":D,"a",:D,"h",:D,"a",:D,"g",:C,"&","&":D,"m",:D,"j",:D,"8",:C,"n","n":I,,"]"
+</PATH>
+<PATH id="(cantonese_141004_365094-22)" word_cnt="57" sequence="82">
+S,"j","m":S,"8","&":C,"n","n":D,"l",:D,"e",:D,"d",:D,"z",:D,"au",:S,"w","b":C,"u","u":I,,"j":C,"i","i":I,,"n":C,"l","l":C,"i","i":D,"t",:S,"w","m":C,"ai","ai":D,"l",:D,"e",:D,"l",:D,"ei",:D,"g",:D,"o",:C,"g","g":C,"a","a":S,"t","l":S,"i","a":C,"n","n":D,"j",:S,"y","g":S,"n","u":C,"s","s":D,"8",:S,"y","ei":C,"f","f":D,"&",:S,"n","a":S,"p","m":C,"u","u":C,"i","i":D,"d",:S,"z","s":C,"i","i":D,"b",:D,"y",:D,"g",:D,"e",:S,"k","t":S,"ei","u":C,"d","d":D,"z",:S,"u","i":C,"n","n":D,"j",:D,"&",:D,"t",
+</PATH>
+<PATH id="(cantonese_141004_365094-23)" word_cnt="48" sequence="83">
+D,"j",:D,"&",:D,"t",:D,"g",:S,"o","m":C,"h","h":C,"au","au":D,"l",:D,"8",:D,"y",:C,"j","j":C,"&","&":C,"n","n":C,"s","s":I,,"au":C,"o","o":I,,"n":S,"g","j":C,"&","&":D,"m",:D,"l",:D,"i",:C,"n","n":S,"oi","b":S,"l","a":S,"e","n":C,"d","d":D,"z",:S,"au","o":S,"w","g":C,"u","u":I,,"j":C,"i","i":S,"s","t":C,"ai","ai":S,"j","m":S,"y","u":C,"n","n":D,"j",:D,"&",:S,"n","t":S,"h","l":C,"au","au":S,"p","w":C,"o","o":I,,"n":C,"ts","ts":C,"a","a"
+</PATH>
+<PATH id="(cantonese_141004_365094-24)" word_cnt="52" sequence="84">
+D,"d",:S,"o","t":S,"w","u":S,"ai","k":C,"s","s":I,,"a":I,,"j":C,"i","i":C,"n","n":D,"g",:D,"o",:S,"h","p":C,"u","u":C,"n","n":C,"s","s":C,"i","i":D,"p",:S,"d","k":S,"z","s":S,"8","a":C,"n","n":D,"l",:D,"e",:S,"d","j":C,"i","i":S,"g","t":S,"ei","i":C,"s","s":D,"8",:D,"t",:S,"h","a":S,"8","m":S,"y","&":S,"g","t":C,"a","a":C,"m","m":C,"d","d":S,"u","o":S,"k","p":C,"a","a":D,"g",:S,"8","w":S,"y","&":C,"m","m":C,"&","&":C,"n","n":D,"j",:S,"y","l":S,"n","u":C,"s","s":S,"8","&":S,"y","n"
+</PATH>
+<PATH id="(cantonese_141004_365094-25)" word_cnt="64" sequence="85">
+D,"g",:S,"e","n":C,"h","h":C,"au","au":C,"l","l":I,,"a":S,"8","n":C,"t","t":D,"d",:S,"z","u":S,"e","n":S,"t","f":S,"ai","ei":S,"h","s":C,"a","a":D,"l",:S,"ei","n":C,"j","j":D,"au",:D,"m",:D,"o",:S,"s","&":S,"ai","t":C,"s","s":S,"8","a":S,"y","n":S,"g","j":S,"e","i":S,"g","f":S,"&","a":C,"m","m":D,"s",:C,"&","&":D,"p",:D,"j",:D,"y",:C,"t","t":D,"f",:S,"&","a":C,"n","n":D,"l",:D,"e",:S,"g","ts":C,"a","a":D,"d",:D,"z",:D,"au",:C,"s","s":D,"8",:D,"y",:S,"d","&":S,"z","n":C,"i","i":D,"j",:D,"y",:D,"n",:C,"w","w":D,"ai",:D,"j",:S,"y","a":C,"n","n":D,"w",:S,"u","g":C,"i","i"
+</PATH>
+<PATH id="(cantonese_141004_365094-26)" word_cnt="52" sequence="86">
+D,"l",:D,"e",:D,"d",:S,"z","ts":S,"au","a":C,"w","w":D,"u",:C,"i","i":S,"j","g":S,"y","e":C,"n","n":D,"s",:D,"i",:S,"n","d":S,"ts","z":S,"o","u":C,"b","b":C,"o","o":D,"g",:S,"e","d":S,"s","z":C,"o","o":C,"g","g":D,"8",:S,"y","ei":C,"s","s":S,"au","&":S,"d","n":S,"z","t":C,"a","a":D,"p",:C,"l","l":I,,"u":S,"y","k":S,"g","h":C,"ai","ai":S,"g","j":S,"o","i":C,"k","k":I,,"u":S,"g","k":S,"o","u":S,"g","k":C,"u","u":C,"n","n":C,"s","s":I,,"a":S,"8","g":S,"y","o":S,"k","j":S,"8","&":S,"y","n"
+</PATH>
+<PATH id="(cantonese_141004_365094-27)" word_cnt="59" sequence="87">
+D,"m",:S,"u","l":C,"i","i":D,"j",:D,"&",:C,"n","n":D,"m",:S,"u","g":S,"i","o":C,"j","j":C,"&","&":C,"t","t":D,"d",:C,"ai","ai":I,,"b":S,"k","a":S,"oi","n":S,"j","t":S,"y","u":C,"n","n":C,"s","s":D,"8",:D,"y",:D,"h",:D,"ai",:D,"g",:S,"ei","a":S,"d","j":S,"o","i":S,"l","t":S,"e","u":S,"g","k":C,"&","&":D,"m",:D,"j",:D,"i",:C,"n","n":I,,"m":C,"h","h":C,"au","au":C,"l","l":S,"e","a":S,"d","n":S,"z","j":C,"au","au":C,"w","w":C,"a","a":D,"k",:D,"d",:D,"z",:D,"e",:D,"o",:S,"d","t":S,"ei","a":C,"l","l":S,"o","u":S,"l","n":C,"o","o":S,"k","]"
+</PATH>
+<PATH id="(cantonese_141004_365094-28)" word_cnt="53" sequence="88">
+C,"l","l":S,"&","a":S,"m","n":S,"g","t":S,"ei","i":C,"s","s":C,"i","i":C,"n","n":C,"i","i":D,"j",:D,"&",:S,"t","k":S,"g","u":S,"o","n":C,"f","f":C,"a","a":D,"n",:D,"w",:D,"ai",:D,"l",:D,"ai",:D,"d",:D,"z",:D,"o",:C,"m","m":S,"ai","ei":S,"j","m":S,"&","ei":C,"t","t":D,"g",:D,"o",:S,"b","w":S,"y","a":C,"d","d":C,"z","z":D,"8",:D,"n",:D,"s",:C,"i","i":D,"n",:C,"l","l":D,"a",:D,"h",:C,"a","a":S,"j","s":C,"i","i":C,"g","g":C,"a","a":C,"l","l":D,"e",:D,"d",:D,"z",:S,"au","o"
+</PATH>
+<PATH id="(cantonese_141004_365094-29)" word_cnt="67" sequence="89">
+D,"w",:C,"a","a":C,"j","j":C,"au","au":C,"s","s":C,"o","o":S,"g","k":S,"8","&":S,"y","t":C,"l","l":I,,"u":S,"e","n":C,"d","d":D,"z",:D,"au",:D,"h",:D,"ai",:D,"l",:D,"o",:D,"k",:D,"ts",:D,"a",:D,"m",:D,"g",:S,"ei","i":C,"s","s":C,"i","i":D,"g",:S,"8","k":S,"y","&":C,"m","m":C,"&","&":C,"n","n":D,"g",:S,"e","d":S,"j","z":S,"y","u":C,"n","n":C,"s","s":D,"8",:D,"y",:D,"l",:S,"8","&":C,"n","n":I,,"a":C,"l","l":D,"e",:D,"j",:S,"i","a":S,"g","s":C,"i","i":D,"n",:D,"ts",:D,"u",:C,"n","n":S,"m","t":C,"u","u":D,"i",:C,"j","j":C,"&","&":D,"n",:C,"m","m":D,"u",:C,"i","i":D,"j",:D,"&",:S,"t","]"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_141005_365172">
+<PATH id="(cantonese_141005_365172-1)" word_cnt="51" sequence="90">
+D,"k",:D,"8",:D,"y",:S,"f","p":S,"a","u":S,"t","i":S,"j","p":C,"i","i":C,"n","n":C,"j","j":C,"au","au":I,,"g":I,,"u":I,,"n":C,"h","h":C,"a","a":D,"k",:D,"j",:D,"&",:C,"n","n":D,"h",:S,"ai","a":C,"j","j":C,"&","&":C,"m","m":D,"d",:S,"z","o":S,"8","j":C,"y","y":D,"d",:S,"z","t":S,"au","a":S,"g","w":S,"e","o":C,"s","s":D,"i",:D,"h",:C,"au","au":C,"l","l":D,"e",:D,"g",:C,"&","&":C,"m","m":D,"g",:S,"o","u":C,"n","n":D,"w",:D,"u",:S,"ts","s":S,"y","i":C,"n","n"
+</PATH>
+<PATH id="(cantonese_141005_365172-14)" word_cnt="82" sequence="91">
+D,"h",:D,"ai",:S,"w","b":C,"o","o":D,"n",:S,"p","b":C,"ei","ei":I,,"f":I,,"o":C,"j","j":C,"au","au":D,"w",:D,"a",:C,"d","d":D,"z",:S,"e","a":C,"l","l":D,"ei",:D,"h",:D,"ai",:D,"h",:C,"a","a":D,"k",:C,"p","p":C,"ei","ei":C,"f","f":C,"u","u":D,"j",:S,"au","n":C,"w","w":S,"a","o":C,"d","d":D,"z",:D,"e",:D,"h",:S,"ai","&":S,"b","p":C,"a","a":D,"k",:C,"p","p":I,,"u":S,"ei","i":C,"f","f":C,"u","u":D,"g",:D,"o",:C,"j","j":D,"y",:S,"n","i":S,"g","k":C,"u","u":C,"j","j":D,"&",:S,"n","au":C,"w","w":D,"ai",:D,"h",:C,"o","o":C,"d","d":D,"o",:D,"s",:D,"i",:D,"h",:D,"au",:S,"w","z":C,"u","u":D,"i",:S,"d","t":C,"a","a":C,"p","p":D,"d",:C,"o","o":S,"h","d":C,"o","o":S,"d","j":S,"o","i":C,"s","s":S,"8","&":C,"n","n":D,"h",:D,"8",:D,"y",
+</PATH>
+<PATH id="(cantonese_141005_365172-15)" word_cnt="76" sequence="92">
+D,"g",:D,"8",:D,"y",:D,"o",:D,"d",:D,"z",:D,"i",:C,"d","d":C,"o","o":C,"a","a":I,,"t":C,"l","l":C,"a","a":S,"g","m":C,"&","&":C,"m","m":D,"g",:D,"e",:D,"ts",:D,"i",:D,"n",:D,"f",:S,"o","&":C,"n","n":D,"g",:D,"e",:D,"s",:D,"i",:D,"h",:D,"au",:D,"l",:D,"e",:D,"o",:C,"d","d":D,"ei",:D,"w",:D,"u",:D,"i",:S,"j","z":C,"au","au":S,"g","w":S,"o","&":C,"m","m":C,"&","&":C,"n","n":D,"t",:D,"ai",:C,"d","d":D,"z",:S,"au","ei":S,"h","d":S,"ai","a":C,"w","w":C,"a","a":C,"g","g":I,,"u":S,"&","n":C,"m","m":D,"l",:D,"ei",:D,"g",:C,"o","o":C,"g","g":C,"o","o":D,"p",:D,"ei",:D,"j",:D,"y",:D,"w",:D,"a",:C,"d","d":I,,"&":S,"z","t":S,"au","o":S,"b","p":C,"a","a"
+</PATH>
+<PATH id="(cantonese_141005_365172-17)" word_cnt="65" sequence="93">
+D,"k",:D,"ei",:D,"s",:D,"&",:D,"t",:S,"f","d":S,"a","z":S,"t","au":C,"l","l":D,"8",:S,"t","ei":S,"l","g":S,"e","u":S,"j","k":C,"au","au":D,"g",:S,"o","j":S,"n","i":C,"g","g":D,"ei",:D,"d",:C,"i","i":D,"n",:D,"h",:D,"8",:D,"y",:S,"b","g":C,"o","o":C,"n","n":D,"d",:S,"z","s":C,"o","o":I,,"w":C,"o","o":D,"d",:D,"ei",:S,"h","k":S,"8","j":C,"y","y":C,"t","t":D,"y",:D,"n",:D,"p",:C,"i","i":D,"n",:D,"j",:D,"&",:D,"t",:D,"w",:D,"&",:C,"n","n":C,"j","j":C,"au","au":D,"m",:D,"o",:S,"j","l":S,"&","a":C,"m","m":D,"d",:D,"z",:D,"8",:D,"y",:S,"d","w":S,"z","o":S,"au","]"
+</PATH>
+<PATH id="(cantonese_141005_365172-21)" word_cnt="49" sequence="94">
+D,"l",:D,"i",:D,"n",:D,"g",:D,"e",:C,"d","d":D,"z",:S,"au","&":S,"h","t":S,"ai","a":S,"g","l":C,"&","&":C,"n","n":D,"d",:D,"z",:D,"y",:D,"d",:S,"z","j":C,"au","au":S,"d","b":S,"ai","ei":S,"s","f":C,"a","a":C,"m","m":I,,"k":I,,"o":S,"d","l":S,"ai","i":C,"s","s":I,,"&":I,,"p":C,"ei","ei":D,"d",:S,"z","f":S,"au","ei":S,"h","t":S,"ai","i":S,"g","j":S,"&","a":C,"m","m":D,"d",:D,"z",:D,"e",:C,"m","m":D,"e",:D,"j",:C,"i","i":C,"s","s":C,"i","i"
+</PATH>
+<PATH id="(cantonese_141005_365172-22)" word_cnt="54" sequence="95">
+C,"l","l":D,"e",:D,"d",:D,"z",:D,"au",:D,"g",:C,"o","o":D,"d",:S,"z","s":S,"e","i":S,"g","s":S,"o","au":S,"t","h":C,"a","a":D,"m",:S,"l","w":C,"a","a":C,"m","m":C,"h","h":C,"a","a":D,"g",:D,"&",:S,"m","k":C,"j","j":C,"y","y":C,"g","g":C,"o","o":C,"g","g":C,"o","o":D,"j",:D,"&",:D,"m",:C,"d","d":C,"z","z":I,,"au":I,,"w":S,"o","ai":C,"d","d":C,"z","z":C,"au","au":D,"g",:D,"e",:D,"j",:D,"&",:D,"n",:D,"s",:D,"i",:D,"h",:D,"oi",:S,"ts","t":C,"i","i":D,"g",:S,"o","k":S,"n","au"
+</PATH>
+<PATH id="(cantonese_141005_365172-23)" word_cnt="53" sequence="96">
+D,"l",:S,"ei","o":S,"a","n":S,"g","j":C,"&","&":C,"n","n":I,,"l":S,"d","i":S,"z","a":S,"y","k":C,"g","g":I,,"e":I,,"k":S,"o","u":C,"n","n":C,"h","h":C,"a","a":C,"j","j":S,"au","&":C,"m","m":D,"d",:D,"z",:D,"i",:D,"d",:S,"z","t":C,"i","i":D,"g",:D,"ei",:D,"g",:D,"o",:D,"n",:S,"g","k":S,"&","u":C,"n","n":D,"d",:C,"i","i":C,"m","m":S,"&","d":S,"t","i":C,"a","a":C,"t","t":D,"y",:D,"l",:D,"oi",:S,"t","j":S,"y","i":S,"h","w":S,"8","u":S,"y","j":C,"a","a":D,"g",:D,"&",:C,"n","n"
+</PATH>
+<PATH id="(cantonese_141005_365172-25)" word_cnt="66" sequence="97">
+D,"h",:D,"ai",:D,"j",:D,"&",:D,"t",:S,"g","k":C,"o","o":D,"h",:D,"i",:C,"n","n":C,"s","s":C,"i","i":C,"d","d":C,"z","z":C,"o","o":C,"k","k":D,"8",:D,"y",:D,"h",:D,"ai",:D,"j",:D,"i",:D,"g",:D,"i",:D,"n",:D,"j",:C,"&","&":D,"m",:D,"d",:D,"z",:D,"8",:D,"y",:D,"d",:D,"z",:D,"au",:D,"g",:S,"a","n":S,"l","w":C,"a","a":C,"m","m":D,"h",:S,"a","t":C,"h","h":C,"a","a":D,"d",:D,"ai",:D,"j",:S,"i","t":C,"d","d":C,"i","i":C,"n","n":C,"d","d":I,,"&":S,"z","t":S,"au","a":S,"h","l":S,"ai","a":C,"d","d":C,"z","z":D,"e",:D,"j",:D,"&",:S,"t","a":S,"g","d":C,"o","o":I,,"]"
+</PATH>
+<PATH id="(cantonese_141005_365172-26)" word_cnt="56" sequence="98">
+D,"p",:D,"i",:D,"n",:C,"h","h":D,"&",:D,"n",:D,"l",:S,"a","ai":C,"g","g":S,"&","a":C,"m","m":D,"l",:D,"e",:D,"g",:S,"o","i":S,"h","t":S,"o","u":S,"g","k":C,"a","a":D,"n",:S,"d","b":C,"a","a":D,"n",:S,"l","m":C,"a","a":C,"j","j":S,"y","i":S,"g","d":C,"o","o":D,"k",:S,"ei","t":S,"d","j":S,"&","i":C,"k","k":D,"m",:D,"h",:D,"ai",:D,"w",:D,"a",:D,"h",:S,"o","au":C,"w","w":C,"&","&":C,"n","n":D,"g",:S,"e","j":S,"h","&":S,"ai","k":S,"l","u":S,"o","k":C,"j","j":D,"y",:D,"l",:S,"oi","au":S,"j","d":S,"y","ai"
+</PATH>
+<PATH id="(cantonese_141005_365172-27)" word_cnt="51" sequence="99">
+D,"h",:S,"8","u":S,"y","j":S,"a","&":C,"m","m":I,,"l":I,,"ei":C,"j","j":C,"au","au":D,"w",:C,"a","a":I,,"t":I,,"u":C,"k","k":I,,"l":I,,"ei":C,"d","d":C,"z","z":D,"e",:D,"m",:D,"o",:D,"d",:S,"y","au":S,"n","a":C,"d","d":S,"y","&":C,"n","n":D,"ts",:D,"o",:D,"d",:D,"ai",:D,"d",:D,"z",:S,"o","f":C,"a","a":D,"l",:D,"e",:D,"m",:D,"s",:S,"y","n":C,"s","s":D,"&",:D,"m",:D,"d",:D,"z",:C,"o","o":S,"n","t":S,"d","u":S,"o","n":C,"m","m":C,"au","au"
+</PATH>
+<PATH id="(cantonese_141005_365172-28)" word_cnt="56" sequence="100">
+S,"m","h":S,"au","u":S,"d","t":C,"i","i":D,"g",:D,"e",:S,"g","k":C,"a","a":I,,"k":C,"s","s":C,"i","i":D,"a",:D,"w",:D,"a",:D,"k",:D,"d",:S,"z","j":S,"e","au":C,"d","d":C,"z","z":C,"o","o":D,"n",:S,"d","j":C,"i","i":C,"t","t":D,"d",:C,"i","i":D,"a",:D,"g",:D,"&",:C,"m","m":D,"l",:D,"e",:D,"g",:S,"o","i":C,"d","d":D,"z",:D,"au",:D,"h",:S,"ai","ei":C,"j","j":C,"&","&":I,,"k":S,"t","au":C,"g","g":S,"o","a":S,"h","d":C,"i","i":D,"n",:C,"s","s":C,"i","i":D,"j",:D,"&",:S,"t","l":S,"g","i":S,"o","n"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_141006_365326">
+<PATH id="(cantonese_141006_365326-11)" word_cnt="48" sequence="101">
+C,"t","t":D,"u",:S,"n","o":C,"m","m":C,"ai","ai":D,"d",:D,"z",:S,"o","s":S,"k","au":S,"w","l":S,"ai","ei":S,"ts","f":C,"a","a":C,"m","m":C,"h","h":C,"au","au":C,"g","g":C,"e","e":C,"s","s":I,,"a":S,"au","n":C,"s","s":C,"i","i":C,"n","n":C,"j","j":S,"y","&":C,"t","t":C,"ai","ai":C,"g","g":C,"e","e":D,"d",:D,"z",:D,"au",:S,"h","t":C,"ai","ai":C,"t","t":I,,"o":I,,"s":C,"i","i":C,"m","m":I,,"l":I,,"a":I,,"k":S,"t","h":S,"i","a":S,"m","t":S,"d","a":S,"oi","t"
+</PATH>
+<PATH id="(cantonese_141006_365326-12)" word_cnt="53" sequence="102">
+S,"b","j":S,"y","&":C,"m","m":C,"&","&":I,,"p":I,,"o":I,,"m":S,"k","a":C,"j","j":C,"i","i":D,"b",:D,"u",:D,"n",:D,"l",:D,"oi",:C,"s","s":C,"ai","ai":C,"k","k":I,,"ei":S,"8","t":S,"y","i":S,"k","d":S,"8","i":S,"y","p":S,"k","ts":S,"8","i":S,"y","k":C,"g","g":C,"e","e":C,"s","s":S,"y","i":C,"n","n":S,"k","ts":S,"8","&":S,"y","n":S,"l","j":S,"ei","i":S,"b","p":C,"i","i":C,"n","n":D,"d",:D,"z",:S,"y","s":S,"d","i":S,"z","k":S,"o","au":S,"d","p":C,"ai","ai":D,"l",:S,"8","g":S,"n","a":C,"g","g":C,"e","e"
+</PATH>
+<PATH id="(cantonese_141006_365326-2)" word_cnt="57" sequence="103">
+I,,"j":I,,"i":C,"h","h":C,"ai","ai":S,"o","m":S,"d","u":S,"z","t":C,"au","au":S,"b","p":C,"u","u":C,"n","n":C,"t","t":I,,"h":S,"o","au":C,"s","s":C,"au","au":I,,"d":S,"h","z":S,"o","i":S,"s","f":C,"a","a":D,"n",:D,"g",:S,"e","k":S,"g","t":C,"i","i":D,"k",:S,"d","t":S,"y","i":C,"n","n":C,"f","f":C,"&","&":C,"n","n":D,"d",:S,"z","s":C,"i","i":C,"l","l":C,"i","i":C,"n","n":C,"d","d":D,"o",:C,"o","o":D,"d",:S,"z","t":C,"au","au":D,"d",:S,"z","ts":C,"i","i":C,"n","n":C,"f","f":C,"u","u":S,"d","t":C,"a","a":D,"m",:D,"s",:D,"&",:S,"m","]"
+</PATH>
+<PATH id="(cantonese_141006_365326-27)" word_cnt="59" sequence="104">
+C,"j","j":D,"i",:D,"k",:D,"&",:D,"p",:D,"o",:S,"d","au":S,"ei","t":C,"g","g":C,"e","e":D,"g",:D,"a",:S,"d","k":S,"z","t":C,"i","i":C,"k","k":D,"g",:C,"u","u":C,"n","n":C,"g","g":C,"e","e":C,"s","s":S,"8","&":C,"n","n":C,"s","s":S,"&","a":C,"m","m":D,"l",:C,"i","i":C,"n","n":C,"j","j":D,"&",:S,"t","au":C,"w","w":C,"ai","ai":S,"g","k":C,"u","u":C,"n","n":C,"d","d":S,"o","a":C,"n","n":D,"j",:D,"i",:C,"j","j":S,"y","&":C,"n","n":D,"l",:D,"oi",:S,"d","a":S,"z","t":C,"i","i":S,"h","f":S,"&","a":C,"m","m":C,"p","p":D,"u",:D,"i",:D,"l",:C,"ai","ai"
+</PATH>
+<PATH id="(cantonese_141006_365326-28)" word_cnt="63" sequence="105">
+S,"g","j":C,"e","e":D,"b",:S,"o","p":S,"d","a":S,"&","t":S,"k","a":C,"m","m":C,"a","a":C,"n","n":D,"d",:D,"z",:D,"au",:D,"g",:D,"8",:D,"y",:D,"ts",:D,"8",:D,"t",:C,"j","j":D,"&",:S,"t","au":S,"g","k":S,"o","au":C,"l","l":C,"i","i":C,"n","n":C,"j","j":C,"&","&":D,"n",:S,"g","t":C,"u","u":C,"m","m":C,"o","o":C,"g","g":C,"e","e":C,"l","l":C,"ai","ai":D,"d",:S,"z","j":C,"i","i":D,"b",:S,"o","p":S,"d","a":S,"&","t":S,"k","a":C,"m","m":C,"a","a":D,"n",:S,"w","m":C,"a","a":D,"d",:D,"o",:D,"n",:D,"g",:D,"&",:C,"m","m":D,"l",:C,"i","i":C,"n","n":D,"l",:D,"i",:S,"n","]"
+</PATH>
+<PATH id="(cantonese_141006_365326-29)" word_cnt="62" sequence="106">
+S,"ts","s":S,"o","a":C,"k","k":D,"8",:D,"y",:C,"g","g":C,"e","e":C,"s","s":S,"y","i":C,"n","n":D,"k",:S,"8","s":S,"y","&":S,"l","n":S,"oi","a":C,"j","j":C,"&","&":C,"t","t":D,"g",:D,"a",:S,"n","ai":C,"m","m":D,"u",:D,"k",:C,"s","s":C,"i","i":C,"l","l":D,"&",:D,"m",:S,"d","a":S,"z","t":C,"u","u":C,"n","n":C,"s","s":S,"&","a":C,"m","m":I,,"&":C,"p","p":C,"ei","ei":C,"j","j":C,"&","&":C,"n","n":D,"p",:D,"o",:D,"w",:S,"ai","k":S,"d","au":S,"z","b":S,"i","a":S,"h","j":C,"au","au":I,,"k":C,"g","g":D,"ei",:D,"j",:D,"&",:S,"t","e":C,"j","j":C,"au","au":D,"j",:S,"&","l":S,"n","i"
+</PATH>
+<PATH id="(cantonese_141006_365326-3)" word_cnt="66" sequence="107">
+D,"s",:D,"&",:D,"m",:C,"k","k":D,"8",:D,"y",:D,"d",:C,"ei","ei":S,"w","p":C,"u","u":C,"i","i":C,"h","h":C,"ai","ai":I,,"w":S,"o","u":S,"d","n":S,"z","s":C,"au","au":C,"g","g":S,"i","e":C,"n","n":I,,"b":S,"l","a":S,"oi","k":C,"f","f":C,"a","a":C,"t","t":D,"d",:C,"u","u":C,"n","n":S,"h","f":S,"u","o":C,"n","n":C,"b","b":C,"o","o":S,"w","b":S,"u","o":C,"t","t":D,"d",:D,"u",:S,"n","au":S,"j","l":C,"i","i":C,"m","m":C,"&","&":D,"n",:D,"g",:D,"a",:C,"n","n":D,"d",:D,"8",:D,"y",:S,"h","t":C,"u","u":C,"n","n":C,"b","b":C,"o","o":S,"w","b":S,"u","o":C,"t","t":D,"d",:C,"u","u":D,"n",:C,"g","g":C,"e","e":I,,"]"
+</PATH>
+<PATH id="(cantonese_141006_365326-30)" word_cnt="60" sequence="108">
+D,"j",:D,"&",:D,"n",:C,"d","d":C,"z","z":C,"au","au":C,"f","f":C,"a","a":D,"t",:S,"h","m":C,"ei","ei":C,"h","h":C,"ai","ai":S,"g","k":S,"oi","w":S,"d","a":S,"z","j":S,"u","&":C,"n","n":C,"s","s":S,"&","a":C,"m","m":D,"d",:D,"z",:S,"8","&":C,"n","n":S,"h","f":S,"&","a":S,"n","d":S,"ts","z":S,"e","i":C,"n","n":C,"s","s":C,"ai","ai":D,"g",:D,"u",:D,"n",:D,"d",:D,"z",:D,"o",:C,"k","k":D,"d",:S,"o","u":C,"n","n":S,"j","s":S,"&","a":C,"t","t":D,"ts",:S,"8","a":S,"t","m":C,"j","j":C,"i","i":C,"n","n":C,"g","g":C,"e","e":C,"j","j":C,"&","&":C,"n","n":C,"s","s":S,"o","au"
+</PATH>
+<PATH id="(cantonese_141006_365326-4)" word_cnt="60" sequence="109">
+C,"h","h":D,"u",:D,"n",:D,"g",:S,"8","au":S,"y","k":S,"l","&":S,"e","n":C,"j","j":C,"au","au":C,"l","l":C,"i","i":C,"n","n":C,"m","m":S,"u","&":S,"k","p":C,"s","s":D,"i",:D,"l",:S,"&","a":C,"m","m":C,"j","j":C,"&","&":C,"n","n":C,"s","s":C,"i","i":C,"s","s":C,"i","i":C,"n","n":S,"w","m":S,"ai","a":S,"g","j":C,"i","i":C,"k","k":C,"s","s":C,"y","y":I,,"d":S,"s","z":C,"o","o":C,"j","j":D,"&",:D,"n",:D,"d",:D,"z",:C,"&","&":C,"n","n":S,"h","m":C,"&","&":C,"n","n":C,"g","g":C,"e","e":D,"d",:D,"8",:D,"y",:C,"d","d":C,"z","z":S,"8","a":C,"n","n":D,"j",:D,"au",
+</PATH>
+<PATH id="(cantonese_141006_365326-5)" word_cnt="60" sequence="110">
+D,"j",:D,"au",:C,"m","m":S,"u","o":C,"k","k":C,"s","s":C,"i","i":C,"l","l":S,"&","a":C,"m","m":C,"f","f":C,"u","u":C,"l","l":D,"8",:S,"y","ei":S,"h","s":C,"ai","ai":I,,"j":I,,"i":S,"g","k":S,"ai","ei":C,"s","s":S,"8","a":C,"n","n":C,"p","p":C,"ei","ei":D,"j",:S,"u","d":S,"k","o":C,"m","m":C,"a","a":C,"j","j":D,"i",:D,"k",:S,"d","&":S,"o","t":C,"j","j":C,"au","au":C,"m","m":C,"u","u":D,"k",:D,"s",:C,"i","i":C,"l","l":D,"&",:S,"m","a":S,"g","k":C,"ei","ei":S,"k","h":C,"au","au":C,"s","s":C,"au","au":S,"d","t":C,"o","o":S,"h","f":S,"u","o":C,"n","n":D,"h",:D,"a",:S,"k","]"
+</PATH>
+<PATH id="(cantonese_141006_365326-6)" word_cnt="53" sequence="111">
+D,"h",:D,"a",:C,"j","j":C,"i","i":C,"s","s":S,"8","a":C,"n","n":D,"d",:S,"z","t":C,"u","u":C,"n","n":D,"d",:S,"z","t":C,"u","u":C,"n","n":C,"s","s":C,"i","i":S,"g","s":C,"i","i":C,"n","n":S,"h","s":C,"i","i":C,"n","n":C,"s","s":C,"i","i":I,,"n":I,,"g":C,"o","o":D,"d",:S,"z","j":C,"au","au":I,,"t":S,"g","j":C,"e","e":C,"s","s":C,"e","e":S,"w","b":C,"u","u":S,"i","n":S,"w","b":C,"o","o":I,,"h":I,,"ai":C,"s","s":C,"au","au":S,"d","t":C,"o","o":C,"ts","ts":S,"u","&":C,"n","n":S,"s","d":S,"8","ei":S,"y","]"
+</PATH>
+<PATH id="(cantonese_141006_365326-7)" word_cnt="59" sequence="112">
+C,"j","j":C,"i","i":C,"n","n":C,"j","j":C,"au","au":S,"g","k":S,"o","au":S,"b","p":C,"i","i":S,"t","k":S,"g","ei":S,"e","d":S,"j","z":C,"i","i":D,"j",:D,"y",:C,"n","n":C,"ts","ts":D,"&",:D,"n",:D,"g",:C,"i","i":C,"n","n":C,"f","f":C,"a","a":C,"t","t":I,,"j":S,"b","&":S,"y","k":S,"g","w":C,"o","o":C,"h","h":D,"o",:D,"l",:S,"&","a":C,"n","n":D,"l",:C,"i","i":C,"n","n":C,"m","m":S,"u","&":S,"k","p":C,"s","s":D,"i",:D,"l",:S,"&","a":S,"m","n":C,"j","j":C,"&","&":C,"n","n":C,"s","s":C,"i","i":S,"b","t":S,"&","a":C,"t","t":S,"o","u":C,"n","n":D,"g",:S,"e","k"
+</PATH>
+<PATH id="(cantonese_141006_365326-8)" word_cnt="52" sequence="113">
+C,"g","g":D,"e",:D,"j",:C,"i","i":C,"n","n":D,"l",:S,"8","a":C,"n","n":S,"d","t":S,"&","a":C,"n","n":C,"h","h":C,"ai","ai":C,"j","j":S,"y","i":S,"n","m":S,"l","a":S,"oi","t":C,"j","j":C,"au","au":D,"g",:D,"&",:D,"n",:D,"d",:S,"o","k":S,"g","m":C,"&","&":C,"n","n":D,"d",:D,"o",:S,"g","t":S,"e","au":S,"j","t":C,"i","i":C,"j","j":S,"y","i":C,"n","n":C,"h","h":C,"ai","ai":D,"g",:S,"o","j":S,"k","au":C,"w","w":D,"u",:D,"i",:D,"l",:D,"oi",:S,"d","&":S,"o","n":S,"g","w":S,"i","a":C,"k","k"
+</PATH>
+<PATH id="(cantonese_141006_365326-9)" word_cnt="58" sequence="114">
+D,"g",:D,"i",:D,"k",:C,"l","l":D,"i",:S,"k","ei":S,"w","b":C,"ai","ai":C,"w","w":C,"u","u":I,,"i":S,"d","t":S,"o","au":C,"j","j":D,"y",:D,"n",:D,"m",:C,"&","&":C,"n","n":C,"f","f":C,"a","a":C,"t","t":C,"ai","ai":I,,"j":I,,"i":C,"s","s":S,"e","i":C,"n","n":S,"d","t":C,"ai","ai":C,"d","d":C,"z","z":C,"u","u":C,"n","n":C,"j","j":S,"y","&":S,"b","p":C,"ei","ei":I,,"d":S,"ts","z":C,"i","i":S,"b","p":C,"au","au":D,"j",:S,"y","g":S,"n","au":C,"k","k":D,"8",:S,"y","ei":C,"d","d":C,"ei","ei":C,"g","g":C,"e","e":C,"g","g":D,"o",:S,"n","au":C,"w","w":C,"a","a"
+</PATH>
+</SPEAKER>
+<SPEAKER id="cantonese_141006_365328">
+<PATH id="(cantonese_141006_365328-10)" word_cnt="59" sequence="115">
+D,"g",:D,"&",:C,"m","m":D,"h",:C,"ai","ai":S,"g","p":C,"o","o":D,"h",:S,"8","l":S,"y","ei":C,"g","g":S,"ei","e":C,"j","j":C,"&","&":D,"t",:D,"l",:D,"e",:C,"k","k":D,"ei",:C,"s","s":S,"&","e":C,"t","t":D,"d",:D,"o",:D,"h",:C,"ai","ai":D,"a",:C,"j","j":C,"au","au":D,"l",:S,"e","m":S,"g","i":S,"o","d":S,"ts","z":S,"y","i":C,"n","n":C,"j","j":C,"i","i":D,"n",:S,"l","m":C,"e","e":D,"d",:D,"z",:D,"au",:S,"h","g":C,"ai","ai":C,"w","w":C,"a","a":S,"f","t":S,"o","i":C,"n","n":D,"l",:S,"e","s":S,"d","au":S,"z","m":S,"au","&":S,"h","t":C,"ai","ai":I,,"]"
+</PATH>
+<PATH id="(cantonese_141006_365328-11)" word_cnt="60" sequence="116">
+D,"h",:C,"ai","ai":I,,"d":S,"a","ai":C,"w","w":I,,"&":S,"u","t":C,"i","i":D,"ts",:D,"e",:C,"n","n":D,"ts",:S,"8","h":S,"n","au":C,"g","g":C,"e","e":D,"s",:D,"y",:C,"s","s":D,"i",:D,"k",:D,"g",:D,"a",:D,"g",:D,"&",:D,"m",:D,"j",:C,"&","&":C,"t","t":D,"d",:D,"i",:D,"d",:D,"z",:D,"u",:D,"n",:S,"g","a":S,"au","k":C,"t","t":S,"y","i":C,"n","n":C,"t","t":C,"ai","ai":D,"a",:D,"d",:S,"z","j":S,"i","&":C,"n","n":C,"g","g":C,"ai","ai":C,"j","j":D,"&",:S,"n","e":C,"s","s":C,"i","i":S,"d","t":C,"ai","ai":C,"d","d":C,"z","z":S,"y","i":C,"n","n"
+</PATH>
+<PATH id="(cantonese_141006_365328-12)" word_cnt="67" sequence="117">
+S,"h","j":C,"au","au":C,"t","t":D,"u",:S,"n","o":C,"m","m":C,"ai","ai":D,"g",:D,"o",:C,"k","k":C,"g","g":C,"ai","ai":C,"g","g":C,"e","e":C,"t","t":S,"y","i":C,"n","n":C,"t","t":C,"ai","ai":D,"l",:D,"e",:C,"ts","ts":S,"&","a":S,"m","n":C,"j","j":C,"&","&":C,"t","t":I,,"ai":I,,"s":S,"d","a":S,"o","m":S,"h","&":S,"ai","n":C,"f","f":C,"u","u":C,"j","j":C,"y","y":S,"l","h":S,"e","ai":S,"ts","s":C,"a","a":C,"m","m":D,"j",:D,"y",:S,"d","i":S,"z","t":C,"i","i":C,"m","m":D,"d",:D,"z",:S,"u","&":C,"n","n":C,"g","g":C,"e","e":C,"h","h":D,"o",:S,"k","au":C,"s","s":D,"&",:D,"n",:S,"t","ai":S,"u","d":S,"n","a":C,"m","m":C,"ai","ai":S,"k","t":S,"ei","]"
+</PATH>
+<PATH id="(cantonese_141006_365328-14)" word_cnt="56" sequence="118">
+S,"g","k":C,"u","u":C,"n","n":C,"j","j":S,"i","&":C,"k","k":C,"h","h":S,"ai","a":C,"j","j":C,"i","i":S,"g","d":C,"a","a":D,"g",:D,"e",:D,"ts",:D,"y",:D,"n",:D,"g",:D,"o",:D,"k",:C,"d","d":C,"z","z":D,"i",:S,"n","y":S,"f","g":C,"u","u":D,"d",:D,"z",:D,"y",:S,"d","n":S,"z","l":C,"i","i":D,"k",:S,"d","f":C,"u","u":C,"n","n":S,"g","s":C,"i","i":C,"n","n":D,"w",:S,"a","m":S,"a","au":C,"j","j":D,"i",:D,"k",:D,"&",:D,"p",:S,"l","au":S,"e","d":S,"ts","z":C,"i","i":C,"n","n":D,"d",:D,"z",:C,"i","i":C,"n","n"
+</PATH>
+<PATH id="(cantonese_141006_365328-15)" word_cnt="62" sequence="119">
+I,,"m":I,,"o":I,,"n":C,"s","s":C,"i","i":C,"s","s":C,"i","i":D,"ts",:D,"8",:D,"n",:D,"t",:D,"o",:S,"n","d":S,"j","z":C,"i","i":C,"n","n":S,"l","d":C,"i","i":C,"n","n":D,"l",:D,"e",:C,"j","j":C,"i","i":D,"k",:C,"d","d":D,"o",:S,"s","z":S,"8","u":C,"n","n":S,"g","d":S,"ai","ei":C,"f","f":C,"u","u":D,"j",:S,"y","n":C,"h","h":C,"o","o":C,"k","k":C,"s","s":S,"&","a":C,"n","n":I,,"m":S,"l","s":S,"e","i":S,"t","b":C,"u","u":D,"n",:D,"m",:D,"ai",:D,"w",:S,"ai","i":C,"d","d":C,"z","z":D,"e",:D,"j",:D,"y",:D,"ts",:C,"i","i":D,"t",:C,"l","l":C,"ei","ei":I,,"]"
+</PATH>
+</SPEAKER>
+</SYSTEM>

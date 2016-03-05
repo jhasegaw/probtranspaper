@@ -1,0 +1,52 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/gmm/gmm_SW_dev.trn and trn/gmmpt/gmmpt_SW_dev.trn
+
+                                                                                                       Signed
+        Spkr               trn/gmm/gmm_SW_dev.trn      trn/gmmpt/gmmpt_SW_dev.trn  Difference   Rank    Rank
+--------------------------------------------------------------------------------------------------------------
+swahili_140826_356959               66.59                         53.08              13.51      1.0      1.0
+swahili_140902_358351               52.26                         33.37              18.89      4.0      4.0
+swahili_141216_380121               55.54                         39.76              15.78      3.0      3.0
+swahili_141216_380127               72.80                         57.78              15.02      2.0      2.0
+--------------------------------------------------------------------------------------------------------------
+        Avg.                        61.80                         46.00              15.80
+
+                        Sum of  4 positive ranks = 10.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -1.83, therefore the Hypothesis
+              is ACCEPTED.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|--------------------------------------------------------------------------------------|
+|                            |     trn/gmm/gmm_SW_dev.trn | trn/gmmpt/gmmpt_SW_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+|     trn/gmm/gmm_SW_dev.trn |                            |                       same |
+|----------------------------+----------------------------+----------------------------|
+| trn/gmmpt/gmmpt_SW_dev.trn |                            |                            |
+|--------------------------------------------------------------------------------------|

@@ -1,0 +1,751 @@
+
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   trn/gmmpt/gmmpt_HG_dev.trn
+
+Speakers: 
+    0:  hungarian_141018_367917
+    1:  hungarian_141021_368485
+    2:  hungarian_141129_376499
+    3:  hungarian_141129_376501
+    4:  hungarian_141202_377185
+    5:  hungarian_141206_378021
+    6:  hungarian_141216_379937
+    7:  hungarian_141216_379947
+    8:  hungarian_150110_384743
+    9:  hungarian_150113_385325
+   10:  hungarian_150113_385327
+
+Speaker sentences   0:  hungarian_141018_367917   #utts: 14
+id: (hungarian_141018_367917-1)
+Scores: (#C #S #D #I) 42 10 15 6
+REF:  * * AI s 5 z * z L e t i J e K k E L  f o g l 5 L k o z * p r o f e Sː o r k e n v i Lː s HV i R E v e Tː e K A r * s t 5 J E L e n t * s 5 s t 5 j N L 
+HYP:  L I I  s O z E z * e t i G e * k * EI f o g l * E k o z O p r o f e S   o r k e n v i *** s ** i * * v e T   e * * r E s t * * * * e n t I s O s t E j * E 
+Eval: I I S    S   I   D       S   D   D S          D S       I           S                 D     D    D D     S     D D   I     D D D D       I   S     S   D S 
+
+id: (hungarian_141018_367917-13)
+Scores: (#C #S #D #I) 25 19 6 6
+REF:  * * TS z V I s L 5 k O s f e n t 5 r * t HV 5 T T e L m * d i s 5 z Z I 5 I P e R s P e K t V i K EI t * n * t I s 
+HYP:  E S R  z * L s * O k U s f e n t O r O t ** U I L e T m O d i s E z E S E J T e * s T e G t * i * V  t O n I t E s 
+Eval: I I S    D S   D S   S           S   I   D  S S S   S   I       S   S S S S S   D   S   S   D   D S    I   I   S   
+
+id: (hungarian_141018_367917-14)
+Scores: (#C #S #D #I) 42 13 23 6
+REF:  * t I 5 s T J 5 v 5 s o L j * k EI H O J e z e k U E  t 5 t i E m T U k * t k EI E l e n t * n t * R j 5 k B 5 n t * n T i E S k EI 5 M I N i s t e r 5 s T m o n~ j 5 H O j 
+HYP:  E t * O s * * E v O s o * j E k ** * U D e z e k * EI t E t i * m * E k U t k ** U l e n t O n t E T j O k * * n t E n * i * * k ** * * * * i s t e r A s * m o n~ j * * U j 
+Eval: I   D S   D D S   S     D   I   D  D S S         D S    S     D   D S   I     D  S         I     I S   S   D D     I   D   D D   D  D D D D           S   D          D D S   
+
+id: (hungarian_141018_367917-15)
+Scores: (#C #S #D #I) 35 17 8 5
+REF:  * 5 z * s l 5 k O s T I r t * n E L e M t ou v * Bː r 5 I s n 5 J o n f o n t O s t i m 5 d E e J N~ i t o Tː 5 B B s * l e s e B B Sː 
+HYP:  J E z E s l O k U s * * r t I n * * e N t ou v E B   r * E s n E D o n f o n t U s t i m E d * e G M  i t o *** T A T s I l e s e * T S   
+Eval: I S   I     S   S   D D     I   D D   S        I S     D S     S S             S         S   D   S S        D   S S S   I         D S S   
+
+id: (hungarian_141018_367917-19)
+Scores: (#C #S #D #I) 39 15 7 4
+REF:  T R e l o K t 5 t * s i s 5 k U s e R v e z e t 5 s T m o n~ j * 5 5 Z f o l t * t 5 n t e R V t n * t I s A e L Z s o r b 5 n 5 Z 
+HYP:  * S e l o * t O t E s i s A k * s e * v e z e t O s * m o n~ j R S O R f o l t S t O n t e * S t n I t E s R e S E s o r b * n E S 
+Eval: D S       D   S   I       S   D     D           S   D          I S S S         I   S       D S     I   S   S   S S         D   S S 
+
+id: (hungarian_141018_367917-2)
+Scores: (#C #S #D #I) 35 16 13 3
+REF:  j 5 H O j 5 T 5 N 5 N~ 5 g o t t e g i K EI r e n D B e e * TS e R s T i E  S k EI s E l b a r * t I 5 L 5 p o k HV o z V i Sː 5 v e z e t * 
+HYP:  j * R U j E M O M O N  E g o t t e g i * ** r e n * * e e T S  e * s * i TS I k ** s I l b a r E t * * * O p o k ** o z * i S   E v e z e t U 
+Eval:   D S S   S S S S S S  S               D D        D D     I S    D   D   S  S   D    S         I   D D D S       D      D   S   S           I 
+
+id: (hungarian_141018_367917-20)
+Scores: (#C #S #D #I) 46 11 7 7
+REF:  L t 5 l * n o s i s K o l K b 5 n V * l * b n P r o b l e m T U t I o k o Z D e HV o z Z t e s i k u * 5 t * n * r o K s 5 j * t i t i E l k ei 
+HYP:  E t O l E n o s i s G o l E b * n B O l O b n T r o b l e m * E t * o k o * R e ** o z E t e s i k u J E t O n E r o * s E j E t i t i * l k ei 
+Eval: S   S   I           S     S   D   S I   I     S             D S   D       D S   D      S             I S   I   I     D   S   I         D        
+
+id: (hungarian_141018_367917-3)
+Scores: (#C #S #D #I) 33 23 14 2
+REF:  HV o * Z Z Lː s T k ei R n e k HV o z Z t i v I H O j 5 t I E L s o K U t 5 r t 5 l o M t I E L s o k U 5 n~ 5 G r o Sː H 5 t * s 5 L v 5 n 5 d AI K OU 
+HYP:  H  o S E L E   s * k ei E n e k K  o z E t i v * E U j E t * * U s o * * t A r t E l o N t * * U s o k * O n~ * O r o *** S O t E s * E v * n E d ** I E  
+Eval: S    I S S S     D      S       S      S       D S S   S   D D S     D D   S     S     S   D D S       D S    D S     D   S S   I   D S   D   S   D  S S  
+
+id: (hungarian_141018_367917-4)
+Scores: (#C #S #D #I) 34 16 13 6
+REF:  K EI T 5 N U l * s * r a K EI E L e N s * e N 5 Z L t 5 l * n o s i s K o L k B 5 n k I  e m e l i k H O j * 5 N~ e L v * s 5 m 5 t e m 5 t i 
+HYP:  * ** * U M O l E s E r a * ** R N e * s R e * * * * t E l E n o s i s G o R k * O n k EI e m e l i k * U j E N J  e * v I s E m O t e m O t i 
+Eval: D D  D S S S   I   I     D D  S S   D   I   D D D D   S   I           S   S   D S     S              D S   I S S    D   I   S   S       S     
+
+id: (hungarian_141018_367917-5)
+Scores: (#C #S #D #I) 46 10 11 7
+REF:  k * AI k ei s S g e K f e J l e s t * s T I k U e Lː 5 K EI Z i p o n T b 5 HV e J  e Z n i 5 k o r m * N~ 5 f e l l v i Z g * l * t m e g r e n d e l * * 
+HYP:  k O J  k ei s E g e * f e * l e s t I s * E k * e *** * L O  S i p o n * b * ** e HV e * n i * k o r m E N  E f e l l v i S g E l O t m e g r e n d e l I S 
+Eval:   I S         S     D     D         I   D S   D   D   D S S  S         D   D D    S    D     D         I S  S             S   I   I                     I I 
+
+id: (hungarian_141018_367917-6)
+Scores: (#C #S #D #I) 39 19 13 4
+REF:  s * v e l 5 Z 5 l 5 p o k r 5 5 k u 5 R t 5 5 H  N Z J t f e K t e T n i 5 Z T s e r e T n * k EI h o j 5 D AI k A k * J HV 5 j n * k ei e L 5 z i s K o L 
+HYP:  s I v e l * * O l O p o k r * O k u * S t * E HV O S U t f e G t e * n i * * O s e r e * n I k ** h o j * I E  k O k U I H  O j n E k ei e * * z i s G o R 
+Eval:   I       D D S   S         D S     D S   D S S  S S S       S     D     D D S         D   I   D        D S S    S   I S S  S     I        D D       S   S 
+
+id: (hungarian_141018_367917-7)
+Scores: (#C #S #D #I) 39 10 9 3
+REF:  E l * t I H O J k ei p e s e K l e J e n e K m e K U F e l e l s i n t e n * R N i o L v 5 s N i s * m o L n i G o n d o L 
+HYP:  * l E t * * U E k ei p e s e * l e G e n e * m e * T V e l e l s i n t e n I L M i o R v N s M i s E m o * n i * o n d o * 
+Eval: D   I   D D S S              D     S       D     D S S                     I S S     S   S   S     I     D     D         D 
+
+id: (hungarian_141018_367917-8)
+Scores: (#C #S #D #I) 34 13 11 6
+REF:  * k o z n i s R T  S k EI 5 U s t r * l I & 5 k * EI r B e V e V v i l DZ I H e * J  Z e T t i * 5 z o K t 5 t * s I m i n i s t e R 
+HYP:  L k o z n i s I TS I k ** * O s t r E l * J E k B E  r * e Z e R v i l ** * * e K EI S e * t i T O z o * t E t E s * m i n i s t e * 
+Eval: I             S S  S   D  D S       I   D S S   I S    D   S   S       D  D D   I S  S   D     I S     D   S   I   D               D 
+
+id: (hungarian_141018_367917-9)
+Scores: (#C #S #D #I) 35 13 15 3
+REF:  X r i s T o P HV e r P I n E 5 s T m o n~ j 5 5 S T s e r e T n * k EI h 5 5 h 5 r m i n TS 5 j N l * s K EI z I E l 5 l e g t Bː e * L f 
+HYP:  5 r i s * o * F  e r * E n * O s * m o n~ j * * R O s e r e * n I k ** h * O h O r m i n S  O j E l E s * E  z * * l * l e g t *** e B E f 
+Eval: S       D   D S      D S   D S   D          D D S S         D   I   D    D S   S         S  S   S   I   D S    D D   D         D     I S   
+
+Speaker sentences   1:  hungarian_141021_368485   #utts: 9
+id: (hungarian_141021_368485-1)
+Scores: (#C #S #D #I) 16 16 13 1
+REF:  HV 5 D OU N~ z S I S T E& e * L v 5 n S J T I n i k H 5 n e M e L TS Z i K n e M J U T e s Z E n 
+HYP:  ** * * ** O  z O M E N Z  e S O v * n * O U E n i k * O n e N e * ** T i * n e * N I V e s * * n 
+Eval: D  D D D  S    S S S S S    I S   D   D S S S       D S     S   D D  S   D     D S S S     D D   
+
+id: (hungarian_141021_368485-10)
+Scores: (#C #S #D #I) 31 20 12 3
+REF:  D 5 V i D k u r o v 5 s T m o n~ j 5 5 k u t 5 t * s B i z * O N~ C 5 H O j * m 5 e M T U A r 5 TS i G 5 r e t T z I s T I Bː n e M k EI 
+HYP:  * * * i * k u r o v O s * m o n~ j R A k u t E t E s * i z E N I  T I A U j O m * e * * * * r E T  i B E r e t E z E s * B E   n e N k U  
+Eval: D D D   D           S   D          S S       S   I   D     I S S  S S S S   I   D   D D D D   S S    S S       S   S   D S S       S   S  
+
+id: (hungarian_141021_368485-14)
+Scores: (#C #S #D #I) 39 15 7 4
+REF:  5 F e L M A r S s e r i n t 5 TS i g 5 r e Tː 5 m * r * K k EI i s m e R T S g e i s TS K k e n t 5 t i L t * s B e v e z e t * s E e 
+HYP:  V I e * * * r I s e r i n t E T  i g O r e T   A m E r T E k ** i s m e * Z E g e i s Z  R k e n t O t i * t E s V e v e z e t I s * e 
+Eval: S S   D D D   S             S S      S     S   S   I   I S   D          D S S         S  S         S     D   I   S             I   D   
+
+id: (hungarian_141021_368485-15)
+Scores: (#C #S #D #I) 34 18 3 7
+REF:  e l Tː k ei t i v I 5 F I 5 t 5 l o k * * * * s * z 5 l * k A t u d o Tː m e G n e V e z n i l I g & l * Bː e J TS i G 5 r e Tː 5 
+HYP:  e l T   k ei t i v E O V J E t O l o k H O T N s E z E l I k U t u d o T   m e * n e L e z n i l E g O l E B   e G T  i K A r e *** * 
+Eval:     S              S S S S S   S       I I I I   I   S   I   S         S       D     S           S   S   I S     S S    S S     D   D 
+
+id: (hungarian_141021_368485-16)
+Scores: (#C #S #D #I) 39 14 18 7
+REF:  E m T U r K T I e M t U DZ I m 5 e * m T U A r e Z 5 s * e m T U ts 5 K U t V e n k I  l e n TS s * z 5 L k EI DZ EI z e l * n d i k u t 5 t K EI n e m * * R g i * 
+HYP:  O m * E r * * * e * t * ** * m * e G m O M E r e S E s L e m * * ts * * R t * e n k EI l e n ** s E z 5 * k ** U  I  z e l E n d i k u t E t * O  n e m E L E g i G 
+Eval: S   D S   D D D   D   D D  D   D   I   S S S     S S   I     D D    D D S   D       S        D    I     D   D  S  S        I             S   D S        I I S     I 
+
+id: (hungarian_141021_368485-17)
+Scores: (#C #S #D #I) 35 21 10 4
+REF:  b e n 5 k E  t e z e r * N~ O L TS t A 5 p o L TS o k R E L v * l * k I  t i L t S I s T E& E l k i 5 d o T t V i Z G l 5 t o k 5 t E n * Z t K EI 
+HYP:  b e n * k EI t e z e r E N  U S O  t U O p o R T  o k * * O v O l O k EI t i E t * E s * ** O l k i R d o * t * i S E l O t o k U t * n I S t * I  
+Eval:       D   S            I S  S S S    S S     S S      D D S   I   I   S      S   D S   D D  S       S     D   D   S S   S       S   D   I S   D S  
+
+id: (hungarian_141021_368485-18)
+Scores: (#C #S #D #I) 27 19 8 7
+REF:  * t I m i n d 5 EI TS s V i Z G l * t J t A l L t 5 H O j 5 f i * 5 t 5 l o K 5 d OU N~ R  e * K l * m A k H 5 t * s * r a N 5 
+HYP:  E t * m i n d * E  U  s * i S E l O t U t O l E t * A U j E f i J O t O l o * R d ** O  HV e D E l E m O k * O t E s E r a * M 
+Eval: I   D         D S  S    D   S S   I   S   S   S   D S S   S     I S   S     D S   D  S  S    I S   I   S   D S   I   I     D S 
+
+id: (hungarian_141021_368485-8)
+Scores: (#C #S #D #I) 31 20 6 5
+REF:  * J t A l * L t 5 H O j 5 TS i G 5 r e Tː 5 d o b o z o K n 5 k 5 z * z l e t e K p o * L TS 5 i r E L v L E l T e n * s e J U 
+HYP:  U I t O l E S t * A U j O T  i T E r e T   O d o b o z o * n E k O z I z l e t e * p o R T S  E i r O R v * O l O e n I s e * * 
+Eval: I S   S   I S   D S S   S S    S S     S   S             D   S   S   I           D     I S S  S     S S   D S   S     I     D D 
+
+id: (hungarian_141021_368485-9)
+Scores: (#C #S #D #I) 28 8 6 21
+REF:  * t I e n 5 HV o z * * Z Lː s m e g v L t O Z o T t e L s * s o R b 5 n 5 f o * * * * * * * * * * * * ** G k * * o n * * i v e s 
+HYP:  U t * e n * H  o z L E L E   s m e g v E t U S o * t e * s E s o * b * n O f o R I K U E N T I S E N K EI T k U S o n I G i v e s 
+Eval: I   D     D S      I I S S             S   S S   D     D   I     D   D   S     I I I I I I I I I I I I I  S   I I     I I         
+
+Speaker sentences   2:  hungarian_141129_376499   #utts: 15
+id: (hungarian_141129_376499-1)
+Scores: (#C #S #D #I) 40 22 5 3
+REF:  5 z e L Z E l * p i s b 5 n 5 Z 5 n g o L G l U TS o s m i s TS L I n E s 5 z 5 m e r i k U 5 j I k o r m * N~ k u t 5 t * s 5 I n 5 k e r e D 
+HYP:  E z e * S O l I p i s b E n O S O n g o R K l E S  o s m i s T  R E n I s E z O m e r i k * O j * k o r m E N  k u t O t E s * E n O k e r e * 
+Eval: S     D S S   I         S   S S S       S S   S S            S  S S   S   S   S           D S   D         I S        S   I   D S   S         D 
+
+id: (hungarian_141129_376499-10)
+Scores: (#C #S #D #I) 42 15 13 3
+REF:  * n 5 P b 5 k U e Lː e Tː s A R t e n i e z R t 5 z e s e t L e G e s e l R I n e m E l * t O T t k EI r o s H 5 t * s o k R 5 I  s F e L k U E Lː k ei 
+HYP:  U n * O b O k * e L   e *** s T I t e n i e z E t E z e s e t * e J e s e l * E n e m * l E t * U t k A  r o s * O t E s o k * * EI s T e * k * * EI  k ei 
+Eval: I   D S   S   D   S     D     S S             S   S           D   S         D S       D   I   D S     S        D S   I       D D S    S   D   D D S        
+
+id: (hungarian_141129_376499-13)
+Scores: (#C #S #D #I) 38 18 7 5
+REF:  * l * * G j 5 n u R t O L 5 Z e b o l 5 DZ EI r v N~ l e g j o Bː 5 n s J t o Tː 5 t E& l e t e i n * n~ u g 5 t 5 f R i k * b n 5 HV o L t I Bː 
+HYP:  O l E L I j O n u E t * * U S e b o l E J  E  r v E  l e g j o *** B n s U t o T   E t E  l e t e i n M n~ u g O t A f * i k E b n * ** o * t E L   
+Eval: I   I I S   S     S   D D S S         S S  S      S            D   S     S     S   S   S              I        S   S   D     I     D D    D   S S   
+
+id: (hungarian_141129_376499-14)
+Scores: (#C #S #D #I) 38 15 12 2
+REF:  m i N T EI TS r o m e z R e n HV 5 L t 5 K m e G 5 t I Bː e z e r e g S s DZ i DZ i W AI AI d o L g o z A r * s R i * e m T U A r m e g e J e 
+HYP:  m i * * H  E  r o m e z * e n H  O R t * O m e T E t E B   e z e r e g I s ** i D  i * ** ** d o * g o z O r I s * i R e m * * E r m e g e G e 
+Eval:     D D S  S            D     S  S S   D S     S S   S S               S   D    S    D D  D      D       S   I   D   I     D D S           S   
+
+id: (hungarian_141129_376499-15)
+Scores: (#C #S #D #I) 33 21 15 3
+REF:  Z t e k 5 z OU L t 5 N~ 5 G s * Lː i t * s A R e L d o K t o r 5 n t HV O n i f o * TS i 5 s t r e M L i H O J 5 K u T 5 t K EI m i n E L HV 5 m 5 R 5 
+HYP:  S t e k O z O  R t * O  N E s E L   i t E s * * e U d o * t o r E n t ** E n i f o R Z  i A s t r e * N i * * * * R u D O t * O  m i n * I H  O m * * * 
+Eval: S       S   S  S   D S  S S   I S       I   D D   S     D       S     D  S         I S    S         D S   D D D D S   S S   D S        D S S  S   D D D 
+
+id: (hungarian_141129_376499-17)
+Scores: (#C #S #D #I) 32 19 10 3
+REF:  R I V i D I 5 DZ EI r V N~ 5 L s e m b e n * s H o J v 5 j O n e J B i * k I  f e J l e s t e T t OU L t 5 n~ 5 g o K j o Bː 5 k ** U e 
+HYP:  * E Z i * T E J  E  r * E  N E s e m b e n I s * o * v O j E n e * T i T k EI f e * l e s t e * t ** U t O n~ E g o * j o B   O k EI L e 
+Eval: D S S   D S S S  S    D S  S S             I   D   D   S   S     D S   I   S      D           D   D  S   S    S     D     S   S   I  S   
+
+id: (hungarian_141129_376499-18)
+Scores: (#C #S #D #I) 41 14 14 2
+REF:  G s e R t e 5 z e b o l 5 j * r v N~ e Dː I G T i Bː m i n T t e z e R HV 5 TS Z z I L t o z 5 t o T t k EI v e t e L t e J e T k I V  v i * e m T U 
+HYP:  E s e * t e * z e b o l E j E r v ** e *** N E D i *** m i n * t e z e * H  O T  E z * E t o z E t o * t k U  v e t e * t e G e * k * EI v i V e m * * 
+Eval: S     D     D           S   I     D    D   S S S   D         D         D S  S S  S   D S       S     D     S          D     S   D   D S      I     D D 
+
+id: (hungarian_141129_376499-19)
+Scores: (#C #S #D #I) 37 18 7 10
+REF:  * i n d * * N~ u g 5 t 5 f R i k * b n HV 5 L t 5 K b e l e * 5 DZ EI r v * N~ b 5 K EI Z t * k EI s i e Rː 5 l e * o n * b n 5 HV o l 5 v i l DZ I e g * 
+HYP:  M i n d I N J  u g E t A f * i k E b n H  O R t * O b e l e R O J  E  r v E N  b * * A  S t I k ** s i e R   E l e R o n I b n * ** o l E v i l E  G e g I 
+Eval: I       I I S      S   S   D     I     S  S S   D S         I S S  S      I S    D D S  S   I   D        S   S     I     I     D D      S       S  S     I 
+
+id: (hungarian_141129_376499-2)
+Scores: (#C #S #D #I) 34 21 15 2
+REF:  E m T U N~ e I t HV 5 s n L j K EI f e L H A s e g * s S g e s 5 m e r i k 5 I t o L t O Tː 5 K b e K u A z I E l K EI ts 5 K U K U e Tː e n * s L e L 
+HYP:  * m * I N  e * t H  O s n E j * E  f e * K U s e g I s E g e s O m e r i k O J t o R t U T   A B b e T u * z * * l * ** ts * * * O T e T   e n I s * e * 
+Eval: D   D S S    D   S  S     S   D S      D S S       I   S       S           S S     S   S S   S S     S   D   D D   D D     D D D S S   S       I   D   D 
+
+id: (hungarian_141129_376499-20)
+Scores: (#C #S #D #I) 40 16 11 3
+REF:  * s * DZ i DZ i W AI AI s e r v e z e T s e R i n t L 5 s 5 n u j 5 n o j 5 N m 5 G 5 s L e s 5 z L d o z 5 t o k s * m 5 m i N T L i b R i B N 
+HYP:  I s E D  i G  i * ** ** s e r v e z e * s e N i n t * O s E n u j * n o j * A m O K U s * e s E z E d o z E t o k s E m O m i * * K i b E i * E 
+Eval: I   I S    S    D D  D                D     S       D S   S       D       D S   S S S   D     S   S       S         I   S     D D S     S   D S 
+
+id: (hungarian_141129_376499-3)
+Scores: (#C #S #D #I) 41 16 8 7
+REF:  * t e K e N~ HV E e l * Z 5 t * s E n * J ei TS t e N b e l E l 5 Z e r e D m * N~ e K m i n D p o z i t * v e k V o L t 5 k U e L s A r 5 t u d * s 
+HYP:  E t e G e ** N  G e l E F O t I s * n I K ei ** t e M b e l O l E S e r e R m I N  e * m i n * p o z i t I v e k * o R t O k * e * s E r O t u d O s 
+Eval: I     S   D  S  S     I S S   I   D   I S    D      S       S   S S       S   I S    D       D           I       D   S   S   D   D   S   S       I   
+
+id: (hungarian_141129_376499-4)
+Scores: (#C #S #D #I) 33 17 14 1
+REF:  s o k u K 5 p t K EI k ei s HV e Z m 5 j D 5 t e k I  n t S e * o r V o s i l P 5 N E  V E n g l 5 D J O U R n 5 L & V m e D i TS i n E 
+HYP:  s o k u * * p t * E  k ei s ** e * m O j * E t e k EI n t I e S o r * o s i l * * O N~ U I n g l * * E N Z E n * * E F m e R i S  i n * 
+Eval:         D D     D S         D    D   S   D S       S      S   I     D         D D S S  S S       D D S S S S   D D S S     S   S      D 
+
+id: (hungarian_141129_376499-5)
+Scores: (#C #S #D #I) 37 18 6 5
+REF:  h o s t 5 N~ i L v * n o s * g r 5 5 n t HV O n i f o * TS i 5 z 5 m e r i k U 5 j I DZ EI r V N~ O s B e t e G s * g e k * s 5 Lː e r G I  
+HYP:  h o s t E N  i R v E n o s E g r A E n t ** E n i f o S Z  i O z O m e r i k * O j * ** E  r E N  E s * e t e * s E g e k I s O L   e r K EI 
+Eval:         S S    S   I       I     S S     D  S         I S    S   S           D S   D D  S    S S  S   D       D   I       I   S S       S S  
+
+id: (hungarian_141129_376499-8)
+Scores: (#C #S #D #I) 39 14 11 5
+REF:  K e d e L m i k * A k * Z 5 t 5 s * L EI k EI r b e n t e r J e s t e T t s R G s * g i * O r V o s S g o K f e L HV 5 s n e L s i K EI r I E& 
+HYP:  * e d e * m i k O T k E S O t A s I E S  k U  r b e n t e r I e s t e * t s * * s E g i U A r * o s E g o * f e * H  O s n e * s i * ** r E U  
+Eval: D       D       I S   I S S   S   I S S    S                S         D     D D   I     I S   D     S     D     D S  S       D     D D    S S  
+
+id: (hungarian_141129_376499-9)
+Scores: (#C #S #D #I) 33 16 9 5
+REF:  R i * s i d e 5 j j * * s e f o r G 5 L m * 5 Z k EI V 5 t O s S g r 5 i n t e n e * K v e K m ^ n k I T  m o s T E n EI TS N~ EI TS 
+HYP:  L i E s i d e * j j O T s e f o r * K O m A S O k ** U B t U s E g r * i n t e n e T I v e * m U n k * AI m o s * * n ** I  HV E  N  
+Eval: S   I         D     I I           D S S   I S S   D  S S   S   S     D             I S     D   S     D S        D D   D  S  S  S  S  
+
+Speaker sentences   3:  hungarian_141129_376501   #utts: 7
+id: (hungarian_141129_376501-1)
+Scores: (#C #S #D #I) 45 16 13 4
+REF:  * t e m g * t I 5 Rː 5 H O J f e L n e v e l i m i u t e N m ^ n K DZ EI t I f e l 5 D V 5 t e Jː e s i d e J t I 5 n EI v e l * s e L t I e * t i AI m o s T K OU 
+HYP:  S t e m g E t * * O   R A U E f e * n e v e l i m i u t e * m U n * T  E  t * f e l O J B E t e J   e s i d e I t * E n E  v e l I s e * t * e R t i ** m o s * * ** 
+Eval: I         I   D D S   S S S S     D                       D   S   D S  S    D       S S S S     S             S   D S   S        I     D   D   I     D        D D D  
+
+id: (hungarian_141129_376501-10)
+Scores: (#C #S #D #I) 43 15 5 6
+REF:  * b AI s e g J e k E  t i s i g * N~ b e V e hv e s e n e K 5 v i Z G L 5 t o t k E  z D e m * N~ e z * N~ u g 5 t 5 U s t * * l I 5 i l i b e r 
+HYP:  E b I  s e g I e k EI t i s i g I N  b e R e hv e s e n e * * v i * S E R t o t k EI z * e m I N  e z L N  u g O t * O s t R E l J E i l i b e r 
+Eval: I   S        S     S            I S      S                D D     D S S S         S    D     I S      I S      S   D S     I I   S S             
+
+id: (hungarian_141129_376501-11)
+Scores: (#C #S #D #I) 37 14 13 3
+REF:  * l i S s e n * t o r d E 5 n s m i T HV 5 s T m o n~ J 5 5 j E r M e K U e k U  E T  n EI v e l * n 5 J s E l K EI s e m T U r A l e g j 5 
+HYP:  E l i * s e n E t o r d * I n s m i * S  A s * m o n~ * * * j * r D e * N e k EI K EI n E  v e l E n O T s * l * ** s e m * E r E l e g j E 
+Eval: I     D       I         D S         D S  S   D        D D D   D   S   D S     S  S S    S        I   S S   D   D D        D S   S         S 
+
+id: (hungarian_141129_376501-2)
+Scores: (#C #S #D #I) 43 19 13 3
+REF:  m OU L I 5 N~ 5 G I p r o b l e m T U K k 5 L K EI s K d i k n e m b e s Z L v E 5 z * R z e L m i v i HV 5 r o K r E L u n o k * j 5 e J f o j t B * n k ei A R 
+HYP:  m ** * * O J  E N E p r o b l e m * * E k * * U T  s E d i k n e m b e s I R v * O z I E z e * m i v i H  O r o * r * O u n o k E j L e T f o j t E V n k ei * * 
+Eval:   D  D D S S  S S S               D D S   D D S S    S                   S S   D S   I S     D         S  S     D   D S         I   S   S         S I        D D 
+
+id: (hungarian_141129_376501-7)
+Scores: (#C #S #D #I) 55 10 9 3
+REF:  J e l e n t * s * b e n e l i s m e r i k m I j e n k ei s k ** d i s e l DZ EI A R e z e K n e k 5 n 5 J s E l K n e k u n o k J U K  r E L g o n d o s K o D 
+HYP:  * e l e n t I s I b e n e l i s m e r i k m * j e n k ei s k EI d i s e l ** J  E L e z e * n e k O n O T s * l * n e k u n o k * * AI r * O g o n d o s G o R 
+Eval: D           I   I                           D                I            D  S  S S       D       S   S S   D   D               D D S    D S             S   S 
+
+id: (hungarian_141129_376501-8)
+Scores: (#C #S #D #I) 46 9 15 7
+REF:  n * i s 5 p i N z dz i W AI AI s e g T i E s DZ I e * n * v e l * s * n e K l e hv e T s * DZ i v e l i s F o G L 5 L K o Z t 5 k 5 j N l * s 5 i K s e r i n t 
+HYP:  n I i s E p i * z dz i * ** ** s e g * i * s ** * e G n & v e l I s E n e * l e hv e * s I T  i v e l i s P o * * * * R o S t O k O j E l E s E i * s e r i n t 
+Eval:   I     S     D        D D  D        D   D   D  D   I   I       I   I     D          D   I S              S   D D D D S   S   S   S   S   I   S   D             
+
+id: (hungarian_141129_376501-9)
+Scores: (#C #S #D #I) 42 22 8 4
+REF:  5 z o k U 5 n 5 J s E l * k EI 5 k U i k U u n o K I k R  E L g o n d o s k o d n 5 K k 5 C 5 n 5 K i n J e n e K i s K o l 5 I e l * t I s t * s t * OU V 
+HYP:  O z o k * O n O T s * l O k ** A k * i k * u n o * * k AI V O g o n d o s k o d n * E k U T I n E T i n G e n e S i s G o l E J e l E t E s t I s t U B  E 
+Eval: S       D S   S S   D   I   D  S   D     D       D D   S  S S                     D S   S S S   S S     S       S     S     S S     I   S     I     I S  S 
+
+Speaker sentences   4:  hungarian_141202_377185   #utts: 10
+id: (hungarian_141202_377185-1)
+Scores: (#C #S #D #I) 38 18 7 6
+REF:  5 Z T m o n~ j * 5 e z 5 t * R 5 D TS i * 5 t i z e n hv e t e d i K s * z 5 D r 5 e r e d e Z t e t HV e t * * v i Sː 5 5 m i k O r 5 G 5 Z D 
+HYP:  * * S m o n~ j E M e z O t E J I T S  i O R t i z e n hv e t e d i * s E z E J r A e r e d e S t e t ** e t U L v i *** S A m i k U r * * E V O 
+Eval: D D S          I S     S   I S S S S    I S                        D   I   S S   S           S       D      I I     D   S S       S   D D S S S 
+
+id: (hungarian_141202_377185-11)
+Scores: (#C #S #D #I) 32 21 15 3
+REF:  M i n t 5 U s T r i * 5 M 5 J 5 R o r s Z DZ I e N m E T o r * * S Z DZ I 5 f e K E t e b A r s o L G 5 5 z o m b 5 n ts 5 k U HV o Lː 5 n d i B A 
+HYP:  * i n t * O s * r i J E N I M E T o r s * ** * e G m * * o r D A R O S  E T f e * I t e b E r s o * * K O z o m b * n ts O k * ** o L   E n d i * & 
+Eval: D       D S   D     I S S S S S S       D D  D   S   D D     I I S S S  S S     D S       S       D D S S         D      S   D D    S   S       D S 
+
+id: (hungarian_141202_377185-12)
+Scores: (#C #S #D #I) 38 23 9 3
+REF:  b n * s b e g i U m B 5 n k ei s * r i G 5 Z D DZ EI t I e N EI TS n~ 5 K t i v i s t 5 5 s T J 5 v 5 s o L t 5 H O j 5 hv 5 j o m * N~ O s F e k U E  t e 
+HYP:  b n I s b e g i O m * * n k ei s E r i K U S T AI E  t M e J E  N  n~ * O t i v i s t * O s * * E v O s o R t * A U j * hv O j o m E N  E s V e k * EI t e 
+Eval:     I           S   D D          I     S S S S S  S    S   S S  S     D S             D S   D D S   S     S   D S S   D    S       I S  S   S     D S      
+
+id: (hungarian_141202_377185-13)
+Scores: (#C #S #D #I) 29 21 18 2
+REF:  P E t e r t HV E J e Tː e s T i * e S K EI b e e J O J 5 N s e m Jː e L 5 K U I N e K U k ei K EI V 5 J S i v * r V N~ s E n R I F e s t e T t A R 
+HYP:  T I t e r t ** * * e T   e s * i Z e * * G  b e e * * * D U s e m *** e * * * * * J e N O k ei N E  T I E T i v E r * AI s I n B E S e s t e * t * U 
+Eval: S S         D  D D   S       D   I   D D S        D D D S S       D     D D D D D S   S S      S S  S S S S     I   D S    S   S S S         D   D S 
+
+id: (hungarian_141202_377185-14)
+Scores: (#C #S #D #I) 32 20 11 4
+REF:  * r TS 5 v 5 n m 5 r g o m o Rː i S o n 5 s o HV 5 t I Bː e t r 5 B s o L g 5 s DZ I s i T U E m t U k EI N~ V HV o Lː 5 n D s e R z * * * DZ I 
+HYP:  O r S  E v * n m E r g o m o R   i Z o n O s o ** * t E B   e t r A K s o * g E s ** E s i * * * m t * k W  AI S H  o L   E n * s e * z E J E U  S 
+Eval: I   S  S   D     S           S     S     S     D  D   S S         S S     D   S   D  S     D D D     D   S  S  S S    S   S   D     D   I I I S  S 
+
+id: (hungarian_141202_377185-15)
+Scores: (#C #S #D #I) 35 21 4 2
+REF:  5 Z t m o n~ j 5 5 t r 5 D TS i * K EI m e g R t * s e n 5 j o n f o n t o s d e k EI R D r I v o n~ 5 H O j V 5 j O n 5 HV o Lː 5 
+HYP:  * S t m o n~ j * R t r * E J  i T I O  m e g E t I s e n E j o n f o n t o s d e k I  V E r E v o n~ U J D j * O j E n E H  o L   E 
+Eval: D S            D S     D S S    I S S        S   I       S                         S  S S   S        S S S   D S   S   S S    S   S 
+
+id: (hungarian_141202_377185-2)
+Scores: (#C #S #D #I) 47 20 9 5
+REF:  EI G I f e HV A R ts 5 l * d o k F e k U E  T e r 5 B s o L g * k T t 5 r t o Tː 5 k U n e m r * g i B e n k ei s * t e Tː t 5 n U L m * N~ O K s e r i n t 5 z o m b 5 n 
+HYP:  E  Z E f e ** * J ts E l E d o k S e k * EI D e r * O s o * g E k U t A r t o T   A k * n e m r I g i N e n k ei s I t e *** t A n * O m E N  E L s e r i n t E z o m b * n 
+Eval: S  S S     D  D S    S   I       S     D S  S     D S     D   I   S   S       S   S   D         I     S            I     D     S   D S   I S  S S             S         D   
+
+id: (hungarian_141202_377185-3)
+Scores: (#C #S #D #I) 41 17 6 7
+REF:  * HV o Lː 5 n d i 5 l e G m 5 G 5 s 5 Bː s i n t * d I n t * t e s t l e t e * 5 z Lː 5 m i t * * N TS 5 z o m B 5 N n e m h 5 t * r o Z o T t a r 
+HYP:  5 K  o L   E n d i E l e * m O K U s E T   s i n t U d & n t E t e s t l e t e T O z *** O m i t O M E T  E z o m * * * n e m h O t A r o S o * t a r 
+Eval: I S    S   S       S     D   S S S   S S           I   S     I                 I S   D   S       I I S S  S       D D D         S   I     S   D       
+
+id: (hungarian_141202_377185-4)
+Scores: (#C #S #D #I) 33 18 14 5
+REF:  A r E l V 5 J  o N b l 5 TS K P i E t f e k U E  t e P E t E& 5 L 5 k * J 5 d i s k R i m i n 5 t V i * e * 5 t * n * TS 5 z o m B 5 n f E L e L 
+HYP:  * r O l * * N~ o M b l * ** E T i * t f e k * EI t e T I t ** E R A k I A R d i s k * i m i n O t * i V e T O t E n E T  E z o m * O n f * * e * 
+Eval: D   S   D D S    S     D D  S S   D         D S      S S   D  S S S   I S S         D         S   D   I   I S   I   I S  S       D S     D D   D 
+
+id: (hungarian_141202_377185-6)
+Scores: (#C #S #D #I) 39 21 7 4
+REF:  h 5 t * r o z o t T H o J 5 m s * e r T 5 M E f * p o L g R m e s t e r e N i n ts 5 Rː 5 f e l HV 5 t 5 L m 5 z v 5 H O J 5 z * n e P L s e k E 
+HYP:  h O t E r o z o t U D o * * m s T e r * D O N f L p o R g E m e s t e r e M i n ts A R   E f e l ** O t * E m O z v * A U D E z I n e T I s e k * 
+Eval:   S   I           S S   D D     I     D S S S   I     S   S               S        S S   S       D  S   D S   S     D S S S S   I     S S       D 
+
+Speaker sentences   5:  hungarian_141206_378021   #utts: 12
+id: (hungarian_141206_378021-1)
+Scores: (#C #S #D #I) 27 18 4 12
+REF:  5 H I V 5 t 5 l o s 5 n * * TS o p * * * * * 5 Z e n s Z K L m A V L t o z * s i k U E  r e t e J e z * * M N~ b e n * * r D 
+HYP:  * * O R O t E l o s E n T I I  o p I X U U S O S e n s T R I m O B E t o z E s i k * EI r e t e G e z N E N I  b e n I E r * 
+Eval: D D S S S   S       S   I I S      I I I I I S S       S S S   S S S       I       D S          S     I I S S        I I   D 
+
+id: (hungarian_141206_378021-17)
+Scores: (#C #S #D #I) 30 11 5 17
+REF:  L m & Z k i HV v I s T j e l e n t 5 k u O r * Bː i G HV 5 J l 5 t i s e R z * d i s * * * t * * * * * * * * * * * * b e n k I o 
+HYP:  E m O S k i I  v E s * j e l e n t O k u * r E B   i * ** K U l E t i s e * z R d i s E Z E t E N S E S K E N S E N I b e n k J o 
+Eval: S   S S     S    S   D             S     D   I S     D D  S S   S         D   I       I I I   I I I I I I I I I I I I         S   
+
+id: (hungarian_141206_378021-18)
+Scores: (#C #S #D #I) 29 13 3 15
+REF:  U t * b n * R t * k EI l * * e * * Z t * k ei * * V e * * Tː e * 5 e s K o p e n HV g * EI m e g Lː 5 p o * D s 5 m i k u D 5 
+HYP:  * t O b n I S t E k O  l E R e T B E t O k ei T E Z e K I L   e N T e s * o p e n E  g O I  m e g E   L p o J E s O m i k u * J 
+Eval: D   I     I S   I   S    I I   I I S   I      I I S   I I S     I S     D         S    I S        S   S     I S   S         D S 
+
+id: (hungarian_141206_378021-19)
+Scores: (#C #S #D #I) 39 15 15 2
+REF:  5 r TS k ** n t l e Tː e L K N~ V e L V e D e 5 Z e L m L t EI TS n 5 p o G b 5 n m e g v l t O Z o T t 5 p o l i t i k U 5 J I  h 5 n G m e g * E& s 
+HYP:  A r ** k EI n t l e T   e * * ** T e N D e R e * J e * m U t ** O  n O p o * b * n m e g v l t * * o * t O p o l i t i k * * * EI h O n K m e g E R  s 
+Eval: S   D    I          S     D D D  S   S S   S   D S   D   S   D  S    S     D   D               D D   D   S               D D D S    S   S       I S    
+
+id: (hungarian_141206_378021-2)
+Scores: (#C #S #D #I) 37 13 16 3
+REF:  E K e L T f e l e k HV u s 5 D i K k o M E r e n TS I j 5 e n * v e n i s m e R t * H e t e s t I R J 5 l * s O K o N P e r U b 5 n E M T U 
+HYP:  * T e * * f e l e k ** u s E R i * k o N S r e n ** T j * e n I v e n i s m e * t I T e t e s t * E D E l E s * G o * M e r O b * n * * * * 
+Eval: D S   D D           D      S S   D     S S       D  S   D     I               D   I S           D S S S   I   D S   D S     S   D   D D D D 
+
+id: (hungarian_141206_378021-20)
+Scores: (#C #S #D #I) 38 17 16 4
+REF:  * t V E 5 r e m * N~ t H O J 5 d I S I t u DZ I s t I R J 5 l * s o k U v I DZ i E l e r e D m N~ HV e z V e z e t hv e t n e K 5 L i m 5 I k o M E R e n * 
+HYP:  E t * R A r e m I N  t * * * U d E J E t u ** R s t * E D E l E s o k * v * ** i G l e r e * m ** ** e z T e z e t hv e t n e * * T i m * E k o * N F e n T 
+Eval: I   D S S       I S    D D D S   S S S     D  S     D S S S   I       D   D D    S         D   D  D      S                    D D S     D S     D S S     I 
+
+id: (hungarian_141206_378021-3)
+Scores: (#C #S #D #I) 38 20 14 3
+REF:  A r 5 k o M E R e n TS I 5 k U E  z D e t E e l * Tː k EI E l N b * z I v 5 l L s i TS o p o r t o K U k EI P V i s e l AI J e R C 5 f * N~ e s F e L v o n U 
+HYP:  * r O k o * N F e n ** E T k * EI z * e t * e l I T   k ** U l * b E z O v O l E s i S  o p o r t o * * k ** I T i s e l E  I e * T E f E G  e s T e * v o n * 
+Eval: D   S     D S S     D  S S   D S    D     D     I S     D  S   D   I   S   S   S     S              D D   D  S S         S  S   D S S   I S      S   D       D 
+
+id: (hungarian_141206_378021-4)
+Scores: (#C #S #D #I) 34 22 8 5
+REF:  E l * s 5 L H  N Z J O Z t K EI 5 t A l L k * * o Z f o n t o s S DZ I t I 5 k o * M e R e n TS I 5 v i DZ I e n M e g s Z l e t e n d * s e R 
+HYP:  * l E s * O HV O M S E S t E T  O t E l E k U T o * f o n t o s E D  E t * O k o N F e L e n T  J E v i ** G e n * e g s * l e t e n d O s e * 
+Eval: D   I   D S S  S S S S S   S S  S   S   S   I I   D             S S  S   D S     I S   S     S  S S     D  S     D       D             I     D 
+
+id: (hungarian_141206_378021-5)
+Scores: (#C #S #D #I) 33 11 10 9
+REF:  * z I d i s * l * A r * s * v * l 5 A r * s e s F e l e K e L k * t e l e z n K EI m 5 G U k u 5 t 5 Rː 5 H o * J m e g V L t O 
+HYP:  E z L d i s O l E I r E s E v O l * O r I s e s T e l e T e T k U t e l e z n * I  m * * O k u * t * *** * * o R A m e g B E t * 
+Eval: I   S       I   I S   I   I   I   D S   I       S       S   S   I             D S    D D S     D   D D   D D   I S       S S   D 
+
+id: (hungarian_141206_378021-6)
+Scores: (#C #S #D #I) 38 16 5 4
+REF:  o Z t 5 t J k EI 5 v i l DZ I r u t e r m e * L s * n e k J E l e Lː e g i r e n TS e r T i 5 m e j 5 z V e g * Z HV 5 t * s O K o 
+HYP:  o S t E t E k ** U v i l E  G r u t e r m e R I s E n e k * I l e L   e g i r e n S  e r * i T m e j O z D e g E S H  O t E s * * o 
+Eval:   S   S   S   D  S       S  S               I S   I       D S     S               S      D   S       S   S     I S S  S   I   D D   
+
+id: (hungarian_141206_378021-7)
+Scores: (#C #S #D #I) 23 15 2 23
+REF:  * z I DZ I Z o K k I  b O TS s * t I s N 5 K v e n k ** n * * * ** * * * * * * ** * * * * t s * z * 5 L k A s e m e L k E  d * * s * 
+HYP:  O z O G  E T o * k EI b U T  s E t E s E T I v e n k EI n T I K EI T E G I S K EI T I S E t s E z E R I k U s e m e * k EI d I S s I 
+Eval: I   S S  S S   D   S    S S    I   S   S S S         I    I I I I  I I I I I I I  I I I I     I   I S S   S         D   S    I I   I 
+
+id: (hungarian_141206_378021-8)
+Scores: (#C #S #D #I) 34 9 13 2
+REF:  R t F e l e L s J 5 v i e r o k o 5 m e t o d i s t 5 L e L k S  s e r i n t B o J g N K DZ EI v I DZ EI T I e * n Z i * 
+HYP:  E t S e l e * s H O v i e r o k o * m e t o d i s t * * e * k EI s e r i n t * o L g * O J  E  v * ** ** * * e J n * i Z 
+Eval: S   S       D   S S               D                 D D   D   S              D   S   D S S  S    D D  D  D D   I   D   I 
+
+Speaker sentences   6:  hungarian_141216_379937   #utts: 7
+id: (hungarian_141216_379937-10)
+Scores: (#C #S #D #I) 44 14 13 6
+REF:  V i N TS e n t k EI r hv * z I v i G s * s t * * D i u m B 5 N E l V i * b e t e G e k E  t k E  z e l * o s t L AI m u n k 5 t R s 5 D o K U t o r P E 5 n U t 
+HYP:  * i * S  e n t k O  r hv E z * v i * s E s t A E T i u m * * * * l * i G b e t e K e k EI t k EI z e l U o s t * E  m u n k U t E s R T o * * t o r * T I n E t 
+Eval: D   D S          S       I   D     D   I     I I S       D D D D   D   I         S     S      S        I       D S          S   S   S S   D D       D S S   S   
+
+id: (hungarian_141216_379937-11)
+Scores: (#C #S #D #I) 31 20 9 3
+REF:  T HV o m 5 s e J e T R t 5 Zː 5 L H O J 5 d i * 5 G N Z i s * r * I s I f e s Z l t S g I T s t r e Sː t o k o z 5 HV o z Z t a R 
+HYP:  * ** o m * s e G e * * t I E   R S A U D E d i J O M O V i s O r J E s E f e s O l t I g * E s t r e S   t o k o z * ** o z E t a * 
+Eval: D D      D     S   D D   S S   S S S S S S     I S S S S     I   I S   S       S     S   D S         S             D D      S     D 
+
+id: (hungarian_141216_379937-13)
+Scores: (#C #S #D #I) 43 14 20 4
+REF:  T HV O m 5 s k u t 5 t * s * b n 5 Zː 5 L f o g l 5 L k U o z i k u H O J v 5 J  o N m i j e N f * 5 J t 5 s e g T i E s * g r e v 5 n s K s G e 5 Z o K U n 5 k U 5 
+HYP:  * ** * m * s k u t E t E s E b n * O   Z O f o g l * A k * o z i k u * * * v * N~ o * m i j e * f O R E t E s e g * i * s E g r e v * n s I s * e * G o S O n E k * * 
+Eval: D D  D   D         S   I   I     D S   S S         D S   D           D D D   D S    D         D   I S S   S       D   D   I         D     S   D   D S   S S   S   D D 
+
+id: (hungarian_141216_379937-18)
+Scores: (#C #S #D #I) 34 18 9 4
+REF:  V i 5 n e HV Z i v e k 5 l 5 Tː m e G p r * b I L t 5 K t V i * m 5 r 5 D n i * s A t b i TS i K L i Z e T t d e V 5 L 5 m i * F l e 
+HYP:  R i E n e J  S i v e k U l E T   m e * p r O b * E t * O t * i Z m A r * E n i U s O t b i S  i * G i S e * t d e * * M O m i V E l e 
+Eval: S   S     S  S         S   S S       D     I   D S   D S   D   I   S   D S     I   S       S    D S   S   D       D D S S     I S     
+
+id: (hungarian_141216_379937-6)
+Scores: (#C #S #D #I) 45 15 8 4
+REF:  5 s T m U t 5 C 5  H O j 5 A R k A s b e t e g e k E  t G o n d o z * t u l 5 J d o n k ** p e n * N 5 j o Bː s t r e Sː n e K t I Bː s o r o n g * s 
+HYP:  * s * m O t A R TS A U j * * E k U s b e t e g e k EI t K o n d o z O t u l * E d o n k EI p e n M E J j o *** s t r e S   n e * t * U   s o r o n g E s 
+Eval: D   D   S   S S S  S S   D D S   S                 S    S           I       D S         I        I S S     D           S       D   D S               I   
+
+id: (hungarian_141216_379937-7)
+Scores: (#C #S #D #I) 44 18 7 0
+REF:  N 5 k V 5 n 5 k U  K i T v I m i n t m 5 G U k 5 b e t e g e k 5 d E 5 k I n e J e t e m e n d o L G o z D o K U t o R e M e j u g 5 l t i 
+HYP:  * E k * O n 5 k EI T i * v E m i n t m O B O k U b e t e g e k * d J I k E n e G e t e m e n d o * B o z * o * O t o L e N e j u g E l t i 
+Eval: D S   D S       S  S   D   S           S S S   S               D   S S   S     S                 D S     D   D S     S   S         S       
+
+id: (hungarian_141216_379937-8)
+Scores: (#C #S #D #I) 41 19 11 5
+REF:  AI 5 s T V i Z g L t 5 M i k 5  z o k u 5 Z O K U o k u m e j e K k EI v e t k E  Z t * b e n 5 k EI A r L m * N~ e K b E l 5 d * d I & n 5 B e t e g e k ** * 
+HYP:  I  O s * * i S g E t * A i k EI z o k u * * * * S o k u m e j e * k U  v e t k EI S t I b e n * k K  U r O m I N  e G b O l O d O d * O n * M e t e g e k EI T 
+Eval: S  S   D D   S   S   D S     S          D D D D S               D   S          S  S   I       D   S  S   S   I S    S   S   S   I   D S   D S             I  I 
+
+Speaker sentences   7:  hungarian_141216_379947   #utts: 10
+id: (hungarian_141216_379947-11)
+Scores: (#C #S #D #I) 26 16 38 0
+REF:  P e K e n d o L G o z N i m I N D e S t J H O  J k U i s e k U e Lː m O Z D N u L N I 5 Z o Tː HV o N U K B E L J L E HV e T S DZ i V 5 n P i L D ^ L 5 Z D E s 5 N~ 5 
+HYP:  T e T e n d o * * o z * i m * * * e R t * U DZ I k * i s e k * e *** m * * * T u * * * J V o T   P  o * * * * * * * * Z I  e * * ** i S B n T i * * * * * * * * s * ** * 
+Eval: S   S         D D     D     D D D   S   D S S  S   D         D   D     D D D S   D D D S S   S   S    D D D D D D D D S S    D D D    S S   S   D D D D D D D D   D D  D 
+
+id: (hungarian_141216_379947-12)
+Scores: (#C #S #D #I) 26 18 28 3
+REF:  N~ K EI i s t 5 N U L N i K EI t E Z e Z N k N  t e s D O L G o Z I k u * * e N L ^ k 5 K U i K U s e g T E N e k 5 z 5 N G o L N~ e * L V T 5 N U L s B N 
+HYP:  ** E T  i s t * * * O B i * ** t I S e R E k EI t e s * * * * o * * k u S I e * R O k * O T i * * s e g * * * e k O z * * * o * J  e S E S M 5 * * * s * * 
+Eval: D  S S        D D D S S   D D    S S   S S   S        D D D D   D D     I I   D S S   D S S   D D       D D D     S   D D D   D S    I S S S   D D D   D D 
+
+id: (hungarian_141216_379947-13)
+Scores: (#C #S #D #I) 23 15 27 3
+REF:  P I L D ^ L e * J ei TS t E N e TS e r e * J A r * t I e l B e S Z L g e T N e K 5 Z e m B E R e k e L 5 K U i k U N~ E L V E T S E  R e T N 
+HYP:  * * * * E S e S K ei ** t * * e Z  e r e K 5 U r E t * e l * e * F E g e * R e * * F e m * * * e k e * T S T i k * ** * * * * * * EI Z e * * 
+Eval: D D D D S S   I S    D    D D   S        I S S   I   D     D   D S S     D S   D D S     D D D       D S S S     D D  D D D D D D S  S   D D 
+
+id: (hungarian_141216_379947-14)
+Scores: (#C #S #D #I) 28 13 42 1
+REF:  N E K t 5 N U l N i J l E HV e t s DZ i K EI V 5 N 5 N~ e L V J 5 k o r l * s R A T e HV t I M I N D e S t 5 Z TS Z Z I I N~ J e N A r e N F E l E L B i S t O S C k ei 5 z & n 
+HYP:  * * * t * * O l M i * l * ** e t s ** i * ** * * * * ** e * * R O k o r l E s * * * e ** t * * * * * e * t * * ** * * * * U  T e Z O r e * * 5 l * 5 S i * t * * E k ei * z O n 
+Eval: D D D   D D S   S   D   D D        D    D D  D D D D D    D D S S         I   D D D   D    D D D D D   D   D D D  D D D D S  S   S S     D D S   D S S   D   D D S      D   S   
+
+id: (hungarian_141216_379947-15)
+Scores: (#C #S #D #I) 30 16 25 3
+REF:  G O L N~ e l V I k U R Z u s O K M E Lː e Tː i n D t 5 n 5 K s 5 K m * t I 5 d * k U R Z U s o k 5 t i s 5 M I b e n k ei s Bː E L HV e J E Z  I k 5 DZ i * 
+HYP:  * * * U  e l * * k * * * u s * * * * N   e T   i n I t E n * E s * O m E t * U d O k * * * O s o k U t i s * * * b e n k ei s *** * * B  e * K EI S k O T  i E 
+Eval: D D D S      D D   D D D     D D D D S     S       S   S   D S   D S   I   D S   I   D D D S       S       D D D              D   D D S    D S S  S   S S    I 
+
+id: (hungarian_141216_379947-16)
+Scores: (#C #S #D #I) 33 14 28 3
+REF:  E L e n T k E  Z K e t 5 k ei P V i s E L e L m O N D s A S e r i n t N~ O L TS V 5 N t I s * z 5 l K EI T i * t u D t * k ei E L HV E J E Z N I 5 z e L M l t V i 
+HYP:  * * e n * k EI S T e t 5 k ei * T i s * * e * m * B E s E F e r i n t ** * * ** E R S t * s E z E l * ** * i E t u * t E k ei * * ** * * * * * R O z e * * l t * i 
+Eval: D D     D   S  S S            D S     D D   D   D S S   S S           D  D D D  S S S   D   I   S   D D  D   I     D   I      D D D  D D D D D S S     D D     D   
+
+id: (hungarian_141216_379947-17)
+Scores: (#C #S #D #I) 34 19 25 1
+REF:  E K b e N 5 z o K U N 5 k U 5 z e m b E R E K E N e k 5 K U i K U e N l ^ K v i G e Z t e * K s ts 5 K U o J 5 N k u R Z u s o k 5 t i n D t 5 N 5 K 5 m i B E 
+HYP:  * * b e M O z o * * T O k * O z e m b * * * * * * e k * O T i * N e * l * O v i * e * t e S I s ts * * * o * * * k u E K u s o k U t i n I t * E M O R m i * N 
+Eval: D D     S S     D D S S   D S         D D D D D D     D S S   D S   D   D S     D   D     I S      D D D   D D D     S S         S       S   D S S S S     D S 
+
+id: (hungarian_141216_379947-18)
+Scores: (#C #S #D #I) 26 15 19 5
+REF:  e N b i Z t O s 5 k * H o J U t N 5 M ^ N K t I i s t u D N 5 K 5 D N I  5 z e m B E R e K N e K e z E k 5 K u R Z u s o k * * * * 
+HYP:  e M b i S t U s O k U L o * * t * * * * E L t * i s t u * * * * * L O N~ O z e m * * * e * M e S e z * k * O u * D u s o k U R E N 
+Eval:   S     S   S   S   I S   D D   D D D D S S   D         D D D D D S S S  S       D D D   D S   S     D   D S   D S         I I I I 
+
+id: (hungarian_141216_379947-19)
+Scores: (#C #S #D #I) 25 17 18 6
+REF:  V E N D G l * t I s 5 L k U 5 P TS o L 5 t O s * * K U R Z u s o K J E R e K f e l J e l e t S s e G D i * * P o L AI s 5 K m * K EI s 
+HYP:  * * * T I l E t E s * O k * * * ** o * * t * s E J M O S 5 u s o * * * T e G f e l * e l e t * s e * T i T E T o R I  s * O m E R I  s 
+Eval: D D D S S   I   S   D S   D D D D    D D   D   I I S S S S       D D D S   S       D         D     D S   I I S   S S    D S   I S S    
+
+id: (hungarian_141216_379947-20)
+Scores: (#C #S #D #I) 28 14 15 8
+REF:  * 5 t 5 f e * ** k ei * P e S t i * s * t 5 D K u R Z u s o K 5 t i n D C k EI e * ** L i Lː e t V E E L HV e J e Z i k 5 Z e m B E R E 
+HYP:  S R t E f e K EI k ei T R e L t i K s I t I S B u * * u s o * * t i n T I k ** e K EI R i L   e t * * * * ** e * e S i k U S e m * * * * 
+Eval: I S   S     I I       I S   S     I   I   S S S   D D       D D       S S   D    I I  S   S       D D D D D    D   S     S S     D D D D 
+
+Speaker sentences   8:  hungarian_150110_384743   #utts: 17
+id: (hungarian_150110_384743-1)
+Scores: (#C #S #D #I) 31 17 24 3
+REF:  K EI EI TS r A m E N J HV 5 V o n t * 5 t E HV e n * s E t E K e B e N e Z e Fː e K t V i 5 f e J DZ i P n e k 5 Z o N A r * s EI 5 M e j 5 t E HV e N T i J E 
+HYP:  * T  HV E  r O m * * * ** I Z o n t A R t * ** e n I s * t * * e V e M e S e S   e * t * i * f e * V  i * n e k * * o Z E r I s ** E S e j * t * ** e * * i * N 
+Eval: D S  S  S    S   D D D D  S S       I S   D D      I   D   D D   S   S   S   S     D   D   D     D S    D       D D   S S   I   D  S S     D   D D    D D   D S 
+
+id: (hungarian_150110_384743-10)
+Scores: (#C #S #D #I) 23 20 23 1
+REF:  N I 5 D o L G O t I G 5 Z N D I B E L 5 m i t L i t Tː 5 m N e M Z e t k Z I l e g M E R t * N e K n k 5 Z J n e V E z E T T K L S i K 
+HYP:  * M E T o * K U t * * * * * * * * M F O m i t * i t T   O m * e * V e t k * U l e g * N S t & M e * n k U D O n e L 5 z * * * * * * i * 
+Eval: D S S S   D S S   D D D D D D D D S S S       D     S   S   D   D S       D S       D S S   I S   D     S S S     S S   D D D D D D   D 
+
+id: (hungarian_150110_384743-11)
+Scores: (#C #S #D #I) 28 18 21 2
+REF:  K EI m OU D EI l * n K e l e J e Z i K m e g 5 Z Sː e s T I Bː I 5 z E m T U A R s 5 J t I K r e TS i * t e HV t I 5 D I z J n H o J m i T HV O Z 
+HYP:  * ** m O  N E  l O n T e l e D e S i * m e g * * S   e s * * *** B E z * m * * * E s R E t * * r e Z  i O t e ** t * * * E z E n * o N m i * ** N I 
+Eval: D D    S  S S    I   S       S   S   D       D D S       D D D   S S   D   D D D S   S S   D D     S    I     D    D D D S   S   D   S     D D  S S 
+
+id: (hungarian_150110_384743-12)
+Scores: (#C #S #D #I) 30 16 15 6
+REF:  Z U n K k U I B e l * l e f o G t U K 5 z 5 L K 5 T r * S e k e T M e G n * Z t n k r e n G e t * * e * G k u C 5 j T I K A t s P R OU 
+HYP:  S O n * k * E J e l O l e f o * t * * O z * * * * O r E F e k e * N e * n I S t n k r e n * e t E N e N E k u D E j * * O R t s * O G  
+Eval: S S   D   D S S     I         D   D D S   D D D D S   I S       D S   D   I S             D     I I   I S     S S   D D S S     D S S  
+
+id: (hungarian_150110_384743-14)
+Scores: (#C #S #D #I) 32 14 21 7
+REF:  F i n O M s DZ EI K u i s e Bː n 5 J O Bː K U t I K U I K U M i n D E n K U I T A l e L b e n e m * * G n 5 k m e K U f e l e * l t I s * * e Zː e * * L 
+HYP:  T i n * U s ** E  J u i s e *** n * * * *** E L t * * * * * E T i n * * n * * * * E l e * b e n e m O M E n O k m e * * f e l e L l t S s E Z e Z   e R I N 
+Eval: S     D S   D  S  S         D     D D D D   S S   D D D D D S S     D D   D D D D S     D           I I S   S       D D         I     S   I I   S     I I S 
+
+id: (hungarian_150110_384743-15)
+Scores: (#C #S #D #I) 27 18 43 0
+REF:  I N D u L t U N K n e k U I M I  N D Sː e s e n ts 5 K U e J EI TS N 5 C 5 e m T U DZ I N 5 j O N N 5 J  o N 5 z E L e J e n V 5 J U n K U s e M T U DZ i J N 5 J O N s o K 5 L t I Bː 5 
+HYP:  * * * u * t * * O n e k * * * EI T U S   e s e n ts * * * e * ** ** * * * T e m * * ** * * E j * * E M N~ o * * z * * e R e n * * * E n T I s e * * * ** i * * * * M E s o * * * t E V   5 
+Eval: D D D   D   D D S       D D D S  S S S              D D D   D D  D  D D D S     D D D  D D S   D D S S S    D D   D D   S     D D D S   S S     D D D D    D D D D S S     D D D   S S     
+
+id: (hungarian_150110_384743-16)
+Scores: (#C #S #D #I) 38 17 26 2
+REF:  * F e K t e T s M I n D e n T I r e n M i n D AI D I M i N d e n E R G I 5 m i n D P I N Z DZ i W AI AI t I r e N m i n D 5 m e N~ i t K U i T U D t u n * K s e D n i N 5 
+HYP:  5 Z e * t e * s * E n * e n * E r e n * i n * ** * * T i * d e n T L E J E m i n * * * T E S  i * ** ** t E r e * m i n * E m e N  i t * * i * * * t u n B E s e * n i * S 
+Eval: I S   D     D   D S   D     D S       D     D D  D D S   D       S S S S S       D D D S S S    D D  D    S     D       D S     S      D D   D D D       I S     D     D S 
+
+id: (hungarian_150110_384743-17)
+Scores: (#C #S #D #I) 27 24 17 2
+REF:  J  o N DZ EI k EI 5 V i Sː 5 J e * L Z s e K e Dː i G m I n D e n k U i 5 K U I V I s * r OU L T b o r z 5 s T & n e L G e D e T T M e G n 5 J O N 
+HYP:  N~ o * ** ** k ** * U i *** * S e R V I s e T e D   i T m E n * e n k * i * * * E L E s E r O  R D b o r z O s * V n e * J e R e * * N e * n E N E L 
+Eval: S    D D  D    D  D S   D   D S   I S S     S   S     S   S   D       D   D D D S S S   I   S  S S         S   D S     D S   S   D D S   D   S S S S 
+
+id: (hungarian_150110_384743-18)
+Scores: (#C #S #D #I) 27 20 24 1
+REF:  O N A R l T N e K U i D e EI TS T i t N t A N I K U e Lː 5 p i 5 TS o t * s e Z AI D i s E r I n t e M k U E Lː e j DZ EI P I A R EI TS n 5 P e m T U DZ i 
+HYP:  * E M U l * * e * T i B e ** L  N i t E t * * * * * e *** L p i E T  o t I s e * S  T i s * r E n t e N k * * EI  e j ** ** * * O T E  U  n * * e m * * ** i 
+Eval: D S S S   D D   D S   S   D  S  S     S   D D D D D   D   S     S S      I     D S  S     D   S       S   D D S       D  D  D D S S S  S    D D     D D D    
+
+id: (hungarian_150110_384743-19)
+Scores: (#C #S #D #I) 29 12 28 4
+REF:  EI E M DZ i * m e G L e s Z 5 z Tː A r S e * m T U DZ I N e m i S s o K U M i n D e n T ts I n * L t u n K e L k ** s L t 5 HV O N l 5 P N O V E M B e R 
+HYP:  ** S O N  i N m e * N e s * O z *** E r * e S m * * ** * * e m i * s o * * N i n * e n * ts E n E N t u n * e * k EI s O t * ** * U l * * * * * * * * e N 
+Eval: D  S S S    I     D S     D S   D   S   D   I   D D D  D D       D     D D S     D     D    S   I S       D   D   I    S   D D  D S   D D D D D D D D   S 
+
+id: (hungarian_150110_384743-2)
+Scores: (#C #S #D #I) 19 15 13 2
+REF:  I Lː 5 t DZ EI R J 5 t I e t T e L 5 t e HV N T e * l 5 F A R t E L s * e j L t 5 L e N 5 t e j T e L 
+HYP:  * *** N t ** ** * I E t J e t S e R O t e ** * I e N l * * V N t * O s G e j E t * * e R E t e j * e S 
+Eval: D D   S   D  D  D S S   S     S   S S     D  D S   I   D D S S   D S   I     S   D D   S S       D   S 
+
+id: (hungarian_150110_384743-20)
+Scores: (#C #S #D #I) 14 15 13 3
+REF:  E& K EI z e P T I E L V n k U i n t 5 HV O N L 5 P e L S L t 5 F EI s * B U k o L d * 5 L s * 
+HYP:  ** * E  z e * D O D O B n k * i n t * ** * * * * U e * * * t E S E  s E Z O k o R d E R I s R 
+Eval: D  D S      D S S S S S     D       D D  D D D D S   D D D   S S S    I S S     S   I S S   I 
+
+id: (hungarian_150110_384743-3)
+Scores: (#C #S #D #I) 26 14 17 5
+REF:  s I t * * U TS i * * m e * r T e z DZ EI 5 t e HV e N s e t e K n e K S DZ EI 5 k U T i K N 5 K M e R T HV o G I e T t e l 5 s 5 G 
+HYP:  s E t O R E S  i L O m e N r * e z I  O  R t e N  e * s e t e * n e * * ** ** * k * * i * S J O L e * * N  o * M e * t e l * s * A 
+Eval:   S   I I S S    I I     I   D     S  S  S     S    D         D     D D D  D  D   D D   D S S S S   D D S    D S   D       D   D S 
+
+id: (hungarian_150110_384743-4)
+Scores: (#C #S #D #I) 23 26 27 2
+REF:  E Z 5 s 5 G E Z B e k 5 P TS o L J 5 5 V 5 D s * s T N t 5 M I B e n E M 5 R 5 D E Bː e N 5 t E& M K B e N e Z e J s P e TS i * L i S s 5 G 5 m i t 5 L I G L E 
+HYP:  * * * s * * * O T e k * U S  o * * * R O R E s E s * * t * * * * e n * T O J 5 N U T   e J A t T  B E T e R e B e Z s * e T  i E R i * s * * O m i t * * * * * * 
+Eval: D D D   D D D S S     D S S    D D D S S S S   I   D D   D D D D     D S S S   S S S     S S   S  S S S   S   S   S   D   S    I S   D   D D S       D D D D D D 
+
+id: (hungarian_150110_384743-7)
+Scores: (#C #S #D #I) 26 19 29 3
+REF:  E L S A R 5 * Rː 5 G o n D o L t 5 m H O J  5 k O r E N e s t V 5 L 5 HV o n 5 N b e HV O Z o M V 5 J n * e M t * U d o m TS 5 K U T e TS e Tː n 5 J O N 5 Z e G 
+HYP:  * * * * * 5 Z E   M B o n * o * t E m * * N~ E k U r * * e s t * * * * ** o n E M b e K  U S o * * * * n B e * t E N d o m ** * * * B e T  e *** n * * * E B S e N 
+Eval: D D D D D   I S   S S     D   D   S   D D S  S   S   D D       D D D D D      S S     S  S S   D D D D   I   D   I S       D  D D D S   S    D     D D D S S S   S 
+
+id: (hungarian_150110_384743-8)
+Scores: (#C #S #D #I) 30 21 23 3
+REF:  * s J 5 HV o J V 5 N s 5 s t e n A R DZ EI Tː e M N 5 j O N n 5 J O n J o R s 5 N H o J  5 Z i Tː e n i k 5 r 5 n t * N s 5 b J o K M I J 5 Tː n e M L e * HV e t 
+HYP:  I s * U D  o * L T I s O s t e n * * ** ** *** e * * * j * E n E M E n D o * s * * * o N~ O V i T   e n i k O r * n t I E s O b E o * * * * * *** n e * T e M N~ e t 
+Eval: I   D S S    D S S S   S         D D D  D  D     D D D   D S   S S S   S   D   D D D   S  S S   S           S   D     I S   S   S   D D D D D D       D S   I S      
+
+id: (hungarian_150110_384743-9)
+Scores: (#C #S #D #I) 36 20 20 3
+REF:  e * Z e K U e T 5 t E& M K e K e t 5 U s T R L i * b A b e F e l E H O Z n I H i s e M hv 5 s N L t t E HV e n * S e t i 5 L k 5 t R s E K R e L B e s Z e L n k 
+HYP:  e S T e * N e * * t ** * * e G e t * O s * E N i & b O b e S e l * 5 U T n * * i s e N hv O s T E t t * ** e n 5 Z e t i * O k U t I s * * * e * J e s * e * n k 
+Eval:   I S   D S   D D   D  D D   S     D S   D S S   I   S     S     D S S S   D D       S    S   S S     D D      I S       D S   S   S   D D D   D S     D   D     
+
+Speaker sentences   9:  hungarian_150113_385325   #utts: 8
+id: (hungarian_150113_385325-1)
+Scores: (#C #S #D #I) 45 12 14 1
+REF:  N~ O l * TS v e s E m T U v i s e l i s m e r i H O J v 5 n 5 K U n 5 p o K m i k U o R n 5 j n e HV s S g I t J e l e n t R e g e L k i k E L  n i 
+HYP:  ** * l T I  v e s * m * I v i s e l i s m e r i * U D v * n * * O n O p o * m i k * o * n E j n e I  s E g E t I e l e n t * e g e * k i k * EI n i 
+Eval: D  D   I S        D   D S                       D S S   D   D D S   S     D       D   D   S       S    S   S   S           D       D       D S      
+
+id: (hungarian_150113_385325-11)
+Scores: (#C #S #D #I) 47 15 10 5
+REF:  N I K 5 I K EI z i s * g e K b e n * ts K k E  n T k ei p e s S DZ I I k EI R d e k ** b e n f e l P i s e r v e z e t V e z * R i g 5 z G 5 t * j 5 m i s t e R 
+HYP:  * * * * E T E  z i s E g e * b e n T ts O k EI n * k ei p e s E G  R E k I  E d e k EI b e n f e l * i s e r v e z e t * e z I T i g O z * O t O j E m i s t e * 
+Eval: D D D D S S S        I     D       I    S   S    D            S S  S S   S  S       I              D                   D     I S     S   D S   I   S           D 
+
+id: (hungarian_150113_385325-12)
+Scores: (#C #S #D #I) 34 15 20 1
+REF:  HV I TS e n 5 S T m o n~ J 5 H O j 5 p r o g R 5 M S I t U L J 5 h o J o J  5 n f o j * t K k 5 l e L K n e K m i n t P I L D ^ L r o s m i n TS 
+HYP:  ** * J  e n * * O m o n~ * * * * j R p r o g * * * * N t * * I E h o D o N~ O n f o j E t I k I l e * * n e * m i n t * * * E J O r o s m i n S  
+Eval: D  D S      D D S        D D D D   S         D D D D S   D D S S     S   S  S         I   S   S     D D     D         D D D S S S             S  
+
+id: (hungarian_150113_385325-17)
+Scores: (#C #S #D #I) 34 14 17 3
+REF:  * t e d e D e P r e Sː i * j 5 i s e L m L t * J e V I R I k ei P z E M T U v i s e t i t 5 n U L m N~ 5 I t i s M e k E  z D I R i Sː L 5 U 
+HYP:  E t e d e T e * r e S   i O j E i s e * m U t U Z e * * * * k ei * z * * * * v i s e t i t O n * O m E  N E t i s N e k EI z * * * i *** * Z O 
+Eval: I         S   D     S     I   S       D   S   I S   D D D D      D   D D D D               S   D S   S  S S       S     S    D D D   D   D S S 
+
+id: (hungarian_150113_385325-2)
+Scores: (#C #S #D #I) 40 15 9 4
+REF:  J  B I e * * L d e r o s 5 E m T U v i s e t e n k E  r e s t E l V i Sː 5 k 5 p t 5 e l V e s t e T t i N s p i r * TS i * DZ EI t I e Z T e 
+HYP:  HV E T e P O R d e r o s * * m * I v i s e t e n k EI r e s t U l * i S   O k U p t A e l * e s t e * t i * s p i r E S  i O J  E  t * e * S e 
+Eval: S  S S   I I S           D D   D S                 S          S   D   S   S   S     S     D         D     D         I S    I S  S    D   D S   
+
+id: (hungarian_150113_385325-3)
+Scores: (#C #S #D #I) 40 18 17 1
+REF:  E L e S s o R b 5 n 5 Z 5 L t & b i l & t i p r o g R 5 m N 5 K k EI s * n HV e t i 5 m e J P R O g R 5 m o T 5 z J n e V e z e T t 5 TS T I O n o n d i S 
+HYP:  * S e * s o * b * n * * E S t E b i l I t i p r o g * A m * 5 * k U  s E n ** e t i * m e * * K U g * A m o D E z O n e M e z e * t * ** E S E n o n d i Z 
+Eval: D S   D     D   D   D D S S   S       S             D S   D   D   S    I   D        D     D D S S   D S     S S   S     S       D   D D  S S S           S 
+
+id: (hungarian_150113_385325-4)
+Scores: (#C #S #D #I) 39 17 10 3
+REF:  & B i L & t i W i t i n e T n i K k & m J U n i t i Z 5 Z e t N i k * 5 I k ei z I s * g e K b e n ts K k E  n T k ei p e S s DZ I I k EI A r * 
+HYP:  * P i * * t i U i t i n e * n i * k O m * I n i t i S O S e t * i k O J T k ei z E s E g e G b e n ts O k EI n * k ei p e * s E  G E k ** I r T 
+Eval: D S   D D     S           D     D   S   D S         S S S     D     I S S        S   I     S          S   S    D          D   S  S S   D  S   I 
+
+id: (hungarian_150113_385325-7)
+Scores: (#C #S #D #I) 37 12 6 8
+REF:  W E& k * * * s & V D i A R T s * z l e t * t i s * l e t * B e n e l * s A r B e i r 5 t k o z o T t e J k ei P z e M T U v i s 
+HYP:  * O  k U R 5 s O Z T i * * E s E z l e t I t i s I l e t I V e n e l I s E r P e i r O t k o z o * t e T k ei * z e * N I v i s 
+Eval: D S    I I I   S S S   D D S   I         I       I       I S         I   S   S       S           D     S      D     D S S       
+
+Speaker sentences  10:  hungarian_150113_385327   #utts: 11
+id: (hungarian_150113_385327-1)
+Scores: (#C #S #D #I) 22 22 4 2
+REF:  b i n G TS r o S B i D i HV 5 N G J 5 s E l 5 k L 5 Sː i k u s k * 5 r * TS O N~ i d 5 l l e HV 5 L k C 5  
+HYP:  b i n * K  r o Z V i * i ** D E S I A s O l O k * O S   i k u s k U A r E T  U N  i d O l l e H  O R k I TS 
+Eval:       D S      S S   D   D  S S S S S   S   S   D S S             I S   I S  S S      S       S  S S   S S  
+
+id: (hungarian_150113_385327-12)
+Scores: (#C #S #D #I) 39 19 13 3
+REF:  5 S T M O N~ j 5 5 z V i b i z o n~ o s AI d I s * 5 K b n 5 k * 5 R TS O N~ i d 5 l o K n 5 J o n E N P s e r I K EI d e k u t 5 t * s o k U s e r i n T 
+HYP:  * * * * * ** j R E z * i b i z o n~ o s I  d O s A T E b n O k O L E Z  E N  i d O l o * n E D o n * I K s e r * * E  d e k u t E t E s o k * s e r i n * 
+Eval: D D D D D D    S S   D                  S    S   I S S     S   I S S S  S S      S     D   S S     D S S       D D S            S   I       D           D 
+
+id: (hungarian_150113_385327-13)
+Scores: (#C #S #D #I) 35 21 12 4
+REF:  E n EI TS N~ s e b * s * N 5 J o n i s V 5 t O s m i J e N z e n T i * V I l 5 s t K I HV 5 j J k EI 5 z o j 5 N s * m o k 5 t m i n T P I L D ^ l 5 
+HYP:  T n ** I  N  s e b I s M A R D o n i s U B t U s m i * e * z e n * i T R E l A s t * * ** E j E k ** O z o j * E s E m o k O t m i n * * * E J E l O 
+Eval: S   D  S  S        I   I S S S         S S   S       D   D       D   I S S   S     D D D  S   S   D  S       D S   I       S         D D D S S S   S 
+
+id: (hungarian_150113_385327-14)
+Scores: (#C #S #D #I) 37 16 13 3
+REF:  j E L e n t * s B e N A r * m U t 5 T n 5 k u H O j 5 k L 5 Sː i k u s z e n e 5 z e L Z D l e g e s k U E  D v e n TS D E 5 z 5 l t 5 t * E& 
+HYP:  j * * e n t I s * e * * r E m O t * E n E k u * * j E k * U S   i k u s z e n e O z e * S E l e g e s k * EI T v e n ** * T O z O l t O t O R  
+Eval:   D D       I   D   D D   I   S   D S   S     D D   S   D S S                   S     D S S             D S  S       D  D S S   S     S   I S  
+
+id: (hungarian_150113_385327-18)
+Scores: (#C #S #D #I) 50 16 13 4
+REF:  5 v I l 5 s t o T T b e t e G g e L v i G z e T t k ei s R l e t e k e r e D m N~ E i B e * L b e B i z O n i t o t * t K EI H O j 5 z o j 5 n N~ U G t 5 t * m e l * D AI 
+HYP:  * v E l A s t o D I b e t e * g e * v i * z e * t k ei s E l e t e k e r e * m ** * i N e I R b e J i z E n i t o t E t * ** * U j E z o j E n ** * O t E t U m e l O T I  
+Eval: D   S   S       S S         D     D     D     D          S                 D   D  D   S   I S     S     S           I   D D  D S   S       S   D  D S   S   I       I S S  
+
+id: (hungarian_150113_385327-19)
+Scores: (#C #S #D #I) 32 18 14 4
+REF:  K EI m e j e K P e R TS e n k N T  h 5 t V 5 N n~ O L TS 5 n 5 t * t N e K 5 p i H e N s V i D O B o g * s * r A A R m e L n e k ** S 5 z e l 
+HYP:  J E  m e j e * T e * T  e n k * EI h O t * * M n~ * U T  V n O t I t V e * * p i J e R s * i * * T o g E s E r * * I m e * n e k EI Z E z e l 
+Eval: S S          D S   D S        D S    S   D D S    D S S  S   S   I   S   D D     S   S   D   D D S     I   I   D D S     D       I  S S       
+
+id: (hungarian_150113_385327-2)
+Scores: (#C #S #D #I) 30 19 15 6
+REF:  5 E m T U t i t i e s k ** z I k EI o L l K EI TS 5 Tː o * G s * t I 5 Z 5 N G L I 5 I s e * B s e K N~ o L TS v 5 n s * z 5 l * k a n e M TS 5 K u 
+HYP:  * * m * E t i t i e s k EI z E k ** o * l * O  T  O T   o K E s E t * * * * A S O R J E s e V I s e T M  o * Z  v * n s E z O l I k a n e * ** * T u 
+Eval: D D   D S               I    S   D    D   D S  S  S S     I S   I   D D D D S S S S S S     I S     S S    D S    D     I   S   I         D D  D S   
+
+id: (hungarian_150113_385327-3)
+Scores: (#C #S #D #I) 44 16 13 1
+REF:  5 s t i s m e r i * e l h o J z e n K EI HV 5 Lː G 5 t n 5 K E m T U t i t I K EI z b e n d e J V  i l i k H O j 5 m u Z i k U 5 5 b e t e g e K n e K AI 
+HYP:  O s t i s m e r i J e l h o * z e n * I  T  H O   K U t n * * O m * E t i t * * E  z b e n d e U DZ i l i k * U j E m u S i k * * O b e t e g e * n e * ** 
+Eval: S                 I         D       D S  S  S S   S S     D D S   D S       D D S              S S          D S   S     S     D D S             D     D D  
+
+id: (hungarian_150113_385327-4)
+Scores: (#C #S #D #I) 46 12 9 2
+REF:  S s e G t i * 5 b R i t o r V o s i s e m L e s e R i n t 5 z e n E e f J d 5 l o m TS i Lː 5 p * t I i s l E hv e t TS K k E  n t i 5 s o r O 
+HYP:  I s e * t i T O b * i t o r * o s i s e m * e s e L i n t E z e n * e f E d E l o m T  i L   O p I t U i s l * hv e t ** * k EI n t i A s o r * 
+Eval: S     D     I S   D         D             D       S       S       D     S   S       S    S   S   I   S       D        D  D   S        S       D 
+
+id: (hungarian_150113_385327-5)
+Scores: (#C #S #D #I) 40 16 13 11
+REF:  I n * * s t * s * ** e n EI TS N~ e s e D B e n * 5 J J s e r e * Z s t i s * p I T o L j * 5 5 k u t 5 t * k EI J t A l L t * k EI H O J 5 e m T U t i t e k E  t V i 
+HYP:  O n B E s t I s I HV e n ** ** ** e s e * J e n E D O R s e r e S I s t i s U p * * o * j R T O k u t E t O k ** U t E l E t E k ** * * U D e m * I t i t e k EI t * i 
+Eval: S   I I     I   I I      D  D  D        D S     I S S S         I S         I   D D   D   I S S       S   I   D  S   S   S   I   D  D D S S     D S           S    D   
+
+id: (hungarian_150113_385327-6)
+Scores: (#C #S #D #I) 37 18 8 7
+REF:  g Z s e m J z e t N~ O L TS V 5 n s * z 5 l * k A b i s t O s 5 Bː 5 n H O j 5 z e n e s e g T i 5 K o Mː u * * n i * K TS i * b n * s ts K k E N  
+HYP:  g * s e m I z e t ** * M U  S O n s E z E l I k U b i s t U s * O   B n * U j E z e n e s e g * i * T o K   u M O n i T E S  i O b n I s ts O k * EI 
+Eval:   D       S       D  D S S  S S     I   S   I   S         S   D S   S   D S   S               D   D S   S     I I     I S S    I     I      S   D S  
+
+

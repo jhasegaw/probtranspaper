@@ -1,0 +1,64 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnnss/dnnss_HG_eval.trn and trn/dnnpt/dnnpt_HG_eval.trn
+
+                                                                                                           Signed
+         Spkr              trn/dnnss/dnnss_HG_eval.trn    trn/dnnpt/dnnpt_HG_eval.trn  Difference   Rank    Rank
+------------------------------------------------------------------------------------------------------------------
+hungarian_140913_360523               61.91                          52.35                9.57     11.0     11.0
+hungarian_140916_361112               57.68                          51.02                6.66      5.0      5.0
+hungarian_140920_362048               62.39                          54.70                7.69      6.0      6.0
+hungarian_140927_363480               56.29                          52.02                4.28      2.0      2.0
+hungarian_141021_368493               57.48                          48.62                8.86      9.0      9.0
+hungarian_141111_372741               61.35                          59.66                1.69      1.0      1.0
+hungarian_141129_376501               76.00                          66.22                9.78     13.0     13.0
+hungarian_141213_379475               52.79                          44.64                8.15      8.0      8.0
+hungarian_141213_379479               64.25                          55.07                9.18     10.0     10.0
+hungarian_141216_379939               59.16                          51.35                7.81      7.0      7.0
+hungarian_150103_383319               51.42                          46.09                5.33      4.0      4.0
+hungarian_150106_383767               62.01                          49.91               12.10     14.0     14.0
+hungarian_150110_384737               60.23                          55.81                4.42      3.0      3.0
+hungarian_150113_385337               62.23                          52.63                9.60     12.0     12.0
+------------------------------------------------------------------------------------------------------------------
+         Avg.                         60.37                          52.86                7.51
+
+                       Sum of 14 positive ranks = 105.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -3.30, therefore the Hypothesis
+              is REJECTED in favor of the Null Hypothesis.
+
+              Further, trn/dnnpt/dnnpt_HG_eval.trn is the better System.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|-----------------------------------------------------------------------------------------|
+|                             | trn/dnnpt/dnnpt_HG_eval.trn | trn/dnnss/dnnss_HG_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnpt/dnnpt_HG_eval.trn |                             | trn/dnnpt/dnnpt_HG_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnss/dnnss_HG_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

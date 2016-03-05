@@ -1,0 +1,209 @@
+stats/dnnpt/dnnpt_HG_dev.stats.mapsswe-     Decision:
+stats/dnnpt/dnnpt_HG_dev.stats.mapsswe-        There were MIN(uue)=10 unique utterance errors, the probability of
+stats/dnnpt/dnnpt_HG_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnpt/dnnpt_HG_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_HG_dev.trn is the
+stats/dnnpt/dnnpt_HG_dev.stats.mapsswe-        better System.
+stats/dnnpt/dnnpt_HG_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_HG_dev.trn trn/dnnpt/dnnpt_HG_dev.trn) (# segs: 774) (Seg per Sent: 6.450) (% Error: 55.91 48.88) (mean: 0.787) (std dev: 1.494) (Z Stat: 14.650) (Stat Diff: Yes)
+--
+stats/dnnpt/dnnpt_HG_eval.stats.mapsswe-     Decision:
+stats/dnnpt/dnnpt_HG_eval.stats.mapsswe-        There were MIN(uue)=6 unique utterance errors, the probability of
+stats/dnnpt/dnnpt_HG_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnpt/dnnpt_HG_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_HG_eval.trn is the
+stats/dnnpt/dnnpt_HG_eval.stats.mapsswe-        better System.
+stats/dnnpt/dnnpt_HG_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_HG_eval.trn trn/dnnpt/dnnpt_HG_eval.trn) (# segs: 723) (Seg per Sent: 6.179) (% Error: 55.37 47.15) (mean: 0.936) (std dev: 1.633) (Z Stat: 15.419) (Stat Diff: Yes)
+--
+stats/dnnpt/dnnpt_MD_dev.stats.mapsswe-     Decision:
+stats/dnnpt/dnnpt_MD_dev.stats.mapsswe-        There were MIN(uue)=22 unique utterance errors, the probability of
+stats/dnnpt/dnnpt_MD_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnpt/dnnpt_MD_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_MD_dev.trn is the
+stats/dnnpt/dnnpt_MD_dev.stats.mapsswe-        better System.
+stats/dnnpt/dnnpt_MD_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_MD_dev.trn trn/dnnpt/dnnpt_MD_dev.trn) (# segs: 757) (Seg per Sent: 6.308) (% Error: 54.39 45.28) (mean: 1.083) (std dev: 2.533) (Z Stat: 11.765) (Stat Diff: Yes)
+--
+stats/dnnpt/dnnpt_MD_eval.stats.mapsswe-     Decision:
+stats/dnnpt/dnnpt_MD_eval.stats.mapsswe-        There were MIN(uue)=25 unique utterance errors, the probability of
+stats/dnnpt/dnnpt_MD_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnpt/dnnpt_MD_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_MD_eval.trn is the
+stats/dnnpt/dnnpt_MD_eval.stats.mapsswe-        better System.
+stats/dnnpt/dnnpt_MD_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_MD_eval.trn trn/dnnpt/dnnpt_MD_eval.trn) (# segs: 677) (Seg per Sent: 5.991) (% Error: 55.54 46.32) (mean: 1.058) (std dev: 2.406) (Z Stat: 11.438) (Stat Diff: Yes)
+--
+stats/dnnpt/dnnpt_SW_dev.stats.mapsswe-     Decision:
+stats/dnnpt/dnnpt_SW_dev.stats.mapsswe-        There were MIN(uue)=9 unique utterance errors, the probability of
+stats/dnnpt/dnnpt_SW_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnpt/dnnpt_SW_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_SW_dev.trn is the
+stats/dnnpt/dnnpt_SW_dev.stats.mapsswe-        better System.
+stats/dnnpt/dnnpt_SW_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_SW_dev.trn trn/dnnpt/dnnpt_SW_dev.trn) (# segs: 719) (Seg per Sent: 5.992) (% Error: 57.99 43.59) (mean: 1.661) (std dev: 2.479) (Z Stat: 17.961) (Stat Diff: Yes)
+--
+stats/dnnpt/dnnpt_SW_eval.stats.mapsswe-     Decision:
+stats/dnnpt/dnnpt_SW_eval.stats.mapsswe-        There were MIN(uue)=10 unique utterance errors, the probability of
+stats/dnnpt/dnnpt_SW_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnpt/dnnpt_SW_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_SW_eval.trn is the
+stats/dnnpt/dnnpt_SW_eval.stats.mapsswe-        better System.
+stats/dnnpt/dnnpt_SW_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_SW_eval.trn trn/dnnpt/dnnpt_SW_eval.trn) (# segs: 770) (Seg per Sent: 6.260) (% Error: 57.67 40.27) (mean: 1.827) (std dev: 2.932) (Z Stat: 17.295) (Stat Diff: Yes)
+--
+stats/dnnptss/dnnptss_HG_eval.stats.mapsswe-     Decision:
+stats/dnnptss/dnnptss_HG_eval.stats.mapsswe-        There were MIN(uue)=4 unique utterance errors, the probability of
+stats/dnnptss/dnnptss_HG_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnptss/dnnptss_HG_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_HG_eval.trn is the
+stats/dnnptss/dnnptss_HG_eval.stats.mapsswe-        better System.
+stats/dnnptss/dnnptss_HG_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnpt/dnnpt_HG_eval.trn trn/dnnss/dnnss_HG_eval.trn) (# segs: 784) (Seg per Sent: 6.701) (% Error: 46.92 52.95) (mean: -0.636) (std dev: 1.550) (Z Stat: -11.497) (Stat Diff: Yes)
+--
+stats/dnnptss/dnnptss_MD_eval.stats.mapsswe-     Decision:
+stats/dnnptss/dnnptss_MD_eval.stats.mapsswe-        There were MIN(uue)=29 unique utterance errors, the probability of
+stats/dnnptss/dnnptss_MD_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnptss/dnnptss_MD_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_MD_eval.trn is the
+stats/dnnptss/dnnptss_MD_eval.stats.mapsswe-        better System.
+stats/dnnptss/dnnptss_MD_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnpt/dnnpt_MD_eval.trn trn/dnnss/dnnss_MD_eval.trn) (# segs: 663) (Seg per Sent: 5.867) (% Error: 46.53 55.21) (mean: -1.012) (std dev: 2.212) (Z Stat: -11.780) (Stat Diff: Yes)
+--
+stats/dnnptss/dnnptss_SW_dev.stats.mapsswe-     Decision:
+stats/dnnptss/dnnptss_SW_dev.stats.mapsswe-        There were MIN(uue)=11 unique utterance errors, the probability of
+stats/dnnptss/dnnptss_SW_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnptss/dnnptss_SW_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_SW_dev.trn is the
+stats/dnnptss/dnnptss_SW_dev.stats.mapsswe-        better System.
+stats/dnnptss/dnnptss_SW_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnpt/dnnpt_SW_dev.trn trn/dnnss/dnnss_SW_dev.trn) (# segs: 789) (Seg per Sent: 6.575) (% Error: 43.65 53.54) (mean: -1.039) (std dev: 2.077) (Z Stat: -14.054) (Stat Diff: Yes)
+--
+stats/dnnptss/dnnptss_SW_eval.stats.mapsswe-     Decision:
+stats/dnnptss/dnnptss_SW_eval.stats.mapsswe-        There were MIN(uue)=17 unique utterance errors, the probability of
+stats/dnnptss/dnnptss_SW_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnptss/dnnptss_SW_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnpt/dnnpt_SW_eval.trn is the
+stats/dnnptss/dnnptss_SW_eval.stats.mapsswe-        better System.
+stats/dnnptss/dnnptss_SW_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnpt/dnnpt_SW_eval.trn trn/dnnss/dnnss_SW_eval.trn) (# segs: 852) (Seg per Sent: 6.927) (% Error: 40.65 52.61) (mean: -1.124) (std dev: 2.423) (Z Stat: -13.547) (Stat Diff: Yes)
+--
+stats/dnnss/dnnss_CA_dev.stats.mapsswe-     Decision:
+stats/dnnss/dnnss_CA_dev.stats.mapsswe-        There were MIN(uue)=7 unique utterance errors, the probability of
+stats/dnnss/dnnss_CA_dev.stats.mapsswe:        it occuring is 0.629, therefore the null hypothesis is ACCEPTED
+stats/dnnss/dnnss_CA_dev.stats.mapsswe-        There is no statistical difference between trn/dnn/dnn_CA_dev.trn and trn/dnnss/dnnss_CA_dev.trn
+stats/dnnss/dnnss_CA_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_CA_dev.trn trn/dnnss/dnnss_CA_dev.trn) (# segs: 730) (Seg per Sent: 6.083) (% Error: 56.99 54.83) (mean: 0.223) (std dev: 1.248) (Z Stat: 4.836) (Stat Diff: Yes)
+stats/dnnss/dnnss_CA_dev.stats.mapsswe-
+--
+stats/dnnss/dnnss_CA_eval.stats.mapsswe-     Decision:
+stats/dnnss/dnnss_CA_eval.stats.mapsswe-        There were MIN(uue)=6 unique utterance errors, the probability of
+stats/dnnss/dnnss_CA_eval.stats.mapsswe:        it occuring is 0.332, therefore the null hypothesis is ACCEPTED
+stats/dnnss/dnnss_CA_eval.stats.mapsswe-        There is no statistical difference between trn/dnn/dnn_CA_eval.trn and trn/dnnss/dnnss_CA_eval.trn
+stats/dnnss/dnnss_CA_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_CA_eval.trn trn/dnnss/dnnss_CA_eval.trn) (# segs: 867) (Seg per Sent: 5.858) (% Error: 58.40 56.14) (mean: 0.248) (std dev: 1.194) (Z Stat: 6.118) (Stat Diff: Yes)
+stats/dnnss/dnnss_CA_eval.stats.mapsswe-
+--
+stats/dnnss/dnnss_HG_eval.stats.mapsswe-     Decision:
+stats/dnnss/dnnss_HG_eval.stats.mapsswe-        There were MIN(uue)=5 unique utterance errors, the probability of
+stats/dnnss/dnnss_HG_eval.stats.mapsswe:        it occuring is 1.000, therefore the null hypothesis is ACCEPTED
+stats/dnnss/dnnss_HG_eval.stats.mapsswe-        There is no statistical difference between trn/dnn/dnn_HG_eval.trn and trn/dnnss/dnnss_HG_eval.trn
+stats/dnnss/dnnss_HG_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_HG_eval.trn trn/dnnss/dnnss_HG_eval.trn) (# segs: 779) (Seg per Sent: 6.658) (% Error: 55.09 52.94) (mean: 0.228) (std dev: 1.140) (Z Stat: 5.594) (Stat Diff: Yes)
+stats/dnnss/dnnss_HG_eval.stats.mapsswe-
+--
+stats/dnnss/dnnss_MD_eval.stats.mapsswe-     Decision:
+stats/dnnss/dnnss_MD_eval.stats.mapsswe-        There were MIN(uue)=8 unique utterance errors, the probability of
+stats/dnnss/dnnss_MD_eval.stats.mapsswe:        it occuring is 0.003, therefore the null hypothesis is REJECTED
+stats/dnnss/dnnss_MD_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnss/dnnss_MD_eval.trn is the
+stats/dnnss/dnnss_MD_eval.stats.mapsswe-        better System.
+stats/dnnss/dnnss_MD_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_MD_eval.trn trn/dnnss/dnnss_MD_eval.trn) (# segs: 696) (Seg per Sent: 6.159) (% Error: 55.85 55.27) (mean: 0.065) (std dev: 1.064) (Z Stat: 1.604) (Stat Diff: No)
+--
+stats/dnnss/dnnss_SW_dev.stats.mapsswe-     Decision:
+stats/dnnss/dnnss_SW_dev.stats.mapsswe-        There were MIN(uue)=10 unique utterance errors, the probability of
+stats/dnnss/dnnss_SW_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnss/dnnss_SW_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnss/dnnss_SW_dev.trn is the
+stats/dnnss/dnnss_SW_dev.stats.mapsswe-        better System.
+stats/dnnss/dnnss_SW_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_SW_dev.trn trn/dnnss/dnnss_SW_dev.trn) (# segs: 706) (Seg per Sent: 5.883) (% Error: 57.99 53.48) (mean: 0.530) (std dev: 1.510) (Z Stat: 9.320) (Stat Diff: Yes)
+--
+stats/dnnss/dnnss_SW_eval.stats.mapsswe-     Decision:
+stats/dnnss/dnnss_SW_eval.stats.mapsswe-        There were MIN(uue)=8 unique utterance errors, the probability of
+stats/dnnss/dnnss_SW_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/dnnss/dnnss_SW_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/dnnss/dnnss_SW_eval.trn is the
+stats/dnnss/dnnss_SW_eval.stats.mapsswe-        better System.
+stats/dnnss/dnnss_SW_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnn/dnn_SW_eval.trn trn/dnnss/dnnss_SW_eval.trn) (# segs: 749) (Seg per Sent: 6.089) (% Error: 57.65 52.10) (mean: 0.599) (std dev: 1.652) (Z Stat: 9.930) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_CA_dev.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_CA_dev.stats.mapsswe-        There were MIN(uue)=4 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_CA_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_CA_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_CA_dev.trn is the
+stats/gmmpt/gmmpt_CA_dev.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_CA_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_CA_dev.trn trn/gmmpt/gmmpt_CA_dev.trn) (# segs: 602) (Seg per Sent: 5.017) (% Error: 60.78 50.10) (mean: 1.319) (std dev: 2.205) (Z Stat: 14.674) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_CA_eval.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_CA_eval.stats.mapsswe-        There were MIN(uue)=3 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_CA_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_CA_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_CA_eval.trn is the
+stats/gmmpt/gmmpt_CA_eval.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_CA_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_CA_eval.trn trn/gmmpt/gmmpt_CA_eval.trn) (# segs: 718) (Seg per Sent: 4.851) (% Error: 61.23 50.36) (mean: 1.419) (std dev: 2.236) (Z Stat: 17.007) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_HG_dev.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_HG_dev.stats.mapsswe-        There were MIN(uue)=12 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_HG_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_HG_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_HG_dev.trn is the
+stats/gmmpt/gmmpt_HG_dev.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_HG_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_HG_dev.trn trn/gmmpt/gmmpt_HG_dev.trn) (# segs: 710) (Seg per Sent: 5.917) (% Error: 57.36 48.58) (mean: 1.063) (std dev: 1.960) (Z Stat: 14.455) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_HG_eval.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_HG_eval.stats.mapsswe-        There were MIN(uue)=7 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_HG_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_HG_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_HG_eval.trn is the
+stats/gmmpt/gmmpt_HG_eval.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_HG_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_HG_eval.trn trn/gmmpt/gmmpt_HG_eval.trn) (# segs: 677) (Seg per Sent: 5.786) (% Error: 57.19 48.14) (mean: 1.096) (std dev: 1.955) (Z Stat: 14.590) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_MD_dev.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_MD_dev.stats.mapsswe-        There were MIN(uue)=6 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_MD_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_MD_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_MD_dev.trn is the
+stats/gmmpt/gmmpt_MD_dev.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_MD_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_MD_dev.trn trn/gmmpt/gmmpt_MD_dev.trn) (# segs: 628) (Seg per Sent: 5.233) (% Error: 59.13 49.90) (mean: 1.311) (std dev: 2.212) (Z Stat: 14.845) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_MD_eval.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_MD_eval.stats.mapsswe-        There were MIN(uue)=5 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_MD_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_MD_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_MD_eval.trn is the
+stats/gmmpt/gmmpt_MD_eval.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_MD_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_MD_eval.trn trn/gmmpt/gmmpt_MD_eval.trn) (# segs: 486) (Seg per Sent: 4.301) (% Error: 63.33 51.28) (mean: 1.872) (std dev: 2.500) (Z Stat: 16.515) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_SW_dev.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_SW_dev.stats.mapsswe-        There were MIN(uue)=11 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_SW_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_SW_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_SW_dev.trn is the
+stats/gmmpt/gmmpt_SW_dev.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_SW_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_SW_dev.trn trn/gmmpt/gmmpt_SW_dev.trn) (# segs: 669) (Seg per Sent: 5.575) (% Error: 58.91 44.79) (mean: 1.728) (std dev: 2.567) (Z Stat: 17.409) (Stat Diff: Yes)
+--
+stats/gmmpt/gmmpt_SW_eval.stats.mapsswe-     Decision:
+stats/gmmpt/gmmpt_SW_eval.stats.mapsswe-        There were MIN(uue)=8 unique utterance errors, the probability of
+stats/gmmpt/gmmpt_SW_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmpt/gmmpt_SW_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_SW_eval.trn is the
+stats/gmmpt/gmmpt_SW_eval.stats.mapsswe-        better System.
+stats/gmmpt/gmmpt_SW_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/gmm/gmm_SW_eval.trn trn/gmmpt/gmmpt_SW_eval.trn) (# segs: 741) (Seg per Sent: 6.024) (% Error: 56.72 40.12) (mean: 1.803) (std dev: 3.037) (Z Stat: 16.163) (Stat Diff: Yes)
+--
+stats/gmmptss/gmmptss_CA_dev.stats.mapsswe-     Decision:
+stats/gmmptss/gmmptss_CA_dev.stats.mapsswe-        There were MIN(uue)=16 unique utterance errors, the probability of
+stats/gmmptss/gmmptss_CA_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmptss/gmmptss_CA_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_CA_dev.trn is the
+stats/gmmptss/gmmptss_CA_dev.stats.mapsswe-        better System.
+stats/gmmptss/gmmptss_CA_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnss/dnnss_CA_dev.trn trn/gmmpt/gmmpt_CA_dev.trn) (# segs: 679) (Seg per Sent: 5.658) (% Error: 54.90 49.54) (mean: 0.594) (std dev: 1.831) (Z Stat: 8.445) (Stat Diff: Yes)
+--
+stats/gmmptss/gmmptss_CA_eval.stats.mapsswe-     Decision:
+stats/gmmptss/gmmptss_CA_eval.stats.mapsswe-        There were MIN(uue)=17 unique utterance errors, the probability of
+stats/gmmptss/gmmptss_CA_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmptss/gmmptss_CA_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_CA_eval.trn is the
+stats/gmmptss/gmmptss_CA_eval.stats.mapsswe-        better System.
+stats/gmmptss/gmmptss_CA_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnss/dnnss_CA_eval.trn trn/gmmpt/gmmpt_CA_eval.trn) (# segs: 802) (Seg per Sent: 5.419) (% Error: 56.25 49.81) (mean: 0.761) (std dev: 1.841) (Z Stat: 11.702) (Stat Diff: Yes)
+--
+stats/gmmptss/gmmptss_HG_eval.stats.mapsswe-     Decision:
+stats/gmmptss/gmmptss_HG_eval.stats.mapsswe-        There were MIN(uue)=10 unique utterance errors, the probability of
+stats/gmmptss/gmmptss_HG_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmptss/gmmptss_HG_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_HG_eval.trn is the
+stats/gmmptss/gmmptss_HG_eval.stats.mapsswe-        better System.
+stats/gmmptss/gmmptss_HG_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnss/dnnss_HG_eval.trn trn/gmmpt/gmmpt_HG_eval.trn) (# segs: 771) (Seg per Sent: 6.590) (% Error: 52.76 47.53) (mean: 0.563) (std dev: 1.553) (Z Stat: 10.063) (Stat Diff: Yes)
+--
+stats/gmmptss/gmmptss_MD_eval.stats.mapsswe-     Decision:
+stats/gmmptss/gmmptss_MD_eval.stats.mapsswe-        There were MIN(uue)=17 unique utterance errors, the probability of
+stats/gmmptss/gmmptss_MD_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmptss/gmmptss_MD_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_MD_eval.trn is the
+stats/gmmptss/gmmptss_MD_eval.stats.mapsswe-        better System.
+stats/gmmptss/gmmptss_MD_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnss/dnnss_MD_eval.trn trn/gmmpt/gmmpt_MD_eval.trn) (# segs: 576) (Seg per Sent: 5.097) (% Error: 55.80 50.63) (mean: 0.688) (std dev: 2.332) (Z Stat: 7.075) (Stat Diff: Yes)
+--
+stats/gmmptss/gmmptss_SW_dev.stats.mapsswe-     Decision:
+stats/gmmptss/gmmptss_SW_dev.stats.mapsswe-        There were MIN(uue)=17 unique utterance errors, the probability of
+stats/gmmptss/gmmptss_SW_dev.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmptss/gmmptss_SW_dev.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_SW_dev.trn is the
+stats/gmmptss/gmmptss_SW_dev.stats.mapsswe-        better System.
+stats/gmmptss/gmmptss_SW_dev.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnss/dnnss_SW_dev.trn trn/gmmpt/gmmpt_SW_dev.trn) (# segs: 745) (Seg per Sent: 6.208) (% Error: 53.78 44.48) (mean: 1.030) (std dev: 2.154) (Z Stat: 13.043) (Stat Diff: Yes)
+--
+stats/gmmptss/gmmptss_SW_eval.stats.mapsswe-     Decision:
+stats/gmmptss/gmmptss_SW_eval.stats.mapsswe-        There were MIN(uue)=20 unique utterance errors, the probability of
+stats/gmmptss/gmmptss_SW_eval.stats.mapsswe:        it occuring is 0.000, therefore the null hypothesis is REJECTED
+stats/gmmptss/gmmptss_SW_eval.stats.mapsswe-        in favor of the Alternate Hypothesis.  Further, trn/gmmpt/gmmpt_SW_eval.trn is the
+stats/gmmptss/gmmptss_SW_eval.stats.mapsswe-        better System.
+stats/gmmptss/gmmptss_SW_eval.stats.mapsswe-MTCH_PR_RESULTS (systems: trn/dnnss/dnnss_SW_eval.trn trn/gmmpt/gmmpt_SW_eval.trn) (# segs: 831) (Seg per Sent: 6.756) (% Error: 52.56 40.27) (mean: 1.185) (std dev: 2.243) (Z Stat: 15.234) (Stat Diff: Yes)

@@ -1,0 +1,13 @@
+
+
+
+                COMPARISON MATRIX: FOR THE MATCHED PAIRS TEST
+        PECENTAGES ARE MEAN PCT ERROR/SEGMENT.  FIRST # IS LEFT SYSTEM
+                  Minimum Number of Correct Boundary words 2
+
+
+              |-------------------------------------------------|
+              |                        | trn/dnn/dnn_MD_dev.trn |
+              |------------------------+------------------------|
+              | trn/dnn/dnn_MD_dev.trn |                        |
+              |-------------------------------------------------|

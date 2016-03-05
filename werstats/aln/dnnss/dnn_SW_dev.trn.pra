@@ -1,0 +1,737 @@
+
+
+		DUMP OF SYSTEM ALIGNMENT STRUCTURE
+
+System name:   trn/dnn/dnn_SW_dev.trn
+
+Speakers: 
+    0:  swahili_140826_356959
+    1:  swahili_140902_358351
+    2:  swahili_141216_380121
+    3:  swahili_141216_380127
+
+Speaker sentences   0:  swahili_140826_356959   #utts: 46
+id: (swahili_140826_356959-10)
+Scores: (#C #S #D #I) 22 24 11 1
+REF:  * J a PH A m O JJ A n A KH u E L E Z a w e Z a KH O KH U H U s u m a kh a L A J a KH I s W A H I L i j A S B s n A k I l & 
+HYP:  N D a ** U m U D  & n & K  u * * R D a w e D a ** * K  ^ K ^ s u m a kh a N & N a V  E s * * * * * i j E F I s n & k * l A 
+Eval: I S   D  S   S S  S   S S    D D S S       S   D  D S  S S S              S S S   S  S   D D D D D     S S S     S   D   S 
+
+id: (swahili_140826_356959-11)
+Scores: (#C #S #D #I) 22 32 12 2
+REF:  TH U TH A KH A PH O TSH A PH i s a m a kh A L a KH A TH i KH A u * * kh u r a s A H U O u TH a J A PH O KH E A m O JJ A KH W A m O JJ A M B i l a KH u KH A 
+HYP:  K  T &  K &  P ^  S T   & P  i s a m a kh * * a M  & T  i ** K u N I kh u r a s * * * W u W  a * R E  G U  K & m * U  N &  K O m * U  D & D i l a ** u ** * 
+Eval: S  S S  S S  S S  S S   S S               D D   S  S S    D  S   I I            D D D S   S    D S S  S S  S S   D S  S S  S S   D S  S S S       D    D  D 
+
+id: (swahili_140826_356959-12)
+Scores: (#C #S #D #I) 24 24 18 1
+REF:  W I a OU KH u tsh E l e W A kh W A H I j O  TSH A n G I A u kh U R a s A W E TH u N A p i * & U PH e n d E H I L i U w E z E KH u PH O KH E A m A E 
+HYP:  U J a ** R  u tsh I l e * O kh * * * O j OU T   & n * * D u kh * W a s * U R T  u * M p i J & P R  e n d * * & N i * w O z * B  u ** * ** K & m * N 
+Eval: S S   D  S        S     D S    D D D S   S  S   S   D D S      D S     D S S S    D S     I   S S        D D S S   D   S   D S    D  D D  S S   D S 
+
+id: (swahili_140826_356959-13)
+Scores: (#C #S #D #I) 26 18 19 4
+REF:  l e Z O N a m a TH A n g A Z O TH u n * * a J O f a * * N~ a A u s TH R A l i A N m J U z i K & H e D O n M J U Z I K & w o R D z I TH A a 
+HYP:  l e * * D a m a PH E n g * * E D  u n & F a N & f a F I F  a M u s ** * U l i * * m * I z i * * F e * * n * * * T & F R w o F U z * ** * a 
+Eval:     D D S       S  S     D D S S      I I   S S     I I S    S     D  D S     D D   D S     D D S   D D   D D D S S S S     S S   D D  D   
+
+id: (swahili_140826_356959-14)
+Scores: (#C #S #D #I) 22 19 32 0
+REF:  N Z A H I V i KH A r i B u n I N a U s u s A N I I TH A KH u W A TH A R E H E s i TH A s E PH TH e M B A a m b A J o H I TH A KH U W A N I w I K i H i JJ a 
+HYP:  * * * * * D i ** F r i V u n * Z a * s u s * * * * ** & F  u * * ** * * * F & s i ** * s A F  T  e * * N a m b * * o * * ** * ** R & V O J w * * i T i Z  a 
+Eval: D D D D D S   D  S     S     D S   D       D D D D D  S S    D D D  D D D S S     D  D   S S  S    D D S       D D   D D D  D D  S S S S S   D D   S   S    
+
+id: (swahili_140826_356959-15)
+Scores: (#C #S #D #I) 27 20 21 2
+REF:  J O JJ U m A M o s I JJ i O N i KH A TH i KH A H u KH u m B i w A PH a R a m a TH a * r i V E& s AI D T i & t E& K A M & H u JJ A E l E Z W A b EI s i * 
+HYP:  * * ** Z m * W o s * ** i * L i ** * F  i ** * F u F  u m V i w * ** a V a m a T  a F r i W A  s ** & F i * t ** * & F & M u ** * * l * I L U b A  s i S 
+Eval: D D D  S   D S     D D    D S   D  D S    D  D S   S      S     D D    S       S    I     S S    D  S S   D   D  D S S   S   D  D D   D S S S   S      I 
+
+id: (swahili_140826_356959-16)
+Scores: (#C #S #D #I) 24 28 14 1
+REF:  TH E N G A m A s I KH I O m A a n a N i KH W E N~ e M TH A m B O W A s i m u N I n & N a i B U w A Z I R i W A s * I r i KH A H I L OU a m a 
+HYP:  ** * & K & m U s * T  J U m * a n a L i ** F U N  e * N  S m * * * U s i m u F R n A M a i * M w * * O D i J O s & K r i ** * L U R F  a m a 
+Eval: D  D S S S   S   D S  S S   D       S   D  S S S    D S  S   D D D S         S S   S S     D S   D D S S   S S   I S     D  D S S S S        
+
+id: (swahili_140826_356959-17)
+Scores: (#C #S #D #I) 21 16 4 13
+REF:  JJ A m b o * * * * * * KH a B i s A B I e * Z EI TS OI S b EI s i * a m a * * N i N i A s w a N a * * l * E n G O 
+HYP:  ** * m b o F I Z A M U G  a V i s & V J e S A S  U  N  Z b A  s i S a m a H I L i L i H s w a M a F U l M U n * * 
+Eval: D  D       I I I I I I S    S     S S S   I S S  S  S  S   S      I       I I S   S   S       S   I I   I S   D D 
+
+id: (swahili_140826_356959-18)
+Scores: (#C #S #D #I) 28 20 18 2
+REF:  L A a m a n i N i N I a m a * i n a s I M A M i A A F R O a U s TH R A L   i * A n M J U Z i k N D m u V i & w O R D Z A m A i L I A n Z a 
+HYP:  * W a m a n i L i L F a m a R i n a s * * & N i * * * * * a * s ** * O TSH i J & n * * I L i k * L m u B i J w * * A S & m * i * J & n D a 
+Eval: D S           S   S S       I         D D S S   D D D D D   D   D  D S S     I S   D D S S     D S     S   S   D D S S S   D   D S S   S   
+
+id: (swahili_140826_356959-19)
+Scores: (#C #S #D #I) 20 10 15 1
+REF:  EI EI m W A kh A w a E L f u M B I L i N a S a b * & n a n i A j A a m A n i KH U W A PH A TH i A 
+HYP:  ** A  m * O kh U w a * * f u * * * W i J a F a b A S n a n i * j * a m & n i ** * * * ** O S  i * 
+Eval: D  S    D S    S     D D     D D D S   S   S     I S         D   D     S     D  D D D D  S S    D 
+
+id: (swahili_140826_356959-20)
+Scores: (#C #S #D #I) 33 22 18 2
+REF:  * A w A i m b a JJ I n A W A  i N G I Z a jj I TH u * z o H i l i kh U w a PH a u TH A m b U Z i KH W A kh a Z i w A n a J O f a N~ A KH A TH i KH A S e K T E& J  A 
+HYP:  G E w * i m b a ** * n * * DZ i * J O J a jj * S  u M z o S i l i kh * w a F  a u F  & m b * * i ** G O kh a D i w * n a * * f a L  E K  & T  i ** * Z e * * S  AI & 
+Eval: I S   D         D  D   D D S    D S S S      D S    I     S          D     S      S  S     D D   D  S S      S     D     D D     S  S S  S S    D  D S   D D S  S  S 
+
+id: (swahili_140826_356959-21)
+Scores: (#C #S #D #I) 32 15 43 1
+REF:  B U R U J A n I u m u H I m u * KH u TH o KH A th u Z O H I L I N I n i n i kh W A N I n i l a Z I m A W A PH E W E TH u Z O H I l i w A E N D E l E e N a s U G u l i Z A o N I V I Z U R I 
+HYP:  * * * * * & n F u m u * * m u K T  u ** o ** * th u * * * * * * * R n i n i kh * * * U n i l a * * m * * * O  R P R T  u * * * * l i w * * * I M l * e M a s * * u l i * L o * * * * * * * S 
+Eval: D D D D D S   S       D D     I S    D    D  D      D D D D D D D S            D D D S         D D   D D D S  S S S S    D D D D       D D D S S   D   S     D D       D S   D D D D D D D S 
+
+id: (swahili_140826_356959-22)
+Scores: (#C #S #D #I) 11 23 23 1
+REF:  KH U W A PH A TH I A H  AI l M OU T & V EI s & N N a KH U W A o N~ E s A KH U w A KH a Z I H AI l * W A  n A J o F A N~ A T U n & 
+HYP:  ** * * * O  S AI & L EI O  l * E  H U D I  s * * * a ** * L E o N  I s * &  K w * ** a * * * ** l E K AU n * * o * * ** * J E n A 
+Eval: D  D D D S  S S  S S S  S    D S  S S S S    D D D   D  D S S   S  S   D S  S   D D    D D D D    I S S    D D   D D D  D S S   S 
+
+id: (swahili_140826_356959-23)
+Scores: (#C #S #D #I) 22 19 24 4
+REF:  N I N~ I N G  i s A N  & KH A TH I KH A H I i S E k ** t E& J A B U r U J A n I H A PH A O  s T R EI l * j * & n a n I A j a a m A n i KH U w a * PH A 
+HYP:  * * ** * * JJ i s * AI & ** * ** * ** K & T i * * k EI t ** * * E E r * T & n * * J &  K OU s * * K  l I j A S n a n * * j a a m & n i ** J w a S AI & 
+Eval: D D D  D D S      D S    D  D D  D D  S S S   D D   I    D  D D S S   D S S   D D S S  S S    D D S    I   I S       D D         S     D  S     I S  S 
+
+id: (swahili_140826_356959-24)
+Scores: (#C #S #D #I) 33 19 22 5
+REF:  ** e n K E& i DZ M & N T N D I o w A i n G  I e KH W A w i n g i * JJ U KH U m u l e N u * s a s A n i * ** KH u TH o A jj u KH w A a kh W A W A TH U A m B A o W A n A TH A 
+HYP:  DZ e n * S  i ** * * * * * * J o w * i n DZ J e ** * O w i n g i N D  I K  O m u l e M u N s a s & n i K OU T  u ** o * jj u S  w * a kh * * * * O  S O m * * o * * n O S  I 
+Eval: I      D S    D  D D D D D D S     D     S  S   D  D S           I S  S S  S         S   I       S     I I  S    D    D      S    D      D D D D S  S S   D D   D D   S S  S 
+
+id: (swahili_140826_356959-25)
+Scores: (#C #S #D #I) 35 22 11 10
+REF:  TH a L A KH a KH a D A a k A m & n i KH W A m * i Z i * * * * KH i * * f i l a m u * k A m & n i KH A TH I KH A s E H E m u Z i n G i N E Z a B u r U J A n i * m * 
+HYP:  W  a * N D  a K  a * W a k & m A n i ** F O m V i T i K & M & N  i F O f i l a m u F k & m & n i T  & T  & K  & s * * * m u R i n * i * * L a M u r * * & n i Z m U 
+Eval: S    D S S    S    D S     S   S     D  S S   I   S   I I I I S    I I             I   S         S  S S  S S  S   D D D     S     D   D D S   S     D D S     I   I 
+
+id: (swahili_140826_356959-26)
+Scores: (#C #S #D #I) 22 14 17 2
+REF:  K J U n & W A I M B a JJ I  w e n g i K j U n * * & k A m & a N D I r a B e L S o l i TH i s I M M a TH U  R n E J 
+HYP:  * * * n * * * * * * a F  DZ w e n g i * j O n A U S k & m * a * * * r a G e * W o l i T  i s * E W a S  AI & n * D 
+Eval: D D D   D D D D D D   S  S            D   S   I I S   S   D   D D D     S   D S       S      D S S   S  S  S   D S 
+
+id: (swahili_140826_356959-27)
+Scores: (#C #S #D #I) 32 19 21 6
+REF:  * V OI s * * * * m ai k TS M P I & n J A A n I KH o F F i * D i s ai P & L n i w e n g i s A N & n A W a TH a KH U W A W A KH i b U R u J i s A w A TH U KH A TH i kh A 
+HYP:  W I J  s L A G E m ai k ** * * T & n * I E n * G  o * S i J S i s ai * K O n i w e n g i s * * & n * * a N  a ** * T & K O JJ i b * * u B i s I w * ** * ** * ** i kh I 
+Eval: I S S    I I I I        D  D D S     D S S   D S    D S   I S        D S S                 D D     D D   S    D  D S S S S S      D D   S     S   D D  D D  D D       S 
+
+id: (swahili_140826_356959-28)
+Scores: (#C #S #D #I) 32 20 12 2
+REF:  * * r i V E& s AI D T  I  & T E& n A TH o f A U  TH i n i H i PH I k EI t i j a m a O N~ E s O a m B A J o m N A a n d A a w i k I KH e s O n A 
+HYP:  L F r i B A  s ** * EI DZ J E A  n & T  o f * OU T  i n i T i ** S k &  t i j a m a * N  I s * a m * * * o m * * a n d * a w i k & K  e s U n O 
+Eval: I I     S S    D  D S  S  S S S    S S      D S  S        S   D  S   S              D S  S   D     D D D     D D       D         S S      S   S 
+
+id: (swahili_140826_356959-29)
+Scores: (#C #S #D #I) 19 15 32 4
+REF:  m A o N~ E s O a m B A J O M m E f A N~ A A W A L I T R I P & L EI H U KH o A W A l i * KH U  L i KH U W A n a W a I m B A JJ I n * a * W A i * N G 
+HYP:  m * o ** * s * a m * * * * U m * f * ** * * * * * * * * * * & * ** * * N  o * * * l i S K  AU N i K  ^ K & n a * a * m * * W  E n G a J N O i K & T 
+Eval:   D   D  D   D     D D D D S   D   D D  D D D D D D D D D D   D D  D D S    D D D     I S  S  S   S  S S S     D   D   D D S  S   I   I S S   I S S 
+
+id: (swahili_140826_356959-30)
+Scores: (#C #S #D #I) 22 24 14 3
+REF:  N A A D I s t AI M TH U KH o n a * * w a TH U KH U TH o kh a P I & h O L j W O O J k A M & V I V i KH a F O R K n a m * W I n G i n E 
+HYP:  * * * * & s t ** * E  N G  o n a L U w a ** T &  K T  o kh a * J A h * U j * U N S k * * & * N A i K  a * S U S n a m U M U n D i n A 
+Eval: D D D D S     D  D S  S S        I I     D  S S  S S         D S S   D S   D S S S   D D   D S S   S    D S S S       I S S   S     S 
+
+id: (swahili_140826_356959-31)
+Scores: (#C #S #D #I) 27 24 26 3
+REF:  A m B A J E TH U m E o n A KH W E N~ E KH A R A TH a s I A m B A Z O M m E TSH A PH I s a n i KH W A m b a N KH a N s * * I H i m e * a m B a J E n i m u I N G I Z A JJ I 
+HYP:  * m * * * * &  T m * o n * ** * & K  & N  F K & S  a s * * m * * * * U m & T   & T  & s a n i ** F O m b a * F  a M s K & N S i m e S a m * a * * n i m u * * * * * * J  & 
+Eval: D   D D D D S  S   D     D D  D S S  S S  S S S S      D D   D D D D S   S S   S S  S         D  S S       D S    S   I I S S       I     D   D D         D D D D D D S  S 
+
+id: (swahili_140826_356959-32)
+Scores: (#C #S #D #I) 36 29 31 0
+REF:  M KH U U KH u l E J u g a n d & n A a m E W E Z A KH U PH a TH A U m A A R U f u H A t & n DZ e J A J U g A n D & P I & a th a KH U w A H a PH A o s T R EI l J & N A J e kh W E N~ A E s E r E H e j e n U 
+HYP:  * N  G O F  u l * * u g a n d A n * a m * * * * * ** & F  a ** T O m * * * O f u * O t & n D  e * * * O g E n A V J A Z a th a ** G w * * a ** B o s * * I  l * * * E M e kh * * U  N & s I r * * e j e n O 
+Eval: D S  S S S      D D           S   D     D D D D D D  S S    D  S S   D D D S     D S       S    D D D S   S   S S S S S        D  S   D D   D  S     D D S    D D D S S      D D S  S S   S   D D         S 
+
+id: (swahili_140826_356959-33)
+Scores: (#C #S #D #I) 23 26 9 3
+REF:  I L i KH U w A JJ E m kh a m U A l i KH A n a U V U TH i O w a N KH a n * * s I I m E KH W A w a TH U i TH A KH U W A n i H U PH i * 
+HYP:  * F i ** K w E J  U m kh a m * O l i K  & n a S W O JJ i * w a * F  a n K & s * & m * &  K O w a S  W i ** * T  & F O n i W O F  i S 
+Eval: D S   D  S   S S  S          D S     S  S     S S S S    D     D S      I I   D S   D S  S S     S  S   D  D S  S S S     S S S    I 
+
+id: (swahili_140826_356959-34)
+Scores: (#C #S #D #I) 29 21 25 0
+REF:  KH W A KH W E L I TH U L I o N E n i V i z U R i N kh A N s I i m e A KH u jj E KH W a s a b a b u A M E  KH U W A m KH U b W A s i j u G A n d & PH E KH E J EI K 
+HYP:  ** * * ** * * * * ** * * * o L A n i B i z I L i * kh * * s * i m e * F  u jj * ** * a s a b a b u W S AI &  N I O m ** O b * O s i j u K & n d & ** * ** T I DZ I 
+Eval: D  D D D  D D D D D  D D D   S S     S     S S   D    D D   D       D S       D D  D               S S S  S  S S S   D  S   D S         S S       D  D D  S S S  S 
+
+id: (swahili_140826_356959-35)
+Scores: (#C #S #D #I) 26 30 19 4
+REF:  P i & a F R i KH A j O TH E H a * T  & U KH U A n g A l I A KH W a i n T E& N e T KH W A j U T u B n i j e J e * * D i M OU s V J U D a R T  i s T O N J U t U B s * OU 
+HYP:  S i J a * S i ** * j * ** * * a S AI D O PH J E n g I l * J &  F a i n * S  L e * K  S O j * * u S n i j e R e M U S i F A  s I K & N a * TH i s * * * * I t * * s I U  
+Eval: S   S   D S   D  D   D D  D D   I S  S S S  S S     S   D S S  S       D S  S   D S  S S   D D   S         S   I I S   S S    S S S S   D S      D D D D S   D D   I S  
+
+id: (swahili_140826_356959-36)
+Scores: (#C #S #D #I) 28 19 26 9
+REF:  W A A F R I KH A W a l i O KH U w A H a PH A O s T R EI l * j * & n a * m A o N~ E s * * * O N A TH a m a s A Z I TH A a N Z a s A a n g a PH i * * kh u * PH E A n A TH U Z O 
+HYP:  * * * * * * ** * * a l i * ** S w * * a ** F U s * * I  l I j A F n a S m * o N  A s U R & F M U T  a m a s * * * &  F a * W a s * a n g a F  i F A kh u K &  T O n * ** * * D 
+Eval: D D D D D D D  D D       D D  S   D D   D  S S   D D S    I   I S     I   D   S  S   I I I S S S S          D D D S  S   D S     D         S    I I      I S  S S   D D  D D S 
+
+id: (swahili_140826_356959-37)
+Scores: (#C #S #D #I) 28 19 30 3
+REF:  F I kh a F ai V P i * e m N D I J O TH u * TH A a n Z A KH W a H I j o T U n * & I n K E& &  dz w a TH U w A a n Z e KH U F I KH A M A PH e m a H I L I w A W e N A H I j O 
+HYP:  * * kh a S ai * S i J e m * * * * * ** u G E  S a n * * ** B a S O j o M E n K & * n * I  EI dz w a ** * w * a n D e ** * * * ** * Z E W  e m a * * J U w I L e * * * * j * 
+Eval: D D      S    D S   I     D D D D D D    I S  S     D D D  S   S S     S S   I   D   D S  S         D  D   D     S   D  D D D D  D S S S        D D S S   S S   D D D D   D 
+
+id: (swahili_140826_356959-38)
+Scores: (#C #S #D #I) 22 24 24 1
+REF:  TSH A N S I j A KH U PH I G W a P I TS & N A P I & KH U TH A KH U w A n a M a S w a L I j A TH A U L I Z w * A n a w a TH U w A TH a O n E KH A n a KH w A 
+HYP:  *** J O Z E j * ** * &  K O Z a L E J  & * * * T & ** * ** * ** K w I n a * a M w a F O j * ** * * * & N w J O n a w a ** S w * ** a * n I K  & n a ** w * 
+Eval: D   S S S S   D D  D S  S S S   S S S    D D D S   D  D D  D D  S   S     D   S     S S   D D  D D D S S   I S         D  S   D D    D   S S  S     D    D 
+
+id: (swahili_140826_356959-39)
+Scores: (#C #S #D #I) 21 17 9 5
+REF:  TH E l E V i s e n i n A R EI D i * * * OU l A KH i n i S a * a KH U M I n A M B I L i N dz I o n i n * D  I O 
+HYP:  F  A l * * i s e n i n & T I  T i J U F E  l * E  i n i J a F a ** * K ^ n * * * & T i * dz J o n i n F DZ E L 
+Eval: S  S   D D             S S S  S   I I I S    D S        S   I   D  D S S   D D D S S   D    S         I S  S S 
+
+id: (swahili_140826_356959-40)
+Scores: (#C #S #D #I) 15 17 12 3
+REF:  O O I KH U PH e A n A  TH u Z O Z I n a * Z o A N Z a b AI H i G A H m a R & N~ I n G i * w * A TH u 
+HYP:  * * * ** * L  e * n DZ J  u * * * E n a N G o J & B a b A  M i * * J m a H U M  U n * i J w O R T  u 
+Eval: D D D D  D S    D   S  S    D D D S     I S   S S S     S  S   D D S     S S S  S   D   I   I S S    
+
+id: (swahili_140826_356959-41)
+Scores: (#C #S #D #I) 32 23 15 6
+REF:  a m a U s u s a n I W A A f R i KH A TH u KH i S E m A KH W A U  JJ u m L a TH u N A D a m i n i s a N & V i TH U v J A N DZ E  L  a KH i n i V J E TH u * * * * * * 
+HYP:  a m a * s u s a n * * * O f * i K  & T  u T  i * * m * ** U K OU D  u m * a F  u * M F a m i n i s a M & T i T  & v * * * I  N~ JJ a T  i n i * Z I T  u W I B I F A 
+Eval:       D           D D D S   D   S  S S    S    D D   D D  S S S  S      D   S    D S S               S   S   S  S   D D D S  S  S    S        D S S S    I I I I I I 
+
+id: (swahili_140826_356959-42)
+Scores: (#C #S #D #I) 30 17 17 2
+REF:  H A TH U D A m i n i s a n & KH w a M f a n o H i KH i w A n i TH u Z O Z A v M A H i * KH I W A n i TH u Z O Z a * o s K E& w E N G i w A 
+HYP:  * * ** * * * m i n i s a n * A  w a N f a n o F i T  i w E n i J  u * * G & v * * * i M E  J T U n i F  u * * G a B o s * A  w * I L i w * 
+Eval: D D D  D D D               D S      S         S   S      S     S    D D S S   D D D   I S  S S S     S    D D S   I     D S    D S S     D 
+
+id: (swahili_140826_356959-43)
+Scores: (#C #S #D #I) 26 23 12 2
+REF:  W A TH A JJ i TH O l e A w A KH E TH i H a J i * a s U B u H i * m a s A a k A M & S A a s I TH A J A A s U B U H i KH u th I Z a m a 
+HYP:  * * K  & T  i T  U l e W w I K  & T  i J a D i J a s * M u * i M m a s * a k * * & * M a s * ** * & T I s * & S W i J  u th A D a m a 
+Eval: D D S  S S    S  S     S   S S  S S    S   S   I     D S   D   I       D     D D   D S     D D  D S S S   D S S S   S       S S       
+
+id: (swahili_140826_356959-44)
+Scores: (#C #S #D #I) 23 19 12 4
+REF:  v * m A a m a * o s K E& Z N I KH W A N i N i * u * N a D A n i w a TH u w A a F R I KH A W E N G  i H A W A D a m i n I 
+HYP:  v I m * a m a N o s * ** * T & F  G O L i M i J u M W a W E n i w a T  u w * a * * * ** S & T O N~ i * * J O F a m i n * 
+Eval:   I   D       I     D D  D S S S  S S S   S   I   I S   S S         S      D   D D D D  S S S S S    D D S S S         D 
+
+id: (swahili_140826_356959-45)
+Scores: (#C #S #D #I) 33 24 21 7
+REF:  v i TH U A m B A V J o * w E N z A o * k A M & H a PH A o s t R EI L j & a m A H A t & a F R i KH a * w a n A f A N~ A KH U W E Z a KH U o N~ E s A U  TH A m A J u n i n a * * * * 
+HYP:  v i ** S O m * * * * o U w * A z * o F k * * & M a ** B o s t * ** O j * a m * * & t * a * S i K  a S w a n I f * ** & N  E G O D a ** V o N  I s * OU T  & m U D u n i n a F U Z O 
+Eval:     D  S S   D D D D   I   D S   D   I   D D   S   D  S       D D  S   D     D D S   D   D S   S    I       S   D D  S S  S S S S   D  S   S  S   D S  S  S   S S           I I I I 
+
+id: (swahili_140826_356959-46)
+Scores: (#C #S #D #I) 19 18 14 6
+REF:  P I & TH a L a N TH a Z A W A A f R i KH A W E N Z a O u m e s E M A KH w E L i N a TH u * ** * * m E JJ i U l i * * Z a 
+HYP:  * * * J  a S a * W  a N T & G O f * i ** * * G O D a F u m e s * * * O  w * * i J a L  u S AI K & m I M  i * l i N D A a 
+Eval: D D D S    S   D S    S S S S S   D   D  D D S S S   S         D D D S    D D   S   S    I I  I I   S S    D     I I S   
+
+id: (swahili_140826_356959-47)
+Scores: (#C #S #D #I) 19 30 10 4
+REF:  H a J o M A S W A L i V AI L w A TH U w A n a N I s e * M e J O N TH V l J U D & M s e l V Z E Z m ^ TS E z W A n a V * l * * J U 
+HYP:  W a F o * L I J U F i L E  J w E R  I w * n a * * s e N G e * F A M  B l * I G E N s e l * * * I m A Z  A z * O n a F A l I M F A 
+Eval: S   S   D S S S S S   S S  S   S S  S   D     D D     I S   D S S S  S   D S S S S       D D D S   S S  S   D S     S I   I I S S 
+
+id: (swahili_140826_356959-48)
+Scores: (#C #S #D #I) 29 20 9 3
+REF:  m a O N~ E s O M E n g i n e J A w A TH U w A M e TH o KH a * & M e r i k & a m a * U KH L A KH i n I H i j * O S a s a H a m & 
+HYP:  m a * N  I s & L I n g i n e * * w * E  S w * * e S  o F  a J A L e r i k * a m a J S EI T & T  i n * * i j & V J a s a F a m A 
+Eval:     D S  S   S S S           D D   D S  S   D D   S    S    I S S         D       I S S  S S S      D D     I S S       S     S 
+
+id: (swahili_140826_356959-49)
+Scores: (#C #S #D #I) 22 26 13 1
+REF:  w A N A M e n TH A L   i TH i TH u N A TH a KH a KH U B a N D I l i s a H i L I w A TH U W A A n Z e w a * TH U W EI L W A m E TH o KH a 
+HYP:  w * * * * e n I  N TSH i L  i F  u * * L  a Z  a ** F J a * * * l i s a S i * J w * E  Z O M U n D e w a F I  S I F  U N O m * JJ o K  a 
+Eval:   D D D D     S  S S     S    S    D D S    S    D  S S   D D D         S   D S   D S  S S S S   S       I S  S S S  S S S   D S    S    
+
+id: (swahili_140826_356959-5)
+Scores: (#C #S #D #I) 20 23 18 2
+REF:  * U N a s * I KH i Z A i D A A J a KH i S W A H i L i J A s B S s w & H I L i TH O KH A H a PH a s i J n I O s t R EI L J & TH U KH I 
+HYP:  O S W a s W E R  i * S i * * U N a T  i V E F R i N i * E s * I s w * * * * i ** * T  U G a B  a s i * n * A s t * ** * M & ** * K  T 
+Eval: I S S     I S S    D S   D D S S   S    S S S S   S   D S   D S     D D D D   D  D S  S S   S        D   D S     D D  D S   D  D S  S 
+
+id: (swahili_140826_356959-50)
+Scores: (#C #S #D #I) 20 16 19 5
+REF:  * e * Z m ^ TS V * * l * j U E Z TH u N a W e Z a PH a TH i A w a TH U W EI l W E n g i n E W A KH U b A W A KH U TH o KH A a M E 
+HYP:  G e F A m A TH S B A l I j * * * ** u L a L e B a F  a S  i * w a ** * * ** l * I n g i n * * & K  O b * * * ** O Z  o ** K a * * 
+Eval: I   I S   S S  S I I   I   D D D D    S   S   S   S    S    D     D  D D D    D S         D D S S  S   D D D D  S S    D  S   D D 
+
+id: (swahili_140826_356959-6)
+Scores: (#C #S #D #I) 28 26 25 3
+REF:  TH A n G a Z a KH U PH I TH I A m i TH A b E n d i J A e F E m n A KH W E N~ E M TH A n d A O P i * & U n A W E z a PH a TH A m a E L E Z O J a Z i A j * * A n a m A KH A L A 
+HYP:  ** * n * a D a ** * ** * K  T E m i T  & b I n d i * * e * S m n * ** & K U  N N T  & n d * E W i J & * n * * U z a B  a T  & m a * * * * * D a D i * j & T & n a m * ** * & T 
+Eval: D  D   D   S   D  D D  D S  S S     S  S   S       D D   D S     D D  S S S  S S S  S     D S S   I   D   D D S     S    S  S     D D D D D S   S   D   I I S       D D  D S S 
+
+id: (swahili_140826_356959-7)
+Scores: (#C #S #D #I) 25 25 7 6
+REF:  * * m e n g i n E m e n g i Z a i J i KH W E N~ E TH O F U TH i J E TH u A m B A J O N i * W W W d A t * s * B s D A t * KH o m J O 
+HYP:  L A m e n g i n I m e n g i D a i D i ** J O J  & T  & T & T  i * * T  u * m * & D E B i D A B I d U t E s K & s * * t & K  o m B I 
+Eval: I I             S           S     S   D  S S S  S S  S S S S    D D S    D   D S S S S   I S S S   S   I   I S   D D   I S      S S 
+
+id: (swahili_140826_356959-8)
+Scores: (#C #S #D #I) 25 28 15 0
+REF:  TH OU F O R W E& D S L s s W & h i l I P i & K j U n & P I TS & n a m a kh a l a m E n G i N e Z a I J i KH W E N~ E u KH U R A s A W E TH U W A 
+HYP:  ** PH I J U V U  R T A s s * O h i l * * i * * j A n * A N S  & n a m a kh a l a m I n D i M e D a N D i ** * * ** J u ** N K & s * * * &  T & T 
+Eval: D  S  S S S S S  S S S     D S       D D   D D   S   D S S S                       S   S   S   S   S S   D  D D D  S   D  S S S   D D D S  S S S 
+
+id: (swahili_140826_356959-9)
+Scores: (#C #S #D #I) 26 25 18 4
+REF:  B O O KH a m b a O n i * * * W W W d * A t F EI s b u k D A T KH O  m f O R w E& D s L S s b S s W & H i L i A M b a PH O  u n A W E Z A U KH A TH U PH e N 
+HYP:  * * S U  a m b a W n i D A B R B I d U R t T E  s b u k * * & K  OU m f * U w T  A s * E s b I s * O R i N i * * b a ** KH u n * * * * * * ** K &  K P  e * 
+Eval: D D S S          S     I I I S S S   I S   S S          D D S S  S      D S   S  S   D S     S   D S S   S   D D     D  S      D D D D D D D  S S  S S    D 
+
+Speaker sentences   1:  swahili_140902_358351   #utts: 14
+id: (swahili_140902_358351-10)
+Scores: (#C #S #D #I) 40 25 14 0
+REF:  H A TH A KH U PH I TH I a m o jj a KH W A m o jj a M b i l A KH u tsh E l e w a M a TH U m i z i J A kh O m PH U TH A kh W A m a s o m O J A R a s a n i J A n A e n d E L E 
+HYP:  * * S  & T  & K  F K  J a m o jj a ** G O m o jj a * b i l & K  u tsh I l e w a W a T  I m i z i * * kh U m P  I T  & kh * U m a s o m * * U N a s a n i * * n * e n d * * I 
+Eval: D D S  S S  S S  S S  S            D  S S          D       S S        S         S   S  S         D D    S   S  S S  S    D S           D D S S           D D   D       D D S 
+
+id: (swahili_140902_358351-11)
+Scores: (#C #S #D #I) 51 11 23 2
+REF:  l E A kh u O n g E N Z e * KH a H I j O I n a m A A N a kh w a m b a m A A n d i s I J  A m kh o n o J A n A E n d E l e A kh u W A h a b a M TH I n d o * h U O u m E s A b a b i s 
+HYP:  l * I kh u * n g * I V e K R  a * * j * E n a m * * * a kh w a m b a m * & n d i s U KH O m kh o n o * I n * * n d I l e * kh u * * h a b a * ** * n d o W h * * u m * s * b a b i s 
+Eval:   D S      D     D S S   I S    D D   D S       D D D                  D S         S S  S            D S   D D     S     D      D D         D D  D       I   D D     D   D           
+
+id: (swahili_140902_358351-12)
+Scores: (#C #S #D #I) 37 11 22 1
+REF:  a b A a D i J A w A TH A a l a m U W A E l i m u KH U a n Z A KH U JJ I u l i z a K  a m & J E s TH u R I H i J O j a z a m a n * i i m E F i KH i A 
+HYP:  a b * a L i * * w * ** * a l a m * * * O l i m u ** W a n * * D  & K  J u l i z a KH a m * * A s ** u * * L i * * j a z a m a n I i i m * * i F  i * 
+Eval:     D   S   D D   D D  D         D D D S         D  S     D D S  S S  S           S      D D S   D    D D S   D D               I       D D   S    D 
+
+id: (swahili_140902_358351-13)
+Scores: (#C #S #D #I) 36 19 21 2
+REF:  I A KH I KH o m O TSH A KH E KH A TH i KH A s u l e J A s E T i n d * * R u KH a T E J R o m JJ i n i s I D n i w A N a f u N Z i W A n A JJ I f u n z a s EI k S p i R 
+HYP:  * * J  & K  o m * U   S &  K EI K R  i ** * s u l e * * s * * i n d E N T u G  a * F I T o m ** i n i s * * n i w * * a f u * L i * U n * ** D f u n z a s E  k * p i * 
+Eval: D D S  S S      D S   S S  S S  S S    D  D         D D   D D       I I S   S    D S S S     D          D D       D D       D S   D S   D D  S             S    D     D 
+
+id: (swahili_140902_358351-14)
+Scores: (#C #S #D #I) 34 20 10 1
+REF:  E h i L OU n i f u n Z o l a kh a r N e z a K   EI l KH A  TH i KH A J A R a s a l A KH I s a s a N T & N I s a R G E TH N i m W A n a f u * 
+HYP:  * h i J O  n i f u n G o l a kh a r M e z a TSH A  l ** EI T  i ** * K & N a s a l * E  K s a s a * * * R E s a * J I S  M i m * U n a f u N 
+Eval: D     S S            S              S       S   S    D  S  S    D  D S S S         D S  S         D D D S S     D S S S  S     D S         I 
+
+id: (swahili_140902_358351-15)
+Scores: (#C #S #D #I) 32 23 13 0
+REF:  Z I KH A TH i KH A J A  R a s a l A TH i s a J E j E u TH U m I A I PH A J i J EI k PH A m o jj a n a kh A l a m U N a kh A R a th a s I J A  R a s a 
+HYP:  * * ** * L  i K  & T E& D a s a l & T  i s a * * j * u K  & m * E K EI P D i K E  k ** & m o jj a n a kh I l a m W M a kh * * a th a s * * AI D a s a 
+Eval: D D D  D S    S  S S S  S         S S        D D   D   S  S   D S S S  S S   S S    D  S                 S       S S      D D          D D S  S       
+
+id: (swahili_140902_358351-18)
+Scores: (#C #S #D #I) 36 17 25 4
+REF:  N Z I J A R a s a n I R I TS E& D f O R  d a m e KH U w a m W A l i m u KH w a z a I J i J A m i A KH A KH U m I n A th a n O a m E s E m A KH U w a KH A TH i KH A U  o * * * * 
+HYP:  * * * * * D a s a n * * * ** DZ & f * OU d a m e ** * w a m * O l i m u ** w a z a * D i * * m i * &  K &  K m * n I th a n * a m * s I m * ** O w a ** K T  i ** K AU o K & T U 
+Eval: D D D D D S         D D D D  S  S   D S          D  D       D S         D          D S   D D     D S  S S  S   D   S        D     D   S   D D  S     D  S S    D  S S    I I I I 
+
+id: (swahili_140902_358351-19)
+Scores: (#C #S #D #I) 22 9 8 12
+REF:  u O a m E s u H U J i A m A PH i n d u Z I J A KH i J i JJ i TH a l i ** s u * * * * l e * n * * * * * * I 
+HYP:  u * a m * s u * N D i * m & T  i n d u * * * * L  i R i B  i T  a l i EI s u L E M I l e A n O F U S E J A 
+Eval:   D     D     D S S   D   S S          D D D D S    S   S    S        I      I I I I     I   I I I I I I S 
+
+id: (swahili_140902_358351-22)
+Scores: (#C #S #D #I) 41 26 12 0
+REF:  Z i w a n A TH E m B e A n a V i f A a H I  v j O s i kh u H i z I W A n a f u N Z i U a m a s i s W A kh u l e TH A n A KH U TH U m i A TH E TSH N O l O G  i A w A n A 
+HYP:  L i w a n & K  & m * e * n a L i f * a R EI v j U s i kh u R i z * * U n a f u * L i W a m a s i s * O kh u l e K  & n * ** K T  & m i * J  & T   T I l U JJ i * w * n & 
+Eval: S         S S  S   D   D     S     D   S S      S          S     D D S         D S   S             D S          S  S   D D  S S  S     D S  S S   S S   S S    D   D   S 
+
+id: (swahili_140902_358351-23)
+Scores: (#C #S #D #I) 28 28 23 0
+REF:  z O ph e N D A TSH I n I J a TSH I N i J A s I r & i n A J O TH U m i KH A KH I TH A  i f a I JJ U L  i KH A n a J O K  a m & l e TH A V I f A a v J A KH O J A  KH TH A TH i f i 
+HYP:  z A ph e * * * *** * n * * a *** * S i M E s E r * i n * * * &  T m i ** K &  K T  EI i f a * ** N DZ i F  & n a * * KH a m A l e ** * T & f * a v * * I  & K OU D  T  E L  i f i 
+Eval:   S      D D D D   D   D D   D   D S   S S   S   D     D D D S  S     D  S S  S S  S        D D  S S    S  S     D D S      S     D  D S S   D     D D S  S S S  S  S  S S        
+
+id: (swahili_140902_358351-24)
+Scores: (#C #S #D #I) 36 18 17 0
+REF:  L L L a m B A R TH A n A TH o KH A m a m l a kh A j a m TH A A L a TH a T m i N i n A TH A a r i f a n TSH i n i O s t r EI l J & I n a J O JJ U l i KH A 
+HYP:  * * W a m * * & T  & n * T  o K  & m a m l a kh E j a m ** * * * a T  a F m i M i n * ** T a r i f a n TS  i n i A s t r I  l * * E n a * * ** * l i K  & 
+Eval: D D S     D D S S  S   D S    S  S              S       D  D D D   S    S     S     D D  S             S         S       S    D D S     D D D  D     S  S 
+
+id: (swahili_140902_358351-25)
+Scores: (#C #S #D #I) 29 15 11 4
+REF:  N A P I & k A m & a kh A R A a M E s E m A kh u W A s u l E n TSH i n i z i kh O kh W E N~ E a w A m u * j A m PH i TH o * * * 
+HYP:  * * H K & k & m * a kh * * * a N I s * m U kh u * * s u l I n TS  i n i z i kh U kh U N I  J a w * m u W j & m ** i T  o R I S 
+Eval: D D S S     S   D      D D D   S S   D   S      D D       S   S                S    S S S  S     D     I   S   D    S    I I I 
+
+id: (swahili_140902_358351-29)
+Scores: (#C #S #D #I) 38 21 18 4
+REF:  A l i s e m A J A KH I TH A r i l a m B A r TH J A KH I TH A R I  s t E& N l i R a b i n * * ** O V i TH n d i j e A n A u s i KH A n A i J A r a TH A t m i n * n A KH U TSH O 
+HYP:  * l i s e m * * * &  T &  T r i l a m * * r ** * * ** * T  & T EI s t ** I l i L a b i n A B EI T S i ** n d i j e * n * u s i K  & n * i B E r a K  & t m i n I n * ** & K   T 
+Eval: D           D D D S  S S  S           D D   D  D D D  D S  S S S      D  S     S         I I I  S S   D            D   D       S  S   D   S S     S  S         I   D D  S S   S 
+
+id: (swahili_140902_358351-30)
+Scores: (#C #S #D #I) 44 12 19 1
+REF:  TH o A th A a r i f a kh A TH i KH  A s I r i KH A l A a kh A R A a m E s E m a kh U w a B A a J A J A m u J A TH a t m i N i z i n a * Z o A n d i kh W A kh w a m 
+HYP:  Z  o * th * a r i f a kh * ** i TSH E s * r i ** K l * a kh * * * a m * s * m a kh * w a * M a * N D E m u * * D  a t m i M i z i n a L U o * n d i kh * U kh w a m 
+Eval: S    D    D              D D    S   S   D     D  S   D      D D D     D   D        D     D S   D S S S     D D S          S           I S   D          D S          
+
+Speaker sentences   2:  swahili_141216_380121   #utts: 33
+id: (swahili_141216_380121-16)
+Scores: (#C #S #D #I) 35 17 9 0
+REF:  s a s a W A m e A N Z a U tsh u N G u Z i r a s m i KH W a TH U KH I O l a m A TH e KH A k EI t i k EI t I j A m jj i w a s I d N i 
+HYP:  s a s a * O m e * * D a * tsh u * M u L i r a s m i ** * a T  & K  J U l a m & T  e K  & k &  t i k &  t * j & m jj i w a s & d * i 
+Eval:         D S     D D S   D       D S   S             D  D   S  S S  S S       S S    S  S   S        S    D   S              S   D   
+
+id: (swahili_141216_380121-17)
+Scores: (#C #S #D #I) 30 20 7 5
+REF:  * KH A m i s E n A W A PH O l i s i * n d R u Z KH I ph E o n A M e * o N~ A w a TH u w * * A W E w a TH u l i v u w A n a PH O S  I 
+HYP:  I K  & m i s I n * * O V  U l i s i E n d * u S K  & ph J o n * * e N o N  I w a T  u w I L U I K w a T  u l i v u w O n a ** * KH U 
+Eval: I S  S       S   D D S S  S         I     D   S S  S    S     D D   I   S  S     S      I I S S S     S              S     D  D S  S 
+
+id: (swahili_141216_380121-18)
+Scores: (#C #S #D #I) 15 10 1 18
+REF:  s U b i r i m A TH O KH E o j A U tsh U n g u Z i H u * * * * * * * * *** * * * * * o *** * * * 
+HYP:  s I b i r i m & T  & K  & o j * O tsh I n g u L i J u W I S I S A L O TSH I N D I N o TSH I L I 
+Eval:   S           S S  S S  S     D S     S       S   S   I I I I I I I I I   I I I I I   I   I I I 
+
+id: (swahili_141216_380121-21)
+Scores: (#C #S #D #I) 23 9 12 13
+REF:  * * * * * * TH U TH a * * * * * * * tsh u N G u z A U kh W E l i w O TH e n A TH U TH a W A PH a s a th A a r i f A H a r a 
+HYP:  & K ^ W O N D  A N  a R I J & K T O tsh u * M u z * O kh * U l i w * ** e n * ** * ** a K T O  a s a th * a r i f * * a r a 
+Eval: I I I I I I S  S S    I I I I I I I       D S     D S    D S       D D      D D  D D    S S S           D         D D       
+
+id: (swahili_141216_380121-22)
+Scores: (#C #S #D #I) 26 27 13 1
+REF:  KH A I W E Z E KH A n V J O KH w a s a s A TH U N A PH a s W A kh u f I KH I r i * a m a s L A I J  A m A TH E KH A a l i s E m A KH A m I s N a 
+HYP:  ** * * K & L & K  & n * A H I  w a s a s * &  T M & P  a s * O kh u f * ** K r i J a m a s * * * AI & m & T  I K  R a l i s & m & K  & m * s * a 
+Eval: D  D D S S S S S  S   D S S S            D S  S S S S      D S        D D  S     I         D D D S  S   S S  S S  S         S   S S  S   D   D   
+
+id: (swahili_141216_380121-23)
+Scores: (#C #S #D #I) 27 24 13 3
+REF:  W a PH o l i s i * * n D R u * Z KH I PH E O n i m A TH E KH A W A  l i o f A r i KH I KH A TH i KH A TH U KH I O H i l OU n i t o R I DZ a n s & N 
+HYP:  * a B  o l i s i J E n * T u L S K  & K  J A n i m * ** * S  I K AU l i o f * r i K  & K  & T  i ** * ** K &  T K R i l U  n i t o * * JJ a n s * * 
+Eval: D   S            I I   D S   I S S  S S  S S       D D  D S  S S S          D     S  S S  S S    D  D D  S S  S S S     S          D D S        D D 
+
+id: (swahili_141216_380121-24)
+Scores: (#C #S #D #I) 37 17 21 3
+REF:  s O n A m b a j E a l i KH U W A m E n e jj A W A l i n k K * F ei m W E N~ E u M R I W A m I A KH a T e L a t i * * N i n a M I n N e n a m W A N A s E r i A M 
+HYP:  s A n & m b a j * a l i ** * K O m * n e jj * * O l i n k T A S ei m * * ** * u * * * N O m * * ** a N e K a t i L E T i n a * * n M e n a m * * * O s A r i J O 
+Eval:   S   S         D       D  D S S   D        D D S         S I S      D D D  D   D D D S S   D D D    S   S       I I S       D D   S         D D D S   S     S S 
+
+id: (swahili_141216_380121-25)
+Scores: (#C #S #D #I) 30 18 21 1
+REF:  W E N~ E u M R i W A m I A KH a T e L A T I N i N A N a N e k & t R i n * & J o R s O n a m b A J  E P I & n i m a m & a l i J E A TSH a w A TH O 
+HYP:  * * ** * u * N i * O m * * B  a M e * * * K & i * T M a M e k & t * i n A N D o * s A n a m b * EI T K J & n i m a m * a l i * * H S   a w * ** * 
+Eval: D D D  D   D S   D S   D D S    S   D D D S S   D S S   S         D     I S S   D   S         D S  S S S             D       D D S S       D D  D 
+
+id: (swahili_141216_380121-26)
+Scores: (#C #S #D #I) 27 18 16 3
+REF:  * TH o W A TH A TH u m W A n a U m E m W E N~ E u M R i W A m I a KH A H A m s i n i A l i J E tsh u KH U A w a TH u m * A TH E KH a m * n 
+HYP:  R T  o * R T  & T  u m * U n a * m * m * * ** * u * N i * O m * a M  E K & m s i n i * l i * * tsh u ** W E w a ** u m & T I  K R  a m & n 
+Eval: I S    D S S  S S      D S     D   D   D D D  D   D S   D S   D   S  S S S           D     D D       D  S S     D      I S S  S S      I   
+
+id: (swahili_141216_380121-27)
+Scores: (#C #S #D #I) 25 17 8 1
+REF:  * E R & N m o n i s N a j E P i & a l i U A w a b A a J a J A U V a m i z i H u O W O TH E w a TH A TH u 
+HYP:  M A H A M m o n i s M a j & T i J a l i W I w a b * a D a * N E L a m i z i * u * * * ** * w a T  & T  u 
+Eval: I S S S S           S     S S   S       S S       D   S   D S S S           D   D D D D  D     S  S S    
+
+id: (swahili_141216_380121-28)
+Scores: (#C #S #D #I) 36 13 22 1
+REF:  W A l I TH A m B u l i W A KH u w a w A m e f A r i KH i B A A J A J A kh u f I KH i s w a h o s I PH I TH A l i N i w a th u W A N n E P i & W a * L i 
+HYP:  * U l * K  & m * u l i * * ** u w a w * m e f * r i T  i * * * * T D I kh u f * ** i s w a h o s * ** * K  T l i M i w a th u * * * n * * i K J a W J i 
+Eval: D S   D S  S   D       D D D          D       D     S    D D D D S S S        D D                D D  D S  S     S            D D D   D D   S S   I S   
+
+id: (swahili_141216_380121-29)
+Scores: (#C #S #D #I) 32 19 16 2
+REF:  JJ E R u * i w A H a KH I W E m O m W a n a M KH E M m o jj A A l i J E PH A TH A JJ E r * U i b E g A n i N A KH w a r i s a s i PH a m O jj A N a 
+HYP:  ** * F u L i w * * a ** * T U m U m * a n a * N  K & m o jj * E l i * * ** * P  T &  D r W I i b I g E n i M E R  w a r i s a s i ** a m U jj * * a 
+Eval: D  D S   I     D D   D  D S S   S   D       D S  S S        D S     D D D  D S  S S  S   I S     S   S     S S S                  D      S    D D   
+
+id: (swahili_141216_380121-30)
+Scores: (#C #S #D #I) 42 13 15 1
+REF:  O f i s A W a PH o l i s i * w A KH i u m e A m b A J e P I & a l i PH O KH E A m a jj e r A a U s o n i KH W a v i PH a n d e V J A R I s a s i V i 
+HYP:  * f i s * * a B  o l i s i J w * ** i u m e * m b * W e * * J a l i ** G U  K R m a jj e r * a L s o n i ** N a v i P  a n d e * * * Z E s a s i L i 
+Eval: D       D D   S            I   D D          D     D S   D D S       D  S S  S S            D   S         D  S       S          D D D S S         S   
+
+id: (swahili_141216_380121-31)
+Scores: (#C #S #D #I) 26 17 16 2
+REF:  l I O m G o n g a h A l I H i j o I L i * a N Z A J  A KH i KH A TSH A KH E KH a b l A J A s A a n * n E JJ U m A A t A t U a s U 
+HYP:  l * U m B o n g a h E l * * i j o F R i D a * S T E& & T  i ** * *** * ** * K  a b l * * E s * a n I n * D  I m * & t & t W a s * 
+Eval:   D S   S           S   D D       S S   I   D S S S  S S    D  D D   D D  D S        D D S   D     I   D S  S   D S   S   S     D 
+
+id: (swahili_141216_380121-32)
+Scores: (#C #S #D #I) 26 24 17 1
+REF:  B u * H i j A TH A R E H E  KH U m I n A TH a N O J i s E m b A W A KH a TH I w a TH U KH U m I N A s a b & W a l i TSH U KH u l i w a m A TH E KH A 
+HYP:  M u L I i j * ** * * & T EI K  O m * n & T  a M U D i s * m b * * * ** a ** * w a K  T O  R m * L E s a b * * a l i *** * J  u l i w a m & T  I K  & 
+Eval: S   I S     D D  D D S S S  S  S   D   S S    S S S     D     D D D D    D  D     S  S S  S   D S S       D D       D   D S              S S  S S  S 
+
+id: (swahili_141216_380121-33)
+Scores: (#C #S #D #I) 35 16 20 1
+REF:  n d A n i J A l i n k K F ei KH A TH i KH A E N e O l a m A R t I N P l EI s m JJ i N i s i D n i * o s t r EI L J & H A l i H I I i l i f I KH i A KH I 
+HYP:  n d & n i * * l i n k & T ei ** K R  i ** * * M e * l a m * & t * * M l E  s m ** i M i s i * n i J o s t r ** * * * * I l i * E R i l i f * ** i K &  T 
+Eval:     S     D D         S S    D  S S    D  D D S   D       D S   D D S   S      D    S       D     I         D  D D D D S     D S S         D D    S S  S 
+
+id: (swahili_141216_380121-34)
+Scores: (#C #S #D #I) 35 22 18 1
+REF:  l E l E b A A J A m a s A a KH U m I N A s i TH A W A KH A TH I PH o l i s i * w A l i PH o V A m I a J u KH A H i l OU KH W A b u n d u KH i n a m A G U R u N e 
+HYP:  l I l I b * * R E m a s * a ** * m * * * s i ** * T & K  & K  & B  o l i s i S w * l i B  o * * m J a B u ** K R i l ** U  K O b u n d u PH i n a m * * * B u M e 
+Eval:   S   S   D D S S       D   D  D   D D D     D  D S S S  S S  S S            I   D     S    D D   S   S   D  S S     D  S  S S           S          D D D S   S   
+
+id: (swahili_141216_380121-35)
+Scores: (#C #S #D #I) 33 16 19 1
+REF:  TH i W A z I R i m KH U u W A n J U s AU T W EI L Z m AI k b e r D A m E s E m A kh W a m b a TH E n d O H i L OU l A u * o V u N i L l a m TH u m 
+HYP:  K  i N U z * * i m ** G u * * n * I s ** * A V  O S m &  k b e r * & m * s * m O kh U a m b a ** * n d * R i * ** l * u W o F u M i * l a m ** u m 
+Eval: S    S S   D D     D  S   D D   D S   D  D S S  S S   S          D S   D   D   S    S         D  D     D S   D D    D   I   S   S   D       D      
+
+id: (swahili_141216_380121-36)
+Scores: (#C #S #D #I) 32 20 21 0
+REF:  PH A m O JJ A t u B w A n a b e r D A m e W A o m b A W a U s TH R a L i A w o TH E W A U n g a N e n A W A s A I J  I A n e KH A TH I KH A KH I PH i n d i 
+HYP:  ** * m U D  & t u * w * n a b e r * & m e * * o m b * * a L s ** * a D i * w o R  T I K O n g a M e n * * O s * * AI D E n e ** * ** * ** K &  K P  i n d i 
+Eval: D  D   S S  S     D   D           D S     D D       D D   S   D  D   S   D     S  S S S S       S     D D S   D D S  S S     D  D D  D D  S S  S S          
+
+id: (swahili_141216_380121-37)
+Scores: (#C #S #D #I) 3 8 0 16
+REF:  ** * * * * * * * H i KH i * * * * * * * KH i * N G U M U 
+HYP:  TS I K & G U M O L i JJ i W E W A R A H I  i S I W I S W 
+Eval: I  I I I I I I I S   S    I I I I I I I S    I S S S S S 
+
+id: (swahili_141216_380121-43)
+Scores: (#C #S #D #I) 28 15 18 1
+REF:  m a * i R J E r & N m o n i s h A kh U w a N G E n i KH W A M A m l a KH a j a O s T R EI L J &   A l i TH A M b U l I W A m a R & 
+HYP:  m a N i * * * r * O m o n i s h I kh * w a M J I n i ** * * K O m l a TH a j a U s * * ** * * TSH I l i E  L U b * l * * U m a * * 
+Eval:     I   D D D   D S             S    D     S S S     D  D D S S       S        S   D D D  D D S   S     S  S S   D   D D S     D D 
+
+id: (swahili_141216_380121-44)
+Scores: (#C #S #D #I) 33 17 21 2
+REF:  J A k * W a N Z & m N a m o M W A kh A W a E L f u m b i l i n A KH U m i A l i PH O F U N G u l I W A m a s TH a KH a J A KH U TH u m a b A R U A z a * 
+HYP:  L E k O D a * * * m * a m o * * * kh * * a * * f u m b i l i n & K  O m i * l i ** * * * S M u l * * O m a s T  a K  a * N &  K T  u m a b * * L W z a M 
+Eval: S S   I S   D D D   D       D D D    D D   D D                 S S  S     D     D  D D D S S     D D S       S    S    D S S  S S          D D S S     I 
+
+id: (swahili_141216_380121-45)
+Scores: (#C #S #D #I) 34 15 10 4
+REF:  M & t u s i kh W A f A m i L I a Z a W A n a jj e s i * * w a O s t R EI l * J & w A L i O u * A w A n TSH i n I a f G A n s TH A n 
+HYP:  * & t u s i kh * U f & m i * J a D a * O n a jj e s i V U w a * s t * U  l I L E w * * i L u W I w I n S   i n * a f * & n s T  & n 
+Eval: D              D S   S     D S   S   D S              I I     D     D S    I S S   D D   S   I S   S   S       D     D S     S  S   
+
+id: (swahili_141216_380121-46)
+Scores: (#C #S #D #I) 39 11 14 3
+REF:  m W a n A s E R i A W EI K w a z a m a n i m * n * * KH O L E TH E s A m E s E m A kh w a m b a m o n i s A l i KH U w a m TH U A m b a j E 
+HYP:  m * a n I s * * i * * ** * w a z a m a n i m A n I K A  N D I T  I s * m * s * m O kh w a m b a m o n i s I l i ** * w a m ** T O m b a j * 
+Eval:   D     S   D D   D D D  D                   I   I I S  S S S S  S   D   D   D   S                        S     D  D       D  S S         D 
+
+id: (swahili_141216_380121-47)
+Scores: (#C #S #D #I) 34 19 15 5
+REF:  m a f I KH i r a j EI k ** J A L I PH O  TH o s W a kh * ** W A I TH i KH A J i KH A l i * a m b a z O a L I KH U W A A m E a N Z a kh u TH I l i * a m kh a z O 
+HYP:  m a f * ** i r a j &  k EI T E N & K  OU T  o s * a kh U EI T K & D  i S  K H i ** * l i J a m b a z * a * * ** * * G O m * a * D a kh u ** * l i J a m kh a z A 
+Eval:       D D          S    I  S S S S S  S  S      D      I I  S S S S    S  S S   D  D     I           D   D D D  D D S S   D   D S        D  D     I            S 
+
+id: (swahili_141216_380121-48)
+Scores: (#C #S #D #I) 29 16 14 6
+REF:  m & * * * r O N m o R I s A l i s U TH U m I W A P I & * KH W a * * kh u s i r i KH i KH W A U U w A JJ i W  A m KH e w E W A Z a m a n i 
+HYP:  m & N M A r * U m o L E s * l i s * T  & m * * * * * & T K  J a G O kh u s i r i T  i ** * * K O w * ** i JJ U m ** e w I T S W a m a n i 
+Eval:     I I I   D S     S S   D       D S  S   D D D D D   I S  S   I I              S    D  D D S S   D D    S  S   D      S S S S           
+
+id: (swahili_141216_380121-49)
+Scores: (#C #S #D #I) 25 24 14 2
+REF:  PH a m O JJ A n A KH U KH A b i l i W A KH w a m a s TH A KH A A r O b A I  N i KH W A KH U U s i * KH a n a U N~ A N~ A s a jj * i W A KH i JJ E 
+HYP:  ** a m * ** U n * &  K &  M b i l i * * ** w a m a s ** * T  & K r * b * EI M i ** J & K  O W s i A M  a n a O L  I N  E s a jj W i K & D  i ** * 
+Eval: D      D D  S   D S  S S  S         D D D            D  D S  S S   D   D S  S   D  S S S  S S     I S        S S  S S  S        I   S S S    D  D 
+
+id: (swahili_141216_380121-5)
+Scores: (#C #S #D #I) 10 19 9 4
+REF:  * * * U N a E n d E l e A KH U S I KH i Z A i D A A j * A KH i s W A H I L I J A S B S 
+HYP:  O S W A S a M n d I l e * ** * K & F  i * H i * * * j E S P  i s * * E D & K T & M I T 
+Eval: I I I S S   S     S     D D  D S S S    D S   D D D   I S S      D D S S S S S S S S S 
+
+id: (swahili_141216_380121-50)
+Scores: (#C #S #D #I) 38 15 11 1
+REF:  s i * a W A W A n A W A KH E  KH a d A a m n a m o m w a KH a E L F U m b i l i n a m b I L i B W A n a m o n I s a L I KH U w a a m e 
+HYP:  s i J a * N G O n * O L K  EI K  a d * a m n a m o m w a K  a * * * S m b i l i n a m b * * i * J O n a m o n E s a * * M  B w a a m e 
+Eval:     I   D S S S   D S S S  S  S      D                   S    D D D S                   D D   D S S           S     D D S  S           
+
+id: (swahili_141216_380121-6)
+Scores: (#C #S #D #I) 26 17 24 0
+REF:  b E n D I J A e F E m N a kh W E N~ e m TH A n d A o P I & k A m & u n & U W E Z O H U o S o w & K A M & U N a W E Z A u KH a PH a th a m A 
+HYP:  b I n * * G E e S & m * a kh * U N  e m ** & n d * o * J & k & m * u n * * * * * * * * o Z o w * * * * * * S a * G O L u G  a B  a th a m * 
+Eval:   S   D D S S   S S   D      D S S      D  S     D   D S     S   D     D D D D D D D D   S     D D D D D D S   D S S S   S    S           D 
+
+id: (swahili_141216_380121-7)
+Scores: (#C #S #D #I) 17 30 0 2
+REF:  kh a L A KH A m i l i KH W E N~ E  TH O F u TH I J E TH U W W W d a t * s b S D A T KH o m D   A T OU s l * s 
+HYP:  kh a M & K  & m i l i T  I S U  PH J  & T u D  A B I T  & B L I d a t E s b I E S B K  o m TSH I J U  s l A s 
+Eval:      S S S  S         S  S S S  S  S  S S   S  S S S S  S S S S       I     S S S S S      S   S S S      I   
+
+id: (swahili_141216_380121-8)
+Scores: (#C #S #D #I) 31 21 25 2
+REF:  s W & H i l i A  m B A PH o U TH A PH A TH A r A TH i b a PH A m o jj A N a m A KH A L a m E N G i n E a m B A J O TH U m e TSH A PH i s a P EI l * ** TH E m b E l e A P I & 
+HYP:  s * * O i l i EI m * * ** o * ** K T  & T  T r * ** i b a B  O m o jj * * a m * ** & K a m * * L i n * a m * * * * &  T m e *** * Z  i s a R A  l I EI T  & m b * l e * * G E 
+Eval:   D D S       S    D D D    D D  S S  S S  S   D D        S  S        D D     D D  S S     D D S     D     D D D D S  S     D   D S        S S    I I  S  S     D     D D S S 
+
+id: (swahili_141216_380121-9)
+Scores: (#C #S #D #I) 25 18 16 5
+REF:  u KH U r a s A W E TH U W A f EI s B u K W W W D A T f EI S B u k D A t kh o m s l * s * s b * * * s s W & H i l i A  m B A PH O U TH A 
+HYP:  u ** K r a s * * * ** & T O f E  s M u B I T & B I D f ** I F u k * & t kh o m s l A s E s b I G E s s * * O i l i EI m * * ** * * ** * 
+Eval:   D  S       D D D D  S S S   S    S   S S S S S S S   D  S S     D S              I   I     I I I     D D S       S    D D D  D D D  D 
+
+Speaker sentences   3:  swahili_141216_380127   #utts: 27
+id: (swahili_141216_380127-10)
+Scores: (#C #S #D #I) 28 25 28 1
+REF:  TH U L I KH U A TH U m E W A A n d A l i * a TH U Z U N G u m Z E K W  A n Z & n A b AI V I N & s a m O L o N DZ U G  u N A a m B a J E a n F A N~ A KH A z i k E r i B u N A 
+HYP:  ** * * * ** * * &  T m * * * O n d I l i J a ** * * * * * u m * S I KH U n D & n & b I  Z E M A s a m * * o * ** * JJ u L E a m * a * F a n * * &  K &  N z i k * r i M u * M 
+Eval: D  D D D D  D D S  S   D D D S     S     I   D  D D D D D     D S S S  S   S     S   S  S S S S       D D   D D  D S    S S     D   D S     D D S  S S  S       D     S   D S 
+
+id: (swahili_141216_380127-11)
+Scores: (#C #S #D #I) 20 24 9 4
+REF:  E N e O h i l * OU u s i KH A P EI L A m b a O PH O W A TH U w * * a * W I L I w a M E u A w A w A KH i W A m w A N A M 
+HYP:  * M e * h i l O H  u s i ** * * ** K & m b a L I  M & T M  B w E S a M B A B U w a * T u M w E w * ** i J O m w I M U N 
+Eval: D S   D       I S        D  D D D  S S       S S  S S S S  S   I I   I S S S S     D S   S   S   D D    S S     S S S S 
+
+id: (swahili_141216_380127-12)
+Scores: (#C #S #D #I) 23 36 32 2
+REF:  * A TH E KH A PH A m O JJ A n A a l i ** J E W A TH e KH A N~ A r a m W E N~ E W E n A W A n G i n E W E n G I KH I JJ E R U H i W A TH U l I W E Z A KH U m U U l I Z a b AI V i N & S a L i KH O KH U W  
+HYP:  M & T  I K  & T  O m U D  & n * a l i OU T & T & N  e ** * ** * r a m * * ** * * U n & N U n D i n * * O n * * ** * ** * * * * i * N D  & l * * * * & K  & m O M l * * a b ** * i Z E N a S i ** * L  K OU 
+Eval: I S S  S S  S S  S   S S  S   D       I  S S S S S    D  D D  D       D D D  D D S   S S S   S     D D S   D D D  D D  D D D D   D S S  S   D D D D S S  S   S S   D D     D  D   S S S   S   D  D S  S S  
+
+id: (swahili_141216_380127-13)
+Scores: (#C #S #D #I) 26 24 16 1
+REF:  A a l i PH o PH O KH E A TH A n g a Z O kh w a m b a TH u KH i * o H I L OU l i n A F A N~ I KH a n I L i KH U  A KH a Z I N I  N i L i PH O S i KH I 
+HYP:  W a l i B  o M  B U  K & T  & n g a G A kh w a m b a ** u PH i J o * * * ** l i n * * * ** * ** a n * * i K  EI K W  a * * S AI S i H i F  A F i ** V 
+Eval: S       S    S  S S  S S S  S       S S              D    S    I   D D D D        D D D D  D D      D D   S  S  S S    D D S S  S   S   S  S S   D  S 
+
+id: (swahili_141216_380127-14)
+Scores: (#C #S #D #I) 18 17 30 0
+REF:  O F I i S I N i L i G U N D U a KH U TH O KH a M E s A JJ i j EI K KH W E N~ e S I M U i KH i N I u l i Z A K A M & N I k OU S & l a M & U 
+HYP:  * U N i J A W i * i * * * * W a ** * ** * L  a L I s * ** i j ** * ** * * ** e * * * * i W  i * L u l i * * T I T & * * k ** * * l a L A W 
+Eval: D S S   S S S   D   D D D D S   D  D D  D S    S S   D D      D  D D  D D D    D D D D   S    D S       D D S S S   D D   D  D D     S S S 
+
+id: (swahili_141216_380127-15)
+Scores: (#C #S #D #I) 19 19 27 4
+REF:  L I PH O PH a TH A U  JJ U m B E H U O U L i F A N~ a n i n * * * ** i n I l i KH U A KH w e N~ e M I TH i N G j A KH A Z I N I n I L i A M B I a EI EI 
+HYP:  * * B  U F  a ** T OU D  I m * * * * I W W i * * S  a n i n K & K EI i n E l i ** * * PH w e ** e * * H  i * * j * ** * * * * E n * D i * * * J a L  O  
+Eval: D D S  S S    D  S S  S  S   D D D D S S S   D D S          I I I I      S     D  D D S      D    D D S    D D   D D  D D D D S   D S   D D D S   S  S  
+
+id: (swahili_141216_380127-16)
+Scores: (#C #S #D #I) 15 28 15 4
+REF:  N A TH U l I PH O S i KH i A k I L & M TH U a L i * * * A TSH A KH U F A N~ A kh a z i N A A KH A A n Z A KH u A N G A L i * A S i m U 
+HYP:  * * ** F l * ** E R i T  i * k * * D O F  J a N i & N T E J   E K  & T & N  I kh a z i * * L E  K & n D & T  u * * * * R i J E W i m * 
+Eval: D D D  S   D D  S S   S    D   D D S S S  S   S   I I I S S   S S  S S S S  S          D D S S  S S   S S S    D D D D S   I S S     D 
+
+id: (swahili_141216_380127-17)
+Scores: (#C #S #D #I) 26 20 18 5
+REF:  KH U PH a TH A U  JJ U M B e M W I N g i n * E N a b A A J a J e * i l I PH O b A I n i KH A KH w a m b a N i M TH U A m * E tsh U KH u A w a TH u * * 
+HYP:  ** * W  a ** S AI &  D I W e * * L U g i n I S M a b * * * a B e R i l * ** U b * * n i ** * K  w a m b a M i * N  T O m B M tsh * ** u * w a T  u H I 
+Eval: D  D S    D  S S  S  S S S   D D S S       I S S     D D D   S   I     D D  S   D D     D  D S            S   D S  S S   I S     D D    D     S    I I 
+
+id: (swahili_141216_380127-18)
+Scores: (#C #S #D #I) 25 20 10 1
+REF:  M a th e KH A n A a m * E w E KH a B e n d e R a A b a J O i n & m A A J I s I J A KH I A R a b u A m B A J O I n & 
+HYP:  H a th e K  & n * a m & N w * ** a M e n d e W a M b a * W i n A m & N D & s * N & K  R E L a b u * m * * * * & n & 
+Eval: S        S  S   D     I S   D D    S         S   S     D S     S   S S S S   D S S S  S S S       D   D D D D S     
+
+id: (swahili_141216_380127-19)
+Scores: (#C #S #D #I) 19 20 18 1
+REF:  Z I l I KH U F I KH i A s I KH U f I KH I R i A KH W i n G i JJ U  U j * A H i j O M A A J i s i j A KH I A r a B U l A KH i 
+HYP:  * * l * ** * * * ** i * s * K  & f * K  O F i J E  F i n * i ** DZ I j E E L i j A L U N D i s i j * E  J E r a * * l * ** i 
+Eval: D D   D D  D D D D    D   D S  S   D S  S S   S S  S     D   D  S  S   I S S     S S S S S         D S  S S     D D   D D    
+
+id: (swahili_141216_380127-20)
+Scores: (#C #S #D #I) 19 19 26 1
+REF:  l A KH i n i B A A j a J E ei EI n D I O w A TH U W A KH A A n Z a kh U u L i Z A KH W A N i n I H U J U M TH U A M E F A N~ A H i v * j O 
+HYP:  l E PH i n i * * * j a R T ei I  n * * G w * ** * E K &  K & n D a kh * u * i * * T  & K H i n * * * * * * ** * * * * * * T  & N i v I j * 
+Eval:   S S        D D D     S S    S    D D S   D D  D S S S  S S   S      D   D   D D S  S S S     D D D D D D D  D D D D D D S  S S     I   D 
+
+id: (swahili_141216_380127-21)
+Scores: (#C #S #D #I) 20 14 20 1
+REF:  L A KH i N I j A K W A n Z & t U I L i KH U w a w a * TH U w A M E U M I a w A KH O a JJ e A l a f u B A A J A J e 
+HYP:  J & T  i * W j * & T & n D & t * * * i ** K w a w a T O  L w * * * * * * a w * ** * a J  e * l a f u * * * * N D e 
+Eval: S S S    D S   D S S S   S     D D D   D  S         I S  S   D D D D D D     D D  D   S    D         D D D D S S   
+
+id: (swahili_141216_380127-22)
+Scores: (#C #S #D #I) 26 19 27 4
+REF:  N D  i O W A TH U W A n a U l i Z A KH W A N I N i H U J U M TH U A m e f A N~ A h i V J O n a * a m * I n I KH W a m b a * * PH u n d E T U b A a J A J A TH a 
+HYP:  * JJ i * * * ** * F & n a * l i * * ** * D E L L i * * * * * L  K & m e f * ** * h i * N I n a M a m A M n * ** * a m b a B I F  u n d * * I b * a * B K & N  a 
+Eval: D S    D D D D  D S S     D     D D D  D S S S S   D D D D D S  S S       D D  D     D S S     I     I S   D D  D         I I S        D D S   D   D S S S S    
+
+id: (swahili_141216_380127-23)
+Scores: (#C #S #D #I) 32 15 17 9
+REF:  G A Z O H I l OU KH u * TH o * KH A m l I a n Z a KH U jj I a n d A a KH U o n D o KH a o f i s i * KH W E n * D A N~ U m b a n i s i O EI EI w * e * * * * N 
+HYP:  * * * * * * l ** ** u K T  o K &  M m l * a n * a ** * jj * a n d * a ** K o n * o K  a o f i s i N I  G O n & T & N  I m b a n i s i * R  E  w L e R W W I W 
+Eval: D D D D D D   D  D    I S    I S  S     D     D   D  D    D       D   D  S     D   S              I S  S S   I S S S  S               D S  S    I   I I I I S 
+
+id: (swahili_141216_380127-24)
+Scores: (#C #S #D #I) 19 27 20 2
+REF:  N~ E KH A Z i W A L i s e M A TH U a n Z e * KH U TH O KH A KH W A S A b a B u k I l & M TH U A L i KH U A A n a N G O JJ e A K U kh * U s I KH I A 
+HYP:  ** * ** * N i K & N i s e * * ** L a n D e T I  K EI I K  & K  & K T & b a H u k & l & * ** * * T i ** * K & n a * * W J  e * * * kh W A s * ** K R 
+Eval: D  D D  D S   S S S       D D D  S     S   I S  S S  S S  S S  S S S S     S     S     D D  D D S   D  D S S     D D S S    D D D    I S   D D  S S 
+
+id: (swahili_141216_380127-25)
+Scores: (#C #S #D #I) 14 19 16 0
+REF:  A M A I L  i KH U A j U N OU H w ^ N i N S TH A N S i A M A n i N~ i N G i K A M & G A r i l A M o s I 
+HYP:  * * L E EI i K  W E j * * ** O w I L i U L I  L & T i * K & n i W  i * L i * * * * * * r i l * * o s * 
+Eval: D D S S S    S  S S   D D D  S   S S   S S S  S S S   D S S     S    D S   D D D D D D       D D     D 
+
+id: (swahili_141216_380127-26)
+Scores: (#C #S #D #I) 25 20 26 0
+REF:  w A w a N G E PH A TH A m o R i N F O R M EI s & N M M n A m L I PH o PH O KH e A TH A A r i F A J A Z I a N d a kh w a m b a k I L & KH I TH U N I s A 
+HYP:  w L w a * * B I  S AI & m o * i * * * V U L  s * * * E n & m * * B  o B  U G  e * ** * T r i * * * * * S a * d a kh w a m b a k * * & ** * ** K T M s * 
+Eval:   S     D D S S  S S  S     D   D D D S S S    D D D S   S   D D S    S  S S    D D  D S     D D D D D S   D                    D D   D  D D  S S S   D 
+
+id: (swahili_141216_380127-27)
+Scores: (#C #S #D #I) 21 18 31 1
+REF:  L a m a kh u O N D o KH a U L i f A N~ a n I n I M I m I N I L I TSH U KH U a V i r A G OU V J A N G U N A KH U O n d O KH a PH U N D E S i PH U n * D E 
+HYP:  W a m a kh u * M B o K  a * W i f * ** a n E n * * * m * * * * * *** * ** W a H i r * * ** * * * * * * & L &  K ^ n d * ** a ** * * K & T i ** * n O W A 
+Eval: S            D S S   S    D S     D D      S   D D D   D D D D D D   D D  S   S     D D D  D D D D D D S S S  S S     D D    D  D D S S S   D  D   I S S 
+
+id: (swahili_141216_380127-28)
+Scores: (#C #S #D #I) 27 23 17 4
+REF:  s i KH U N G o JJ a N I PH I  PH O a M B i w A N i TH O KH E n i L I O n d O KH A n a D a N I KH W a M B a * U l i f A a M I s A jj A m a ** a U KH o * * 
+HYP:  s i ** * * B o W  a * * ** JJ E  W a * L i w * * i T  & K  & n i * J E n d & K  & n a M a * * ** M a * N a N O l i f * a * N s O jj E m a KH a * N  o W A 
+Eval:     D  D D S   S    D D D  S  S  S   D S     D D   S  S S  S     D S S     S S  S     S   D D D  S   D S   I S       D   D S   S    S     I    D S    I I 
+
+id: (swahili_141216_380127-29)
+Scores: (#C #S #D #I) 24 28 12 3
+REF:  KH O s & l a m & n a U n * * a E L E KH E A N~ U m b A N I  i s i M U i L i KH U A i kh * I L I A s i KH U Z i M & W a TH U W A KH i U l i Z A 
+HYP:  ** * s A l a m A n a * n A M a M A N &  K & N  I m b * K EI i s i * W i S i ** * N i kh W E N G E s i K  & N i * K R a ** * K & PH i * l i * I 
+Eval: D  D   S       S     D   I I   S S S S  S S S  S     D S S        D S   S   D  D S      I S S S S     S  S S   D S S   D  D S S S    D     D S 
+
+id: (swahili_141216_380127-30)
+Scores: (#C #S #D #I) 9 18 7 2
+REF:  Z A P I & KH w * e N~ E e S e M e s N A F EI s B u * K S OU M I AI T U k KH O 
+HYP:  * * * N G E  w I e N  G e R e L e s * * * I  s M u M A W A  W E J  A S k ** & 
+Eval: D D D S S S    I   S  S   S   S     D D D S    S   I S S S  S S S  S S   D  S 
+
+id: (swahili_141216_380127-31)
+Scores: (#C #S #D #I) 21 14 18 1
+REF:  D I F R & n T n a * i m E b A I N i KH A KH W A m b a m TH U a m b A J E A l i TH E n d A TH U KH I O H i L I m a 
+HYP:  * L E N I n * n a R i m * b * * R i ** * ** K O m b a m ** * a m b * * * * l i T  & n d * ** * K  T & T i * S m a 
+Eval: D S S S S   D     I     D   D D S   D  D D  S S         D  D       D D D D     S  S     D D  D S  S S S   D S     
+
+id: (swahili_141216_380127-32)
+Scores: (#C #S #D #I) 18 19 6 8
+REF:  N a * a R u * n i * * * * * n i M TH U a L I KH U W A n A I s TH o R I A n d E f u J A j a U A L i * F U 
+HYP:  M a H a V u M n i G O N D & n i * N  D a M & G  O M & n * * s ** o * * L n d & f u H I j a W I W i W A V 
+Eval: S   I   S   I     I I I I I     D S  S   S S S  S S S   D D   D    D D S     S     S S     S S S   I S S 
+
+id: (swahili_141216_380127-33)
+Scores: (#C #S #D #I) 21 17 14 0
+REF:  f u A m B A J E H A KH U W A m G E n i kh w a V J O m B O V J a U s A l a m a N a P I  & a l i KH U A A m E 
+HYP:  f u * m * * * * * * M  & G O m B I n i kh w a * Z A m * * U G a * s I l a m a M a * PH J a l i ** * G O m N 
+Eval:     D   D D D D D D S  S S S   S S            D S S   D D S S   D   S         S   D S  S       D  D S S   S 
+
+id: (swahili_141216_380127-34)
+Scores: (#C #S #D #I) 20 19 17 0
+REF:  A TSH I L i W A KH W A d a m a N a KH w a m a s TH A KH A J A KH U m U U A M KH e w E N i KH W A n i n I S E R i A H i L 
+HYP:  * *** * S i * J O  G O d a m a M a ** w a m a s ** * ** T K & K  O m * * * O N  e w S M i ** J O n i n * * * Z i * L i * 
+Eval: D D   D S   D S S  S S         S   D            D  D D  S S S S  S   D D D S S      S S   D  S S       D D D S   D S   D 
+
+id: (swahili_141216_380127-35)
+Scores: (#C #S #D #I) 25 25 20 3
+REF:  L I I L I kh u * A n a U L E G E v * u KH I A S i KH W a m b a M TH U A m B A J E a m E s i KH W A KH W A m a s TH A KH a m A KH u B W A K a m & H a * J O 
+HYP:  * * * M U kh u M U n a * * * * * v I u ** K & F i ** F a m b a * N  D O m * * & M a m & s i ** F U G  U O m a s ** T R  a m O G  u * * * G a m * * a F R & 
+Eval: D D D S S      I S     D D D D D   I   D  S S S   D  S         D S  S S   D D S S     S     D  S S S  S S       D  S S      S S    D D D S     D D   I S S 
+
+id: (swahili_141216_380127-36)
+Scores: (#C #S #D #I) 17 16 14 1
+REF:  A KH A a tsh i l I w a H U R U KH U TH E m B E a m * i TH A A n I S I JJ U I l A KH i N i N I n i n I U 
+HYP:  * &  K a tsh i l O w a * * * * ** * ** * m & M a m N i ** L E n * O W A  R E l * ** i W i * K n i n D E 
+Eval: D S  S           S     D D D D D  D D  D   S S     I   D  S S   D S S S  S S   D D    S   D S       S S 
+
+
