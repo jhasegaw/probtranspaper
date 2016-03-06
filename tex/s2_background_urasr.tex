@@ -34,18 +34,23 @@ five hours of Levantine Arabic can be improved by adding ten hours of
 Standard Arabic data, but only if the log likelihood of cross-dialect
 data is scaled by 0.02~\cite{Huang2012}.
 
-Better cross-language transfer of acoustic models can be achieved, but only
-by using structured transfer learning methods, including neural networks
-(NN) and subspace Gaussian mixture models (SGMM).
-NN transfer learning can be categorized as tandem, bottleneck,
+Better cross-language transfer of acoustic models can be achieved, but
+only by using structured transfer learning methods, including neural
+networks (NN) and subspace Gaussian mixture models (SGMM).  SGMMs use
+language-dependent GMMs, each of which is the linear interpolation of
+language-independent mean and variance vectors~\cite{Povey2011}, e.g.,
+16\% relative WER reduction was achieved in Tamil by combining SGMM
+with an acoustic data normalization technique~\cite{Mohan2014}.  NN
+transfer learning can be categorized as tandem, bottleneck,
 pre-training, phone mapping, and multi-softmax methods.  In a tandem
 system, outputs of the NN are Gaussianized, and used as features whose
 likelihood is computed with a GMM~\cite{Hermansky2000}; in a
 bottleneck system, features are extracted from a hidden layer rather
 than the output layer. Both tandem~\cite{Stolcke2006} and
 bottleneck~\cite{Vesely2012} features trained on other languages can
-be combined with GMMs trained on the target language in order to
-improve word error rate (WER).
+be combined with GMMs~\cite{Vesely2012} or SGMMs~\cite{Imseng2014}
+trained on the target language in order to improve word error rate
+(WER).
 
 A hybrid ASR is a system in which the NN terminates in a softmax
 layer, whose outputs are interpreted as phone~\cite{Morgan95} or
@@ -64,33 +69,6 @@ layers, each of which is the linear transform of a multilingual shared
 hidden layer.  Multi-softmax systems have reduced WER in
 tandem~\cite{Scanzio2008}, bottleneck~\cite{Vesely2012}, and
 hybrid~\cite{Huang2013} ASR.
-
-SGMM transfer learning uses language-dependent GMMs, each of which is
-the linear interpolation of language-independent mean and variance
-vectors.  SGMM can be combined with other methods for further
-improvement, e.g., 16\% relative WER reduction was achieved in a Tamil
-ASR by combining SGMM with an acoustic data normalization
-technique~\cite{Mohan2014}, and further reductions were obtained in
-Afrikaans by using bottleneck features in an SGMM~\cite{Imseng2014}.
-
-%% Self-training is one of the three methods highlighted in the 
-%% introduction. Doesn't it deserve its own sub-section?
-% MH: I think no, because it's been developed by people other than us.
-%  I could see a subsection reviewing all of the variety of self-training 
-%  methods, except that we are only testing one of the many methods
-%  available.  An extensive review would cause reviewers to ask why
-%  we only tested one method, to which the answer is ``it's not
-%  interesting to re-implement lots and lots of other people's techniques.''
-Self-training is a class of semi-supervised learning techniques in
-which ASR is first trained on labeled corpora in other languages, then
-used to label data in the target language.  Self-labeled data in the
-target language are then used to train or adapt the
-ASR~\cite{Loof2009,Cetin2008}.  Self-training is most useful when the
-in-language training data are first filtered, to exclude frames with
-confidence below a threshold.  The posterior probability computed from
-the ASR lattice is a useful confidence score~\cite{vesely2013-semi},
-but it is also possible to learn an improved confidence score by
-combining multiple sources of information~\cite{Vu2011b}.
 
 Under-resourced languages often lack any pronunciation dictionary.  It
 is possible to train a stable grapheme-to-phoneme transducer using a
@@ -118,3 +96,25 @@ proposed based on phonological descriptions of Hindi, then applied or
 discarded in response to application probabilities learned using a
 very small (200-word) pronunciation dictionary.
 
+\subsection{Self-Training}
+
+Self-training is a class of semi-supervised learning techniques in
+which a classifier is first trained on any available labeled examples,
+then used to classify the unlabeled data.  The classifier is then
+re-trained using its own labels as targets.  As the number of
+self-labeled data becomes infinite, a self-labeled classifier
+converges in the typical case but not in the worst
+case~\cite{Scudder1965}.  
+
+Self-training is frequently used to adapt ASR from a well-resourced
+language to an under-resourced language~\cite{Loof2009,Cetin2008}.
+Self-training of NN-HMM systems has been shown to be about 50\% more
+effective (1.5 times the error rate reduction) as self-training of
+GMM-HMM systems~\cite{Huang2013b}.  Self-training is most useful when
+the in-language training data are first filtered, to exclude frames
+with confidence below a threshold~\cite{vesely2013-semi,Vu2011b},
+and/or weighted, so that some frames are allowed to influence the
+learned parameters more than others~\cite{Hsiao2013}.  Both of these
+techniques use confidence scores estimated in the form of a
+probability distribution, $\rho(\phi)$, over possible phone
+transcriptions, $\phi$.

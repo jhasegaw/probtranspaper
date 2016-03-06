@@ -13,25 +13,24 @@ noisy channel; interpretation as a noisy channel permits us to explore
 more effective and efficient forms of error-correcting codes.
 
 \begin{figure}[b!]\setlength{\textfloatsep}{3mm}
-\centerline{\includegraphics[width=2in]{../figs/h2e_eg1.png}}
 \begin{center}
-  \tikzstyle{pre2}=[<-,shorten <=3pt,>=stealth',thick, draw=blue]
-  \tikzstyle{post2}=[->,shorten >=3pt,>=stealth',thick, draw=blue]
+  \tikzstyle{pre2}=[<-,shorten <=3pt,>=stealth',thick, draw=black]
+  \tikzstyle{post2}=[->,shorten >=3pt,>=stealth',thick, draw=black]
   \begin{tikzpicture}[
-      boxed/.style={rectangle,thick, draw=blue, text=black, rounded corners=1mm, fill=orange!35!white, text centered, text width=2.5cm},
-      open/.style={text=black, text centered, text width=2.5cm},
+      boxed/.style={rectangle,thick, draw=black, text=black, rounded corners=1mm, text centered, text width=2.5cm},
+      open/.style={text=black, text centered, text width=2.75cm},
     ]
-    \node[open] (n0) at (-4,1) {$h$: Utterance-language words};
+    \node[open] (n0) at (-4.5,1) {$h=$Utterance-language words\\\vspace*{0.1in}$<$$\vcenter{\hbox{\includegraphics[width=1in]{../figs/vaakpahachaan.png}}}$$>$};
     \node[boxed] (n1) at (-0.75,1) {Pronunciation FST,\\$\rho(\phi|h)$} 
     edge[pre2](n0);
     \node[boxed] (n2) at (2.5,1) {Misperception FST,\\$\rho(\psi|\phi)$}
     edge[pre2] (n1);
     \node[boxed] (n3) at (5.75,1) {Phoneme-to-grapheme FST, $\rho(\lambda|\psi)$}
     edge[pre2] (n2);
-    \node[open] (n4) at (9,1) {$\lambda$: Annotation-language orthography} 
+    \node[open] (n4) at (9,1) {$\lambda$: Annotation-language orthography\\$<$vak paychan$>$} 
     edge[pre2](n3);
-    \node[open] (n5) at (1,-0.35) {$\phi=$Utterance-language phones};
-    \node[open] (n6) at (4,-0.35) {$\psi=$Annotation-language phones}; 
+    \node[open] (n5) at (1,-1.5) {$\phi=$Utterance phones\\\ipa{[va:k p@H@tSa:n]}};
+    \node[open] (n6) at (4,-1.5) {$\psi=$Perceived phones\\\ipa{[vAk p\textsuperscript{h}eItSAn]}}; 
   \end{tikzpicture}\\
 \end{center}
 \setlength{\abovecaptionskip}{0pt}
@@ -62,30 +61,30 @@ symbols matching the phone set of the annotation language).  Finally,
 the transcriber maps heard phones to nonsense words in the annotation
 language; the mapping from phones to orthography is an inverted G2P.
 
-Preliminary experiments in mismatched crowdsourcing were carried
-out\cite{JHJ15a} using Hindi speech excerpts extracted from
-podcasts~\cite{SBS}.  Approximately one hour of speech was extracted
-from the podcasts (about 10000 word tokens in total) and phonetically
-transcribed by a Hindi speaker. The data were then segmented into very
-short speech clips (1 to 2 seconds long). The crowd workers were asked
-to listen to these short clips and provide English text, in the form
-of nonsense syllables, that most closely matched what they heard. The
-English text ($\lambda$) was aligned with the Hindi phone transcripts
-($\phi$) using a learned transducer, $\rho(\lambda|\phi)$, called a
-misperception G2P because it replaces both the misperception and G2P
-transducers from Fig.~\ref{fig:h2e_eg2}.  Fig.~\ref{fig:channelfst}
-shows a schematic diagram of the misperception G2P, with learned
-Levenshtein distances. This FST probabilistically maps each Hindi
-phone to either a single English letter or a pair of English
-letters. The FST substitution costs, deletion costs and insertion
-costs are learned to maximize $\rho(\lambda|\phi)$ using the
-expectation maximization algorithm (EM)~\cite{Dempster77}.
-\begin{figure}[b!]
-\centering
-\includegraphics[width=\linewidth]{../figs/mismatchfst.png}
-\caption{Mismatch FST model of $\rho(\lambda|\phi)$, the probability
-  of English transcription $\lambda$ given Hindi phone sequence
-  $\phi$.  Figure modified slightly
-  from~\cite{JHJ15a}.\label{fig:channelfst}}
-\end{figure}
+%Preliminary experiments in mismatched crowdsourcing were carried
+%out\cite{JHJ15a} using Hindi speech excerpts extracted from
+%podcasts~\cite{SBS}.  Approximately one hour of speech was extracted
+%from the podcasts (about 10000 word tokens in total) and phonetically
+%transcribed by a Hindi speaker. The data were then segmented into very
+%short speech clips (1 to 2 seconds long). The crowd workers were asked
+%to listen to these short clips and provide English text, in the form
+%of nonsense syllables, that most closely matched what they heard. The
+%English text ($\lambda$) was aligned with the Hindi phone transcripts
+%($\phi$) using a learned transducer, $\rho(\lambda|\phi)$, called a
+%misperception G2P because it replaces both the misperception and G2P
+%transducers from Fig.~\ref{fig:h2e_eg2}.  Fig.~\ref{fig:channelfst}
+%shows a schematic diagram of the misperception G2P, with learned
+%Levenshtein distances. This FST probabilistically maps each Hindi
+%phone to either a single English letter or a pair of English
+%letters. The FST substitution costs, deletion costs and insertion
+%costs are learned to maximize $\rho(\lambda|\phi)$ using the
+%expectation maximization algorithm (EM)~\cite{Dempster77}.
+%\begin{figure}[b!]
+%\centering
+%\includegraphics[width=\linewidth]{../figs/mismatchfst.png}
+%\caption{Mismatch FST model of $\rho(\lambda|\phi)$, the probability
+%  of English transcription $\lambda$ given Hindi phone sequence
+%  $\phi$.  Figure modified slightly
+%  from~\cite{JHJ15a}.\label{fig:channelfst}}
+%\end{figure}
 

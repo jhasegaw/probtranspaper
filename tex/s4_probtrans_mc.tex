@@ -30,37 +30,76 @@
 %% which could sensibly be merged into the opening paragraph of this
 %% section. 
 
+\begin{figure}[b!]\setlength{\textfloatsep}{3mm}
+\begin{center}
+  \tikzstyle{pre}=[<-,shorten <=3pt,>=stealth',thick, draw=black]
+  \tikzstyle{post}=[->,shorten >=3pt,>=stealth',thick, draw=black]
+  \begin{tikzpicture}[
+      boxed/.style={rectangle,thick, draw=black, text=black, rounded corners=1mm, text centered, text width=5cm},
+      state/.style={circle,thick, draw=black, text=black, text width=0.25cm},
+      open/.style={text=black, text centered, text width=2.75cm},
+    ]
+    \node[boxed] (n0) at (0,0) {\begin{tiny}\begin{tabular}{c}$T$=Transcriptions\\\hline piza\\zapecham\\trabiza\\ta peesome\\ta pisha\\chah peesh um\\shapisha\\sabeesham\\chapiser\\some pizza\end{tabular}\end{tiny}};
+    \node[boxed] (n1) at (6,0) {\begin{tiny}\begin{tabular}{c}$\rho(\lambda|T)=$Orthographic Confusion Network\\$\epsilon=$empty string\\\hline\vspace{3cm}\end{tabular}\end{tiny}} edge[pre] (n0);
+    \node[state] (g0) at (4,-0.25) {};
+    \node[state] (g1) at (5.75,-0.25) {};
+    \draw[post] (g0) -- (4.25,0.75) -- (5.25,0.75) -- (g1);
+    \node at (4.75,1) {\tiny $<$t$>$$/0.4$};
+    \draw[post] (g0) -- (4.25,-0.25) -- (5.25,-0.25) -- (g1);
+    \node at (4.75,0) {\tiny $<$ch$>$$/0.4$};
+    \draw[post] (g0) -- (4.25,-1.25) -- (5.25,-1.25) -- (g1);
+    \node at (4.75,-1) {\tiny $<$s$>$$/0.2$};
+    \node[state] (g2) at (7.5,-0.25) {};
+    \draw[post] (g1) -- (g2);
+    \node at (6.5,0) {\tiny $<$a$>$$/1.0$};
+    \node[open] at (8.25,-0.25) {\ldots};
+    \node[boxed] (n2) at (12,0) {\begin{tiny}\begin{tabular}{c}$\rho(\phi|T)=$Phone Confusion Network\\$\emptyset=$empty phone\\\hline\vspace*{3cm}\end{tabular}\end{tiny}} edge[pre] (n1);
+    \node[state] (g10) at (10,-0.25) {};
+    \node[state] (g11) at (11.75,-0.25) {};
+    \draw[post] (g10) -- (10.25,0.75) -- (11.25,0.75) -- (g11);
+    \node at (10.75,1) {\tiny \ipa{[t]}$/0.4$};
+    \draw[post] (g10) -- (10.25,-0.25) -- (11.25,-0.25) -- (g11);
+    \node at (10.75,0) {\tiny \ipa{[tS]}$/0.4$};
+    \draw[post] (g10) -- (10.25,-1.25) -- (11.25,-1.25) -- (g11);
+    \node at (10.75,-1) {\tiny \ipa{[s]}$/0.2$};
+    \node[state] (g12) at (13.5,-0.25) {};
+    \draw[post] (g11) -- (g12);
+    \node at (12.5,0) {\tiny \ipa{[A]}$/1.0$};
+    \node[open] at (14.25,-0.25) {\ldots};
+  \end{tikzpicture}\\
+\end{center}
+\setlength{\abovecaptionskip}{0pt}
+\caption{Probabilistic transcription from mismatched crowdsourcing:
+  Transcripts $T$ are filtered to remove outliers, and merged to
+  create a confusion network over orthographic symbols,
+  $\rho(\lambda|T)$, from which the probabilistic transcription
+  $\rho(\phi|T)$ is inferred. Example shown: Swahili speech,
+  English-speaking transcribers.}
+\label{fig:mcmethods}
+\end{figure}
+
 The second set of PTs were computed by sending audio in the target
 language to non-speakers of the target language (all transcribers were
 speakers of American English, and the plurality were monolingual), and
 asking them to write what they hear.  Denote using $T$ the set of text
 transcripts produced by these English-speaking crowd workers.
 Mismatched transcripts must be converted into the form of a pmf over
-target-language phone sequences, $\pi(\phi^\ell|T)$.  As an
+target-language phone sequences, $\rho(\phi^\ell|T)$.  As an
 intermediate step towards this goal, prior work~\cite{JHJ15b}
-developed techniques to merge the transcripts in $T$ into a
-distribution $\rho(\lambda|T)$ over representative crowd-worker
-transcripts, denoted $\lambda$.  The representative transcripts,
-$\lambda$, use the same orthography as the crowd worker transcripts
-$T$ (English nonsense syllables), but differ in reliability, as
-follows.  Formation of $\lambda$ from $T$ involves data filtering
-(choosing the most representative 5 transcripts out of each set of 10,
-using pair-wise string edit distances among the transcripts),
-conversion of annotation-language orthography into a pseudo-phonetic
-code in order to represent common letter sequences (e.g., ``ee'' in
-English orthography represents the phoneme \ipa{/i/}), and a weighted
-voting scheme in which the weight of each transcript is proportional
-to the frequency with which it matches the other transcripts.
+developed techniques to merge the transcripts in $T$ into a confusion
+network $\rho(\lambda|T)$ over representative crowd-worker
+transcripts, denoted $\lambda$ (Fig.~\ref{fig:mcmethods}).  Formation
+of $\rho(\lambda|T)$ involves data filtering to remove outliers (based
+on pair-wise string edit distance among transcripts), expansion of the
+orthography to an alphabet that includes common digraphs (such as
+$<$ch$>$ in Fig.~\ref{fig:mcmethods}), and a weighted voting scheme in
+which the weight of each transcript is proportional to the frequency
+with which it matches the other transcripts.
 
-%% Unclear point (maybe just to me): What exactly is lambda? In the
-%% previous paragraph it's described as the set of representative
-%% transcriptions, whereas in the next paragraph it is described as a
-%% confusion network, and in a later paragraph seems to be used to refer
-%% to (the set of) "graphemes in the annotation language".
-Once transcripts have been aligned and filtered to create the
-orthographic confusion network $\rho(\lambda|T)$, they are then
-translated into a distribution over phonemic transcriptions according
-to:
+Once transcripts have
+been aligned and filtered to create the orthographic confusion network
+$\rho(\lambda|T)$, they are then translated into a distribution over
+phonemic transcriptions according to:
 \begin{align}
   \rho(\phi|T) &=
   \sum_{\lambda} \rho(\phi|\lambda,T) \rho(\lambda|T) \notag \\
@@ -69,7 +108,6 @@ to:
   \rho(\phi)\right) \rho(\lambda|T) 
 \label{eq:PT}
 \end{align}
-
 The terms other than $\rho(\lambda|T)$ in Equation~(\ref{eq:PT}) are
 estimated as follows.  $\rho(\lambda)$ is modeled using a simple
 context-free prior over the letter sequences in $\lambda$.
@@ -78,13 +116,9 @@ on a corpus of Wikipedia text in the target language, converted into
 phone sequences as described in Section~\ref{sec:trainwithlm}.
 $\rho(\lambda|\phi)$ is called the misperception G2P, as it maps to
 graphemes in the annotation language, $\lambda$, from phones in the
-utterance language, $\phi$.  This section describes methods that 
-estimate $\rho(\lambda|\phi)$ directly; Section~\ref{sec:eegchanmod} 
-describes methods that decompose $\rho(\lambda|\phi)$ 
-into separate misperception and G2P transducers.
-%% shouldn't it be called "misperception P2G" instead of G2P?
-
-The misperception G2P ($\rho(\lambda|\phi)$) can be trained directly
+utterance language, $\phi$.  Section~\ref{sec:eegchanmod} describes
+methods that decompose $\rho(\lambda|\phi)$ into separate
+misperception and G2P transducers, but it can also be trained directly
 using the Carmel toolkit \cite{Knight99} as an FST mapping phones to
 letters based on representative transcripts $\lambda$ (and their
 corresponding native transcripts) for speech {\em in languages other
