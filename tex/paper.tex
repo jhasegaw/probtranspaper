@@ -1,4 +1,4 @@
-\documentclass[11pt,draftcls,onecolumn]{IEEEtran}
+\documentclass[11pt,draftcls,onecolumn,peerreview]{IEEEtran}
 \bibliographystyle{plain}
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -20,20 +20,51 @@
 \setlength{\oddsidemargin}{0in}
 \setlength{\topmargin}{0in}
 
-\title{ASR for Under-Resourced Languages from Probabilistic
-  Transcription} \author{Mark Hasegawa-Johnson$^1$, Adrian KC Lee$^2$,
-  Ed Lalor$^3$, Preethi Jyothi$^1$, Daniel McCloy$^2$, Majid
-  Mirbagheri$^2$, Giovanni di Liberto$^3$, Amit Das$^1$, Brad
-  Ekin$^2$, Chunxi Liu$^4$, Vimal Manohar$^4$, Hao Tang$^5$, Nancy
-  Chen$^6$, Paul Hager$^7$, Tyler Kekona$^2$, and Rose Sloan$^8$}
+\title{ASR for Under-Resourced Languages from Probabilistic Transcription}
+
+\author{Mark Hasegawa-Johnson$^1$,~\IEEEmembership{Senior~Member,~IEEE}
+  Adrian KC Lee$^2$,
+  Ed Lalor$^3$,
+  Preethi Jyothi$^1$,
+  Daniel McCloy$^2$,
+  Majid Mirbagheri$^2$,
+  Giovanni di Liberto$^3$,
+  Amit Das$^1$,
+  Brad Ekin$^2$,
+  Chunxi Liu$^4$,
+  Vimal Manohar$^4$,
+  Hao Tang$^5$,
+  Nancy Chen$^6$,
+  Paul Hager$^7$,
+  Tyler Kekona$^2$,
+  and Rose Sloan$^8$}
 \affil{1. University of Illinois, 2. University of Washington,
   3. Trinity College, Dublin, 4. Johns Hopkins University, 5. Toyota
   Technological Institute Chicago, 6. Institute for Infocomm Research,
   7. MIT, 8. Yale University}
 
+\markboth{Draft, for review only}
+{Hasegawa-Johnson \MakeLowercase{\textit{et al.}}: ASR for Under-Resourced Languages from Probabilistic Transcription}
+
 \begin{document}
 \maketitle
 
+\begin{abstract}
+\input{s0_abstract.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+Automatic speech recognition, Under-resourced languages, Crowdsourcing, EEG
+\end{IEEEkeywords}
+
+\ifCLASSOPTIONpeerreview
+\begin{center} \bfseries EDICS Category: SPE-RECO \end{center}
+\fi
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{s1_intro.tex}
 
 \input{s2_background.tex}

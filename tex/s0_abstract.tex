@@ -1,0 +1,22 @@
+In many under-resourced languages it is possible to find text, and it
+is possible to find speech, but transcribed speech suitable for
+training automatic speech recognition (ASR) is unavailable.  In the
+absence of native transcription, this paper proposes the use of a
+probabilistic transcription: a probability mass function over possible
+phonetic transcripts of the waveform.  Three sources of probabilistic
+transcription are demonstrated.  First, self-training is a
+well-established semi-supervised learning technique, in which a
+cross-lingual ASR first labels unlabeled speech, and is then adapted
+using the same labels.  Second, mismatched crowdsourcing is a recent
+technique in which non-speakers of the language are asked to write
+what they hear, and their nonsense transcriptions are decoded using
+noisy channel models of second-language speech perception.  Third, EEG
+distribution coding is a new technique in which non-speakers of the
+language listen to it, and their electrocortical response signals are
+interpreted to indicate probabilities.  ASR was trained in four
+languages with no transcribed training speech.  Adaptation using
+mismatched crowdsourcing significantly outperformed self-training, and
+both significantly outperformed a cross-lingual baseline.  EEG
+distribution coding and text-derived phone language models were both
+shown to improve the quality of probabilistic transcriptions derived
+from mismatched crowdsourcing.
