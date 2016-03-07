@@ -2,21 +2,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 
-Transcriptions from Mismatched Crowdsourcing are very noisy.
-Nevertheless, ASR adapted using Probabilistic Transcriptions beats a
-multilingual ASR.  Adaptation using PTs consistently provides
-substantial PER improvements over the multilingual GMM-HMM baselines
-for every language evaluated, which demonstrates that the PTs of
-target language can be effectively used to adapt a multilingual ASR
-system to the unseen target language, by exploiting the model-based
-MAP estimation approach. Also, we find PT adaptation also consistently
-outperforms the semi-supervised baselines, showing that adaptation
-with PTs posts more efficacy than the model self-training alone.
-
-Errors in mismatched crowdsourcing are reduced using phonotactic
-language models, even if those must come from text.
-
-EEG responses can be used to estimate confusion matrices. Entropy is
-lowest in native language, second lowest in a similar language, and
-highest in a dissimilar language.
-
+When a language lacks transcribed speech, other types of information
+about the speech signal may be used to train ASR.  This paper proposes
+compiling the available information into a probabilistic
+transcription: a pmf over possible phone transcriptions of each
+waveform.  Three sources of information are discussed: self-training,
+mismatched crowdsourcing, and EEG distribution coding.  Experiments
+demonstrate that self-training outperforms cross-lingual ASR in two of
+the four test languages (Mandarin and Swahili).  Adaptation using
+mismatched crowdsourcing outperforms both cross-lingual ASR and
+self-training in all four of the test languages.  Auxiliary
+information from EEG is used, together with text-based phone language
+models, to improve the decoding of transcripts from mismatched
+crowdsourcing.  

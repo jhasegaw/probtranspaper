@@ -45,50 +45,45 @@ gradient ascent~\cite{Bengio92}.
 The probability $\pi(x,s,\phi|\theta)$ is computed by composing the
 following three weighted FSTs:
 \begin{align}
-  \mathbf{AM}&:s^\ell\rightarrow s^\ell/ \pi(x^\ell|s^\ell,\phi^\ell,\theta)\\
-  \mathbf{HC}&:s^\ell\rightarrow \phi^\ell/ \pi(s^\ell|\pi^\ell,\theta)\\
-  \mathbf{PT}&:\phi^\ell\rightarrow\phi^\ell/ \rho(\phi^\ell)
+  H&:s^\ell\rightarrow s^\ell/ \pi(x^\ell|s^\ell,\phi^\ell,\theta)\\
+  C&:s^\ell\rightarrow \phi^\ell/ \pi(s^\ell|\pi^\ell,\theta)\\
+  PT&:\phi^\ell\rightarrow\phi^\ell/ \rho(\phi^\ell)
 \end{align}
 where the notation has the following meaning.  The probabilistic
-transcription, $\mathbf{PT}$, is an FST that maps any phone string
-$\phi^\ell\in\mathbb{V}_\phi^*$ to itself.  This mapping is
-deterministic and reflexive, but comes with a path cost determined by
-the transcription probability $\rho(\phi^\ell)$, as exemplified in
-Fig.~\ref{fig:pt}.  The HMM-expansion transducer, $\mathbf{HC}$, maps
-any senone sequence $s^\ell$ to a phone sequence $\phi^\ell$.  This
-FST is the composition of the $\mathbf{H}$ and $\mathbf{C}$
-transducers defined by Mohri, Pereira and Riley~\cite{Mohri2002}.
+transcription, $PT$, is an FST that maps any phone string
+$\phi^\ell\in\Omega_\Phi^*$ to itself.  This mapping is deterministic
+and reflexive, but comes with a path cost determined by the
+transcription probability $\rho(\phi^\ell)$, as exemplified in
+Fig.~\ref{fig:pt}.  The context transducer, $C$, maps any senone
+sequence $s^\ell$ to a phone sequence $\phi^\ell$~\cite{Mohri2002}.
 This mapping is non-deterministic, and the path cost is determined by
-the HMM transition weights distribution $a_{ij}=\pi(s_t^\ell
-=j|s_{t-1}^\ell =i,\phi^\ell,\theta)$:
+the HMM transition weights distribution
+$a_{ij}=\pi(s_t^{\ell}=j|s_{t-1}^\ell =i,\phi^\ell,\theta)$:
 \begin{equation}
   \pi(s^\ell|\phi,\theta)=\prod_{\ell=1}^L\prod_{t=1}^T
   a_{s_{t-1}^\ell s_t^\ell}
 \end{equation}
-The acoustic modeling transducer $\mathbf{AM}$ maps any senone sequence
-to itself.  This mapping is deterministic and reflexive, but comes
-with a path cost determined by the acoustic modeling probability
+The acoustic modeling transducer $H$ maps any senone sequence to
+itself.  This mapping is deterministic and reflexive, but comes with a
+path cost determined by the acoustic modeling probability
 \begin{equation}
   \pi(x^\ell|s^\ell,\phi^\ell,\theta)=\prod_{\ell=1}^L\prod_{t=1}^T
   \pi(x_t^\ell|s_t^\ell,\theta^\ell)
 \end{equation}
 The joint probability $\pi(\phi^\ell,s^\ell,x^\ell|\theta)$ is
 computed by composing the FSTs, then finding the total cost of the
-path through
-$\left(\mathbf{AM}\circ\mathbf{HC}\circ\mathbf{PT}\right)$ with input
-string $\phi^\ell$ and output string $s^\ell$.  The posterior
-probability $\pi(\phi^\ell,s^\ell|x^\ell,\theta)$ is computed by
-pushing the composed FST, then finding the total cost of the path
-through
-$\textrm{push}\left(\mathbf{AM}\circ\mathbf{HC}\circ\mathbf{PT}\right)$.
+path through $H\circ C\circ PT$ with input string $\phi^\ell$ and
+output string $s^\ell$.  The posterior probability
+$\pi(\phi^\ell,s^\ell|x^\ell,\theta)$ is computed by pushing the
+composed FST, then finding the total cost of the path through
+$\textrm{push}\left(H\circ C\circ PT\right)$.
 
 The parameter vector $\theta$ includes the HMM transition
 probabilities, $a_{ij}=\pi(s_t^\ell =j|s_{t-1}^\ell =i,\phi,\theta)$,
 and the parameters of the acoustic model
-$b_j(x_t^\ell)=\pi(x_t^\ell|s_t^\ell=j,\theta)$.
-Computing the analytical maximum or gradient of
-$Q\left(\theta,\theta'\right)$ requires summation over all possible
-state alignments $s\in\mathbb{V}_s$.  The summation can be performed
-efficiently using the Baum-Welch algorithm, but experimental tests
-reported in this paper did not do so, for reasons described in the
-next subsection.
+$b_j(x_t^\ell)=\pi(x_t^\ell|s_t^\ell=j,\theta)$.  Computing the
+analytical maximum or gradient of $Q\left(\theta,\theta'\right)$
+requires summation over all possible state alignments
+$s\in\Omega_S^*$.  The summation can be performed efficiently using
+the Baum-Welch algorithm, but experimental tests reported in this
+paper did not do so, for reasons described in the next subsection.

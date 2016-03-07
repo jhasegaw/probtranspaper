@@ -40,7 +40,7 @@
       open/.style={text=black, text centered, text width=2.75cm},
     ]
     \node[boxed] (n0) at (0,0) {\begin{tiny}\begin{tabular}{c}$T$=Transcriptions\\\hline piza\\zapecham\\trabiza\\ta peesome\\ta pisha\\chah peesh um\\shapisha\\sabeesham\\chapiser\\some pizza\end{tabular}\end{tiny}};
-    \node[boxed] (n1) at (6,0) {\begin{tiny}\begin{tabular}{c}$\rho(\lambda|T)=$Orthographic Confusion Network\\$\epsilon=$empty string\\\hline\vspace{3cm}\end{tabular}\end{tiny}} edge[pre] (n0);
+    \node[boxed] (n1) at (6,0) {\begin{tiny}\begin{tabular}{c}$\rho(\lambda|T)=$Orthographic Confusion Network\\\hline\vspace{3cm}\end{tabular}\end{tiny}} edge[pre] (n0);
     \node[state] (g0) at (4,-0.25) {};
     \node[state] (g1) at (5.75,-0.25) {};
     \draw[post] (g0) -- (4.25,0.75) -- (5.25,0.75) -- (g1);
@@ -53,7 +53,7 @@
     \draw[post] (g1) -- (g2);
     \node at (6.5,0) {\tiny $<$a$>$$/1.0$};
     \node[open] at (8.25,-0.25) {\ldots};
-    \node[boxed] (n2) at (12,0) {\begin{tiny}\begin{tabular}{c}$\rho(\phi|T)=$Phone Confusion Network\\$\emptyset=$empty phone\\\hline\vspace*{3cm}\end{tabular}\end{tiny}} edge[pre] (n1);
+    \node[boxed] (n2) at (12,0) {\begin{tiny}\begin{tabular}{c}$\rho(\phi|T)=$Phone Confusion Network\\\hline\vspace*{3cm}\end{tabular}\end{tiny}} edge[pre] (n1);
     \node[state] (g10) at (10,-0.25) {};
     \node[state] (g11) at (11.75,-0.25) {};
     \draw[post] (g10) -- (10.25,0.75) -- (11.25,0.75) -- (g11);
@@ -74,27 +74,28 @@
   create a confusion network over orthographic symbols,
   $\rho(\lambda|T)$, from which the probabilistic transcription
   $\rho(\phi|T)$ is inferred. Example shown: Swahili speech,
-  English-speaking transcribers.}
+  English-speaking transcribers.  Symbols in $<$$>$ are graphemes,
+  symbols in $[]$ are phones, numbers are probabilities.}
 \label{fig:mcmethods}
 \end{figure}
 
 The second set of PTs were computed by sending audio in the target
 language to non-speakers of the target language (all transcribers were
-speakers of American English, and the plurality were monolingual), and
+speakers of American English, 30\% reported being monolingual), and
 asking them to write what they hear.  Denote using $T$ the set of text
 transcripts produced by these English-speaking crowd workers.
 Mismatched transcripts must be converted into the form of a pmf over
-target-language phone sequences, $\rho(\phi^\ell|T)$.  As an
-intermediate step towards this goal, prior work~\cite{JHJ15b}
-developed techniques to merge the transcripts in $T$ into a confusion
-network $\rho(\lambda|T)$ over representative crowd-worker
-transcripts, denoted $\lambda$ (Fig.~\ref{fig:mcmethods}).  Formation
-of $\rho(\lambda|T)$ involves data filtering to remove outliers (based
-on pair-wise string edit distance among transcripts), expansion of the
+target-language phone sequences, $\rho(\phi|T)$.  As an intermediate
+step towards this goal, prior work~\cite{JHJ15b} developed techniques
+to merge the transcripts in $T$ into a confusion network
+$\rho(\lambda|T)$ over representative crowd-worker transcripts,
+denoted $\lambda$ (Fig.~\ref{fig:mcmethods}).  Formation of
+$\rho(\lambda|T)$ involves data filtering to remove outliers (based on
+pair-wise string edit distance among transcripts), expansion of the
 orthography to an alphabet that includes common digraphs (such as
-$<$ch$>$ in Fig.~\ref{fig:mcmethods}), and a weighted voting scheme in
-which the weight of each transcript is proportional to the frequency
-with which it matches the other transcripts.
+$\lambda_m^\ell=<$ch$>$ in Fig.~\ref{fig:mcmethods}), and a weighted
+voting scheme in which the weight of each transcript is proportional
+to the frequency with which it matches the other transcripts.
 
 Once transcripts have
 been aligned and filtered to create the orthographic confusion network
@@ -111,18 +112,21 @@ phonemic transcriptions according to:
 The terms other than $\rho(\lambda|T)$ in Equation~(\ref{eq:PT}) are
 estimated as follows.  $\rho(\lambda)$ is modeled using a simple
 context-free prior over the letter sequences in $\lambda$.
-$\rho(\phi)$ is modeled using a bigram phone language model, trained
-on a corpus of Wikipedia text in the target language, converted into
-phone sequences as described in Section~\ref{sec:trainwithlm}.
+$\rho(\phi)$ is modeled using a bigram phone language model
+%, trained
+%on a corpus of Wikipedia text in the target language, converted into
+%phone sequences as described in Section~\ref{sec:trainwithlm}.
 $\rho(\lambda|\phi)$ is called the misperception G2P, as it maps to
 graphemes in the annotation language, $\lambda$, from phones in the
 utterance language, $\phi$.  Section~\ref{sec:eegchanmod} describes
 methods that decompose $\rho(\lambda|\phi)$ into separate
 misperception and G2P transducers, but it can also be trained directly
-using the Carmel toolkit \cite{Knight99} as an FST mapping phones to
-letters based on representative transcripts $\lambda$ (and their
+using
+%the Carmel toolkit \cite{Knight99} as an FST mapping phones to letters
+%based on
+representative transcripts $\lambda$ (and their
 corresponding native transcripts) for speech {\em in languages other
-  than the target language}. We assume that misperceptions depend more
+than the target language}. We assume that misperceptions depend more
 heavily on the annotation language than on the utterance language, and
 that therefore a model $\rho(\lambda|\phi)$ trained using a universal
 phone set for $\phi$ is also a good model of $\rho(\lambda|\phi)$ for

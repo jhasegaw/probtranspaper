@@ -1,8 +1,8 @@
-\subsection{Multilingual Baselines}
+\subsection{Cross-Lingual Baselines}
 \label{sec:mlbaseline}
 
-The goal of building a multilingual system is two-fold.
-One is to setup a baseline for generalizing to an unseen
+The goal of building a cross-lingual system is two-fold.
+One is to define a baseline for generalizing to an unseen
 language without any labeled audio corpus.  The other
 is have the baseline serve as a starting point for
 adaptation.
@@ -42,50 +42,6 @@ specialization, a target-language phone bigram language model was
 trained using phone sequences converted from text.  The texts were
 collected from Wikipedia articles linked from the main page of each
 language crawled once per day over four months.
-Table~\ref{tab:results} compares results using universal phone set and
-phone language model to those obtained using language-dependent phone
-set and phone language model.  Without a language specific phone set
-and phone language model, it is hard for a multilingual system to
-generalize to an unseen language.  This is true even if the system has
-seen closely related languages such as Mandarin when tested on
-Cantonese.  As an oracle experiment, we also train language dependent
+As an oracle experiment, we also train language dependent
 HMMs for each individual language with 40 minutes of labeled audio.
-Results are shown in Table~\ref{tab:results}.
-
-\begin{table*}
-\begin{center}
-\begin{tabular}{|c|c|c|cccc|}
-\hline
-data & acoustic & language & yue & hun & cmn & swh \\
- & model & model &  & & & \\
-\hline
-multilingual & GMM & multilingual & 79.64 (79.83) & 77.13 (77.85) & 83.28 (82.12) & 82.99 (81.86) \\
-multilingual & NN & multilingual & 78.62 (77.58) & 75.98 (76.44) & 81.86 (80.47) & 82.30 (81.18) \\
-multilingual & GMM & text & 68.40 (68.35) & 68.62 (66.90) & 71.30 (68.66) & 63.04 (64.73) \\
-multilingual & NN & text & 66.54 (65.28) & 66.08 (66.58) & 65.77 (64.80) & 64.75 (65.04) \\
-\hline
-monolingual & GMM & transcript & 32.77 (34.61) & 39.58 (39.77) & 32.21 (26.92) & 35.33 (46.51) \\
-monolingual & NN & transcript & 27.67 (28.88) & 35.87 (36.58) & 27.80 (23.96) & 34.98 (41.47) \\
-\hline
-\end{tabular}
-\caption{\label{tab:results} PERs of unadapted multilingual systems on
-  the evaluation sets along with monolingual systems.  PERs on the
-  development sets are in parentheses.  Text-based language models are
-  trained using phone sequences computed by applying a G2P to
-  independent wikipedia texts in the target language. Transcript-based
-  language models are trained using phone sequences computed by
-  applying a G2P to native transcripts of the training data.}
-\end{center}
-\end{table*}
-
-From the comparison of different baseline systems, we can reach the
-following conclusions.  First, the standard speech pipeline is able to
-train speech recognizers using SBS data.  Even with only 40 minutes of
-training data, a NN is able to outperform a GMM.  Second,
-however, the standard speech pipeline generalizes well to languages
-that were seen in the training corpus, but performs poorly on unseen
-languages.  Using a language-specific phonotactic language model gives
-significant improvement over the language-independent phonotactic
-model, but nevertheless significantly underperforms a system that
-has seen the test language during training.  
 

@@ -3,18 +3,16 @@
 
 The baseline and the adapted models were implemented using
 Kaldi~\cite{Kaldi2011}. In order to efficiently carry out the required
-operations on the cascade $\mathbf{AM}\circ\mathbf{HC}\mathbf{PT}$, we
-carefully designed $\mathbf{PT}$ as an acceptor defined as
-$\mathrm{proj}_{\mathrm{input}} (\widehat{PT})$, where $\widehat{PT}$
-is a WFST mapping phone sequences to English letter sequences obtained
-as a cascade of WFSTs modeling the distributions shown in
-Equation~\ref{eq:PT}, and $\mathrm{proj}_{\mathrm{input}}$ refers to
-projecting onto the input labels. For the purposes of computational
-efficiency, the cascade for $\widehat{PT}$ includes an additional WFST
-restricting the number of consecutive deletions of phones and
-insertions of letters (to a maximum of 3 in our experiments). We use
-two additional disambiguation symbols~\cite{mohri2008speech}, apart
-from the ones used in typical Kaldi recipes, to determinize these
-insertions and deletions in $\widehat{PT}$. MAP adaptation for the
-acoustic model was carried out for a number of iterations (12 for yue
-\& cmn, 14 for hun \& swh, with a re-alignment stage in iteration 10).
+operations on the cascade $H\circ C\circ PT\circ G$, $PT$ was defined
+as $\mathrm{proj}_{\mathrm{input}} (\widehat{PT})$, where
+$\widehat{PT}$ is a WFST mapping phone sequences to English letter
+sequences (Eq.~\ref{eq:PT}), and $\mathrm{proj}_{\mathrm{input}}$
+refers to projecting onto the input labels. For the purposes of
+computational efficiency, the cascade for $\widehat{PT}$ includes an
+additional WFST restricting the number of consecutive deletions of
+phones and insertions of letters (to a maximum of 3). Two additional
+disambiguation symbols~\cite{mohri2008speech} were used to determinize
+these insertions and deletions in $\widehat{PT}$. MAP adaptation for
+the acoustic model was carried out for a number of iterations (12 for
+yue \& cmn, 14 for hun \& swh, with a re-alignment stage in iteration
+10).

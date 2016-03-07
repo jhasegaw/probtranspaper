@@ -46,8 +46,8 @@ the misperception transducer.
 % Somebody someday might come back and test different versions of this
 % metric to see which one is most useful, for some definition of ``useful.''
 Language similarity was defined as the number of many-to-one mappings
-($N_{M2O}(\mathbb{V}_\phi)$) between the English phoneme inventory
-($\mathbb{V}_\psi$) and the non-native phoneme inventory $\mathbb{V}_\phi$.
+($N_{M2O}(\Omega_\Phi)$) between the English phoneme inventory
+($\Omega_\Psi$) and the non-native phoneme inventory $\Omega_\Phi$.
 Using distinctive feature representations of the phonemes in each
 inventory (as given in the PHOIBLE database \cite{PHOIBLE}), a
 many-to-one mapping was defined by finding, for each
@@ -58,26 +58,26 @@ it is most similar:
 \end{equation}
 The number of many-to-one collisions is then defined as
 \begin{equation}
-  N_{M2O}(\mathbb{V}_\phi)=\frac{1}{|\mathbb{V}_\psi|}\sum_{\phi_1\ne\phi_2}
+  N_{M2O}(\Omega_\Phi)=\frac{1}{|\Omega_\Psi|}\sum_{\phi_1\ne\phi_2}
   \delta\left(\psi^*(\phi_1)=\psi^*(\phi_2)\right)
 \label{eq:m2o}
 \end{equation}
-where $|\mathbb{V}_\psi|$ is the size of the English phoneme inventory.
+where $|\Omega_\Psi|$ is the size of the English phoneme inventory.
 The frequency of many-to-one mappings is listed in
 Table~\ref{tab:m2o} for several languages.
 
 \begin{table}
   \centerline{\begin{tabular}{|lr|lr|lr|}\hline
-    $\mathbb{V}_\phi$ & $N_{M2O}(\mathbb{V}_\phi)$ &
-    $\mathbb{V}_\phi$ & $N_{M2O}(\mathbb{V}_\phi)$ &
-    $\mathbb{V}_\phi$ & $N_{M2O}(\mathbb{V}_\phi)$ \\ \hline
+    $\Omega_\Phi$ & $N_{M2O}(\Omega_\Phi)$ &
+    $\Omega_\Phi$ & $N_{M2O}(\Omega_\Phi)$ &
+    $\Omega_\Phi$ & $N_{M2O}(\Omega_\Phi)$ \\ \hline
     spa & 0.862 & yue & 1.280 & cmn & 1.531 \\
     por & 1.152 & jpn & 1.333 & amh & 1.844 \\
     nld & 1.182 & vie & 1.393 & hun & 1.857 \\
     deu & 1.258 & kor & 1.429 & hin & 2.848 \\\hline
   \end{tabular}}
-  \caption{Frequency of many-to-one mappings $N_{M2O}(\mathbb{V}_\phi)$
-    between phoneme inventory $\mathbb{V}_\phi$ and the inventory of
+  \caption{Frequency of many-to-one mappings $N_{M2O}(\Omega_\Phi)$
+    between phoneme inventory $\Omega_\Phi$ and the inventory of
     English. Languages are represented by their ISO 639-3 codes.}
   \label{tab:m2o}
 \end{table}
@@ -119,8 +119,7 @@ inter-stimulus interval of 350~ms. 21 repetitions of each syllable
 were presented, for a grand total of 9072 syllable presentations.
 
 %% TODO: get number of ms where epoch started (MM to email GDL)
-EEG recordings were divided into 500 ms epochs beginning XXX ms before
-each syllable onset.
+EEG recordings were divided into 500 ms epochs.
 The epoched data were coded with a subset of distinctive features
 that minimally defined the phoneme contrasts of the English consonants.
 Where more than one choice of features was sufficient to define those
@@ -137,55 +136,3 @@ coronal, and dorsal.
 % information in speech is preserved in an EEG signal, it will have been
 % transformed to be spatially coded across populations of neurons.
 
-Epoched and feature-coded EEG data {\em for the English syllables only}
-were used to train a support vector machine classifier for each feature.
-The classifiers were then used (without re-training) to classify the
-EEG responses to the Dutch and Hindi syllables.
-Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of these
-classifiers when applied to the three languages.
-
-\begin{figure}
-  \centerline{\includegraphics[width=5in]{../figs/diliberto_svmresults.png}}
-  \caption{Classifiers were trained to observe EEG signals, and to
-    classify the distinctive features of the phone being heard.  Equal
-    error rates are shown for English (the language used in training;
-    train and test data did not overlap), Dutch, and Hindi.  Dashed
-    line shows chance=50\%.}
-  \label{fig:eeg_svm_eers}
-\end{figure}
-
-Eq.~(\ref{eq:dfdist}) defines a log-linear model of $\rho(\psi|\phi)$,
-the probability that a non-English phoneme $\phi$ will be perceived as
-English phoneme $\psi$.  Denote by $\rho_U(\psi|\phi)$ the model of
-Eq.~(\ref{eq:dfdist}) with uniform weights for all distinctive
-features ($w_k=\alpha$, a tunable constant).  Denote by
-$\rho_{EEG}(\psi|\phi)$ the same model, but with weights $w_k$ derived
-from EEG measurements (Eq.~(\ref{eq:eegdist})).
-Fig.~\ref{fig:eeg_confusions} shows these two confusion matrices:
-$\rho_U(\psi|\phi)$ on the left, $\rho_{EEG}(\psi|\phi)$ on the
-right. The entropy of the uniform weighting, $\rho_U(\psi|\phi)$, is
-too low: when a Dutch phoneme $\phi$ has a nearest-neighbor
-$\psi^*(\phi)$ in English, then few other phonemes are considered to
-be possible confusions.  $\rho_{EEG}(\psi|\phi)$ has a very different
-problem: since distinctive feature classfiers have been trained for
-only a small set of distinctive features, there are large groups of
-phonemes whose confusion probabilities can not be distinguished
-(giving the figure its block-diagonal structure).  The faults of both
-models can be ameliorated by interpolating them in some way, e.g., by
-computing the linear interpolation
-$\rho_I(\psi|\phi)=a\rho_U(\psi|\phi)+(1-a)\rho_{EEG}(\psi|\phi)$ for
-some constant $0\le a\le 1$.
-
-\begin{figure}
-  \centerline{
-    \includegraphics[width=3in]{../figs/mirbagheri_dist_features.png}
-    \includegraphics[width=3in]{../figs/mirbagheri_dist_eeg.png}
-  }
-  \caption{Phoneme confusion probabilities between English phonemes
-    (column) and Dutch phonemes (row) using models in which the log
-    probability is proportional to distance between the corresponding
-    distinctive features.  Left: all features have the same
-    weight.  Right: feature weights equal negative log error rate of
-    EEG signal classifiers.}
-  \label{fig:eeg_confusions}
-\end{figure}

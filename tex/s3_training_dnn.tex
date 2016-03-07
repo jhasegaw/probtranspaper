@@ -12,25 +12,27 @@ parameters defining the hidden nodes $h_t(x,\theta_j)$.  NNs are
 trained by using a GMM-HMM to compute an initial senone posterior,
 $\pi(s_t^\ell=j,x^\ell|\theta)$, then minimizing the cross-entropy
 between the estimated senone posterior and the neural network output
-$y_{t}^\ell(j)$.  The cross entropy is measured as
+$y_{t}^\ell(j)$,
+%.  The cross entropy is measured as
+%\begin{equation}
+%  H(S^\ell\Vert Y^\ell)=-\sum_{t=1}^T \sum_{j} \pi(s_t^\ell=j) \ln y_{t}^\ell(j)
+%  \label{eq:dnn_train}
+%\end{equation}
+%The gradient of Eq.~(\ref{eq:dnn_train}) with respect to its model
+%parameters is
+using gradient descent in the direction
 \begin{equation}
-  H(S^\ell\Vert Y^\ell)=-\sum_{t=1}^T \sum_{j} \pi(s_t^\ell=j) \ln y_{t}^\ell(j)
-  \label{eq:dnn_train}
-\end{equation}
-The gradient of Eq.~(\ref{eq:dnn_train}) with respect to its model
-parameters is
-\begin{equation}
-  \nabla_\theta H(S^\ell\Vert Y^\ell)=-
+  -\nabla_\theta H(S^\ell\Vert Y^\ell)=
   \sum_{t=1}^T\sum_j\frac{\pi(j,x^\ell|\theta)}{y_t^\ell(j)}
   \nabla_\theta y_t^\ell(j)
   \label{eq:dnn_dt}
 \end{equation}
 NN training with deterministic transcriptions is improved by
 quantizing $\pi(s_t^\ell,x^\ell|\theta)\rightarrow\left\{0,1\right\}$
-using forced alignment. Preliminary experiments showed that forced
-alignment also improves the accuracy of NNs trained from probabilistic
-transcriptions: the best path through the PT, and the best alignment
-of the resulting senones to the waveform, were both computed using
-forced alignment.  The resulting best senone string was used to train
-a NN using Eq.~(\ref{eq:dnn_dt}).
+using forced alignment~\cite{Morgan95}. Preliminary experiments showed
+that forced alignment also improves the accuracy of NNs trained from
+probabilistic transcriptions: the best path through the PT, and the
+best alignment of the resulting senones to the waveform, were both
+computed using forced alignment.  The resulting best senone string was
+used to train a NN using Eq.~(\ref{eq:dnn_dt}).
 

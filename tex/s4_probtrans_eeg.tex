@@ -3,7 +3,7 @@
 
 The misperception G2P described in Section~\ref{sec:MC} was estimated
 using a combination of mismatched and deterministic transcripts of
-non-target languages. However, With a small amount
+non-target languages. However, with a small amount
 of transcribed data in the utterance language, it is possible
 to estimate the misperception G2P using electrocortical measurements
 of non-native speech perception. In this approach, the misperception G2P
@@ -45,13 +45,15 @@ probability can be expressed as
 %function. 
 \begin{equation}
   \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
-  w_k\right)
+  w_k(\phi,\psi)\right)
   \label{eq:dfdist}
 \end{equation}
-where $w_k(\phi)$ is the contribution of the $k^{\textrm{th}}$ feature in the 
-misperception of the of phone $\phi$ as phone $\psi$. If a feature is 
-perceived similarly across the two languages its contribution would be 
-lower when when the two phones share the same value of that 
+where $w_k(\phi,\psi)$ is
+%the contribution of the $k^{\textrm{th}}$ feature in the 
+%misperception of the of phone $\phi$ as phone $\psi$. If a feature is 
+%perceived similarly across the two languages its contribution would be 
+%lower when when the two phones share the same value of that
+zero unless $\phi$ and $\psi$ share the $d^{\textrm{th}}$ distinctive
 feature. The assumption of independence is a simplifying assumption,
 given that many distinctive features have overlapping acoustic
 correlates. For example, the frequencies of the {\em two} lowest

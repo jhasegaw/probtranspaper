@@ -4,9 +4,9 @@
 \setlength{\tabcolsep}{0.37cm}
 \begin{table*}[t]
 \centerline{\begin{tabular}{| c || c | c | c | c | c |}\hline
-Language &  Multilingual & Self-training & \multicolumn{3}{ |c| }{Mult-L + PT adaptation}  \\\cline{4-6}
-Code & ({\sc Mult-L}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\\cline{4-6}
- &&&& \% over {\sc Mult-L} & \% over {\sc ST}\\
+Language &  Cross-Lingual & Self-training & \multicolumn{3}{ |c| }{CL + PT adaptation}  \\\cline{4-6}
+Code & ({\sc CL}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\\cline{4-6}
+ &&&& \% over {\sc CL} & \% over {\sc ST}\\
 \hline
 \multicolumn{6}{|l|}{GMM-HMM} \\\hline
 yue & 68.40 (68.35) & &  \textbf{57.20 (56.57)} &  16.4** (17.1) & 10.3** (9.2) \\
@@ -20,11 +20,11 @@ hun & 66.43 (67.18) & 63.53 (63.50) &   \textbf{56.70 (58.45)} & 14.6** (13.0) &
 cmn & 65.77 (64.80) & 64.90* (64.00) &   \textbf{54.07 (53.13)} & 17.8** (18.0) & 16.7** (17.0) \\
 swh & 65.30 (65.11) &  58.76** (59.81) &   \textbf{44.73 (48.60)} & 31.5** (25.4) & 23.9** (18.7) \\\hline
 \end{tabular}}
-\caption{\label{tab:ptresult} PERs on the evaluation and development sets (latter within parentheses) before and after adaptation with PTs.  MAPSSWE significance testing: *=$p\le 0.003$, *=$p<0.001$.}
+\caption{\label{tab:ptresult} PERs on the evaluation and development sets (latter within parentheses) before and after adaptation with PTs.  MAPSSWE significance testing: * means $p\le 0.003$, ** means $p<0.001$.}
 \end{table*}
 
 This section demonstrates that PT adaptation improves the
-generalization capability of multilingual ASR to an unseen target
+generalization capability of cross-lingual ASR to an unseen target
 language.  Adaptation to ASR-derived PTs (self-training) significantly
 reduces PER, as has been previously
 reported~\cite{vesely2013-semi}. PTs derived from human mismatched
@@ -32,24 +32,29 @@ crowdsourcing provide significant further PER reduction.
 
 Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
 evaluation (and development) sets for four different languages. The
-column titled {\sc Mult-L} lists multilingual baseline error rates,
+column titled {\sc CL} lists cross-lingual baseline error rates,
 copied from Table~\ref{tab:results}.
 
 In Table~\ref{tab:ptresult}, the column labeled {\sc ST} lists the
 PERs of self-trained ASR systems. Self-training was only performed
-using NN systems; no self-training of GMMs was performed.  Differences
-between the evaluation set PERs of {\sc ST} and {\sc MULT-L} systems
-were tested for statistical significance using the MAPSSWE test of the
-{\tt sc\_stats} tool~\cite{Pallet90}.  The Mandarin {\sc ST} system
-was judged significantly better than {\sc MULT-L} at a level of
-$p=0.003$ (denoted *), and the Swahili system at a level of $p<0.001$
-(denoted **); the Cantonese and Hungarian {\sc ST} systems were judged
-to be not significantly better than {\sc MULT-L}.
+using NN systems; no self-training of GMMs was performed, because
+previous studies~\cite{Huang2013} reported it to be less effective.
+Differences between the evaluation set PERs of {\sc ST} and {\sc CL}
+systems were tested for statistical significance using the MAPSSWE
+test of the {\tt sc\_stats} tool~\cite{Pallet90}.  There are 20
+independent statistical comparisons in Table~\ref{tab:ptresult}; the
+study-corrected significance level of $0.05/20=0.0025$ was rounded up
+to $0.003$ because {\tt sc\_stats} only provides three significant
+figures.  The Mandarin {\sc ST} system was judged significantly better
+than {\sc CL} at a level of $p=0.003$ (denoted *), and the Swahili
+system at a level of $p<0.001$ (denoted **); the Cantonese and
+Hungarian {\sc ST} systems were judged to be not significantly better
+than {\sc CL}.
 
 The column headed {\sc PT-adapt} in Table~\ref{tab:ptresult} lists
 PERs from ASR systems that have been adapted to PTs in the target
 language. We observe substantial PER improvements using {\sc PT-adapt}
-over {\sc Mult-L} across all four languages. We also find that PT
+over {\sc CL} across all four languages. We also find that PT
 adaptation consistently outperforms the {\sc ST} systems for all four
 languages. The relative reductions in PER compared to both baselines
 are listed in the last two columns.  Reductions on the evaluation set
@@ -57,8 +62,8 @@ were tested for statistical significance using the MAPSSWE test of the
 {\tt sc\_stats} tool.  All differences were found to be statistically
 significant at $p<0.001$ (denoted **).  This suggests that adaptation
 with PTs is providing more information than that obtained by model
-self-training alone. It is also interesting that we obtain larger PER
-improvements with PTs for Swahili compared to the other three
+self-training alone. It is also interesting that PER
+improvements for Swahili are larger than for the other three
 languages. We conjecture this may be partly because Swahili's
 orthography is based on the Roman alphabet, unlike the other three
 languages. Since the mismatched transcripts also used the Roman
@@ -66,9 +71,8 @@ alphabet, the PTs derived from them may more closely resemble the
 native Swahili transcriptions (from which the phonetic transcriptions
 are derived).
 
-It is also useful to compare the performance of GMM-HMM systems (rows
-4-7 of Table~\ref{tab:ptresult}) with the performance of NN-HMM
-systems (rows 9-12).  In the {\sc MULT-L} setting, an ASR trained
+It is also useful to compare the performance of GMM-HMM and NN-HMM
+systems.  In the {\sc CL} setting, an ASR trained
 using six languages is then applied to an unseen seventh language,
 without adaptation; in this setting, the NN consistently outperforms
 the GMM.  In the {\sc PT-adapt} setting, either GMMs or NNs are

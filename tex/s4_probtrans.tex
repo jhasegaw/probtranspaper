@@ -1,11 +1,144 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Algorithms that Induce a Probabilistic Transcription}
 
+A deterministic transcription is a sequence of phone symbols,
+$\phi^\ell =[\phi_1^\ell,\ldots,\phi_M^\ell]$ where $\phi_m^\ell$ is a
+symbol drawn from the phone set of the utterance language.  We assume
+that $\phi_m^\ell$ can be encoded using an IPA symbol~\cite{ipa1993}.
+The superscript specifies that $\phi^\ell$ is the transcription of the
+$\ell^{\textrm{th}}$ waveform in a database; the collection of all
+transcriptions is $\phi=\left\{\phi^1,\ldots,\phi^L\right\}$.
+
+A probabilistic transcription is a probability mass function (pmf)
+over the set of deterministic transcriptions.  Capital letters denote
+random variables, lowercase denote instances.  $\Phi^{\ell}_m$ is a
+random variable whose instance is $\phi_m^\ell$, and whose domain
+$\Omega_\Phi$ is the union of the set of IPA symbols with the null
+symbol ($\emptyset$), thus $\Omega_\Phi=\left\{\right.\emptyset,$
+\ipa{[a],[i],[2],[\ae],}$\left.\ldots\right\}$, with cardinality
+$|\Omega_\phi|$ equal to one plus the number of distinct IPA symbols.
+Similarly, $\Phi^{\ell}$ is a random variable whose domain is
+$\Omega_\Phi^*$, the set of all sequences composed of symbols in
+$\Omega_\Phi$.  Denote the probability of transcription $\phi^{\ell}$
+as $\rho_{\Phi^\ell}(\phi^{\ell})$, where $\rho$ (``reference'') means
+that $\rho_{\Phi^\ell}(\phi^{\ell})$ is a reference distribution---a
+distribution specified by the probabilistic transcription process, and
+not dependent on ASR model parameters during training.  The
+distribution label $\Phi^\ell$ is omitted when clear from the instance
+label, e.g., $\rho(\phi^\ell)$, but $\rho_{\Phi^\ell}(u)$.
+%A deterministic transcription is a degenerate probabilistic
+%transcription, in which $\rho(\phi^\ell)\in\left\{0,1\right\}$.
+%% comment: I'm guessing the choice of epsilon for the null phoneme is
+%% related to its use representing the "empty string". Incidentally,
+%% linguists use the mathematical "empty set" character (U+2205) to
+%% represent a null phoneme (used in formulas for phonological rules
+%% where sounds get deleted). It's not officially part of the IPA, but
+%% might be a more natural choice (depending on the audience). See:  
+%% https://en.wikipedia.org/wiki/Zero_%28linguistics%29 
+%% also note that different variants of epsilon are being used in the 
+%% main text (lunate variant) and in fig:liu1 (two-lobed variant).
+%% If epsilon is retained, it should at least be the same epsilon
+%% throughout.
+% MH: OK, let's try empty set to see if it works...
+Superscript denotes waveform index, while subscript denotes frame or
+phone index.  Absence of either superscript or subscript denotes a
+collection, thus $\Phi=\left\{\Phi^1,\ldots,\Phi^L\right\}$ (with
+instance value $\phi=\left\{\phi^1,\ldots,\phi^L\right\}$) is the
+random variable over all transcriptions of the database.  In all of
+the work described in this paper, the probabilistic transcription is
+represented as a confusion network~\cite{Mangu00}, meaning that it is
+the product of independent symbol pmfs $\rho(\phi_m^\ell)$:
+\begin{equation}
+  \rho(\phi)=\prod_{\ell=1}^L\rho(\phi^\ell)=
+  \prod_{\ell=1}^L \prod_{m=1}^M \rho(\phi_m^{\ell})
+\end{equation}
+The pmf $\rho(\phi^\ell)$ can be represented as a weighted
+finite state transducer (wFST) in which edges connect states in a
+strictly left-to-right fashion without skips, and in which the edges
+connecting state $m$ to state $m+1$ are weighted according to the pmf
+$\rho(\phi_m^\ell)$ (Fig.~\ref{fig:pt}).
+\begin{figure}
+\begin{center}
+  \tikzstyle{pre}=[<-,shorten <=1pt,>=stealth',semithick,draw=black]
+  \tikzstyle{post}=[->,shorten >=1pt,>=stealth',semithick,draw=black]
+  \begin{tikzpicture}[
+      state/.style={circle,thick, draw=black, text=black, text width=0.25cm},
+    ]
+    \node[state] (g0) at (0,0) {};
+    \node[state] (g1) at (2,0) {};
+    \draw[post] (g0) -- (0.5,1) -- (1.5,1) -- (g1);
+    \node at (1,1.25) {\ipa{[a]}$/0.5$};
+    \draw[post] (g0) -- (0.5,0) -- (1.5,0) -- (g1);
+    \node at (1,0.25) {\ipa{[\ae]}$/0.4$};
+    \draw[post] (g0) -- (0.5,-1) -- (1.5,-1) -- (g1);
+    \node at (1,-0.75) {$\emptyset/0.1$};
+    \node[state] (g2) at (4,0) {};
+    \draw[post] (g1) -- (2.5,1.5) -- (3.5,1.5) -- (g2);
+    \node at (3,1.75) {\ipa{[\"*b]}$/0.45$};
+    \draw[post] (g1) -- (2.5,0.5) -- (3.5,0.5) -- (g2);
+    \node at (3,0.75) {\ipa{[V]}$/0.35$};
+    \draw[post] (g1) -- (2.5,-0.5) -- (3.5,-0.5) -- (g2);
+    \node at (3,-0.25) {\ipa{[b]}$/0.10$};
+    \draw[post] (g1) -- (2.5,-1.5) -- (3.5,-1.5) -- (g2);
+    \node at (3,-1.25) {\ipa{[p]}$/0.10$};
+    \node[state] (g3) at (6,0) {};
+    \draw[post] (g2) -- (4.5,1) -- (5.5,1) -- (g3);
+    \node at (5,1.25) {\ipa{[i]}$/0.7$};
+    \draw[post] (g2) -- (4.5,0) -- (5.5,0) -- (g3);
+    \node at (5,0.25) {\ipa{[e]}$/0.2$};
+    \draw[post] (g2) -- (4.5,-1) -- (5.5,-1) -- (g3);
+    \node at (5,-0.75) {$\emptyset/0.1$};
+    \node[state] (g4) at (8,0) {};
+    \draw[post] (g3) -- (6.5,1.5) -- (7.5,1.5) -- (g4);
+    \node at (7,1.75) {\ipa{[a]}$/0.3$};
+    \draw[post] (g3) -- (6.5,0.5) -- (7.5,0.5) -- (g4);
+    \node at (7,0.75) {\ipa{[\ae]}$/0.3$};
+    \draw[post] (g3) -- (6.5,-0.5) -- (7.5,-0.5) -- (g4);
+    \node at (7,-0.25) {\ipa{[i]}$/0.2$};
+    \draw[post] (g3) -- (6.5,-1.5) -- (7.5,-1.5) -- (g4);
+    \node at (7,-1.25) {\ipa{[e]}$/0.2$};
+    \node[state] (g5) at (10,0) {};
+    \draw[post] (g4) -- (8.5,1) -- (9.5,1) -- (g5);
+    \node at (9,1.25) {\ipa{[m]}$/0.6$};
+    \draw[post] (g4) -- (8.5,0) -- (9.5,0) -- (g5);
+    \node at (9,0.25) {\ipa{[n]}$/0.2$};
+    \draw[post] (g4) -- (8.5,-1) -- (9.5,-1) -- (g5);
+    \node at (9,-0.75) {\ipa{[N]}$/0.2$};
+    \node[state] (g6) at (12,0) {};
+    \draw[post] (g5) -- (10.5,1) -- (11.5,1) -- (g6);
+    \node at (11,1.25) {\ipa{[i]}$/0.4$};
+    \draw[post] (g5) -- (10.5,0) -- (11.5,0) -- (g6);
+    \node at (11,0.25) {\ipa{[e]}$/0.4$};
+    \draw[post] (g5) -- (10.5,-1) -- (11.5,-1) -- (g6);
+    \node at (11,-0.75) {$\emptyset/0.2$};
+    \node[state] (g7) at (14,0) {};
+    \draw[post] (g6) -- (12.5,1.5) -- (13.5,1.5) -- (g7);
+    \node at (13,1.75) {\ipa{[k]}$/0.4$};
+    \draw[post] (g6) -- (12.5,0.5) -- (13.5,0.5) -- (g7);
+    \node at (13,0.75) {\ipa{[k\super h]}$/0.3$};
+    \draw[post] (g6) -- (12.5,-0.5) -- (13.5,-0.5) -- (g7);
+    \node at (13,-0.25) {\ipa{[\"*g]}$/0.1$};
+    \draw[post] (g6) -- (12.5,-1.5) -- (13.5,-1.5) -- (g7);
+    \node at (13,-1.25) {\ipa{[g]}$/0.1$};
+    \draw[post] (g6) -- (12.5,-2.5) -- (13.5,-2.5) -- (g7);
+    \node at (13,-2.25) {$\emptyset/0.1$};
+  \end{tikzpicture}
+\end{center}
+\caption{A probabilistic transcription (PT) is a probability mass
+  function (pmf) over candidate phonetic transcriptions.  All PTs
+  considered in this paper can be expressed as confusion networks,
+  thus, as sequential pmfs over the null-augmented space of IPA
+  symbols.  In this schematic example, $\emptyset$ is the null
+  symbol, symbols in brackets are IPA, and numbers indicate
+  probabilities.}
+  \label{fig:pt}
+\end{figure}
+
 Three different experimental sources were tested for the creation of a
 PT.  Self-training is now well-established in the field of
 under-resourced ASR; we adopted the algorithm of Vesely, Hannemann and
 Burget~\cite{vesely2013-semi}.  Mismatched crowdsourcing used original
-annotations collected using our own previously published
-methods~\cite{JHJ15b}.  EEG was not used independently here, but
-rather, was used to learn a misperception model applicable to the
-interpretation of mismatched crowdsourcing.
+annotations collected using published methods~\cite{JHJ15b}.  EEG was
+not used independently here, but rather, was used to learn a
+misperception model applicable to the interpretation of mismatched
+crowdsourcing.

@@ -1,34 +1,34 @@
 \section{Discussion}
 
 Models of human neural processing systems have often been used to
-inspire improvements in machine-learning systems (for a catalog 
-of such approaches and a warning, see~\cite{Bourlard96}).  These
-systems are often called neuromorphic, because the system is engineered
-to mimic the behavior of human neural systems. In contrast to that
-approach, our incorporation of EEG signals into ASR resonates with
-the Human Aided Computing approach used in computer
-vision.~\cite{Shenoy08,Wang09} Together with our EEG work presented here,
-this class of approach represents a less explored direction for design
-of machine learning systems, whereby recorded neural data (rather than
-neuro-inspired models) are used as a source of prior information to
-improve system performance. Therefore, our work here suggests that, by
-thinking about the kinds of prior information required by a machine
-learning system, engineers and neuroscientists can work together to
-design specific neuroscience experiments that leverage human abilities
-and provide information that can be directly integrated into the system
-to solve an engineering problem.
+inspire improvements in machine-learning systems (for a catalog of
+such approaches and a warning, see~\cite{Bourlard96}).  These systems
+are often called neuromorphic, because the system is engineered to
+mimic the behavior of human neural systems. In contrast to that
+approach, our incorporation of EEG signals into ASR resonates with the
+Human Aided Computing approach used in computer
+vision~\cite{Shenoy08,Wang09}. Together with our EEG work presented
+here, this class of approach represents a less explored direction for
+design of machine learning systems, whereby recorded neural data
+(rather than neuro-inspired models) are used as a source of prior
+information to improve system performance. Therefore, our work here
+suggests that, by thinking about the kinds of prior information
+required by a machine learning system, engineers and neuroscientists
+can work together to design specific neuroscience experiments that
+leverage human abilities and provide information that can be directly
+integrated into the system to solve an engineering problem.
 
 NN-HMM outperforms the GMM-HMM in all baseline conditions, but not
 when adapted using PTs.  Preliminary analysis suggests that the NN is
 more adversely affected than the GMM by label noise in the PTs.  A NN
 is trained to match the senone posterior probabilities
-($\pi(s_t^\ell|x^\ell,\phi^\ell,\theta)$ computed by a first-pass
+$\pi(s_t^\ell|x^\ell,\phi^\ell,\theta)$ computed by a first-pass
 GMM-HMM.  Many papers have demonstrated that entropy in the senone
 posteriors is detrimental to NN training, and that the senone
 posteriors should therefore be quantized
 ($\pi(s_t^\ell)\rightarrow\left\{0,1\right\}$) prior to NN training.
 In PT adaptation, however, entropy is unavoidable, and quantizing the
-forced alignment doesn't necessarily help.  Table~\ref{tab:LPER}
+forced alignment doesn't necessarily help.  Fig.~\ref{fig:pt_decode_per}
 showed that the 1-best path through the PT is only correct for 29-49\%
 of all phones, depending on language.  There is good reason for this:
 the transcribers don't speak the target language, so they find some of
@@ -44,13 +44,13 @@ trained on other languages.  Other authors have proposed, and
 Table~\ref{tab:ptresult} confirms, that significant error reductions
 can be achieved using self-training: by automatically labeling speech
 in the target language, and adding the self-labeled data to the
-training set.  Table~\ref{tab:ptresult} shows that
-further error rate reductions can be achieved using mismatched
-crowdsourcing: by asking non-speakers of the target language to write
-down what they hear, and by interpreting their nonsense orthography as
-information about the phonetic content of the utterances.  The PER of
-mismatched crowdsourcing (Table~\ref{tab:LPER}) is almost as high as
-the PER of cross-language ASR (Table~\ref{tab:results}), but the
+training set.  Table~\ref{tab:ptresult} shows that further error rate
+reductions can be achieved using mismatched crowdsourcing: by asking
+non-speakers of the target language to write down what they hear, and
+by interpreting their nonsense orthography as information about the
+phonetic content of the utterances.  The PER of mismatched
+crowdsourcing (Fig.~\ref{fig:pt_decode_per}) is almost as high as the
+PER of cross-language ASR (Table~\ref{tab:results}), but the
 information provided by mismatched crowdsourcing is superior to that
 provided by self-training in the sense that it trains a better ASR.
 

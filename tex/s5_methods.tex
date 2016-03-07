@@ -2,17 +2,16 @@
 \section{Experimental Methods}
 \label{sec:methods}
 
-Our goal is to train a phone recognition system for a given target
-language in which no native transcriptions are available. We assume
-that we have access to unspoken texts and to untranscribed audio in
-the target language, but not to transcribed audio
-(Sec.~\ref{sec:data}).  Mismatched crowdsourcing was interpreted using
-a multilingual misperception G2P (Sec.~\ref{sec:methodsmc}), or using
-a language-specific misperception G2P estimated using EEG
-(Sec.~\ref{sec:methods_eeg}).  Baseline multilingual systems are
-trained using native transcriptions from several different languages
-not including the target language (Section~\ref{sec:mlbaseline}).
-Finally, parameters of the acoustic model are adapted using PTs in the
-target language, derived from either self-training or from mismatched
-transcriptions (Sec.~\ref{sec:ptadapt}).
+ASR was trained in four target languages, each using no native
+transcriptions.  Unspoken texts and untranscribed audio were acquired
+in each language (Sec.~\ref{sec:data}).  Texts from mismatched
+crowdsourcing were decoded using a multilingual misperception G2P
+(Sec.~\ref{sec:methodsmc}), or using a language-specific misperception
+G2P estimated using EEG (Sec.~\ref{sec:methods_eeg}).  Baseline
+multilingual systems were trained using native transcriptions from
+several different languages not including the target language
+(Section~\ref{sec:mlbaseline}).  Finally, parameters of the acoustic
+model were adapted using PTs in the target language, derived from
+either self-training or from mismatched transcriptions
+(Sec.~\ref{sec:ptadapt}).
 
