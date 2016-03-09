@@ -7,7 +7,7 @@
 Epoched and feature-coded EEG data {\em for the English syllables only}
 were used to train a support vector machine classifier for each distinctive feature.
 The classifiers were then used (without re-training) to classify the
-EEG responses to the and Hindi syllables.
+EEG responses to the Dutch and Hindi syllables.
 Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of these
 classifiers when applied to the three languages.
 
@@ -57,7 +57,7 @@ some constant $0\le a\le 1$.
   \label{fig:eeg_confusions}
 \end{figure}
 
-In order to evaluate the effectiveness of the EEG-induced misperception transducer we looked at the transcription accuracies for the Dutch language when performed using 1) mismatched crowdsourcing 2) feature-based misperception transducer computed using uniform weighting, $\rho_U(\psi|\phi)$ 3) EEG-induced transducer combined with the feature-based transducer, $\rho_I(\psi|\phi)$. To Combine the two transducers, the value of the parameter $\alpha$ was optimized on a separate development set. As shown in Table~\ref{tbl:eegresults} phone error rates were respectively improved $1.5\%$ and $2.5\%$ relative to mismatched crowdsourcing respectively by using the feature-based and combined misperception transducers. 
+In order to evaluate the effectiveness of the EEG-induced misperception transducer we looked at the transcription accuracies for the Dutch language when performed using 1) mismatched crowdsourcing 2) feature-based misperception transducer computed using uniform weighting, $\rho_U(\psi|\phi)$ 3) EEG-induced transducer combined with the feature-based transducer, $\rho_I(\psi|\phi)$. To combine the two transducers, the value of the parameter $\alpha$ was optimized on a separate development set. As shown in Table~\ref{tbl:eegresults} phone error rates were respectively improved $1.5\%$ and $2.5\%$ relative to mismatched crowdsourcing respectively by using the feature-based and combined misperception transducers. 
 
 \begin{table*}
 \begin{center}

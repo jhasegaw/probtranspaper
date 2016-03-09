@@ -11,7 +11,7 @@ is decomposed into two separate transducers,
 a misperception transducer $\rho(\psi|\phi)$, and an
 annotation-language G2P $\rho(\lambda|\psi)$:
 \begin{equation}
-  \rho(\lambda|\psi)=\sum_{\psi}\rho(\lambda|\psi)\rho(\psi|\phi)
+  \rho(\lambda|\phi)\approx\sum_{\psi}\rho(\lambda|\psi)\rho(\psi|\phi)
 \end{equation}
 where $\phi$ is a phone string in the utterance language, $\psi$ is a
 phone string in the annotation language, and $\lambda$ is an
@@ -72,14 +72,14 @@ particular, the weights $w_k$ of the distinctive features can be set
 based on similarity of electrocortical responses (measured using EEG)
 as determined by a classifier trained on distinctive feature
 representations and electrocortical responses to the listener's native
-language phones. Thus, given a set of EEG response signals $y(\psi)$
-recorded when a listener hears audio corresponding to phone $\psi$ in
-the annotation language, and supposing that $g_k(y(\psi))$ is the
-output of a binary classifier trained on EEG responses to phones in
-his/her native language to detect the $k^{\textrm{th}}$ distinctive
-feature of phone $\psi$\cite{Liberto15}, then the contributions in
+language phones. Thus, given a set of EEG response signals $y(\phi)$
+recorded when a listener hears audio corresponding to phone $\phi$ in
+the annotation language, whose $k^\textrm{th}$ distinctive feature is
+$f_k(\phi)$, and supposing that $g_k(y(\phi))$ is the output of a
+binary classifier trained to detect $f_k(\phi)$ based on speech in the
+listener's native language\cite{Liberto15}, then the contributions in
 Eq.~(\ref{eq:dfdist}) can be estimated as
 \begin{equation}
-  w_k = -\ln\Pr\left\{g_k(y(\psi))= f_k(\psi)\right\}
+  w_k = -\ln\Pr\left\{g_k(y(\phi))= f_k(\phi)\right\}
   \label{eq:eegdist}
 \end{equation}
