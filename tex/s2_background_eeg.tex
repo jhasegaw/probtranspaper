@@ -18,8 +18,31 @@ $\rho(\psi|\phi)$ are then estimated: for each non-native phone
 $\phi$, the classifier outputs are interpreted as an estimate of
 $\rho(\psi|\phi)$.
 
-\begin{figure}
-  \centerline{\includegraphics[width=4in]{../figs/Slide2JSALT.pdf}}
+\begin{figure}\setlength{\textfloatsep}{3mm}
+\setlength{\fboxsep}{0pt}%
+\setlength{\fboxrule}{0.5pt}%
+\begin{center}
+  \begin{tikzpicture}[
+      boxed/.style={rectangle,thick, draw=black, text=black, fill=white, 
+      				rounded corners=1mm, text centered, text width=2.5cm},
+    ]
+    \node[text width=1.5in, text centered, anchor=north] (label0) at (-5,2.75) {EEG response to foreign phones (epoched \& averaged)};
+    \node[text width=2.5in, text centered, anchor=north] (label1) at (0,2.75) {EEG feature classifiers trained on feature-labeled English phones};
+    \node (raweeg) at (-5,0) {\fbox{\includegraphics[width=1in]{../figs/avg-eeg.pdf}}};
+    \node[boxed] (f0) at (-0.4,1.1) {\phantom{pd}};
+    \node[boxed] (f1) at (-0.3,0.9) {\phantom{pd}};
+    \node[boxed] (f2) at (-0.2,0.7) {\phantom{pd}};
+    \node[boxed] (f3) at (-0.1,0.5) {\phantom{pd}};
+    \node[boxed] (f4) at (0.0,0.3) {\phantom{pd}};
+    \node[boxed] (f5) at (0.15,0.1) {\phantom{p}continuant\phantom{d}};
+    \node[boxed] (f6) at (0.45,-0.4) {\phantom{p}sonorant\phantom{d}};
+    \node[boxed] (f7) at (0.75,-0.9) {aspirated};
+    \draw[->, thick] (-3.25,0) -- (-2,0);
+    \draw[->, thick] (2,0) -- (3,0);
+    \node[text width=1in, text centered] (label2) at (4.5,0) {\baselineskip=8pt Foreign phone misperception probabilities};
+  \end{tikzpicture}\\
+\end{center}
+\setlength{\abovecaptionskip}{0pt}
   \caption{EEG responses are recorded while listeners hear speech in
     their native language.  For each listener, a bank of distinctive
     feature classifiers are trained.  Listeners then hear speech in an

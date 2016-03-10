@@ -37,8 +37,8 @@ be possible confusions.  $\rho_{EEG}(\psi|\phi)$ has a very different
 problem: since distinctive feature classfiers have been trained for
 only a small set of distinctive features, there are large groups of
 phonemes whose confusion probabilities can not be distinguished
-(giving the figure its block-diagonal structure).  The faults of both
-models can be ameliorated by interpolating them in some way, e.g., by
+(giving the figure its block-matrix structure).  The faults of both
+models can be ameliorated by averaging them in some way, e.g., by
 computing the linear interpolation
 $\rho_I(\psi|\phi)=a\rho_U(\psi|\phi)+(1-a)\rho_{EEG}(\psi|\phi)$ for
 some constant $0\le a\le 1$.
@@ -57,7 +57,17 @@ some constant $0\le a\le 1$.
   \label{fig:eeg_confusions}
 \end{figure}
 
-In order to evaluate the effectiveness of the EEG-induced misperception transducer we looked at the transcription accuracies for the Dutch language when performed using 1) mismatched crowdsourcing 2) feature-based misperception transducer computed using uniform weighting, $\rho_U(\psi|\phi)$ 3) EEG-induced transducer combined with the feature-based transducer, $\rho_I(\psi|\phi)$. To combine the two transducers, the value of the parameter $\alpha$ was optimized on a separate development set. As shown in Table~\ref{tbl:eegresults} phone error rates were respectively improved $1.5\%$ and $2.5\%$ relative to mismatched crowdsourcing respectively by using the feature-based and combined misperception transducers. 
+In order to evaluate the effectiveness of the EEG-induced misperception 
+transducer we looked at the transcription accuracies for the Dutch 
+language when performed using 1)~mismatched crowdsourcing, or 
+2)~feature-based misperception transducer computed using uniform 
+weighting, $\rho_U(\psi|\phi)$ 3) EEG-induced transducer combined with 
+the feature-based transducer, $\rho_I(\psi|\phi)$. To combine the two 
+transducers, the value of the parameter $\alpha$ was optimized on a 
+separate development data set. As shown in Table~\ref{tbl:eegresults}, 
+phone error rates were improved $1.5\%$ and $2.5\%$ relative to 
+mismatched crowdsourcing by using the feature-based and combined 
+misperception transducers (respectively). 
 
 \begin{table*}
 \begin{center}

@@ -5,11 +5,11 @@ The baseline and the adapted models were implemented using
 Kaldi~\cite{Kaldi2011}. In order to efficiently carry out the required
 operations on the cascade $H\circ C\circ PT\circ G$, $PT$ was defined
 as $\mathrm{proj}_{\mathrm{input}} (\widehat{PT})$, where
-$\widehat{PT}$ is a WFST mapping phone sequences to English letter
+$\widehat{PT}$ is a wFST mapping phone sequences to English letter
 sequences (Eq.~\ref{eq:PT}), and $\mathrm{proj}_{\mathrm{input}}$
 refers to projecting onto the input labels. For the purposes of
 computational efficiency, the cascade for $\widehat{PT}$ includes an
-additional WFST restricting the number of consecutive deletions of
+additional wFST restricting the number of consecutive deletions of
 phones and insertions of letters (to a maximum of 3). Two additional
 disambiguation symbols~\cite{mohri2008speech} were used to determinize
 these insertions and deletions in $\widehat{PT}$. MAP adaptation for
