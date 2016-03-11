@@ -4,7 +4,7 @@
 \setlength{\tabcolsep}{0.37cm}
 \begin{table*}[t]
 \centerline{\begin{tabular}{| c || c | c | c | c | c |}\hline
-Language &  Cross-Lingual & Self-training & \multicolumn{3}{ |c| }{CL + PT adaptation}  \\\cline{4-6}
+Language &  Cross-Lingual & Self-training & \multicolumn{3}{ c| }{CL + PT adaptation}  \\\cline{4-6}
 Code & ({\sc CL}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\\cline{4-6}
  &&&& \% over {\sc CL} & \% over {\sc ST}\\
 \hline
@@ -12,7 +12,7 @@ Code & ({\sc CL}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn
 yue & 68.40 (68.35) & &  \textbf{57.20 (56.57)} &  16.4** (17.1) & 10.3** (9.2) \\
 hun & 68.62 (66.90) & &   \textbf{56.98 (57.26)} & 16.9** (14.3) & 10.2** (9.9) \\
 cmn & 71.30 (68.66) & &   \textbf{58.21 (57.85)} &  18.4** (15.7) & 10.3** (9.7) \\
-swh & 63.04 (64.73) & &   \textbf{44.31 (48.88)} & 29/6** (24.6) & 24.7** (18.4) \\
+swh & 63.04 (64.73) & &   \textbf{44.31 (48.88)} & 29.6** (24.6) & 24.7** (18.4) \\
 \hline\hline
 \multicolumn{6}{|l|}{NN-HMM} \\\hline
 yue & 66.59 (65.41) & 63.79 (62.46) &&& \\
@@ -64,12 +64,46 @@ significant at $p<0.001$ (denoted **).  This suggests that adaptation
 with PTs is providing more information than that obtained by model
 self-training alone. It is also interesting that PER
 improvements for Swahili are larger than for the other three
-languages. We conjecture this may be partly because Swahili's
-orthography is based on the Roman alphabet, unlike the other three
-languages. Since the mismatched transcripts also used the Roman
-alphabet, the PTs derived from them may more closely resemble the
-native Swahili transcriptions (from which the phonetic transcriptions
-are derived).
+languages. %We conjecture this may be partly because Swahili's
+%orthography is based on the Roman alphabet, unlike the other three
+%languages. Since the mismatched transcripts also used the Roman
+%alphabet, the PTs derived from them may more closely resemble the
+%native Swahili transcriptions (from which the phonetic transcriptions
+%are derived).
+%% DM: the above point (commented out) misses the mark. The influence of
+%% orthography here lies in what sounds English speakers typically use 
+%% roman letters to represent. Swahili happens to have a phone set that
+%% can be represented with the roman alphabet in a way that makes 
+%% pretty good sense to a native English speaker, and the things that
+%% are phonologically weird about Swahili don't cause problems. In
+%% contrast, the roman alphabet as used by English speakers doesn't have
+%% a good way to handle the things about Mandarin, Cantonese, or
+%% Hungarian that are phonologically weird (from an English perspective)
+%% e.g., unfamiliar vowel qualities like front rounded vowels, See
+%% below for what I think is a more plausible explanation of why PT
+%% worked well for Swahili, and an additional point about many-to-one
+%% correspondences in the perceptual domain.
+We conjecture this may be due to the relatively good mapping between
+Swahili's phone inventory and that of English. For example: all Swahili
+vowel qualities are also found in English, and the Swahili phonemes 
+that would be unfamiliar to an English speaker (prenasalized stops, 
+palatal consonants) have representations in English orthography that are 
+fairly natural (``mb'', ``nd'', etc. for prenasalized stops; ``tya'', 
+``chya'', ``nya'', 'etc. for palatals). In contrast: Mandarin, 
+Cantonese, and Hungarian each have at least two vowel qualities not 
+found in English; Mandarin and 
+Cantonese have many diphthongs not found in English; and some of the 
+consonant phonemes (e.g., Mandarin retroflexes) do not have 
+representations in English orthography that are obvious or 
+straightforward. Another possible source of the difference would be if
+Swahili phonemes had (on average) higher perceptual discriminability 
+(to English speakers) than the phonemes of other languages tested. In
+other words, there may have been fewer many-to-one mappings in Swahili
+than in the other languages (Hungarian's contrastive vowel length is one
+example of a likely source of perceptual noise in the mismatched 
+transcriptions). Both of these factors (orthographic and 
+perceptual) may have led to less label noise in the Swahili PT than in 
+the PTs of the other languages. 
 
 It is also useful to compare the performance of GMM-HMM and NN-HMM
 systems.  In the {\sc CL} setting, an ASR trained

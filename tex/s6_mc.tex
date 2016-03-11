@@ -15,13 +15,15 @@
     Wikipedia texts (shortest bar in each language).}
   \label{fig:pt_decode_per}
 \end{figure}
+%% KC: caption should not reference "tallest bar" etc, but rather should
+%% refer to colors.
 
 The quality of a probabilistic transcription derived from mismatched
 crowdsourcing is significantly improved by using a phone language
 model during the decoding process ($\rho(\phi)$ in Eq.~\ref{eq:PT}).
 A crude measure of the quality of the PTs is given by the phone error
 rate between $\phi^* = \argmax_{\phi} \rho(\phi|T)$ and the reference
-phone sequences, called the ``label phone error rate'' (LPER).Phone
+phone sequences, called the ``label phone error rate'' (LPER). Phone
 language models for each target language were computed from Wikipedia
 texts using the methods described in Sec.~\ref{sec:trainwithlm}.
 LPER of the 1-best path through the resulting PTs are shown in

@@ -5,36 +5,9 @@ To compute distinctive feature weights used in estimating the misperception
 transducer as shown in Eqs.~(\ref{eq:dfdist}) and~(\ref{eq:eegdist}),
 recordings of cortical activity in response to non-native phones were
 made using EEG. Signals were acquired using a BrainVision actiCHamp 
-system with 64 channels and 1000 Hz sampling rate.
-All methods were approved by the University of Washington Institutional
+system with 64 channels and 1000 Hz sampling frequency.
+All procedures were approved by the University of Washington Institutional
 Review Board.
-
-Auditory stimuli used to evoke the electrocortical responses comprised
-consonant-vowel (CV) syllables representing three languages: English,
-Dutch and Hindi. The inclusion of only two non-English languages in the
-auditory stimuli was dictated by the relatively high number of
-repetitions required to achieve good signal-to-noise ratio from averaged
-EEG recordings. The choice of Dutch and Hindi was governed by their
-inclusion in misperception G2P training data as
-described in Section~\ref{sec:MC}, and the relative similarities
-between their phoneme inventories and the phoneme inventory of English.
-In particular, we chose languages with relatively many (Hindi) or few
-(Dutch) ``many-to-one mappings'' between the non-English phoneme
-inventory and the phoneme inventory of English, estimated based on 
-distinctive feature representations of the phonemes in each language 
-(as given in the PHOIBLE database~\cite{PHOIBLE}). Such 
-``many-to-one mappings'' are expected to pose a problem for the 
-non-native transcription task being modeled by the misperception 
-transducer, so to test the limits of our design we chose languages that 
-differed greatly in this property. 
-%% rest of this paragraph could probably be cut if necessary
-Note that, although Hindi podcasts were not included in the training
-data described in Section~\ref{sec:data}, colloquial spoken Hindi and
-Urdu are extremely similar phonologically~\cite{Kachru90}, and
-considering that the auditory stimuli for the EEG portion of this
-experiment are simple CV syllables, it is reasonable to consider Hindi
-and Urdu as equivalent for the purpose of computing feature weights for
-the misperception transducer.
 
 %% This next section, including tab:m2o, seems like more detail than
 %% is necessary; the explanation above as to **why** we chose Hindi and
@@ -45,13 +18,20 @@ the misperception transducer.
 % mappings,'' other than the metric listed in eq:m2o.
 % Somebody someday might come back and test different versions of this
 % metric to see which one is most useful, for some definition of ``useful.''
-Language similarity was defined as the number of many-to-one mappings
+%% DM: point conceded, though I still think the table is overkill.
+Auditory stimuli were consonant-vowel
+(CV) syllables representing consonants of three languages: English,
+Dutch and Hindi. The inclusion of only two non-English languages 
+was dictated by the relatively high number of
+repetitions needed for good signal-to-noise ratio from averaged
+EEG recordings. The choice of Dutch and Hindi was made based on language
+phonological similarity, defined as the number of many-to-one mappings
 ($N_{M2O}(\Omega_\Phi)$) between the English phoneme inventory
-($\Omega_\Psi$) and the non-native phoneme inventory $\Omega_\Phi$.
+($\Omega_\Psi$) and the non-English phoneme inventory $\Omega_\Phi$.
 Using distinctive feature representations of the phonemes in each
-inventory (as given in the PHOIBLE database \cite{PHOIBLE}), a
-many-to-one mapping was defined by finding, for each
-non-native phoneme $\phi$, the English phoneme $\psi^*(\phi)$ to which
+inventory from the PHOIBLE database~\cite{phoible}, a many-to-one 
+mapping was defined by finding, for each
+non-English phoneme $\phi$, the English phoneme $\psi^*(\phi)$ to which
 it is most similar:
 \begin{equation}
   \psi^*(\phi) = \argmin \sum_k \delta\left(f_k(\psi)\ne f_k(\phi)\right)
@@ -82,10 +62,25 @@ Table~\ref{tab:m2o} for several languages.
   \label{tab:m2o}
 \end{table}
 
+Based on this criterion, Hindi was chosen for having relatively few
+many-to-one mappings with English, while Dutch has relatively few. 
+Many-to-one mappings are expected to pose a problem for the 
+non-native transcription task being modeled by the misperception 
+transducer, so to test the contribution of EEG we chose languages that 
+differed greatly in this property. 
+%% rest of this paragraph could probably be cut if necessary
+Note that, although Hindi podcasts were not included in the training
+data described in Section~\ref{sec:data}, colloquial spoken Hindi and
+Urdu are extremely similar phonologically~\cite{Kachru90}, and
+considering that the auditory stimuli for the EEG portion of this
+experiment are simple CV syllables, it is reasonable to consider Hindi
+and Urdu as equivalent for the purpose of computing feature weights for
+the misperception transducer.
+
 To construct the auditory stimuli, two vowels and several consonants
 were selected from the phoneme inventory of each language (18 consonants
-for English, 17 for Dutch, and 19 for Hindi). Choice of consonants was
-made so as to emphasize differences in the many-to-one relationships
+for English, 17 for Dutch, and 19 for Hindi). Consonants were chosen
+to emphasize differences in the many-to-one relationships
 between English-Dutch and English-Hindi, while maintaining roughly equal 
 numbers of consonants for each language. The consonants chosen for each 
 language are given in Table~\ref{tab:eegphones}; the vowels chosen were 
@@ -103,14 +98,15 @@ the same for all three languages (/a/ and /e/).
   \end{tabular}
   \caption{Consonant phones used in the EEG experiment represented using
   IPA. Vertical alignment of cells suggests many-to-one mappings
-  expected based on distinctive feature values from PHOIBLE.}
+  expected based on distinctive feature values.}
   \label{tab:eegphones}
 \end{table}
 
 Two native speakers of each language (one male and one female) were
-recorded (44100 sample rate, 16 bit depth) speaking multiple repetitions of the set of CV syllables for
+recorded (44100 Hz sampling frequency, 16 bit depth) speaking multiple 
+repetitions of the set of CV syllables for
 their language. Three tokens of each unique syllable were excised from
-the raw recordings (24414 downsampled, RMS normalized).
+the raw recordings, downsampled to 24414 Hz, and RMS normalized.
 Recorded syllables had an average duration of 400~ms, and were presented
 via headphones to one monolingual American English listener.
 The stimuli were presented in 9 blocks of 15 minutes per block, for a
@@ -126,7 +122,7 @@ Where more than one choice of features was sufficient to define those
 contrasts, preference was given to features that reflect differences
 in temporal as opposed to spectral features of the consonants, due to
 the high fidelity of EEG at reflecting temporal envelope properties of 
-speech.~\cite{Liberto15} The final set of features chosen was:
+speech~\cite{Liberto15}. The final set of features chosen was:
 continuant, sonorant, delayed release, voicing, aspiration, labial,
 coronal, and dorsal.
 % In other words, differences in the temporal amplitude envelope of
