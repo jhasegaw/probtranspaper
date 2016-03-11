@@ -1,4 +1,4 @@
-<SYSTEM title="trn/dnnpt/dnnpt_SW_eval.trn" ref_fname="trn/ref/ref_SW_eval.trn" hyp_fname="trn/dnnpt/dnnpt_SW_eval.trn" creation_date="Sat Mar  5 11:08:17 2016" format="2.4" frag_corr="FALSE" opt_del="FALSE" weight_ali="FALSE" weight_filename="">
+<SYSTEM title="trn/dnnpt/dnnpt_SW_eval.trn" ref_fname="trn/ref/ref_SW_eval.trn" hyp_fname="trn/dnnpt/dnnpt_SW_eval.trn" creation_date="Fri Mar 11 14:45:10 2016" format="2.4" frag_corr="FALSE" opt_del="FALSE" weight_ali="FALSE" weight_filename="">
 <SPEAKER id="swahili_141216_380127">
 <PATH id="(swahili_141216_380127-37)" word_cnt="61" sequence="123">
 S,"s","e":S,"n","j":S,"a","u":C,"i","i":D,"t",:D,"s",:S,"v","n":C,"e","e":C,"r","r":C,"i","i":C,"j","j":C,"i","i":D,"s",:S,"b","th":C,"a","a":S,"b","j":C,"i","i":S,"n","w":S,"g","a":C,"kh","kh":D,"u",:C,"w","w":C,"a","a":S,"k","kh":C,"a","a":S,"m","l":S,"&","a":C,"ph","ph":D,"o",:S,"l","u":C,"i","i":C,"s","s":C,"i","i":I,,"a":I,,"j":I,,"kh":C,"w","w":C,"a","a":C,"l","l":C,"i","i":S,"kh","l":C,"u","u":I,,"tsh":S,"a","i":C,"w","w":D,"a",:D,"m",:C,"e","e":S,"m","r":S,"jj","i":S,"u","k":C,"a","a":C,"n","n":D,"a",:D,"h",:D,"a",:D,"l",:D,"i",:D,"kh",:D,"u",:D,"a",

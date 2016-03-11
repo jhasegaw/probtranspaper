@@ -1,0 +1,69 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnn/dnn_CA_eval.trn and trn/dnnpt/dnnpt_CA_eval.trn
+
+                                                                                                           Signed
+         Spkr                trn/dnn/dnn_CA_eval.trn      trn/dnnpt/dnnpt_CA_eval.trn  Difference   Rank    Rank
+------------------------------------------------------------------------------------------------------------------
+cantonese_140916_361014               66.29                          54.86               11.43      4.0      4.0
+cantonese_140916_361200               58.30                          42.73               15.57     15.0     15.0
+cantonese_140917_361320               69.23                          55.03               14.20     11.0     11.0
+cantonese_140917_361366               64.12                          48.82               15.29     14.0     14.0
+cantonese_140917_361368               61.33                          45.15               16.18     16.0     16.0
+cantonese_140918_361554               60.66                          39.34               21.31     19.0     19.0
+cantonese_140925_362959               59.16                          47.16               12.00      8.0      8.0
+cantonese_140925_363090               63.75                          52.08               11.67      6.0      6.0
+cantonese_140926_363178               63.28                          54.70                8.58      2.0      2.0
+cantonese_140926_363198               66.28                          54.80               11.48      5.0      5.0
+cantonese_140926_363222               61.32                          47.35               13.97     10.0     10.0
+cantonese_140927_363424               75.25                          60.07               15.18     13.0     13.0
+cantonese_140927_363450               78.51                          70.25                8.26      1.0      1.0
+cantonese_140928_363564               71.35                          56.60               14.76     12.0     12.0
+cantonese_141005_365168               61.95                          49.56               12.39      9.0      9.0
+cantonese_141005_365170               71.00                          59.00               12.00      7.0      7.0
+cantonese_141006_365326               62.75                          42.35               20.39     18.0     18.0
+cantonese_141007_365526               65.63                          48.58               17.05     17.0     17.0
+cantonese_141007_365528               58.95                          50.14                8.82      3.0      3.0
+------------------------------------------------------------------------------------------------------------------
+         Avg.                         65.22                          51.50               13.71
+
+                       Sum of 19 positive ranks = 190.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -3.82, therefore the Hypothesis
+              is REJECTED in favor of the Null Hypothesis.
+
+              Further, trn/dnnpt/dnnpt_CA_eval.trn is the better System.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|-----------------------------------------------------------------------------------------|
+|                             |     trn/dnn/dnn_CA_eval.trn | trn/dnnpt/dnnpt_CA_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+|     trn/dnn/dnn_CA_eval.trn |                             | trn/dnnpt/dnnpt_CA_eval.trn |
+|-----------------------------+-----------------------------+-----------------------------|
+| trn/dnnpt/dnnpt_CA_eval.trn |                             |                             |
+|-----------------------------------------------------------------------------------------|

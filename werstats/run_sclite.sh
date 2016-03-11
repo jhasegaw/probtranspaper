@@ -17,11 +17,6 @@ for L in CA HG MD SW; do
 	# GMMPT vs DNNSS
 	echo '####' ${SCLITE} -i swb -h trn/dnnss/dnnss_${L}_${C}.trn -i swb -h trn/gmmpt/gmmpt_${L}_${C}.trn -i swb -r trn/ref/ref_${L}_${C}.trn -O aln/gmmptss -o pra -o sum -o sgml
 	${SCLITE} -i swb -h trn/dnnss/dnnss_${L}_${C}.trn -i swb -h trn/gmmpt/gmmpt_${L}_${C}.trn -i swb -r trn/ref/ref_${L}_${C}.trn -O aln/gmmptss -o pra -o sum -o sgml
-    done
-done
-
-for L in HG MD SW; do
-    for C in dev eval; do
 	# DNN vs DNNPT
 	echo '####' ${SCLITE} -i swb -h trn/dnn/dnn_${L}_${C}.trn -i swb -h trn/dnnpt/dnnpt_${L}_${C}.trn -i swb -r trn/ref/ref_${L}_${C}.trn -O aln/dnnpt -o pra -o sum -o sgml
 	${SCLITE} -i swb -h trn/dnn/dnn_${L}_${C}.trn -i swb -h trn/dnnpt/dnnpt_${L}_${C}.trn -i swb -r trn/ref/ref_${L}_${C}.trn -O aln/dnnpt -o pra -o sum -o sgml

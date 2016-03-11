@@ -1,4 +1,4 @@
-<SYSTEM title="trn/gmmpt/gmmpt_CA_eval.trn" ref_fname="trn/ref/ref_CA_eval.trn" hyp_fname="trn/gmmpt/gmmpt_CA_eval.trn" creation_date="Sat Mar  5 11:08:08 2016" format="2.4" frag_corr="FALSE" opt_del="FALSE" weight_ali="FALSE" weight_filename="">
+<SYSTEM title="trn/gmmpt/gmmpt_CA_eval.trn" ref_fname="trn/ref/ref_CA_eval.trn" hyp_fname="trn/gmmpt/gmmpt_CA_eval.trn" creation_date="Fri Mar 11 14:44:57 2016" format="2.4" frag_corr="FALSE" opt_del="FALSE" weight_ali="FALSE" weight_filename="">
 <SPEAKER id="cantonese_140916_361014">
 <PATH id="(cantonese_140916_361014-10)" word_cnt="46" sequence="148">
 C,"g","g":C,"&","&":C,"m","m":S,"j","u":C,"i","i":D,"ts",:D,"oi",:C,"s","s":S,"&","a":C,"m","m":D,"l",:C,"e","e":C,"j","j":C,"au","au":C,"d","d":C,"z","z":D,"&",:D,"n",:D,"s",:C,"i","i":S,"l","g":C,"e","e":D,"k",:S,"8","j":S,"y","i":S,"ts","h":C,"au","au":C,"d","d":D,"&",:S,"k","ai":C,"l","l":S,"ai","a":S,"l","m":C,"e","e":S,"b","p":C,"ei","ei":C,"g","g":C,"au","au":D,"g",:C,"o","o":C,"n","n":C,"d","d":D,"z",:C,"o","o":C,"d","d":S,"i","ei"

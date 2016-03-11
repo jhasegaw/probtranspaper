@@ -1,0 +1,64 @@
+                       Wilcoxon Test Calculations Table                        
+Comparing Spkr Speaker Word Error Rate (%) Percentages for Systems trn/dnnss/dnnss_CA_dev.trn and trn/dnnpt/dnnpt_CA_dev.trn
+
+                                                                                                         Signed
+         Spkr              trn/dnnss/dnnss_CA_dev.trn    trn/dnnpt/dnnpt_CA_dev.trn  Difference   Rank    Rank
+----------------------------------------------------------------------------------------------------------------
+cantonese_140916_361032               54.62                         48.19               6.43      4.0      4.0
+cantonese_140916_361200               51.94                         38.83              13.11     14.0     14.0
+cantonese_140916_361202               54.43                         50.34               4.09      1.0      1.0
+cantonese_140917_361366               59.33                         54.38               4.94      3.0      3.0
+cantonese_140918_361554               59.00                         47.26              11.74     11.0     11.0
+cantonese_140918_361606               69.90                         60.19               9.71      8.0      8.0
+cantonese_140924_362835               60.98                         48.38              12.61     13.0     13.0
+cantonese_140925_362959               59.56                         52.21               7.35      5.0      5.0
+cantonese_140926_363228               64.19                         59.30               4.88      2.0      2.0
+cantonese_140927_363424               71.72                         59.31              12.41     12.0     12.0
+cantonese_141004_365094               61.83                         53.88               7.95      7.0      7.0
+cantonese_141005_365172               69.21                         59.37               9.84      9.0      9.0
+cantonese_141006_365326               53.73                         43.32              10.41     10.0     10.0
+cantonese_141006_365328               64.29                         56.46               7.82      6.0      6.0
+----------------------------------------------------------------------------------------------------------------
+         Avg.                         61.05                         52.24               8.81
+
+                       Sum of 14 positive ranks = 105.0                        
+                        Sum of  0 negative ranks =  0.0                        
+
+
+    The Null Hypothesis:
+
+         The two populations represented by the respective matched
+         pairs are identical.
+
+    Alternate Hypothesis:
+
+         The two populations are not equal and therfore
+         there is a difference between systems.
+
+    Decision Analysis:
+
+         Assumptions:
+              The distribution of signed ranks is approximated
+              by the normal distribution if the number of Blocks
+              is greater than equal to 8.
+
+         Rejection Threshold:
+              Based on a 95% confidence interval, the Z-score should
+              be greater than 1.96 or less than -1.96.
+
+         Decision:
+              The Z statistic = -3.30, therefore the Hypothesis
+              is REJECTED in favor of the Null Hypothesis.
+
+              Further, trn/dnnpt/dnnpt_CA_dev.trn is the better System.
+                    Comparison Matrix for the Wilcoxon Test                    
+         Using the Speaker Word Error Rate (%) Percentage per Speaker          
+                           as the Comparison Metric                            
+
+|--------------------------------------------------------------------------------------|
+|                            | trn/dnnpt/dnnpt_CA_dev.trn | trn/dnnss/dnnss_CA_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+| trn/dnnpt/dnnpt_CA_dev.trn |                            | trn/dnnpt/dnnpt_CA_dev.trn |
+|----------------------------+----------------------------+----------------------------|
+| trn/dnnss/dnnss_CA_dev.trn |                            |                            |
+|--------------------------------------------------------------------------------------|

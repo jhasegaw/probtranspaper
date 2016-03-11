@@ -18,12 +18,9 @@ for L in CA HG MD SW; do
 	./rec2trn.rb ${DATA}/haotang/SBS-mul-${L}/exp/dnn4_pretrain-dbn_dnn/decode_${C}_text_G_${L}/scoring_kaldi/penalty_0.0/4.txt trn/dnn/dnn_${L}_${C}.trn
 	# DNN SS
 	./rec2trn.rb ${DATA}/vmanohar/SBS-mul-${L}/exp/dnn5_pretrain-dbn_dnn_semisup/decode_text_G_${C}_${L}/scoring_kaldi/penalty_0.0/4.txt trn/dnnss/dnnss_${L}_${C}.trn
-    done
-done
-for L in HG MD SW; do
-    for C in dev eval; do
 	# DNN PT
 	./rec2trn.rb ${DATA}/vmanohar/dnnpt/dnn_pt_${C}_${L}.rec trn/dnnpt/dnnpt_${L}_${C}.trn
     done
 done
+
 
