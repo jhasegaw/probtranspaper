@@ -12,7 +12,8 @@ Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of these
 classifiers when applied to the three languages.
 
 \begin{figure}
-  \centerline{\includegraphics[width=6.5in]{../figs/diliberto_svmresults.png}}
+  \centerline{\includegraphics[width=\columnwidth]{../figs/diliberto_svmresults.png}}
+  \vspace*{-0.3cm}
   \caption{Classifiers were trained to observe EEG signals, and to
     classify the distinctive features of the phone being heard.  Equal
     error rates are shown for English (the language used in training;
@@ -45,9 +46,10 @@ some constant $0\le\alpha\le 1$.
 
 \begin{figure}
   \centerline{
-    \includegraphics[width=3in]{../figs/mirbagheri_dist_features.png}
-    \includegraphics[width=3in]{../figs/mirbagheri_dist_eeg.png}
+    \includegraphics[width=0.45\columnwidth]{../figs/mirbagheri_dist_features.png}
+    \includegraphics[width=0.45\columnwidth]{../figs/mirbagheri_dist_eeg.png}
   }
+    \vspace*{-0.3cm}
   \caption{Phoneme confusion probabilities between English phonemes
     (column) and Dutch phonemes (row) using models in which the log
     probability is proportional to distance between the corresponding
@@ -60,9 +62,9 @@ some constant $0\le\alpha\le 1$.
 In order to evaluate the effectiveness of the EEG-induced misperception 
 transducer we looked at the label phone error rate of mismatched crowdsourcing
 for the Dutch language when performed using 1)~a multilingual misperception
-model $\rho(\lambda|\phi)$, or 
+model $\rho(\lambda|\phi)$,
 2)~feature-based misperception transducer computed using uniform 
-weighting, $\rho_U(\psi|\phi)$ 3) EEG-induced transducer combined with 
+weighting, $\rho_U(\psi|\phi)$, or 3) EEG-induced transducer combined with 
 the feature-based transducer, $\rho_I(\psi|\phi)$. To combine the two 
 transducers, the value of the parameter $\alpha$ was optimized on a 
 separate development data set. As shown in Table~\ref{tbl:eegresults}, 
@@ -74,12 +76,12 @@ misperception transducers (respectively).
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
   \hline
-  &\multicolumn{3}{|c|}{misperception G2P}\\ \hline
   & \specialcell{multilingual} & feature-based & \specialcell{EEG-induced\\+feature-based} \\
 \hline
 LPER & 70.43 & 69.44 & 68.61 \\
 \hline
 \end{tabular}
+\vspace*{1mm}
 \caption{\label{tbl:eegresults} Comparison of LPERs for probabilistic transcription of the Dutch evaluation set using different schemes to compute misperception G2Ps.}
 \end{center}
 \end{table*}

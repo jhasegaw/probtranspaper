@@ -31,7 +31,7 @@ is computed by choosing a Gaussian component, $G_t^\ell$, whose mixture
 weight is $c_{jk}=\pi_{G_t^{\ell}|S_t^{\ell}}(k|j)$, and whose mean vector
 and covariance matrix are $\mu_{jk}$ and $\Sigma_{jk}$.  Maximum
 likelihood trains these parameters by computing
-$\gamma^{\ell}_t(j,k)=\pi_{G_t^{\ell}|S_t^{\ell}}(k|j,x^\ell,\theta)\pi_{S_t^{\ell}}(j|x^\ell,\theta)$,
+$\gamma^{\ell}_t(j,k)=\pi_{S_t^{\ell},G_t^{\ell}}(j,k|x^\ell,\theta)$,
 then accumulating weighted average acoustic frames with weights given
 by $\gamma_{t}^\ell(j,k)$. Segmental K-means quantizes
 $\pi_{S_t^\ell}(j|x^\ell,\theta)\rightarrow\left\{0,1\right\}$ using forced
@@ -42,16 +42,17 @@ confidence hyperparameter $\tau_\theta$, resulting in re-estimation
 formulae that are linearly interpolated between the baseline
 parameters $\bar\theta$ and the statistics of the adaptation data, for
 example:
-\[
+\begin{equation}
 c_{jk}'=\frac{\tau_c\bar{c}_{jk}+\sum_{\ell,t}\gamma_{t}^\ell(j,k)}
 {\sum_{\kappa}\left(\tau_c\bar{c}_{j\kappa}+
-  \sum_{\ell,t}\gamma_{t}^\ell(j,\kappa)\right)},~~~
-\mu_{jk}'=\frac{\tau_\mu\bar{\mu}_{jk}+\sum_{\ell,t}\gamma_{t}^\ell(j,k)x_t^\ell}
-   {\tau_\mu+\sum_{\ell,t}\gamma_{t}^\ell(j,k)}
+  \sum_{\ell,t}\gamma_{t}^\ell(j,\kappa)\right)}
+%~~~
+%\mu_{jk}'=\frac{\tau_\mu\bar{\mu}_{jk}+\sum_{\ell,t}\gamma_{t}^\ell(j,k)x_t^\ell}
+%   {\tau_\mu+\sum_{\ell,t}\gamma_{t}^\ell(j,k)}
    %,~~~
 %v_{jk}'=\frac{\tau_v\bar{v}_{jk}+\sum_{\ell,t}\gamma_{\ell t}(j,k)(x_t^\ell-\mu_{jk})^2}
 %{\tau_v+\sum_{\ell,t}\gamma_{\ell t}(j,k)}
-\]
+\end{equation}
 %In our setting, the initial value of $\bar{\mu}_{jk}$ is obtained from
 %the multilingual baseline model, and $\mu_{jk}'$ eventually converges
 %to a model for the target language data.

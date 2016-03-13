@@ -62,7 +62,9 @@ $\rho(\phi_m^\ell)$ (Fig.~\ref{fig:pt}).
   \tikzstyle{pre}=[<-,shorten <=1pt,>=stealth',semithick,draw=black]
   \tikzstyle{post}=[->,shorten >=1pt,>=stealth',semithick,draw=black]
   \begin{tikzpicture}[
+      scale=\mytikzscale,
       state/.style={circle,thick, draw=black, text=black, text width=0.25cm},
+      every node/.style={transform shape}
     ]
     \node[state] (g0) at (0,0) {};
     \node[state] (g1) at (2,0) {};
@@ -124,6 +126,7 @@ $\rho(\phi_m^\ell)$ (Fig.~\ref{fig:pt}).
     \node at (13,-2.25) {$\emptyset/0.1$};
   \end{tikzpicture}
 \end{center}
+\vspace*{-2mm}
 \caption{A probabilistic transcription (PT) is a probability mass
   function (pmf) over candidate phonetic transcriptions.  All PTs
   considered in this paper can be expressed as confusion networks,

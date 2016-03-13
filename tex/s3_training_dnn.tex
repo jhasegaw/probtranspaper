@@ -1,14 +1,13 @@
 \subsection{Neural Networks}
 
-The NN acoustic model is
-\[
-\pi_{X_t^{\ell}|S_t^\ell}(v|j,\theta)\propto
-y_t^\ell(j)=\frac{1}{c_j}\frac{\exp\left(w_j^Th_t(v,W_{vh})\right)}
-{\sum_k \exp\left(w_k^Th_t(v,W_{vh})\right)}
-\]
-whose parameters $\theta=\left\{c_j,w_j,\theta_h\right\}$ include the
+The NN acoustic model is $\pi_{X_t^{\ell}|S_t^\ell}(v|j,\theta)\propto y_t^\ell(j)$,
+\begin{equation}
+y_t^\ell(j)=\frac{1}{c_j}\frac{\exp\left(w_j^Th_t(v,w_{vh})\right)}
+{\sum_k \exp\left(w_k^Th_t(v,w_{vh})\right)}
+\end{equation}
+whose parameters $\theta=\left\{c_j,w_j,w_{vh}\right\}$ include the
 senone priors $c_j$, the softmax weight vectors $w_j$, and the
-parameters defining the hidden nodes $h_t(v,W_{vh})$.  NNs are
+parameters defining the hidden nodes $h_t(v,w_{vh})$.  NNs are
 trained by using a GMM-HMM to compute an initial senone posterior,
 $\pi_{S_t^{\ell}}(j|x^\ell,\theta)$, then minimizing the cross-entropy
 between the estimated senone posterior and the neural network output

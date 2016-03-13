@@ -23,8 +23,10 @@ $\rho(\psi|\phi)$.
 \setlength{\fboxrule}{0.5pt}%
 \begin{center}
   \begin{tikzpicture}[
+      scale=\mytikzscale,
       boxed/.style={rectangle,thick, draw=black, text=black, fill=white, 
-      				rounded corners=1mm, text centered, text width=2.5cm},
+      	rounded corners=1mm, text centered, text width=2.5cm},
+      every node/.style={transform shape}      
     ]
     \node[text width=1.5in, text centered, anchor=north] (label0) at (-5,2.75) {EEG response to foreign phones (epoched \& averaged)};
     \node[text width=2.5in, text centered, anchor=north] (label1) at (0,2.75) {EEG feature classifiers trained on feature-labeled English phones};

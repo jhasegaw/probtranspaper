@@ -35,9 +35,11 @@
   \tikzstyle{pre}=[<-,shorten <=3pt,>=stealth',thick, draw=black]
   \tikzstyle{post}=[->,shorten >=3pt,>=stealth',thick, draw=black]
   \begin{tikzpicture}[
+      scale=\mytikzscale,
       boxed/.style={rectangle,thick, draw=black, text=black, rounded corners=1mm, text centered, text width=5cm},
       state/.style={circle,thick, draw=black, text=black, text width=0.25cm},
       open/.style={text=black, text centered, text width=2.75cm},
+      every node/.style={transform shape}
     ]
     \node[boxed] (n0) at (0,0) {\begin{tiny}\begin{tabular}{c}$T$=Transcriptions\\\hline piza\\zapecham\\trabiza\\ta peesome\\ta pisha\\chah peesh um\\shapisha\\sabeesham\\chapiser\\some pizza\end{tabular}\end{tiny}};
     \node[boxed] (n1) at (6,0) {\begin{tiny}\begin{tabular}{c}$\rho(\lambda|T)=$Orthographic Confusion Network\\\hline\vspace{3cm}\end{tabular}\end{tiny}} edge[pre] (n0);

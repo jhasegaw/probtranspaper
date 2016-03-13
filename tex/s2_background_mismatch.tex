@@ -14,11 +14,13 @@ more effective and efficient forms of error-correcting codes.
 
 \begin{figure}[b!]\setlength{\textfloatsep}{3mm}
 \begin{center}
-  \tikzstyle{pre2}=[<-,shorten <=3pt,>=stealth',thick, draw=black]
-  \tikzstyle{post2}=[->,shorten >=3pt,>=stealth',thick, draw=black]
+  \tikzstyle{pre2}=[<-,>=stealth',thick, draw=black]
+  \tikzstyle{post2}=[->,>=stealth',thick, draw=black]
   \begin{tikzpicture}[
+      scale=\mytikzscale,
       boxed/.style={rectangle,thick, draw=black, text=black, rounded corners=1mm, text centered, text width=2.5cm},
       open/.style={text=black, text centered, text width=2.75cm},
+      every node/.style={transform shape}      
     ]
     \node[open] (n0) at (-4.5,1) {$w=$Utterance-language words\\\vspace*{0.1in}$<$$\vcenter{\hbox{\includegraphics[width=1in]{../figs/vaakpahachaan.png}}}$$>$};
     \node[boxed] (n1) at (-0.75,1) {Pronunciation FST,\\$\rho(\phi|w)$} 
