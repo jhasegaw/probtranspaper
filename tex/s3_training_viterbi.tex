@@ -1,4 +1,4 @@
-\subsection{Segmental Viterbi Training}
+\subsection{Segmental K-Means Training}
 
 The previous subsection demonstrates that ${\mathcal L}(\theta')$ can
 be increased, at each step of the EM algorithm, by maximizing
@@ -7,16 +7,16 @@ lower bound on ${\mathcal L}(\theta')-{\mathcal L}(\theta)$, $Q$
 has properties that make it undesirable as an optimizer for ${\mathcal
   L}$.  Suppose, as often happens, that there is a poor phone
 sequence, $\phi^p$, that is highly unlikely given the correct
-parameter vector $\theta^*$, meaning that $\pi(\phi^p,s,x|\theta^*)$
+parameter vector $\theta^*$, meaning that $\pi(x,s,\phi^p|\theta^*)$
 is very low.  Suppose that the initial parameter vector, $\theta$, is
 less discriminative, so that
-$\pi(\phi^p,s,x|\theta)>\pi(\phi^p,s,x|\theta^*)$.  In this case
+$\pi(x,s,\phi^p|\theta)>\pi(x,s,\phi^p|\theta^*)$.  In this case
 $Q(\theta,\theta^*)$ is dominated by the term
-$\pi(\phi^p,s,x|\theta)\ln\pi(\phi^p,s,x|\theta^*)$, therefore
+$\pi(x,s,\phi^p|\theta)\ln\pi(x,s,\phi^p|\theta^*)$, therefore
 $\theta^*$ will never show up as the optimizer of $Q(\theta,\theta')$.
 Indeed, the best speech recognizer is a parameter vector $\theta^*$
 that completely rules out poor transcriptions, setting
-$\pi(\phi^p,s,x|\theta^*)=0$; but in this case
+$\pi(x,s,\phi^p|\theta^*)=0$; but in this case
 $Q(\theta,\theta^*)=-\infty$, so the EM algorithm can never find a
 parameter vector $\theta^*$ that sets to zero the probability of a
 poor transcription.
@@ -36,16 +36,18 @@ bounds ${\mathcal L}(\theta')$ as
 $\mathcal{L}(\theta')-\mathcal{L}(\theta)\ge
 R(\theta,\theta')-\mathcal{L}(\theta)$, where
 \begin{align}
-  R(\theta,\theta') &= \ln \pi(s^*(\theta),\phi^*(\theta),x|\theta')\\
+  R(\theta,\theta') &= \ln \pi(x,s^*(\theta),\phi^*(\theta)|\theta')\\
   s^*(\theta),\phi^*(\theta)&= \argmax_{s,\phi} \pi(s,\phi|x,\theta)
 \end{align}
 Given an initial parameter vector $\theta$, therefore, it is possible
 to find a new parameter vector $\theta'$ with higher likelihood by
-computing its maximum-likelihood senone sequence and phoneme sequence
-$s^*(\theta),\phi^*(\theta)$, by maximizing $\theta'$ with respect to
-$s^*(\theta)$ and $\phi^*(\theta)$, and by then replacing $\theta$
-with $\theta'$ only if $R(\theta,\theta')$ is greater than ${\mathcal
-  L}(\theta)=\ln \sum\pi(s,\phi,x|\theta)$.  In practice, maximizing
+computing its maximum-likelihood senone sequence and phone sequence
+$s^*(\theta),\phi^*(\theta)$, and by maximizing $\theta'$ with respect to
+$s^*(\theta)$ and $\phi^*(\theta)$.
+%, and by then replacing $\theta$
+%with $\theta'$ only if $R(\theta,\theta')$ is greater than ${\mathcal
+%  L}(\theta)=\ln \sum\pi(s,\phi,x|\theta)$.
+In practice, maximizing
 $R(\theta,\theta')$ rather than $Q(\theta,\theta')$ is useful for
 probabilistic transcription because it reduces the importance of poor
 phonetic transcriptions.

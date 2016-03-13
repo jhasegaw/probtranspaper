@@ -5,8 +5,8 @@
 \begin{table*}[t]
 \centerline{\begin{tabular}{| c || c | c | c | c | c |}\hline
 Language &  Cross-Lingual & Self-training & \multicolumn{3}{ c| }{CL + PT adaptation}  \\\cline{4-6}
-Code & ({\sc CL}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\\cline{4-6}
- &&&& \% over {\sc CL} & \% over {\sc ST}\\
+Code & ({\sc CL}) & ({\sc ST}) &  ({\sc PT-adapt}) & \% Rel. redn & \% Rel. redn\\
+ &&&& over {\sc CL} & over {\sc ST}\\
 \hline
 \multicolumn{6}{|l|}{GMM-HMM} \\\hline
 yue & 68.40 (68.35) & &  \textbf{57.20 (56.57)} &  16.4** (17.1) & 10.3** (9.2) \\
@@ -20,7 +20,7 @@ hun & 66.43 (67.18) & 63.53 (63.50) &   \textbf{56.70 (58.45)} & 14.6** (13.0) &
 cmn & 65.77 (64.80) & 64.90* (64.00) &   \textbf{54.07 (53.13)} & 17.8** (18.0) & 16.7** (17.0) \\
 swh & 65.30 (65.11) &  58.76** (59.81) &   \textbf{44.73 (48.60)} & 31.5** (25.4) & 23.9** (18.7) \\\hline
 \end{tabular}}
-\caption{\label{tab:ptresult} PERs on the evaluation and development sets (latter within parentheses) before and after adaptation with PTs.  MAPSSWE significance testing: * means $p\le 0.003$, ** means $p<0.001$.}
+\caption{\label{tab:ptresult} PERs on the evaluation and development sets (development in parentheses) before and after adaptation with PTs.  MAPSSWE significance testing: * means $p\le 0.003$, ** means $p<0.001$.}
 \end{table*}
 
 This section demonstrates that PT adaptation improves the
@@ -53,10 +53,12 @@ than {\sc CL}.
 
 The column headed {\sc PT-adapt} in Table~\ref{tab:ptresult} lists
 PERs from ASR systems that have been adapted to PTs in the target
-language. We observe substantial PER improvements using {\sc PT-adapt}
-over {\sc CL} across all four languages. We also find that PT
-adaptation consistently outperforms the {\sc ST} systems for all four
-languages. The relative reductions in PER compared to both baselines
+language.
+%We observe substantial PER improvements using {\sc PT-adapt}
+%over {\sc CL} across all four languages. We also find that PT
+%adaptation consistently outperforms the {\sc ST} systems for all four
+%languages.
+The relative reductions in PER compared to both baselines
 are listed in the last two columns.  Reductions on the evaluation set
 were tested for statistical significance using the MAPSSWE test of the
 {\tt sc\_stats} tool.  All differences were found to be statistically
@@ -89,7 +91,7 @@ vowel qualities are also found in English, and the Swahili phonemes
 that would be unfamiliar to an English speaker (prenasalized stops, 
 palatal consonants) have representations in English orthography that are 
 fairly natural (``mb'', ``nd'', etc. for prenasalized stops; ``tya'', 
-``chya'', ``nya'', 'etc. for palatals). In contrast: Mandarin, 
+``chya'', ``nya'', etc. for palatals). In contrast: Mandarin, 
 Cantonese, and Hungarian each have at least two vowel qualities not 
 found in English; Mandarin and 
 Cantonese have many diphthongs not found in English; and some of the 
@@ -99,9 +101,11 @@ straightforward. Another possible source of the difference would be if
 Swahili phonemes had (on average) higher perceptual discriminability 
 (to English speakers) than the phonemes of other languages tested. In
 other words, there may have been fewer many-to-one mappings in Swahili
-than in the other languages (Hungarian's contrastive vowel length is one
-example of a likely source of perceptual noise in the mismatched 
-transcriptions). Both of these factors (orthographic and 
+than in the other languages.
+%(Hungarian's contrastive vowel length is one
+%example of a likely source of perceptual noise in the mismatched 
+%transcriptions).
+Both of these factors (orthographic and 
 perceptual) may have led to less label noise in the Swahili PT than in 
 the PTs of the other languages. 
 
@@ -109,8 +113,9 @@ It is also useful to compare the performance of GMM-HMM and NN-HMM
 systems.  In the {\sc CL} setting, an ASR trained
 using six languages is then applied to an unseen seventh language,
 without adaptation; in this setting, the NN consistently outperforms
-the GMM.  In the {\sc PT-adapt} setting, either GMMs or NNs are
+the GMM.  In the {\sc PT-adapt} setting, GMMs and NNs are
 adapted using PTs in the target language.  PT adaptation improves the
-performance of both types of ASR, but the NN does not improve as much
-as the GMM.
+performance of both types of ASR, but the
+adapted NN does not consistently outperform the GMM across all
+tested languages.
 

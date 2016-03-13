@@ -20,7 +20,7 @@ integrated into the system to solve an engineering problem.
 %% KC: the transition between these paragraphs is rocky. Needs a 
 %% transition sentence or some TLC.
 
-NN-HMM outperforms the GMM-HMM in all baseline conditions, but not
+NN-HMM outperforms the GMM-HMM in all baseline conditions, but not always
 when adapted using PTs.  Preliminary analysis suggests that the NN is
 more adversely affected than the GMM by label noise in the PTs.  A NN
 is trained to match the senone posterior probabilities
@@ -34,15 +34,15 @@ forced alignment doesn't necessarily help.  Fig.~\ref{fig:pt_decode_per}
 showed that the 1-best path through the PT is only correct for 29-49\%
 of all phones, depending on language.  There is good reason for this:
 the transcribers don't speak the target language, so they find some of
-its phone pairs to be perceptually indistinguishable!  Future work
+its phone pairs to be perceptually indistinguishable.  Future work
 will seek methods that can improve the robustness of NN training in
 the face of label noise.  
 
 This paper has tentatively defined an ``under-resourced language'' to
 be one that lacks transcribed speech data.  Other authors have
 proposed that if a language lacks transcribed speech, ASR can be
-initialized in that language by adapting a multilingual baseline
-trained on other languages.  Other authors have proposed, and
+initialized in that language by adapting a cross-lingual baseline.
+Other authors have proposed, and
 Table~\ref{tab:ptresult} confirms, that significant error reductions
 can be achieved using self-training: by automatically labeling speech
 in the target language, and adding the self-labeled data to the

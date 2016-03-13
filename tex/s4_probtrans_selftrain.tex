@@ -1,22 +1,25 @@
 \subsection{Self Training}
 \label{sec:selftraining}
 
-A database consists of $L$ speech waveforms, each containing $T$
-frames with $M$ associated phone labels, $M<T$. 
-The $\ell^{\textrm{th}}$ waveform is represented by acoustic feature
-matrix $x^\ell =[x_1^\ell,\ldots,x_T^\ell]$, where $x_t^\ell$ is an
-acoustic feature vector.  Its phone transcription
-$\phi^\ell=[\phi_1^\ell,\ldots,\phi_M^\ell]$ determines the sequence
-but not the durations of senones (HMM states) $s^\ell
-=[s_1^\ell,\ldots,s_T^\ell]$.
+The first set of PTs is computed using NN-HMM self-training.
+The Kaldi toolkit~\cite{Kaldi2011} is first used to train a
+cross-lingual baseline ASR, using training data drawn from six
+languages not including the target language.  The goal of
+self-training, then, is to adapt the NN-HMM to a database containing
+$L$ speech waveforms in the target language, each represented by
+acoustic feature matrix $x^\ell =[x_1^\ell,\ldots,x_T^\ell]$, where
+$x_t^\ell$ is an acoustic feature vector.  The feature matrix $x^\ell$
+represents an utterance of an unknown phone transcription
+$\phi^\ell=[\phi_1^\ell,\ldots,\phi_M^\ell]$ which, if known, would
+determine the sequence but not the durations of senones (HMM states)
+$s^\ell =[s_1^\ell,\ldots,s_T^\ell]$.
 
-The first set of PTs were computed using NN-HMM self-training.  The
-Kaldi toolkit~\cite{Kaldi2011} was used to train a multilingual NN-HMM
-in six languages not including the target language.  A training
-script~\cite{vesely2013-semi} was then used to compute a senone
-posterior probability $\rho(s_t^\ell|x_t^\ell)$ for each frame, and
-the senone posteriors served as targets for re-estimating the neural
-network weights.
+The feature matrix $x^\ell$ is decoded using the cross-lingual
+baseline ASR, generating a phone lattice output.  Using scripts
+provided by previous experiments~\cite{vesely2013-semi}, the phone
+lattice is interpreted as a set of posterior senone probabilities
+$\rho(s_t^\ell|x_t^\ell)$ for each frame, and the senone posteriors
+serve as targets for re-estimating the neural network weights.
 %\begin{figure}
 %  \centerline{\includegraphics[width=5in]{../figs/fig_hager.png}}
 %  \caption{The self-training method of~\cite{vesely2013-semi} includes
@@ -32,9 +35,12 @@ network weights.
 %% arrow, I suggest making the arrows more prominent. Also, the text
 %% annotating the NN is illegible, as is the text garnishing the axes
 %% of the waveform and spectrograms.
-In contrast to the approach in \cite{vesely2013-semi}, which used the
-best path alignment as the target in frame cross-entropy training, we
-achieved better performance using the posteriors as soft-targets.
+Experiments using other datasets found that the best self-training
+uses best path alignment to specify a binary target for NN
+training~\cite{vesely2013-semi}, but, apparently because of
+differences in the adaptation set between our experiments and previous
+work, we achieve better performance using real-valued targets
+$0\le\rho(s_t^\ell|x_t^\ell)\le 1$.
 %(Fig.~\ref{fig:hager}). However, we did follow the recommendation in
 %\cite{vesely2013-semi} to scale the amount of transcribed data by 2 to 
 %create a good balance between transcribed and untranscribed data.

@@ -20,8 +20,8 @@ more effective and efficient forms of error-correcting codes.
       boxed/.style={rectangle,thick, draw=black, text=black, rounded corners=1mm, text centered, text width=2.5cm},
       open/.style={text=black, text centered, text width=2.75cm},
     ]
-    \node[open] (n0) at (-4.5,1) {$h=$Utterance-language words\\\vspace*{0.1in}$<$$\vcenter{\hbox{\includegraphics[width=1in]{../figs/vaakpahachaan.png}}}$$>$};
-    \node[boxed] (n1) at (-0.75,1) {Pronunciation FST,\\$\rho(\phi|h)$} 
+    \node[open] (n0) at (-4.5,1) {$w=$Utterance-language words\\\vspace*{0.1in}$<$$\vcenter{\hbox{\includegraphics[width=1in]{../figs/vaakpahachaan.png}}}$$>$};
+    \node[boxed] (n1) at (-0.75,1) {Pronunciation FST,\\$\rho(\phi|w)$} 
     edge[pre2](n0);
     \node[boxed] (n2) at (2.5,1) {Misperception FST,\\$\rho(\psi|\phi)$}
     edge[pre2] (n1);

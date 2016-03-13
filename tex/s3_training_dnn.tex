@@ -2,15 +2,15 @@
 
 The NN acoustic model is
 \[
-\pi(x_t^\ell|s_t^\ell =j,\phi^\ell,\theta)\propto
-y_t^\ell(j)=\frac{1}{c_j}\frac{\exp\left(w_j^Th_t(x,\theta_h)\right)}
-{\sum_k \exp\left(w_k^Th_t(x,\theta_h)\right)}
+\pi_{X_t^{\ell}|S_t^\ell}(v|j,\theta)\propto
+y_t^\ell(j)=\frac{1}{c_j}\frac{\exp\left(w_j^Th_t(v,W_{vh})\right)}
+{\sum_k \exp\left(w_k^Th_t(v,W_{vh})\right)}
 \]
 whose parameters $\theta=\left\{c_j,w_j,\theta_h\right\}$ include the
 senone priors $c_j$, the softmax weight vectors $w_j$, and the
-parameters defining the hidden nodes $h_t(x,\theta_j)$.  NNs are
+parameters defining the hidden nodes $h_t(v,W_{vh})$.  NNs are
 trained by using a GMM-HMM to compute an initial senone posterior,
-$\pi(s_t^\ell=j,x^\ell|\theta)$, then minimizing the cross-entropy
+$\pi_{S_t^{\ell}}(j|x^\ell,\theta)$, then minimizing the cross-entropy
 between the estimated senone posterior and the neural network output
 $y_{t}^\ell(j)$,
 %.  The cross entropy is measured as
@@ -23,12 +23,12 @@ $y_{t}^\ell(j)$,
 using gradient descent in the direction
 \begin{equation}
   -\nabla_\theta H(S^\ell\Vert Y^\ell)=
-  \sum_{t=1}^T\sum_j\frac{\pi(j,x^\ell|\theta)}{y_t^\ell(j)}
+  \sum_{t=1}^T\sum_j\frac{\pi_{S_t^{\ell}}(j|x^\ell,\theta)}{y_t^\ell(j)}
   \nabla_\theta y_t^\ell(j)
   \label{eq:dnn_dt}
 \end{equation}
 NN training with deterministic transcriptions is improved by
-quantizing $\pi(s_t^\ell,x^\ell|\theta)\rightarrow\left\{0,1\right\}$
+quantizing $\pi_{S_t^\ell}(j|x^\ell,\theta)\rightarrow\left\{0,1\right\}$
 using forced alignment~\cite{Morgan95}. Preliminary experiments showed
 that forced alignment also improves the accuracy of NNs trained from
 probabilistic transcriptions: the best path through the PT, and the

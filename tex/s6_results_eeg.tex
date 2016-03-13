@@ -12,7 +12,7 @@ Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of these
 classifiers when applied to the three languages.
 
 \begin{figure}
-  \centerline{\includegraphics[width=5in]{../figs/diliberto_svmresults.png}}
+  \centerline{\includegraphics[width=6.5in]{../figs/diliberto_svmresults.png}}
   \caption{Classifiers were trained to observe EEG signals, and to
     classify the distinctive features of the phone being heard.  Equal
     error rates are shown for English (the language used in training;
@@ -25,7 +25,7 @@ Eq.~(\ref{eq:dfdist}) defines a log-linear model of $\rho(\psi|\phi)$,
 the probability that a non-English phoneme $\phi$ will be perceived as
 English phoneme $\psi$.  Denote by $\rho_U(\psi|\phi)$ the model of
 Eq.~(\ref{eq:dfdist}) with uniform weights for all distinctive
-features ($w_k=\alpha$, a tunable constant).  Denote by
+features. Denote by
 $\rho_{EEG}(\psi|\phi)$ the same model, but with weights $w_k$ derived
 from EEG measurements (Eq.~(\ref{eq:eegdist})).
 Fig.~\ref{fig:eeg_confusions} shows these two confusion matrices:
@@ -40,8 +40,8 @@ phonemes whose confusion probabilities can not be distinguished
 (giving the figure its block-matrix structure).  The faults of both
 models can be ameliorated by averaging them in some way, e.g., by
 computing the linear interpolation
-$\rho_I(\psi|\phi)=a\rho_U(\psi|\phi)+(1-a)\rho_{EEG}(\psi|\phi)$ for
-some constant $0\le a\le 1$.
+$\rho_I(\psi|\phi)=\alpha\rho_U(\psi|\phi)+(1-\alpha)\rho_{EEG}(\psi|\phi)$ for
+some constant $0\le\alpha\le 1$.
 
 \begin{figure}
   \centerline{
@@ -58,8 +58,9 @@ some constant $0\le a\le 1$.
 \end{figure}
 
 In order to evaluate the effectiveness of the EEG-induced misperception 
-transducer we looked at the transcription accuracies for the Dutch 
-language when performed using 1)~mismatched crowdsourcing, or 
+transducer we looked at the label phone error rate of mismatched crowdsourcing
+for the Dutch language when performed using 1)~a multilingual misperception
+model $\rho(\lambda|\phi)$, or 
 2)~feature-based misperception transducer computed using uniform 
 weighting, $\rho_U(\psi|\phi)$ 3) EEG-induced transducer combined with 
 the feature-based transducer, $\rho_I(\psi|\phi)$. To combine the two 
@@ -72,13 +73,14 @@ misperception transducers (respectively).
 \begin{table*}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
+  \hline
+  &\multicolumn{3}{|c|}{misperception G2P}\\ \hline
+  & \specialcell{multilingual} & feature-based & \specialcell{EEG-induced\\+feature-based} \\
 \hline
-  & \specialcell{mismatched \\ crowdsourcing} & feature-based & \specialcell{EEG-induced\\+feature-based} \\
-\hline
-PER & 70.43 & 69.44 & 68.61 \\
+LPER & 70.43 & 69.44 & 68.61 \\
 \hline
 \end{tabular}
-\caption{\label{tbl:eegresults} Comparison of PERs for probabilistic transcription for the Dutch on the evaluation set using different schemes to compute misperception G2Ps.}
+\caption{\label{tbl:eegresults} Comparison of LPERs for probabilistic transcription of the Dutch evaluation set using different schemes to compute misperception G2Ps.}
 \end{center}
 \end{table*}
 

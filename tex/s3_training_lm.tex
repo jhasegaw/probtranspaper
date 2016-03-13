@@ -1,13 +1,13 @@
 \subsection{Using a Language Model During Training}
 \label{sec:trainwithlm}
 
-A PT contains significant amount of information beyond any single
+A PT contains significant information beyond any single
 transcript extracted from the PT. Motivated by this, the statistics
-for the MAP estimation are accumulated from a lattice derived from the
+for ASR adaptation are accumulated from a lattice derived from the
 cascade $H\circ C \circ PT$, rather than reducing the PT to its single
 best path. Though it is disadvantageous to reduce a PT to its best
 path, it is nevertheless advantageous to incorporate as much
-information as possible from the language model during adaptation.
+information as possible about the target language during adaptation.
 Define $G$ to be an FST representing the modeled phone bigram
 probability
 $\pi(\phi^\ell|\theta)=\prod_{m=1}^M\pi(\phi_m^\ell|\phi_{m-1}^\ell,\theta)$.
@@ -104,7 +104,8 @@ for every null-output edge (output symbol is $\phi_m^\ell =\emptyset$).
   (right).  Such edges were only allowed to match with state
   self-loops, newly added to the language model (left) in order to
   consume such non-events in the transcript.  a,b: regular phone
-  symbols, $\epsilon$: null-string.}
+  symbols, $\epsilon$: null-string, $p(b|a)$: bigram probability,
+  $\beta(a)$: language model backoff.}
 \label{fig:liu1}
 \end{figure}
 

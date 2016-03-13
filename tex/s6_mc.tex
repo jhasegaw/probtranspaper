@@ -9,21 +9,22 @@
     languages: Swahili (swh), Dutch (nld), Mandarin (cmn), Urdu (urd),
     Arabic (arb), and Hungarian (hun).  Probabilistic transcriptions
     were decoded using three different methods per language: using a
-    universal phoneme set (tallest bar in each language), using a
-    phoneme set specific to the target language (middle bar in each
+    universal phone set (leftmost bar in each language), using a
+    phone set specific to the target language (middle bar in each
     language), and using a phonotactic language model derived from
-    Wikipedia texts (shortest bar in each language).}
+    Wikipedia texts (rightmost bar in each language).}
   \label{fig:pt_decode_per}
 \end{figure}
 %% KC: caption should not reference "tallest bar" etc, but rather should
 %% refer to colors.
+% MH: Transactions printed copy will be grayscale...
 
 The quality of a probabilistic transcription derived from mismatched
 crowdsourcing is significantly improved by using a phone language
-model during the decoding process ($\rho(\phi)$ in Eq.~\ref{eq:PT}).
-A crude measure of the quality of the PTs is given by the phone error
-rate between $\phi^* = \argmax_{\phi} \rho(\phi|T)$ and the reference
-phone sequences, called the ``label phone error rate'' (LPER). Phone
+model during the decoding process ($\rho(\phi)$ in Eq.~(\ref{eq:PT})).
+A crude measure of the quality of the PTs is given by the label phone error
+rate (LPER), which measures the difference
+between $\phi^* = \argmax_{\phi} \rho(\phi|T)$ and a native transcription. Phone
 language models for each target language were computed from Wikipedia
 texts using the methods described in Sec.~\ref{sec:trainwithlm}.
 LPER of the 1-best path through the resulting PTs are shown in
@@ -73,10 +74,9 @@ bit of entropy per phone, illustrating the extent of information
 captured by the PTs.
 
 \begin{figure}[t!]
-\begin{center}
-\includegraphics[width=3in]{../figs/perfig.pdf}
-\end{center}
-\caption{LPER plotted against entropy rate estimates of phone sequences in three different languages.}
+  \centerline{\includegraphics[width=5.5in]{../figs/ptperfigure.pdf}}
+  \vspace*{-1cm}
+  \caption{LPER plotted against entropy rate estimates of phone sequences in three different languages.}
 \label{fig:listPER}
 \end{figure}
 

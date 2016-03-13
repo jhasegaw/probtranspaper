@@ -80,9 +80,12 @@
 \end{figure}
 
 The second set of PTs were computed by sending audio in the target
-language to non-speakers of the target language (all transcribers were
-speakers of American English, 30\% reported being monolingual), and
-asking them to write what they hear.  Denote using $T$ the set of text
+language to non-speakers of the target language, and asking them to
+write what they hear.  It would be preferable to recruit transcribers
+who speak a language with predictable orthography, but since
+transcribers in those languages were not readily available, this
+experiment instead recruited transcribers who speak American English.
+Denote using $T$ the set of text
 transcripts produced by these English-speaking crowd workers.
 Mismatched transcripts must be converted into the form of a pmf over
 target-language phone sequences, $\rho(\phi|T)$.  As an intermediate
@@ -92,20 +95,21 @@ $\rho(\lambda|T)$ over representative crowd-worker transcripts,
 denoted $\lambda$ (Fig.~\ref{fig:mcmethods}).  Formation of
 $\rho(\lambda|T)$ involves data filtering to remove outliers (based on
 pair-wise string edit distance among transcripts), expansion of the
-orthography to an alphabet that removes silent $<$e$>$ and includes
-single-character symbols for digraphs commonly used to represent
+orthography to an alphabet that includes
+single-character symbols for digraphs and sequences commonly used to represent
 single phonemes in English orthography ($<$ai, ay, ee, oo, ou, aw, ow,
-bh, ch, dh, gh, jh, kh, ph, sh, th, wh, zh, ck$>$), and a weighted
+bh, ch, dh, gh, jh, kh, ph, sh, th, wh, zh, ck$>$, and any vowel followed by
+a word-final silent $<$e$>$), and a weighted
 voting scheme in which the weight of each transcript is proportional
 to the frequency with which it matches the other transcripts.
 
 Once transcripts have
 been aligned and filtered to create the orthographic confusion network
 $\rho(\lambda|T)$, they are then translated into a distribution over
-phonemic transcriptions according to:
+phone transcriptions according to:
 \begin{align}
-  \rho(\phi|T) &=
-  \sum_{\lambda} \rho(\phi|\lambda,T) \rho(\lambda|T) \notag \\
+  \rho(\phi|T) 
+%  &=\sum_{\lambda} \rho(\phi|\lambda,T) \rho(\lambda|T) \notag \\
   &\approx \max_{\lambda}  \rho(\phi|\lambda) \rho(\lambda|T) \notag \\
   &= \max_{\lambda}  \left(\frac{\rho(\lambda|\phi)}{\rho(\lambda)}
   \rho(\phi)\right) \rho(\lambda|T) 
@@ -114,7 +118,7 @@ phonemic transcriptions according to:
 The terms other than $\rho(\lambda|T)$ in Equation~(\ref{eq:PT}) are
 estimated as follows.  $\rho(\lambda)$ is modeled using a simple
 context-free prior over the letter sequences in $\lambda$.
-$\rho(\phi)$ is modeled using a bigram phone language model
+$\rho(\phi)$ is modeled using a bigram phone language model.
 %, trained
 %on a corpus of Wikipedia text in the target language, converted into
 %phone sequences as described in Section~\ref{sec:trainwithlm}.
