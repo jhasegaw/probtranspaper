@@ -1,21 +1,21 @@
 \subsection{Mismatched Crowdsourcing}
 \label{s6:mc}
 
-\begin{figure}
-  \centerline{\includegraphics[width=0.7\columnwidth]{../figs/lm_results.pdf}}
-  \vspace*{-0.7cm}
-  \caption{LPER of the 1-best path: a measure of the quality of
-    probabilistic transcriptions acquired from mismatched
-    crowdsourcing.  Native transcriptions were available in six
-    languages: Swahili (swh), Dutch (nld), Mandarin (cmn), Urdu (urd),
-    Arabic (arb), and Hungarian (hun).  Probabilistic transcriptions
-    were decoded using three different methods per language: using a
-    universal phone set (leftmost bar in each language), using a
-    phone set specific to the target language (middle bar in each
-    language), and using a phonotactic language model derived from
-    Wikipedia texts (rightmost bar in each language).}
-  \label{fig:pt_decode_per}
-\end{figure}
+%\begin{figure}
+%  \centerline{\includegraphics[width=0.7\columnwidth]{../figs/lm_results.pdf}}
+%  \vspace*{-0.7cm}
+%  \caption{LPER of the 1-best path: a measure of the quality of
+%    probabilistic transcriptions acquired from mismatched
+%    crowdsourcing.  Native transcriptions were available in six
+%    languages: Swahili (swh), Dutch (nld), Mandarin (cmn), Urdu (urd),
+%    Arabic (arb), and Hungarian (hun).  Probabilistic transcriptions
+%    were decoded using three different methods per language: using a
+%    universal phone set (leftmost bar in each language), using a
+%    phone set specific to the target language (middle bar in each
+%    language), and using a phonotactic language model derived from
+%    Wikipedia texts (rightmost bar in each language).}
+%  \label{fig:pt_decode_per}
+%\end{figure}
 
 The quality of a probabilistic transcription derived from mismatched
 crowdsourcing is significantly improved by using a phone language
@@ -26,9 +26,24 @@ between $\phi^* = \argmax_{\phi} \rho(\phi|T)$ and a native transcription. Phone
 language models for each target language were computed from Wikipedia
 texts using the methods described in Sec.~\ref{sec:trainwithlm}.
 LPER of the 1-best path through the resulting PTs are shown in
-Fig.~\ref{fig:pt_decode_per}.  As shown, the use of a phonotactic
+Table.~\ref{tab:pt_decode_per}.  As shown, the use of a phonotactic
 language model, derived from Wikipedia text, reduces PER by about 10\%
 absolute, in each language.
+
+\begin{table}
+\centerline{\begin{tabular}{|c||c|c|c|c|c|}\hline
+    method & nld & cmn & urd & arb & hun \\\hline
+    universal set & 87.4 & 88.86 & 97.95 & 79.04 & 92.87 \\
+    target set & 78.12 & 87.4 & 87.81 & 66.39 & 84.78 \\
+    phone bigram & 68.0 & 70.88 & 64.67 & 65.29 & 63.98 \\\hline
+\end{tabular}}
+\caption{LPER of the 1-best path: a measure of the quality of
+  probabilistic transcriptions acquired from mismatched crowdsourcing.
+  Probabilistic transcriptions were decoded using three different
+  methods per language: universal phone set, target-language phone
+  set, and target-language bigram phone language model.}
+\label{tab:pt_decode_per}
+\end{table}
 
 %\begin{table}[t]
 %\centering
@@ -37,7 +52,8 @@ absolute, in each language.
 %  & \multicolumn{7}{|c|}{Language (ISO 639-3 Code)}\\ \hline
 %& arb & yue & nld & hun & cmn & swh & urd \\ \hline\hline
 %Dev set (1-best PER) & 65.8 & 66.4 & 68.9 & 63.7 & 70.9 & 47.6 & 67.2 \\
-%Eval set (1-best PER) & 66.2 & 67.8 & 70.9 & 63.5 & 69.6 & 50.3 & 70.5 \\\hline
+%Eval set (1-best PER) & 66.2 & 67.8 & 70.9 & 63.5 & 69.6 & 50.3 & 70.5 \\\hlineswh	88.05	59.78	48.08
+
 %\end{tabular}
 %\caption{Error rates (PER) of probabilistic transcripts computed from
 %  mismatched crowdsourcing (non-native human listeners): Phone error
