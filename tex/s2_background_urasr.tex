@@ -100,20 +100,21 @@ hybrid~\cite{Huang2013} ASR.
 Self-training is a class of semi-supervised learning techniques in
 which a classifier is first trained on any available labeled examples,
 then used to classify the unlabeled data.  The classifier is then
-re-trained using its own labels as targets.  As the number of
-self-labeled data becomes infinite, a self-trained classifier
-converges in the typical case but not in the worst
-case~\cite{Scudder1965}.  
-
-Self-training is frequently used to adapt ASR from a well-resourced
-language to an under-resourced language~\cite{Loof2009,Cetin2008}.
-Self-training of NN-HMM systems has been shown to be about 50\% more
-effective (1.5 times the error rate reduction) as self-training of
-GMM-HMM systems~\cite{Huang2013b}.  Self-training is most useful when
-the in-language training data are first filtered, to exclude frames
-with confidence below a threshold~\cite{vesely2013-semi,Vu2011b},
+re-trained using its own labels as targets.  Self-training is
+frequently used to adapt ASR from a well-resourced language to an
+under-resourced language~\cite{Loof2009,Cetin2008}, or in some cases,
+to create target-language ASR by adapting several source-language
+ASRs~\cite{Vu2011b}.  A self-trained classifier tends to be too
+conservative, because the tails of the data distribution are truncated
+by the self-labeling process~\cite{Scudder1965}; on the other hand, a
+self-trained classifier needs to be conservative, because the error
+rate of the learned classifier increases at a rate more than
+proportional to the error rate of the self-labeling
+process~\cite{Huang2013b}.  Self-training is therefore most useful
+when the in-language training data are first filtered, to exclude
+frames with confidence below a threshold~\cite{vesely2013-semi},
 and/or weighted, so that some frames are allowed to influence the
-learned parameters more than others~\cite{Hsiao2013}.  Both of these
-techniques use confidence scores estimated in the form of a
-probability distribution, $\rho_\Phi(\phi)$, over possible phone
-transcriptions, $\phi$.
+learned parameters more than others~\cite{Hsiao2013}.  Self-training
+of NN-HMM systems has been shown to be about 50\% more effective (1.5
+times the error rate reduction) as self-training of GMM-HMM
+systems~\cite{Huang2013b}.
