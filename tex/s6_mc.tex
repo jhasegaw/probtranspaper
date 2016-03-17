@@ -32,16 +32,16 @@ absolute, in each language.
 
 \begin{table}
 \centerline{\begin{tabular}{|c||c|c|c|c|c|}\hline
-    method & nld & cmn & urd & arb & hun \\\hline
-    universal set & 87.4 & 88.86 & 97.95 & 79.04 & 92.87 \\
-    target set & 78.12 & 87.4 & 87.81 & 66.39 & 84.78 \\
-    phone bigram & 68.0 & 70.88 & 64.67 & 65.29 & 63.98 \\\hline
+    Method & nld & cmn & urd & arb & hun \\\hline
+    Universal set & 87.4 & 88.86 & 97.95 & 79.04 & 92.87 \\
+    Target set & 78.12 & 87.4 & 87.81 & 66.39 & 84.78 \\
+    Phone bigram & 68.0 & 70.88 & 64.67 & 65.29 & 63.98 \\\hline
 \end{tabular}}
-\caption{LPER of the 1-best path: a measure of the quality of
-  probabilistic transcriptions acquired from mismatched crowdsourcing.
-  Probabilistic transcriptions were decoded using three different
-  methods per language: universal phone set, target-language phone
-  set, and target-language bigram phone language model.}
+\vspace*{1mm}
+\caption{Label phone error rate (LPER) of probabilistic transcriptions
+  for nld=Dutch, cmn=Mandarin, urd=Urdu, arb=Arabic, hun=Hungarian.
+  Methods: universal phone set, target-language phone set, text-based
+  phone bigram.}
 \label{tab:pt_decode_per}
 \end{table}
 
@@ -88,8 +88,9 @@ bit of entropy per phone, illustrating the extent of information
 captured by the PTs.
 
 \begin{figure}[t!]
-  \centerline{\includegraphics[width=0.7\columnwidth]{../figs/ptperfigure.pdf}}
-  \vspace*{-0.5cm}
+  %\centerline{\includegraphics[width=0.7\columnwidth]{../figs/ptperfigure.pdf}}
+  \input{../figs/listper.tex}
+  \vspace*{-1cm}
   \caption{LPER plotted against entropy rate estimates of phone sequences in three different languages.}
 \label{fig:listPER}
 \end{figure}
