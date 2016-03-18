@@ -12,7 +12,7 @@ Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of these
 classifiers when applied to the three languages.
 
 \begin{figure}
-  \centerline{\includegraphics[width=\columnwidth]{../figs/diliberto_svmresults.png}}
+  \centerline{\includegraphics{../figs/eer-barplot/eer-barplot.pdf}}
   \vspace*{-0.3cm}
   \caption{Classifiers were trained to observe EEG signals, and to
     classify the distinctive features of the phone being heard.  Equal
@@ -46,12 +46,11 @@ some constant $0\le\alpha\le 1$.
 
 \begin{figure}
   \centerline{
-    \includegraphics[width=0.45\columnwidth]{../figs/mirbagheri_dist_features.png}
-    \includegraphics[width=0.45\columnwidth]{../figs/mirbagheri_dist_eeg.png}
+    \includegraphics{../figs/confusion-matrix/confusion-matrices.pdf}
   }
     \vspace*{-0.3cm}
-  \caption{Phoneme confusion probabilities between English phonemes
-    (column) and Dutch phonemes (row) using models in which the log
+  \caption{Phone confusion probabilities between English and Dutch
+    phones using models in which the log
     probability is proportional to distance between the corresponding
     distinctive features.  Left: all features have the same
     weight.  Right: feature weights equal negative log error rate of
