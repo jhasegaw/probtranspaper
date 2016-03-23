@@ -1,8 +1,9 @@
 \subsection{Maximum {\em A Posteriori} Adaptation}
 \label{sec:adaptation}
 
-Training from PTs can be improved by starting from a multilingual ASR,
-and adapting its parameters to PTs in the target language.  The
+PT adaptation starts from a cross-lingual ASR,
+%Training from PTs can be improved by starting from a multilingual ASR,
+and adapts its parameters to PTs in the target language.  The
 Bayesian framework for maximum {\em a posteriori} (MAP) estimation
 has been widely applied to GMM and HMM parameter estimation problems
 such as speaker adaptation~\cite{gauvain1994maximum}.
@@ -16,7 +17,7 @@ parameter set as $\theta$, then the MAP parameters are defined as:
 \end{equation}
 \noindent where $\pi(\theta)$ is the product of conjugate
 prior distributions, centered at the parameters of a cross-lingual
-baseline GMM-HMM.  In a GMM-HMM, the acoustic model 
+baseline ASR.  In a GMM-HMM, the acoustic model 
 %\[
 %\pi(x_t^\ell|s_t^\ell =j,\theta )=
 %\sum_{k=1}^K c_{jk}
@@ -42,8 +43,8 @@ parameters $\bar\theta$ and the statistics of the adaptation data, for
 example:
 \begin{equation}
 c_{jk}'=\frac{\tau_c\bar{c}_{jk}+\sum_{\ell,t}\gamma_{t}^\ell(j,k)}
-{\sum_{\kappa}\left(\tau_c\bar{c}_{j\kappa}+
-  \sum_{\ell,t}\gamma_{t}^\ell(j,\kappa)\right)}
+{\sum_{n}\left(\tau_c\bar{c}_{jn}+
+  \sum_{\ell,t}\gamma_{t}^\ell(j,n)\right)}
 %~~~
 %\mu_{jk}'=\frac{\tau_\mu\bar{\mu}_{jk}+\sum_{\ell,t}\gamma_{t}^\ell(j,k)x_t^\ell}
 %   {\tau_\mu+\sum_{\ell,t}\gamma_{t}^\ell(j,k)}

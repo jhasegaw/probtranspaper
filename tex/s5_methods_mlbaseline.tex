@@ -8,17 +8,19 @@ is have the baseline serve as a starting point for
 adaptation.
 
 The dataset consists of 40 minutes of labeled audio for training,
-10 minutes for development, 10 minutes for testing
+10 minutes for development, and 10 minutes for testing
 for each language.
-The orthographic transcripts are converted into
-phonetic transcripts using language-dependent G2Ps.
+%The orthographic transcripts are converted into
+%phonetic transcripts using language-dependent G2Ps.
 %Beginning with a list of the IPA symbols used in canonical descriptions
 %of all seven languages,
 %any symbol appearing in only one language was merged with a different symbol
 %differing by only one distinctive feature; this process proceeded until 
 %each remaining phone symbol is represented in at least two languages.
-English words are identified and converted to phones with
-an English G2P trained using CMUdict~\cite{Lenzo1995}.
+English words in each transcript are identified and converted to phones with
+an English G2P trained using CMUdict~\cite{Lenzo1995}, then
+other words are converted into phonetic transcripts using language-dependent
+dictionaries and G2Ps.
 %We take the canonical pronunciation of a word if the word
 %appears in a lexicon,
 %otherwise estimate the word's pronunciation using a G2P.
@@ -26,7 +28,7 @@ The Arabic dictionary is from the Qatari Arabic Corpus~\cite{Elmahdy14},
 the Dutch dictionary is from CELEX v2~\cite{Baayen96},
 the Hungarian dictionary was provided by BUT~\cite{Grezl14},
 the Cantonese dictionary is from $I^2R$,
-the Mandarin dictionary is from CALLHOME~\cite{Canavan96},
+the Mandarin dictionary is from CALLHOME~\cite{LDC96},
 and the Urdu and Swahili G2Ps were compiled from
 character-based descriptions of the orthographic systems in those
 two languages.

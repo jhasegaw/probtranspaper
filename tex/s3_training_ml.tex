@@ -58,11 +58,12 @@ and reflexive, but comes with a path cost determined by the
 transcription probability $\rho(\phi^\ell)$, as exemplified in
 Fig.~\ref{fig:pt}.  The context transducer, $C$, maps any senone
 sequence $s^\ell$ to a phone sequence $\phi^\ell$~\cite{mohri2008speech}.
-This mapping is non-deterministic, and the path cost is determined by
+This mapping is stochastic, and the path cost is determined by
 the HMM transition weights
 %$a_{ij}=\pi_{S_t^{\ell}|S_{t-1}^{\ell}}(j|i,\phi^\ell,\theta)$:
 \begin{equation}
-  \pi(s^\ell|\phi,\theta)=\prod_{\ell=1}^L\prod_{t=1}^T
+  \pi(s^\ell|\phi,\theta)=%\prod_{\ell=1}^L
+  \prod_{t=1}^T
   %  a_{s_{t-1}^\ell s_t^\ell}
   \pi(s_t^{\ell}\vert s_{t-1}^{\ell},\phi^\ell,\theta)
 \end{equation}
@@ -70,7 +71,8 @@ The acoustic model, $H$, maps any senone sequence to
 itself.  This mapping is deterministic and reflexive, but comes with a
 path cost determined by the acoustic modeling probability
 \begin{equation}
-  \pi(x^\ell|s^\ell,\phi^\ell,\theta)=\prod_{\ell=1}^L\prod_{t=1}^T
+  \pi(x^\ell|s^\ell,\phi^\ell,\theta)=%\prod_{\ell=1}^L
+  \prod_{t=1}^T
   \pi(x_t^\ell|s_t^\ell,\theta)
 \end{equation}
 %The joint probability $\pi(x^\ell,s^\ell,\phi^\ell|\theta)$ is

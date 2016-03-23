@@ -25,7 +25,7 @@ classifiers when applied to the three languages.
 Eq.~(\ref{eq:dfdist}) defines a log-linear model of $\rho(\psi|\phi)$,
 the probability that a non-English phoneme $\phi$ will be perceived as
 English phoneme $\psi$.  Denote by $\rho_U(\psi|\phi)$ the model of
-Eq.~(\ref{eq:dfdist}) with binary weights for all distinctive
+Eq.~(\ref{eq:dfdist}) with uniform binary weights for all distinctive
 features. Denote by
 $\rho_{EEG}(\psi|\phi)$ the same model, but with weights $w_k$ derived
 from EEG measurements (Eq.~(\ref{eq:eegdist})).
@@ -50,10 +50,11 @@ some constant $0\le\alpha\le 1$.
   }
     \vspace*{-0.3cm}
   \caption{Phone confusion probabilities between English and Dutch
-    phones using models in which the log
-    probability is proportional to distance between the corresponding
-    distinctive features.  Left: all features have binary
-    weights.  Right: feature weights equal negative log confusion
+    phones using models in which the negative log
+    probability is proportional to unweighted or weighted
+    distance between the corresponding
+    distinctive feature vectors.  Left: unweighted.
+    Right: feature weights equal negative log confusion
     probability of EEG signal classifiers.}
   \label{fig:eeg_confusions}
 \end{figure}

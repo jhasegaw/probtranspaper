@@ -1,10 +1,10 @@
 \subsection{EEG Recording and Analysis}
 \label{sec:methods_eeg}
 
-To compute distinctive feature weights used in estimating the misperception
-transducer as shown in Eqs.~(\ref{eq:dfdist}) and~(\ref{eq:eegdist}),
-recordings of cortical activity in response to non-native phones were
-made using EEG. Signals were acquired using a BrainVision actiCHamp 
+To compute distinctive feature weights for the misperception
+transducer shown in Eqs.~(\ref{eq:dfdist}) and~(\ref{eq:eegdist}),
+cortical activity in response to non-native phones was recorded by
+an EEG. Signals were acquired using a BrainVision actiCHamp 
 system with 64 channels and 1000 Hz sampling frequency.
 All procedures were approved by the University of Washington Institutional
 Review Board.
@@ -43,10 +43,11 @@ it is most similar.
 The number of many-to-one collisions is then defined as
 \begin{equation}
   N_{M2O}=\frac{1}{|\Omega_\Psi|}\sum_{\phi_1\ne\phi_2}
-  \delta\left(\psi^*(\phi_1)=\psi^*(\phi_2)\right)
+  \left[\psi^*(\phi_1)=\psi^*(\phi_2)\right]
 \label{eq:m2o}
 \end{equation}
-where $|\Omega_\Psi|$ is the size of the English phoneme inventory.
+where $|\Omega_\Psi|$ is the size of the English phoneme inventory,
+and $\left[\cdot\right]$ is the unit indicator function.
 The frequency of many-to-one mappings is listed in
 Table~\ref{tab:m2o} for several languages.
 Hindi was chosen for having a large number of
@@ -97,7 +98,7 @@ the same for all three languages (/a/ and /e/).
     hin &  p & b & \textipa{\|[t} & \textipa{\|[d} & \textipa{\:t} & \textipa{\:d} & k & \textipa{g} & & \textipa{V} & & & m & \textipa{\|[n} & \textipa{\:n} \\\hline\hline
     eng & \multicolumn{2}{c|}{\textipa{p\super h}} & \multicolumn{4}{c|}{\textipa{t\super h}} & \multicolumn{2}{c|}{\textipa{k\super h}} & \textipa{tS\super h} & f & \textipa{T} & \textipa{S} & l & \textipa{\*r} & \\\hline
     nld & \multicolumn{2}{c|}{\textipa{p\super h}} & \multicolumn{4}{c|}{\textipa{t\super h}} & \multicolumn{2}{c|}{\textipa{k\super h}} & \textipa{tS\super h} & f & & \textipa{S} & l & \textipa{\;R} & j \\\hline
-    hin & \multicolumn{2}{c|}{\ipa{\textsubumlaut{b}}} & \textipa{\|[t\super h} & \textipa{\:t\super h} & \textipa{\textsubumlaut{\textsubbridge{d}}} & \textipa{\textsubumlaut{\:d}} & \textipa{k\super h} & \textipa{\textsubumlaut{g}} & & & & & &&\\\hline
+    hin & \multicolumn{2}{c|}{\ipa{b\super H}} & \textipa{\|[t\super h} & \textipa{\:t\super h} & \textipa{\textsubbridge{d}\super H} & \textipa{\:d\super H} & \textipa{k\super h} & \textipa{g\super H} & & & & & &&\\\hline
   \end{tabular}
   \vspace*{1mm}
   \caption{Consonant phones used in the EEG experiment represented using
@@ -115,7 +116,7 @@ Recorded syllables had an average duration of 400~ms, and were presented
 via headphones to one monolingual American English listener.
 The stimuli were presented in 9 blocks of 15 minutes per block, for a
 total of 135 minutes.  Syllables were presented in random order with an
-inter-stimulus interval of 350~ms. 21 repetitions of each syllable
+inter-stimulus interval of 350~ms. Twenty-one repetitions of each syllable
 were presented, for a grand total of 9072 syllable presentations.
 
 %% TODO: get number of ms where epoch started (MM to email GDL)

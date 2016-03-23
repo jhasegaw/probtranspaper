@@ -18,22 +18,22 @@
 \multicolumn{6}{|l|}{GMM-HMM} \\\hline
 yue & 32.77 (34.61)
 & 79.64 (79.83)
-& 68.40 (68.35) & &  \textbf{57.20** (56.57)}
+& 68.40 (68.35) & &  \textbf{57.20*** (56.57)}
 %&  16.4** (17.1) & 10.3** (9.2)
 \\
 hun & 39.58 (39.77)
 & 77.13 (77.85)
-& 68.62 (66.90) & &   \textbf{56.98** (57.26)}
+& 68.62 (66.90) & &   \textbf{56.98*** (57.26)}
 %& 16.9** (14.3) & 10.2** (9.9)
 \\
 cmn & 32.21 (26.92)
 & 83.28 (82.12)
-& 71.30 (68.66) & &   \textbf{58.21** (57.85)}
+& 71.30 (68.66) & &   \textbf{58.21*** (57.85)}
 %&  18.4** (15.7) & 10.3** (9.7)
 \\
 swh & 35.33 (46.51)
 & 82.99 (81.86)
-& 63.04 (64.73) & &   \textbf{44.31** (48.88)}
+& 63.04 (64.73) & &   \textbf{44.31*** (48.88)}
 %& 29.6** (24.6) & 24.7** (18.4)
 \\
 \hline\hline
@@ -41,27 +41,27 @@ swh & 35.33 (46.51)
 \multicolumn{6}{|l|}{NN-HMM} \\\hline
 yue & 27.67 (28.88)
 & 78.62 (77.58) 
-& 66.59 (65.41) & 63.79 (n.s.) (62.46) &\textbf{53.64** (53.80)}
+& 66.59 (65.41) & 63.79 (n.s.) (62.46) &\textbf{53.64*** (53.80)}
 %& 19.4** (17.7) & 15.9** (13.9)
 \\
 hun & 35.87 (36.58)
 & 75.98 (76.44)
-& 66.43 (67.18) & 63.53 (n.s.) (63.50) &   \textbf{56.70** (58.45)}
+& 66.43 (67.18) & 63.53 (n.s.) (63.50) &   \textbf{56.70*** (58.45)}
 %& 14.6** (13.0) & 10.8** (8.0)
 \\
 cmn & 27.80 (23.96)
 & 81.86 (80.47)
-& 65.77 (64.80) & 64.90* (64.00) &   \textbf{54.07** (53.13)}
+& 65.77 (64.80) & 64.90* (64.00) &   \textbf{54.07*** (53.13)}
 %& 17.8** (18.0) & 16.7** (17.0)
 \\
 swh & 34.98 (41.47)
 & 82.30 (81.18)
-& 65.30 (65.11) &  58.76** (59.81) &   \textbf{44.73** (48.60)}
+& 65.30 (65.11) &  58.76** (59.81) &   \textbf{44.73*** (48.60)}
 %& 31.5** (25.4) & 23.9** (18.7)
 \\\hline
 \end{tabular}}
 \vspace*{1mm}
-\caption{\label{tab:ptresult} PERs on the evaluation and development sets (development in parentheses) before and after adaptation with PTs.  MAPSSWE significance testing with respect to CL acoustic model with text-based language model: * means $p\le 0.003$, ** means $p<0.001$, (n.s.) means not significant.}
+\caption{\label{tab:ptresult} PERs on the evaluation and development sets (development in parentheses) before and after adaptation with PTs.  MAPSSWE significance testing with respect to CL acoustic model with text-based language model: * means $p\le 0.003$, ** means $p<0.001$, (n.s.) means not significant. *** denotes a score lower than both CL and ST baselines at $p<0.001$.}
 \end{table*}
 
 %This section demonstrates that PT adaptation improves the
@@ -71,15 +71,16 @@ swh & 34.98 (41.47)
 %reported~\cite{vesely2013-semi}. PTs derived from human mismatched
 %crowdsourcing provide significant further PER reduction.
 
-PT adaptation improves the PER of cross-lingual ASR.
-
 Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
 evaluation (and development) sets for four different languages. The
 column titled {\sc CL} lists cross-lingual baseline error rates.
-%copied from Table~\ref{tab:results}.
+The column labeled {\sc ST} lists the
+PERs of self-trained ASR systems.
+The column headed {\sc PT-adapt} in Table~\ref{tab:ptresult} lists
+PERs from {\sc CL} ASR systems that have been adapted to PTs in the target
+language.
 
-In Table~\ref{tab:ptresult}, the column labeled {\sc ST} lists the
-PERs of self-trained ASR systems. Self-training was only performed
+Self-training was only performed
 using NN systems; no self-training of GMMs was performed, because
 previous studies~\cite{Huang2013} reported it to be less effective.
 Differences between the evaluation set PERs of {\sc ST} and {\sc CL}
@@ -94,18 +95,17 @@ system at a level of $p<0.001$ (denoted **); the Cantonese and
 Hungarian {\sc ST} systems were judged to be not significantly better
 than {\sc CL}.
 
-The column headed {\sc PT-adapt} in Table~\ref{tab:ptresult} lists
-PERs from {\sc CL} ASR systems that have been adapted to PTs in the target
-language.
 %We observe substantial PER improvements using {\sc PT-adapt}
 %over {\sc CL} across all four languages. We also find that PT
 %adaptation consistently outperforms the {\sc ST} systems for all four
 %languages.
-The relative reductions in PER compared to {\sc CL} and {\sc ST} baselines
-are listed in the last two columns.  Reductions on the evaluation set
+The relative reductions in PER
+of the {\sc PT-adapt} system
+compared to both {\sc CL} and {\sc ST} baselines
+%are listed in the last two columns.  Reductions on the evaluation set
 were tested for statistical significance using the MAPSSWE test of the
 {\tt sc\_stats} tool.  All differences were found to be statistically
-significant at $p<0.001$ (denoted **).  This suggests that adaptation
+significant at $p<0.001$ (denoted ***).  This suggests that adaptation
 with PTs is providing more information than that obtained by model
 self-training alone.
 

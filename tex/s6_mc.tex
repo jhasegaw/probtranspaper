@@ -70,22 +70,22 @@ absolute, in each language.
 LPER of the 1-best path does not
 accurately reflect the extent of information in the PTs that can be
 leveraged during ASR adaptation.  Consider, for example, the four
-Urdu phones~\ipa{[p,p\textsuperscript{h},b,\"*b]}.  An attentive
+Urdu phones~\ipa{[p,p\textsuperscript{h},b,b\textsuperscript{H}]}.  An attentive
 English-speaking transcriber must choose between the two letters
 $<$p,b$>$ in order to represent any of these four phones.  The
 misperception G2P therefore maps the letters $<$p,b$>$ into a
-distribution over the phones~\ipa{[p,p\textsuperscript{h},b,\"*b]}.
+distribution over the phones~\ipa{[p,p\textsuperscript{h},b,b\textsuperscript{H}]}.
 There is no reason to expect that the maximizer of
 $\rho(\phi|\lambda)$ is correct, but there is good reason to expect
 the correct answer to be a member of a short $N$-best list ($N\le 4$
 phones/grapheme).  A fuller picture is therefore obtained by
 considering a collection of sequences that are almost equally 
 probable according to our model. Figure~\ref{fig:listPER}
-shows the trend of phone error rates (for three languages) obtained by
+shows the trend of LPER (for three languages) obtained by
 using collections $\phi$ of increasing size, plotted against an
 entropy estimate of $\rho(\phi)$, e.g., 1 bit of entropy allows two equally
-probable choices for each phone in $\phi$. We note that the phone
-error rates significantly drop across all languages, staying within 1
+probable choices for each phone in $\phi$. LPER
+rates drop significantly across all languages within 1
 bit of entropy per phone, illustrating the extent of information
 captured by the PTs.
 
