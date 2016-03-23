@@ -9,27 +9,27 @@ corpora. Current methods require about 1000 hours of transcribed
 speech per language, transcribed at a cost of about 6000 hours of
 human labor; the human transcribers must be computer-literate, and
 they must be native speakers of the language being transcribed.  In
-many languages, the idea of recruiting dozens of computer-literate
-native speakers is impractical, sometimes even absurd.
+many languages, recruiting dozens of computer-literate
+native speakers is impractical.
 
-Instead of recruiting native transcripts in search of a perfect
-reference transcription, this paper proposes the use of probabilistic
-transcriptions.  A probabilistic transcription is a probability mass
+Instead of recruiting native transcribers in search of a perfect
+reference transcript, this paper proposes the use of probabilistic
+transcripts.  A probabilistic transcript is a probability mass
 function, $\rho_\Phi(\phi)$, specifying, as a real number between $0$ and
-$1$, the probability that any particular phonetic transcription $\phi$
-is the correct transcription of the utterance.  Prior to this work,
+$1$, the probability that any particular phonetic transcript $\phi$
+is the correct transcript of the utterance.  Prior to this work,
 machine learning has almost always assumed that the training dataset
-contains either deterministic transcriptions
+contains either deterministic transcripts
 ($\rho_{DT}(\phi)\in\left\{0,1\right\}$, commonly called ``supervised
 training'') or completely untranscribed utterances (commonly called
 ``unsupervised training,'' in which case we assume that $\rho_{LM}(\phi)$
 is given by some {\em a priori} language model).  This article
 proposes that, even in the absence of a deterministic transcript,
-there may be auxiliary sources of information that can be applied to
-create a probabilistic transcription whose entropy is lower than that
+there may be auxiliary sources of information that can be compiled to
+create a probabilistic transcript with entropy lower than that
 of the language model, and that machine learning methods applied to
-the probabilistic transcription are able to make use of its reduced
-entropy in order to learn a better speech recognizer.  In particular,
+the probabilistic transcript are able to make use of its reduced
+entropy in order to learn a better ASR.  In particular,
 this paper considers three useful auxiliary sources of information:
 \begin{enumerate}
 \item SELF TRAINING: ASR pre-trained in other languages is used to
@@ -40,6 +40,6 @@ this paper considers three useful auxiliary sources of information:
 \item EEG DISTRIBUTION CODING: Humans who do not speak the target
   language are asked to listen to its extracted syllables, and their
   EEG responses are interpreted as a probability mass function over
-  possible phonetic transcriptions.
+  possible phonetic transcripts.
 \end{enumerate}
 

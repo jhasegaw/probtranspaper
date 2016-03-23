@@ -9,10 +9,10 @@ Berment~\cite{Berment2004} defined a rubric for tabulating the
 resources available in any given language, and proposed that a
 language should be called ``under-resourced'' if it scored lower than
 10.0/20.0 on the proposed rubric.  By these standards, technology
-methods for under-resourced languages are most often demonstrated on
+for under-resourced languages is most often demonstrated on
 languages that are not really under-resourced: for example, ASR may be
 trained without transcribed speech, but the quality of the resulting
-ASR can only be scientifically proven by measuring its phone error
+ASR can only be proven by measuring its phone error
 rate (PER) or word error rate (WER) using transcribed speech.  The
 intention, in most cases, is to create methods that can later be
 ported to truly under-resourced languages.
@@ -22,7 +22,7 @@ symbols representing speech sounds (phones) defined by the principle
 that, if two phones are used in any language to make meaningful
 linguistic contrasts (i.e., they represent distinct phonemes), then
 those phones should have distinct symbolic representations in the IPA.
-This makes the IPA a natural choice for transcriptions used to train
+This makes the IPA a natural choice for transcripts used to train
 cross-language ASR systems, and indeed ASR in a new language can be 
 rapidly deployed using acoustic models trained to represent every 
 distinct symbol in the IPA~\cite{Schultz2001}.
@@ -44,7 +44,7 @@ with an acoustic data normalization technique~\cite{Mohan2014}.  NN
 transfer learning can be categorized as tandem, bottleneck,
 pre-training, phone mapping, and multi-softmax methods.  In a tandem
 system, outputs of the NN are Gaussianized, and used as features whose
-likelihood is computed with a GMM~\cite{Hermansky2000}; in a
+likelihood is computed with a GMM; in a
 bottleneck system, features are extracted from a hidden layer rather
 than the output layer. Both tandem~\cite{Stolcke2006} and
 bottleneck~\cite{Vesely2012} features trained on other languages can
@@ -52,22 +52,17 @@ be combined with GMMs~\cite{Vesely2012} or SGMMs~\cite{Imseng2014}
 trained on the target language in order to improve WER.
 
 A hybrid ASR is a system in which the NN terminates in a softmax
-layer, whose outputs are interpreted as phone~\cite{Morgan95} or
+layer, whose outputs are interpreted as phone or
 senone~\cite{Dahl2012} probabilities.  Knowledge of the target
 language phone inventory is necessary to train a hybrid ASR, but it is
 possible to reduce WER by first pre-training the NN hidden layers with
 multilingual data~\cite{Huang2013,Swietojanski2012}.  A hybrid ASR can be
 constructed using very little in-language speech data by adding a
-single phone-mapping layer to the output of the multilingual NN; the
-phone mapping layer can be trained using a small amount of in-language
-speech data~\cite{Sim2008}, even if context-dependent senones are
-mapped instead of phones~\cite{Do2012}.  A multi-softmax system
-integrates phone mapping into the original training procedure, by
-training a network with several different language-dependent softmax
+single phone-mapping layer~\cite{Sim2008} or senone-mapping layer~\cite{Do2012}
+to the output of the multilingual NN.  A multi-softmax system
+is a network with several different language-dependent softmax
 layers, each of which is the linear transform of a multilingual shared
-hidden layer.  Multi-softmax systems have reduced WER in
-tandem~\cite{Scanzio2008}, bottleneck~\cite{Vesely2012}, and
-hybrid~\cite{Huang2013} ASR.
+hidden layer~\cite{Huang2013,Scanzio2008,Vesely2012}.
 
 %Under-resourced languages often lack any pronunciation dictionary.  It
 %is possible to train a stable grapheme-to-phoneme transducer using a
@@ -98,8 +93,7 @@ hybrid~\cite{Huang2013} ASR.
 \subsection{Self-Training}
 
 Self-training is a class of semi-supervised learning techniques in
-which a classifier is first trained on any available labeled examples,
-then used to classify the unlabeled data.  The classifier is then
+which a classifier labels unlabeled data, and is then
 re-trained using its own labels as targets.  Self-training is
 frequently used to adapt ASR from a well-resourced language to an
 under-resourced language~\cite{Loof2009,Cetin2008}, or in some cases,
@@ -111,10 +105,10 @@ self-trained classifier needs to be conservative, because the error
 rate of the learned classifier increases at a rate more than
 proportional to the error rate of the self-labeling
 process~\cite{Huang2013b}.  Self-training is therefore most useful
-when the in-language training data are first filtered, to exclude
+when the in-language training data are filtered, to exclude
 frames with confidence below a threshold~\cite{vesely2013-semi},
 and/or weighted, so that some frames are allowed to influence the
 learned parameters more than others~\cite{Hsiao2013}.  Self-training
-of NN-HMM systems has been shown to be about 50\% more effective (1.5
-times the error rate reduction) as self-training of GMM-HMM
+of NN systems has been shown to be about 50\% more effective (1.5
+times the error rate reduction) as self-training of GMM
 systems~\cite{Huang2013b}.

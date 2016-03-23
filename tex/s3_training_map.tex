@@ -5,9 +5,7 @@ Training from PTs can be improved by starting from a multilingual ASR,
 and adapting its parameters to PTs in the target language.  The
 Bayesian framework for maximum {\em a posteriori} (MAP) estimation
 has been widely applied to GMM and HMM parameter estimation problems
-such as parameter smoothing and speaker
-adaptation~\cite{gauvain1994maximum}.
-
+such as speaker adaptation~\cite{gauvain1994maximum}.
 Formally, for an unseen target language, denote its acoustic
 observations $x = ( x_1^1, \ldots, x_{T}^L )$, and its acoustic model
 parameter set as $\theta$, then the MAP parameters are defined as:
@@ -37,7 +35,7 @@ by $\gamma_{t}^\ell(j,k)$. Segmental K-means quantizes
 $\pi_{S_t^\ell}(j|x^\ell,\theta)\rightarrow\left\{0,1\right\}$ using forced
 alignment, then proceeds identically.  MAP adaptation assigns, to each
 parameter, a conjugate prior $\pi(\theta)$ with mode equal to
-$\bar\theta$ (the parameters of the multilingual baseline), and with a
+$\bar\theta$ (the parameters of the cross-lingual baseline), and with a
 confidence hyperparameter $\tau_\theta$, resulting in re-estimation
 formulae that are linearly interpolated between the baseline
 parameters $\bar\theta$ and the statistics of the adaptation data, for

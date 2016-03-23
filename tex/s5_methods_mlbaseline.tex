@@ -10,38 +10,40 @@ adaptation.
 The dataset consists of 40 minutes of labeled audio for training,
 10 minutes for development, 10 minutes for testing
 for each language.
-The orthographic transcriptions are converted into
-phonetic transcriptions in the following steps.
-Beginning with a list of the IPA symbols used in canonical descriptions
-of all seven languages,
-any symbol appearing in only one language was merged with a different symbol
-differing by only one distinctive feature; this process proceeded until 
-each remaining phone symbol is represented in at least two languages.
+The orthographic transcripts are converted into
+phonetic transcripts using language-dependent G2Ps.
+%Beginning with a list of the IPA symbols used in canonical descriptions
+%of all seven languages,
+%any symbol appearing in only one language was merged with a different symbol
+%differing by only one distinctive feature; this process proceeded until 
+%each remaining phone symbol is represented in at least two languages.
 English words are identified and converted to phones with
 an English G2P trained using CMUdict~\cite{Lenzo1995}.
-We take the canonical pronunciation of a word if the word
-appears in a lexicon,
-otherwise estimate the word's pronunciation using a G2P.
+%We take the canonical pronunciation of a word if the word
+%appears in a lexicon,
+%otherwise estimate the word's pronunciation using a G2P.
 The Arabic dictionary is from the Qatari Arabic Corpus~\cite{Elmahdy14},
 the Dutch dictionary is from CELEX v2~\cite{Baayen96},
 the Hungarian dictionary was provided by BUT~\cite{Grezl14},
 the Cantonese dictionary is from $I^2R$,
 the Mandarin dictionary is from CALLHOME~\cite{Canavan96},
 and the Urdu and Swahili G2Ps were compiled from
-rule-based descriptions of the orthographic systems in those
-two languages~\cite{Hasegawajohnson15}.
+character-based descriptions of the orthographic systems in those
+two languages.
 
 Each HMM was trained with data from six languages, tuned
-(hyperparameters) on the development set of the seventh language, and
+(stream weight and insertion penalty)
+on the development set of the seventh language, and
 tested on the evaluation set of the seventh language.  The lexicon of
 the target language was not used during testing, but two types of
 language-dependent specialization were allowed.  In the first type of
 specialization, the universal phone set was restricted at test time to
 output only phones in the target language.  In the second type of
 specialization, a target-language phone bigram language model was
-trained using phone sequences converted from text.  The texts were
-collected from Wikipedia articles linked from the main page of each
-language crawled once per day over four months.
+trained using phone sequences converted from Wikipedia texts.
+%text.  The texts were
+%collected from Wikipedia articles linked from the main page of each
+%language crawled once per day over four months.
 As an oracle experiment, we also train language dependent
 HMMs for each individual language with 40 minutes of labeled audio.
 

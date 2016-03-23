@@ -22,7 +22,7 @@ File.open("listper.tex","w") do |f|
   # Draw axis labels and legend
   f.puts "\\node at (-1,2) {LPER};"
   f.puts "\\node at (5,-0.75) {Entropy of the PT (bits per segment)};"
-  f.puts "\\node[rectangle,draw=black] at (13.5,2) {\\begin{tabular}{l}-s- = Swahili\\\\-c- = Mandarin\\\\-h- = Hungarian\\end{tabular}};"
+  f.puts "\\node[rectangle,draw=black] at (12.5,2) {\\begin{tabular}{l}-s- = Swahili\\\\-c- = Mandarin\\\\-h- = Hungarian\\end{tabular}};"
   
   langs=['SWH', 'CMN', 'HUN']
   bits=[[0.04, 0.037, 0.03],

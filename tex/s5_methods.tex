@@ -3,15 +3,15 @@
 \label{sec:methods}
 
 ASR was trained in four target languages, each using no native
-transcriptions.  Unspoken texts and untranscribed audio were acquired
-in each language (Sec.~\ref{sec:data}).  Texts from mismatched
+transcripts.  Unspoken texts and untranscribed audio were acquired
+in seven languages (Sec.~\ref{sec:data}).  Texts from mismatched
 crowdsourcing were decoded using a multilingual misperception G2P
 (Sec.~\ref{sec:methodsmc}), or using a language-specific misperception
 G2P estimated using EEG (Sec.~\ref{sec:methods_eeg}).  Baseline
-cross-lingual systems were trained using native transcriptions from
-several different languages not including the target language
+cross-lingual systems were trained using native transcripts from
+six different languages not including the target language
 (Section~\ref{sec:mlbaseline}).  Finally, parameters of the acoustic
 model were adapted using PTs in the target language, derived from
-either self-training or from mismatched transcriptions
+either self-training or from mismatched transcripts
 (Sec.~\ref{sec:ptadapt}).
 

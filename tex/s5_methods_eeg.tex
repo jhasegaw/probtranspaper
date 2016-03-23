@@ -26,49 +26,31 @@ was dictated by the relatively high number of
 repetitions needed for good signal-to-noise ratio from averaged
 EEG recordings. The choice of Dutch and Hindi was made based on language
 phonological similarity, defined as the number of many-to-one mappings
-($N_{M2O}(\Omega_\Phi)$) between the English phoneme inventory
-($\Omega_\Psi$) and the non-English phoneme inventory $\Omega_\Phi$.
+($N_{M2O}$) between the English phoneme inventory
+and the non-English phoneme inventory.
+Many-to-one mappings are expected to pose a problem for the 
+non-native transcription task being modeled by the misperception 
+transducer, so to test the contribution of EEG we chose languages that 
+differed greatly in this property. 
 Using distinctive feature representations of the phonemes in each
 inventory from the PHOIBLE database~\cite{phoible}, a many-to-one 
 mapping was defined by finding, for each
 non-English phoneme $\phi$, the English phoneme $\psi^*(\phi)$ to which
-it is most similar:
-\begin{equation}
-  \psi^*(\phi) = \argmin \sum_k \delta\left(f_k(\psi)\ne f_k(\phi)\right)
-\end{equation}
+it is most similar.
+%\begin{equation}
+%  \psi^*(\phi) = \argmin \sum_k \delta\left(f_k(\psi)\ne f_k(\phi)\right)
+%\end{equation}
 The number of many-to-one collisions is then defined as
 \begin{equation}
-  N_{M2O}(\Omega_\Phi)=\frac{1}{|\Omega_\Psi|}\sum_{\phi_1\ne\phi_2}
+  N_{M2O}=\frac{1}{|\Omega_\Psi|}\sum_{\phi_1\ne\phi_2}
   \delta\left(\psi^*(\phi_1)=\psi^*(\phi_2)\right)
 \label{eq:m2o}
 \end{equation}
 where $|\Omega_\Psi|$ is the size of the English phoneme inventory.
 The frequency of many-to-one mappings is listed in
 Table~\ref{tab:m2o} for several languages.
-
-\begin{table}
-  \centerline{\begin{tabular}{|lr|lr|lr|}\hline
-    $\Omega_\Phi$ & $N_{M2O}(\Omega_\Phi)$ &
-    $\Omega_\Phi$ & $N_{M2O}(\Omega_\Phi)$ &
-    $\Omega_\Phi$ & $N_{M2O}(\Omega_\Phi)$ \\ \hline
-    spa & 0.862 & yue & 1.280 & cmn & 1.531 \\
-    por & 1.152 & jpn & 1.333 & amh & 1.844 \\
-    nld & 1.182 & vie & 1.393 & hun & 1.857 \\
-    deu & 1.258 & kor & 1.429 & hin & 2.848 \\\hline
-  \end{tabular}}
-  \vspace*{1mm}
-  \caption{Frequency of many-to-one mappings $N_{M2O}(\Omega_\Phi)$
-    between phoneme inventory $\Omega_\Phi$ and the inventory of
-    English. Languages are represented by their ISO 639-3 codes.}
-  \label{tab:m2o}
-\end{table}
-
-Based on this criterion, Hindi was chosen for having a large number of
+Hindi was chosen for having a large number of
 many-to-one mappings with English, while Dutch has relatively few. 
-Many-to-one mappings are expected to pose a problem for the 
-non-native transcription task being modeled by the misperception 
-transducer, so to test the contribution of EEG we chose languages that 
-differed greatly in this property. 
 %% rest of this paragraph could probably be cut if necessary
 Note that, although Hindi podcasts were not included in the training
 data described in Section~\ref{sec:data}, colloquial spoken Hindi and
@@ -77,6 +59,23 @@ considering that the auditory stimuli for the EEG portion of this
 experiment are simple CV syllables, it is reasonable to consider Hindi
 and Urdu as equivalent for the purpose of computing feature weights for
 the misperception transducer.
+
+\begin{table}
+  \centerline{\begin{tabular}{|lr|lr|lr|}\hline
+    Language & $N_{M2O}$ &
+    Language & $N_{M2O}$ &
+    Language & $N_{M2O}$ \\ \hline
+    spa & 0.862 & yue & 1.280 & cmn & 1.531 \\
+    por & 1.152 & jpn & 1.333 & amh & 1.844 \\
+    nld & 1.182 & vie & 1.393 & hun & 1.857 \\
+    deu & 1.258 & kor & 1.429 & hin & 2.848 \\\hline
+  \end{tabular}}
+  \vspace*{1mm}
+  \caption{Frequency of many-to-one mappings $N_{M2O}$
+    between other languages' phoneme inventories and the inventory of
+    English. Languages are represented by their ISO 639-3 codes.}
+  \label{tab:m2o}
+\end{table}
 
 To construct the auditory stimuli, two vowels and several consonants
 were selected from the phoneme inventory of each language (18 consonants
@@ -98,7 +97,7 @@ the same for all three languages (/a/ and /e/).
     hin &  p & b & \textipa{\|[t} & \textipa{\|[d} & \textipa{\:t} & \textipa{\:d} & k & \textipa{g} & & \textipa{V} & & & m & \textipa{\|[n} & \textipa{\:n} \\\hline\hline
     eng & \multicolumn{2}{c|}{\textipa{p\super h}} & \multicolumn{4}{c|}{\textipa{t\super h}} & \multicolumn{2}{c|}{\textipa{k\super h}} & \textipa{tS\super h} & f & \textipa{T} & \textipa{S} & l & \textipa{\*r} & \\\hline
     nld & \multicolumn{2}{c|}{\textipa{p\super h}} & \multicolumn{4}{c|}{\textipa{t\super h}} & \multicolumn{2}{c|}{\textipa{k\super h}} & \textipa{tS\super h} & f & & \textipa{S} & l & \textipa{\;R} & j \\\hline
-    hin & \multicolumn{2}{c|}{\textipa{b\super H}} & \textipa{\|[t\super h} & \textipa{\:t\super h} & \textipa{\|[d\super H} & \textipa{\:d\super H} & \textipa{k\super h} & \textipa{g\super H} & & & & & &&\\\hline
+    hin & \multicolumn{2}{c|}{\ipa{\textsubumlaut{b}}} & \textipa{\|[t\super h} & \textipa{\:t\super h} & \textipa{\textsubumlaut{\textsubbridge{d}}} & \textipa{\textsubumlaut{\:d}} & \textipa{k\super h} & \textipa{\textsubumlaut{g}} & & & & & &&\\\hline
   \end{tabular}
   \vspace*{1mm}
   \caption{Consonant phones used in the EEG experiment represented using

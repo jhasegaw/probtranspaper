@@ -5,10 +5,10 @@
 %  \centerline{\includegraphics[width=0.7\columnwidth]{../figs/lm_results.pdf}}
 %  \vspace*{-0.7cm}
 %  \caption{LPER of the 1-best path: a measure of the quality of
-%    probabilistic transcriptions acquired from mismatched
-%    crowdsourcing.  Native transcriptions were available in six
+%    probabilistic transcripts acquired from mismatched
+%    crowdsourcing.  Native transcripts were available in six
 %    languages: Swahili (swh), Dutch (nld), Mandarin (cmn), Urdu (urd),
-%    Arabic (arb), and Hungarian (hun).  Probabilistic transcriptions
+%    Arabic (arb), and Hungarian (hun).  Probabilistic transcripts
 %    were decoded using three different methods per language: using a
 %    universal phone set (leftmost bar in each language), using a
 %    phone set specific to the target language (middle bar in each
@@ -17,17 +17,20 @@
 %  \label{fig:pt_decode_per}
 %\end{figure}
 
-The quality of a probabilistic transcription derived from mismatched
+The quality of a probabilistic transcript derived from mismatched
 crowdsourcing is significantly improved by using a phone language
 model during the decoding process ($\rho(\phi)$ in Eq.~(\ref{eq:PT})).
-A crude measure of the quality of the PTs is given by the label phone error
-rate (LPER), which measures the difference
-between $\phi^* = \argmax_{\phi} \rho(\phi|T)$ and a native transcription. Phone
+%A crude measure of the quality of the PTs is given by the label phone error
+%rate (LPER), which measures the difference
+%between $\phi^* = \argmax_{\phi} \rho(\phi|T)$ and a native transcript.
+Phone
 language models for each target language were computed from Wikipedia
 texts using the methods described in Sec.~\ref{sec:trainwithlm}.
-LPER of the 1-best path through the resulting PTs are shown in
-Table.~\ref{tab:pt_decode_per}.  As shown, the use of a phonotactic
-language model, derived from Wikipedia text, reduces PER by about 10\%
+Label phone error rate
+(LPER) of the 1-best path through the resulting PTs are shown in
+Table~\ref{fig:pt_decode_per}, computed with reference to a native
+transcript in each language.  As shown, the use of a phone
+language model, derived from Wikipedia text, reduces LPER by about 10\%
 absolute, in each language.
 
 \begin{table}
@@ -35,14 +38,13 @@ absolute, in each language.
     Method & nld & cmn & urd & arb & hun \\\hline
     Universal set & 87.4 & 88.86 & 97.95 & 79.04 & 92.87 \\
     Target set & 78.12 & 87.4 & 87.81 & 66.39 & 84.78 \\
-    Phone bigram & 68.0 & 70.88 & 64.67 & 65.29 & 63.98 \\\hline
+    Phone bigram & 68.61 & 70.88 & 64.67 & 65.29 & 63.98 \\\hline
 \end{tabular}}
 \vspace*{1mm}
-\caption{Label phone error rate (LPER) of probabilistic transcriptions
-  for nld=Dutch, cmn=Mandarin, urd=Urdu, arb=Arabic, hun=Hungarian.
-  Methods: universal phone set, target-language phone set, text-based
+\caption{Label phone error rate (LPER) of probabilistic transcripts
+  for universal phone set, target-language phone set, text-based
   phone bigram.}
-\label{tab:pt_decode_per}
+\label{fig:pt_decode_per}
 \end{table}
 
 %\begin{table}[t]
@@ -58,7 +60,7 @@ absolute, in each language.
 %\caption{Error rates (PER) of probabilistic transcripts computed from
 %  mismatched crowdsourcing (non-native human listeners): Phone error
 %  rate (PER) of the 1-best path through the probabilistic
-%  transcription, $\phi^*=\argmax\rho(\phi|T)$, development and
+%  transcript, $\phi^*=\argmax\rho(\phi|T)$, development and
 %  evaluation sets.}
 %\label{tab:LPER}
 %\end{table}
@@ -77,11 +79,11 @@ There is no reason to expect that the maximizer of
 $\rho(\phi|\lambda)$ is correct, but there is good reason to expect
 the correct answer to be a member of a short $N$-best list ($N\le 4$
 phones/grapheme).  A fuller picture is therefore obtained by
-considering a collection of sequences $\phi$ that are almost as
-probable as $\phi^*$ according to our model. Figure~\ref{fig:listPER}
+considering a collection of sequences that are almost equally 
+probable according to our model. Figure~\ref{fig:listPER}
 shows the trend of phone error rates (for three languages) obtained by
 using collections $\phi$ of increasing size, plotted against an
-entropy estimate of $\phi$, e.g., 1 bit of entropy allows two equally
+entropy estimate of $\rho(\phi)$, e.g., 1 bit of entropy allows two equally
 probable choices for each phone in $\phi$. We note that the phone
 error rates significantly drop across all languages, staying within 1
 bit of entropy per phone, illustrating the extent of information
@@ -90,7 +92,7 @@ captured by the PTs.
 \begin{figure}[t!]
   %\centerline{\includegraphics[width=0.7\columnwidth]{../figs/ptperfigure.pdf}}
   \input{../figs/listper.tex}
-  \vspace*{-1cm}
+  \vspace*{-0.5cm}
   \caption{LPER plotted against entropy rate estimates of phone sequences in three different languages.}
 \label{fig:listPER}
 \end{figure}

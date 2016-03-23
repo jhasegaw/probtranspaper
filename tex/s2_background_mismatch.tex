@@ -1,17 +1,6 @@
 \subsection{Mismatched Crowdsourcing}
 \label{sec:bgmc}
 
-In~\cite{JHJ15a}, a methodology was proposed that bypasses the need
-for native language transcription: mismatched crowdsourcing sends target
-language speech to crowd-worker transcribers who have no
-knowledge of the target language, then uses explicit mathematical
-models of second language phonetic perception to recover an equivalent
-phonetic transcription (Fig.~\ref{fig:h2e_eg2}).  Majority voting is
-re-cast, in this paradigm, as a form of error-correcting code
-(redundancy coding), which effectively increases the capacity of the
-noisy channel; interpretation as a noisy channel permits us to explore
-more effective and efficient forms of error-correcting codes.
-
 \begin{figure}[b!]\setlength{\textfloatsep}{3mm}
 \begin{center}
   \tikzstyle{pre2}=[<-,>=stealth',thick, draw=black]
@@ -47,19 +36,31 @@ more effective and efficient forms of error-correcting codes.
 \label{fig:h2e_eg2}
 \end{figure}
 
+In~\cite{JHJ15a}, a methodology was proposed that bypasses the need
+for native language transcription: mismatched crowdsourcing sends target
+language speech to crowd-worker transcribers who have no
+knowledge of the target language, then uses explicit mathematical
+models of second language phonetic perception to recover an equivalent
+phonetic transcript (Fig.~\ref{fig:h2e_eg2}).  Majority voting is
+re-cast, in this paradigm, as a form of error-correcting code
+(redundancy coding), which effectively increases the capacity of the
+noisy channel; interpretation as a noisy channel permits us to explore
+more effective and efficient forms of error-correcting codes.
 Assume that cross-language phone misperception is a finite-memory
 process, and can therefore be modeled by a finite state transducer
 (FST).  The complete sequence of representations from utterance
 language to annotation language can therefore be modeled as a noisy
 channel represented by the composition of up to three consecutive FSTs
 (Fig.~\ref{fig:h2e_eg2}): a pronunciation model, a misperception
-model, and an inverted grapheme-to-phoneme (G2P) transducer.  The
-pronunciation model is an FST representing processes that distort the
-canonical phoneme string during speech production, including processes
-of reduction and coarticulation.  The misperception model represents
-the mapping of the uttered phone string (in symbols matching the
-phone set of the spoken language) to the perceived phone string (in
-symbols matching the phone set of the annotation language).  Finally,
-the transcriber maps heard phones to nonsense words in the annotation
-language; the mapping from phones to orthography is an inverted G2P.
+model, and an inverted grapheme-to-phoneme (G2P) transducer.
+%MH 3/22/2016: following material is redundant with the figure caption
+%The
+%pronunciation model is an FST representing processes that distort the
+%canonical phoneme string during speech production, including processes
+%of reduction and coarticulation.  The misperception model represents
+%the mapping of the uttered phone string (in symbols matching the
+%phone set of the spoken language) to the perceived phone string (in
+%symbols matching the phone set of the annotation language).  Finally,
+%the transcriber maps heard phones to nonsense words in the annotation
+%language; the mapping from phones to orthography is an inverted G2P.
 

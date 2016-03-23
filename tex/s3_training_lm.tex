@@ -1,13 +1,13 @@
 \subsection{Using a Language Model During Training}
 \label{sec:trainwithlm}
 
-A PT contains significant information beyond any single
-transcript extracted from the PT. Motivated by this, the statistics
-for ASR adaptation are accumulated from a lattice derived from the
-cascade $H\circ C \circ PT$, rather than reducing the PT to its single
-best path. Though it is disadvantageous to reduce a PT to its best
-path, it is nevertheless advantageous to incorporate as much
-information as possible about the target language during adaptation.
+%A PT contains significant information beyond any single
+%transcript extracted from the PT. Motivated by this, the statistics
+%for ASR adaptation are accumulated from a lattice derived from the
+%cascade $H\circ C \circ PT$, rather than reducing the PT to its single
+%best path. Though it is disadvantageous to reduce a PT to its best
+During segmental K-means, it is advantageous to incorporate as much
+information as possible about the utterance language.
 Define $G$ to be an FST representing the modeled phone bigram
 probability
 $\pi(\phi^\ell|\theta)=\prod_{m=1}^M\pi(\phi_m^\ell|\phi_{m-1}^\ell,\theta)$.
@@ -15,14 +15,18 @@ Training results can be improved by using $H\circ C\circ PT\circ G$ to
 compute segmental K-means.
 
 \begin{figure}
-  \centerline{\includegraphics[width=0.8\columnwidth]{../figs/fig_sloan.png}}
+%  \centerline{\includegraphics[width=0.8\columnwidth]{../figs/fig_sloan.png}}
+  \begin{center}
+    \begin{tikzpicture}[scale=\mytikzscale,every node/.style={transform shape}]
+      \node[rectangle,text width=6cm](text) at (0,0) {$<$big$><$nowiki$>$Kichwa kikubwa$<$/nowiki$><$/big$><$nowiki$>$kichwa kidogo$<$/nowiki$>$Picha Ukitaka kutumia picha iliyopo katika Wikipedia.  Picha iko tayari katika Wikipedia commons. Hii ni jambo la kujaribu! Fungua makala katika};
+      \node[rectangle,thick,draw=black,text width=2.5cm,text centered](dict) at (6,0) {\begin{tabular}{c}Swahili G2P\\\hline e$\rightarrow$\ipa{E}\\ny$\rightarrow$\ipa{\textltailn}\\ng$\rightarrow$\ipa{N}\\mb$\rightarrow$\ipa{mb}\\nj$\rightarrow$\ipa{ndZ}\end{tabular}} edge[<-](text);
+      \node[rectangle,text width=3cm](pt) at (10,0) {Bigram phone language model $\rho(\phi_m^\ell |\phi_{m-1}^{\ell})$} edge[<-](dict);
+    \end{tikzpicture}
+  \end{center}
   \vspace*{-3mm}
-  \caption{A phonotactic language model (a bigram language model over
-    phone sequences) can be trained using text data downloaded from
-    Wikipedia (left), then converted into phone strings in the target
-    language using a simple character-based grapheme-to-phoneme
-    transducer (center).  In this example, the target language is
-    Swahili.}
+  \caption{Bigram phone language model is trained using Wikipedia text
+    (left) converted into phone strings using a character-based G2P
+    (center).}
   \label{fig:wikitext}
 \end{figure}
 
@@ -31,7 +35,7 @@ we assume that there is no transcribed speech in the target language.
 A reasonable proxy, however, can be constructed from text.
 Fig.~\ref{fig:wikitext} shows text data downloaded from Wikipedia in
 Swahili, and a segment of a rule-based, character-by-character G2P for
-the Swahili language~\cite{Hasegawajohnson15}.  By passing the former
+the Swahili language.  By passing the former
 through the latter, it is possible to generate synthetic phoneme
 sequences in the target language.
 
@@ -41,11 +45,11 @@ non-event in the language model, for which normal FST notation has no
 representation. In order to compose the PT with the language model,
 therefore, it is necessary to introduce a special type of
 ``non-event'' symbol, here denoted ``\#2'', into the language model
-(Fig.~\ref{fig:liu1}).  As shown in Fig.~\ref{fig:liu1}, a language
+(Fig.~\ref{fig:liu1}).  A language
 model ``non-event'' is a transition that leaves any state, and returns
 to the same state (a self-loop).  Such self-loops, labeled with the
 special symbol ``\#2'' on both input and output language, are added to
-every state in the phonotactic language model (left-hand side of
+every state in $G$ (left-hand side of
 Fig.~\ref{fig:liu1}).  The probabilistic transcript, then, is
 augmented with the special symbol ``\#2'' as the input-language symbol
 for every null-output edge (output symbol is $\phi_m^\ell =\emptyset$).
@@ -102,7 +106,7 @@ for every null-output edge (output symbol is $\phi_m^\ell =\emptyset$).
 \vspace*{-2mm}
 \caption{Deletion edges in the probabilistic transcript (edges with
   the special null-phone symbol, $\emptyset$), required special
-  handling in order to use information from a phonotactic language
+  handling in order to use information from a phone language
   model.  As shown, a new type of null symbol, ``\#2'', was invented
   to represent the input for every PT edge with an $\emptyset$ output
   (right).  Such edges were only allowed to match with state

@@ -10,46 +10,47 @@ transcribers who responded, six people were each able to complete one
 hour of speech transcription (the other four dropped out).  One
 additional language was transcribed by workers recruited at $I^2R$ in
 Singapore, yielding a total of seven languages with native
-transcriptions suitable for testing an ASR: Arabic (arb), Cantonese
+transcripts suitable for testing an ASR: Arabic (arb), Cantonese
 (yue), Dutch (nld), Hungarian (hun), Mandarin (cmn), Swahili (swh) and
 Urdu (urd).
 
-The podcasts were not entirely homogeneous in the target
-language and contain utterances interspersed with segments of music
-and English. A simple GMM-based language identification system was
-developed as a first pass over the podcasts in order to isolate
-regions that correspond mostly to the target language. These long
-segments were then split into smaller $\approx$ 5-second
-segments. This was to enable easy labeling by the native transcribers,
-and more importantly to allow for the collection of mismatched
-transcriptions that required the speech segments to be short. To
-further check that only speech clips in the target language were
-retained, the native transcribers were asked to omit any 5-second
-clips that contained music, significant amounts of noise, English
-speech or speech from multiple speakers. The resulting transcribed
-speech clips roughly amounted to 45 minutes of speech in Urdu and 1
+The podcasts contain utterances interspersed with segments of music
+and English. A GMM-based language identification system was
+developed in order to isolate
+regions that correspond mostly to the target language, which
+were then split into 5-second
+segments to enable easy labeling by the native transcribers.
+%and more importantly to allow for the collection of mismatched
+%transcripts that required the speech segments to be short. To
+%further check that only speech clips in the target language were
+%retained, the
+Native transcribers were asked to omit any 5-second
+clips that contained significant music, noise, English,
+or speech from multiple speakers. Resulting transcripts
+covered 45 minutes of speech in Urdu and 1
 hour of speech in the remaining six languages. The orthographic
-transcriptions for these clips were then converted into phonemic
-transcriptions using language-specific dictionaries and G2P mappings
+transcripts for these clips were then converted into phonemic
+transcripts using language-specific dictionaries and G2P mappings
 (these resources are detailed in Section~\ref{sec:mlbaseline}). For
 each language, we chose a random 40/10/10 minutes split into training,
-development and evaluation sets.  Table~\ref{tab:data} describes the
-resulting training, development and evaluation sets.
-\begin{table}[t]
-\centering
-\begin{tabular}{|c||ccc|}\hline
-Language  & \multicolumn{3}{c|}{Speech (\# phones)}\\
-(ISO 639-3) & Train & Dev & Eval \\ \hline\hline
-arb & 32486 & 8208 & 8191 \\
-yue & 32693 & 6860 & 8638 \\
-nld & 27314 & 6943 & 6582 \\
-hun & 29461 & 7873 & 7474 \\
-cmn & 29461 & 8244 & 7035 \\
-swh & 28571 & 7658 & 7441 \\
-urd & 21275 & 5808 & 3689 \\\hline
-\end{tabular}
-\vspace*{1mm}
-\caption{Data statistics, seven languages, \# 
-phones in the train/dev/eval sets.}
-\label{tab:data}
-\end{table}
+development and evaluation sets.
+%Table~\ref{tab:data} describes the
+%resulting training, development and evaluation sets.
+%\begin{table}[t]
+%\centering
+%\begin{tabular}{|c||ccc|}\hline
+%Language  & \multicolumn{3}{c|}{Speech (\# phones)}\\
+%(ISO 639-3) & Train & Dev & Eval \\ \hline\hline
+%arb & 32486 & 8208 & 8191 \\
+%yue & 32693 & 6860 & 8638 \\
+%nld & 27314 & 6943 & 6582 \\
+%hun & 29461 & 7873 & 7474 \\
+%cmn & 29461 & 8244 & 7035 \\
+%swh & 28571 & 7658 & 7441 \\
+%urd & 21275 & 5808 & 3689 \\\hline
+%\end{tabular}
+%\vspace*{1mm}
+%\caption{Data statistics, seven languages, \# 
+%phones in the train/dev/eval sets.}
+%\label{tab:data}
+%\end{table}

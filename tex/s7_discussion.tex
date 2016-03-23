@@ -30,7 +30,7 @@ posteriors is detrimental to NN training, and that the senone
 posteriors should therefore be quantized
 ($\pi(s_t^\ell)\rightarrow\left\{0,1\right\}$) prior to NN training.
 In PT adaptation, however, entropy is unavoidable, and quantizing the
-forced alignment doesn't necessarily help.  Fig.~\ref{fig:pt_decode_per}
+forced alignment doesn't necessarily help.  Table~\ref{fig:pt_decode_per}
 showed that the 1-best path through the PT is only correct for 29-49\%
 of all phones, depending on language.  There is good reason for this:
 the transcribers don't speak the target language, so they find some of
