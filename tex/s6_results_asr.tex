@@ -1,73 +1,81 @@
 \subsection{ASR Trained Using Probabilistic Transcripts}
 \label{ssec:asr}
 
-\setlength{\tabcolsep}{0.12cm}
+\setlength{\tabcolsep}{0.1cm}
 \begin{table*}[t]
-\centerline{\begin{tabular}{| c || c | c c | c c | c | c c |}\hline
-    Acoustic& Monolingual&\multicolumn{4}{c|}{Cross-Lingual}&Self-training
-    &\multicolumn{2}{c|}{CL + PT adaptation}
+\centerline{\begin{tabular}{| c || c | c c c | c c c | c | c c c |}\hline
+    Acoustic& Monolingual&\multicolumn{6}{c|}{Cross-Lingual}&Self-training
+    &\multicolumn{3}{c|}{CL + PT adaptation}
     \\
-    Model&&\multicolumn{4}{c|}{({\sc CL})}&
-    ({\sc ST})&\multicolumn{2}{c|}{({\sc PT-adapt})}
+    Model&&\multicolumn{6}{c|}{({\sc CL})}&
+    ({\sc ST})&\multicolumn{3}{c|}{({\sc PT-adapt})}
     \\\hline
-    Language & Transcript& \multicolumn{2}{c|}{CL}&
-    \multicolumn{2}{c|}{Text} & Text &
-    \multicolumn{2}{c|}{Text}
+    Language & Transcript& \multicolumn{3}{c|}{CL}&
+    \multicolumn{3}{c|}{Text} & Text &
+    \multicolumn{3}{c|}{Text}
     \\
-    Model &&&&&&&&
+    Model &&&&&&&&&&&
     \\\hline\hline
-    Training & ML & ML & sMBR & ML & sMBR & ML & ML & sMBR
+    Training & ML & ML & MPE & sMBR & ML & MPE & sMBR & ML & ML & MPE & sMBR
     \\\hline
-    \multicolumn{9}{|l|}{GMM-HMM}
+    \multicolumn{12}{|l|}{GMM-HMM}
     \\\hline
     yue & 32.77 (34.61)
-    & 79.64 (79.83) & (80.44) 
-    & 68.40 (68.35) & (68.13) 
+    & 79.64 (79.83) & (80.42) & (80.44) 
+    & 68.40 (68.35) & (69.07) & (68.13) 
     &
-    &  \textbf{57.20$\dagger$ (56.57)} & \textbf{55.97$\dagger$ (55.51)}
+    &  \textbf{57.20$\dagger$ (56.57)}
+    &  \textbf{56.33$\dagger$ (55.70)}
+    & \textbf{55.97$\dagger$ (55.51)}
     \\
     hun & 39.58 (39.77)
-    & 77.13 (77.85) & 
-    & 68.62 (66.90) & 
+    & 77.13 (77.85) & &
+    & 68.62 (66.90) & &
     &
-    & \textbf{56.98$\dagger$ (57.26)} & \textbf{57.05$\dagger$ (57.18)}
+    & \textbf{56.98$\dagger$ (57.26)}
+    & \textbf{57.05$\dagger$ (56.95)}
+    & \textbf{57.05$\dagger$ (57.18)}
     \\
     cmn & 32.21 (26.92)
-    & 83.28 (82.12) & 
-    & 71.30 (68.66) & 
+    & 83.28 (82.12) & &
+    & 71.30 (68.66) & &
     &
-    & \textbf{58.21$\dagger$ (57.85)} & \textbf{55.07$\dagger$ (54.94)}
+    & \textbf{58.21$\dagger$ (57.85)}
+    & \textbf{55.17$\dagger$ (54.49)}
+    & \textbf{55.07$\dagger$ (54.94)}
     \\
     swh & 35.33 (46.51)
-    & 82.99 (81.86) &
-    & 63.04 (64.73) &
+    & 82.99 (81.86) & &
+    & 63.04 (64.73) & &
     & 
-    & \textbf{44.31$\dagger$ (48.88)} & \textbf{43.61$\dagger$ (46.55)}
+    & \textbf{44.31$\dagger$ (48.88)}
+    & \textbf{42.80$\dagger$ (46.77)}
+    & \textbf{43.61$\dagger$ (46.55)}
     \\\hline\hline
-    \multicolumn{9}{|l|}{NN-HMM} \\\hline
+    \multicolumn{12}{|l|}{NN-HMM} \\\hline
     yue & 27.67 (28.88)
-    & 78.62 (77.58) & (77.92) 
-    & 66.59 (65.41) & (65.76)
+    & 78.62 (77.58) && (77.92) 
+    & 66.59 (65.41) && (65.76)
     & 63.79ns (62.46)
-    & \textbf{53.64$\dagger$ (53.80)} &
+    & \textbf{53.64$\dagger$ (53.80)} &&
     \\
     hun & 35.87 (36.58)
-    & 75.98 (76.44) &
-    & 66.43 (67.18) &
+    & 75.98 (76.44) &&
+    & 66.43 (67.18) &&
     & 63.53ns (63.50)
-    &   \textbf{56.70$\dagger$ (58.45)} &
+    &   \textbf{56.70$\dagger$ (58.45)} &&
     \\
     cmn & 27.80 (23.96)
-    & 81.86 (80.47) &
-    & 65.77 (64.80) &
+    & 81.86 (80.47) &&
+    & 65.77 (64.80) &&
     & 64.90* (64.00)
-    &   \textbf{54.07$\dagger$ (53.13)} &
+    &   \textbf{54.07$\dagger$ (53.13)} &&
     \\
     swh & 34.98 (41.47)
-    & 82.30 (81.18) &
-    & 65.30 (65.11) &
+    & 82.30 (81.18) &&
+    & 65.30 (65.11) &&
     & 58.76** (59.81)
-    &   \textbf{44.73$\dagger$ (48.60)} &
+    &   \textbf{44.73$\dagger$ (48.60)} &&
     \\\hline
 \end{tabular}}
 \vspace*{1mm}
