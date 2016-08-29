@@ -1,4 +1,4 @@
-\subsection{ASR Trained Using Probabilistic Transcripts}
+%\subsection{ASR Trained Using Probabilistic Transcripts}
 \label{ssec:asr}
 
 \setlength{\tabcolsep}{0.1cm}
@@ -21,32 +21,32 @@
     \multicolumn{12}{|l|}{GMM-HMM}
     \\\hline
     yue & 32.77 (34.61)
-    & 79.64 (79.83) & (80.42) & (80.44) 
-    & 68.40 (68.35) & (69.07) & (68.13) 
+    & 79.64 (79.83) & (79.49) & (79.48) 
+    & 68.40 (68.35) & (68.02) & (66.94) 
     &
     &  \textbf{57.20$\dagger$ (56.57)}
     &  \textbf{56.33$\dagger$ (55.70)}
     & \textbf{55.97$\dagger$ (55.51)}
     \\
     hun & 39.58 (39.77)
-    & 77.13 (77.85) & &
-    & 68.62 (66.90) & &
+    & 77.13 (77.85) & (78.67) & (78.89)
+    & 68.62 (66.90) & (67.09) & (67.41)
     &
     & \textbf{56.98$\dagger$ (57.26)}
     & \textbf{57.05$\dagger$ (56.95)}
     & \textbf{57.05$\dagger$ (57.18)}
     \\
     cmn & 32.21 (26.92)
-    & 83.28 (82.12) & &
-    & 71.30 (68.66) & &
+    & 83.28 (82.12) & (81.60) & (81.76)
+    & 71.30 (68.66) & (66.35) & (66.02)
     &
     & \textbf{58.21$\dagger$ (57.85)}
     & \textbf{55.17$\dagger$ (54.49)}
     & \textbf{55.07$\dagger$ (54.94)}
     \\
     swh & 35.33 (46.51)
-    & 82.99 (81.86) & &
-    & 63.04 (64.73) & &
+    & 82.99 (81.86) & (81.80) & (82.32)
+    & 63.04 (64.73) & (63.48) & (62.99)
     & 
     & \textbf{44.31$\dagger$ (48.88)}
     & \textbf{42.80$\dagger$ (46.77)}
@@ -54,26 +54,26 @@
     \\\hline\hline
     \multicolumn{12}{|l|}{NN-HMM} \\\hline
     yue & 27.67 (28.88)
-    & 78.62 (77.58) && (77.92) 
-    & 66.59 (65.41) && (65.76)
+    & 78.62 (77.58) & (77.86) & (77.92) 
+    & 66.59 (65.28) & (65.76) & (65.76)
     & 63.79ns (62.46)
     & \textbf{53.64$\dagger$ (53.80)} &&
     \\
     hun & 35.87 (36.58)
-    & 75.98 (76.44) &&
-    & 66.43 (67.18) &&
+    & 75.98 (76.44) & (77.56) & (77.61)
+    & 66.43 (66.58) & (65.52) & (65.67)
     & 63.53ns (63.50)
     &   \textbf{56.70$\dagger$ (58.45)} &&
     \\
     cmn & 27.80 (23.96)
-    & 81.86 (80.47) &&
-    & 65.77 (64.80) &&
+    & 81.86 (80.47) & (81.02) & (80.93)
+    & 65.77 (64.80) & (63.90) & (63.82)
     & 64.90* (64.00)
     &   \textbf{54.07$\dagger$ (53.13)} &&
     \\
     swh & 34.98 (41.47)
-    & 82.30 (81.18) &&
-    & 65.30 (65.11) &&
+    & 82.30 (81.18) & (81.30) & (81.24)
+    & 65.30 (65.04) & (63.78) & (63.99)
     & 58.76** (59.81)
     &   \textbf{44.73$\dagger$ (48.60)} &&
     \\\hline
@@ -89,25 +89,23 @@
 %reported~\cite{vesely2013-semi}. PTs derived from human mismatched
 %crowdsourcing provide significant further PER reduction.
 
-Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
-evaluation (and development) sets for four different languages. The
-column titled {\sc CL} lists cross-lingual baseline error rates.
-The column labeled {\sc ST} lists the
-PERs of self-trained ASR systems.
-The column headed {\sc PT-adapt} in Table~\ref{tab:ptresult} lists
-PERs from {\sc CL} ASR systems that have been adapted to PTs in the target
-language.
+{\color{blue} Evaluation test PER of each experimental system (columns
+{\sc ST} and {\sc PT-adapt}) was compared to evaluation test PER of
+the corresponding {\sc CL} system (ML baseline) 
+%Differences between the evaluation set PERs of {\sc ST} and {\sc CL}
+%systems were tested for statistical significance
+using the MAPSSWE test of the {\tt sc\_stats} tool~\cite{Pallet90}.
+{\color{blue} Each {\sc PT-adapt} system was also compared to the
+corresponding {\sc ST} system.}  There are {\sc therefore}
+{\color{blue} 52} independent statistical comparisons in
+Table~\ref{tab:ptresult}; the study-corrected significance level of
+{\color{blue} $0.05/52=0.00096$ was rounded up to $0.001$} because {\tt
+sc\_stats} only provides three significant figures.
 
 Self-training was only performed
 using NN systems; no self-training of GMMs was performed, because
 previous studies~\cite{Huang2013} reported it to be less effective.
-Differences between the evaluation set PERs of {\sc ST} and {\sc CL}
-systems were tested for statistical significance using the MAPSSWE
-test of the {\tt sc\_stats} tool~\cite{Pallet90}.  There are 20
-independent statistical comparisons in Table~\ref{tab:ptresult}; the
-study-corrected significance level of $0.05/20=0.0025$ was rounded up
-to $0.003$ because {\tt sc\_stats} only provides three significant
-figures.  The Mandarin {\sc ST} system was judged significantly better
+The Mandarin {\sc ST} system was judged significantly better
 than {\sc CL} at a level of $p=0.003$ (denoted *), and the Swahili
 system at a level of $p<0.001$ (denoted **); the Cantonese and
 Hungarian {\sc ST} systems were judged to be not significantly better
@@ -121,11 +119,19 @@ The relative reductions in PER
 of the {\sc PT-adapt} system
 compared to both {\sc CL} and {\sc ST} baselines
 %are listed in the last two columns.  Reductions on the evaluation set
-were tested for statistical significance using the MAPSSWE test of the
-{\tt sc\_stats} tool.  All differences were found to be statistically
+%were tested for statistical significance using the MAPSSWE test of the
+%{\tt sc\_stats} tool.  All differences were
+were all statistically
 significant at $p<0.001$ (denoted $\dagger$).  This suggests that adaptation
 with PTs is providing more information than that obtained by model
 self-training alone.
+
+{\color{blue} PT-adapt GMM-HMM systems were trained using four
+different training criteria: ML, MMI, MPE and sMBR.  MMI training
+consistently underperformed MPE and sMBR, and is therefore not shown.
+MPE training of {\sc PT-adapt} systems improves their PER by a little
+more than 1\% on average, comparable to the improvement provided
+to {\sc CL} baseline systems.}
 
 %It is also interesting that
 PER improvements for Swahili are larger than for the other three
@@ -172,13 +178,13 @@ straightforward. %Another possible source of the difference would be if
 %perceptual) may have led to less label noise in the Swahili PT than in 
 %the PTs of the other languages. 
 
-It is also useful to compare the performance of GMM-HMM and NN-HMM
-systems.  In the {\sc CL} setting, an ASR trained
-using six languages is then applied to an unseen seventh language,
-without adaptation; in this setting, the NN consistently outperforms
-the GMM.  In the {\sc PT-adapt} setting, GMMs and NNs are
-adapted using PTs in the target language.  PT adaptation improves the
-performance of both types of ASR, but the
-adapted NN does not consistently outperform the GMM across all
-tested languages.
+%It is also useful to compare the performance of GMM-HMM and NN-HMM
+%systems.  In the {\sc CL} setting, an ASR trained
+%using six languages is then applied to an unseen seventh language,
+%without adaptation; in this setting, the NN consistently outperforms
+%the GMM.  In the {\sc PT-adapt} setting, GMMs and NNs are
+%adapted using PTs in the target language.  PT adaptation improves the
+%performance of both types of ASR, but the
+%adapted NN does not consistently outperform the GMM across all
+%tested languages.
 

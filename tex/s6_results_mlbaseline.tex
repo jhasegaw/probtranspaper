@@ -1,12 +1,35 @@
-\subsection{Cross-Lingual Baseline}
+%\subsection{Cross-Lingual Baseline}
+\subsection{ASR Results}
 \label{s6:mlbaseline}
 
-The first four columns of Table~\ref{tab:ptresult}
-compare a monolingual ASR with phone language model based on
-monolingual transcripts, a 
-cross-lingual ASR using universal phone set and
-phone language model, and a cross-lingual ASR using a
-phone language model based on language-dependent Wikipedia texts.
+Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
+evaluation (and development) sets for four different languages.
+{\color{blue} The first column shows the
+phone error rate (PER) of monolingual topline systems: evaluation test
+results are followed by development test results in parentheses.}
+The
+column titled {\sc CL} lists cross-lingual baseline error rates.
+The column labeled {\sc ST} lists the
+PERs of self-trained ASR systems.
+The column headed {\sc PT-adapt} in Table~\ref{tab:ptresult} lists
+PERs from {\sc CL} ASR systems that have been adapted to PTs in the target
+language.
+{\color{blue} Phone error rates are reported instead of word error
+rates because, in order to compute a word error rate, it is necessary
+to have either native transcriptions in the target language (thereby
+permitting the training of a grapheme-based recognizer) or a
+pronunciation lexicon in the target language.  These resources are
+used by the monolingual topline, but not by any of the baseline or
+experimental systems.}
+
+%The first four columns of
+%Table~\ref{tab:ptresult}  
+
+%compare a monolingual ASR with phone language model based on
+%monolingual transcripts, a 
+%cross-lingual ASR using universal phone set and
+%phone language model, and a cross-lingual ASR using a
+%phone language model based on language-dependent Wikipedia texts.
 
 %Without a language specific phone set
 %and phone language model, it is hard for a cross-lingual system to
@@ -58,4 +81,13 @@ the Cantonese cross-lingual system has seen Mandarin during training,
 and the Mandarin system has seen Cantonese during training, but
 neither system is able to generalize well from its six training languages to
 its test language.
+{\color{blue} Three different types of discriminative training were tested.
+ Maximum mutual information (MMI) performs consistently worse than
+ minimum phone error rate (MPE) and structural minimum Bayes risk (sMBR),
+ and is therefore not listed in Table~\ref{tab:ptresult}.
+ Averaged across all languages and systems shown in Table~\ref{tab:ptresult},
+ the development-test PERs of ML, MPE, and sMBR training are
+ 73.43\%, 73.04\%, and 72.98\% respectively; differences are not
+ statistically significant, therefore only the ML system was tested on
+ evaluation test data.}
 

@@ -1,15 +1,62 @@
-\subsection{Cross-Lingual Baselines}
+%\subsection{Cross-Lingual Baselines}
+\subsection{ASR Methods}
 \label{sec:mlbaseline}
 
-The goal of building a cross-lingual system is two-fold.
-One is to define a baseline for generalizing to an unseen
-language without any labeled audio corpus.  The other
-is have the baseline serve as a starting point for
-adaptation.
+{\color{blue} Automatic speech recognition (ASR) systems were trained
+  in four languages (hun=Hungarian, cmn=Mandarin, swa=Swahili,
+  yue=Cantonese), using three different types of transcription.
+  First, a topline {\sc monolingual} system was trained in each
+  language using speech transcribed by a native speaker of that
+  language.  Second, a baseline {\sc CL} (cross-lingual) system was
+  trained using data from other languages, and tested in the target
+  language.  Third, the experimental {\sc PT-adapt} system was created
+  by adapting the cross-lingual system to probabilistic transcriptions
+  in the target language.}
 
-The dataset consists of 40 minutes of labeled audio for training,
-10 minutes for development, and 10 minutes for testing
-for each language.
+{\color{blue} Audio data, native transcripts, and probabilistic
+  transcripts are as described in Sec.~\ref{sec:data}.  The {\sc
+    monolingual} topline system was trained using 40 minutes of
+  training data, then stream weights and insertion penalties were
+  calculated using 10 minutes of development test data, followed by
+  testing on 10 minutes of evaluation test data.  Monolingual systems
+  were trained using a maximum likelihood (ML) criterion.  The {\sc
+    CL} baseline systems were each trained using 40 minutes of
+  training data in language other than the language to be recognized.
+  CL systems were trained using ML, maximum mutual information (MMI),
+  minimum phone error rate (MPE), and structural minimum Bayes risk
+  (sMBR) training criteria.  The {\sc PT-adapt} system was initialized
+  using the CL system (ML training), then adapted to the target
+  language using probabilistic transcripts based on mismatched
+  crowdsourcing (these transcripts are described in detail in
+  Sec.~\ref{sec:data}).  Probabilistic transcripts based on EEG were
+  not used to adapt ASR, because it is not yet possible to use EEG to
+  generate probabilistic transcripts on a scale sufficient for ASR
+  adaptation.}
+
+{\color{blue} All systems were trained using the
+  Kaldi~\cite{Kaldi2011} toolkit.  Acoustic features consisted of
+  MFCC+d+dd (39 features/frame), stacked into 17-frame context vectors
+  (663 features/frame).  Each GMM-HMM then reduced the
+  663 dimensions to 40 dimensions using
+  linear discriminant analysis; NN-HMM systems observed the
+  663-dimensional context vector directly.  All systems used tied
+  triphone acoustic models, based on a decision tree with 1200 leaves.
+  Each GMM-HMM used a library of 8000 Gaussians, shared among the 1200
+  leaves.  Each NN-HMM used five hidden layers with ReLU
+  nonlinearities, and with 512 nodes per hidden layer, followed by a
+  softmax output layer with 1200 nodes.}
+  
+
+
+%The goal of building a cross-lingual system is two-fold.
+%One is to define a baseline for generalizing to an unseen
+%language without any labeled audio corpus.  The other
+%is have the baseline serve as a starting point for
+%adaptation.
+
+%The dataset consists of 40 minutes of labeled audio for training,
+%10 minutes for development, and 10 minutes for testing
+%for each language.
 %The orthographic transcripts are converted into
 %phonetic transcripts using language-dependent G2Ps.
 %Beginning with a list of the IPA symbols used in canonical descriptions
@@ -17,10 +64,27 @@ for each language.
 %any symbol appearing in only one language was merged with a different symbol
 %differing by only one distinctive feature; this process proceeded until 
 %each remaining phone symbol is represented in at least two languages.
-English words in each transcript are identified and converted to phones with
-an English G2P trained using CMUdict~\cite{Lenzo1995}, then
-other words are converted into phonetic transcripts using language-dependent
-dictionaries and G2Ps.
+
+{\color{blue} Native transcriptions in the target language were used
+  in order to train the {\sc monolingual} topline system.  {\sc CL}
+  and {\sc PT-adapt} systems are initialized using native
+  transcriptions in other languages, but are not permitted to see any
+  native transcriptions in the target language.  In order to make it
+  possible to transfer acoustic models from training languages (which
+  have transcriptions) to a test language (that has no native
+  transcriptions), the phone set must be standardized across all
+  languages; for this purpose, the phone set was based on the
+  international phonetic alphabet (IPA;~\cite{ipa1993}).  Similarly,
+  in order to transfer acoustic models from training languages
+  (which have transcriptions) to a test language (that has no
+  native transcription), the training transcriptions must be
+  converted to phonemes using a grapheme-to-phoneme transducer (G2P).
+  G2Ps were therefore assumed to be available in all training languages,
+  but not in the test language.}
+  English words in each {\color{blue} training} transcript are identified and
+converted to phones with an English G2P trained using
+CMUdict~\cite{Lenzo1995}, then other words are converted into phonetic
+transcripts using language-dependent dictionaries and G2Ps.
 %We take the canonical pronunciation of a word if the word
 %appears in a lexicon,
 %otherwise estimate the word's pronunciation using a G2P.
@@ -31,9 +95,10 @@ the Cantonese dictionary is from $I^2R$,
 the Mandarin dictionary is from CALLHOME~\cite{LDC96},
 and the Urdu and Swahili G2Ps were compiled from
 character-based descriptions of the orthographic systems in those
-two languages.
+two languages. 
 
-Each HMM was trained with data from six languages, tuned
+Each {\color{blue} {\sc CL} baseline}
+HMM was trained with data from six languages, tuned
 (stream weight and insertion penalty)
 on the development set of the seventh language, and
 tested on the evaluation set of the seventh language.  The lexicon of
@@ -46,6 +111,7 @@ trained using phone sequences converted from Wikipedia texts.
 %text.  The texts were
 %collected from Wikipedia articles linked from the main page of each
 %language crawled once per day over four months.
-As an oracle experiment, we also train language dependent
-HMMs for each individual language with 40 minutes of labeled audio.
+%As an oracle experiment, we also train language dependent
+%HMMs for each individual language with 40 minutes of labeled audio.
+
 
