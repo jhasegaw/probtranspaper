@@ -104,7 +104,15 @@ using
 %based on
 representative transcripts $\lambda$ (and their
 corresponding native transcripts) for speech {\em in languages other
-than the target language}. We assume that misperceptions depend more
+  than the target language}.
+{\color{blue} The model learned in this way is essentially
+  a machine translation model, which translates between graphemes in
+  the annotation language ($\lambda$) to phonemes in any possible
+  utterance language ($\phi$).  Sec.~\ref{sec:mlbaseline}
+ of this article uses
+  a similar method, though without left and right context, to map
+  training phonemes to test phonemes in a self-trained neural network.}
+We assume that misperceptions depend more
 heavily on the annotation language than on the utterance language, and
 that therefore a model $\rho(\lambda|\phi)$ trained using a universal
 phone set for $\phi$ is also a good model of $\rho(\lambda|\phi)$ for
