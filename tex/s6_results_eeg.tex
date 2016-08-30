@@ -4,12 +4,15 @@
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
-Epoched and feature-coded EEG data {\em for the English syllables only}
-were used to train a support vector machine classifier for each distinctive feature.
-The classifiers were then used (without re-training) to classify the
-EEG responses to the Dutch and Hindi syllables.
-Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of these
-classifiers when applied to the three languages.
+Epoched and feature-coded EEG data {\em for the English syllables
+only} were used to train a support vector machine classifier for each
+distinctive feature.  The classifiers were then used (without
+re-training) to classify the EEG responses to the Dutch and Hindi
+syllables.  Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of
+these classifiers when applied to the three languages.  {\color{blue}
+EER of the classifier when applied to English phones is comparable to
+those reported in~\cite{Liberto15}, the only prior work to attempt a
+recognition of speech phonemes from EEG of the listener.}
 
 \begin{figure}
   \centerline{\includegraphics[width=\columnwidth]{../figs/eer-barplot/eer-barplot.pdf}}
@@ -68,7 +71,7 @@ weighting, $\rho_U(\psi|\phi)$, or 3) EEG-induced transducer combined with
 the feature-based transducer, $\rho_I(\psi|\phi)$. To combine the two 
 transducers, the value of the parameter $\alpha$ was optimized on a 
 separate development data set.
-LPER of the multilingual model was 70.43\%, of the feature-based model,
+LPER of the multilingual model was 70.43\% {\color{blue} (as shown in Table~\ref{fig:pt_decode_per})}, of the feature-based model,
 69.44\%, and of the EEG-interpolated model, 68.61\%.
 
 %As shown in Table~\ref{tbl:eegresults}, 

@@ -19,12 +19,17 @@
   training data, then stream weights and insertion penalties were
   calculated using 10 minutes of development test data, followed by
   testing on 10 minutes of evaluation test data.  Monolingual systems
-  were trained using a maximum likelihood (ML) criterion.  The {\sc
+  were trained using a maximum likelihood (ML) criterion using the 40
+  minute in-language training set: GMM parameters were initialized
+  using a monophone system trained on the same 40 minutes, NN parameters
+  were initialized using a restricted Boltzmann machine trained on
+  five hours of unlabeled audio in the same language.
+  The {\sc
     CL} baseline systems were each trained using 40 minutes of
   training data in language other than the language to be recognized.
   CL systems were trained using ML, maximum mutual information (MMI),
-  minimum phone error rate (MPE), and structural minimum Bayes risk
-  (sMBR) training criteria.  The {\sc PT-adapt} system was initialized
+  minimum phone error rate (MPE), and state-based minimum Bayes risk
+  (sMBR,~\cite{Gibson06}) training criteria.  The {\sc PT-adapt} system was initialized
   using the CL system (ML training), then adapted to the target
   language using probabilistic transcripts based on mismatched
   crowdsourcing (these transcripts are described in detail in
@@ -42,8 +47,8 @@
   663-dimensional context vector directly.  All systems used tied
   triphone acoustic models, based on a decision tree with 1200 leaves.
   Each GMM-HMM used a library of 8000 Gaussians, shared among the 1200
-  leaves.  Each NN-HMM used five hidden layers with ReLU
-  nonlinearities, and with 512 nodes per hidden layer, followed by a
+  leaves.  Each NN-HMM used six hidden layers with logistic
+  nonlinearities, and with 1024 nodes per hidden layer, followed by a
   softmax output layer with 1200 nodes.}
   
 

@@ -3,83 +3,87 @@
 
 \setlength{\tabcolsep}{0.1cm}
 \begin{table*}[t]
-\centerline{\begin{tabular}{| c || c | c c c | c c c | c | c c c |}\hline
-    Acoustic& Monolingual&\multicolumn{6}{c|}{Cross-Lingual}&Self-training
-    &\multicolumn{3}{c|}{CL + PT adaptation}
-    \\
-    Model&&\multicolumn{6}{c|}{({\sc CL})}&
-    ({\sc ST})&\multicolumn{3}{c|}{({\sc PT-adapt})}
+\centerline{\begin{tabular}{| c || c | c c c | c c c | c c c |}\hline
+    AM& Monolingual&\multicolumn{6}{c|}{Cross-Lingual ({\sc CL})}
+    &\multicolumn{3}{c|}{CL + PT adaptation ({\sc PT-adapt})}
     \\\hline
-    Language & Transcript& \multicolumn{3}{c|}{CL}&
-    \multicolumn{3}{c|}{Text} & Text &
+    LM & Transcript& \multicolumn{3}{c|}{CL}&
+    \multicolumn{3}{c|}{Text} &
     \multicolumn{3}{c|}{Text}
-    \\
-    Model &&&&&&&&&&&
+    \\\hline
+    Training & ML & ML & MPE & sMBR & ML & MPE & sMBR & ML & MPE & sMBR
     \\\hline\hline
-    Training & ML & ML & MPE & sMBR & ML & MPE & sMBR & ML & ML & MPE & sMBR
-    \\\hline
-    \multicolumn{12}{|l|}{GMM-HMM}
-    \\\hline
     yue & 32.77 (34.61)
     & 79.64 (79.83) & (79.49) & (79.48) 
     & 68.40 (68.35) & (68.02) & (66.94) 
-    &
-    &  \textbf{57.20$\dagger$ (56.57)}
-    &  \textbf{56.33$\dagger$ (55.70)}
-    & \textbf{55.97$\dagger$ (55.51)}
+    &  57.20** (56.57)
+    &  56.33** (55.70)
+    & \textbf{55.97}** (55.51)
     \\
     hun & 39.58 (39.77)
     & 77.13 (77.85) & (78.67) & (78.89)
     & 68.62 (66.90) & (67.09) & (67.41)
-    &
-    & \textbf{56.98$\dagger$ (57.26)}
-    & \textbf{57.05$\dagger$ (56.95)}
-    & \textbf{57.05$\dagger$ (57.18)}
+    & \textbf{56.98}** (57.26)
+    & 57.05** (56.95)
+    & 57.05** (57.18)
     \\
     cmn & 32.21 (26.92)
     & 83.28 (82.12) & (81.60) & (81.76)
     & 71.30 (68.66) & (66.35) & (66.02)
-    &
-    & \textbf{58.21$\dagger$ (57.85)}
-    & \textbf{55.17$\dagger$ (54.49)}
-    & \textbf{55.07$\dagger$ (54.94)}
+    & 58.21** (57.85)
+    & 55.17** (54.49)
+    & \textbf{55.07}** (54.94)
     \\
     swh & 35.33 (46.51)
     & 82.99 (81.86) & (81.80) & (82.32)
     & 63.04 (64.73) & (63.48) & (62.99)
-    & 
-    & \textbf{44.31$\dagger$ (48.88)}
-    & \textbf{42.80$\dagger$ (46.77)}
-    & \textbf{43.61$\dagger$ (46.55)}
+    & 44.31** (48.88)
+    & \textbf{42.80}** (46.77)
+    & 43.61** (46.55)
+    \\\hline
+\end{tabular}}
+\vspace*{1mm}
+\caption{\label{tab:ptresult} Phone error rate of GMM-HMMs: evaluation test (development test).  AM=Acoustic Model, LM=Language Model, ML=Maximum Likelihood, sMBR=State-based Minimum Bayes Risk.  MAPSSWE w/respect to CL AM: ** denotes $p<0.001$.}
+\end{table*}
+
+\setlength{\tabcolsep}{0.1cm}
+\begin{table*}[t]
+\centerline{\begin{tabular}{| c || c | c c c | c c c | c | c |}\hline
+    AM& Monolingual&\multicolumn{6}{c|}{Cross-Lingual ({\sc CL})}&Self-training
+    &CL + PT adaptation ({\sc PT-adapt})
+    \\\hline
+    LM & Transcript& \multicolumn{3}{c|}{CL}&
+    \multicolumn{3}{c|}{Text} & Text & Text
+    \\
+    Training & ML & ML & MPE & sMBR & ML & MPE & sMBR & ML & ML 
     \\\hline\hline
-    \multicolumn{12}{|l|}{NN-HMM} \\\hline
     yue & 27.67 (28.88)
     & 78.62 (77.58) & (77.86) & (77.92) 
     & 66.59 (65.28) & (65.76) & (65.76)
     & 63.79ns (62.46)
-    & \textbf{53.64$\dagger$ (53.80)} &&
+    & \textbf{53.64}** (53.80)
     \\
     hun & 35.87 (36.58)
     & 75.98 (76.44) & (77.56) & (77.61)
     & 66.43 (66.58) & (65.52) & (65.67)
     & 63.53ns (63.50)
-    &   \textbf{56.70$\dagger$ (58.45)} &&
+    &   \textbf{56.70}** (58.45)
     \\
     cmn & 27.80 (23.96)
     & 81.86 (80.47) & (81.02) & (80.93)
     & 65.77 (64.80) & (63.90) & (63.82)
-    & 64.90* (64.00)
-    &   \textbf{54.07$\dagger$ (53.13)} &&
+    & 64.90ns (64.00)
+    &   \textbf{54.07}** (53.13)
     \\
     swh & 34.98 (41.47)
     & 82.30 (81.18) & (81.30) & (81.24)
     & 65.30 (65.04) & (63.78) & (63.99)
-    & 58.76** (59.81)
-    &   \textbf{44.73$\dagger$ (48.60)} &&
+    & 58.76* (59.81)
+    &   \textbf{44.73}** (48.60)
     \\\hline
 \end{tabular}}
 \vspace*{1mm}
-\caption{\label{tab:ptresult} PERs on the evaluation and development sets (development in parentheses) before and after adaptation with PTs.  ML=Maximum Likelihood, sMBR=Structural Minimum Bayes Risk.  MAPSSWE significance testing with respect to CL acoustic model with text-based language model: * means $p\le 0.003$, ** means $p<0.001$, ns means not significant. $\dagger$ denotes a score lower than both CL and ST baselines at $p<0.001$.}
+\caption{\label{tab:dnnresult} PER of NN-HMMs: evaluation test (development test).  ML=Maximum Likelihood, MPE=minimum phone error, sMBR=state-level Minimum Bayes Risk.  MAPSSWE w/respect to CL AM w/ text-based LM: * means $p<0.002$, ns=not significant. ** denotes a score lower than both CL and ST at $p<0.001$.}
 \end{table*}
 
 %This section demonstrates that PT adaptation improves the
@@ -90,26 +94,25 @@
 %crowdsourcing provide significant further PER reduction.
 
 {\color{blue} Evaluation test PER of each experimental system (columns
-{\sc ST} and {\sc PT-adapt}) was compared to evaluation test PER of
-the corresponding {\sc CL} system (ML baseline) 
+{\sc ST} and {\sc PT-adapt}, 20 systems) was compared to evaluation test PER of
+the corresponding {\sc CL} system (ML baseline)}
 %Differences between the evaluation set PERs of {\sc ST} and {\sc CL}
 %systems were tested for statistical significance
 using the MAPSSWE test of the {\tt sc\_stats} tool~\cite{Pallet90}.
-{\color{blue} Each {\sc PT-adapt} system was also compared to the
-corresponding {\sc ST} system.}  There are {\sc therefore}
-{\color{blue} 52} independent statistical comparisons in
-Table~\ref{tab:ptresult}; the study-corrected significance level of
-{\color{blue} $0.05/52=0.00096$ was rounded up to $0.001$} because {\tt
-sc\_stats} only provides three significant figures.
+{\color{blue} Each neural net {\sc PT-adapt} system was also compared
+to the corresponding {\sc ST} system (4 comparisons).}  There are 
+therefore {\color{blue} 24} independent statistical comparisons in
+Tables~\ref{tab:ptresult} and~\ref{tab:dnnresult}; the study-corrected
+significance level is therefore {\color{blue} $0.05/24=0.002$.}
 
 Self-training was only performed
 using NN systems; no self-training of GMMs was performed, because
 previous studies~\cite{Huang2013} reported it to be less effective.
-The Mandarin {\sc ST} system was judged significantly better
-than {\sc CL} at a level of $p=0.003$ (denoted *), and the Swahili
-system at a level of $p<0.001$ (denoted **); the Cantonese and
+The Swahili {\sc ST} system was judged significantly better
+than {\sc CL} at a level of $p=0.002$ (denoted *); the Cantonese,
+Mandarin and
 Hungarian {\sc ST} systems were judged to be not significantly better
-than {\sc CL}.
+than {\sc CL} at this level.
 
 %We observe substantial PER improvements using {\sc PT-adapt}
 %over {\sc CL} across all four languages. We also find that PT
@@ -122,7 +125,7 @@ compared to both {\sc CL} and {\sc ST} baselines
 %were tested for statistical significance using the MAPSSWE test of the
 %{\tt sc\_stats} tool.  All differences were
 were all statistically
-significant at $p<0.001$ (denoted $\dagger$).  This suggests that adaptation
+significant at $p<0.001$ (denoted **).  This suggests that adaptation
 with PTs is providing more information than that obtained by model
 self-training alone.
 

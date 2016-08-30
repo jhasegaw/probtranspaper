@@ -34,11 +34,11 @@ language model, derived from Wikipedia text, reduces LPER by about 10\%
 absolute, in each language.
 
 \begin{table}
-\centerline{\begin{tabular}{|c||c|c|c|c|c|}\hline
-    Method & nld & cmn & urd & arb & hun \\\hline
-    Universal set & 87.4 & 88.86 & 97.95 & 79.04 & 92.87 \\
-    Target set & 78.12 & 87.4 & 87.81 & 66.39 & 84.78 \\
-    Phone bigram & 68.61 & 70.88 & 64.67 & 65.29 & 63.98 \\\hline
+\centerline{\begin{tabular}{|c||c|c|c|c|c|c|}\hline
+    Method & nld & cmn & urd & arb & hun &swh \\\hline
+    Universal set & 87.4 & 88.86 & 97.95 & 79.04 & 92.87 & 88.56 \\
+    Target set & 78.12 & 87.4 & 87.81 & 66.39 & 84.78 & 59.83 \\
+    Phone bigram & 70.43 & 70.88 & 64.67 & 65.29 & 63.98 & 50.45 \\\hline
 \end{tabular}}
 \vspace*{1mm}
 \caption{Label phone error rate (LPER) of probabilistic transcripts
@@ -58,7 +58,7 @@ absolute, in each language.
 
 %\end{tabular}
 %\caption{Error rates (PER) of probabilistic transcripts computed from
-%  mismatched crowdsourcing (non-native human listeners): Phone error
+%  mismatched crowdsourcing (non-native human listener): Phone error
 %  rate (PER) of the 1-best path through the probabilistic
 %  transcript, $\phi^*=\argmax\rho(\phi|T)$, development and
 %  evaluation sets.}
@@ -79,13 +79,16 @@ There is no reason to expect that the maximizer of
 $\rho(\phi|\lambda)$ is correct, but there is good reason to expect
 the correct answer to be a member of a short $N$-best list ($N\le 4$
 phones/grapheme).  A fuller picture is therefore obtained by
-considering a collection of sequences that are almost equally 
-probable according to our model. Figure~\ref{fig:listPER}
-shows the trend of LPER (for three languages) obtained by
-using collections $\phi$ of increasing size, plotted against an
-entropy estimate of $\rho(\phi)$, e.g., 1 bit of entropy allows two equally
-probable choices for each phone in $\phi$. LPER
-rates drop significantly across all languages within 1
+{\color{blue} pruning the PT to
+a small number of paths, then searching for the most correct path
+in the pruned PT.  One useful metric is entropy per segment, defined
+as $H^{\ell}(\Phi)=-\frac{1}{M}\sum_{m=1}^M\sum_{u} \log_2\rho_{\Phi_m^\ell}(u)$,
+e.g., a PT in which every segment has two equally probable options 
+would measure $H^\ell(\Phi)=1$.}
+Fig.~\ref{fig:listPER}
+shows the trend of LPER (for three languages) obtained by pruning
+the PT at several different levels of $H^{\ell}(\Phi)$.
+LPER rates drop significantly across all languages within 1
 bit of entropy per phone, illustrating the extent of information
 captured by the PTs.
 
