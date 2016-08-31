@@ -29,9 +29,8 @@ Eq.~(\ref{eq:dfdist}) defines a log-linear model of $\rho(\psi|\phi)$,
 the probability that a non-English phoneme $\phi$ will be perceived as
 English phoneme $\psi$.  Denote by $\rho_U(\psi|\phi)$ the model of
 Eq.~(\ref{eq:dfdist}) with uniform binary weights for all distinctive
-features. Denote by
-$\rho_{EEG}(\psi|\phi)$ the same model, but with weights $w_k$ derived
-from EEG measurements (Eq.~(\ref{eq:eegdist})).
+features. Denote by $\rho_{EEG}(\psi|\phi)$ the same model, but with
+weights $w_k$ derived from EEG measurements (Eq.~(\ref{eq:eegdist})).
 Fig.~\ref{fig:eeg_confusions} shows these two confusion matrices:
 $\rho_U(\psi|\phi)$ on the left, $\rho_{EEG}(\psi|\phi)$ on the
 right. The entropy of the binary weighting, $\rho_U(\psi|\phi)$, is
@@ -44,8 +43,10 @@ phonemes whose confusion probabilities can not be distinguished
 (giving the figure its block-matrix structure).  The faults of both
 models can be ameliorated by averaging them in some way, e.g., by
 computing the linear interpolation
-$\rho_I(\psi|\phi)=\alpha\rho_U(\psi|\phi)+(1-\alpha)\rho_{EEG}(\psi|\phi)$ for
-some constant $0\le\alpha\le 1$.
+$\rho_I(\psi|\phi)=(1-\alpha)\rho_U(\psi|\phi)+\alpha\rho_{EEG}(\psi|\phi)$
+for some constant $0\le\alpha\le 1$.  {\color{blue} The constant
+$\alpha=0.29$ was chosen as the average of the values selected by
+all folds in a leave-one-out cross-validation.}
 
 \begin{figure}
   \centerline{

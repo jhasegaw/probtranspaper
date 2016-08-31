@@ -39,17 +39,17 @@
   adaptation.}
 
 {\color{blue} All systems were trained using the
-  Kaldi~\cite{Kaldi2011} toolkit.  Acoustic features consisted of
-  MFCC+d+dd (39 features/frame), stacked into 17-frame context vectors
-  (663 features/frame).  Each GMM-HMM then reduced the
-  663 dimensions to 40 dimensions using
-  linear discriminant analysis; NN-HMM systems observed the
-  663-dimensional context vector directly.  All systems used tied
-  triphone acoustic models, based on a decision tree with 1200 leaves.
-  Each GMM-HMM used a library of 8000 Gaussians, shared among the 1200
-  leaves.  Each NN-HMM used six hidden layers with logistic
-  nonlinearities, and with 1024 nodes per hidden layer, followed by a
-  softmax output layer with 1200 nodes.}
+  Kaldi~\cite{Kaldi2011} toolkit.  Acoustic features consisted of MFCC
+  (13 features), stacked $\pm 3$ frames ($13\times 7=91$ features),
+  reduced to 40 dimensions using LDA followed by FMLLR.  GMM-HMM
+  systems directly observed this 40-dimensional vector; NN-HMM systems
+  computed FMLLR+d+dd stacked $\pm 5$ frames ($40\times 3\times
+  11=1320$ features/frame).  All systems used tied triphone acoustic
+  models, based on a decision tree with 1200 leaves.  Each GMM-HMM
+  used a library of 8000 Gaussians, shared among the 1200 leaves.
+  Each NN-HMM used six hidden layers with logistic nonlinearities, and
+  with 1024 nodes per hidden layer, followed by a softmax output layer
+  with 1200 nodes.}
   
 
 
