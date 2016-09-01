@@ -43,7 +43,7 @@
     \\\hline
 \end{tabular}}
 \vspace*{1mm}
-\caption{\label{tab:ptresult} Phone error rate of GMM-HMMs: evaluation test (development test).  AM=Acoustic Model, LM=Language Model, ML=Maximum Likelihood, sMBR=State-based Minimum Bayes Risk.  MAPSSWE w/respect to CL AM: ** denotes $p<0.001$.}
+\caption{\label{tab:ptresult} Phone error rate of GMM-HMMs: evaluation test (development test).  AM=Acoustic Model, LM=Language Model, ML=Maximum Likelihood, sMBR=State-based Minimum Bayes Risk.  MAPSSWE w/respect to CL: ** denotes $p<0.001$.}
 \end{table*}
 
 \setlength{\tabcolsep}{0.1cm}
@@ -95,7 +95,7 @@
 
 {\color{blue} Evaluation test PER of each experimental system (columns
 {\sc ST} and {\sc PT-adapt}, 20 systems) was compared to evaluation test PER of
-the corresponding {\sc CL} system (ML baseline)}
+the corresponding {\sc CL} system ({\sc ML} training, {\sc Text} LM)}
 %Differences between the evaluation set PERs of {\sc ST} and {\sc CL}
 %systems were tested for statistical significance
 using the MAPSSWE test of the {\tt sc\_stats} tool~\cite{Pallet90}.
@@ -111,7 +111,7 @@ previous studies~\cite{Huang2013} reported it to be less effective.
 The Swahili {\sc ST} system was judged significantly better
 than {\sc CL} at a level of $p=0.002$ (denoted *); the Cantonese,
 Mandarin and
-Hungarian {\sc ST} systems were judged to be not significantly better
+Hungarian {\sc ST} systems were not significantly better
 than {\sc CL} at this level.
 
 %We observe substantial PER improvements using {\sc PT-adapt}

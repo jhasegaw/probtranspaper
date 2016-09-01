@@ -11,36 +11,39 @@
   trained using data from other languages, and tested in the target
   language.  Third, the experimental {\sc PT-adapt} system was created
   by adapting the cross-lingual system to probabilistic transcriptions
-  in the target language.}
+  in the target language.  The {\sc monolingal} topline system is
+  trained using native transcripts, and converted to the phone set of
+  the test language using the G2Ps described in Sec.~\ref{sec:data}.
+  These resoures were not available to the {\sc CL} or {\sc PT-adapt}
+  systems, which were not permitted to use any natively transcribed
+  training data in the test language.}
 
 {\color{blue} Audio data, native transcripts, and probabilistic
   transcripts are as described in Sec.~\ref{sec:data}.  The {\sc
     monolingual} topline system was trained using 40 minutes of
   training data, then stream weights and insertion penalties were
-  calculated using 10 minutes of development test data, followed by
-  testing on 10 minutes of evaluation test data.  Monolingual systems
-  were trained using a maximum likelihood (ML) criterion using the 40
-  minute in-language training set: GMM parameters were initialized
-  using a monophone system trained on the same 40 minutes, NN parameters
-  were initialized using a restricted Boltzmann machine trained on
-  five hours of unlabeled audio in the same language.
-  The {\sc
-    CL} baseline systems were each trained using 40 minutes of
-  training data in language other than the language to be recognized.
-  CL systems were trained using ML, maximum mutual information (MMI),
-  minimum phone error rate (MPE), and state-based minimum Bayes risk
-  (sMBR,~\cite{Gibson06}) training criteria.  The {\sc PT-adapt} system was initialized
-  using the CL system (ML training), then adapted to the target
-  language using probabilistic transcripts based on mismatched
+  calculated using 10 minutes of development test data.  Monolingual
+  systems were trained using a maximum likelihood (ML) criterion using
+  the 40 minute in-language training set: GMM parameters were
+  initialized using a monophone system trained on the same 40 minutes,
+  NN parameters were initialized using a restricted Boltzmann machine
+  trained on five hours of unlabeled audio in the same language.  The
+  {\sc CL} baseline systems were each trained using 40 minutes of
+  training data in languages other than the test language.  CL systems
+  were trained using ML, maximum mutual information (MMI), minimum
+  phone error rate (MPE), and state-based minimum Bayes risk
+  (sMBR,~\cite{Gibson06}) training criteria.  The {\sc PT-adapt}
+  system was initialized using the CL system (ML training), then
+  adapted to the target language using PTs based on mismatched
   crowdsourcing (these transcripts are described in detail in
   Sec.~\ref{sec:data}).  Probabilistic transcripts based on EEG were
   not used to adapt ASR, because it is not yet possible to use EEG to
   generate probabilistic transcripts on a scale sufficient for ASR
   adaptation.}
 
-{\color{blue} All systems were trained using the
-  Kaldi~\cite{Kaldi2011} toolkit.  Acoustic features consisted of MFCC
-  (13 features), stacked $\pm 3$ frames ($13\times 7=91$ features),
+All systems were trained using the Kaldi~\cite{Kaldi2011}
+toolkit. {\color{blue} Acoustic features consisted of MFCC (13
+  features), stacked $\pm 3$ frames ($13\times 7=91$ features),
   reduced to 40 dimensions using LDA followed by FMLLR.  GMM-HMM
   systems directly observed this 40-dimensional vector; NN-HMM systems
   computed FMLLR+d+dd stacked $\pm 5$ frames ($40\times 3\times
@@ -70,49 +73,17 @@
 %differing by only one distinctive feature; this process proceeded until 
 %each remaining phone symbol is represented in at least two languages.
 
-{\color{blue} Native transcriptions in the target language were used
-  in order to train the {\sc monolingual} topline system.  {\sc CL}
-  and {\sc PT-adapt} systems are initialized using native
-  transcriptions in other languages, but are not permitted to see any
-  native transcriptions in the target language.  In order to make it
-  possible to transfer acoustic models from training languages (which
-  have transcriptions) to a test language (that has no native
-  transcriptions), the phone set must be standardized across all
-  languages; for this purpose, the phone set was based on the
-  international phonetic alphabet (IPA;~\cite{ipa1993}).  Similarly,
-  in order to transfer acoustic models from training languages
-  (which have transcriptions) to a test language (that has no
-  native transcription), the training transcriptions must be
-  converted to phonemes using a grapheme-to-phoneme transducer (G2P).
-  G2Ps were therefore assumed to be available in all training languages,
-  but not in the test language.}
-  English words in each {\color{blue} training} transcript are identified and
-converted to phones with an English G2P trained using
-CMUdict~\cite{Lenzo1995}, then other words are converted into phonetic
-transcripts using language-dependent dictionaries and G2Ps.
-%We take the canonical pronunciation of a word if the word
-%appears in a lexicon,
-%otherwise estimate the word's pronunciation using a G2P.
-The Arabic dictionary is from the Qatari Arabic Corpus~\cite{Elmahdy14},
-the Dutch dictionary is from CELEX v2~\cite{Baayen96},
-the Hungarian dictionary was provided by BUT~\cite{Grezl14},
-the Cantonese dictionary is from $I^2R$,
-the Mandarin dictionary is from CALLHOME~\cite{LDC96},
-and the Urdu and Swahili G2Ps were compiled from
-character-based descriptions of the orthographic systems in those
-two languages. 
-
-Each {\color{blue} {\sc CL} baseline}
-HMM was trained with data from six languages, tuned
-(stream weight and insertion penalty)
-on the development set of the seventh language, and
-tested on the evaluation set of the seventh language.  The lexicon of
-the target language was not used during testing, but two types of
-language-dependent specialization were allowed.  In the first type of
-specialization, the universal phone set was restricted at test time to
-output only phones in the target language.  In the second type of
-specialization, a target-language phone bigram language model was
-trained using phone sequences converted from Wikipedia texts.
+%Each {\color{blue} {\sc CL} baseline}
+%HMM was trained with data from six languages, tuned
+%(stream weight and insertion penalty)
+%on the development set of the seventh language, and
+%tested on the evaluation set of the seventh language.  The lexicon of
+%the target language was not used during testing, but two types of
+%language-dependent specialization were allowed.  In the first type of
+%specialization, the universal phone set was restricted at test time to
+%output only phones in the target language.  In the second type of
+%specialization, a target-language phone bigram language model was
+%trained using phone sequences converted from Wikipedia texts.
 %text.  The texts were
 %collected from Wikipedia articles linked from the main page of each
 %language crawled once per day over four months.

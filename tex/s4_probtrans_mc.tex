@@ -50,7 +50,7 @@
 \label{fig:mcmethods}
 \end{figure}
 
-The second set of PTs were computed by sending audio in the target
+The second set of PTs was computed by sending audio in the target
 language to non-speakers of the target language, and asking them to
 write what they hear.  It would be preferable to recruit transcribers
 who speak a language with predictable orthography, but since
@@ -60,7 +60,7 @@ Denote using $T$ the set of mismatched
 transcripts produced by these English-speaking crowd workers,
 which we wish to interpret as a pmf over
 target-language phone sequences, $\rho(\phi|T)$.  As an intermediate
-step towards this goal, prior work~\cite{JHJ15b} developed techniques
+step, prior work~\cite{JHJ15b} developed techniques
 to merge texts into a confusion network
 $\rho(\lambda|T)$ over representative transcripts in the
 annotation-language orthography (Fig.~\ref{fig:mcmethods}).
@@ -91,7 +91,7 @@ The terms other than $\rho(\lambda|T)$ in Equation~(\ref{eq:PT}) are
 estimated as follows.  $\rho(\lambda)$ is modeled using a 
 unigram prior over the letter sequences in $\lambda$.
 $\rho(\phi)$ is modeled using a bigram phone language model,
-as $\rho(\phi)=\prod_{\ell=1}^L\prod_{m=1}^M \rho(\phi_m^\ell|\phi_{m-1}^{\ell})$.
+as $\rho(\phi)=\prod_{m=1}^M \rho(\phi_m|\phi_{m-1})$.
 %, trained
 %on a corpus of Wikipedia text in the target language, converted into
 %phone sequences as described in Section~\ref{sec:trainwithlm}.
@@ -109,10 +109,11 @@ corresponding native transcripts) for speech {\em in languages other
 {\color{blue} The model learned in this way is essentially
   a machine translation model, which translates between graphemes in
   the annotation language ($\lambda$) to phonemes in any possible
-  utterance language ($\phi$).  Sec.~\ref{sec:mlbaseline}
- of this article uses
-  a similar method, though without left and right context, to map
-  training phonemes to test phonemes in a self-trained neural network.}
+  utterance language ($\phi$).}
+%Sec.~\ref{sec:mlbaseline}
+% of this article uses
+%  a similar method, though without left and right context, to map
+%  training phonemes to test phonemes in a self-trained neural network.}
 We assume that misperceptions depend more
 heavily on the annotation language than on the utterance language, and
 that therefore a model $\rho(\lambda|\phi)$ trained using a universal

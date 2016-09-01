@@ -30,14 +30,38 @@ segments to enable easy labeling by the native transcribers.
 %transcripts that required the speech segments to be short. To
 %further check that only speech clips in the target language were
 %retained, the
-Native transcribers were asked to omit any 5-second
-clips that contained significant music, noise, English,
-or speech from multiple speakers. Resulting transcripts
-covered 45 minutes of speech in Urdu and 1
-hour of speech in the remaining six languages. The orthographic
+Native transcribers were asked to omit any 5-second clips that
+contained significant music, noise, English, or speech from multiple
+speakers. Resulting transcripts covered 45 minutes of speech in Urdu
+and 1 hour of speech in the remaining six languages. The orthographic
 transcripts for these clips were then converted into phonemic
-transcripts using language-specific dictionaries and G2P mappings
-(these resources are detailed in Section~\ref{sec:mlbaseline}). For
+transcripts using language-specific dictionaries and G2P mappings.
+{\color{blue} In order to make it possible to transfer ASR from
+  training languages (which have native transcripts) to a test
+  language (that has no native transcripts), the phone set must be
+  standardized across all languages; for this purpose, the phone set
+  was based on the international phonetic alphabet
+  (IPA;~\cite{ipa1993}).  Similarly, in order to transfer ASR from
+  training languages to a test language, the training transcriptions
+  must be converted to phonemes using a grapheme-to-phoneme transducer
+  (G2P).  G2Ps were therefore assumed to be available in all training
+  languages, but not in the test language.}  English words in each
+transcript are identified and converted to phones with an English G2P
+trained using CMUdict~\cite{Lenzo1995}, then other words are converted
+into phonetic transcripts using language-dependent dictionaries and
+G2Ps.
+%We take the canonical pronunciation of a word if the word
+%appears in a lexicon,
+%otherwise estimate the word's pronunciation using a G2P.
+The Arabic dictionary is from the Qatari Arabic Corpus~\cite{Elmahdy14},
+the Dutch dictionary is from CELEX v2~\cite{Baayen96},
+the Hungarian dictionary was provided by BUT~\cite{Grezl14},
+the Cantonese dictionary is from $I^2R$,
+the Mandarin dictionary is from CALLHOME~\cite{LDC96},
+and the Urdu and Swahili G2Ps were compiled from
+knowledge-based descriptions of the orthographic systems in those
+two languages. 
+For
 each language, we chose a random 40/10/10 minutes split into training,
 development and evaluation sets.
 %Table~\ref{tab:data} describes the

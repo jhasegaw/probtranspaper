@@ -44,9 +44,7 @@ phonemes whose confusion probabilities can not be distinguished
 models can be ameliorated by averaging them in some way, e.g., by
 computing the linear interpolation
 $\rho_I(\psi|\phi)=(1-\alpha)\rho_U(\psi|\phi)+\alpha\rho_{EEG}(\psi|\phi)$
-for some constant $0\le\alpha\le 1$.  {\color{blue} The constant
-$\alpha=0.29$ was chosen as the average of the values selected by
-all folds in a leave-one-out cross-validation.}
+for some constant $0\le\alpha\le 1$.
 
 \begin{figure}
   \centerline{
@@ -63,17 +61,19 @@ all folds in a leave-one-out cross-validation.}
   \label{fig:eeg_confusions}
 \end{figure}
 
-In order to evaluate the effectiveness of the EEG-induced misperception 
-transducer we looked at the LPER of mismatched crowdsourcing
-for Dutch when performed using 1)~a multilingual misperception
-model $\rho(\lambda|\phi)$,
-2)~feature-based misperception transducer computed using binary 
-weighting, $\rho_U(\psi|\phi)$, or 3) EEG-induced transducer combined with 
-the feature-based transducer, $\rho_I(\psi|\phi)$. To combine the two 
-transducers, the value of the parameter $\alpha$ was optimized on a 
-separate development data set.
-LPER of the multilingual model was 70.43\% {\color{blue} (as shown in Table~\ref{fig:pt_decode_per})}, of the feature-based model,
-69.44\%, and of the EEG-interpolated model, 68.61\%.
+In order to evaluate the effectiveness of the EEG-induced
+misperception transducer we looked at the LPER of mismatched
+crowdsourcing for Dutch when performed using 1)~a multilingual
+misperception model $\rho(\lambda|\phi)$ (the machine translation
+model described in Sec.~\ref{sec:MC}), 2)~feature-based misperception
+transducer computed using binary weighting, $\rho_U(\psi|\phi)$, or 3)
+EEG-induced transducer combined with the feature-based transducer,
+$\rho_I(\psi|\phi)$.  {\color{blue} The constant $\alpha=0.29$ was
+chosen as the average of the values selected by all folds in a
+leave-one-out cross-validation.}  LPER of the multilingual model was
+70.43\% {\color{blue} (as shown in Table~\ref{fig:pt_decode_per})}, of
+the feature-based model, 69.44\%, and of the EEG-interpolated model,
+68.61\%.
 
 %As shown in Table~\ref{tbl:eegresults}, 
 %phone error rates were improved $1.5\%$ and $2.5\%$ relative to 

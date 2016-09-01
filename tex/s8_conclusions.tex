@@ -4,14 +4,13 @@
 
 When a language lacks transcribed speech, other types of information
 about the speech signal may be used to train ASR.  This paper proposes
-compiling the available information into a probabilistic
-transcript: a pmf over possible phone transcripts of each
-waveform.  Three sources of information are discussed: self-training,
-mismatched crowdsourcing, and EEG distribution coding.  Experiments
-demonstrate that self-training outperforms cross-lingual ASR in two of
-the four test languages (Mandarin and Swahili).  Adaptation using
-mismatched crowdsourcing outperforms both cross-lingual ASR and
-self-training in all four of the test languages.  Auxiliary
-information from EEG is used, together with text-based phone language
-models, to improve the decoding of transcripts from mismatched
-crowdsourcing.  
+compiling the available information into a probabilistic transcript: a
+pmf over possible phone transcripts of each waveform.  Three sources
+of information are discussed: self-training, mismatched crowdsourcing,
+and EEG distribution coding.  Auxiliary information from EEG is used,
+together with text-based phone language models, to improve the
+decoding of transcripts from mismatched crowdsourcing.  Self-trained
+ASR outperforms cross-lingual ASR in one of the four test languages
+(Swahili).  ASR adapted using mismatched crowdsourcing outperforms
+both cross-lingual ASR and self-training in all four of the test
+languages.

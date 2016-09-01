@@ -2,25 +2,22 @@
 \subsection{ASR Results}
 \label{s6:mlbaseline}
 
-Table~\ref{tab:ptresult} presents phone error rates (PERs) on the
-evaluation (and development) sets for four different languages.
-{\color{blue} The first column shows the
-phone error rate (PER) of monolingual topline systems: evaluation test
-results are followed by development test results in parentheses.}
-The
-column titled {\sc CL} lists cross-lingual baseline error rates.
-The column labeled {\sc ST} lists the
-PERs of self-trained ASR systems.
-The column headed {\sc PT-adapt} in Table~\ref{tab:ptresult} lists
-PERs from {\sc CL} ASR systems that have been adapted to PTs in the target
-language.
-{\color{blue} Phone error rates are reported instead of word error
-rates because, in order to compute a word error rate, it is necessary
-to have either native transcriptions in the target language (thereby
-permitting the training of a grapheme-based recognizer) or a
-pronunciation lexicon in the target language.  These resources are
-used by the monolingual topline, but not by any of the baseline or
-experimental systems.}
+Tables~\ref{tab:ptresult} and~\ref{tab:dnnresult} present phone error
+rates (PERs) for four different languages.  {\color{blue} The first
+  column shows the phone error rate (PER) of monolingual topline
+  systems: evaluation test results are followed by development test
+  results in parentheses.}  The column titled {\sc CL} lists
+cross-lingual baseline error rates.  The column labeled {\sc ST} lists
+the PERs of self-trained ASR systems.  The column headed {\sc
+  PT-adapt} in Table~\ref{tab:ptresult} lists PERs from {\sc CL} ASR
+systems that have been adapted to PTs {\color{blue} derived from
+  mismatched crowdsourcing. Phone error rates are reported instead of
+  word error rates because, in order to compute a word error rate, it
+  is necessary to have either native transcriptions in the target
+  language (thereby permitting the training of a grapheme-based
+  recognizer) or a pronunciation lexicon in the target language.
+  These resources are used by the monolingual topline, but not by any
+  of the baseline or experimental systems.}
 
 %The first four columns of
 %Table~\ref{tab:ptresult}  
@@ -72,21 +69,20 @@ average PER, NN-HMM).  The cross-lingual ASRs, however, perform poorly.
 %following conclusions.  First, even with only 40 minutes of
 %training data, a NN is able to outperform a GMM.  Second,
 %however, the standard speech pipeline performs poorly on unseen languages.
-Using a language-specific phonotactic language model gives
-significant improvement over the language-independent phonotactic
-model, but significantly underperforms a system that
-has seen the test language during training.  This is true
-even if the system has seen closely related languages during training:
-the Cantonese cross-lingual system has seen Mandarin during training,
-and the Mandarin system has seen Cantonese during training, but
-neither system is able to generalize well from its six training languages to
-its test language.
-{\color{blue} Three different types of discriminative training were tested.
- MMI performs consistently worse than MPE and sMBR,
- and is therefore not listed in Table~\ref{tab:ptresult}.
- Averaged across all languages and systems shown in Table~\ref{tab:ptresult},
- the development-test PERs of ML, MPE, and sMBR training are
- 73.43\%, 73.04\%, and 72.98\% respectively; differences are not
- statistically significant, therefore only the ML system was tested on
- evaluation test data.}
+Using a text-based phone bigram (denoted {\sc TEXT}) gives significant
+improvement over the cross-language phone bigram (denoted {\sc CL}),
+but significantly underperforms a system that has seen the test
+language during training.  This is true even if the system has seen
+closely related languages during training: the Cantonese cross-lingual
+system has seen Mandarin during training, and the Mandarin system has
+seen Cantonese during training, but neither system is able to
+generalize well from its six training languages to its test language.
+{\color{blue} Three different types of discriminative training were
+  tested.  MMI performs consistently worse than MPE and sMBR, and is
+  therefore not listed in Table~\ref{tab:ptresult}.  Averaged across
+  all languages and systems shown in Table~\ref{tab:ptresult}, the
+  development-test PERs of ML, MPE, and sMBR training are 73.43\%,
+  73.04\%, and 72.98\% respectively; differences are not statistically
+  significant, therefore only the ML system was tested on evaluation
+  test data.}
 
