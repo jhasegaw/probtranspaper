@@ -91,17 +91,19 @@ The terms other than $\rho(\lambda|T)$ in Equation~(\ref{eq:PT}) are
 estimated as follows.  $\rho(\lambda)$ is modeled using a unigram
 prior over the letter sequences in $\lambda$.  $\rho(\phi)$ is modeled
 using {\color{blue} either a cross-lingual phone unigram, a
-  language-specific phone zero-gram (the cross-lingual unigram,
-  constrained to take values from the phone set of the target
+  language-constrained cross-lingual unigram (the cross-lingual
+  unigram, constrained to take values from the phone set of the target
   language), or a language-specific phone bigram
   $\rho(\phi)=\prod_{m=1}^M \rho(\phi_m|\phi_{m-1})$.
-  Sec.~\ref{sec:trainwithlm} compares the results of these three
-  methods, and describes how the phone bigram was trained.}
+  Sec.~\ref{sec:trainwithlm} describes an algorithm for training the
+  phone bigram without using proscribed test-language resources;
+  Sec.~\ref{sec:data} lists the PT accuracies achieved using each of
+  these three approaches.}
 %, trained
 %on a corpus of Wikipedia text in the target language, converted into
 %phone sequences as described in Section~\ref{sec:trainwithlm}.
 $\rho(\lambda|\phi)$ is called the misperception G2P, as it maps to
-graphemes in the annotation language, $\lambda$, from phones in the
+graphemes in the annotation language, $\lambda$, fsrom phones in the
 utterance language, $\phi$.  Section~\ref{sec:eegchanmod} describes
 methods that decompose $\rho(\lambda|\phi)$ into separate
 misperception and G2P transducers, but it can also be trained directly

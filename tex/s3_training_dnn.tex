@@ -26,12 +26,9 @@ using gradient descent in the direction
   \nabla_\theta y_t^\ell(j)
   \label{eq:dnn_dt}
 \end{equation}
-NN training with deterministic transcripts is improved by
-quantizing $\pi_{S_t^\ell}(j|x^\ell,\theta)\rightarrow\left\{0,1\right\}$
-using forced alignment~\cite{Dahl2012}. Preliminary experiments showed
-that forced alignment also improves the accuracy of NNs trained from
-probabilistic transcripts: the best path through the PT, and the
-best alignment of the resulting senones to the waveform, were both
-computed using forced alignment.  The resulting best senone string was
-used to train a NN using Eq.~(\ref{eq:dnn_dt}).
+Preliminary experiments showed that forced alignment improves the
+accuracy of NNs trained from probabilistic transcripts: the best path
+through the PT, and the best alignment of the resulting senones to the
+waveform, were both computed using forced alignment.  The resulting
+best senone string was used to train a NN using Eq.~(\ref{eq:dnn_dt}).
 
