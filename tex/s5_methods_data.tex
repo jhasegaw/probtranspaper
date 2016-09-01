@@ -17,7 +17,7 @@ Urdu (urd).
 {\color{blue} It is desirable to test the ideas in this paper with corpora larger
 than one hour per language, but larger corpora involve problems
 orthogonal to the purposes of this paper, e.g., the Babel corpora
-are telephone speech, and therefore contain far more acoustic
+contain telephone speech, and therefore contain far more acoustic
 background noise than the podcast corpora used in this paper.}
 
 The podcasts contain utterances interspersed with segments of music
@@ -45,11 +45,15 @@ transcripts using language-specific dictionaries and G2P mappings.
   training languages to a test language, the training transcriptions
   must be converted to phonemes using a grapheme-to-phoneme transducer
   (G2P).  G2Ps were therefore assumed to be available in all training
-  languages, but not in the test language.}  English words in each
-transcript are identified and converted to phones with an English G2P
-trained using CMUdict~\cite{Lenzo1995}, then other words are converted
-into phonetic transcripts using language-dependent dictionaries and
-G2Ps.
+  languages, but not in the test language.  Since these G2Ps are only
+  used for training and not test languages, five of them (Arabic,
+  Dutch, Hungarian, Cantonese and Mandarin) were trained using lexical
+  resources, and only two (Urdu and Swahili) were constructed using
+  the zero-resource knowledge-based method described in
+  Sec.~\ref{sec:trainwithlm}.}  English words in each transcript are
+identified and converted to phones with an English G2P trained using
+CMUdict~\cite{Lenzo1995}, then other words are converted into phonetic
+transcripts using language-dependent dictionaries and G2Ps.
 %We take the canonical pronunciation of a word if the word
 %appears in a lexicon,
 %otherwise estimate the word's pronunciation using a G2P.
@@ -57,10 +61,7 @@ The Arabic dictionary is from the Qatari Arabic Corpus~\cite{Elmahdy14},
 the Dutch dictionary is from CELEX v2~\cite{Baayen96},
 the Hungarian dictionary was provided by BUT~\cite{Grezl14},
 the Cantonese dictionary is from $I^2R$,
-the Mandarin dictionary is from CALLHOME~\cite{LDC96},
-and the Urdu and Swahili G2Ps were compiled from
-knowledge-based descriptions of the orthographic systems in those
-two languages. 
+and the Mandarin dictionary is from CALLHOME~\cite{LDC96}.
 For
 each language, we chose a random 40/10/10 minutes split into training,
 development and evaluation sets.

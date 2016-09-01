@@ -88,10 +88,15 @@ phone transcripts according to:
 \label{eq:PT}
 \end{align}
 The terms other than $\rho(\lambda|T)$ in Equation~(\ref{eq:PT}) are
-estimated as follows.  $\rho(\lambda)$ is modeled using a 
-unigram prior over the letter sequences in $\lambda$.
-$\rho(\phi)$ is modeled using a bigram phone language model,
-as $\rho(\phi)=\prod_{m=1}^M \rho(\phi_m|\phi_{m-1})$.
+estimated as follows.  $\rho(\lambda)$ is modeled using a unigram
+prior over the letter sequences in $\lambda$.  $\rho(\phi)$ is modeled
+using {\color{blue} either a cross-lingual phone unigram, a
+  language-specific phone zero-gram (the cross-lingual unigram,
+  constrained to take values from the phone set of the target
+  language), or a language-specific phone bigram
+  $\rho(\phi)=\prod_{m=1}^M \rho(\phi_m|\phi_{m-1})$.
+  Sec.~\ref{sec:trainwithlm} compares the results of these three
+  methods, and describes how the phone bigram was trained.}
 %, trained
 %on a corpus of Wikipedia text in the target language, converted into
 %phone sequences as described in Section~\ref{sec:trainwithlm}.

@@ -25,8 +25,8 @@ compute segmental K-means.
   \end{center}
   \vspace*{-3mm}
   \caption{Bigram phone language model is trained using Wikipedia text
-    (left) converted into phone strings using a knowledge-based G2P
-    (center).}
+    (left) converted into phone strings using a zero-resource
+    knowledge-based G2P (center).}
   \label{fig:wikitext}
 \end{figure}
 
@@ -35,12 +35,14 @@ we assume that there is no transcribed speech in the target language.
 A reasonable proxy, however, can be constructed from text.
 Fig.~\ref{fig:wikitext} shows text data downloaded from Wikipedia in
 Swahili, and a segment of a knowledge-based G2P for the Swahili
-language.  {\color{blue} The G2P is constructed by looking up
-  ``Swahili alphabet'' on Wikipedia, downloading the resulting web
-  page, and converting it by hand into an unweighted finite state
-  transducer~\cite{Hasegawajohnson15}.}  By passing the former through
-the latter, it is possible to generate synthetic phone sequences in
-the target language.
+language.  {\color{blue} Because this phone bigram will also be used
+  in ASR testing, it is constructed using a knowledge-based method
+  that requires zero test-language training data: The G2P is
+  constructed by looking up ``Swahili alphabet'' on Wikipedia,
+  downloading the resulting web page, and converting it by hand into
+  an unweighted finite state transducer~\cite{Hasegawajohnson15}.}  By
+passing the former through the latter, it is possible to generate
+synthetic phone sequences in the target language.
 
 Composing $PT\circ G$ is complicated by the presence of null
 transitions in the PT.  A null transition in the PT matches a

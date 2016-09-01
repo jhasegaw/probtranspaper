@@ -44,9 +44,9 @@
 All systems were trained using the Kaldi~\cite{Kaldi2011}
 toolkit. {\color{blue} Acoustic features consisted of MFCC (13
   features), stacked $\pm 3$ frames ($13\times 7=91$ features),
-  reduced to 40 dimensions using LDA followed by FMLLR.  GMM-HMM
+  reduced to 40 dimensions using LDA followed by fMLLR.  GMM-HMM
   systems directly observed this 40-dimensional vector; NN-HMM systems
-  computed FMLLR+d+dd stacked $\pm 5$ frames ($40\times 3\times
+  computed fMLLR+d+dd stacked $\pm 5$ frames ($40\times 3\times
   11=1320$ features/frame).  All systems used tied triphone acoustic
   models, based on a decision tree with 1200 leaves.  Each GMM-HMM
   used a library of 8000 Gaussians, shared among the 1200 leaves.
