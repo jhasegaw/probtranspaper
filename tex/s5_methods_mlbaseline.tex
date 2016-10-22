@@ -2,92 +2,57 @@
 \subsection{ASR Methods}
 \label{sec:mlbaseline}
 
-{\color{blue} Automatic speech recognition (ASR) systems were trained
-  in four languages (hun=Hungarian, cmn=Mandarin, swa=Swahili,
-  yue=Cantonese), using three different types of transcription.
-  First, a topline {\sc monolingual} system was trained in each
-  language using speech transcribed by a native speaker of that
-  language.  Second, a baseline {\sc CL} (cross-lingual) system was
-  trained using data from other languages, and tested in the target
-  language.  Third, the experimental {\sc PT-adapt} system was created
-  by adapting the cross-lingual system to probabilistic transcriptions
-  in the target language.  The {\sc monolingal} topline system is
-  trained using native transcripts, and converted to the phone set of
-  the test language using the G2Ps described in Sec.~\ref{sec:data}.
-  These resoures were not available to the {\sc CL} or {\sc PT-adapt}
-  systems, which were not permitted to use any natively transcribed
-  training data in the test language.}
+Automatic speech recognition (ASR) systems were trained
+in four languages (hun=Hungarian, cmn=Mandarin, swa=Swahili,
+yue=Cantonese), using three different types of transcription.
+First, a topline {\sc monolingual} system was trained in each
+language using speech transcribed by a native speaker of that
+language.  Second, a baseline {\sc CL} (cross-lingual) system was
+trained using data from other languages, and tested in the target
+language.  Third, the experimental {\sc PT-adapt} system was created
+by adapting the cross-lingual system to probabilistic transcriptions
+in the target language.  The {\sc monolingal} topline system is
+trained using native transcripts, and converted to the phone set of
+the test language using the G2Ps described in Sec.~\ref{sec:data}.
+These resoures were not available to the {\sc CL} or {\sc PT-adapt}
+systems, which were not permitted to use any natively transcribed
+training data in the test language.
 
-{\color{blue} Audio data, native transcripts, and probabilistic
-  transcripts are as described in Sec.~\ref{sec:data}.  The {\sc
-    monolingual} topline system was trained using 40 minutes of
-  training data, then stream weights and insertion penalties were
-  calculated using 10 minutes of development test data.  Monolingual
-  systems were trained using a maximum likelihood (ML) criterion using
-  the 40 minute in-language training set: GMM parameters were
-  initialized using a monophone system trained on the same 40 minutes,
-  NN parameters were initialized using a restricted Boltzmann machine
-  trained on five hours of unlabeled audio in the same language.  The
-  {\sc CL} baseline systems were each trained using 40 minutes of
-  training data in languages other than the test language.  CL systems
-  were trained using ML, maximum mutual information (MMI), minimum
-  phone error rate (MPE), and state-based minimum Bayes risk
-  (sMBR,~\cite{Gibson06}) training criteria.  The {\sc PT-adapt}
-  system was initialized using the CL system (ML training), then
-  adapted to the target language using PTs based on mismatched
-  crowdsourcing (these transcripts are described in detail in
-  Sec.~\ref{sec:data}).  Probabilistic transcripts based on EEG were
-  not used to adapt ASR, because it is not yet possible to use EEG to
-  generate probabilistic transcripts on a scale sufficient for ASR
-  adaptation.}
-
+Audio data, native transcripts, and probabilistic
+transcripts are as described in Sec.~\ref{sec:data}.  The {\sc
+  monolingual} topline system was trained using 40 minutes of
+training data, then stream weights and insertion penalties were
+calculated using 10 minutes of development test data.  Monolingual
+systems were trained using a maximum likelihood (ML) criterion using
+the 40 minute in-language training set: GMM parameters were
+initialized using a monophone system trained on the same 40 minutes,
+NN parameters were initialized using a restricted Boltzmann machine
+trained on five hours of unlabeled audio in the same language.  The
+{\sc CL} baseline systems were each trained using 40 minutes of
+training data in languages other than the test language.  CL systems
+were trained using ML, maximum mutual information (MMI), minimum
+phone error rate (MPE), and state-based minimum Bayes risk
+(sMBR,~\cite{Gibson06}) training criteria.  The {\sc PT-adapt}
+system was initialized using the CL system (ML training), then
+adapted to the target language using PTs based on mismatched
+crowdsourcing (these transcripts are described in detail in
+Sec.~\ref{sec:data}).  Probabilistic transcripts based on EEG were
+not used to adapt ASR, because it is not yet possible to use EEG to
+generate probabilistic transcripts on a scale sufficient for ASR
+adaptation.
+    
 All systems were trained using the Kaldi~\cite{Kaldi2011}
-toolkit. {\color{blue} Acoustic features consisted of MFCC (13
-  features), stacked $\pm 3$ frames ($13\times 7=91$ features),
-  reduced to 40 dimensions using LDA followed by fMLLR.  GMM-HMM
-  systems directly observed this 40-dimensional vector; NN-HMM systems
-  computed fMLLR+d+dd stacked $\pm 5$ frames ($40\times 3\times
-  11=1320$ features/frame).  All systems used tied triphone acoustic
-  models, based on a decision tree with 1200 leaves.  Each GMM-HMM
-  used a library of 8000 Gaussians, shared among the 1200 leaves.
-  Each NN-HMM used six hidden layers with logistic nonlinearities, and
-  with 1024 nodes per hidden layer, followed by a softmax output layer
-  with 1200 nodes.}
+toolkit. Acoustic features consisted of MFCC (13
+features), stacked $\pm 3$ frames ($13\times 7=91$ features),
+reduced to 40 dimensions using LDA followed by fMLLR.  GMM-HMM
+systems directly observed this 40-dimensional vector; NN-HMM systems
+computed fMLLR+d+dd stacked $\pm 5$ frames ($40\times 3\times
+11=1320$ features/frame).  All systems used tied triphone acoustic
+models, based on a decision tree with 1200 leaves.  Each GMM-HMM
+used a library of 8000 Gaussians, shared among the 1200 leaves.
+Each NN-HMM used six hidden layers with logistic nonlinearities, and
+with 1024 nodes per hidden layer, followed by a softmax output layer
+with 1200 nodes.
   
-
-
-%The goal of building a cross-lingual system is two-fold.
-%One is to define a baseline for generalizing to an unseen
-%language without any labeled audio corpus.  The other
-%is have the baseline serve as a starting point for
-%adaptation.
-
-%The dataset consists of 40 minutes of labeled audio for training,
-%10 minutes for development, and 10 minutes for testing
-%for each language.
-%The orthographic transcripts are converted into
-%phonetic transcripts using language-dependent G2Ps.
-%Beginning with a list of the IPA symbols used in canonical descriptions
-%of all seven languages,
-%any symbol appearing in only one language was merged with a different symbol
-%differing by only one distinctive feature; this process proceeded until 
-%each remaining phone symbol is represented in at least two languages.
-
-%Each {\color{blue} {\sc CL} baseline}
-%HMM was trained with data from six languages, tuned
-%(stream weight and insertion penalty)
-%on the development set of the seventh language, and
-%tested on the evaluation set of the seventh language.  The lexicon of
-%the target language was not used during testing, but two types of
-%language-dependent specialization were allowed.  In the first type of
-%specialization, the universal phone set was restricted at test time to
-%output only phones in the target language.  In the second type of
-%specialization, a target-language phone bigram language model was
-%trained using phone sequences converted from Wikipedia texts.
-%text.  The texts were
-%collected from Wikipedia articles linked from the main page of each
-%language crawled once per day over four months.
-%As an oracle experiment, we also train language dependent
-%HMMs for each individual language with 40 minutes of labeled audio.
 
 

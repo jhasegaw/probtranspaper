@@ -2,7 +2,6 @@
 \label{sec:adaptation}
 
 PT adaptation starts from a cross-lingual ASR,
-%Training from PTs can be improved by starting from a multilingual ASR,
 and adapts its parameters to PTs in the target language.  The
 Bayesian framework for maximum {\em a posteriori} (MAP) estimation
 has been widely applied to GMM and HMM parameter estimation problems
@@ -18,14 +17,6 @@ parameter set as $\theta$, then the MAP parameters are defined as:
 \noindent where $\pi(\theta)$ is the product of conjugate
 prior distributions, centered at the parameters of a cross-lingual
 baseline ASR.  In a GMM-HMM, the acoustic model 
-%\[
-%\pi(x_t^\ell|s_t^\ell =j,\theta )=
-%\sum_{k=1}^K c_{jk}
-%\mathcal{N}
-%\left(x_t^\ell|\mu_{jk},v_{jk}
-%\right)
-%\]
-%\noindent
 is computed by choosing a Gaussian component, $G_t^\ell$, whose mixture
 weight is $c_{jk}=\pi_{G_t^{\ell}|S_t^{\ell}}(k|j)$, and whose mean vector
 and covariance matrix are $\mu_{jk}$ and $\Sigma_{jk}$.  Maximum
@@ -45,15 +36,6 @@ example:
 c_{jk}'=\frac{\tau_c\bar{c}_{jk}+\sum_{\ell,t}\gamma_{t}^\ell(j,k)}
 {\sum_{n}\left(\tau_c\bar{c}_{jn}+
   \sum_{\ell,t}\gamma_{t}^\ell(j,n)\right)}
-%~~~
-%\mu_{jk}'=\frac{\tau_\mu\bar{\mu}_{jk}+\sum_{\ell,t}\gamma_{t}^\ell(j,k)x_t^\ell}
-%   {\tau_\mu+\sum_{\ell,t}\gamma_{t}^\ell(j,k)}
-   %,~~~
-%v_{jk}'=\frac{\tau_v\bar{v}_{jk}+\sum_{\ell,t}\gamma_{\ell t}(j,k)(x_t^\ell-\mu_{jk})^2}
-%{\tau_v+\sum_{\ell,t}\gamma_{\ell t}(j,k)}
 \end{equation}
-%In our setting, the initial value of $\bar{\mu}_{jk}$ is obtained from
-%the multilingual baseline model, and $\mu_{jk}'$ eventually converges
-%to a model for the target language data.
 
 

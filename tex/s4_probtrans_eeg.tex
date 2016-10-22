@@ -35,24 +35,12 @@ annotation- and utterance-language phones. Given the assumption that
 every distinctive feature shared by phones $\phi$ and $\psi$ 
 independently increases their confusion probability, their confusion 
 probability can be expressed as
-%\begin{equation}
-%  \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
-%  w_k\delta\left(f_k(\psi)\ne f_k(\phi)\right)\right)
-%  \label{eq:dfdist}
-%\end{equation}
-%where $f_k(\phi)$ is the $k^{\textrm{th}}$ feature of phoneme $\phi$,
-%and $\delta(\cdot)\in\left\{0,1\right\}$ is the unit indicator
-%function. 
 \begin{equation}
   \rho(\psi|\phi)\propto \exp\left(-\sum_{k=1}^K
   w_k(\phi,\psi)\right)
   \label{eq:dfdist}
 \end{equation}
 where $w_k(\phi,\psi)$ is
-%the contribution of the $k^{\textrm{th}}$ feature in the 
-%misperception of the of phone $\phi$ as phone $\psi$. If a feature is 
-%perceived similarly across the two languages its contribution would be 
-%lower when when the two phones share the same value of that
 smaller if $\phi$ and $\psi$ share the $k^{\textrm{th}}$ distinctive
 feature. The assumption of independence is a simplifying assumption,
 given that many distinctive features have overlapping acoustic
@@ -79,12 +67,6 @@ binary classifiers $g_k(y)$ are trained to label the distinctive
 features $f_k(\phi)$~\cite{Liberto15}.  Second, the same listener
 hears phones $\phi\ne\psi$ in a new language, and EEG response
 signals $y$ are recorded;
-%Thus, given a set of EEG response signals $y$
-%recorded when a listener hears audio corresponding to phone $\phi$ in
-%the annotation language, whose $k^\textrm{th}$ distinctive feature is
-%$f_k(\phi)$, and supposing that $g_k(y)$ is the output of a
-%binary classifier trained to detect $f_k(\phi)$ based on speech in the
-%listener's native language\cite{Liberto15},
 then the contributions in
 Eq.~(\ref{eq:dfdist}) can be estimated as
 \begin{equation}

@@ -93,17 +93,15 @@
 %reported~\cite{vesely2013-semi}. PTs derived from human mismatched
 %crowdsourcing provide significant further PER reduction.
 
-{\color{blue} Evaluation test PER of each experimental system (columns
+Evaluation test PER of each experimental system (columns
 {\sc ST} and {\sc PT-adapt}, 20 systems) was compared to evaluation test PER of
-the corresponding {\sc CL} system ({\sc ML} training, {\sc Text} LM)}
-%Differences between the evaluation set PERs of {\sc ST} and {\sc CL}
-%systems were tested for statistical significance
+the corresponding {\sc CL} system ({\sc ML} training, {\sc Text} LM)
 using the MAPSSWE test of the {\tt sc\_stats} tool~\cite{Pallet90}.
-{\color{blue} Each neural net {\sc PT-adapt} system was also compared
-to the corresponding {\sc ST} system (4 comparisons).}  There are 
-therefore {\color{blue} 24} independent statistical comparisons in
+Each neural net {\sc PT-adapt} system was also compared
+to the corresponding {\sc ST} system (4 comparisons).  There are 
+therefore 24 independent statistical comparisons in
 Tables~\ref{tab:ptresult} and~\ref{tab:dnnresult}; the study-corrected
-significance level is {\color{blue} $0.05/24=0.002$.}
+significance level is $0.05/24=0.002$.
 
 Self-training was only performed
 using NN systems; no self-training of GMMs was performed, because
@@ -114,49 +112,23 @@ Mandarin and
 Hungarian {\sc ST} systems were not significantly better
 than {\sc CL} at this level.
 
-%We observe substantial PER improvements using {\sc PT-adapt}
-%over {\sc CL} across all four languages. We also find that PT
-%adaptation consistently outperforms the {\sc ST} systems for all four
-%languages.
 The relative reductions in PER
 of the {\sc PT-adapt} system
 compared to both {\sc CL} and {\sc ST} baselines
-%are listed in the last two columns.  Reductions on the evaluation set
-%were tested for statistical significance using the MAPSSWE test of the
-%{\tt sc\_stats} tool.  All differences were
 were all statistically
 significant at $p<0.001$ (denoted **).  This suggests that adaptation
 with PTs is providing more information than that obtained by model
 self-training alone.
 
-{\color{blue} PT-adapt GMM-HMM systems were trained using four
+PT-adapt GMM-HMM systems were trained using four
 different training criteria: ML, MMI, MPE and sMBR.  MMI training
 consistently underperformed MPE and sMBR, and is therefore not shown.
 MPE training of {\sc PT-adapt} systems improves their PER by a little
 more than 1\% on average, comparable to the improvement provided
-to {\sc CL} baseline systems.}
+to {\sc CL} baseline systems.
 
-%It is also interesting that
 PER improvements for Swahili are larger than for the other three
-languages. %We conjecture this may be partly because Swahili's
-%orthography is based on the Roman alphabet, unlike the other three
-%languages. Since the mismatched transcripts also used the Roman
-%alphabet, the PTs derived from them may more closely resemble the
-%native Swahili transcripts (from which the phonetic transcripts
-%are derived)
-%% DM: the above point (commented out) misses the mark. The influence of
-%% orthography here lies in what sounds English speakers typically use
-%% roman letters to represent. Swahili happens to have a phone set that
-%% can be represented with the roman alphabet in a way that makes 
-%% pretty good sense to a native English speaker, and the things that
-%% are phonologically weird about Swahili don't cause problems. In
-%% contrast, the roman alphabet as used by English speakers doesn't have
-%% a good way to handle the things about Mandarin, Cantonese, or
-%% Hungarian that are phonologically weird (from an English perspective)
-%% e.g., unfamiliar vowel qualities like front rounded vowels, See
-%% below for what I think is a more plausible explanation of why PT
-%% worked well for Swahili, and an additional point about many-to-one
-%% correspondences in the perceptual domain.
+languages.
 We conjecture this may be due to the relatively good mapping between
 Swahili's phone inventory and that of English. For example: all Swahili
 vowel qualities are also found in English, and the Swahili phonemes 
@@ -169,25 +141,4 @@ found in English; Mandarin and
 Cantonese have many diphthongs not found in English; and some of the 
 consonant phonemes (e.g., Mandarin retroflexes) do not have 
 representations in English orthography that are obvious or 
-straightforward. %Another possible source of the difference would be if
-%Swahili phonemes had (on average) higher perceptual discriminability 
-%(to English speakers) than the phonemes of other languages tested. In
-%other words, there may have been fewer many-to-one mappings in Swahili
-%than in the other languages.
-%(Hungarian's contrastive vowel length is one
-%example of a likely source of perceptual noise in the mismatched 
-%transcripts).
-%Both of these factors (orthographic and 
-%perceptual) may have led to less label noise in the Swahili PT than in 
-%the PTs of the other languages. 
-
-%It is also useful to compare the performance of GMM-HMM and NN-HMM
-%systems.  In the {\sc CL} setting, an ASR trained
-%using six languages is then applied to an unseen seventh language,
-%without adaptation; in this setting, the NN consistently outperforms
-%the GMM.  In the {\sc PT-adapt} setting, GMMs and NNs are
-%adapted using PTs in the target language.  PT adaptation improves the
-%performance of both types of ASR, but the
-%adapted NN does not consistently outperform the GMM across all
-%tested languages.
-
+straightforward.

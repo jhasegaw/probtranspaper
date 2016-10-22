@@ -4,23 +4,11 @@
 A deterministic transcript is a sequence of phone symbols,
 $\phi^\ell =[\phi_1^\ell,\ldots,\phi_M^\ell]$ where $\phi_m^\ell$ is a
 symbol drawn from the phone set of the utterance language.
-%We assume
-%that $\phi_m^\ell$ can be encoded using an IPA symbol~\cite{ipa1993}.
-%The superscript specifies that $\phi^\ell$ is the transcript of the
-%$\ell^{\textrm{th}}$ waveform in a database; the collection of all
-%transcripts is $\phi=\left\{\phi^1,\ldots,\phi^L\right\}$.
 
 A probabilistic transcript is a probability mass function (pmf)
 over the set of deterministic transcripts.  Capital letters denote
 random variables, lowercase denote instances: $\Phi^{\ell}_m$ is a
 random variable whose instance is $\phi_m^\ell$.
-%, and whose domain
-%$\Omega_\Phi$ is the union of the set of IPA symbols with the null
-%symbol ($\emptyset$), thus $\Omega_\Phi=\left\{\right.\emptyset,$
-%\ipa{[a],[i],[2],[\ae],}$\left.\ldots\right\}$, with cardinality
-%$|\Omega_\Phi|$ equal to one plus the number of distinct IPA symbols.
-%Similarly, $\Phi^{\ell}$ is a random variable whose domain is
-%$\Omega_\Phi^*$, the set of all sequences composed of symbols in $\Omega_\Phi$.
 Denote the probability of transcript $\phi^{\ell}$
 as $\rho_{\Phi^\ell}(\phi^{\ell})$, where $\rho$ (``reference'') means
 that $\rho_{\Phi^\ell}(\phi^{\ell})$ is a reference distribution---a
@@ -28,20 +16,6 @@ distribution specified by the probabilistic transcription process, and
 not dependent on ASR parameters during training.  The
 distribution label $\Phi^\ell$ is omitted when clear from the instance
 label, e.g., $\rho(\phi^\ell)$, but $\rho_{\Phi^\ell}(u)$.
-%A deterministic transcript is a degenerate probabilistic
-%transcript, in which $\rho(\phi^\ell)\in\left\{0,1\right\}$.
-%% comment: I'm guessing the choice of epsilon for the null phoneme is
-%% related to its use representing the "empty string". Incidentally,
-%% linguists use the mathematical "empty set" character (U+2205) to
-%% represent a null phoneme (used in formulas for phonological rules
-%% where sounds get deleted). It's not officially part of the IPA, but
-%% might be a more natural choice (depending on the audience). See:  
-%% https://en.wikipedia.org/wiki/Zero_%28linguistics%29 
-%% also note that different variants of epsilon are being used in the 
-%% main text (lunate variant) and in fig:liu1 (two-lobed variant).
-%% If epsilon is retained, it should at least be the same epsilon
-%% throughout.
-% MH: OK, let's try empty set to see if it works...
 Superscript denotes waveform index, while subscript denotes frame or
 phone index.  Absence of either superscript or subscript denotes a
 collection, thus $\Phi=\left\{\Phi^1,\ldots,\Phi^L\right\}$ (with

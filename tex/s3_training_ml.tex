@@ -24,10 +24,6 @@ $Q\left(\theta,\theta'\right)$~\cite{Dempster77}, are
   \sum_{s,\phi} \pi(s,\phi|x,\theta)\ln \pi(x,s,\phi |\theta')
    \label{eq:Qfunction}
 \end{align}
-%The Kullback-Leibler divergence between $\pi(s,\phi|x,\theta)$ and
-%$\pi(s,\phi|x,\theta')$ is $D\left(\theta\Vert\theta'\right)=
-%H\left(\theta\Vert\theta'\right)-H\left(\theta\Vert\theta\right)$.
-%Since $D\left(\theta\Vert\theta'\right)\ge 0$~\cite{Shannon49},
 Cross-entropy is bounded ($H\left(\theta\Vert\theta'\right)\ge
 H\left(\theta\Vert\theta\right)$), therefore
 \begin{equation}
@@ -75,10 +71,6 @@ path cost determined by the acoustic modeling probability
   \prod_{t=1}^T
   \pi(x_t^\ell|s_t^\ell,\theta)
 \end{equation}
-%The joint probability $\pi(x^\ell,s^\ell,\phi^\ell|\theta)$ is
-%computed by composing the FSTs, then finding the total cost of the
-%path through $H\circ C\circ PT$ with input string $s^\ell$ and
-%output string $\phi^\ell$.
 The posterior probability
 $\pi(s,\phi|x,\theta)$ is computed by
 composing the FSTs, pushing toward the initial state
@@ -86,13 +78,7 @@ composing the FSTs, pushing toward the initial state
 then finding the total cost of the path through
 $\textsc{push}\left(H\circ C\circ PT\right)$
 with input string $s$ and output string $\phi$.
-%The parameter vector $\theta$ includes the HMM transition
-%probabilities, $a_{ij}=\pi(s_t^\ell =j|s_{t-1}^\ell =i,\phi,\theta)$,
-%and the parameters of the acoustic model
-%$b_j(x_t^\ell)=\pi(x_t^\ell|s_t^\ell=j,\theta)$.
 The analytical maximum of $Q\left(\theta,\theta'\right)$
-%requires summation over all possible state alignments
-%The summation
 can be computed efficiently using
 the Baum-Welch algorithm, but experiments reported in this
 paper did not do so, for reasons described in the next subsection.

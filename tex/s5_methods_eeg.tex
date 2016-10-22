@@ -1,5 +1,4 @@
 \section{EEG Recording and Analysis}
-%\subsection{EEG Recording and Analysis}
 \label{sec:methods_eeg}
 
 To compute distinctive feature weights for the misperception
@@ -10,16 +9,6 @@ system with 64 channels and 1000 Hz sampling frequency.
 All procedures were approved by the University of Washington Institutional
 Review Board.
 
-%% This next section, including tab:m2o, seems like more detail than
-%% is necessary; the explanation above as to **why** we chose Hindi and
-%% Dutch (combined with tab:eegphones) seems sufficient here, without
-%% going into the extra details of **how** we settled on those two.
-% MH: I feel like it's useful to include at least some of this information.
-% I could imagine different ways to define the ``number of many-to-one
-% mappings,'' other than the metric listed in eq:m2o.
-% Somebody someday might come back and test different versions of this
-% metric to see which one is most useful, for some definition of ``useful.''
-%% DM: point conceded, though I still think the table is overkill.
 Auditory stimuli were consonant-vowel
 (CV) syllables representing consonants of three languages: English,
 Dutch and Hindi. The inclusion of only two non-English languages 
@@ -112,8 +101,8 @@ Two native speakers of each language (one male and one female) were
 recorded (44100 Hz sampling frequency, 16 bit depth) speaking multiple
 repetitions of the set of CV syllables for their language. Three
 tokens of each unique syllable were excised from the raw recordings,
-downsampled to 24414 Hz {\color{blue} (for compatibility with the
-  presentation hardware, Tucker Davis Technologies RP2.1)}, and RMS
+downsampled to 24414 Hz (for compatibility with the
+presentation hardware, Tucker Davis Technologies RP2.1), and RMS
 normalized.  Recorded syllables had an average duration of 400~ms, and
 were presented via headphones to one monolingual American English
 listener.  The stimuli were presented in 9 blocks of 15 minutes per
@@ -122,7 +111,6 @@ order with an inter-stimulus interval of 350~ms. Twenty-one
 repetitions of each syllable were presented, for a grand total of 9072
 syllable presentations.
 
-%% TODO: get number of ms where epoch started (MM to email GDL)
 EEG recordings were divided into 500 ms epochs.
 The epoched data were coded with a subset of distinctive features
 that minimally defined the phoneme contrasts of the English consonants.

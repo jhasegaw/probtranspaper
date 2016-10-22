@@ -1,9 +1,5 @@
 \subsection{Segmental K-Means Training}
 
-%The previous subsection demonstrates that ${\mathcal L}(\theta')$ can
-%be increased, at each step of the EM algorithm, by maximizing
-%$Q(\theta,\theta')$.  Though $Q(\theta,\theta')-Q(\theta,\theta)$ is a
-%lower bound on ${\mathcal L}(\theta')-{\mathcal L}(\theta)$, $Q$
 The EM quality function, $Q(\theta,\theta')$,
 has properties that make it undesirable as an optimizer for ${\mathcal{L}}$.
 Suppose, as often happens, that there is a poor phone
@@ -12,10 +8,6 @@ parameter vector $\theta^*$, meaning that $\pi(x,s,\phi^p|\theta^*)$
 is very low.  Suppose that the initial parameter vector, $\theta$, is
 less discriminative, so that
 $\pi(x,s,\phi^p|\theta)>\pi(x,s,\phi^p|\theta^*)$.
-%In this case
-%$Q(\theta,\theta^*)$ is dominated by the term
-%$\pi(x,s,\phi^p|\theta)\ln\pi(x,s,\phi^p|\theta^*)$, therefore
-%$\theta^*$ will never show up as the optimizer of $Q(\theta,\theta')$.
 Indeed, the best speech recognizer is a parameter vector $\theta^*$
 that completely rules out poor transcripts, setting
 $\pi(x,s,\phi^p|\theta^*)=0$; but in this case
@@ -23,19 +15,12 @@ $Q(\theta,\theta^*)=-\infty$.
 It is therefore not possible for the EM algorithm to start with
 parameters $\theta$ that allow $\phi^p$, and to find parameters $\theta^*$
 that rule out $\phi^p$.
-%so the EM algorithm can never find a
-%parameter vector $\theta^*$ that sets to zero the probability of a
-%poor transcript.
-%Deterministic transcription does not have this problem, because the
-%transcript specifies the phone sequence.
 With probabilistic
 transcription, this problem is quite common: if the
 human transcribers fail to rule out $\phi^p$ (e.g., because the
 correct and incorrect transcripts are perceptually
 indistinguishable in the language of the transcribers), then the EM
 algorithm will also never learn to rule out $\phi^p$.
-%EM is unable
-%to learn zero-valued probabilities.
 
 EM's inability to learn zero-valued probabilities can be ameliorated
 by using the segmental K-means algorithm~\cite{Juang1990}, which
@@ -51,9 +36,6 @@ to find a new parameter vector $\theta'$ with higher likelihood by
 computing its maximum-likelihood senone sequence and phone sequence
 $s^*(\theta),\phi^*(\theta)$, and by maximizing $\theta'$ with respect to
 $s^*(\theta)$ and $\phi^*(\theta)$.
-%, and by then replacing $\theta$
-%with $\theta'$ only if $R(\theta,\theta')$ is greater than ${\mathcal
-%  L}(\theta)=\ln \sum\pi(s,\phi,x|\theta)$.
 Maximizing
 $R(\theta,\theta')$ rather than $Q(\theta,\theta')$ is useful for
 probabilistic transcription because it reduces the importance of poor

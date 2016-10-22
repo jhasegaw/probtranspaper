@@ -17,73 +17,50 @@ required by a machine learning system, engineers and neuroscientists
 can work together to design specific neuroscience experiments that
 leverage human abilities and provide information that can be directly
 integrated into the system to solve an engineering problem.
-%% KC: the transition between these paragraphs is rocky. Needs a 
-%% transition sentence or some TLC.
 
 NN-HMM outperforms the GMM-HMM in all baseline conditions, but not
-always when adapted using PTs. {\color{blue} Table~\ref{tab:dnnresult}
-  shows that PT adaptation improves the NN-HMM, but the benefit to a
-  NN-HMM is not as great as the benefit to a GMM-HMM; for this reason,
-  the accuracy of the PT-adapted GMM-HMM catches up to that of the
-  NN-HMM.}  Preliminary analysis suggests that the NN is more
+always when adapted using PTs. Table~\ref{tab:dnnresult}
+shows that PT adaptation improves the NN-HMM, but the benefit to a
+NN-HMM is not as great as the benefit to a GMM-HMM; for this reason,
+the accuracy of the PT-adapted GMM-HMM catches up to that of the
+NN-HMM.  Preliminary analysis suggests that the NN is more
 adversely affected than the GMM by label noise in the PTs.  A NN is
 trained to match the senone posterior probabilities
 $\pi(s_t^\ell|x^\ell,\phi^\ell,\theta)$ computed by a first-pass
 GMM-HMM.  Many papers have demonstrated that entropy in the senone
 posteriors is detrimental to NN training.
-%, and that the senone
-%posteriors should therefore be quantized
-%($\pi(s_t^\ell)\rightarrow\left\{0,1\right\}$) prior to NN training.
-In PT adaptation, however, entropy is unavoidable.  {\color{blue}
-  Forced alignment is better than using soft alignment, but is not
-  sufficient to make PT adaptation of the NN-HMM always better than
-  that of the GMM-HMM.  Table~\ref{fig:pt_decode_per} showed that PTs
-  computed using a text-based phone bigram language model only achieve
-  LPER in the range 50.45-70.88\%, depending on the language.  These
-  high error rates are, perhaps, incomprehensible to most speech
-  technology experts, who are accustomed to think of human
-  transcriptions as having 0.0\% error rate, but} there is good reason
+In PT adaptation, however, entropy is unavoidable. 
+Forced alignment is better than using soft alignment, but is not
+sufficient to make PT adaptation of the NN-HMM always better than
+that of the GMM-HMM.  Table~\ref{fig:pt_decode_per} showed that PTs
+computed using a text-based phone bigram language model only achieve
+LPER in the range 50.45-70.88\%, depending on the language.  These
+high error rates are, perhaps, incomprehensible to most speech
+technology experts, who are accustomed to think of human
+transcriptions as having 0.0\% error rate, but there is good reason
 for this: the transcribers don't speak the target language, so they
 find some of its phone pairs to be perceptually indistinguishable.
 Future work will seek methods that can improve the robustness of NN
 training in the face of label noise.
 
-{\color{blue} The primary conclusion of this article is economic.  In
-  most of the languages of the world, it is impossible to recruit
-  native transcribers on any verified on-line labor market (e.g.,
-  crowdsourcing).  Without on-line verification, native transcriptions
-  can only be acquired by in-person negotiation; in practice, this has
-  meant that native transcriptions are acquired only for languages
-  targeted by large government programs.  Native transcription ({\sc
-    NT}) permits one to train an ASR with PER of 31.58\% (average,
-  first column of Table~\ref{tab:dnnresult}).  Self-training ({\sc
-    ST}), by contrast, costs very little, and benefits little: average
-  PER is 62.75\% (Table~\ref{tab:dnnresult}).  Probabilistic
-  transcription ({\sc PT}) is a point intermediate between {\sc NT}
-  and {\sc ST}: average PER is 52.29\%, cost is typically \$500 per
-  ten transcribers per hour of audio. {\sc PT} is therefore a method
-  within the budget of an individual researcher.  We expect that an
-  individual researcher with access to a native population will wish
-  to combine {\sc NT} (as many hours as she can convince her
-  informants to provide) with {\sc PT} (on perhaps a much larger
-  scale); future research will study the best strategy for combining
-  these sources of information if both are available.}
-
-%This paper has tentatively defined an ``under-resourced language'' to
-%be one that lacks transcribed speech data.  Other authors have
-%proposed that if a language lacks transcribed speech, ASR can be
-%initialized in that language by adapting a cross-lingual baseline.
-%Other authors have proposed, and
-%Table~\ref{tab:ptresult} confirms, that significant error reductions
-%can be achieved using self-training: by automatically labeling speech
-%in the target language, and adding the self-labeled data to the
-%training set.  Table~\ref{tab:ptresult} shows that further error rate
-%reductions can be achieved using mismatched crowdsourcing: by asking
-%non-speakers of the target language to write down what they hear, and
-%by interpreting their nonsense orthography as information about the
-%phonetic content of the utterances.  The PER of mismatched
-%crowdsourcing (Table~\ref{fig:pt_decode_per}) is almost as high as the
-%PER of cross-language ASR (Table~\ref{tab:ptresult}), but the
-%information provided by mismatched crowdsourcing is superior to that
-%provided by self-training in the sense that it trains a better ASR.
+The primary conclusion of this article is economic.  In
+most of the languages of the world, it is impossible to recruit
+native transcribers on any verified on-line labor market (e.g.,
+crowdsourcing).  Without on-line verification, native transcriptions
+can only be acquired by in-person negotiation; in practice, this has
+meant that native transcriptions are acquired only for languages
+targeted by large government programs.  Native transcription ({\sc
+  NT}) permits one to train an ASR with PER of 31.58\% (average,
+first column of Table~\ref{tab:dnnresult}).  Self-training ({\sc
+  ST}), by contrast, costs very little, and benefits little: average
+PER is 62.75\% (Table~\ref{tab:dnnresult}).  Probabilistic
+transcription ({\sc PT}) is a point intermediate between {\sc NT}
+and {\sc ST}: average PER is 52.29\%, cost is typically \$500 per
+ten transcribers per hour of audio. {\sc PT} is therefore a method
+within the budget of an individual researcher.  We expect that an
+individual researcher with access to a native population will wish
+to combine {\sc NT} (as many hours as she can convince her
+informants to provide) with {\sc PT} (on perhaps a much larger
+scale); future research will study the best strategy for combining
+these sources of information if both are available.
 

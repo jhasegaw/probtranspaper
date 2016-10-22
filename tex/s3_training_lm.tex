@@ -1,11 +1,6 @@
 \subsection{Using a Language Model During Training}
 \label{sec:trainwithlm}
 
-%A PT contains significant information beyond any single
-%transcript extracted from the PT. Motivated by this, the statistics
-%for ASR adaptation are accumulated from a lattice derived from the
-%cascade $H\circ C \circ PT$, rather than reducing the PT to its single
-%best path. Though it is disadvantageous to reduce a PT to its best
 During segmental K-means, it is advantageous to incorporate as much
 information as possible about the utterance language.
 Define $G$ to be an FST representing the modeled phone bigram
@@ -15,7 +10,6 @@ Training results can be improved by using $H\circ C\circ PT\circ G$ to
 compute segmental K-means.
 
 \begin{figure}
-%  \centerline{\includegraphics[width=0.8\columnwidth]{../figs/fig_sloan.png}}
   \begin{center}
     \begin{tikzpicture}[scale=\mytikzscale,every node/.style={transform shape}]
       \node[rectangle,text width=6cm](text) at (0,0) {$<$big$><$nowiki$>$Kichwa kikubwa$<$/nowiki$><$/big$><$nowiki$>$kichwa kidogo$<$/nowiki$>$Picha Ukitaka kutumia picha iliyopo katika Wikipedia.  Picha iko tayari katika Wikipedia commons. Hii ni jambo la kujaribu! Fungua makala katika};
@@ -35,12 +29,12 @@ we assume that there is no transcribed speech in the target language.
 A reasonable proxy, however, can be constructed from text.
 Fig.~\ref{fig:wikitext} shows text data downloaded from Wikipedia in
 Swahili, and a segment of a knowledge-based G2P for the Swahili
-language.  {\color{blue} Because this phone bigram will also be used
-  in ASR testing, it is constructed using a knowledge-based method
-  that requires zero test-language training data: The G2P is
-  constructed by looking up ``Swahili alphabet'' on Wikipedia,
-  downloading the resulting web page, and converting it by hand into
-  an unweighted finite state transducer~\cite{Hasegawajohnson15}.}  By
+language.  Because this phone bigram will also be used
+in ASR testing, it is constructed using a knowledge-based method
+that requires zero test-language training data: The G2P is
+constructed by looking up ``Swahili alphabet'' on Wikipedia,
+downloading the resulting web page, and converting it by hand into
+an unweighted finite state transducer~\cite{Hasegawajohnson15}.  By
 passing the former through the latter, it is possible to generate
 synthetic phone sequences in the target language.
 

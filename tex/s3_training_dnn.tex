@@ -12,13 +12,6 @@ trained by using a GMM-HMM to compute an initial senone posterior,
 $\pi_{S_t^{\ell}}(j|x^\ell,\theta)$, then minimizing the cross-entropy
 between the estimated senone posterior and the neural network output
 $y_{t}^\ell(j)$,
-%.  The cross entropy is measured as
-%\begin{equation}
-%  H(S^\ell\Vert Y^\ell)=-\sum_{t=1}^T \sum_{j} \pi(s_t^\ell=j) \ln y_{t}^\ell(j)
-%  \label{eq:dnn_train}
-%\end{equation}
-%The gradient of Eq.~(\ref{eq:dnn_train}) with respect to its model
-%parameters is
 using gradient descent in the direction
 \begin{equation}
   -\nabla_\theta H(S^\ell\Vert Y^\ell)=

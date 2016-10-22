@@ -1,4 +1,3 @@
-%\subsection{Misperception Transducer Trained Using EEG}
 \label{ssec:eeg}
 
 \newcommand{\specialcell}[2][c]{%
@@ -9,10 +8,10 @@ only} were used to train a support vector machine classifier for each
 distinctive feature.  The classifiers were then used (without
 re-training) to classify the EEG responses to the Dutch and Hindi
 syllables.  Fig.~\ref{fig:eeg_svm_eers} shows equal error rates of
-these classifiers when applied to the three languages.  {\color{blue}
+these classifiers when applied to the three languages. 
 EER of the classifier when applied to English phones is comparable to
 those reported in~\cite{Liberto15}, the only prior work to attempt a
-recognition of speech phonemes from EEG of the listener.}
+recognition of speech phonemes from EEG of the listener.
 
 \begin{figure}
   \centerline{\includegraphics[width=\columnwidth]{../figs/eer-barplot/eer-barplot.pdf}}
@@ -68,33 +67,16 @@ misperception model $\rho(\lambda|\phi)$ (the machine translation
 model described in Sec.~\ref{sec:MC}), 2)~feature-based misperception
 transducer computed using binary weighting, $\rho_U(\psi|\phi)$, or 3)
 EEG-induced transducer combined with the feature-based transducer,
-$\rho_I(\psi|\phi)$.  {\color{blue} Both method (2) and method (3)
+$\rho_I(\psi|\phi)$.  Both method (2) and method (3)
 required the use of a G2P in order to compute $\rho(\lambda|\psi)$:
 the Dutch G2P was estimated using the CELEX database, while the Hindi
 G2P was estimated using the zero-resource knowledge-based method
 described in Sec.~\ref{sec:trainwithlm}.  The constant $\alpha=0.29$ was
 chosen as the average of the values selected by all folds in a
-leave-one-out cross-validation.}  LPER of the multilingual model was
-70.43\% {\color{blue} (as shown in Table~\ref{fig:pt_decode_per})}, of
+leave-one-out cross-validation.  LPER of the multilingual model was
+70.43\% (as shown in Table~\ref{fig:pt_decode_per}), of
 the feature-based model, 69.44\%, and of the EEG-interpolated model,
 68.61\%.
 
-%As shown in Table~\ref{tbl:eegresults}, 
-%phone error rates were improved $1.5\%$ and $2.5\%$ relative to 
-%mismatched crowdsourcing by using the feature-based and combined 
-%misperception transducers (respectively).
-%\begin{table*}
-%\begin{center}
-%\begin{tabular}{|c|c|c|c|}
-%  \hline
-%  & \specialcell{multilingual} & feature-based & \specialcell{EEG-induced\\+feature-based} \\
-%\hline
-%LPER & 70.43 & 69.44 & 68.61 \\
-%\hline
-%\end{tabular}
-%\vspace*{1mm}
-%\caption{\label{tbl:eegresults} Comparison of LPERs for probabilistic transcript of the Dutch evaluation set using different schemes to compute misperception G2Ps.}
-%\end{center}
-%\end{table*}
 
 

@@ -12,11 +12,11 @@
       every node/.style={transform shape}      
     ]
     \node[open] (n0) at (-4.5,1) {$w=$Utterance-language words\\\vspace*{0.1in}$<$$\vcenter{\hbox{\includegraphics[width=1in]{../figs/vaakpahachaan.png}}}$$>$};
-    \node[boxed] (n1) at (-0.75,1) {{\color{blue} Human talker modeled by a} pronunciation FST,\\$\rho(\phi|w)$} 
+    \node[boxed] (n1) at (-0.75,1) {Human talker modeled by a pronunciation FST,\\$\rho(\phi|w)$} 
     edge[pre2](n0);
-    \node[boxed] (n2) at (2.5,1) {{\color{blue} Human listener modeled by a} misperception FST,\\$\rho(\psi|\phi)$}
+    \node[boxed] (n2) at (2.5,1) {Human listener modeled by a misperception FST,\\$\rho(\psi|\phi)$}
     edge[pre2] (n1);
-    \node[boxed] (n3) at (5.75,1) {{\color{blue} Human transcriber modeled as a} phoneme-to-grapheme FST, $\rho(\lambda|\psi)$}
+    \node[boxed] (n3) at (5.75,1) {Human transcriber modeled as a phoneme-to-grapheme FST, $\rho(\lambda|\psi)$}
     edge[pre2] (n2);
     \node[open] (n4) at (9,1) {$\lambda$: Annotation-language orthography\\$<$vak paychan$>$} 
     edge[pre2](n3);
@@ -53,14 +53,3 @@ language to annotation language can therefore be modeled as a noisy
 channel represented by the composition of up to three consecutive FSTs
 (Fig.~\ref{fig:h2e_eg2}): a pronunciation model, a misperception
 model, and an inverted grapheme-to-phoneme (G2P) transducer.
-%MH 3/22/2016: following material is redundant with the figure caption
-%The
-%pronunciation model is an FST representing processes that distort the
-%canonical phoneme string during speech production, including processes
-%of reduction and coarticulation.  The misperception model represents
-%the mapping of the uttered phone string (in symbols matching the
-%phone set of the spoken language) to the perceived phone string (in
-%symbols matching the phone set of the annotation language).  Finally,
-%the transcriber maps heard phones to nonsense words in the annotation
-%language; the mapping from phones to orthography is an inverted G2P.
-
