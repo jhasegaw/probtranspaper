@@ -1,0 +1,2 @@
+ received his B.S. degree in Computer Science and M.S. degree in Electrical Engineering from National Taiwan University in 2007 and 2010, respectively. He is currently pursuing his Ph.D. degree at Toyota Technological Institute at Chicago. His main interests are in machine learning and its application to speech recognition, with particular interests in discriminative training and segmental models.
+

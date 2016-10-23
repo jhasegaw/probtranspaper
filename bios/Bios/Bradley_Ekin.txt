@@ -1,0 +1,3 @@
+ was born in 1988 in Parma, MI. He received his B.S. in Electrical Engineering at Lake Superior State University. In 2016, he received his M.S. degree in Electrical Engineering and is currently working toward his Ph.D. in Electrical Engineering, both at the University of Washington, Seattle, WA.
+He is currently a research assistant at the Interactive Systems Design Laboratory (ISDL), department of Electrical Engineering, University of Washington. His research activity is mainly focused on exploring machine learning and signal processing methods for improving auditory attention detection performance via EEG.
+

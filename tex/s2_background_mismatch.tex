@@ -8,20 +8,20 @@
   \begin{tikzpicture}[
       scale=\mytikzscale,
       boxed/.style={rectangle,thick, draw=black, text=black, rounded corners=1mm, text centered, text width=2.5cm},
-      open/.style={text=black, text centered, text width=2.75cm},
+      open/.style={text=black, text centered, text width=3cm},
       every node/.style={transform shape}      
     ]
-    \node[open] (n0) at (-4.5,1) {$w=$Utterance-language words\\\vspace*{0.1in}$<$$\vcenter{\hbox{\includegraphics[width=1in]{../figs/vaakpahachaan.png}}}$$>$};
-    \node[boxed] (n1) at (-0.75,1) {Human talker modeled by a pronunciation FST,\\$\rho(\phi|w)$} 
+    \node[open] (n0) at (-4.5,1) {\large $w=$Utterance-language words\\\vspace*{0.1in}$<$$\vcenter{\hbox{\includegraphics[width=1in]{../figs/vaakpahachaan.png}}}$$>$};
+    \node[boxed] (n1) at (-0.75,1) {\large Human talker modeled by a pronunciation FST,\\$\rho(\phi|w)$} 
     edge[pre2](n0);
-    \node[boxed] (n2) at (2.5,1) {Human listener modeled by a misperception FST,\\$\rho(\psi|\phi)$}
+    \node[boxed] (n2) at (2.5,1) {\large Human listener modeled by a misperception FST,\\$\rho(\psi|\phi)$}
     edge[pre2] (n1);
-    \node[boxed] (n3) at (5.75,1) {Human transcriber modeled as a phoneme-to-grapheme FST, $\rho(\lambda|\psi)$}
+    \node[boxed] (n3) at (5.75,1) {\large Human transcriber modeled as a phoneme-to-grapheme FST, $\rho(\lambda|\psi)$}
     edge[pre2] (n2);
-    \node[open] (n4) at (9,1) {$\lambda$: Annotation-language orthography\\$<$vak paychan$>$} 
+    \node[open] (n4) at (9,1) {\large $\lambda$: Annotation-language orthography\\$<$vak paychan$>$} 
     edge[pre2](n3);
-    \node[open] (n5) at (1,-1.5) {$\phi=$Utterance phones\\\ipa{[va:k p@H@tSa:n]}};
-    \node[open] (n6) at (4,-1.5) {$\psi=$Perceived phones\\\ipa{[vAk p\textsuperscript{h}eItSAn]}}; 
+    \node[open] (n5) at (1,-1.5) {\large $\phi=$Utterance phones\\\ipa{[va:k p@H@tSa:n]}};
+    \node[open] (n6) at (4,-1.5) {\large $\psi=$Perceived phones\\\ipa{[vAk p\textsuperscript{h}eItSAn]}}; 
   \end{tikzpicture}\\
 \end{center}
 \setlength{\abovecaptionskip}{0pt}

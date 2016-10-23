@@ -12,31 +12,31 @@
       open/.style={text=black, text centered},
       every node/.style={transform shape}
     ]
-    \node[open] (n0) at (1,0) {\begin{tabular}{c}$T$=Mismatched\\Transcripts\\\hline trabiza\\ta peesome\\ta pisha\\chah peesh um\\shapisha\\sabeesham\\chapiser\\some pizza\end{tabular}};
-    \node[boxed] (n1) at (6,0) {\begin{tabular}{c}$\rho(\lambda|T)$\\\hline\vspace{3cm}\end{tabular}} edge[pre] (n0);
+    \node[open] (n0) at (1,0) {\large\begin{tabular}{c}$T$=Mismatched\\Transcripts\\\hline trabiza\\ta peesome\\ta pisha\\chah peesh um\\shapisha\\sabeesham\\chapiser\\some pizza\end{tabular}};
+    \node[boxed] (n1) at (6,0) {\large\begin{tabular}{c}$\rho(\lambda|T)$\\\hline\vspace{3cm}\end{tabular}} edge[pre] (n0);
     \node[state] (g0) at (4,-0.25) {};
     \node[state] (g1) at (6,-0.25) {};
     \node (g2) at (8,-0.25) {\ldots};
     \draw[post] (g0) -- (4.25,0.75) -- (5.75,0.75) -- (g1);
-    \node at (5,1) {$<$t$>$$/0.4$};
+    \node at (5,1) {\large$<$t$>$$/0.4$};
     \draw[post] (g0) -- (g1);
-    \node at (5,0) {$<$ch$>$$/0.4$};
+    \node at (5,0) {\large$<$ch$>$$/0.4$};
     \draw[post] (g0) -- (4.25,-1.25) -- (5.75,-1.25) -- (g1);
-    \node at (5,-1) {$<$s$>$$/0.2$};
+    \node at (5,-1) {\large$<$s$>$$/0.2$};
     \draw[post] (g1) -- (g2);
-    \node at (7,0) {$<$a$>$$/1.0$};
-    \node[boxed] (n2) at (12,0) {\begin{tabular}{c}$\rho(\phi|T)$\\\hline\vspace*{3cm}\end{tabular}} edge[pre] (n1);
+    \node at (7,0) {\large$<$a$>$$/1.0$};
+    \node[boxed] (n2) at (12,0) {\large\begin{tabular}{c}$\rho(\phi|T)$\\\hline\vspace*{3cm}\end{tabular}} edge[pre] (n1);
     \node[state] (g10) at (10,-0.25) {};
     \node[state] (g11) at (12,-0.25) {};
-    \node (g12) at (14,-0.25) {\ldots};
+    \node (g12) at (14,-0.25) {\large\ldots};
     \draw[post] (g10) -- (10.25,0.75) -- (11.75,0.75) -- (g11);
-    \node at (11,1) {\ipa{[t]}$/0.4$};
+    \node at (11,1) {\large\ipa{[t]}$/0.4$};
     \draw[post] (g10) -- (g11);
-    \node at (11,0) {\ipa{[tS]}$/0.4$};
+    \node at (11,0) {\large\ipa{[tS]}$/0.4$};
     \draw[post] (g10) -- (10.25,-1.25) -- (11.75,-1.25) -- (g11);
-    \node at (11,-1) {\ipa{[s]}$/0.2$};
+    \node at (11,-1) {\large\ipa{[s]}$/0.2$};
     \draw[post] (g11) -- (g12);
-    \node at (13,0) {\ipa{[A]}$/1.0$};
+    \node at (13,0) {\large\ipa{[A]}$/1.0$};
   \end{tikzpicture}\\
 \end{center}
 \setlength{\abovecaptionskip}{0pt}
